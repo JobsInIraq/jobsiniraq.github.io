@@ -1,6 +1,6 @@
 ---
-title: "Getting started with the Documentation Theme for Jekyll"
-keywords: sample homepage
+title: "Jobs In Iraq"
+keywords: jobs in iraq Job portal recruitment in iraq jobs groups in iraq Baghdad Erbil Basrah Mosul
 tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
