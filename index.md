@@ -46,12 +46,24 @@ title: Job Portals in Iraq
 | Aweza                     | Job Portal                     | AR, EN, KRD | http://www.aweza.co/index.php                      | https://www.facebook.com/Aweza.co/, https://t.me/awezajobs/ |
 | Lezan                     | Job Portal                      | AR, EN, KRD | https://lezan.app/                                 | https://linkedin.com/company/lezan-work, https://www.instagram.com/lezan.app/ |
 
-### 2. Install Jekyll
+### 2. List of Job Groups in Iraq
 
-If you've never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:
+| Name                             | Languages    | Website | Social Media |
+|----------------------------------|--------------|---------|--------------|
+| Oil Jobs Kurdistan               | AR, EN, KRD  |         | [https://www.linkedin.com/company/oil-jobs-kurdistan](https://www.linkedin.com/company/oil-jobs-kurdistan) <br> [https://t.me/oil_jobs_kurdistan](https://t.me/oil_jobs_kurdistan) |
+| All Kurdistan Jobs               | AR, EN, KRD  |         | [https://t.me/s/allkurdistanjobs](https://t.me/s/allkurdistanjobs) <br> [https://www.facebook.com/groups/729055940573096/](https://www.facebook.com/groups/729055940573096/) |
+| FIND A JOB IN KURDISTAN          | AR, EN, KRD  |         | [https://www.facebook.com/groups/fjkurdistan/](https://www.facebook.com/groups/fjkurdistan/) <br> [https://www.linkedin.com/company/find-a-job-in-kurdistan](https://www.linkedin.com/company/find-a-job-in-kurdistan) |
+| Jobs In Baghdad                  | AR, EN       |         | [https://www.facebook.com/groups/153688084687752/](https://www.facebook.com/groups/153688084687752/) |
+| Basra Jobs وظائف البصرة          | AR, EN       |         | [https://t.me/s/basrajobs](https://t.me/s/basrajobs) |
+| Basrah Vacancies وظائف في البصرة | AR, EN       |         | [https://www.facebook.com/basravacancies/](https://www.facebook.com/basravacancies/) <br> [https://t.me/s/basrahvacancies](https://t.me/s/basrahvacancies) |
+| Jobs In Erbil                    | AR, EN, KRD  |         | [https://www.facebook.com/groups/AlAwsat/](https://www.facebook.com/groups/AlAwsat/) |
+| Iraq Job Vacancies               | AR, EN, KRD  |         | [https://www.linkedin.com/company/iraq-job-vacancies](https://www.linkedin.com/company/iraq-job-vacancies) |
+| All Iraq Jobs                    | AR, EN, KRD  |         | [https://www.linkedin.com/company/find-a-jobs-in-kurdstan-oil-and-gas](https://www.linkedin.com/company/find-a-jobs-in-kurdstan-oil-and-gas) |
+| Citadel Jobs                     | AR, EN, KRD  |         | [https://www.linkedin.com/company/all-kurdstan-jobs](https://www.linkedin.com/company/all-kurdstan-jobs) |
+| iraq1jobs                        | AR, EN       |         | [https://www.linkedin.com/company/iraq-jobs](https://www.linkedin.com/company/iraq-jobs) <br> [https://www.facebook.com/iraq1jobs/](https://www.facebook.com/iraq1jobs/) |
 
-* [Install Jekyll on Mac][mydoc_install_jekyll_on_mac]
-* [Install Jekyll on Windows][mydoc_install_jekyll_on_windows]
+
+
 
 ### 3. Install Bundler
 
