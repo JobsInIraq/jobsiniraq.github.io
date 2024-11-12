@@ -65,15 +65,37 @@ title: Job Portals in Iraq
 
 
 
-### 3. Install Bundler
+### 3. List of Recruitment Agencies (Employment Agencies) Operating in Iraq
 
-In case you haven't installed Bundler, install it:
+| Name                                | Categories                        | Website                                             | Social Media                                                                                                            |
+|-------------------------------------|-----------------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| WRS - Worldwide Recruitment         | Recruitment Agency EN             | [worldwide-rs.com](https://www.worldwide-rs.com/)    | [LinkedIn](https://www.linkedin.com/company/wrs-worldwide-recruitment-solutions/), [Facebook](https://www.facebook.com/worldwide.rs), [Instagram](https://www.instagram.com/worldwide_rs/) |
+| Shull Employment Solutions          | Recruitment Agency EN             | [shullsolutions.com/jobs](https://shullsolutions.com/jobs/) | [LinkedIn](https://www.linkedin.com/company/shull/), [Facebook](https://www.facebook.com/Shull.iq/), [Instagram](https://www.instagram.com/shull.solutions/) |
+| MSELECT                             | Recruitment Agency, Training Courses EN | [mselect.com](https://www.mselect.com/)              | [LinkedIn](https://www.linkedin.com/company/mselectonline), [Facebook](https://www.facebook.com/mselectonline)         |
+| EmployIQ                            | Recruitment Agency, Ar EN, KRD   | [employiq.net](https://www.employiq.net/)            | [LinkedIn](https://www.linkedin.com/company/employ-iraq), [Facebook](https://www.facebook.com/EmployIQ), [Instagram](https://www.instagram.com/employiq/) |
+| Right Jobs                          | Recruitment Agency EN             | [right-jobs.co](https://www.right-jobs.co/)          | [LinkedIn](https://www.linkedin.com/company/right-jobs), [Facebook](https://www.facebook.com/RightJobs.Iq), [Instagram](https://www.instagram.com/right.jobs.co) |
+| Damazrandn                          | Recruitment Agency EN             | -                                                   | [LinkedIn](https://iq.linkedin.com/company/damazrandn)                                                                      |
+| Erbil Manpower Company Limited (emp)| Recruitment Agency EN             | [erbilmanpower.com](https://www.erbilmanpower.com/)  | [LinkedIn](https://www.linkedin.com/company/erbil-manpower), [Facebook](https://www.facebook.com/ErbilManpower/)       |
+| Ultimate Talent                     | Recruitment Agency EN             | [ultimate-talent.com](https://www.ultimate-talent.com/en/?cat=11) | [LinkedIn](https://www.linkedin.com/company/80370630/), [Facebook](https://www.facebook.com/ultimatetalent/)         |
+| Airswift                            | Recruitment Agency EN             | [airswift.com](https://www.airswift.com/)            | -                                                                                                                         |
+| 6 Pence                             | Recruitment Agency EN             | [6-pence.com](https://6-pence.com/)                  | [LinkedIn](https://www.linkedin.com/company/6-pence), [Facebook](https://www.facebook.com/official6pence)               |
+| Intiqa                              | Recruitment Agency EN             | [intiqa.com](https://www.intiqa.com/)                | -                                                                                                                         |
+| NES Fircroft                        | Recruitment Agency EN             | [nesfircroft.com](https://www.nesfircroft.com/)      | -                                                                                                                         |
+| Weatherford                         | Recruitment Agency EN             | [weatherford.com](https://www.weatherford.com/)      | -                                                                                                                         |
+| Baker Hughes Company                | Recruitment Agency EN             | [bakerhughes.com](https://www.bakerhughes.com/)      | -                                                                                                                         |
+| Tetra Tech                          | Recruitment Agency EN             | [tetratech.com](https://www.tetratech.com/)          | -                                                                                                                         |
+| SES-IRAQ | Al Sabah For Employment Services | Recruitment Agency EN | [ses-iraq.com](https://www.ses-iraq.com/)            | [LinkedIn](https://linkedin.com/company/al-sabah-for-employment-services), [Facebook](https://www.facebook.com/sesiraq/), [Instagram](https://www.instagram.com/ses.iraq/) |
+| Work Academy Jobs                   | Recruitment Agency AR EN KRD      | [works-jobsiq.com](https://works-jobsiq.com/)        | [LinkedIn](https://www.linkedin.com/company/works-jobs-iraq/), [Facebook](https://www.facebook.com/people/Works-jobs/100066611326610/), [Instagram](https://www.instagram.com/works_jobs) |
+| Aroma City Group                    | Recruitment Agency EN             | [aromacitygroup.com](https://www.aromacitygroup.com/) | [LinkedIn](https://www.linkedin.com/company/aroma-city-group)                                                               |
+| Tashgheel                           | Recruitment Agency AR             | [careers-page.com/tashgheel](https://www.careers-page.com/tashgheel) | [LinkedIn](https://www.linkedin.com/company/tashgheel/), [Facebook](https://www.facebook.com/Tashgheel.iraq), [Instagram](https://www.instagram.com/tashgheel/) |
+| Master Group                        | Recruitment Agency AR EN          | [masteriraq.com](https://masteriraq.com)             | [LinkedIn](https://linkedin.com/company/mastergroupiraq)                                                                    |
+| Al Majal Energy                     | Recruitment Agency EN             | [almajalenergy.com](https://almajalenergy.com/)      | [LinkedIn](https://www.linkedin.com/company/al-majal-human-resources)                                                       |
+| Job Scope Iraq                       | Recruitment Agency AR EN          | -                                                   | [LinkedIn](https://www.linkedin.com/company/job-scope-iraq)                                                                   |
+| GEG Staffing                        | Recruitment Agency EN KRD         | [gegstaffing.com](https://gegstaffing.com/)          | [LinkedIn](https://www.linkedin.com/company/geg-staffing/), [Facebook](https://www.facebook.com/people/GEG-Staffing/100063923082419/), [Instagram](https://www.instagram.com/geg.staffing/) |
+| Top Notch Consultancy               | Recruitment Agency EN             | [topnotch-consultancy.com](https://topnotch-consultancy.com/) | [LinkedIn](https://www.linkedin.com/company/topnotchconsultancy), [Instagram](https://www.instagram.com/topnotch_consultancy/) |
+| IraqHire                            | Recruitment Agency EN             | [iraqhire.com](https://www.iraqhire.com/)            | [LinkedIn](https://www.linkedin.com/company/iraqhire), [Facebook](https://www.facebook.com/iraqhire), [Instagram](https://www.instagram.com/iraqhire/) |
 
-```
-gem install bundler
-```
 
-You'll want [Bundler](http://bundler.io/) to make sure all the Ruby gems needed work well with your project. Bundler sorts out dependencies and installs missing gems or matches up gems with the right versions based on gem dependencies.
 
 ### 4. Option 1: Build the Theme (*without* the github-pages gem) {#option1}
 
