@@ -28,12 +28,12 @@ title: Job Portals in Iraq
 | NCC Iraq Jobs             | Job Portal Tender                  | ENG      | http://ncciraqjobs.com/                           |                                                     |
 | NGOs Jobs Bids            | Job Portal Tender                  | ENG      | https://ngosjobs-bids.com                          |                                                     |
 | Mihan                     | Job Portal Tender Training GOV     | AR       | https://lvtd.gov.iq/mihan                          | https://www.facebook.com/employment.gov.iq           |
-| پۆرتاڵی کار              | Job Portal GOV KRD ENG GOV          | AR, KRD  | https://kar.molsa.gov.krd/                         | https://www.facebook.com/kaar.dastabar              |
-| Online Job Portal         | Job Portal KRG GOV                 | AR, ENG, KRD | https://www.evtc-krg.org/                          |                                                     |
+| پۆرتاڵی کار              | Job Portal GOV          | AR, KRD  | https://kar.molsa.gov.krd/                         | https://www.facebook.com/kaar.dastabar              |
+| Online Job Portal         | Job Portal  GOV                 | AR, ENG, KRD | https://www.evtc-krg.org/                          |                                                     |
 | Hawa Jobs                 | Job Portal                         | ENG      | https://www.hawa.jobs/                             | https://www.linkedin.com/company/hawa.jobs, https://www.facebook.com/hawa.jobs/ |
-| Rwanga Foras              | Job Portal KRG NGO                 | AR, EN, KRD | https://www.rwangaforas.com/                       | https://www.facebook.com/forasjobs                  |
-| Jobs KRD                  | Job Portal KRG                     | AR, EN, KRD | http://jobs.krd/                                  | https://linkedin.com/company/jobs-krd, https://www.facebook.com/people/Jobskrd/61553740231147/, https://www.instagram.com/jobskrd/ |
-| Job Studio                | Job Portal KRG                     | AR, EN, KRD | https://job.studio/                               | https://www.linkedin.com/company/jobstudioiq, https://www.facebook.com/jobstudioapp, https://www.instagram.com/jobstudio.app |
+| Rwanga Foras              | Job Portal NGO                 | AR, EN, KRD | https://www.rwangaforas.com/                       | https://www.facebook.com/forasjobs                  |
+| Jobs KRD                  | Job Portal                     | AR, EN, KRD | http://jobs.krd/                                  | https://linkedin.com/company/jobs-krd, https://www.facebook.com/people/Jobskrd/61553740231147/, https://www.instagram.com/jobskrd/ |
+| Job Studio                | Job Portal                      | AR, EN, KRD | https://job.studio/                               | https://www.linkedin.com/company/jobstudioiq, https://www.facebook.com/jobstudioapp, https://www.instagram.com/jobstudio.app |
 | KurdistanJob.com          | Job Portal                         | ENG      | https://www.kurdistanjob.com/                      |                                                     |
 | vacanciesiniraq.com       | Job Portal                         | ENG      | https://vacanciesiniraq.com/                       | https://www.linkedin.com/in/vacancies-in-iraq-0b47a6195/, https://www.facebook.com/Vacancies-in-Iraq-100274868078907/ |
 | LinkedIn                  | Job Portal                         | AR, ENG  | https://linkedin.com/                              |                                                     |
@@ -41,10 +41,10 @@ title: Job Portals in Iraq
 | Bayt.com, Inc             | Job Portal                         | AR, ENG  | https://www.bayt.com/en/iraq/                      |                                                     |
 | UNjobs                    | Job Portal                         | ENG      | https://unjobs.org/duty_stations/iraq              |                                                     |
 | Pharma Jobs               | Job Portal                         | ENG      | https://pharmajobs.skpi.krd/                       |                                                     |
-| بەڕێوەبەرایەتی کار:هەولێر | Job Portal GOV KRD                 | KRD      |                                                    | https://www.facebook.com/erbil.labor                |
+| بەڕێوەبەرایەتی کار:هەولێر | Job Portal GOV                 | KRD      |                                                    | https://www.facebook.com/erbil.labor                |
 | Job Helper                | Job Portal                         | AR, EN   | https://job-helper.org/                            | https://www.linkedin.com/company/job-helper-page, https://www.facebook.com/Job.helper11 |
-| Aweza                     | Job Portal KRG                     | AR, EN, KRD | http://www.aweza.co/index.php                      | https://www.facebook.com/Aweza.co/, https://t.me/awezajobs/ |
-| Lezan                     | Job Portal KRG                     | AR, EN, KRD | https://lezan.app/                                 | https://linkedin.com/company/lezan-work, https://www.instagram.com/lezan.app/ |
+| Aweza                     | Job Portal                     | AR, EN, KRD | http://www.aweza.co/index.php                      | https://www.facebook.com/Aweza.co/, https://t.me/awezajobs/ |
+| Lezan                     | Job Portal                      | AR, EN, KRD | https://lezan.app/                                 | https://linkedin.com/company/lezan-work, https://www.instagram.com/lezan.app/ |
 
 ### 2. Install Jekyll
 
