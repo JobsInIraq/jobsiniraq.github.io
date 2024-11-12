@@ -32,9 +32,9 @@ entries:
       url: /mydoc_introduction.html
       output: web, pdf
 
-    - title: Supported features
-      url: /mydoc_supported_features.html
-      output: web, pdf
+    # - title: Supported features
+    #   url: /mydoc_supported_features.html
+    #   output: web, pdf
 
     - title: About the theme author
       url: /mydoc_about.html
