@@ -25,10 +25,10 @@ topnav_dropdowns:
     - title: Recruitment
       folderitems:
         - title: Recruitment SOP
-          url: /mydoc_Recruitment.html
+         # url: /mydoc_Recruitment.html
         - title: Recruitment Platform
-          url: /p1_landing_page.html
+         # url: /p1_landing_page.html
         - title: Credentials
-          url: /p2_landing_page.html
+         # url: /p2_landing_page.html
 
 # Copyright 2024 Jobs in Iraq
