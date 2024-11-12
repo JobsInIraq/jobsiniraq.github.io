@@ -238,8 +238,8 @@ The sidebar data file uses a specific YAML syntax that you must follow. Follow t
 ```yaml
 entries:
 - title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
+  product: Jobs in Iraq
+  version: 0.1 beta
   folders:
   - title: Overview
     output: web, pdf
