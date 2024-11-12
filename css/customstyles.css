@@ -113,9 +113,27 @@ margin-top: -40px
 .breadcrumb li {
     color: gray;
 }
+/* The original style for the table*/
 
+/* table {
+    background-color: transparent; */
 table {
     background-color: transparent;
+    width: 100%; /* Ensures table expands to fit the parent container */
+}
+
+table td, table th {
+    word-wrap: break-word;        /* Breaks long words that don't fit */
+    white-space: normal;          /* Ensures text wraps naturally */
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+table td {
+    hyphens: auto;                /* Allows for hyphenation if applicable */
+}
+
 }
 caption {
     padding-top: 8px;
