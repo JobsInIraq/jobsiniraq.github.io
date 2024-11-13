@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Jobs in Iraq
-  version: 0.1 beta
+  #product: Jobs in Iraq
+  #version: 0.1 beta
   folders:
 
   - title:

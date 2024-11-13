@@ -1,7 +1,7 @@
 ---
 title: "Jobs In Iraq"
 keywords: jobs in iraq Job portal recruitment in iraq jobs groups in iraq Baghdad Erbil Basrah Mosul
-tags: [getting_started]
+#tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 - Comprehensive List.
@@ -110,8 +110,4 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
 | [Lionbridge](https://www.lionbridge.com/)                              | Translation and interpretation services  | Worldwide    | https://www.lionbridge.com/     |
 
 
-
-
-
-
-{% include links.html %}
+<!-- {% include links.html %} -->
