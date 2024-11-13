@@ -23,22 +23,22 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Get started
+    - title: List of Job Portals in Iraq
       url: /index.html#list-of-job-portals-in-iraq
       output: web, pdf
       type: homepage
 
-    # - title: Introduction
-    #   url: /mydoc_introduction.html
-    #   output: web, pdf
+    - title: List of Job Groups in Iraq
+      url: /index.html#list-of-job-groups-in-iraq
+      output: web, pdf
 
-    # - title: Supported features
-    #   url: /mydoc_supported_features.html
-    #   output: web, pdf
+    - title: List of Recruitment Agencies (Employment Agencies) Operating in Iraq
+      url: /index.html#list-of-recruitment-agencies-employment-agencies-operating-in-iraq
+      output: web, pdf
 
-  #   - title: About the theme author
-  #     url: /mydoc_about.html
-  #     output: web, pdf
+    - title: List of Remote-Friendly (Home-based) Companies in Iraq
+      url: /index.html#list-of-remote-friendly-home-based-companies-in-iraq
+      output: web, pdf
 
   #   - title: Support
   #     url: /mydoc_support.html
