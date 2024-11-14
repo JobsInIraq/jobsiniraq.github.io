@@ -76,6 +76,7 @@ defaults:
       search: true
       sidebar: home_sidebar
       topnav: topnav
+      lang: "en-gb"
   -
     scope:
       path: ""
@@ -84,6 +85,7 @@ defaults:
       layout: "page"
       search: true
       tooltip: true
+      lang: "en-gb"
 
   -
     scope:
@@ -96,6 +98,7 @@ defaults:
       search: true
       sidebar: home_sidebar
       topnav: topnav
+      lang: "en-gb"
 
 # these are defaults used for the frontmatter for these file types
 
