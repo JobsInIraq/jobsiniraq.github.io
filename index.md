@@ -6,8 +6,7 @@ sidebar: mydoc_sidebar
 permalink: index.html
 summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 - Comprehensive List.
 ---
-
-{% include note.html content=" Stay Secure While Job Hunting - The National Cybersecurity Alliance" %}
+{% include note.html content="⚠️ <a href='https://staysafeonline.org/resources/job-search-security/'>Stay Secure While Job Hunting</a> - The National Cybersecurity Alliance ⚠️" %}
 
 
 ## 1. List of Job Portals in Iraq
