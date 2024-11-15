@@ -138,4 +138,21 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
 | **Amal Organization for Relief and Development** | NGO, Onsite                    | [https://amal-iraq.org/volunteer/](https://amal-iraq.org/volunteer/)                                                 |
 | **Youth Speak**                               | NGO, Onsite, Online-Remote             | [https://www.youthspeakngo.org/](https://www.youthspeakngo.org/)                                                     |
 
+
+
+## 7. List of SaaS Platforms for HCM Recruitment/HRIS/ATS in Iraq
+
+
+| **Name**                               | **Link**                                                                 |
+|----------------------------------------|--------------------------------------------------------------------------|
+| **SAP**                                | [https://www.sap.com/products/hcm/what-is-human-capital-management.html/](https://www.sap.com/products/hcm/what-is-human-capital-management.html/) |
+| **Oracle Fusion Application - HCM**    | [https://www.oracle.com/human-capital-management/](https://www.oracle.com/human-capital-management/) |
+| **Workday, Inc**                       | [https://www.workday.com/en-us/products/human-capital-management/overview.html/](https://www.workday.com/en-us/products/human-capital-management/overview.html/) |
+| **Odoo**                               | [https://www.odoo.com/app/recruitment/](https://www.odoo.com/app/recruitment/) |
+| **Bamboo HR LLC**                      | [https://www.bamboohr.com/hr-software/applicant-tracking/](https://www.bamboohr.com/hr-software/applicant-tracking/) |
+| **Zoho Recruit**                       | [https://www.zoho.com/recruit/](https://www.zoho.com/recruit/) |
+
+
 <!-- {% include links.html %} -->
+
+
