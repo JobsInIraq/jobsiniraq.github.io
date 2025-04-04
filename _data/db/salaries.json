@@ -1,0 +1,2416 @@
+{
+  "jobs": [
+    {
+      "jobID": "31b31239-10c1-4827-83e6-4bd6e3028a1f",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Software Engineer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "fb8f16a6-745f-4acc-a44b-1972e9c5ad30",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Network Administrator",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "721f5297-f173-4551-9f0f-3d0dcc0fc69e",
+      "created_at": "2025-03-30",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "HR Manager",
+          "category": "Human Resources",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "dff574e8-ddf5-4794-a840-b02c390e12fa",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Civil Engineer",
+          "category": "Engineering",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "fcfcb868-a487-454d-9047-9539de3ba93c",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Project Manager",
+          "category": "Management",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Sulaymaniyah"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "4ddd021e-1ebc-4191-a64b-4e8eabea4113",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Accountant",
+          "category": "Finance",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 900000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "6e0d8b55-8dc6-47d3-99b1-e8bb132329f0",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Marketing Manager",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "c317fbd1-c392-451e-947d-e94812442857",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Electrical Engineer",
+          "category": "Engineering",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1300000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Kirkuk"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "5f5013f6-669e-4ad4-b82d-17ae32b6a7d0",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Sales Executive",
+          "category": "Sales",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 700000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "30b322b2-98db-45c9-80bf-0e0575fdfae5",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Business Analyst",
+          "category": "Business",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "16d633b8-80d9-4502-9bf1-108f1b53a8f5",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Customer Support Representative",
+          "category": "Customer Service",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 600000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "137ba07b-98fd-4adb-9f39-0af60172469a",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "QA Tester",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Sulaymaniyah"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "1e529853-72a2-401c-be10-9fe3162eadf1",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Graphic Designer",
+          "category": "Design",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 900000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "e481f084-5198-4d53-89c3-7ae53fd21773",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Software Developer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "300a8c4f-ed8c-4953-a830-ba8f6d88e362",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Database Administrator",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "cf90e581-cc55-43ec-aec8-600b680bba3d",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Sales Manager",
+          "category": "Sales",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1700000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "7c60a2e5-74c5-4ba8-9aa2-8cc66aab27f9",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Content Writer",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 700000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "db52ce23-ea9b-4619-bb38-0bb42ccbea44",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Event Manager",
+          "category": "Events",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "f448ef76-c3bc-4812-8c29-9a3795d0c31a",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Legal Advisor",
+          "category": "Legal",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "d95412b8-f68e-41b1-ad8f-3359eb8e8517",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Construction Project Manager",
+          "category": "Engineering",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Kirkuk"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "a4dcb90b-016e-49d3-b128-0fda43d00cba",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Procurement Manager",
+          "category": "Procurement",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "8940346f-1400-4027-a973-e61e2728046e",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Supply Chain Manager",
+          "category": "Logistics",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "15833142-d489-4081-9167-548056c04b53",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Marketing Specialist",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "274f3d97-094e-4a24-a38b-342697ec1d35",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Research Scientist",
+          "category": "Research",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "9d5422fb-19ea-4cbd-8de5-a18c9ffcef48",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Tax Consultant",
+          "category": "Finance",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "658deeeb-29ed-4a75-bc67-c4d1f5c39f50",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Graphic Designer",
+          "category": "Design",
+          "position": "Part-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 400000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "d65ca6c0-0b7d-4de8-8b7a-a1bdfd7f4826",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Web Developer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "38629054-9499-4258-ab1b-df12bec8c367",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Human Resources Assistant",
+          "category": "HR",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 750000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Kirkuk"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "25cfacc7-0964-4a6d-8066-14cad82477a8",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Digital Marketing Manager",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1700000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Sulaymaniyah"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "1a7a22ba-f994-4aa8-924f-559d8d999ee0",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Java Developer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "7a7f3f07-09ea-4790-831b-812cfc7b3df6",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Chief Executive Officer (CEO)",
+          "category": "Management",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 5000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "f1996e94-74fc-46b5-892d-77bd58c12b18",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Financial Analyst",
+          "category": "Finance",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "362f3e97-395d-4a84-93e9-4609dea7956f",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Health and Safety Officer",
+          "category": "Health & Safety",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "aa31e6da-7623-43a5-9468-ef1015a7f803",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Network Engineer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1700000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "bf6585a2-4b81-4c3a-8020-24f5523aec7f",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Software Engineer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "9aee302d-50fb-49b9-8d92-9eea4da0f5d1",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "HR Manager",
+          "category": "HR",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "92a0d90c-5f0a-4ee1-be46-d8e30bd50d41",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Electrical Engineer",
+          "category": "Engineering",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "ab61c127-3dcd-460d-842e-406990d408a6",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Civil Engineer",
+          "category": "Engineering",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1600000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "6865f049-4053-459f-982c-d3ff178c0e5f",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Public Relations Manager",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "dd5c016d-13e4-4682-ad85-5f9a3e447af7",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "System Administrator",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Sulaymaniyah"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "02fc7ee7-9d63-4fe1-9069-c1fafc299bec",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Mobile App Developer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "063e8119-fa8f-4516-b3d9-379748419ad0",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Product Manager",
+          "category": "Management",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 3000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "266b146c-c7d9-4c86-9827-fbe84c301875",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Marketing Manager",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "701abfb5-178e-4938-80c1-ab5e70b935a7",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Operations Manager",
+          "category": "Operations",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Kirkuk"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "dbe41215-73b5-47d5-ab36-04d00e35ae77",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Quality Assurance Manager",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "6064246a-369c-4238-8f1b-802c3f37473c",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "IT Support Technician",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "f4fec9d9-6fed-4640-a873-2b374a582809",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Finance Manager",
+          "category": "Finance",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "f520f226-afa4-4083-a141-67b6846efb8e",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Legal Counsel",
+          "category": "Legal",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 3000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "5043197d-13d1-49f3-9eaa-424c101124cd",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Graphic Design Manager",
+          "category": "Design",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "b7611c82-b027-41cf-8994-664b6b4a771d",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Operations Coordinator",
+          "category": "Operations",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Sulaymaniyah"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "d9086a3c-3afd-41fd-9e29-3129a605998c",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Data Analyst",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1700000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "06ed1a60-25e5-42c1-82db-e132785397f1",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Architect",
+          "category": "Architecture",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "a2c4b4a6-b212-493e-95e4-0af22023ab5b",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Marketing Director",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 3500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "458ab5db-fd10-4470-8634-a2720085f1bd",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Research and Development Manager",
+          "category": "Research",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Kirkuk"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "5a40ea4c-3643-475a-a4a5-af693685080a",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Construction Supervisor",
+          "category": "Construction",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "beda6a80-0ebd-4d83-a23c-333057944616",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Financial Controller",
+          "category": "Finance",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 3000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "394b7908-7a67-4d7f-b14e-640ebcea0506",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Social Media Manager",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1300000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Sulaymaniyah"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "b2ccc44f-e74d-4eeb-92ea-c6cf06737e0d",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Procurement Officer",
+          "category": "Procurement",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1700000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "a6698bd1-d052-40b0-8d85-386a77c0f846",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "IT Project Manager",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "46fe43d5-8993-4904-830c-5f2dccb9274c",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Data Scientist",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 3000000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "b4a8b47c-6d68-45c7-90ae-b9c635fb4e4c",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Media Planner",
+          "category": "Marketing",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Kirkuk"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "f7147cb7-5429-45cf-b339-55aec7929439",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "UX/UI Designer",
+          "category": "Design",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1600000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "bb5dc45d-5d93-40fc-af13-82a916db92b7",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Front-End Developer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "7780f14c-388b-4b38-867e-d35dc208a3e4",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Financial Planner",
+          "category": "Finance",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2200000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Basra"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "b111b5f6-4eb2-4ba5-b690-fc639539c960",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Customer Service Manager",
+          "category": "Customer Service",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 1500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "1bd1c8c9-f533-41d7-801a-5b8112e6e40c",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Senior Software Developer",
+          "category": "IT",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2500000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Baghdad"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    },
+    {
+      "jobID": "b95935ea-3e26-4239-99d4-d03a4050655f",
+      "created_at": "2025-03-30T12:00:00Z",
+      "updated_at": "2025-03-31",
+      "job": {
+        "jobDetails": {
+          "jobTitle": "Business Development Manager",
+          "category": "Business",
+          "position": "Full-Time"
+        },
+        "tags": [],
+        "salary": {
+          "iqd": 2800000,
+          "usd": 0
+        },
+        "isRemote": false,
+        "location": {
+          "country": "Iraq",
+          "city": "Erbil"
+        },
+        "sources": {
+          "socialMedia": {
+            "linkedin": "",
+            "facebook": "",
+            "instagram": "",
+            "telegram": "",
+            "tiktok": ""
+          },
+          "jobPortal": {
+            "site": "",
+            "link": ""
+          },
+          "website": ""
+        }
+      }
+    }
+  ]
+}

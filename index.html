@@ -1,0 +1,259 @@
+---
+layout: home
+author_profile: true
+title: "Directory of Job Platforms in Iraq"
+keywords: jobs in iraq Job portal recruitment in iraq jobs groups in iraq Baghdad Erbil Basrah Mosul
+#tags: [getting_started]
+sidebar: mydoc_sidebar
+permalink: index.html
+summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 - Comprehensive List.
+---
+{% include note.html content="⚠️ <a href='https://staysafeonline.org/resources/job-search-security/'>Stay Secure While Job Hunting</a> - The National Cybersecurity Alliance ⚠️" %}
+
+
+<div class="center-text">
+<h2>List of Job Portals in Iraq</h2>
+</div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Language</th>
+      <th>Website</th>
+      <th>Social Media</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign EntityDetails = site.data.db.iqPortalEntity.EntityDetails %}
+    {% for portal in EntityDetails %}
+    <tr>
+      <td><a href="{{ portal.EntityWebsite }}" target="_blank" rel="noopener noreferrer">{{ portal.EntityName }}</a></td>
+      <td>{{ portal.EntityCategory }}</td>
+      <td>{{ portal.EntityLanguage }}</td>
+      <td><a href="{{ portal.EntityWebsite }}" target="_blank" rel="noopener noreferrer">{{ portal.EntityWebsite }}</a></td>
+      <td>
+        {% if portal.SocialMediaURL %}
+          {% for link in portal.SocialMediaURL %}
+            <a href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ link }}</a><br>
+          {% endfor %}
+        {% else %}
+          N/A
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="center-text">
+<h2>List of Group Chats for Jobs in Iraq</h2>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Website</th>
+      <th>Social Media</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for group in site.data.db.iqGroupEntity.EntityDetails %}
+      <tr>
+        <td>{{ group.EntityName }}</td>
+        <td>
+          {% if group.EntityWebsite != "" %}
+            <a href="{{ group.EntityWebsite }}" target="_blank">Website</a>
+          {% else %}
+            No website
+          {% endif %}
+        </td>
+        <td>
+          {% if group.SocialMediaURL.size > 0 %}
+            {% for social in group.SocialMediaURL %}
+              <a href="{{ social }}" target="_blank">{{ social }}</a><br>
+            {% endfor %}
+          {% else %}
+            No social media
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="center-text">
+<h2>List of Recruitment Agencies (Employment Agencies) Operating in Iraq</h2>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Website</th>
+      <th>Social Media</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for agency in site.data.db.iqEmploymentEntity.Entities %}
+      <tr>
+        <td>{{ agency.EntityName }}</td>
+        <td>{{ agency.EntityCategory | join: ', ' }}</td>
+        <td>
+          {% if agency.EntityWebsite != "" %}
+            <a href="{{ agency.EntityWebsite }}" target="_blank">{{ agency.EntityWebsite }}</a>
+          {% else %}
+            No website
+          {% endif %}
+        </td>
+        <td>
+           {% if agency.SocialMediaURL %}
+             {% assign links = agency.SocialMediaURL | split: ', ' %}
+             {% for link in links %}
+              <a href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ link }}</a><br>
+            {% endfor %}
+          {% else %}
+            No social media
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="center-text">
+<h2>List of Companies in Iraq Offering Remote (Home-Based) Work Opportunities</h2>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign EntityDetails = site.data.db.iqEntity.Entities %}
+    {% for iqEntityDetails in EntityDetails %}
+      {% assign categories = iqEntityDetails.category | join: ", " | strip %}
+      {% if categories contains "Online-Remote" %}
+        <tr>
+          <td>{{ iqEntityDetails.name }}</td>
+          <td>
+            <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" target="_blank" rel="noopener noreferrer">
+              {{ iqEntityDetails.website }}
+            </a>
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="center-text">
+<h2>List of Organizations Providing Internship Programs in Iraq </h2>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign EntityDetails = site.data.db.iqEntity.Entities %}
+    {% for iqEntityDetails in EntityDetails %}
+      <!-- Use 'strip' to remove extra spaces -->
+      {% if iqEntityDetails.jobType contains "Internship" %}
+        <tr>
+          <td>
+             <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" target="_blank" rel="noopener noreferrer">
+              {{ iqEntityDetails.name }}
+            </a>
+          </td>
+          <td>
+            <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" target="_blank" rel="noopener noreferrer">
+              {{ iqEntityDetails.website }}
+            </a>
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+
+<div class="center-text">
+<h2>List of Companies with Volunteer Opportunities in Iraq </h2>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Link to apply</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign EntityDetails = site.data.db.iqEntity.Entities %}
+    {% for iqEntityDetails in EntityDetails %}
+      {% assign jobType = iqEntityDetails.jobType | join: ", " | strip %}
+      {% if jobType contains "Volunteer" %}
+        <tr>
+          <td>
+              {{ iqEntityDetails.name }}
+          </td>
+          <td>
+             
+          {% if iqEntityDetails.applyLink != "" %}
+            <a href="{{ iqEntityDetails.applyLink }}" target="_blank">{{ iqEntityDetails.applyLink }}</a>
+          {% else %}
+            No website
+          {% endif %}
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<div class="center-text">
+<h2>List of SaaS Platforms for HCM Recruitment/HRIS/ATS in Iraq </h2>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign EntityDetails = site.data.db.iqEntity.Entities %}
+    {% for iqEntityDetails in EntityDetails %}
+      <!--  Filtering HCM from services key  -->
+      {% if iqEntityDetails.services == "HCM" %}
+       <tr>
+          <td>
+              {{ iqEntityDetails.name }}
+          </td>
+          <td>
+             
+          {% if iqEntityDetails.website != "" %}
+            <a href="{{ iqEntityDetails.website }}" target="_blank">{{ iqEntityDetails.website }}</a>
+          {% else %}
+            No website
+          {% endif %}
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- {% include links.html %} -->

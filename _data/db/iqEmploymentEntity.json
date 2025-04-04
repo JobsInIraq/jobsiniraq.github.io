@@ -1,0 +1,184 @@
+{
+  "Entities": [
+    {
+      "EntityName": "WRS - Worldwide Recruitment",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.worldwide-rs.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/wrs-worldwide-recruitment-solutions/, https://www.facebook.com/worldwide.rs, https://www.instagram.com/worldwide_rs/"
+    },
+    {
+      "EntityName": "Shull Employment Solutions",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://shullsolutions.com/jobs/",
+      "SocialMediaURL": "https://www.linkedin.com/company/shull/, https://www.facebook.com/Shull.iq/, https://www.instagram.com/shull.solutions/"
+    },
+    {
+      "EntityName": "MSELECT",
+      "EntityCategory": ["Recruitment Agency", "Training Courses"],
+      "EntityWebsite": "https://www.mselect.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/mselectonline, https://www.facebook.com/mselectonline"
+    },
+    {
+      "EntityName": "EmployIQ",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.employiq.net/",
+      "SocialMediaURL": "https://www.linkedin.com/company/employ-iraq, https://www.facebook.com/EmployIQ, https://www.instagram.com/employiq/"
+    },
+    {
+      "EntityName": "Right Jobs",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.right-jobs.co/",
+      "SocialMediaURL": "https://www.linkedin.com/company/right-jobs, https://www.facebook.com/RightJobs.Iq, https://www.instagram.com/right.jobs.co"
+    },
+    {
+      "EntityName": "Damazrandn",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": null,
+      "SocialMediaURL": "https://iq.linkedin.com/company/damazrandn"
+    },
+    {
+      "EntityName": "Erbil Manpower Company Limited (emp)",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.erbilmanpower.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/erbil-manpower, https://www.facebook.com/ErbilManpower/"
+    },
+    {
+      "EntityName": "Ultimate Talent",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.ultimate-talent.com/en/?cat=11",
+      "SocialMediaURL": "https://www.linkedin.com/company/80370630/, https://www.facebook.com/ultimatetalent/"
+    },
+    {
+      "EntityName": "Airswift",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.airswift.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "6 Pence",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://6-pence.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/6-pence, https://www.facebook.com/official6pence"
+    },
+    {
+      "EntityName": "Intiqa",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.intiqa.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "NES Fircroft",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.nesfircroft.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "Weatherford",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.weatherford.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "Baker Hughes Company",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.bakerhughes.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "Tetra Tech",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.tetratech.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "SES-IRAQ (Al Sabah For Employment Services)",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.ses-iraq.com/",
+      "SocialMediaURL": "https://linkedin.com/company/al-sabah-for-employment-services, https://www.facebook.com/sesiraq/, https://www.instagram.com/ses.iraq/"
+    },
+    {
+      "EntityName": "Work Academy Jobs",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://works-jobsiq.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/works-jobs-iraq/, https://www.facebook.com/people/Works-jobs/100066611326610/, https://www.instagram.com/works_jobs"
+    },
+    {
+      "EntityName": "Aroma City Group",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.aromacitygroup.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/aroma-city-group"
+    },
+    {
+      "EntityName": "Tashgheel",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.careers-page.com/tashgheel",
+      "SocialMediaURL": "https://www.linkedin.com/company/tashgheel/, https://www.facebook.com/Tashgheel.iraq, https://www.instagram.com/tashgheel/"
+    },
+    {
+      "EntityName": "Master Group",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://masteriraq.com",
+      "SocialMediaURL": "https://linkedin.com/company/mastergroupiraq"
+    },
+    {
+      "EntityName": "Al Majal Energy",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://almajalenergy.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/al-majal-human-resources"
+    },
+    {
+      "EntityName": "Job Scope Iraq",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": null,
+      "SocialMediaURL": "https://www.linkedin.com/company/job-scope-iraq"
+    },
+    {
+      "EntityName": "GEG Staffing",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://gegstaffing.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/geg-staffing/, https://www.facebook.com/people/GEG-Staffing/100063923082419/, https://www.instagram.com/geg.staffing/"
+    },
+    {
+      "EntityName": "Top Notch Consultancy",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://topnotch-consultancy.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/topnotchconsultancy, https://www.instagram.com/topnotch_consultancy/"
+    },
+    {
+      "EntityName": "IraqHire",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://www.iraqhire.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/iraqhire, https://www.facebook.com/iraqhire, https://www.instagram.com/iraqhire/"
+    },
+    {
+      "EntityName": "Lagash Company",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://lagash.com/",
+      "SocialMediaURL": "https://www.facebook.com/Lagash-Company-61559895751064/, https://www.facebook.com/Lagash-Company-61559895751064/"
+    },
+    {
+      "EntityName": "AKKAD GATE",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": null,
+      "SocialMediaURL": "https://www.facebook.com/boabetakad3, https://www.instagram.com/boabetakad3/"
+    },
+    {
+      "EntityName": "Driven Recruiting",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": null,
+      "SocialMediaURL": "https://www.linkedin.com/company/drivenrecruiting/"
+    },
+    {
+      "EntityName": "TiBi Talent",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://tibitalent.com/",
+      "SocialMediaURL": "https://www.linkedin.com/company/tibi-talent"
+    },
+    {
+      "EntityName": "The AT Group",
+      "EntityCategory": ["Recruitment Agency"],
+      "EntityWebsite": "https://atgroup.iq/",
+      "SocialMediaURL": "https://www.linkedin.com/company/drivenrecruiting/"
+    }
+  ]
+}
