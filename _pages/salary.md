@@ -5,6 +5,7 @@ permalink: /salary/
 searchable: true  
 ---
 
+# Salary Information
 
 <p>Below is the list of average salaries in Iraq:</p>
 <table>
