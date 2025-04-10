@@ -8,6 +8,8 @@
 <!-- {% include seo.html %}-->
 {% seo %}
 
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description }}">
 
 {% unless site.atom_feed.hide %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
@@ -22,6 +24,8 @@
     window.enable_copy_code_button = true;
   {%- endif %}
 </script>
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
