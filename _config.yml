@@ -9,14 +9,14 @@
 
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Enable dark mode by default
 dark_mode: true
 
 # Ensure dark mode is applied to the body tag on page load
-body:
-  class: "dark"
+#body:
+ # class: "dark"
 
 # Site Settings
 locale                   : "en-US"
@@ -27,7 +27,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Jobs in Iraq"
 description              : "JobsIn - Directory of Job Platforms in Iraq"
 url                      : https://jobsiniraq.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  :  # the subpath of your site, e.g. "/blog"
 repository               : https://github.com/JobsInIraq/jobsiniraq.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : /assets/images/og-image-1200x630.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/logo-small.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -104,9 +104,10 @@ og_image                 : /assets/images/og-image-1200x630.png # Open Graph/Twi
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Directory of Job Platforms # Person or Organization (defaults to Person)
+  name                   : JobsIn # If the user or organization name differs from the site's name
+  links                  : 
+                           - https://github.com/JobsInIraq # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -155,7 +156,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/JobsInIraq"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -233,7 +234,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Baghdad # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
