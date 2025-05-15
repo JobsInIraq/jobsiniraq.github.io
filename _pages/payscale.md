@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Salary Information
-permalink: /salary/
+title: Payscale Information in Iraq
+permalink: /payscale/
 searchable: true  
 ---
 
