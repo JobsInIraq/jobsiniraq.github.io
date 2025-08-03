@@ -146,6 +146,13 @@
         "EntityLanguage": "العربية, English, کوردی",
         "EntityWebsite": "https://eshjob.com/",
         "SocialMediaURL": "https://www.facebook.com/EshJobOfficial/"
+      },
+      {
+        "EntityName": "Taeen",
+        "EntityCategory": "Job Portal",
+        "EntityLanguage": "العربية, English",
+        "EntityWebsite": "https://taeen.iq/",
+        "SocialMediaURL": "https://www.facebook.com/taeen.iq, https://www.instagram.com/taeen.iq"
       }
     ]
   }
