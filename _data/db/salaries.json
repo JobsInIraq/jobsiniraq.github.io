@@ -2447,6 +2447,56 @@
       "website": ""
     }
   }
+},
+    {
+  "jobID": "d3b2a82a-8c23-4c1e-9b4c-12ab34cd5678",
+  "created_at": "2025-09-02T12:00:00Z",
+  "updated_at": "2025-09-02",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Contract Logistics Officer",
+      "category": "Logistics",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Logistics",
+      "Warehousing",
+      "Erbil"
+    ],
+    "salary": {
+      "iqd": 1500000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/posts/iraq-and-krg-job-opportunities_erbiljobs-erbil-contract-activity-7367803330040971265-PNue?utm_source=share&utm_medium=member_desktop&rcm=ACoAADBtYbwBGb8x1lLa1kRIS9m5B5ND_gLF2cA",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "mailto:Operations@nasbaghdad.com"
+    },
+    "extraDetails": {
+      "workingDays": "Sunday to Thursday",
+      "workingHours": "9:00 AM – 5:00 PM",
+      "mainTasks": [
+        "Support warehouse operations & projects",
+        "Contribute to future CL projects in Erbil & Baghdad",
+        "Supervise new projects to ensure quality & compliance",
+        "Provide continuous support & follow-up"
+      ]
+    }
+  }
 }
   ]
 }
