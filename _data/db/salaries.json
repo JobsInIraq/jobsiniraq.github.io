@@ -2564,7 +2564,60 @@
       ]
     }
   }
+},
+    {
+  "jobID": "c9b58c72-3f4d-4e0a-b9c2-87b4c3c6f214",
+  "created_at": "2025-09-02T12:00:00Z",
+  "updated_at": "2025-09-02",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Account Manager",
+      "category": "Marketing",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Client Management",
+      "Project Management",
+      "Strategic Support",
+      "Financial Follow-up",
+      "Workshops",
+      "Training"
+    ],
+    "salary": {
+      "iqd": "2000000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad - Al-Harthiya"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/posts/iraq-and-krg-job-opportunities_account-manager-masterminds-activity-7366756433272422400-ejbt?utm_source=share&utm_medium=member_desktop&rcm=ACoAADBtYbwBGb8x1lLa1kRIS9m5B5ND_gLF2cA",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "MasterMinds",
+        "link": "https://mastermindsiraq.com/jobs/detail/account-manager-329"
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "company": "Masterminds (Marketing Company, 20+ years in Middle East)",
+      "education": "Not specified",
+      "experience": "Minimum 2 years",
+      "responsibilities": [
+        "إدارة العملاء والمشاريع",
+        "تقديم الدعم الاستراتيجي",
+        "المتابعة المالية",
+        "المشاركة في ورش العمل والتدريب المستمر"
+      ]
+    }
+  }
 }
-
   ]
 }
