@@ -15,6 +15,7 @@ searchable: true
       <th>Category</th>
       <th>Position</th>
       <th>Salary (IQD)</th>
+       <th>Salary (USD)</th>
       <th>Location</th>
       <th>Last Updated</th>
     </tr>
@@ -40,3 +41,4 @@ searchable: true
 <!-- Include the JavaScript file -->
 
 <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+
