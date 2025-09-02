@@ -2743,7 +2743,55 @@
       "application": "Send your CV to CyberKingV@gmail.com and mention Accounting Officer in your email"
     }
   }
+},
+    {
+  "jobID": "e72d4f99-6a8f-4f2d-8f6e-2d3a4a567c9e",
+  "created_at": "2025-09-02T12:00:00Z",
+  "updated_at": "2025-09-02",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Cyber Security Engineer",
+      "category": "IT & Security",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Cybersecurity",
+      "Information Security",
+      "IT",
+      "Baghdad",
+      "Engineer"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1400"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "Masterminds Iraq",
+        "link": "https://mastermindsiraq.com/jobs/detail/cyber-security-engineer-98"
+      },
+      "website": "https://mastermindsiraq.com/jobs/detail/cyber-security-engineer-98"
+    },
+    "extraDetails": {
+      "workingDays": "Sunday to Thursday",
+      "workingHours": "8:30 AM – 4:00 PM",
+      "application": "Apply via https://mastermindsiraq.com/jobs/detail/cyber-security-engineer-98"
+    }
+  }
 }
+
 
   ]
 }
