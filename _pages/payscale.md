@@ -28,6 +28,7 @@ searchable: true
         <td>{{ job.job.jobDetails.category }}</td>  <!-- Job Category -->
         <td>{{ job.job.jobDetails.position }}</td>  <!-- Job Position -->
         <td class="salary" data-salary="{{ job.job.salary.iqd }}">{{ job.job.salary.iqd }}</td>  <!-- Salary in IQD -->
+        <td class="salary" data-salary="{{ job.job.salary.usd }}">{{ job.job.salary.usd }}</td>  <!-- Salary in USD -->
         <td>{{ job.job.location.city }}</td>  <!-- Job Location -->
         <td>{{ job.updated_at }}</td> <!-- timestamps -->
       </tr>
@@ -37,4 +38,5 @@ searchable: true
 
 
 <!-- Include the JavaScript file -->
+
 <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
