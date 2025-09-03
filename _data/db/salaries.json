@@ -2790,6 +2790,67 @@
       "application": "Apply via https://mastermindsiraq.com/jobs/detail/cyber-security-engineer-98"
     }
   }
+},
+    {
+  "jobID": "5f19c821-9c6d-4b3a-a5ce-2f3b28d62b97",
+  "created_at": "2025-09-02T12:00:00Z",
+  "updated_at": "2025-09-02",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Senior Accountant",
+      "category": "Finance",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Accounting",
+      "Finance",
+      "Bookkeeping",
+      "Tax Compliance",
+      "Financial Reporting"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1300"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "sarinaz.co"
+    },
+    "extraDetails": {
+      "company": "Leading pharmaceutical group",
+      "rolePurpose": "Support day-to-day finance operations, maintain accurate accounting records, and ensure compliance with tax laws and reporting standards in Iraq and the Kurdistan Region.",
+      "requirements": [
+        "Bachelor’s degree in Accounting (mandatory)",
+        "Kurdish nationality; fluency in Kurdish & Arabic (English is a plus)",
+        "3+ years of experience in accounting, bookkeeping, and financial reporting",
+        "Strong knowledge of local tax laws and accounting standards",
+        "High attention to detail, organization, and problem-solving",
+        "Ability to work under pressure and meet deadlines",
+        "Male candidates only (role-specific requirement)"
+      ],
+      "benefits": [
+        "$1,000 – $1,300 USD / month (competitive package based on experience)",
+        "Opportunities for growth & career development",
+        "Supportive professional working environment"
+      ],
+      "application": "Send your CV to careers@sarinaz.co with subject: Senior Accountant"
+    }
+  }
 }
 
 
