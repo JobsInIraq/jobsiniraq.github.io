@@ -2996,7 +2996,210 @@
       "application": "Send CV to Jobs@ultimate-talent.com with subject line: UT-VA-2563, Social Media Specialist - Erbil"
     }
   }
+},
+    {
+  "jobID": "3e6a1c27-6c1d-48b2-b0a1-8e5f73a9234f",
+  "created_at": "2025-09-05T12:00:00Z",
+  "updated_at": "2025-09-05",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Advisor",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1000"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "ultimate-talent.com"
+    },
+    "extraDetails": {
+      "experience": "1–2 Years",
+      "languages": "Arabic (English is a plus)",
+      "closingDate": "2025-09-20",
+      "application": "Send CV to Jobs@ultimate-talent.com with subject line: UT-VA-2559, Sales Advisor - Baghdad"
+    }
+  }
+},
+    {
+  "jobID": "c8d7a39f-5a12-4a65-bc71-79f6c83b482e",
+  "created_at": "2025-09-05T12:00:00Z",
+  "updated_at": "2025-09-05",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Graphic Designer",
+      "category": "Design",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Graphic Design",
+      "Digital Design",
+      "Creative"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1400"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "ultimate-talent.com"
+    },
+    "extraDetails": {
+      "experience": "3 Years",
+      "languages": "Kurdish or Arabic & English (must)",
+      "closingDate": "2025-09-20",
+      "application": "Send CV to Jobs@ultimate-talent.com with subject line: UT-VA-2561, Graphic Designer - Erbil"
+    }
+  }
+},
+    {
+  "jobID": "fa9147b0-1f3a-4a3b-94a9-21d067bb02c8",
+  "created_at": "2025-09-05T12:00:00Z",
+  "updated_at": "2025-09-05",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Agent",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Agent"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "800"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "ultimate-talent.com"
+    },
+    "extraDetails": {
+      "experience": "1–3 Years",
+      "languages": "Kurdish and Arabic (English is a plus)",
+      "closingDate": "2025-09-10",
+      "application": "Send CV to Jobs@ultimate-talent.com with subject line: UT-VA-2558, Sales Agent - Erbil"
+    }
+  }
+},
+    {
+  "jobID": "8f5c4a71-4b23-4d8a-9b97-2c9e3c6c7a2f",
+  "created_at": "2025-09-05T12:00:00Z",
+  "updated_at": "2025-09-05",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Human Resources Manager",
+      "category": "Human Resources",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "HR",
+      "Manager",
+      "Recruitment",
+      "Onboarding",
+      "Payroll",
+      "Leadership"
+    ],
+    "salary": {
+      "iqd": "2000000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "eagle-eyeiq.com"
+    },
+    "extraDetails": {
+      "responsibilities": [
+        "Develop and implement HR strategies and policies",
+        "Oversee recruitment, onboarding, and employee records",
+        "Ensure compliance with Iraqi labor laws",
+        "Lead performance management and development plans",
+        "Handle disciplinary actions and conflict resolution",
+        "Supervise payroll, attendance, and social security documentation",
+        "Design training programs and promote a positive work culture",
+        "Provide HR reports and workforce planning insights"
+      ],
+      "requirements": [
+        "Bachelor’s degree in HR, Business Administration, or related field",
+        "4–5 years of HR experience, including 2+ years in a managerial role",
+        "Strong knowledge of Iraqi labor laws",
+        "Excellent leadership, organizational, and interpersonal skills",
+        "Proficient in Microsoft Office; HR software experience is a plus",
+        "Fluent in Kurdish, Arabic, and English"
+      ],
+      "application": "Send CV and cover letter to hr@eagle-eyeiq.com with subject: HR Manager Application"
+    }
+  }
 }
+
+
+
+
 
 
 
