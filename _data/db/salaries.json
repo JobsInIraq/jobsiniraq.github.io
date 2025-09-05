@@ -3195,7 +3195,68 @@
       "application": "Send CV and cover letter to hr@eagle-eyeiq.com with subject: HR Manager Application"
     }
   }
+},
+    {
+  "jobID": "a2b7f9d8-53a4-4c92-8f28-17fda4f9e3a1",
+  "created_at": "2025-09-05T12:00:00Z",
+  "updated_at": "2025-09-05",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Front Desk Manager",
+      "category": "Administration",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Front Desk",
+      "Reception",
+      "Administration"
+    ],
+    "salary": {
+      "iqd": 700000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "workingHours": "9:30 AM – 5:30 PM",
+      "responsibilities": [
+        "Greet and assist clients, guests, and staff in a professional manner",
+        "Answer and manage incoming calls and emails",
+        "Schedule appointments and maintain calendars",
+        "Maintain the front desk and lobby area in a clean and orderly fashion",
+        "Coordinate with internal departments for smooth front-desk operations",
+        "Handle administrative duties such as filing, data entry, and mail distribution"
+      ],
+      "requirements": [
+        "Proven experience as a front desk manager, receptionist, or similar role",
+        "Excellent verbal and written communication skills",
+        "Fluent in Kurdish and Arabic (both spoken and written) – mandatory",
+        "Strong organizational and multitasking abilities",
+        "Proficiency in Microsoft Office (Word, Excel, Outlook)",
+        "Ability to handle sensitive and confidential information with discretion"
+      ],
+      "application": "Send CV to Sana.sa1996@gmail.com with subject: Front Desk Manager"
+    }
+  }
 }
+
 
 
 
