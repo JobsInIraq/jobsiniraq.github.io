@@ -3255,7 +3255,56 @@
       "application": "Send CV to Sana.sa1996@gmail.com with subject: Front Desk Manager"
     }
   }
+},
+    {
+  "jobID": "df71cba5-1a84-4f82-8db3-67c1af0a54a3",
+  "created_at": "2025-09-11T12:00:00Z",
+  "updated_at": "2025-09-11",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "HR Supervisor / Senior HR Specialist",
+      "category": "Human Resources",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "HR",
+      "Supervisor"
+    ],
+    "salary": {
+      "iqd": "2150000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "workingDays": "Saturday to Thursday",
+      "requirements": [
+        "5–6 years of proven experience in Human Resources",
+        "Strong knowledge of Iraqi labor law and HR practices",
+        "Excellent communication and organizational skills"
+      ],
+      "application": "Contact via phone or direct message: 07864452069"
+    }
+  }
 }
+
 
 
 
