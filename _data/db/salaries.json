@@ -3303,6 +3303,386 @@
       "application": "Contact via phone or direct message: 07864452069"
     }
   }
+},
+    {
+  "jobID": "1f36e3c2-8a7a-4c62-b8d9-45e3ad9d8f4e",
+  "created_at": "2025-09-13T12:00:00Z",
+  "updated_at": "2025-09-13",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Transmission Engineer",
+      "category": "Telecommunications",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Transmission",
+      "Telecommunications"
+    "salary": {
+      "iqd": 1300000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "ilimconsulting.com"
+    },
+    "extraDetails": {
+      "workingHours": "8:00 AM – 4:00 PM, 6 days per week",
+      "overtime": "18,000 IQD for every 3 hours or more beyond official hours",
+      "travelAllowance": "36,000 IQD per night for travel to another city within Iraq",
+      "requirements": [
+        "Proven 3 years of experience as a Transmission Site Engineer or similar role in the telecommunications industry"
+      ],
+      "application": "Send CV to Jobs@ilimconsulting.com"
+    }
+  }
+},
+    {
+  "jobID": "2a6e5b11-9f4d-4e67-b31a-44c0d73d9b45",
+  "created_at": "2025-09-13T12:00:00Z",
+  "updated_at": "2025-09-13",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Staff",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Retail",
+      "Brand Products"
+    ],
+    "salary": {
+      "iqd": 750000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "workingHours": "8:30 AM – 4:30 PM",
+      "requirements": [
+        "2 males and 2 females needed for brand product sales"
+      ],
+      "benefits": [
+        "750,000 IQD fixed salary",
+        "Daily commission"
+      ],
+      "application": "Send CV via WhatsApp: 07511322036"
+    }
+  }
+},
+    {
+  "jobID": "d5e32a7a-69ac-4e3d-83ef-91fbc39b7e41",
+  "created_at": "2025-09-13T12:00:00Z",
+  "updated_at": "2025-09-13",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Driver (Car or Motorbike) - Talabat",
+      "category": "Logistics",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Driver",
+      "Delivery"
+    ],
+    "salary": {
+      "iqd": "1000000+",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "requirements": [
+        "Must own a registered car or motorbike (in applicant’s, father’s, or brother’s name)",
+        "Valid license and documents (not expired)",
+        "Preferred: fuel-efficient vehicle",
+        "Age between 19 and 35 years"
+      ],
+      "workingHours": "8+ hours per day (flexible)",
+      "benefits": [
+        "150 IQD per kilometer delivery fee",
+        "Monthly salary above 1,000,000 IQD",
+        "Salary paid every 15 days via FIB"
+      ],
+      "application": "Send a message on WhatsApp: 07506714100"
+    }
+  }
+},
+    {
+  "jobID": "e0f5c62d-7f34-41e0-8b21-d9ac63f2f1d9",
+  "created_at": "2025-09-13T12:00:00Z",
+  "updated_at": "2025-09-13",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Customer Support Agent",
+      "category": "Customer Service",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Customer Service",
+      "Support"
+    ],
+    "salary": {
+      "iqd": "1000000",
+      "usd": 0
+    },
+    "isRemote": true,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male or Female",
+      "workingHours": "3 shifts, 5 days per week (8 days off per month)",
+      "languages": [
+        "Kurdish",
+        "Arabic",
+        "English"
+      ],
+      "requirements": [
+        "Strong communication skills",
+        "Basic computer knowledge",
+        "Punctual and reliable",
+        "Team player with a positive attitude"
+      ],
+      "benefits": [
+        "700,000 IQD base salary",
+        "Performance incentives up to 1,000,000 IQD"
+      ],
+      "application": "Send CV via WhatsApp to 07505250555 (Do not call, only send applications)"
+    }
+  }
+},
+    {
+  "jobID": "ab61d97e-4a32-40a3-b86c-9c41c25e7c2d",
+  "created_at": "2025-09-02T12:00:00Z",
+  "updated_at": "2025-09-02",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Operations & Logistics Officer",
+      "category": "Logistics",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Operations",
+      "Logistics"
+    ],
+    "salary": {
+      "iqd": "600000+",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "Mawja",
+        "link": "http://www.mawja.net"
+      },
+      "website": "mawja.net"
+    },
+    "extraDetails": {
+      "workingHours": "9:00 AM – 5:00 PM, Saturday to Thursday (Friday off)",
+      "requirements": [
+        "Bachelor’s degree",
+        "Experience using computers and handling correspondence in Arabic & English",
+        "Ability to work under pressure and follow work instructions",
+        "Preference for candidates living near company HQ"
+      ],
+      "responsibilities": [
+        "Record and follow up on purchase orders related to sales operations",
+        "Record and follow up on material shipments",
+        "Organize warehouse entries and exits in the system",
+        "Manage purchase and sales operations including shipment documentation, inventory checks, serial number tracking, delivery/receipt notes, and approvals",
+        "Coordinate material preparation and shipping schedules with the projects team"
+      ],
+      "application": "Send CV to jobs@mawja.net with subject: موظف عمليات ولوجستك",
+      "companyWebsite": "http://www.mawja.net"
+    }
+  }
+},
+    {
+  "jobID": "c74c5a7f-7c14-4df6-8235-b2e95d893a4d",
+  "created_at": "2025-09-13T12:00:00Z",
+  "updated_at": "2025-09-13",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Staff",
+      "category": "Sales",
+      "position": "Part-Time"
+    },
+    "tags": [
+      "Sales",
+      "Advertising",
+      "Marketing"
+    ],
+    "salary": {
+      "iqd": 750000,
+      "usd": 0
+    },
+    "isRemote": true,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "workingHours": "2 days per week on-site, remaining days task-based",
+      "requirements": [
+        "Previous experience in sales, preferably in advertising",
+        "Good communication and persuasion skills",
+        "Commitment to achieving monthly targets"
+      ],
+      "benefits": [
+        "750,000 IQD base salary",
+        "Sales commission",
+        "Monthly incentives"
+      ],
+      "application": "Send CV via WhatsApp to +9647870900550"
+    }
+  }
+},
+    {
+  "jobID": "5b8acfa4-3f24-4a6d-bb9c-9efc84cb6f44",
+  "created_at": "2025-09-13T12:00:00Z",
+  "updated_at": "2025-09-13",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Representative",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Jewelry"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": 500
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "workingHours": "3:00 PM – 10:00 PM (including weekends)",
+      "requirements": [
+        "Fluent in Arabic & Kurdish (English is a plus)",
+        "Proven sales experience (retail or luxury preferred)",
+        "Polished and professional appearance",
+        "Strong communication & customer service skills",
+        "Local applicants: security check may be conducted",
+        "Expat applicants: valid work permit required",
+        "CV must include a recent photo"
+      ],
+      "benefits": [
+        "Starting salary $500 (negotiable)",
+        "Possible commission",
+        "Elegant, high-end work environment",
+        "Career growth opportunities"
+      ],
+      "application": "Send CV with photo to rrecruify@gmail.com (subject: Sales Representative – Erbil)"
+    }
+  }
 }
 
 
