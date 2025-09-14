@@ -3823,12 +3823,268 @@
       "application": "Submit complete application with supporting documents to MissionIraqJobs@state.gov"
     }
   }
+},
+    {
+  "jobID": "7b64c391-3f7b-4c32-9b4f-2c4a1f11db0a",
+  "created_at": "2025-09-14T12:00:00Z",
+  "updated_at": "2025-09-14",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "IT Data Entry",
+      "category": "IT",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "IT",
+      "Data Entry"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": 500
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "workingHours": "9:00 AM – 5:00 PM",
+      "gender": "Female",
+      "requirements": [
+        "Basic IT and data entry skills",
+        "Preferred: background in visa/immigration services"
+      ],
+      "application": "Send CV via WhatsApp to 07503935009"
+    }
+  }
+},
+    {
+  "jobID": "3e8d4f7b-89c1-47ab-9af9-6b2f148f2c89",
+  "created_at": "2025-09-14T12:00:00Z",
+  "updated_at": "2025-09-14",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Accountant",
+      "category": "Finance",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Accounting",
+      "Finance"
+    ],
+    "salary": {
+      "iqd": 700000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "requirements": [
+        "Graduate in Accounting",
+        "Strong computer skills, especially Excel",
+        "Previous experience in accounting",
+        "Must be a Kurdistan citizen"
+      ],
+      "benefits": [
+        "700,000 IQD monthly salary"
+      ],
+      "application": "Send CV via WhatsApp only: 07504683752"
+    }
+  }
+},
+    {
+  "jobID": "9d2a7c56-41b8-4976-bc18-6fc83ff9b1de",
+  "created_at": "2025-09-14T12:00:00Z",
+  "updated_at": "2025-09-14",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Driver",
+      "category": "Logistics & Delivery",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Driver",
+      "Logistics"
+    ],
+    "salary": {
+      "iqd": 600000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "requirements": [
+        "Valid general driver’s license",
+        "Resident of Khabat or Kalak preferred",
+        "Experience in driving (priority for those with prior work experience)"
+      ],
+      "benefits": [
+        "600,000 IQD monthly salary",
+        "Transportation and meals covered by company"
+      ],
+      "application": "Send a message on Viber: 07518005590"
+    }
+  }
+},
+    {
+  "jobID": "f7e5f844-2e16-4626-b1a4-2fcf774a6c0f",
+  "created_at": "2025-09-14T12:00:00Z",
+  "updated_at": "2025-09-14",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Field Representative (Female)",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Field Work",
+      "Representative"
+    ],
+    "salary": {
+      "iqd": 700000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Female only",
+      "numberOfPositions": 4,
+      "workingHours": "8:00 AM – 5:00 PM (Friday off)",
+      "requirements": [
+        "Previous work experience required",
+        "Ability to work in the field and visit schools",
+        "Good communication skills with clients",
+        "Female staff only"
+      ],
+      "benefits": [
+        "700,000 IQD monthly salary",
+        "Daily commission",
+        "Transportation provided"
+      ],
+      "application": "For more info, call: 07503441016"
+    }
+  }
+},
+    {
+  "jobID": "e16e5d61-55f8-4896-90e5-d1744b4fef75",
+  "created_at": "2025-09-14T12:00:00Z",
+  "updated_at": "2025-09-14",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Staff (Female) – Furniture",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Retail",
+      "Furniture"
+    ],
+    "salary": {
+      "iqd": 1000000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Female only",
+      "workingHours": "Not specified (full-time role)",
+      "requirements": [
+        "Fluency in Kurdish and Arabic",
+        "Female candidate only",
+        "Appropriate age",
+        "Good communication skills",
+        "Preferably lives near Kasnazan Road"
+      ],
+      "benefits": [
+        "1,000,000 IQD or more monthly salary"
+      ],
+      "application": "Send CV via WhatsApp to 07504838737"
+    }
+  }
 }
-
-
-
-
-
 
 
 
