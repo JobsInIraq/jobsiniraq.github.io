@@ -3684,7 +3684,148 @@
       "application": "Send CV with photo to rrecruify@gmail.com (subject: Sales Representative – Erbil)"
     }
   }
+},
+    {
+  "jobID": "8d1b33d2-bb62-4c82-b3d3-7d12db8f7137",
+  "created_at": "2025-09-14T12:00:00Z",
+  "updated_at": "2025-09-14",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Bodyguard",
+      "category": "Security",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Security",
+      "Bodyguard",
+      "Protective Services"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": 3138
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil - U.S. Consulate General"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "U.S. Mission Iraq",
+        "link": ""
+      },
+      "website": "https://erajobs.state.gov/dos-era/vacancysearch/searchVacancies.hms?_ref=s1rewjv3pt0"
+    },
+    "extraDetails": {
+      "announcementNumber": "Erbil-2025-008",
+      "agency": "U.S. Consulate General Erbil",
+      "openPeriod": "09/08/2025 - 09/22/2025",
+      "seriesGrade": "LE - 0701 5",
+      "workSchedule": "40 hours per week (Full-Time)",
+      "promotionPotential": "LE-NA",
+      "positionsAvailable": 4,
+      "teleworkEligible": "No",
+      "appointmentType": "Permanent (Indefinite, subject to probation)",
+      "requirements": [
+        "Completion of Secondary Education (12th grade, high school diploma, or equivalent)",
+        "Two (2) years of experience in bodyguard, armed escort, law enforcement, combat arms, or related security field",
+        "Valid driver’s license",
+        "Ability to obtain and hold a Local employee security clearance",
+        "Background investigation and pre-employment medical exam required"
+      ],
+      "languages": [
+        "English – Limited Knowledge (Reading/Writing/Speaking)",
+        "Kurdish – Limited Knowledge (Reading/Writing/Speaking)"
+      ],
+      "skills": [
+        "Protective security operations",
+        "Driving skills",
+        "Ability to work under supervision of Regional Security Officer (RSO)"
+      ],
+      "duties": [
+        "Serve as bodyguard in protective operations for U.S. Ambassador/Chief of Mission and visiting officials",
+        "Ensure safety of designated personnel against harm under RSO management"
+      ],
+      "application": "Submit complete application with documents addressing qualifications and requirements to ErbilHR@state.gov"
+    }
+  }
+},
+    {
+  "jobID": "a52de42b-198f-4f7f-9f0b-1ff19cf9a022",
+  "created_at": "2025-09-14T12:00:00Z",
+  "updated_at": "2025-09-14",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Financial Assistant (OSC-I)",
+      "category": "Finance",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Finance",
+      "Accounting"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": 47789
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad - U.S. Embassy"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "U.S. Mission Iraq",
+        "link": ""
+      },
+      "website": "https://erajobs.state.gov/dos-era/vacancysearch/searchVacancies.hms?_ref=s1rewjv3pt0"
+    },
+    "extraDetails": {
+      "announcementNumber": "Baghdad-2025-011",
+      "agency": "U.S. Embassy Baghdad",
+      "openPeriod": "09/01/2025 - 09/16/2025",
+      "seriesGrade": "LE - 0401 7",
+      "workSchedule": "40 hours per week (Full-Time)",
+      "promotionPotential": "LE-NA",
+      "positionsAvailable": 1,
+      "teleworkEligible": "No",
+      "appointmentType": "Permanent (Indefinite, subject to probation)",
+      "requirements": [
+        "University degree in Finance, Business Administration, or Accounting",
+        "Four (4) years of financial/accounting work experience including financial transactions, obligations, financial reports, databases, and budgets",
+        "Ability to obtain and hold a Local employee security clearance",
+        "Subject to background investigation and possible pre-employment medical exam"
+      ],
+      "languages": [
+        "English – Good Working Knowledge (written & spoken)",
+        "Arabic – Fluent (written & spoken, including translation)"
+      ],
+      "duties": [
+        "Acquire, manage, and report Host Nation financial management information and transactions for FMS cases",
+        "Prepare and distribute reports from security assistance database",
+        "Conduct joint reviews and reconciliation with FMS case managers and higher HQ",
+        "Track FMS obligations and disbursements within Host Nation management system"
+      ],
+      "application": "Submit complete application with supporting documents to MissionIraqJobs@state.gov"
+    }
+  }
 }
+
+
 
 
 
