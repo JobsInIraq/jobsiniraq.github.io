@@ -4084,7 +4084,663 @@
       "application": "Send CV via WhatsApp to 07504838737"
     }
   }
-}
+},
+    {
+  "jobID": "b9a1e9a2-97be-4c3f-929d-18d23fdc1a6d",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Technical Support",
+      "category": "IT",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Technical Support",
+      "IT"
+    ],
+    "salary": {
+      "iqd": 800000,
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "workingHours": "Sunday to Thursday, 8:30 AM – 3:00 PM",
+      "requirements": [
+        "Bachelor’s degree in Computer Science, Network Engineering, or related field",
+        "Experience handling technical support requests",
+        "Ability to diagnose and resolve technical issues",
+        "Knowledge in installing and maintaining hardware and software",
+        "Ability to provide remote and on-site support",
+        "Basic networking and communications management",
+        "Experience documenting and preparing technical reports",
+        "Experience with ERP systems"
+      ],
+      "benefits": [
+        "Salary starting from 800,000 IQD (negotiable based on experience and competence)",
+        "Preference for candidates living near Al-Shaljia"
+      ],
+      "application": "Send CV to hr.altatwir@outlook.com with subject: Technical Support"
+    }
+  }
+},
+    [
+  {
+    "jobID": "f3a9e5bb-5d6e-42c1-8af0-2ab0e88f1c10",
+    "created_at": "2025-09-02T12:00:00Z",
+    "updated_at": "2025-09-02",
+    "job": {
+      "jobDetails": {
+        "jobTitle": "Accountant (Al-Ameen Software)",
+        "category": "Finance",
+        "position": "Full-Time"
+      },
+      "tags": [
+        "Accountant",
+        "Finance",
+        "Al-Ameen",
+        "Baghdad",
+        "Abraj Al-Hayat"
+      ],
+      "salary": {
+        "iqd": 650000,
+        "usd": 0
+      },
+      "isRemote": false,
+      "location": {
+        "country": "Iraq",
+        "city": "Baghdad – Hay Al-Jihad, Officers Street"
+      },
+      "sources": {
+        "socialMedia": {
+          "linkedin": "",
+          "facebook": "",
+          "instagram": "",
+          "telegram": "",
+          "tiktok": ""
+        },
+        "jobPortal": {
+          "site": "",
+          "link": ""
+        },
+        "website": "https://wa.me/9647712300030"
+      },
+      "extraDetails": {
+        "numberOfPositions": 2,
+        "workingHours": "10:00 AM – 8:00 PM",
+        "requirements": [
+          "Full-time availability",
+          "Good experience in accounting",
+          "Resident of Hay Al-Jihad or nearby areas"
+        ],
+        "benefits": [
+          "Salary: 650,000 IQD"
+        ],
+        "application": "Send CV via WhatsApp: 07712300030"
+      }
+    }
+  },
+  {
+    "jobID": "e45c14a8-9c63-4b4b-80a6-9dc841d0a291",
+    "created_at": "2025-09-15T12:00:00Z",
+    "updated_at": "2025-09-15",
+    "job": {
+      "jobDetails": {
+        "jobTitle": "Carpenter",
+        "category": "Skilled Labor",
+        "position": "Full-Time"
+      },
+      "tags": [
+        "Carpenter",
+        "Craftsman"
+      ],
+      "salary": {
+        "iqd": 650000,
+        "usd": 0
+      },
+      "isRemote": false,
+      "location": {
+        "country": "Iraq",
+        "city": "Baghdad"
+      },
+      "sources": {
+        "socialMedia": {
+          "linkedin": "",
+          "facebook": "",
+          "instagram": "",
+          "telegram": "",
+          "tiktok": ""
+        },
+        "jobPortal": {
+          "site": "",
+          "link": ""
+        },
+        "website": ""
+      },
+      "extraDetails": {
+        "numberOfPositions": 2,
+        "workingHours": "10:00 AM – 8:00 PM",
+        "requirements": [
+          "Full-time availability",
+          "Good experience in carpentry/woodwork",
+          "Resident of Hay Al-Jihad or nearby areas"
+        ],
+        "benefits": [
+          "Salary: 650,000 IQD"
+        ],
+        "application": "Send CV via WhatsApp: 07712300030"
+      }
+    }
+  }
+],
+    {
+  "jobID": "4f6d7c13-48d0-4de0-9e71-bd2a6b4b2a53",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Representative",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Printing"
+    ],
+    "salary": {
+      "iqd": "1250000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male & Female",
+      "workingHours": "Full-time (not specified)",
+      "requirements": [
+        "Minimum 3 years of experience in sales",
+        "Strong negotiation, persuasion, and deal-closing skills",
+        "Ability to work under pressure and achieve targets",
+        "Proficiency in MS Office",
+        "Owning a car and valid driving license preferred"
+      ],
+      "benefits": [
+        "Fixed salary (750,000 – 1,250,000 IQD depending on experience)",
+        "Monthly performance-based commission",
+        "Professional work environment",
+        "Career growth opportunities"
+      ],
+      "application": "Send CV via WhatsApp: 07800005993",
+      "closingDate": "Within 3 days from announcement date"
+    }
+  }
+},
+    {
+  "jobID": "ac4cf792-2d2c-4a10-9a0f-5ef1b4c00c66",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Representative",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales"
+    ],
+    "salary": {
+      "iqd": "800000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male",
+      "workingHours": "Not specified (Field Sales)",
+      "requirements": [
+        "Male candidate",
+        "Age between 25 – 45 years",
+        "Minimum education: Grade 6",
+        "Experience in sales/field representative work",
+        "Must own a car"
+      ],
+      "benefits": [
+        "Fixed salary 800,000 IQD",
+        "Additional commission based on sales"
+      ],
+      "application": "Send CV via WhatsApp to 07725690050 with subject line 'مندوب'"
+    }
+  }
+},
+    {
+  "jobID": "f9e32972-00bb-45d3-a9c7-b56f22c83c8b",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Architect Engineer",
+      "category": "Engineering",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Architecture",
+      "Engineering"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1000"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Female",
+      "workingHours": "Not specified",
+      "requirements": [
+        "Minimum 5 years of experience in architecture",
+        "Strong computer skills and proficiency in relevant software"
+      ],
+      "benefits": [
+        "Salary between $800 – $1000 (based on experience)"
+      ],
+      "application": "Send CV via WhatsApp to 07704451467"
+    }
+  }
+},
+    {
+  "jobID": "0f5b1e5a-94e7-4bb0-9d2c-9e80a55e73df",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Electrician (AA)",
+      "category": "Operations",
+      "position": "Full-Time, Permanent"
+    },
+    "tags": [
+      "Electrical",
+      "Maintenance"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1699"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad - British Mission"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "FCDO Local Staff Vacancies",
+        "link": ""
+      },
+      "website": "https://www.gov.uk/world/organisations/british-embassy-baghdad"
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Sunday–Wednesday 08:00–16:00, Thursday 08:00–14:00 (38 hours per week, flexibility required)",
+      "requirements": [
+        "Technical certification or diploma in electrical systems",
+        "3–5 years of experience in electrical installation and maintenance",
+        "Familiarity with electrical tools, components, and safety procedures",
+        "Knowledge of control systems",
+        "Problem-solving and troubleshooting skills",
+        "Valid full driver’s license",
+        "Ability to work independently and in a team",
+        "Good communication and customer-service orientation"
+      ],
+      "desirable": [
+        "Electrical vocational training (preferred)",
+        "Relevant certification in electrical systems"
+      ],
+      "benefits": [
+        "USD $1699 per month (13 months per year) + security allowance",
+        "Up to 21 days annual leave",
+        "Training and continuous learning opportunities",
+        "Protective equipment provided",
+        "Employment subject to 90-day probationary period"
+      ],
+      "application": "Apply online via the official British Embassy Baghdad job portal before 21 September 2025"
+    }
+  }
+},
+    {
+  "jobID": "fc1a3f52-3f7d-45d8-b1e0-8e5a31e7c2df",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Heating, Ventilation, and Air Conditioning (HVAC) Technician (AA)",
+      "category": "Operations",
+      "position": "Full-Time, Permanent"
+    },
+    "tags": [
+      "HVAC",
+      "Maintenance"
+],
+    "salary": {
+      "iqd": 0,
+      "usd": 1699
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad - British Mission"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "FCDO Local Staff Vacancies",
+        "link": ""
+      },
+      "website": "https://www.gov.uk/world/organisations/british-embassy-baghdad"
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Sunday–Wednesday 08:00–16:00, Thursday 08:00–14:00 (38 hours per week, flexibility required)",
+      "requirements": [
+        "High school diploma or equivalent",
+        "Technical certification or diploma in HVAC or electrical systems",
+        "3–5 years of experience in HVAC systems installation, servicing, and repair",
+        "Knowledge of refrigeration cycles, electrical systems, and control logic",
+        "Proficiency with HVAC diagnostic tools and hand/power tools",
+        "Analytical thinking and troubleshooting skills",
+        "Valid full driver’s license",
+        "Basic computer skills for reporting"
+      ],
+      "desirable": [
+        "Relevant certification in HVAC or air-conditioning",
+        "Other technical certifications"
+      ],
+      "benefits": [
+        "USD $1699 per month (13 months per year) + security allowance",
+        "Up to 21 days annual leave",
+        "Training and continuous learning opportunities",
+        "Protective equipment provided",
+        "Employment subject to 90-day probationary period"
+      ],
+      "application": "Apply online via the official British Embassy Baghdad job portal before 21 September 2025"
+    }
+  }
+},
+    {
+  "jobID": "7d45f410-2728-41d4-bd62-df7328f80f42",
+  "announcementNumber": "IQE-2025-010",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Corporate Services Officer (AO)",
+      "category": "Operations",
+      "position": "Full-Time, Permanent"
+    },
+    "tags": [
+      "Corporate Services",
+      "Finance"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": 1982
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil - British Mission"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "FCDO Local Staff Vacancies",
+        "link": ""
+      },
+      "website": "https://www.gov.uk/world/organisations/british-consulate-general-erbil"
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Sunday–Wednesday 09:00–17:00, Thursday 09:00–15:00 (38 hours per week, flexibility required)",
+      "requirements": [
+        "University degree",
+        "Excellent IT skills (Word, Excel, Outlook)",
+        "Relevant finance/procurement experience in public or private sector",
+        "Organisational skills and ability to work under pressure",
+        "Excellent numerical skills, experience in budgeting and accounting",
+        "Prepared to travel to Baghdad for exchanges",
+        "Strong customer service and discretion",
+        "Fluency in English and Kurdish"
+      ],
+      "desirable": [
+        "Familiarity with Oracle-based applications for finance/procurement",
+        "Finance, accounting, or business qualification",
+        "Arabic language skills",
+        "Knowledge of KRG and UK government processes"
+      ],
+      "benefits": [
+        "USD $1,982 per month (13 times per year) + $200 monthly security allowance",
+        "21 days annual leave + 17 public holidays",
+        "Training and continuous learning opportunities",
+        "Programme management and accreditation opportunities",
+        "Employment subject to 90-day probationary period"
+      ],
+      "application": "Apply online via the official British Consulate General Erbil job portal before 22 September 2025"
+    }
+  }
+},
+    {
+  "jobID": "b2f8742d-b57f-4662-8a6e-b2b64cc94f08",
+  "announcementNumber": "IQE-2025-011",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Justice and Home Affairs Programme Manager (EO)",
+      "category": "Home Office",
+      "position": "Full-Time, Fixed-term until April 2026 (possibility of renewal)"
+    },
+    "tags": [
+      "Justice and Home Affairs",
+      "Programme Management"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "2604"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil - British Mission"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "FCDO Local Staff Vacancies",
+        "link": ""
+      },
+      "website": "https://www.gov.uk/world/organisations/british-consulate-general-erbil"
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Sunday–Wednesday 09:00–17:00, Thursday 09:00–15:00 (38 hours per week, office-based, flexibility required)",
+      "requirements": [
+        "Bachelor’s degree in a relevant subject",
+        "At least 3 years’ experience in programme management or related roles",
+        "Experience in financial management, monitoring, and evaluation of government programmes",
+        "Experience in contract management",
+        "Strong team-working and adaptability skills",
+        "Ability to work independently and meet deadlines",
+        "Proficiency in Microsoft Office (Word, PowerPoint, Outlook, Teams)",
+        "Fluency in Kurdish Sorani and English (written and spoken), with strong translation ability"
+      ],
+      "desirable": [
+        "Knowledge of HMG or Home Office migration and organised crime policies",
+        "Experience in justice, organised crime, or migration programmes"
+      ],
+      "benefits": [
+        "USD $2,604 per month (13 times per year) + $200 monthly security allowance",
+        "21 days annual leave + 17 public holidays",
+        "Continuous learning and training opportunities via Civil Service-Learning",
+        "Travel to Baghdad required for occasional meetings",
+        "Employment subject to 90-day probationary period"
+      ],
+      "application": "Apply online via the official British Consulate General Erbil job portal before 25 September 2025"
+    }
+  }
+},
+    {
+  "jobID": "e30f4fa4-9851-4b0d-8b18-3b97a43708c1",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Operations Coordinator",
+      "category": "Operations",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Operations",
+      "Administration"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "800"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "area": "Atconz Village"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Female",
+      "workingHours": "Sun–Thu: 09:00–17:00, Sat: 09:00–13:00 (Fri off)",
+      "requirements": [
+        "University graduate",
+        "Fluent in English & Kurdish (spoken and written)",
+        "Good knowledge of MS Office",
+        "Organized, detail-oriented, eager to learn",
+        "Experience in operations/admin (preferred, not required)"
+      ],
+      "responsibilities": [
+        "Coordinate daily schedules for pest control and cleaning teams",
+        "Follow up on sales activities and communication with sales team",
+        "Keep data updated in ERP system (training provided)",
+        "Maintain employee files and support HR/admin documentation",
+        "Ensure timely input using MS Word & Excel"
+      ],
+      "application": "Send CV to charbelyoussef@cplusservices.com"
+    }
+  }
+},
+    
+
+
+
 
 
 
