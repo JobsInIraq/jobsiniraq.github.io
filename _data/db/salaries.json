@@ -3531,7 +3531,7 @@
       "Logistics"
     ],
     "salary": {
-      "iqd": "600000+",
+      "iqd": "600000",
       "usd": 0
     },
     "isRemote": false,
@@ -3589,7 +3589,7 @@
       "Marketing"
     ],
     "salary": {
-      "iqd": 750000,
+      "iqd": "750000",
       "usd": 0
     },
     "isRemote": true,
@@ -3643,7 +3643,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 500
+      "usd": "500"
     },
     "isRemote": false,
     "location": {
@@ -3702,7 +3702,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 3138
+      "usd": "3138"
     },
     "isRemote": false,
     "location": {
@@ -3773,7 +3773,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 3982
+      "usd": "3982"
     },
     "isRemote": false,
     "location": {
@@ -3840,7 +3840,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 500
+      "usd": "500"
     },
     "isRemote": false,
     "location": {
@@ -3887,7 +3887,7 @@
       "Finance"
     ],
     "salary": {
-      "iqd": 700000,
+      "iqd": "700000",
       "usd": 0
     },
     "isRemote": false,
@@ -3938,7 +3938,7 @@
       "Logistics"
     ],
     "salary": {
-      "iqd": 600000,
+      "iqd": "600000",
       "usd": 0
     },
     "isRemote": false,
@@ -3989,7 +3989,7 @@
       "Representative"
     ],
     "salary": {
-      "iqd": 700000,
+      "iqd": "700000",
       "usd": 0
     },
     "isRemote": false,
@@ -4046,7 +4046,7 @@
       "Furniture"
     ],
     "salary": {
-      "iqd": 1000000,
+      "iqd": "1000000",
       "usd": 0
     },
     "isRemote": false,
@@ -4100,7 +4100,7 @@
       "IT"
     ],
     "salary": {
-      "iqd": 800000,
+      "iqd": "800000",
       "usd": 0
     },
     "isRemote": false,
@@ -4161,7 +4161,7 @@
         "Abraj Al-Hayat"
       ],
       "salary": {
-        "iqd": 650000,
+        "iqd": "650000",
         "usd": 0
       },
       "isRemote": false,
@@ -4213,7 +4213,7 @@
         "Craftsman"
       ],
       "salary": {
-        "iqd": 650000,
+        "iqd": "650000",
         "usd": 0
       },
       "isRemote": false,
@@ -4266,7 +4266,7 @@
       "Printing"
     ],
     "salary": {
-      "iqd": 1250000,
+      "iqd": "1250000",
       "usd": 0
     },
     "isRemote": false,
@@ -4323,7 +4323,7 @@
       "Sales"
     ],
     "salary": {
-      "iqd": 800000,
+      "iqd": "800000",
       "usd": 0
     },
     "isRemote": false,
@@ -4379,7 +4379,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 1000
+      "usd": "1000"
     },
     "isRemote": false,
     "location": {
@@ -4430,7 +4430,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 1699
+      "usd": "1699"
     },
     "isRemote": false,
     "location": {
@@ -4495,7 +4495,7 @@
 ],
     "salary": {
       "iqd": 0,
-      "usd": 1699
+      "usd": "1699"
     },
     "isRemote": false,
     "location": {
@@ -4561,7 +4561,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 1982
+      "usd": "1982"
     },
     "isRemote": false,
     "location": {
@@ -4629,7 +4629,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 2604
+      "usd": "2604"
     },
     "isRemote": false,
     "location": {
@@ -4694,7 +4694,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": 800
+      "usd": "800"
     },
     "isRemote": false,
     "location": {
