@@ -4194,7 +4194,60 @@
         "application": "Send CV via WhatsApp: 07712300030"
       }
     }
+  },
+  {
+    "jobID": "e45c14a8-9c63-4b4b-80a6-9dc841d0a291",
+    "created_at": "2025-09-15T12:00:00Z",
+    "updated_at": "2025-09-15",
+    "job": {
+      "jobDetails": {
+        "jobTitle": "Carpenter",
+        "category": "Skilled Labor",
+        "position": "Full-Time"
+      },
+      "tags": [
+        "Carpenter",
+        "Craftsman"
+      ],
+      "salary": {
+        "iqd": "650000",
+        "usd": 0
+      },
+      "isRemote": false,
+      "location": {
+        "country": "Iraq",
+        "city": "Baghdad"
+      },
+      "sources": {
+        "socialMedia": {
+          "linkedin": "",
+          "facebook": "",
+          "instagram": "",
+          "telegram": "",
+          "tiktok": ""
+        },
+        "jobPortal": {
+          "site": "",
+          "link": ""
+        },
+        "website": ""
+      },
+      "extraDetails": {
+        "numberOfPositions": 2,
+        "workingHours": "10:00 AM – 8:00 PM",
+        "requirements": [
+          "Full-time availability",
+          "Good experience in carpentry/woodwork",
+          "Resident of Hay Al-Jihad or nearby areas"
+        ],
+        "benefits": [
+          "Salary: 650,000 IQD"
+        ],
+        "application": "Send CV via WhatsApp: 07712300030"
+      }
+    }
   }
+
 
 
 
