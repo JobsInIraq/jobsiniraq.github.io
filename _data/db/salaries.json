@@ -4300,6 +4300,57 @@
       "application": "Send CV via WhatsApp to 07725690050 with subject line 'مندوب'"
     }
   }
+},
+    {
+  "jobID": "f9e32972-00bb-45d3-a9c7-b56f22c83c8b",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Architect Engineer",
+      "category": "Engineering",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Architecture",
+      "Engineering"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1000"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Female",
+      "workingHours": "Not specified",
+      "requirements": [
+        "Minimum 5 years of experience in architecture",
+        "Strong computer skills and proficiency in relevant software"
+      ],
+      "benefits": [
+        "Salary between $800 – $1000 (based on experience)"
+      ],
+      "application": "Send CV via WhatsApp to 07704451467"
+    }
+  }
 }
 
 
