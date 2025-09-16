@@ -4246,7 +4246,61 @@
         "application": "Send CV via WhatsApp: 07712300030"
       }
     }
+  },
+    {
+  "jobID": "ac4cf792-2d2c-4a10-9a0f-5ef1b4c00c66",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Representative",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales"
+    ],
+    "salary": {
+      "iqd": "800000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male",
+      "workingHours": "Not specified (Field Sales)",
+      "requirements": [
+        "Male candidate",
+        "Age between 25 – 45 years",
+        "Minimum education: Grade 6",
+        "Experience in sales/field representative work",
+        "Must own a car"
+      ],
+      "benefits": [
+        "Fixed salary 800,000 IQD",
+        "Additional commission based on sales"
+      ],
+      "application": "Send CV via WhatsApp to 07725690050 with subject line 'مندوب'"
+    }
   }
+}
 
 
 
