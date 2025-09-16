@@ -4351,6 +4351,71 @@
       "application": "Send CV via WhatsApp to 07704451467"
     }
   }
+},
+    {
+  "jobID": "fc1a3f52-3f7d-45d8-b1e0-8e5a31e7c2df",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Heating, Ventilation, and Air Conditioning (HVAC) Technician (AA)",
+      "category": "Operations",
+      "position": "Full-Time, Permanent"
+    },
+    "tags": [
+      "HVAC",
+      "Maintenance"
+],
+    "salary": {
+      "iqd": 0,
+      "usd": "1699"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad - British Mission"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "FCDO Local Staff Vacancies",
+        "link": ""
+      },
+      "website": "https://www.gov.uk/world/organisations/british-embassy-baghdad"
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Sunday–Wednesday 08:00–16:00, Thursday 08:00–14:00 (38 hours per week, flexibility required)",
+      "requirements": [
+        "High school diploma or equivalent",
+        "Technical certification or diploma in HVAC or electrical systems",
+        "3–5 years of experience in HVAC systems installation, servicing, and repair",
+        "Knowledge of refrigeration cycles, electrical systems, and control logic",
+        "Proficiency with HVAC diagnostic tools and hand/power tools",
+        "Analytical thinking and troubleshooting skills",
+        "Valid full driver’s license",
+        "Basic computer skills for reporting"
+      ],
+      "desirable": [
+        "Relevant certification in HVAC or air-conditioning",
+        "Other technical certifications"
+      ],
+      "benefits": [
+        "USD $1699 per month (13 months per year) + security allowance",
+        "Up to 21 days annual leave",
+        "Training and continuous learning opportunities",
+        "Protective equipment provided",
+        "Employment subject to 90-day probationary period"
+      ],
+      "application": "Apply online via the official British Embassy Baghdad job portal before 21 September 2025"
+    }
+  }
 }
 
 
