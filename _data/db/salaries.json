@@ -4084,6 +4084,63 @@
       "application": "Send CV via WhatsApp to 07504838737"
     }
   }
+},
+    {
+  "jobID": "b9a1e9a2-97be-4c3f-929d-18d23fdc1a6d",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Technical Support",
+      "category": "IT",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Technical Support",
+      "IT"
+    ],
+    "salary": {
+      "iqd": "800000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "workingHours": "Sunday to Thursday, 8:30 AM – 3:00 PM",
+      "requirements": [
+        "Bachelor’s degree in Computer Science, Network Engineering, or related field",
+        "Experience handling technical support requests",
+        "Ability to diagnose and resolve technical issues",
+        "Knowledge in installing and maintaining hardware and software",
+        "Ability to provide remote and on-site support",
+        "Basic networking and communications management",
+        "Experience documenting and preparing technical reports",
+        "Experience with ERP systems"
+      ],
+      "benefits": [
+        "Salary starting from 800,000 IQD (negotiable based on experience and competence)",
+        "Preference for candidates living near Al-Shaljia"
+      ],
+      "application": "Send CV to hr.altatwir@outlook.com with subject: Technical Support"
+    }
+  }
 }
 
 
