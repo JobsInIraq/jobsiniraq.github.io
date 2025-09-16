@@ -4416,6 +4416,199 @@
       "application": "Apply online via the official British Embassy Baghdad job portal before 21 September 2025"
     }
   }
+},
+    {
+  "jobID": "7d45f410-2728-41d4-bd62-df7328f80f42",
+  "announcementNumber": "IQE-2025-010",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Corporate Services Officer (AO)",
+      "category": "Operations",
+      "position": "Full-Time, Permanent"
+    },
+    "tags": [
+      "Corporate Services",
+      "Finance"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1982"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil - British Mission"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "FCDO Local Staff Vacancies",
+        "link": ""
+      },
+      "website": "https://www.gov.uk/world/organisations/british-consulate-general-erbil"
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Sunday–Wednesday 09:00–17:00, Thursday 09:00–15:00 (38 hours per week, flexibility required)",
+      "requirements": [
+        "University degree",
+        "Excellent IT skills (Word, Excel, Outlook)",
+        "Relevant finance/procurement experience in public or private sector",
+        "Organisational skills and ability to work under pressure",
+        "Excellent numerical skills, experience in budgeting and accounting",
+        "Prepared to travel to Baghdad for exchanges",
+        "Strong customer service and discretion",
+        "Fluency in English and Kurdish"
+      ],
+      "desirable": [
+        "Familiarity with Oracle-based applications for finance/procurement",
+        "Finance, accounting, or business qualification",
+        "Arabic language skills",
+        "Knowledge of KRG and UK government processes"
+      ],
+      "benefits": [
+        "USD $1,982 per month (13 times per year) + $200 monthly security allowance",
+        "21 days annual leave + 17 public holidays",
+        "Training and continuous learning opportunities",
+        "Programme management and accreditation opportunities",
+        "Employment subject to 90-day probationary period"
+      ],
+      "application": "Apply online via the official British Consulate General Erbil job portal before 22 September 2025"
+    }
+  }
+},
+    {
+  "jobID": "b2f8742d-b57f-4662-8a6e-b2b64cc94f08",
+  "announcementNumber": "IQE-2025-011",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Justice and Home Affairs Programme Manager (EO)",
+      "category": "Home Office",
+      "position": "Full-Time, Fixed-term until April 2026 (possibility of renewal)"
+    },
+    "tags": [
+      "Justice and Home Affairs",
+      "Programme Management"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "2604"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil - British Mission"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "FCDO Local Staff Vacancies",
+        "link": ""
+      },
+      "website": "https://www.gov.uk/world/organisations/british-consulate-general-erbil"
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Sunday–Wednesday 09:00–17:00, Thursday 09:00–15:00 (38 hours per week, office-based, flexibility required)",
+      "requirements": [
+        "Bachelor’s degree in a relevant subject",
+        "At least 3 years’ experience in programme management or related roles",
+        "Experience in financial management, monitoring, and evaluation of government programmes",
+        "Experience in contract management",
+        "Strong team-working and adaptability skills",
+        "Ability to work independently and meet deadlines",
+        "Proficiency in Microsoft Office (Word, PowerPoint, Outlook, Teams)",
+        "Fluency in Kurdish Sorani and English (written and spoken), with strong translation ability"
+      ],
+      "desirable": [
+        "Knowledge of HMG or Home Office migration and organised crime policies",
+        "Experience in justice, organised crime, or migration programmes"
+      ],
+      "benefits": [
+        "USD $2,604 per month (13 times per year) + $200 monthly security allowance",
+        "21 days annual leave + 17 public holidays",
+        "Continuous learning and training opportunities via Civil Service-Learning",
+        "Travel to Baghdad required for occasional meetings",
+        "Employment subject to 90-day probationary period"
+      ],
+      "application": "Apply online via the official British Consulate General Erbil job portal before 25 September 2025"
+    }
+  }
+},
+    {
+  "jobID": "e30f4fa4-9851-4b0d-8b18-3b97a43708c1",
+  "created_at": "2025-09-15T12:00:00Z",
+  "updated_at": "2025-09-15",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Operations Coordinator",
+      "category": "Operations",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Operations",
+      "Administration"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "800"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "area": "Atconz Village"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Female",
+      "workingHours": "Sun–Thu: 09:00–17:00, Sat: 09:00–13:00 (Fri off)",
+      "requirements": [
+        "University graduate",
+        "Fluent in English & Kurdish (spoken and written)",
+        "Good knowledge of MS Office",
+        "Organized, detail-oriented, eager to learn",
+        "Experience in operations/admin (preferred, not required)"
+      ],
+      "responsibilities": [
+        "Coordinate daily schedules for pest control and cleaning teams",
+        "Follow up on sales activities and communication with sales team",
+        "Keep data updated in ERP system (training provided)",
+        "Maintain employee files and support HR/admin documentation",
+        "Ensure timely input using MS Word & Excel"
+      ],
+      "application": "Send CV to charbelyoussef@cplusservices.com"
+    }
+  }
 }
 
 
