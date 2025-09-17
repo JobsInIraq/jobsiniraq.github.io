@@ -1,159 +1,165 @@
 {
-    "EntityDetails": [
-      {
-        "EntityName": "IQJ Scout",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "English",
-        "EntityWebsite": "https://iqjscout.com/",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "NGOs Jobs Bids",
-        "EntityCategory": "Job Portal Tender",
-        "EntityLanguage": "English",
-        "EntityWebsite": "https://ngosjobs-bids.com",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "Mihan",
-        "EntityCategory": "Job Portal Tender Training GOV",
-        "EntityLanguage": "العربية",
-        "EntityWebsite": "https://lvtd.gov.iq/mihan",
-        "SocialMediaURL": "https://www.facebook.com/employment.gov.iq"
-      },
-      {
-        "EntityName": "پۆرتاڵی کار",
-        "EntityCategory": "Job Portal GOV",
-        "EntityLanguage": "العربية, کوردی",
-        "EntityWebsite": "https://kar.molsa.gov.krd/",
-        "SocialMediaURL": "https://www.facebook.com/kaar.dastabar"
-      },
-      {
-        "EntityName": "Online Job Portal",
-        "EntityCategory": "Job Portal GOV",
-        "EntityLanguage": "العربية, English, کوردی",
-        "EntityWebsite": "https://www.evtc-krg.org/",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "Hawa Jobs",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "English",
-        "EntityWebsite": "https://www.hawa.jobs/",
-        "SocialMediaURL": "https://www.linkedin.com/company/hawa.jobs, https://www.facebook.com/hawa.jobs/"
-      },
-      {
-        "EntityName": "Rwanga Foras",
-        "EntityCategory": "Job Portal NGO",
-        "EntityLanguage": "العربية, English, کوردی",
-        "EntityWebsite": "https://www.rwangaforas.com/",
-        "SocialMediaURL": "https://www.facebook.com/forasjobs"
-      },
-      {
-        "EntityName": "Jobs KRD",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English, کوردی",
-        "EntityWebsite": "http://jobs.krd/",
-        "SocialMediaURL": "https://linkedin.com/company/jobs-krd, https://www.facebook.com/people/Jobskrd/61553740231147/, https://www.instagram.com/jobskrd/"
-      },
-      {
-        "EntityName": "Job Studio",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English, کوردی",
-        "EntityWebsite": "https://job.studio/",
-        "SocialMediaURL": "https://www.linkedin.com/company/jobstudioiq, https://www.facebook.com/jobstudioapp, https://www.instagram.com/jobstudio.app"
-      },
-      {
-        "EntityName": "KurdistanJob.com",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "English",
-        "EntityWebsite": "https://www.kurdistanjob.com/",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "vacanciesiniraq.com",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "English",
-        "EntityWebsite": "https://vacanciesiniraq.com/",
-        "SocialMediaURL": "https://www.linkedin.com/in/vacancies-in-iraq-0b47a6195/, https://www.facebook.com/Vacancies-in-Iraq-100274868078907/"
-      },
-      {
-        "EntityName": "LinkedIn",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English",
-        "EntityWebsite": "https://linkedin.com/",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "Tanqeeb",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English",
-        "EntityWebsite": "https://iraq.tanqeeb.com/",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "Bayt.com, Inc",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English",
-        "EntityWebsite": "https://www.bayt.com/en/iraq/",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "UNjobs",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "English",
-        "EntityWebsite": "https://unjobs.org/duty_stations/iraq",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "Pharma Jobs",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "English",
-        "EntityWebsite": "https://pharmajobs.skpi.krd/",
-        "SocialMediaURL": ""
-      },
-      {
-        "EntityName": "بەڕێوەبەرایەتی کار:هەولێر",
-        "EntityCategory": "Job Portal GOV",
-        "EntityLanguage": "کوردی",
-        "EntityWebsite": "",
-        "SocialMediaURL": "https://www.facebook.com/erbil.labor"
-      },
-      {
-        "EntityName": "Job Helper",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English",
-        "EntityWebsite": "https://job-helper.org/",
-        "SocialMediaURL": "https://www.linkedin.com/company/job-helper-page, https://www.facebook.com/Job.helper11"
-      },
-      {
-        "EntityName": "Aweza",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English, کوردی",
-        "EntityWebsite": "http://www.aweza.co/index.php",
-        "SocialMediaURL": "https://www.facebook.com/Aweza.co/, https://t.me/awezajobs/"
-      },
-      {
-        "EntityName": "Lezan",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English, کوردی",
-        "EntityWebsite": "https://lezan.app/",
-        "SocialMediaURL": "https://linkedin.com/company/lezan-work, https://www.instagram.com/lezan.app/"
-      },
-      {
-        "EntityName": "Esh Job",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English, کوردی",
-        "EntityWebsite": "https://eshjob.com/",
-        "SocialMediaURL": "https://www.facebook.com/EshJobOfficial/"
-      },
-      {
-        "EntityName": "Taeen",
-        "EntityCategory": "Job Portal",
-        "EntityLanguage": "العربية, English",
-        "EntityWebsite": "https://taeen.iq/",
-        "SocialMediaURL": "https://www.facebook.com/taeen.iq, https://www.instagram.com/taeen.iq"
-      }
-    ]
-  }
-  
+  "EntityDetails": [
+    {
+      "EntityName": "IQJ Scout",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "English",
+      "EntityWebsite": "https://iqjscout.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "NGOs Jobs Bids",
+      "EntityCategory": "Job Portal Tender",
+      "EntityLanguage": "English",
+      "EntityWebsite": "https://ngosjobs-bids.com",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "Mihan",
+      "EntityCategory": "Job Portal Tender Training GOV",
+      "EntityLanguage": "العربية",
+      "EntityWebsite": "https://lvtd.gov.iq/mihan",
+      "SocialMediaURL": "https://www.facebook.com/employment.gov.iq"
+    },
+    {
+      "EntityName": "پۆرتاڵی کار",
+      "EntityCategory": "Job Portal GOV",
+      "EntityLanguage": "العربية, کوردی",
+      "EntityWebsite": "https://kar.molsa.gov.krd/",
+      "SocialMediaURL": "https://www.facebook.com/kaar.dastabar"
+    },
+    {
+      "EntityName": "Online Job Portal",
+      "EntityCategory": "Job Portal GOV",
+      "EntityLanguage": "العربية, English, کوردی",
+      "EntityWebsite": "https://www.evtc-krg.org/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "Hawa Jobs",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "English",
+      "EntityWebsite": "https://www.hawa.jobs/",
+      "SocialMediaURL": "https://www.linkedin.com/company/hawa.jobs, https://www.facebook.com/hawa.jobs/"
+    },
+    {
+      "EntityName": "Rwanga Foras",
+      "EntityCategory": "Job Portal NGO",
+      "EntityLanguage": "العربية, English, کوردی",
+      "EntityWebsite": "https://www.rwangaforas.com/",
+      "SocialMediaURL": "https://www.facebook.com/forasjobs"
+    },
+    {
+      "EntityName": "Jobs KRD",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English, کوردی",
+      "EntityWebsite": "http://jobs.krd/",
+      "SocialMediaURL": "https://linkedin.com/company/jobs-krd, https://www.facebook.com/people/Jobskrd/61553740231147/, https://www.instagram.com/jobskrd/"
+    },
+    {
+      "EntityName": "Job Studio",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English, کوردی",
+      "EntityWebsite": "https://job.studio/",
+      "SocialMediaURL": "https://www.linkedin.com/company/jobstudioiq, https://www.facebook.com/jobstudioapp, https://www.instagram.com/jobstudio.app"
+    },
+    {
+      "EntityName": "KurdistanJob.com",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "English",
+      "EntityWebsite": "https://www.kurdistanjob.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "vacanciesiniraq.com",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "English",
+      "EntityWebsite": "https://vacanciesiniraq.com/",
+      "SocialMediaURL": "https://www.linkedin.com/in/vacancies-in-iraq-0b47a6195/, https://www.facebook.com/Vacancies-in-Iraq-100274868078907/"
+    },
+    {
+      "EntityName": "LinkedIn",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English",
+      "EntityWebsite": "https://linkedin.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "Tanqeeb",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English",
+      "EntityWebsite": "https://iraq.tanqeeb.com/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "Bayt.com, Inc",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English",
+      "EntityWebsite": "https://www.bayt.com/en/iraq/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "UNjobs",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "English",
+      "EntityWebsite": "https://unjobs.org/duty_stations/iraq",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "Pharma Jobs",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "English",
+      "EntityWebsite": "https://pharmajobs.skpi.krd/",
+      "SocialMediaURL": ""
+    },
+    {
+      "EntityName": "بەڕێوەبەرایەتی کار:هەولێر",
+      "EntityCategory": "Job Portal GOV",
+      "EntityLanguage": "کوردی",
+      "EntityWebsite": "",
+      "SocialMediaURL": "https://www.facebook.com/erbil.labor"
+    },
+    {
+      "EntityName": "Job Helper",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English",
+      "EntityWebsite": "https://job-helper.org/",
+      "SocialMediaURL": "https://www.linkedin.com/company/job-helper-page, https://www.facebook.com/Job.helper11"
+    },
+    {
+      "EntityName": "Aweza",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English, کوردی",
+      "EntityWebsite": "http://www.aweza.co/index.php",
+      "SocialMediaURL": "https://www.facebook.com/Aweza.co/, https://t.me/awezajobs/"
+    },
+    {
+      "EntityName": "Lezan",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English, کوردی",
+      "EntityWebsite": "https://lezan.app/",
+      "SocialMediaURL": "https://linkedin.com/company/lezan-work, https://www.instagram.com/lezan.app/"
+    },
+    {
+      "EntityName": "Esh Job",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English, کوردی",
+      "EntityWebsite": "https://eshjob.com/",
+      "SocialMediaURL": "https://www.facebook.com/EshJobOfficial/"
+    },
+    {
+      "EntityName": "Taeen",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية, English",
+      "EntityWebsite": "https://taeen.iq/",
+      "SocialMediaURL": "https://www.facebook.com/taeen.iq, https://www.instagram.com/taeen.iq"
+    },
+    {
+      "EntityName": "HonJob",
+      "EntityCategory": "Job Portal",
+      "EntityLanguage": "العربية",
+      "EntityWebsite": "https://www.honjob.com/",
+      "SocialMediaURL": "https://www.facebook.com/honjobiq, https://t.me/honjobiq, https://www.instagram.com/honjobiq/"
+    }
+  ]
+}
