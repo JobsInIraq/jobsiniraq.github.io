@@ -4609,9 +4609,381 @@
       "application": "Send CV to charbelyoussef@cplusservices.com"
     }
   }
+},
+    {
+  "jobID": "0f5b6c20-769c-4a9d-83c3-2b73c51e5f82",
+  "created_at": "2025-09-17T12:00:00Z",
+  "updated_at": "2025-09-17",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Monitoring & Evaluation (M&E) Officer",
+      "category": "NGO",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Monitoring & Evaluation",
+      "NGO"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "1000"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "https://mile-im.org"
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Full-Time",
+      "closingDate": "2025-10-22",
+      "requirements": [
+        "Bachelor’s degree in Statistics, Development Studies, Environmental Science, or related field",
+        "Minimum 2 years’ experience in M&E, preferably with NGOs",
+        "Strong knowledge of data collection, analysis, and reporting",
+        "Experience with donor-funded projects (DANIDA/DCA preferred)",
+        "Proficiency in Excel and data visualization tools",
+        "Excellent communication and teamwork skills"
+      ],
+      "responsibilities": [
+        "Develop and implement M&E frameworks and tools",
+        "Collect, verify, and analyze project data",
+        "Track progress on project indicators and prepare M&E reports",
+        "Support baseline, midline, and endline surveys",
+        "Conduct field monitoring visits to project sites",
+        "Document lessons learned and best practices",
+        "Support feedback and complaints mechanisms to ensure accountability"
+      ],
+      "application": "Send CV to iraq@mile-im.org with subject: Monitoring & Evaluation (M&E) Officer"
+    }
+  }
+},
+    {
+  "jobID": "9a6c3f43-0fcd-49f0-8a52-0f8b3e53d9bc",
+  "created_at": "2025-09-17T12:00:00Z",
+  "updated_at": "2025-09-17",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "AutoCAD Electrical Designer",
+      "category": "Engineering",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Electrical Engineering"
+    ],
+    "salary": {
+      "iqd": "1800000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "travelRequired": true
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "workingHours": "Full-Time",
+      "closingDate": "2025-09-22",
+      "requirements": [
+        "Bachelor’s degree or Diploma in Electrical Engineering or related field",
+        "Languages: Kurdish, Arabic & English",
+        "Strong proficiency in AutoCAD Electrical",
+        "Skilled in preparing & reviewing electrical drawings",
+        "High accuracy and attention to detail"
+      ],
+      "responsibilities": [
+        "Design electrical systems using AutoCAD Electrical",
+        "Prepare and review electrical drawings",
+        "Ensure accuracy and compliance with standards",
+        "Support project teams with technical drawings and documentation"
+      ],
+      "application": "Send CV to info@energyplusltd.com with subject: AutoCAD Electrical Designer"
+    }
+  }
+},
+    {
+  "jobID": "6d9d9d4a-6f47-4e9a-bf19-6e7a6f6a0f23",
+  "created_at": "2025-09-17T12:00:00Z",
+  "updated_at": "2025-09-17",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Field Sales Representative",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Field Representative",
+      "Customer Service"
+    ],
+    "salary": {
+      "iqd": "700000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": "Koya Road, Rose Tower, Engineers Area"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "",
+      "workingHours": "08:00 AM – 05:00 PM (Friday off)",
+      "closingDate": "",
+      "requirements": [
+        "Age between 18–20 years",
+        "Previous work experience",
+        "Ability to work in the field",
+        "Strong communication skills with customers"
+      ],
+      "responsibilities": [
+        "Promote and sell company products in the field",
+        "Communicate effectively with customers",
+        "Achieve daily and monthly sales targets",
+        "Provide market feedback to management"
+      ],
+      "application": "For more information, call 07518864642",
+      "notes": [
+        "Transportation allowance is available",
+        "Priority for candidates living near the company",
+        "Students should not apply"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "7c1c7f72-9fa2-42b3-9030-d111f8d02bde",
+  "created_at": "2025-09-17T12:00:00Z",
+  "updated_at": "2025-09-17",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Driver with Own Car (SUV/4x4)",
+      "category": "Transportation",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Driver",
+      "SUV"
+    ],
+    "salary": {
+      "iqd": "1500000",
+      "usd": 0
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Any",
+      "numberOfPositions": 1,
+      "workingHours": "Not specified (full-time office driver role with outside city travel)",
+      "closingDate": "",
+      "requirements": [
+        "Must own an SUV or 4x4 vehicle",
+        "Valid public driving license",
+        "Resident of Erbil city"
+      ],
+      "responsibilities": [
+        "Provide office driving services",
+        "Handle transportation needs inside and outside the city",
+        "Ensure vehicle safety and maintenance"
+      ],
+      "application": "Send CV via WhatsApp to 07506114949",
+      "notes": [
+        "Driver must use their own car",
+        "Travel outside the city is required"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "e2fd0f4f-bf4c-4b19-9332-9a6d36d11c5e",
+  "created_at": "2025-09-17T12:00:00Z",
+  "updated_at": "2025-09-17",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Supervisor",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales Supervisor",
+      "Food Products"
+    ],
+    "salary": {
+      "iqd": "1800000",
+      "usd": 0,
+      "notes": "Starts at 1,800,000 IQD, increases based on experience and skills. Transportation and accommodation covered by the company."
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Any",
+      "numberOfPositions": 1,
+      "workingHours": "Full-time, travel required (10 days/month in Erbil, 15 days/month in Basra)",
+      "closingDate": "",
+      "requirements": [
+        "Minimum 3 years of experience in sales supervision",
+        "Age between 28–38 years",
+        "Must own a car",
+        "Strong knowledge of markets in Southern Iraq",
+        "Willingness to travel (Erbil & Basra)",
+        "Excellent Arabic language skills",
+        "Specialized knowledge in food products and cold storage sectors"
+      ],
+      "responsibilities": [
+        "Supervise and manage sales teams",
+        "Oversee distribution of food products and cold storage operations",
+        "Ensure sales targets are achieved",
+        "Coordinate between Erbil and Basra markets",
+        "Maintain strong relationships with clients and distributors"
+      ],
+      "application": "Contact directly for more information (phone number not provided in ad)",
+      "notes": [
+        "Company covers travel and accommodation expenses"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "7a1d97b6-553a-4c93-a5e3-8e6b72ec8a91",
+  "created_at": "2025-09-17T12:00:00Z",
+  "updated_at": "2025-09-17",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Mini Bus Driver",
+      "category": "Transportation",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Driver",
+      "Mini Bus"
+    ],
+    "salary": {
+      "iqd": "1000000",
+      "usd": 0,
+      "notes": "Salary starts at 1,000,000 IQD plus fuel allowance. Increases from the 3rd month onward with additional monthly adjustments. Company covers expenses."
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Any",
+      "numberOfPositions": 2,
+      "workingHours": "08:00 AM – 04:00 PM",
+      "closingDate": "",
+      "requirements": [
+        "Must own a mini bus",
+        "Mini bus must not have mechanical/electrical problems",
+        "Vehicle must not be excessively old",
+        "Strong driving record without issues"
+      ],
+      "responsibilities": [
+        "Transport sales staff daily",
+        "Ensure safe and punctual transportation",
+        "Maintain the vehicle in good working condition"
+      ],
+      "application": "Contact via phone: 07505112144 or 07501638284",
+      "notes": [
+        "Applicants without a mini bus should not apply"
+      ]
+    }
+  }
 }
-
-
 
 
 
