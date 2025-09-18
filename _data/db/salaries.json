@@ -4983,9 +4983,71 @@
       ]
     }
   }
+},
+    {
+  "jobID": "f1f80cf0-7ed0-4e3c-940a-9c98a7a35e36",
+  "created_at": "2025-09-18T12:00:00Z",
+  "updated_at": "2025-09-18",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Business Development Specialist",
+      "category": "Business Development",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Business Development",
+      "Fintech"
+    ],
+    "salary": {
+      "iqd": "2400000",
+      "usd": 0,
+      "notes": "Salary range depends on experience and qualifications"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Any",
+      "numberOfPositions": 1,
+      "workingHours": "5 days per week (standard office hours)",
+      "closingDate": "",
+      "requirements": [
+        "Bachelor’s degree in Business, Finance, Marketing, or related field (MBA preferred)",
+        "3+ years in business development, partnerships, or sales within fintech, digital payments, telecom, or banking",
+        "Strong knowledge of digital wallets, mobile payments, and the fintech ecosystem",
+        "Analytical skills to assess opportunities and risks",
+        "Fluency in Kurdish, Arabic, and English"
+      ],
+      "responsibilities": [
+        "Identify, pursue, and close new business to grow user acquisition and transaction volumes",
+        "Develop and execute go-to-market strategies for new segments (retail, e-commerce, utilities, government services)",
+        "Conduct market research on customer needs, competitors, and opportunities",
+        "Partner with AML & Compliance to ensure regulatory alignment",
+        "Build and maintain strong relationships with key stakeholders and merchants",
+        "Collaborate with product, marketing, and operations to align opportunities with customer needs"
+      ],
+      "application": "Send CV to jobs@damazrandn.com",
+      "notes": []
+    }
+  }
 }
-
-
 
 
 
