@@ -5047,7 +5047,69 @@
       "notes": []
     }
   }
+},
+    {
+  "jobID": "f5a7b1a9-0a4a-4a9d-9b38-b1f17f6021e0",
+  "created_at": "2025-09-21T12:00:00Z",
+  "updated_at": "2025-09-21",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "HR Admin Officer",
+      "category": "Human Resources",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "HR"
+    ],
+    "salary": {
+      "iqd": "1800000",
+      "usd": 0,
+      "notes": "Salary depends on experience and qualifications"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Any",
+      "numberOfPositions": 1,
+      "workingHours": "Full-time, with possibility to travel",
+      "closingDate": "2025-09-22",
+      "requirements": [
+        "Bachelor’s degree or diploma in Business Administration/Management",
+        "Proficiency in Kurdish, Arabic, and English",
+        "Strong knowledge of MS Office and ERP systems",
+        "Excellent communication and organizational skills"
+      ],
+      "responsibilities": [
+        "Handle HR and administrative tasks",
+        "Support ERP and data entry processes",
+        "Maintain employee records",
+        "Assist in internal communications and coordination",
+        "Ensure compliance with company policies"
+      ],
+      "application": "Send CV to info@energyplusltd.com with subject line ‘HR Admin Officer’",
+      "notes": []
+    }
+  }
 }
+
 
 
 
