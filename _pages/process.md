@@ -3,6 +3,10 @@ layout: home
 title: Recruiment Process
 permalink: /process/
 ---
+---
+layout: default
+title: Hiring Process
+---
 
 <style>
 .timeline {
@@ -21,7 +25,7 @@ permalink: /process/
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #ccc; /* soft gray line */
+  background: #ccc;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -34,19 +38,46 @@ permalink: /process/
 }
 
 .timeline-item.left {
-  margin-right: auto; /* push to the left side */
+  margin-right: auto;
   text-align: left;
 }
 
 .timeline-item.right {
-  margin-left: auto; /* push to the right side */
-  text-align: left; /* keep text aligned inside box */
+  margin-left: auto;
+  text-align: right;
 }
 
-.timeline-item h2 {
-  border-bottom: 1px solid #ccc; /* soft underline */
-  padding-bottom: 4px;
+/* underline connecting to the center line */
+.timeline-item.left h2 {
+  position: relative;
   margin: 0;
+  padding-bottom: 4px;
+}
+
+.timeline-item.left h2::after {
+  content: '';
+  position: absolute;
+  left: 100%; /* start after text */
+  top: 50%;
+  height: 1px;
+  width: calc(50% - 2rem); /* extend to near center line */
+  background: #ccc;
+}
+
+.timeline-item.right h2 {
+  position: relative;
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.timeline-item.right h2::after {
+  content: '';
+  position: absolute;
+  right: 100%; /* start before text */
+  top: 50%;
+  height: 1px;
+  width: calc(50% - 2rem); /* extend to near center line */
+  background: #ccc;
 }
 </style>
 
