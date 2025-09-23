@@ -4,7 +4,6 @@ title: Recruiment Process
 permalink: /process/
 ---
 
-
 <style>
 .timeline {
   position: relative;
@@ -22,24 +21,27 @@ permalink: /process/
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #ccc; /* soft vertical line */
+  background: #ccc;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .timeline-item {
   position: relative;
-  width: 45%; /* half-width to avoid crossing line */
+  width: 45%; /* less than half to avoid crossing line */
 }
 
+/* LEFT SIDE: text flows from middle to left */
 .timeline-item.left {
-  margin-right: auto; /* push to left */
-  text-align: left;
+  margin-right: auto; /* push to left side */
+  text-align: left; /* align inside container */
+  direction: rtl; /* text flows right-to-left */
 }
 
+/* RIGHT SIDE: normal text */
 .timeline-item.right {
-  margin-left: auto; /* push to right */
-  text-align: left; /* text aligned inside the box */
+  margin-left: auto; /* push to right side */
+  text-align: left;
 }
 
 /* soft underline under each point */
@@ -99,7 +101,5 @@ permalink: /process/
     <h2>Offboarding</h2>
   </div>
 </div>
-
-
 
 
