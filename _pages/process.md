@@ -5,9 +5,7 @@ permalink: /process/
 
 ---
 
-<div style="text-align: left;">
-  <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 4px;">Workforce Planning</h2>
-</div>
+
 
 <div style="text-align: right;">
   <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 4px;">Workforce Planning</h2>
@@ -56,5 +54,6 @@ permalink: /process/
 <div style="text-align: left;">
   <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 4px;">Offboarding</h2>
 </div>
+
 
 
