@@ -28,27 +28,25 @@ permalink: /process/
 
 .timeline-item {
   position: relative;
-  width: 50%;
-  padding: 0 1rem;
+  width: 45%; /* slightly less than half to avoid crossing line */
   display: flex;
   align-items: center;
 }
 
 .timeline-item.left {
-  justify-content: flex-end; /* content on left side of vertical line */
-  text-align: right;
+  margin-right: auto; /* push to the left side */
+  text-align: left;
 }
 
 .timeline-item.right {
-  justify-content: flex-start; /* content on right side of vertical line */
-  text-align: left;
+  margin-left: auto; /* push to the right side */
+  text-align: left; /* keep text aligned inside box */
 }
 
 .timeline-item h2 {
   border-bottom: 1px solid #ccc; /* soft underline */
   padding-bottom: 4px;
   margin: 0;
-  background: #fff; /* optional: hide overlap on vertical line */
 }
 </style>
 
@@ -101,7 +99,6 @@ permalink: /process/
     <h2>Offboarding</h2>
   </div>
 </div>
-
 
 
 
