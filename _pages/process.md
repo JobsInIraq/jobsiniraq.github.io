@@ -4,6 +4,7 @@ title: Recruiment Process
 permalink: /process/
 ---
 
+
 <style>
 .timeline {
   position: relative;
@@ -14,66 +15,38 @@ permalink: /process/
   gap: 2rem;
 }
 
-/* vertical line in the middle */
+/* vertical center line */
 .timeline::before {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #ccc;
+  background: #ccc; /* soft vertical line */
   left: 50%;
   transform: translateX(-50%);
 }
 
 .timeline-item {
   position: relative;
-  width: 45%; /* slightly less than half to avoid crossing line */
-  display: flex;
-  align-items: center;
+  width: 45%; /* half-width to avoid crossing line */
 }
 
 .timeline-item.left {
-  margin-right: auto;
+  margin-right: auto; /* push to left */
   text-align: left;
 }
 
 .timeline-item.right {
-  margin-left: auto;
-  text-align: right;
+  margin-left: auto; /* push to right */
+  text-align: left; /* text aligned inside the box */
 }
 
-/* underline connecting to the center line */
-.timeline-item.left h2 {
-  position: relative;
-  margin: 0;
+/* soft underline under each point */
+.timeline-item h2 {
+  border-bottom: 1px solid #ccc;
   padding-bottom: 4px;
-}
-
-.timeline-item.left h2::after {
-  content: '';
-  position: absolute;
-  left: 100%; /* start after text */
-  top: 50%;
-  height: 1px;
-  width: calc(50% - 2rem); /* extend to near center line */
-  background: #ccc;
-}
-
-.timeline-item.right h2 {
-  position: relative;
   margin: 0;
-  padding-bottom: 4px;
-}
-
-.timeline-item.right h2::after {
-  content: '';
-  position: absolute;
-  right: 100%; /* start before text */
-  top: 50%;
-  height: 1px;
-  width: calc(50% - 2rem); /* extend to near center line */
-  background: #ccc;
 }
 </style>
 
@@ -126,7 +99,6 @@ permalink: /process/
     <h2>Offboarding</h2>
   </div>
 </div>
-
 
 
 
