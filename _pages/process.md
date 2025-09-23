@@ -4,31 +4,36 @@ title: Recruiment Process
 permalink: /process/
 ---
 
+
 <style>
 .timeline {
   display: flex;
   flex-direction: column;
-  align-items: center; /* center horizontally */
-  gap: 1rem; /* space between items */
+  align-items: center; /* center the timeline in page */
+  gap: 2rem; /* vertical space between points */
 }
 
 .timeline-item {
   width: 50%; /* take half page width */
+  display: flex;
+  align-items: center; /* vertical center inside the row */
+  min-height: 60px; /* ensures enough height for centering */
 }
 
 .timeline-item.left {
-  align-self: flex-start; /* left side */
+  justify-content: flex-start; /* left side */
   text-align: left;
 }
 
 .timeline-item.right {
-  align-self: flex-end; /* right side */
+  justify-content: flex-end; /* right side */
   text-align: right;
 }
 
 .timeline-item h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 4px;
+  margin: 0;
 }
 </style>
 
@@ -81,8 +86,6 @@ permalink: /process/
     <h2>Offboarding</h2>
   </div>
 </div>
-
-
 
 
 
