@@ -5108,7 +5108,405 @@
       "notes": []
     }
   }
+},
+    {
+  "jobID": "a2a0d4f6-4b5d-4c82-8a36-3b9f0c27d85e",
+  "created_at": "2025-09-23T12:00:00Z",
+  "updated_at": "2025-09-23",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Field Operator",
+      "category": "Oil & Gas",
+      "position": "Rotation (20/10)"
+    },
+    "tags": [
+      "Oil & Gas",
+      "Refinery"
+    ],
+    "salary": {
+      "iqd": 0,
+      "usd": "2500",
+      "notes": "Based on experience and qualifications"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Karbala",
+      "address": "Karbala Refinery"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Any (Iraqi nationality only)",
+      "numberOfPositions": 1,
+      "workingHours": "Rotation schedule 20/10",
+      "closingDate": "",
+      "requirements": [
+        "Bachelor’s degree in Oil & Gas Engineering or related field",
+        "1–3 years of experience in refinery or oil & gas field operations",
+        "Basic knowledge of refinery processes and equipment",
+        "Good understanding of safety procedures (H2S, firefighting, confined space)",
+        "Physically fit and able to work in rotating shifts or extended hours",
+        "Iraqi nationality required",
+        "English and Arabic communication skills preferred"
+      ],
+      "responsibilities": [
+        "Start up and shut down equipment such as pumps, valves, compressors, and heaters according to instructions",
+        "Perform field startup and shutdown procedures for process units",
+        "Conduct routine inspection rounds to monitor operational parameters and detect abnormal conditions",
+        "Check equipment integrity and identify leaks, unusual vibrations, or irregularities",
+        "Maintain communication with the DCS operator to relay and execute instructions",
+        "Detect and report equipment malfunctions or technical issues promptly",
+        "Assist maintenance teams during repair, isolation, and troubleshooting",
+        "Ensure strict implementation of safety procedures and permit-to-work processes",
+        "Use PPE and comply with site safety guidelines",
+        "Collect operational samples for lab analysis and monitor product quality",
+        "Document daily operations, observations, and incidents in logs or electronic systems",
+        "Prepare and submit detailed handover report at the end of each shift"
+      ],
+      "application": "Send CV via email to Mohammed.albakri@darjah-iq.com",
+      "notes": [
+        "Darjah company – Karbala Refinery project"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "f2a1b9f0-69e3-4cdb-9ef9-5a7c8af7f4d3",
+  "created_at": "2025-09-23T12:00:00Z",
+  "updated_at": "2025-09-23",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "English Teacher",
+      "category": "Education",
+      "position": "Primary School Teacher (Grade 1 & 2)"
+    },
+    "tags": [
+      "Education",
+      "English Teacher"
+    ],
+    "salary": {
+      "iqd": "550000",
+      "usd": 0,
+      "notes": "Depends on number of lessons"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": "Lizay Ahli School – 32 Park"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Any",
+      "numberOfPositions": 1,
+      "workingHours": "08:00 AM – 2:30 PM",
+      "closingDate": "",
+      "requirements": [
+        "Excellent proficiency in English",
+        "Experience in teaching young children preferred",
+        "Commitment and professionalism"
+      ],
+      "responsibilities": [
+        "Teach English to grade 1 and 2 students",
+        "Prepare lesson plans and educational materials",
+        "Engage students with interactive teaching methods",
+        "Ensure a respectful and supportive classroom environment"
+      ],
+      "application": "Send CV to hrg719965@gmail.com",
+      "notes": [
+        "Salary depends on number of lessons",
+        "School: Lizay Ahli – 32 Park, Erbil"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "d37e0a64-89f5-4e54-bb28-8a92f79b77e4",
+  "created_at": "2025-09-23T12:00:00Z",
+  "updated_at": "2025-09-23",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales & Marketing",
+      "category": "Sales",
+      "position": "Sales & Marketing Specialist"
+    },
+    "tags": [
+      "Sales",
+      "Marketing"
+    ],
+    "salary": {
+      "usd": "700",
+      "iqd": 0,
+      "notes": "Kurdish version: $600, English version: $700 + monthly commission"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": "Italian Village 1"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Both",
+      "numberOfPositions": 1,
+      "workingHours": "Full-time, 9:00 AM – 5:00 PM, 6 days/week",
+      "closingDate": "",
+      "requirements": [
+        "Strong communication and persuasion skills",
+        "Experience in logistics sector",
+        "Minimum 1 year of work experience",
+        "Knowledge of sales and management"
+      ],
+      "responsibilities": [
+        "Engage and persuade customers",
+        "Manage and oversee sales activities",
+        "Support logistics-related sales",
+        "Meet monthly sales targets"
+      ],
+      "application": "Send CV via WhatsApp: 07509808231",
+      "notes": [
+        "CVs without a photo will be rejected",
+        "Applicants without logistics experience will be rejected"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "0f57d3a2-1b25-41b5-909f-efb68db7a43d",
+  "created_at": "2025-09-23T12:00:00Z",
+  "updated_at": "2025-09-23",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Call Center",
+      "category": "Customer Service",
+      "position": "Customer Service & Sales Agent"
+    },
+    "tags": [
+      "Call Center",
+      "Customer Service"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "600000+",
+      "notes": "Fixed salary starting at 600,000 IQD plus sales incentives"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad",
+      "address": "Zayouna – Al-Rubaie Street, opposite Jawhara Baghdad Mall"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Both",
+      "numberOfPositions": "",
+      "workingHours": "Full-time, 10:00 AM – 6:00 PM",
+      "closingDate": "",
+      "requirements": [
+        "At least 1 year of experience in sales or customer service",
+        "Ability to work under pressure",
+        "Preferred age between 25–30 years",
+        "Intermediate English proficiency"
+      ],
+      "responsibilities": [
+        "Handle customer calls and provide support",
+        "Promote and sell company products",
+        "Ensure customer satisfaction",
+        "Meet sales targets"
+      ],
+      "application": "Send CV via WhatsApp: 07770531251",
+      "notes": [
+        "Position open to both male and female applicants",
+        "Sales incentives provided in addition to base salary"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "91e6e29d-29f6-4bfa-a9d1-1d1d9c95e4a4",
+  "created_at": "2025-09-23T12:00:00Z",
+  "updated_at": "2025-09-23",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Accountant Officer",
+      "category": "Finance",
+      "position": "Accountant"
+    },
+    "tags": [
+      "Accountant",
+      "Finance"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "1800000",
+      "notes": "Based on experience and qualifications"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "address": "",
+      "withTravel": true
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Both",
+      "numberOfPositions": "",
+      "workingHours": "Full-time",
+      "closingDate": "22/09/2025",
+      "requirements": [
+        "Bachelor’s degree or diploma in Accounting, Finance, or related field",
+        "Languages: Kurdish, Arabic, and English",
+        "Proficiency in accounting software and MS Office",
+        "Strong financial reporting skills",
+        "High accuracy and attention to detail"
+      ],
+      "responsibilities": [
+        "Prepare and review financial reports",
+        "Handle accounting transactions",
+        "Ensure compliance with financial regulations",
+        "Maintain accurate financial records"
+      ],
+      "application": "Send your CV to info@energyplusltd.com with subject: Accountant Officer",
+      "notes": [
+        "Position requires occasional travel",
+        "Competitive salary package based on qualifications"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "f9cb8a1c-5b61-4ab5-b314-8a51c3f9a4f7",
+  "created_at": "2025-09-23T18:00:00Z",
+  "updated_at": "2025-09-23",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Senior Accountant",
+      "category": "Finance",
+      "position": "Senior Accountant"
+    },
+    "tags": [
+      "Senior Accountant",
+      "Finance"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "4500,000",
+      "notes": "Based on experience and qualifications"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad",
+      "district": "Al Mansour",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Both",
+      "numberOfPositions": "",
+      "workingHours": "Full-time, 8:30 AM – 5:30 PM, 5 days a week",
+      "closingDate": "",
+      "requirements": [
+        "Bachelor’s degree in Accounting, Finance, or related field (CPA preferred)",
+        "4+ years of accounting experience",
+        "Proficiency in accounting software (Oracle, SAP, or similar) and MS Excel",
+        "Experience in digital payments or e-commerce accounting is a plus",
+        "Good English proficiency"
+      ],
+      "responsibilities": [
+        "Ensure completeness and accuracy of financial records",
+        "Coordinate with auditors, Finance Director, and Financial Controller during audits",
+        "Prepare and analyze financial statements (balance sheets, income statements)",
+        "Implement month-end and year-end closing processes with timely reporting"
+      ],
+      "application": "Apply through company recruitment channels (contact details not specified)",
+      "notes": [
+        "International e-payment solutions company operating in Lebanon, UAE, Qatar, Jordan, Egypt, and Iraq",
+        "Position based in Baghdad – Al Mansour"
+      ]
+    }
+  }
 }
+
 
 
 
