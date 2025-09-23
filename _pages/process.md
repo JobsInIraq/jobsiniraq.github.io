@@ -4,36 +4,51 @@ title: Recruiment Process
 permalink: /process/
 ---
 
-
 <style>
 .timeline {
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* center the timeline in page */
-  gap: 2rem; /* vertical space between points */
+  align-items: center;
+  gap: 2rem;
+}
+
+/* vertical line in the middle */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc; /* soft gray line */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .timeline-item {
-  width: 50%; /* take half page width */
+  position: relative;
+  width: 50%;
+  padding: 0 1rem;
   display: flex;
-  align-items: center; /* vertical center inside the row */
-  min-height: 60px; /* ensures enough height for centering */
+  align-items: center;
 }
 
 .timeline-item.left {
-  justify-content: flex-start; /* left side */
-  text-align: left;
-}
-
-.timeline-item.right {
-  justify-content: flex-end; /* right side */
+  justify-content: flex-end; /* content on left side of vertical line */
   text-align: right;
 }
 
+.timeline-item.right {
+  justify-content: flex-start; /* content on right side of vertical line */
+  text-align: left;
+}
+
 .timeline-item h2 {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; /* soft underline */
   padding-bottom: 4px;
   margin: 0;
+  background: #fff; /* optional: hide overlap on vertical line */
 }
 </style>
 
@@ -86,7 +101,6 @@ permalink: /process/
     <h2>Offboarding</h2>
   </div>
 </div>
-
 
 
 
