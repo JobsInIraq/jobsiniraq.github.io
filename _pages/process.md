@@ -3,12 +3,6 @@ layout: home
 title: Recruiment Process
 permalink: /process/
 ---
----
-layout: default
-title: Hiring Process
----
-
-# Hiring Process
 
 <style>
 .timeline {
@@ -108,4 +102,5 @@ title: Hiring Process
     <h2>Offboarding</h2>
   </div>
 </div>
+
 
