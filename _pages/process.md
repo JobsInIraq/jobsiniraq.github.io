@@ -3,6 +3,12 @@ layout: home
 title: Recruiment Process
 permalink: /process/
 ---
+---
+layout: default
+title: Hiring Process
+---
+
+# Hiring Process
 
 <style>
 .timeline {
@@ -28,19 +34,20 @@ permalink: /process/
 
 .timeline-item {
   position: relative;
-  width: 45%; /* less than half to avoid crossing line */
+  width: 45%;
+  display: flex;
+  align-items: center;
 }
 
-/* LEFT SIDE: text flows from middle to left */
+/* LEFT SIDE: push text to right edge of left half */
 .timeline-item.left {
-  margin-right: auto; /* push to left side */
-  text-align: left; /* align inside container */
-  direction: rtl; /* text flows right-to-left */
+  justify-content: flex-end; /* push content to the right side of left half */
+  text-align: right; /* text aligned right, near the center line */
 }
 
-/* RIGHT SIDE: normal text */
+/* RIGHT SIDE: push text to left edge of right half */
 .timeline-item.right {
-  margin-left: auto; /* push to right side */
+  justify-content: flex-start; /* push content to the left side of right half */
   text-align: left;
 }
 
@@ -101,5 +108,4 @@ permalink: /process/
     <h2>Offboarding</h2>
   </div>
 </div>
-
 
