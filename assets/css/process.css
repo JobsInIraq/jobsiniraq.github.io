@@ -21,8 +21,7 @@
 /* each process row */
 .process {
   position: relative;
-  display: flex;
-  align-items: center; /* vertically aligns circle and text */
+  min-height: 50px;
   margin: 2rem 0;
 }
 
@@ -39,53 +38,56 @@
   align-items: center;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   font-size: 0.9rem;
 }
 
-/* content block next to circle */
+/* content block */
 .process .content {
-  max-width: 45%;
-  padding-bottom: 6px;
+  display: inline-block;
+  padding-bottom: 4px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   word-break: break-word;
-  display: inline-block;
+  max-width: 45%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* LEFT: text on left side of circle */
-.process.left {
-  flex-direction: row-reverse;
-}
 .process.left .content {
   text-align: right;
-  margin-right: 10px; /* closer to circle */
+  right: 50%;
+  margin-right: 40px; /* distance from circle */
 }
 
 /* RIGHT: text on right side of circle */
-.process.right {
-  flex-direction: row;
-}
 .process.right .content {
   text-align: left;
-  margin-left: 10px; /* closer to circle */
+  left: 50%;
+  margin-left: 40px; /* distance from circle */
 }
 
 /* Responsive for mobile */
 @media screen and (max-width: 768px) {
   .process {
-    flex-direction: column;
-    align-items: flex-start;
+    min-height: auto;
   }
   .process .circle {
     position: relative;
     left: auto;
+    top: auto;
     transform: none;
     margin-bottom: 0.5rem;
   }
   .process.left .content,
   .process.right .content {
+    position: relative;
+    left: 0;
+    right: 0;
     margin: 0;
     max-width: 100%;
     text-align: left;
