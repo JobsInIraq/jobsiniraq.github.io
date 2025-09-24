@@ -1,3 +1,4 @@
+/* timeline container */
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -22,33 +23,33 @@
 .process {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* vertically centers text and circle */
+  align-items: center; /* aligns text and circle vertically */
   position: relative;
   margin-bottom: 2rem;
 }
 
-/* left block */
+/* left side: circle on center, text left */
 .process.left {
-  flex-direction: row-reverse; /* circle on line, text left of circle */
+  flex-direction: row-reverse;
   text-align: right;
 }
 
-/* right block */
+/* right side: circle on center, text right */
 .process.right {
-  flex-direction: row; /* circle on line, text right of circle */
+  flex-direction: row;
   text-align: left;
 }
 
-/* content box */
+/* content block */
 .process .content {
   max-width: 45%;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   word-break: break-word;
 }
 
-/* circle */
+/* numbered circle on middle line */
 .process .circle {
   width: 30px;
   height: 30px;
@@ -59,13 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem; /* space between circle and text */
   flex-shrink: 0;
   font-size: 0.9rem;
   z-index: 1;
+  position: relative;
 }
 
-/* responsive for mobile */
+/* responsive mobile */
 @media screen and (max-width: 768px) {
   .process {
     flex-direction: row;
