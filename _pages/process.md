@@ -71,4 +71,4 @@ classes: wide
     <div class="content">Offboarding</div>
   </div>
 
-</div>
+
