@@ -1,10 +1,4 @@
-/* Professional stage numbers */
-.stage {
-  color: #0056b3;   /* Professional blue accent */
-  font-weight: bold;
-  margin-right: 6px;
-}
-
+/* --- timeline main --- */
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -25,15 +19,15 @@
   transform: translateX(-50%);
 }
 
-/* each process row: relative so .content can be absolutely positioned */
+/* each process row */
 .process {
   position: relative;
-  min-height: 56px;
-  padding: 0.75rem 0;
+  min-height: 60px;
+  padding: 1rem 0;
   box-sizing: border-box;
 }
 
-/* content block that sits on left or right half */
+/* content block */
 .process .content {
   width: 45%;
   position: absolute;
@@ -42,39 +36,49 @@
   box-sizing: border-box;
 }
 
-/* LEFT: content block's RIGHT edge sits on center line */
+/* LEFT content */
 .process.left .content {
   right: 50%;
   text-align: right;
   padding-right: 1rem;
 }
 
-/* RIGHT: content block's LEFT edge sits on center line */
+/* RIGHT content */
 .process.right .content {
   left: 50%;
   text-align: left;
   padding-left: 1rem;
 }
 
-/* heading styling: full-width inside .content so underline stretches to center */
+/* h2 styling and underline */
 .process .content h2 {
   display: inline-block;
   width: 100%;
   margin: 0;
   padding-bottom: 6px;
-  border-bottom: 1px solid #ccc; /* underline */
+  border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   white-space: normal;
   word-break: break-word;
-  font-size: 1.25rem; /* professional font size */
+  font-size: 1.1rem; /* professional size */
 }
 
-/* ==============================
-   Responsive for Mobile
-   ============================== */
-@media screen and (max-width: 768px) {
+/* stage circle */
+.stage-circle {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  background-color: #0056b3; /* professional blue */
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 8px;
+}
 
-  /* make content full width and stack */
+/* --- Mobile responsiveness --- */
+@media screen and (max-width: 768px) {
   .process .content {
     width: 90%;
     position: relative;
@@ -86,13 +90,18 @@
     margin-bottom: 2rem;
   }
 
-  /* adjust vertical timeline line for small screens */
   .timeline::before {
-    left: 20px;
+    left: 20px; /* move vertical line */
     transform: none;
   }
 
-  /* decrease font size for mobile */
+  .stage-circle {
+    left: 0;
+    top: 0;
+    transform: none;
+    margin-right: 12px;
+  }
+
   .process .content h2 {
     font-size: 1rem;
   }
