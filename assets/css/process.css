@@ -1,5 +1,9 @@
 /* assets/css/process.css */
-
+.stage {
+  color: #0056b3;   /* Professional blue accent */
+  font-weight: bold;
+  margin-right: 6px;
+}
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -65,3 +69,4 @@
   white-space: normal;
   word-break: break-word;
 }
+
