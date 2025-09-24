@@ -1,4 +1,4 @@
-/* --- timeline main --- */
+/* --- Timeline Container --- */
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* vertical center line */
+/* Vertical line in center */
 .timeline::before {
   content: "";
   position: absolute;
@@ -15,11 +15,11 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #e6e6e6; /* soft gray */
+  background: #e6e6e6;
   transform: translateX(-50%);
 }
 
-/* each process row */
+/* Process Row */
 .process {
   position: relative;
   min-height: 60px;
@@ -27,7 +27,7 @@
   box-sizing: border-box;
 }
 
-/* content block */
+/* Content Block */
 .process .content {
   width: 45%;
   position: absolute;
@@ -36,48 +36,50 @@
   box-sizing: border-box;
 }
 
-/* LEFT content */
+/* Left */
 .process.left .content {
   right: 50%;
   text-align: right;
   padding-right: 1rem;
 }
 
-/* RIGHT content */
+/* Right */
 .process.right .content {
   left: 50%;
   text-align: left;
   padding-left: 1rem;
 }
 
-/* h2 styling and underline */
+/* Headings */
 .process .content h2 {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center; /* vertically center circle and text */
   width: 100%;
   margin: 0;
   padding-bottom: 6px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
-  white-space: normal;
   word-break: break-word;
-  font-size: 1.1rem; /* professional size */
+  font-size: 1.1rem;
 }
 
-/* stage circle */
+/* Stage Circle */
 .stage-circle {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 28px;
   height: 28px;
-  line-height: 28px;
   border-radius: 50%;
-  background-color: #0056b3; /* professional blue */
+  background-color: #0056b3;
   color: #fff;
   font-weight: bold;
-  text-align: center;
   margin-right: 8px;
+  flex-shrink: 0;
+  font-size: 0.9rem;
 }
 
-/* --- Mobile responsiveness --- */
+/* --- Responsive Mobile --- */
 @media screen and (max-width: 768px) {
   .process .content {
     width: 90%;
@@ -91,15 +93,8 @@
   }
 
   .timeline::before {
-    left: 20px; /* move vertical line */
+    left: 20px;
     transform: none;
-  }
-
-  .stage-circle {
-    left: 0;
-    top: 0;
-    transform: none;
-    margin-right: 12px;
   }
 
   .process .content h2 {
