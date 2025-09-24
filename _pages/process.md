@@ -1,7 +1,8 @@
 ---
 layout: home
-title: Recruiment Process
+title: Recruitment Process
 permalink: /process/
+css: "/assets/css/process.css"
 ---
 
 <style>
@@ -65,5 +66,6 @@ permalink: /process/
   <div class="timeline-item left"><h2>Continuous Development &amp; Retention</h2></div>
   <div class="timeline-item right"><h2>Offboarding</h2></div>
 </div>
+
 
 
