@@ -60,7 +60,7 @@
 }
 .process.left .content {
   text-align: right;
-  margin-right: 60px; /* distance from circle */
+  margin-right: 10px; /* closer to circle */
 }
 
 /* RIGHT: text on right side of circle */
@@ -69,7 +69,7 @@
 }
 .process.right .content {
   text-align: left;
-  margin-left: 60px; /* distance from circle */
+  margin-left: 10px; /* closer to circle */
 }
 
 /* Responsive for mobile */
