@@ -1,4 +1,4 @@
-/* Timeline Container */
+/* Timeline container */
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -23,81 +23,91 @@
 .process {
   position: relative;
   min-height: 60px;
-  padding: 1rem 0;
-  box-sizing: border-box;
+  margin-bottom: 2rem;
 }
 
-/* Content block inside left/right */
+/* Content block */
 .process .content {
   width: 45%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
   box-sizing: border-box;
 }
 
-/* LEFT content */
+/* LEFT content aligned right */
 .process.left .content {
-  right: 50%;
+  float: left;
   text-align: right;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
-/* RIGHT content */
+/* RIGHT content aligned left */
 .process.right .content {
-  left: 50%;
+  float: right;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 /* Heading with underline */
 .process .content h2 {
   display: inline-flex;
   align-items: center;
-  width: 100%;
   margin: 0;
   padding-bottom: 6px;
   border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  word-break: break-word;
   font-size: 1.1rem;
+  word-break: break-word;
 }
 
-/* Stage circle */
+/* Circle on the center line */
 .stage-circle {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #0056b3;
   color: #fff;
   font-weight: bold;
-  margin-right: 8px;
-  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.95rem;
 }
 
-/* Responsive for Mobile */
+/* Ensure content does not overlap the circle */
+.process.left .content h2 {
+  margin-right: 40px;
+}
+
+.process.right .content h2 {
+  margin-left: 40px;
+}
+
+/* Responsive for mobile */
 @media screen and (max-width: 768px) {
-  .process .content {
+  .process .content,
+  .process.left .content,
+  .process.right .content {
     width: 90%;
-    position: relative !important;
-    left: 0 !important;
-    right: 0 !important;
+    float: none;
     text-align: left;
     padding: 0 1rem;
-    transform: none;
-    margin-bottom: 2rem;
+  }
+
+  .stage-circle {
+    left: 20px;
+    transform: translate(0, -50%);
+  }
+
+  .process.left .content h2,
+  .process.right .content h2 {
+    margin: 0 0 0 50px;
   }
 
   .timeline::before {
     left: 20px;
     transform: none;
-  }
-
-  .process .content h2 {
-    font-size: 1rem;
   }
 }
