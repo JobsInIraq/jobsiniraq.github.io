@@ -10,19 +10,57 @@ classes: wide
 <link rel="stylesheet" href="{{ '/assets/css/process.css' | relative_url }}">
 
 <div class="timeline">
-  <div class="process left"><div class="content"><h2>Workforce Planning</h2></div></div>
-  <div class="process right"><div class="content"><h2>Recruitment Strategy</h2></div></div>
-  <div class="process left"><div class="content"><h2>Job Posting &amp; Employer Branding</h2></div></div>
-  <div class="process right"><div class="content"><h2>Candidate Screening</h2></div></div>
-  <div class="process left"><div class="content"><h2>Assessment &amp; Testing</h2></div></div>
-  <div class="process right"><div class="content"><h2>Interviewing</h2></div></div>
-  <div class="process left"><div class="content"><h2>Reference &amp; Background Checks</h2></div></div>
-  <div class="process right"><div class="content"><h2>Job Offer &amp; Negotiation</h2></div></div>
-  <div class="process left"><div class="content"><h2>Onboarding</h2></div></div>
-  <div class="process right"><div class="content"><h2>Probation &amp; Performance Evaluation</h2></div></div>
-  <div class="process left"><div class="content"><h2>Continuous Development &amp; Retention</h2></div></div>
-  <div class="process right"><div class="content"><h2>Offboarding</h2></div></div>
+
+  <div class="timeline-item left">
+    <h2><span class="stage">Stage 1:</span> Workforce Planning</h2>
+  </div>
+
+  <div class="timeline-item right">
+    <h2><span class="stage">Stage 2:</span> Recruitment Strategy</h2>
+  </div>
+
+  <div class="timeline-item left">
+    <h2><span class="stage">Stage 3:</span> Job Posting &amp; Employer Branding</h2>
+  </div>
+
+  <div class="timeline-item right">
+    <h2><span class="stage">Stage 4:</span> Candidate Screening</h2>
+  </div>
+
+  <div class="timeline-item left">
+    <h2><span class="stage">Stage 5:</span> Assessment &amp; Testing</h2>
+  </div>
+
+  <div class="timeline-item right">
+    <h2><span class="stage">Stage 6:</span> Interviewing</h2>
+  </div>
+
+  <div class="timeline-item left">
+    <h2><span class="stage">Stage 7:</span> Reference &amp; Background Checks</h2>
+  </div>
+
+  <div class="timeline-item right">
+    <h2><span class="stage">Stage 8:</span> Job Offer &amp; Negotiation</h2>
+  </div>
+
+  <div class="timeline-item left">
+    <h2><span class="stage">Stage 9:</span> Onboarding</h2>
+  </div>
+
+  <div class="timeline-item right">
+    <h2><span class="stage">Stage 10:</span> Probation &amp; Performance Evaluation</h2>
+  </div>
+
+  <div class="timeline-item left">
+    <h2><span class="stage">Stage 11:</span> Continuous Development &amp; Retention</h2>
+  </div>
+
+  <div class="timeline-item right">
+    <h2><span class="stage">Stage 12:</span> Offboarding</h2>
+  </div>
+
 </div>
+
 
 
 
