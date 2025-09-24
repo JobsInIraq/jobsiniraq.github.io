@@ -1,4 +1,4 @@
-/* --- Timeline Container --- */
+/* Timeline Container */
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* Vertical line in center */
+/* Vertical center line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -19,7 +19,7 @@
   transform: translateX(-50%);
 }
 
-/* Process Row */
+/* Each process block */
 .process {
   position: relative;
   min-height: 60px;
@@ -27,7 +27,7 @@
   box-sizing: border-box;
 }
 
-/* Content Block */
+/* Content block inside left/right */
 .process .content {
   width: 45%;
   position: absolute;
@@ -36,24 +36,24 @@
   box-sizing: border-box;
 }
 
-/* Left */
+/* LEFT content */
 .process.left .content {
   right: 50%;
   text-align: right;
   padding-right: 1rem;
 }
 
-/* Right */
+/* RIGHT content */
 .process.right .content {
   left: 50%;
   text-align: left;
   padding-left: 1rem;
 }
 
-/* Headings */
+/* Heading with underline */
 .process .content h2 {
   display: inline-flex;
-  align-items: center; /* vertically center circle and text */
+  align-items: center;
   width: 100%;
   margin: 0;
   padding-bottom: 6px;
@@ -63,27 +63,27 @@
   font-size: 1.1rem;
 }
 
-/* Stage Circle */
+/* Stage circle */
 .stage-circle {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #0056b3;
   color: #fff;
   font-weight: bold;
   margin-right: 8px;
   flex-shrink: 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
-/* --- Responsive Mobile --- */
+/* Responsive for Mobile */
 @media screen and (max-width: 768px) {
   .process .content {
     width: 90%;
-    position: relative;
+    position: relative !important;
     left: 0 !important;
     right: 0 !important;
     text-align: left;
