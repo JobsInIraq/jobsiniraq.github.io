@@ -18,14 +18,16 @@
   transform: translateX(-50%);
 }
 
-/* each process row */
+/* each process row: flex container */
 .process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  min-height: 50px;
   margin: 2rem 0;
 }
 
-/* circle on vertical center line */
+/* circle on center line */
 .process .circle {
   width: 30px;
   height: 30px;
@@ -38,59 +40,51 @@
   align-items: center;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: 1;
   font-size: 0.9rem;
 }
 
 /* content block */
 .process .content {
-  display: inline-block;
   padding-bottom: 4px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   word-break: break-word;
   max-width: 45%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-/* LEFT: text on left side of circle */
+/* LEFT: text aligns to right of the circle */
 .process.left .content {
   text-align: right;
-  right: 50%;
-  margin-right: 40px; /* distance from circle */
+  order: 0; /* left content comes first */
+  margin-right: calc(50% + 20px); /* distance from center line */
 }
 
-/* RIGHT: text on right side of circle */
+/* RIGHT: text aligns to left of the circle */
 .process.right .content {
   text-align: left;
-  left: 50%;
-  margin-left: 40px; /* distance from circle */
+  order: 1; /* right content comes after circle */
+  margin-left: calc(50% + 20px); /* distance from center line */
 }
 
 /* Responsive for mobile */
 @media screen and (max-width: 768px) {
   .process {
-    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .process .circle {
     position: relative;
-    left: auto;
-    top: auto;
+    left: 0;
     transform: none;
     margin-bottom: 0.5rem;
   }
   .process.left .content,
   .process.right .content {
-    position: relative;
-    left: 0;
-    right: 0;
+    text-align: left;
     margin: 0;
     max-width: 100%;
-    text-align: left;
   }
   .timeline::before {
     left: 10px;
