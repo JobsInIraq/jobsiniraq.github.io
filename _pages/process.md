@@ -4,52 +4,49 @@ title: Recruiment Process
 permalink: /process/
 ---
 
+
 <style>
 .timeline {
   position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0;
 }
 
 /* vertical center line */
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 50%;
   width: 2px;
   background: #ccc;
-  left: 50%;
   transform: translateX(-50%);
 }
 
 .timeline-item {
-  position: relative;
-  width: 45%;
-  display: flex;
-  align-items: center;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
 }
 
-/* LEFT SIDE: push text to right edge of left half */
-.timeline-item.left {
-  justify-content: flex-end; /* push content to the right side of left half */
-  text-align: right; /* text aligned right, near the center line */
-}
-
-/* RIGHT SIDE: push text to left edge of right half */
-.timeline-item.right {
-  justify-content: flex-start; /* push content to the left side of right half */
-  text-align: left;
-}
-
-/* soft underline under each point */
 .timeline-item h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 4px;
   margin: 0;
+}
+
+/* left side items */
+.timeline-item.left {
+  text-align: right;
+  float: left;
+}
+
+/* right side items */
+.timeline-item.right {
+  text-align: left;
+  float: right;
 }
 </style>
 
