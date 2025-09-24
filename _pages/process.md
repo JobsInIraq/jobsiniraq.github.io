@@ -9,6 +9,7 @@ classes: wide
 <!-- ensure the CSS is loaded for this page -->
 <link rel="stylesheet" href="{{ '/assets/css/process.css' | relative_url }}">
 
+
 <div class="timeline">
 
   <div class="process left">
@@ -25,7 +26,7 @@ classes: wide
 
   <div class="process left">
     <div class="content">
-      <h2><span class="stage-circle">3</span> Job Posting &amp; Employer Branding</h2>
+      <h2><span class="stage-circle">3</span> Job Posting & Employer Branding</h2>
     </div>
   </div>
 
@@ -37,7 +38,7 @@ classes: wide
 
   <div class="process left">
     <div class="content">
-      <h2><span class="stage-circle">5</span> Assessment &amp; Testing</h2>
+      <h2><span class="stage-circle">5</span> Assessment & Testing</h2>
     </div>
   </div>
 
@@ -49,13 +50,13 @@ classes: wide
 
   <div class="process left">
     <div class="content">
-      <h2><span class="stage-circle">7</span> Reference &amp; Background Checks</h2>
+      <h2><span class="stage-circle">7</span> Reference & Background Checks</h2>
     </div>
   </div>
 
   <div class="process right">
     <div class="content">
-      <h2><span class="stage-circle">8</span> Job Offer &amp; Negotiation</h2>
+      <h2><span class="stage-circle">8</span> Job Offer & Negotiation</h2>
     </div>
   </div>
 
@@ -67,13 +68,13 @@ classes: wide
 
   <div class="process right">
     <div class="content">
-      <h2><span class="stage-circle">10</span> Probation &amp; Performance Evaluation</h2>
+      <h2><span class="stage-circle">10</span> Probation & Performance Evaluation</h2>
     </div>
   </div>
 
   <div class="process left">
     <div class="content">
-      <h2><span class="stage-circle">11</span> Continuous Development &amp; Retention</h2>
+      <h2><span class="stage-circle">11</span> Continuous Development & Retention</h2>
     </div>
   </div>
 
@@ -84,4 +85,3 @@ classes: wide
   </div>
 
 </div>
-
