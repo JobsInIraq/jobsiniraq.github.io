@@ -12,8 +12,8 @@ classes: wide
 <div class="timeline">
 
   <div class="process left">
-    <div class="content">Workforce Planning</div>
     <div class="circle">1</div>
+    <div class="content">Workforce Planning</div>
   </div>
 
   <div class="process right">
@@ -22,8 +22,8 @@ classes: wide
   </div>
 
   <div class="process left">
-    <div class="content">Job Posting &amp; Employer Branding</div>
     <div class="circle">3</div>
+    <div class="content">Job Posting &amp; Employer Branding</div>
   </div>
 
   <div class="process right">
@@ -32,8 +32,8 @@ classes: wide
   </div>
 
   <div class="process left">
-    <div class="content">Assessment &amp; Testing</div>
     <div class="circle">5</div>
+    <div class="content">Assessment &amp; Testing</div>
   </div>
 
   <div class="process right">
@@ -42,8 +42,8 @@ classes: wide
   </div>
 
   <div class="process left">
-    <div class="content">Reference &amp; Background Checks</div>
     <div class="circle">7</div>
+    <div class="content">Reference &amp; Background Checks</div>
   </div>
 
   <div class="process right">
@@ -52,8 +52,8 @@ classes: wide
   </div>
 
   <div class="process left">
-    <div class="content">Onboarding</div>
     <div class="circle">9</div>
+    <div class="content">Onboarding</div>
   </div>
 
   <div class="process right">
@@ -62,8 +62,8 @@ classes: wide
   </div>
 
   <div class="process left">
-    <div class="content">Continuous Development &amp; Retention</div>
     <div class="circle">11</div>
+    <div class="content">Continuous Development &amp; Retention</div>
   </div>
 
   <div class="process right">
@@ -72,4 +72,8 @@ classes: wide
   </div>
 
 </div>
+
+
+</div>
+
 
