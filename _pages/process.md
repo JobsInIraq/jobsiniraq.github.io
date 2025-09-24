@@ -6,7 +6,7 @@ css: /assets/css/process.css
 ---
 
 
-<div class="process">
+<div class="timeline">
   <div class="process left"><h2>Workforce Planning</h2></div>
   <div class="process right"><h2>Recruitment Strategy</h2></div>
   <div class="process left"><h2>Job Posting &amp; Employer Branding</h2></div>
@@ -20,6 +20,7 @@ css: /assets/css/process.css
   <div class="process left"><h2>Continuous Development &amp; Retention</h2></div>
   <div class="process right"><h2>Offboarding</h2></div>
 </div>
+
 
 
 
