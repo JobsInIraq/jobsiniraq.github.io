@@ -1,4 +1,10 @@
-/* ===== Timeline Base ===== */
+/* Professional stage numbers */
+.stage {
+  color: #0056b3;   /* Professional blue accent */
+  font-weight: bold;
+  margin-right: 6px;
+}
+
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -19,15 +25,15 @@
   transform: translateX(-50%);
 }
 
-/* ===== Process Blocks ===== */
+/* each process row: relative so .content can be absolutely positioned */
 .process {
   position: relative;
-  min-height: 60px;
-  padding: 1rem 0;
+  min-height: 56px;
+  padding: 0.75rem 0;
   box-sizing: border-box;
 }
 
-/* content container */
+/* content block that sits on left or right half */
 .process .content {
   width: 45%;
   position: absolute;
@@ -36,70 +42,58 @@
   box-sizing: border-box;
 }
 
-/* LEFT side */
+/* LEFT: content block's RIGHT edge sits on center line */
 .process.left .content {
   right: 50%;
   text-align: right;
   padding-right: 1rem;
 }
 
-/* RIGHT side */
+/* RIGHT: content block's LEFT edge sits on center line */
 .process.right .content {
   left: 50%;
   text-align: left;
   padding-left: 1rem;
 }
 
-/* ===== Headings ===== */
+/* heading styling: full-width inside .content so underline stretches to center */
 .process .content h2 {
-  font-size: 1.2rem;       /* professional readable size */
-  font-weight: 500;
-  line-height: 1.4;
+  display: inline-block;
+  width: 100%;
   margin: 0;
   padding-bottom: 6px;
   border-bottom: 1px solid #ccc; /* underline */
-  display: inline-block;
-  width: 100%;
+  box-sizing: border-box;
   white-space: normal;
   word-break: break-word;
+  font-size: 1.25rem; /* professional font size */
 }
 
-/* ===== Stage Labels in Circles ===== */
-.stage-circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 32px;
-  height: 32px;
-  background: #0056b3;    /* professional blue */
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: bold;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2; /* keep above center line */
-}
+/* ==============================
+   Responsive for Mobile
+   ============================== */
+@media screen and (max-width: 768px) {
 
-/* ===== Responsive (Mobile) ===== */
-@media (max-width: 768px) {
+  /* make content full width and stack */
   .process .content {
     width: 90%;
-    left: 5% !important;
-    right: auto !important;
-    text-align: left !important;
-    padding: 0 !important;
+    position: relative;
+    left: 0 !important;
+    right: 0 !important;
+    text-align: left;
+    padding: 0 1rem;
+    transform: none;
+    margin-bottom: 2rem;
   }
 
-  .stage-circle {
-    left: 20px;
-    transform: translateY(-50%);
-  }
-
+  /* adjust vertical timeline line for small screens */
   .timeline::before {
     left: 20px;
     transform: none;
+  }
+
+  /* decrease font size for mobile */
+  .process .content h2 {
+    font-size: 1rem;
   }
 }
