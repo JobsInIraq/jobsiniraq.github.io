@@ -1,0 +1,48 @@
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc; /* vertical middle line */
+}
+
+.timeline-item {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline-item.left {
+  text-align: right;
+  left: 0;
+}
+
+.timeline-item.right {
+  text-align: left;
+  left: 50%;
+}
+
+.timeline-item h2 {
+  margin: 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ccc; /* underline */
+  display: block;
+}
+
+.timeline-item.left h2 {
+  margin-left: auto;  /* push to the right */
+  width: calc(100% - 2px); /* underline stretches to center line */
+}
+
+.timeline-item.right h2 {
+  margin-right: auto; /* push to the left */
+  width: calc(100% - 2px); /* underline stretches to center line */
+}
