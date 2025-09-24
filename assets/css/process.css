@@ -19,37 +19,15 @@
   transform: translateX(-50%);
 }
 
-/* each stage row */
+/* each process row */
 .process {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* aligns text and circle vertically */
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center; /* aligns circle and text vertically */
 }
 
-/* left side: circle on center, text left */
-.process.left {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-
-/* right side: circle on center, text right */
-.process.right {
-  flex-direction: row;
-  text-align: left;
-}
-
-/* content block */
-.process .content {
-  max-width: 45%;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  word-break: break-word;
-}
-
-/* numbered circle on middle line */
+/* circle positioned in the center */
 .process .circle {
   width: 30px;
   height: 30px;
@@ -60,31 +38,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-  font-size: 0.9rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
+  font-size: 0.9rem;
+}
+
+/* text block for left or right */
+.process .content {
+  max-width: 45%;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  word-break: break-word;
   position: relative;
+}
+
+/* LEFT: content right aligned, to left of circle */
+.process.left .content {
+  margin-right: calc(50% + 20px); /* 20px gap from circle */
+  text-align: right;
+}
+
+/* RIGHT: content left aligned, to right of circle */
+.process.right .content {
+  margin-left: calc(50% + 20px); /* 20px gap from circle */
+  text-align: left;
 }
 
 /* responsive mobile */
 @media screen and (max-width: 768px) {
   .process {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .process .content {
-    max-width: 90%;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .process .circle {
-    margin-right: 1rem;
+    position: relative;
+    left: auto;
+    transform: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .process.left .content,
+  .process.right .content {
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
   }
 
   .timeline::before {
-    left: 20px;
+    left: 10px;
   }
 }
