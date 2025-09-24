@@ -17,8 +17,8 @@ classes: wide
   </div>
 
   <div class="process right">
-    <div class="circle">2</div>
     <div class="content">Recruitment Strategy</div>
+    <div class="circle">2</div>
   </div>
 
   <div class="process left">
@@ -27,8 +27,8 @@ classes: wide
   </div>
 
   <div class="process right">
-    <div class="circle">4</div>
     <div class="content">Candidate Screening</div>
+    <div class="circle">4</div>
   </div>
 
   <div class="process left">
@@ -37,8 +37,8 @@ classes: wide
   </div>
 
   <div class="process right">
-    <div class="circle">6</div>
     <div class="content">Interviewing</div>
+    <div class="circle">6</div>
   </div>
 
   <div class="process left">
@@ -47,8 +47,8 @@ classes: wide
   </div>
 
   <div class="process right">
-    <div class="circle">8</div>
     <div class="content">Job Offer &amp; Negotiation</div>
+    <div class="circle">8</div>
   </div>
 
   <div class="process left">
@@ -57,8 +57,8 @@ classes: wide
   </div>
 
   <div class="process right">
-    <div class="circle">10</div>
     <div class="content">Probation &amp; Performance Evaluation</div>
+    <div class="circle">10</div>
   </div>
 
   <div class="process left">
@@ -67,8 +67,8 @@ classes: wide
   </div>
 
   <div class="process right">
-    <div class="circle">12</div>
     <div class="content">Offboarding</div>
+    <div class="circle">12</div>
   </div>
 
 </div>
