@@ -18,10 +18,10 @@
   transform: translateX(-50%);
 }
 
-/* each process row: flex container */
+/* each process row: flex container with space between */
 .process {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   margin: 2rem 0;
@@ -54,18 +54,28 @@
   max-width: 45%;
 }
 
-/* LEFT: text aligns to right of the circle */
-.process.left .content {
-  text-align: right;
-  order: 0; /* left content comes first */
-  margin-right: calc(50% + 20px); /* distance from center line */
+/* LEFT: flex row with text on left of circle */
+.process.left {
+  flex-direction: row-reverse; /* text on left */
+  justify-content: flex-end;
 }
 
-/* RIGHT: text aligns to left of the circle */
+/* RIGHT: flex row with text on right of circle */
+.process.right {
+  flex-direction: row; /* text on right */
+  justify-content: flex-start;
+}
+
+/* LEFT content: push text next to circle */
+.process.left .content {
+  margin-right: 20px;
+  text-align: right;
+}
+
+/* RIGHT content: push text next to circle */
 .process.right .content {
+  margin-left: 20px;
   text-align: left;
-  order: 1; /* right content comes after circle */
-  margin-left: calc(50% + 20px); /* distance from center line */
 }
 
 /* Responsive for mobile */
