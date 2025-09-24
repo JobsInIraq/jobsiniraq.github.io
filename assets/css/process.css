@@ -1,9 +1,14 @@
+/* assets/css/process.css */
+
 .timeline {
   position: relative;
-  max-width: 800px;
-  margin: auto;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem 0;
+  box-sizing: border-box;
 }
 
+/* vertical center line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -11,38 +16,52 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #ccc; /* vertical middle line */
+  background: #e6e6e6; /* soft gray */
+  transform: translateX(-50%);
 }
 
-.timeline-item {
-  width: 50%;
-  padding: 20px;
+/* each process row: relative so .content can be absolutely positioned */
+.process {
   position: relative;
+  min-height: 56px;
+  padding: 0.75rem 0;
+  box-sizing: border-box;
 }
 
-.timeline-item.left {
+/* content block that sits on left or right half.
+   We place its edge at the center line (right:50% for left items,
+   left:50% for right items). */
+.process .content {
+  width: 45%;                 /* width of the block (stops before edge) */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+/* LEFT: content block's RIGHT edge sits on the center line */
+.process.left .content {
+  right: 50%;
   text-align: right;
-  left: 0;
+  padding-right: 1rem; /* spacing between text and center */
 }
 
-.timeline-item.right {
-  text-align: left;
+/* RIGHT: content block's LEFT edge sits on the center line */
+.process.right .content {
   left: 50%;
+  text-align: left;
+  padding-left: 1rem;
 }
 
-.timeline-item h2 {
+/* heading styling: full-width inside .content so underline stretches to center */
+.process .content h2 {
+  display: inline-block;
+  width: 100%;
   margin: 0;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #ccc; /* underline */
-  display: block;
-}
-
-.timeline-item.left h2 {
-  margin-left: auto;  /* push to the right */
-  width: calc(100% - 2px); /* underline stretches to center line */
-}
-
-.timeline-item.right h2 {
-  margin-right: auto; /* push to the left */
-  width: calc(100% - 2px); /* underline stretches to center line */
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc; /* soft underline up to center */
+  background: #fff; /* prevents visual overlap on the center line */
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-word;
 }
