@@ -59,8 +59,8 @@
   width: 100%;
   margin: 0;
   padding-bottom: 6px;
-  border-bottom: 1px solid #ccc; /* soft underline up to center */
-  background: #fff; /* prevents visual overlap on the center line */
+  border-bottom: 1px solid #ccc; /* keep underline */
+  /* remove background: #fff; */
   box-sizing: border-box;
   white-space: normal;
   word-break: break-word;
