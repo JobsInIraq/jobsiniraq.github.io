@@ -29,60 +29,44 @@
 /* Content block */
 .process .content {
   width: 45%;
-  position: relative;
   box-sizing: border-box;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
 }
 
 /* LEFT content aligned right */
 .process.left .content {
+  position: relative;
   float: left;
   text-align: right;
-  padding-right: 2rem;
+  margin-right: 60px; /* space for circle */
 }
 
 /* RIGHT content aligned left */
 .process.right .content {
+  position: relative;
   float: right;
   text-align: left;
-  padding-left: 2rem;
+  margin-left: 60px; /* space for circle */
 }
 
-/* Heading with underline */
-.process .content h2 {
-  display: inline-flex;
-  align-items: center;
-  margin: 0;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #ccc;
-  font-size: 1.1rem;
-  word-break: break-word;
-}
-
-/* Circle on the center line */
-.stage-circle {
+/* Circle style */
+.circle {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #0056b3;
-  color: #fff;
+  color: white;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.95rem;
-}
-
-/* Ensure content does not overlap the circle */
-.process.left .content h2 {
-  margin-right: 40px;
-}
-
-.process.right .content h2 {
-  margin-left: 40px;
+  font-size: 0.9rem;
+  z-index: 1;
 }
 
 /* Responsive for mobile */
@@ -93,17 +77,12 @@
     width: 90%;
     float: none;
     text-align: left;
-    padding: 0 1rem;
+    margin: 0 0 0 60px;
   }
 
-  .stage-circle {
+  .circle {
     left: 20px;
     transform: translate(0, -50%);
-  }
-
-  .process.left .content h2,
-  .process.right .content h2 {
-    margin: 0 0 0 50px;
   }
 
   .timeline::before {
