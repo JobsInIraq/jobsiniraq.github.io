@@ -7,5 +7,5 @@ author_profile: false
 toc: true
 toc_label: "On this page"
 toc_sticky: true
-searchable: true  
+searchable: true
 ---
