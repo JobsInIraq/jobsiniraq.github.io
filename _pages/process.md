@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 title: Recruitment Process
 permalink: /process/
 css: /assets/css/process.css
@@ -72,6 +72,7 @@ classes: wide
   </div>
 
 </div>
+
 
 
 
