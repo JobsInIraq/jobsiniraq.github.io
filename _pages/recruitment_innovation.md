@@ -1,7 +1,7 @@
 ---
 title: "Reinvention of Recruitment"
 layout: single
-permalink: /recruitment-innovation/
+permalink: /recruitment_innovation/
 description: "Exploring AI, automation, and next-gen technologies reshaping recruitment."
 author_profile: false
 toc: true
