@@ -1,6 +1,6 @@
 ---
 title: "Reinvention of Recruitment"
-layout: single
+layout: splash
 permalink: /recruitment_innovation/
 description: "Exploring AI, automation, and next-gen technologies reshaping recruitment."
 author_profile: false
