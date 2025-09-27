@@ -5636,7 +5636,7 @@
   "job": {
     "jobDetails": {
       "jobTitle": "IT Officer",
-      "category": "Information Technology",
+      "category": "IT",
       "position": "Full-Time"
     },
     "tags": [
@@ -5816,7 +5816,7 @@
   "job": {
     "jobDetails": {
       "jobTitle": "Sales Staff (Male)",
-      "category": "Retail & Sales",
+      "category": "Sales",
       "position": "Full-Time"
     },
     "tags": [
@@ -5880,7 +5880,7 @@
   "job": {
     "jobDetails": {
       "jobTitle": "Graphic Designer",
-      "category": "Design & Creative",
+      "category": "Design",
       "position": "Full-Time"
     },
     "tags": [
@@ -6004,7 +6004,7 @@
   "job": {
     "jobDetails": {
       "jobTitle": "Real Estate Sales Staff",
-      "category": "Sales & Marketing",
+      "category": "Sales",
       "position": "Full-Time"
     },
     "tags": [
@@ -6069,7 +6069,7 @@
   "job": {
     "jobDetails": {
       "jobTitle": "Property Sales Staff",
-      "category": "Real Estate Sales",
+      "category": "Sales",
       "position": "Full-Time"
     },
     "tags": [
