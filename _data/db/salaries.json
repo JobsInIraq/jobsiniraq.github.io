@@ -5505,10 +5505,628 @@
       ]
     }
   }
+},
+    {
+  "jobID": "8c6a5f77-99f4-4b7e-8e6f-9e54b6d5c502",
+  "created_at": "2025-09-27T18:30:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Treasury Officer",
+      "category": "Finance",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Treasury Officer",
+      "Finance"
+    ],
+    "salary": {
+      "usd": "500",
+      "iqd": "",
+      "notes": "Monthly salary, negotiable depending on experience"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "Naz Naz",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Both",
+      "numberOfPositions": "",
+      "workingHours": "12:00 PM – 8:00 PM",
+      "closingDate": "",
+      "requirements": [
+        "Previous experience in finance or treasury roles",
+        "Strong attention to detail and organizational skills",
+        "Good communication and teamwork abilities",
+        "Fluency in Kurdish and Arabic is preferred"
+      ],
+      "responsibilities": [
+        "Support treasury operations",
+        "Monitor and record financial transactions",
+        "Ensure accuracy in financial reporting",
+        "Assist in cash flow management and financial planning"
+      ],
+      "application": "Send your CV to New.vacancy23@gmail.com with subject line: Treasury Officer",
+      "notes": []
+    }
+  }
+},
+    {
+  "jobID": "4e4a12db-9d87-4d91-8992-402c1f7bb221",
+  "created_at": "2025-09-27T19:15:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Call Center",
+      "category": "Customer Service",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales Call Center",
+      "Customer Service"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "600000",
+      "notes": "Fixed salary starting from 600,000 IQD plus attractive sales incentives"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Baghdad",
+      "district": "Zayouna",
+      "address": "Al-Rubaie Street, opposite Jawhara Baghdad Mall"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Both",
+      "numberOfPositions": "",
+      "workingHours": "10:00 AM – 6:00 PM",
+      "closingDate": "",
+      "requirements": [
+        "At least 1 year of experience in sales or customer service",
+        "Ability to work under pressure",
+        "Intermediate English proficiency"
+      ],
+      "responsibilities": [
+        "Handle customer calls professionally",
+        "Provide product information and support",
+        "Assist in achieving sales targets",
+        "Maintain high customer satisfaction levels"
+      ],
+      "application": "Send CV via WhatsApp to 07770531251",
+      "notes": []
+    }
+  }
+},
+    {
+  "jobID": "0f2d1e76-1ac7-4201-967a-f36f69a90b4c",
+  "created_at": "2025-09-27T20:05:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "IT Officer",
+      "category": "Information Technology",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "IT Officer",
+      "Hotel"
+    ],
+    "salary": {
+      "usd": "700",
+      "iqd": "",
+      "notes": "Fixed monthly salary"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": "5-Star Hotel, Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Both",
+      "numberOfPositions": "",
+      "workingHours": "08:30 AM – 05:00 PM",
+      "closingDate": "",
+      "requirements": [
+        "Proven experience as an IT Officer",
+        "Strong understanding of hotel PMS/POS systems, network management, and data security",
+        "Familiarity with troubleshooting hardware, software, and network issues",
+        "Bachelor’s Degree in IT, Computer Science, or a related field",
+        "Strong analytical and problem-solving skills",
+        "Fluency in English, Kurdish, and Arabic is highly desirable"
+      ],
+      "responsibilities": [
+        "Oversee IT systems and support for the hotel",
+        "Troubleshoot hardware, software, and network issues",
+        "Ensure PMS/POS systems are fully functional",
+        "Maintain data security and backup procedures",
+        "Support staff with IT-related needs"
+      ],
+      "application": "Send CV to assur.hrsolutions@gmail.com with subject: IT – Erbil",
+      "notes": []
+    }
+  }
+},
+    {
+  "jobID": "b0f52b8f-3071-45e6-98ac-5fc412c1a501",
+  "created_at": "2025-09-27T20:35:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Graphic Designer",
+      "category": "Design",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Graphic Design",
+      "Erbil"
+    ],
+    "salary": {
+      "usd": "800",
+      "iqd": "",
+      "notes": "Fixed monthly salary"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Both",
+      "numberOfPositions": "",
+      "workingHours": "10:00 AM – 6:00 PM",
+      "closingDate": "",
+      "requirements": [],
+      "responsibilities": [],
+      "application": "Send CV to info@daretohire.com",
+      "notes": [
+        "Working Days: 6 per week"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "d8c4d134-43b0-4f61-96f0-1123fa5a92a2",
+  "created_at": "2025-09-27T20:55:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Staff (Female)",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Retail"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "650000",
+      "notes": "Base salary with commission"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Sulaymaniyah",
+      "district": "Majidi Mall & Ashti Road",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Female",
+      "numberOfPositions": "4",
+      "workingHours": "Shift 1: 10:00 AM – 6:00 PM; Shift 2: 4:00 PM – 12:00 AM",
+      "closingDate": "",
+      "requirements": [
+        "Age between 18–29",
+        "Languages: Kurdish and Arabic",
+        "Previous sales experience required",
+        "Must not be committed to another job"
+      ],
+      "responsibilities": [
+        "Assist customers in clothing and fashion stores",
+        "Promote products for women, men, and children",
+        "Achieve sales targets"
+      ],
+      "application": "Send CV via WhatsApp: 07722729595 or 07504298426",
+      "notes": []
+    }
+  }
+},
+    {
+  "jobID": "c3a1c5e9-5f2f-4fd1-8ad8-67e73f9dc024",
+  "created_at": "2025-09-27T21:15:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Staff (Male)",
+      "category": "Retail & Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Retail"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "1000000",
+      "notes": "Base salary plus per-item commission"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male",
+      "numberOfPositions": "",
+      "workingHours": "4:00 PM – 12:00 AM",
+      "closingDate": "",
+      "requirements": [
+        "Age must be 24 or older",
+        "Fluent in Kurdish and Arabic",
+        "Resident of Erbil",
+        "Previous experience in clothing sales",
+        "Good sales knowledge",
+        "Minimum height 1.75m",
+        "Not overweight"
+      ],
+      "responsibilities": [
+        "Assist customers in clothing store",
+        "Promote and sell products",
+        "Meet daily and monthly sales targets"
+      ],
+      "application": "Send CV via WhatsApp: 07504231619",
+      "notes": []
+    }
+  }
+},
+    {
+  "jobID": "0d5cb2a1-92f1-44f1-bcf3-3ecdd019b412",
+  "created_at": "2025-09-27T21:45:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Graphic Designer",
+      "category": "Design & Creative",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Graphic Design",
+      "Advertising"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "1000000",
+      "notes": "Base salary IQD 1,000,000 with possibility of higher pay depending on experience"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Sulaymaniyah",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Any",
+      "numberOfPositions": "",
+      "workingHours": "",
+      "closingDate": "",
+      "requirements": [
+        "More than 3 years of experience in graphic design",
+        "Strong academic knowledge of design software, layout, proportion, and lighting",
+        "Familiarity and knowledge of Kurdish and Middle Eastern visual art (preferred and adds advantage)"
+      ],
+      "responsibilities": [
+        "Create and design graphics for advertising projects",
+        "Work with design software to deliver high-quality outputs",
+        "Incorporate cultural and regional art styles into designs when required"
+      ],
+      "application": "Send CV via WhatsApp: 07704814848",
+      "notes": []
+    }
+  }
+},
+    {
+  "jobID": "2a1f8f47-3f6d-42a5-8c12-76e4f34a9f0a",
+  "created_at": "2025-09-27T20:45:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Accounts Receivable Accountant",
+      "category": "Finance",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Accounting",
+      "Accounts Receivable"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "700000",
+      "notes": "Salary based on qualifications and experience"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Sulaymaniyah",
+      "district": "Barzaiyakan",
+      "address": "Maya Company HQ"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": "qaiwangroup.com"
+    },
+    "extraDetails": {
+      "gender": "Any",
+      "numberOfPositions": "",
+      "workingHours": "08:00 AM – 03:00 PM",
+      "closingDate": "2025-09-28",
+      "requirements": [
+        "Bachelor’s degree in Accounting, Finance, or related field",
+        "Proven experience in Accounts Receivable or general accounting",
+        "Proficiency in computer applications and accounting systems"
+      ],
+      "responsibilities": [
+        "Manage accounts receivable system and prepare related invoices",
+        "Record collections in the financial system ensuring accuracy",
+        "Reconcile receivable accounts to verify all payments are correctly recorded",
+        "Prepare daily financial reports"
+      ],
+      "application": "Send CV to: Maya.companies@qaiwangroup.com",
+      "notes": [
+        "Part of Qaiwan Group companies",
+        "CVs should be sent before the deadline"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "6c7a53d2-29c1-4c64-84e3-1cfad7e9a8f5",
+  "created_at": "2025-09-27T21:15:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Real Estate Sales Staff",
+      "category": "Sales & Marketing",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Real Estate",
+      "Sales"
+    ],
+    "salary": {
+      "usd": "1000",
+      "iqd": "",
+      "notes": "Starting from $1000 monthly, negotiable based on experience and skills"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": "Rekar Real Estate Company Office"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "https://t.me/Rekar1717",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male & Female",
+      "numberOfPositions": "",
+      "workingHours": "Full-time (details not specified)",
+      "closingDate": "",
+      "requirements": [
+        "At least 1 year of experience in real estate sales",
+        "University graduate (minimum diploma)",
+        "Fluent in Arabic (reading and writing)",
+        "Must own a personal car",
+        "Not engaged in another job"
+      ],
+      "responsibilities": [
+        "Handle sales activities for residential properties",
+        "Meet and negotiate with clients",
+        "Promote and market available real estate projects"
+      ],
+      "application": "Send CV via Telegram only: 07504621717 – https://t.me/Rekar1717",
+      "notes": [
+        "CVs must be in Kurdish or Arabic only",
+        "Applications in other languages will not be accepted"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "f9f8f372-5c0e-47d1-9c41-51a58bb3c124",
+  "created_at": "2025-09-27T22:10:00Z",
+  "updated_at": "2025-09-27",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Property Sales Staff",
+      "category": "Real Estate Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Real Estate",
+      "Sales"
+    ],
+    "salary": {
+      "usd": "1000",
+      "iqd": "",
+      "notes": "Starting from $1000 per month, negotiable based on skills and experience"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": "Rekar Real Estate Company"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "https://t.me/Rekar1717",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male & Female",
+      "numberOfPositions": "",
+      "workingHours": "Full-time (exact schedule not specified)",
+      "closingDate": "",
+      "requirements": [
+        "At least 1 year of experience in property/real estate sales",
+        "University graduate (minimum diploma)",
+        "Fluent in Arabic (reading and writing)",
+        "Must own a personal car",
+        "Not engaged in any other job"
+      ],
+      "responsibilities": [
+        "Engage with clients and promote property listings",
+        "Conduct property sales negotiations",
+        "Maintain strong communication with potential buyers"
+      ],
+      "application": "Send CV via Telegram only: 07504621717 – https://t.me/Rekar1717",
+      "notes": [
+        "CVs must be in Kurdish or Arabic only",
+        "Applications in other languages will not be accepted"
+      ]
+    }
+  }
 }
-
-
-
 
 
 
