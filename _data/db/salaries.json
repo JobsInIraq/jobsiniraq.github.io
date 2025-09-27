@@ -3930,7 +3930,7 @@
   "job": {
     "jobDetails": {
       "jobTitle": "Driver",
-      "category": "Logistics & Delivery",
+      "category": "Logistics",
       "position": "Full-Time"
     },
     "tags": [
@@ -5202,7 +5202,7 @@
       "usd": 0,
       "notes": "Depends on number of lessons"
     },
-    "isRemote": false,
+    "isRemote": false,	
     "location": {
       "country": "Iraq",
       "city": "Erbil",
