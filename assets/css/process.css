@@ -22,14 +22,16 @@
 }
 */
 
-/* Extend timeline line dynamically */
+/* FLEXBOX timeline container */
 .timeline {
   position: relative;
   max-width: 1100px;
   margin: 2rem auto;
-  padding: 1rem 0 4rem 0; /* Added bottom padding */
+  padding: 1rem 0;
   box-sizing: border-box;
-  overflow: visible; /* Ensure content doesn't get cut off */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 /* vertical center line - IMPROVED */
@@ -53,16 +55,13 @@
 }
 */
 /* each process row - FIXED FOR AUTO-EXPANSION */
+/* each process row - FLEXBOX SOLUTION */
 .process {
   position: relative;
+  width: 100%;
   min-height: 60px;
-  margin-bottom: 3rem; /* Changed from margin: 2rem 0 to margin-bottom only */
-  padding-bottom: 1rem; /* Added padding to ensure proper spacing */
-  display: block; /* Ensure block layout */
-}
-/* Remove margin-top to prevent overlap */
-.process:first-child {
-  margin-top: 0;
+  display: flex;
+  align-items: flex-start;
 }
 
 /* circle on center line */
@@ -116,7 +115,7 @@
 */
 
 /* content block - ENSURE PROPER HEIGHT */
-.process .content {
+/*.process .content {
   width: 45%;
   padding-bottom: 6px;
   border-bottom: 1px solid #ccc;
@@ -124,21 +123,48 @@
   word-break: break-word;
   position: absolute;
   min-height: 30px; /* Ensure minimum height for circle alignment */
+} */
+
+/* content block - FLEXBOX VERSION */
+.process .content {
+  width: 45%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  word-break: break-word;
+  position: relative;
 }
 
 /* LEFT content */
-.process.left .content {
+/* .process.left .content {
   text-align: right;
   right: 55%;
   position: absolute;
 }
+*/
+
+/* LEFT content */
+.process.left .content {
+  text-align: right;
+  margin-right: auto;
+  margin-left: 0;
+}
+
 
 /* RIGHT content */
-.process.right .content {
+/*.process.right .content {
   text-align: left;
   left: 55%;
   position: absolute;
 }
+*/
+/* RIGHT content */
+.process.right .content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: 0;
+}
+
 
 
 /* Responsive for mobile */
