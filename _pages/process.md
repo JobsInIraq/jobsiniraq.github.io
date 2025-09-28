@@ -10,9 +10,12 @@ classes: wide
 <link rel="stylesheet" href="{{ '/assets/css/process.css' | relative_url }}">
 
 <div class="timeline">
-  <div class="circle">1</div>
-  <div class="content">Workforce Planning</div>
-</div>
+
+  <div class="process left">
+    <div class="content">Workforce Planning</div>
+    <div class="circle">1</div>
+  </div>
+
 
   <div class="process right">
     <div class="circle">2</div>
@@ -70,6 +73,7 @@ classes: wide
   </div>
 
 </div>
+
 
 
 
