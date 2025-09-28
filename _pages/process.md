@@ -18,14 +18,16 @@ classes: wide
 -->
 <div class="process left">
   <div class="content">
-    <strong>Workforce Planning</strong>
-    <ul style="margin-top: 10px; font-size: 0.9em; text-align: left; list-style-type: disc; padding-left: 20px;">
-      <li>Identify organizational goals</li>
-      <li>Assess current workforce</li>
-      <li>Forecast future needs</li>
-      <li>Identify skills gaps</li>
-      <li>Develop workforce plan</li>
-    </ul>
+    <div style="line-height: 1.4;">
+      <strong>Workforce Planning</strong>
+      <ul style="margin: 8px 0 0 0; font-size: 0.9em; text-align: left; list-style-type: disc; padding-left: 20px;">
+        <li>Identify organizational goals</li>
+        <li>Assess current workforce</li>
+        <li>Forecast future needs</li>
+        <li>Identify skills gaps</li>
+        <li>Develop workforce plan</li>
+      </ul>
+    </div>
   </div>
   <div class="circle">1</div>
 </div>
@@ -86,6 +88,7 @@ classes: wide
   </div>
 
 </div>
+
 
 
 
