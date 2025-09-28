@@ -87,3 +87,11 @@
     left: 10px;
   }
 }
+/* optional — nicer list style for process details */
+.process .content ul.process-details {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  color: #333;
+}
