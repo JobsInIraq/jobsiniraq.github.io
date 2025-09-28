@@ -147,7 +147,7 @@
 .process.left .content {
   text-align: right;
   margin-right: auto;
-  margin-left: 0;
+  margin-left: absolute;
 }
 
 
@@ -162,7 +162,7 @@
 .process.right .content {
   text-align: left;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: absolute;
 }
 
 
