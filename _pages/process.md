@@ -12,9 +12,18 @@ classes: wide
 <div class="timeline">
 
   <div class="process left">
-    <div class="circle">1</div>
-    <div class="content">Workforce Planning</div>
+  <div class="content">
+    Workforce Planning
+    <ul style="margin:0.5rem 0 0; padding-left:1.25rem; font-size:0.95rem; line-height:1.35;">
+      <li>Identify organizational goals</li>
+      <li>Assess current workforce</li>
+      <li>Forecast future needs</li>
+      <li>Identify skills gaps</li>
+      <li>Develop workforce plan</li>
+    </ul>
   </div>
+  <div class="circle">1</div>
+</div>
 
   <div class="process right">
     <div class="circle">2</div>
@@ -72,6 +81,7 @@ classes: wide
   </div>
 
 </div>
+
 
 
 
