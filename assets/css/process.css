@@ -18,15 +18,26 @@
   transform: translateX(-50%);
 }
 
-/* each process row */
-.process {
+
+ /* each process row */
+/* .process {
   position: relative;
   min-height: 60px;
   margin: 2rem 0;
 }
+*/
+/* each process row - UPDATED */
+.process {
+  position: relative;
+  min-height: auto; /* Changed from 60px to auto */
+  margin: 2rem 0;
+  display: flex;
+  align-items: flex-start; /* Added for proper alignment */
+}
+
 
 /* circle on center line */
-.process .circle {
+/*.process .circle {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -42,6 +53,27 @@
   align-items: center;
   z-index: 1;
 }
+*/
+
+
+/* circle on center line - UPDATED */
+.process .circle {
+  position: absolute;
+  left: 50%;
+  top: 20px; /* Changed from 50% to fixed 20px from top */
+  transform: translateX(-50%); /* Removed -50% Y translation */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0056b3;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
 
 /* content block */
 .process .content {
@@ -67,8 +99,9 @@
   position: absolute;
 }
 
+
 /* Responsive for mobile */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .process .circle {
     position: relative;
     left: 0;
@@ -87,6 +120,33 @@
     left: 10px;
   }
 }
+*/
+
+/* Responsive for mobile - UPDATED */
+@media screen and (max-width: 768px) {
+  .process .circle {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    margin-bottom: 0.5rem;
+  }
+  .process .content {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+  }
+  .timeline::before {
+    left: 10px;
+  }
+  .process {
+    display: block; /* Reset flex for mobile */
+  }
+}
+
+
 /* optional — nicer list style for process details */
 .process .content ul.process-details {
   margin: 0.5rem 0 0;
