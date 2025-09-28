@@ -26,15 +26,13 @@
   margin: 2rem 0;
 }
 */
-/* each process row - UPDATED */
+/* each process row - CORRECTED */
 .process {
   position: relative;
-  min-height: auto; /* Changed from 60px to auto */
+  min-height: 60px; /* Keep original min-height */
   margin: 2rem 0;
-  display: flex;
-  align-items: flex-start; /* Added for proper alignment */
+  /* Remove the flex properties that were added */
 }
-
 
 /* circle on center line */
 /*.process .circle {
@@ -56,12 +54,12 @@
 */
 
 
-/* circle on center line - UPDATED */
+/* circle on center line - CORRECTED */
 .process .circle {
   position: absolute;
   left: 50%;
-  top: 20px; /* Changed from 50% to fixed 20px from top */
-  transform: translateX(-50%); /* Removed -50% Y translation */
+  top: 0; /* Changed from 50% to 0 to align with first line */
+  transform: translateX(-50%); /* Only horizontal centering */
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -72,8 +70,8 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin-top: 0.2em; /* Small offset to align with text baseline */
 }
-
 
 /* content block */
 .process .content {
@@ -122,7 +120,7 @@
 }
 */
 
-/* Responsive for mobile - UPDATED */
+/* Responsive for mobile - RESTORED */
 @media screen and (max-width: 768px) {
   .process .circle {
     position: relative;
@@ -140,9 +138,6 @@
   }
   .timeline::before {
     left: 10px;
-  }
-  .process {
-    display: block; /* Reset flex for mobile */
   }
 }
 
