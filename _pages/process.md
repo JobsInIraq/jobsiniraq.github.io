@@ -19,7 +19,7 @@ classes: wide
 <div class="process left">
   <div class="content">
     <strong>Workforce Planning</strong>
-    <ul style="margin-top: 10px; font-size: 0.9em; text-align: left;">
+    <ul style="margin-top: 10px; font-size: 0.9em; text-align: left; list-style-type: disc; padding-left: 20px;">
       <li>Identify organizational goals</li>
       <li>Assess current workforce</li>
       <li>Forecast future needs</li>
@@ -86,6 +86,7 @@ classes: wide
   </div>
 
 </div>
+
 
 
 
