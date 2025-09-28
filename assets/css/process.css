@@ -1,13 +1,16 @@
-.timeline {
+/*.timeline {
   position: relative;
   max-width: 1100px;
   margin: 2rem auto;
   padding: 1rem 0;
   box-sizing: border-box;
 }
+*/
+
+
 
 /* vertical center line */
-.timeline::before {
+/*.timeline::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -17,7 +20,30 @@
   background: #e6e6e6;
   transform: translateX(-50%);
 }
+*/
 
+/* Extend timeline line dynamically */
+.timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem 0 4rem 0; /* Added bottom padding */
+  box-sizing: border-box;
+  overflow: visible; /* Ensure content doesn't get cut off */
+}
+
+/* vertical center line - IMPROVED */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%; /* Use 100% height instead of bottom: 0 */
+  width: 2px;
+  background: #e6e6e6;
+  transform: translateX(-50%);
+  z-index: 0;
+}
 
  /* each process row */
 /* .process {
@@ -26,12 +52,17 @@
   margin: 2rem 0;
 }
 */
-/* each process row - CORRECTED */
+/* each process row - FIXED FOR AUTO-EXPANSION */
 .process {
   position: relative;
-  min-height: 60px; /* Keep original min-height */
-  margin: 2rem 0;
-  /* Remove the flex properties that were added */
+  min-height: 60px;
+  margin-bottom: 3rem; /* Changed from margin: 2rem 0 to margin-bottom only */
+  padding-bottom: 1rem; /* Added padding to ensure proper spacing */
+  display: block; /* Ensure block layout */
+}
+/* Remove margin-top to prevent overlap */
+.process:first-child {
+  margin-top: 0;
 }
 
 /* circle on center line */
@@ -54,12 +85,12 @@
 */
 
 
-/* circle on center line - CORRECTED */
+/* circle on center line - FIXED POSITIONING */
 .process .circle {
   position: absolute;
   left: 50%;
-  top: 0; /* Changed from 50% to 0 to align with first line */
-  transform: translateX(-50%); /* Only horizontal centering */
+  top: 15px; /* Fixed position from top of content */
+  transform: translateX(-50%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -70,17 +101,29 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
-  margin-top: 0.2em; /* Small offset to align with text baseline */
 }
 
+
 /* content block */
-.process .content {
+/*.process .content {
   width: 45%;
   padding-bottom: 6px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   word-break: break-word;
   position: relative;
+}
+*/
+
+/* content block - ENSURE PROPER HEIGHT */
+.process .content {
+  width: 45%;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  word-break: break-word;
+  position: absolute;
+  min-height: 30px; /* Ensure minimum height for circle alignment */
 }
 
 /* LEFT content */
@@ -143,10 +186,29 @@
 
 
 /* optional — nicer list style for process details */
-.process .content ul.process-details {
+
+/* .process .content ul.process-details {
   margin: 0.5rem 0 0;
   padding-left: 1.25rem;
   font-size: 0.95rem;
   line-height: 1.35;
   color: #333;
+}
+*/
+
+/* List formatting for process details */
+.process .content ul {
+  margin: 10px 0 0 0;
+  padding-left: 18px;
+  list-style-type: disc;
+}
+
+.process .content ul li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+  font-size: 0.85em;
+}
+
+.process .content ul li:last-child {
+  margin-bottom: 0;
 }
