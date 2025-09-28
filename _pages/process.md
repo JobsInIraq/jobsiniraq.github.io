@@ -10,12 +10,28 @@ classes: wide
 <link rel="stylesheet" href="{{ '/assets/css/process.css' | relative_url }}">
 
 <div class="timeline">
-
+<!--
   <div class="process left">
     <div class="content">Workforce Planning</div>
     <div class="circle">1</div>
   </div>
-
+-->
+<div class="process left">
+  <div class="content">
+    Workforce Planning
+    <details style="margin-top: 10px;">
+      <summary style="cursor: pointer; font-size: 0.9em;">View Details</summary>
+      <ul style="margin-top: 5px; font-size: 0.85em; text-align: left;">
+        <li>Identify organizational goals</li>
+        <li>Assess current workforce</li>
+        <li>Forecast future needs</li>
+        <li>Identify skills gaps</li>
+        <li>Develop workforce plan</li>
+      </ul>
+    </details>
+  </div>
+  <div class="circle">1</div>
+</div>
 
   <div class="process right">
     <div class="circle">2</div>
@@ -73,6 +89,7 @@ classes: wide
   </div>
 
 </div>
+
 
 
 
