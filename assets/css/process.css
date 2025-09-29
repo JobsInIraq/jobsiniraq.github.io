@@ -138,7 +138,7 @@
 }
 .process.left .content {
   text-align: right;
-  margin-right: 55%; /* Creates space for circle */
+  margin-right: 30%; /* Creates space for circle */
   order: 1; /* Content first */
 }
 
@@ -149,7 +149,7 @@
 }
 .process.right .content {
   text-align: left;
-  margin-left: 55%; /* Creates space for circle */
+  margin-left: 30%; /* Creates space for circle */
   order: 1; /* Content first */
 }
 
