@@ -136,33 +136,21 @@
 }
 
 /* LEFT content */
-/* .process.left .content {
-  text-align: right;
-  right: 55%;
-  position: absolute;
-}
-*/
-
-/* LEFT content */
 .process.left .content {
   text-align: right;
-  margin-right: auto;
-  margin-left: absolute;
-}
-
-
-/* RIGHT content */
-/*.process.right .content {
-  text-align: left;
-  left: 55%;
+  right: 52%;
   position: absolute;
 }
-*/
+
+
+
+
+
 /* RIGHT content */
 .process.right .content {
   text-align: left;
-  margin-left: auto;
-  margin-right: absolute;
+  left: 52%;
+  position: absolute;
 }
 
 
