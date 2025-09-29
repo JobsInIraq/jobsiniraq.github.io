@@ -84,11 +84,11 @@
 */
 
 
-/* circle on center line - FIXED POSITIONING */
+/* circle on center line - ALIGNED WITH TEXT */
 .process .circle {
   position: absolute;
   left: 50%;
-  top: 15px; /* Fixed position from top of content */
+  top: 0;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
@@ -100,6 +100,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin-top: 0.1em; /* Fine-tune alignment with text baseline */
 }
 
 
@@ -138,8 +139,9 @@
 /* LEFT content */
 .process.left .content {
   text-align: right;
-  right: 52%;
   position: absolute;
+  right: 52%;
+  top: 0; /* Add this to align with circle */
 }
 
 
@@ -149,8 +151,9 @@
 /* RIGHT content */
 .process.right .content {
   text-align: left;
-  left: 52%;
   position: absolute;
+  left: 52%;
+  top: 0; /* Add this to align with circle */
 }
 
 
