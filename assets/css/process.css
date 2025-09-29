@@ -1,28 +1,13 @@
-/*.timeline {
-  position: relative;
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 1rem 0;
-  box-sizing: border-box;
+:root {
+  --timeline-color: #e6e6e6;
+  --timeline-width: 2px;
+  --circle-size: 30px;
+  --circle-color: #0056b3;
+  --content-gap: 25px;
+  --stage-spacing: 3rem;
 }
-*/
 
-
-
-/* vertical center line */
-/*.timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #e6e6e6;
-  transform: translateX(-50%);
-}
-*/
-
-/* RESEARCH-VERIFIED TIMELINE SOLUTION */
+/* Container: Flexbox for overall structure */
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -31,153 +16,93 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Consistent spacing between stages */
+  gap: var(--stage-spacing);
 }
 
-/* vertical center line */
+/* Vertical line: Absolute positioning for precision */
 .timeline::before {
   content: "";
   position: absolute;
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: #e6e6e6;
+  width: var(--timeline-width);
+  background: var(--timeline-color);
   transform: translateX(-50%);
   z-index: 0;
 }
 
- /* each process row */
-/* .process {
-  position: relative;
-  min-height: 60px;
-  margin: 2rem 0;
-}
-*/
-/* FIXED: each process row using research-proven approach */
+/* Process container: Flexbox for automatic spacing */
 .process {
   position: relative;
   display: flex;
-  align-items: baseline; /* KEY: baseline alignment for text-circle sync */
-  min-height: 40px;
+  align-items: flex-start;
+  min-height: var(--circle-size);
   width: 100%;
 }
-/* circle on center line */
-/*.process .circle {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #0056b3;
-  color: #fff;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-*/
 
-/* FIXED: circle positioning using research-verified method */
+/* Circle: Absolute positioning for precise alignment */
 .process .circle {
   position: absolute;
   left: 50%;
-  top: 0.2em; /* Research shows 0.2em aligns with text baseline */
+  top: 0;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: var(--circle-size);
+  height: var(--circle-size);
   border-radius: 50%;
-  background-color: #0056b3;
+  background-color: var(--circle-color);
   color: #fff;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  line-height: 1; /* Ensures consistent text positioning inside circle */
+  line-height: 1;
 }
 
-
-/* content block */
-/*.process .content {
-  width: 45%;
-  padding-bottom: 6px;
+/* Content: Relative positioning for natural flow */
+.process .content {
+  width: calc(50% - var(--content-gap));
+  padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   word-break: break-word;
   position: relative;
 }
-*/
 
-/* content block - ENSURE PROPER HEIGHT */
-/*.process .content {
-  width: 45%;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  word-break: break-word;
-  position: absolute;
-  min-height: 30px; /* Ensure minimum height for circle alignment */
-} */
-
-/* FIXED: content positioning using flexbox approach */
-.process .content {
-  width: 45%;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  word-break: break-word;
-  position: relative; /* Changed from absolute to relative */
-}
-/* LEFT content - research-verified positioning */
-.process.left {
-  justify-content: flex-start;
-}
+/* Left content positioning */
 .process.left .content {
   text-align: right;
-  margin-right: 30%; /* Creates space for circle */
-  order: 1; /* Content first */
+  margin-right: auto;
+  margin-left: 0;
 }
 
-
-/* RIGHT content - research-verified positioning */
-.process.right {
-  justify-content: flex-end;
-}
+/* Right content positioning */
 .process.right .content {
   text-align: left;
-  margin-left: 30%; /* Creates space for circle */
-  order: 1; /* Content first */
+  margin-left: auto;
+  margin-right: 0;
 }
 
-
-
-/* Responsive for mobile */
-/*@media screen and (max-width: 768px) {
-  .process .circle {
-    position: relative;
-    left: 0;
-    top: 0;
-    transform: none;
-    margin-bottom: 0.5rem;
-  }
-  .process .content {
-    position: relative;
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 6px;
-  }
-  .timeline::before {
-    left: 10px;
-  }
+/* List styling for bullet points */
+.process .content ul {
+  margin: 10px 0 0 0;
+  padding-left: 18px;
+  list-style-type: disc;
+  text-align: left;
 }
-*/
 
-/* Responsive for mobile */
+.process .content ul li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+  font-size: 0.85em;
+}
+
+.process .content ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile-first responsive design */
 @media screen and (max-width: 768px) {
   .timeline::before {
     left: 20px;
@@ -185,14 +110,11 @@
   
   .process {
     flex-direction: column;
-    align-items: flex-start;
     padding-left: 50px;
   }
   
   .process .circle {
     left: 20px;
-    position: absolute;
-    top: 0.2em;
     transform: none;
   }
   
@@ -200,38 +122,27 @@
     width: 100%;
     margin: 0;
     text-align: left;
-    order: 2;
-  }
-  
-  .process.left,
-  .process.right {
-    justify-content: flex-start;
   }
 }
 
-/* optional — nicer list style for process details */
+/* Future-proofing with container queries */
+@container timeline (max-width: 600px) {
+  .process .content {
+    font-size: 0.9rem;
+  }
+}
 
-/* .process .content ul.process-details {
-  margin: 0.5rem 0 0;
-  padding-left: 1.25rem;
-  font-size: 0.95rem;
-  line-height: 1.35;
-  color: #333;
+/* Accessibility enhancements */
+.process:focus-within .circle {
+  outline: 2px solid var(--circle-color);
+  outline-offset: 2px;
 }
-*/
 
-/* List formatting for process details */
-.process .content ul {
-  margin: 10px 0 0 0;
-  padding-left: 18px;
-  list-style-type: disc;
-  text-align: left; /* Ensure bullets are left-aligned */
+/* Performance optimization */
+.process .circle {
+  will-change: transform;
 }
-.process .content ul li {
-  margin-bottom: 4px;
-  line-height: 1.5;
-  font-size: 0.85em;
-}
-.process .content ul li:last-child {
-  margin-bottom: 0;
+
+.timeline {
+  contain: layout style;
 }
