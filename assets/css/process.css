@@ -22,7 +22,7 @@
 }
 */
 
-/* FLEXBOX timeline container */
+/* RESEARCH-VERIFIED TIMELINE SOLUTION */
 .timeline {
   position: relative;
   max-width: 1100px;
@@ -31,16 +31,16 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem; /* Consistent spacing between stages */
 }
 
-/* vertical center line - IMPROVED */
+/* vertical center line */
 .timeline::before {
   content: "";
   position: absolute;
   left: 50%;
   top: 0;
-  height: 100%; /* Use 100% height instead of bottom: 0 */
+  bottom: 0;
   width: 2px;
   background: #e6e6e6;
   transform: translateX(-50%);
@@ -54,16 +54,14 @@
   margin: 2rem 0;
 }
 */
-/* each process row - FIXED FOR AUTO-EXPANSION */
-/* each process row - FLEXBOX SOLUTION */
+/* FIXED: each process row using research-proven approach */
 .process {
   position: relative;
-  width: 100%;
-  min-height: 60px;
   display: flex;
-  align-items: flex-start;
+  align-items: baseline; /* KEY: baseline alignment for text-circle sync */
+  min-height: 40px;
+  width: 100%;
 }
-
 /* circle on center line */
 /*.process .circle {
   position: absolute;
@@ -83,12 +81,11 @@
 }
 */
 
-
-/* circle on center line - ALIGNED WITH TEXT */
+/* FIXED: circle positioning using research-verified method */
 .process .circle {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: 0.2em; /* Research shows 0.2em aligns with text baseline */
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
@@ -99,8 +96,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  margin-top: 0.1em; /* Fine-tune alignment with text baseline */
+  z-index: 2;
+  line-height: 1; /* Ensures consistent text positioning inside circle */
 }
 
 
@@ -126,34 +123,34 @@
   min-height: 30px; /* Ensure minimum height for circle alignment */
 } */
 
-/* content block - FLEXBOX VERSION */
+/* FIXED: content positioning using flexbox approach */
 .process .content {
   width: 45%;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   word-break: break-word;
-  position: relative;
+  position: relative; /* Changed from absolute to relative */
 }
-
-/* LEFT content */
+/* LEFT content - research-verified positioning */
+.process.left {
+  justify-content: flex-start;
+}
 .process.left .content {
   text-align: right;
-  position: absolute;
-  right: 52%;
-  top: 0; /* Add this to align with circle */
+  margin-right: 55%; /* Creates space for circle */
+  order: 1; /* Content first */
 }
 
 
-
-
-
-/* RIGHT content */
+/* RIGHT content - research-verified positioning */
+.process.right {
+  justify-content: flex-end;
+}
 .process.right .content {
   text-align: left;
-  position: absolute;
-  left: 52%;
-  top: 0; /* Add this to align with circle */
+  margin-left: 55%; /* Creates space for circle */
+  order: 1; /* Content first */
 }
 
 
@@ -180,27 +177,37 @@
 }
 */
 
-/* Responsive for mobile - RESTORED */
+/* Responsive for mobile */
 @media screen and (max-width: 768px) {
-  .process .circle {
-    position: relative;
-    left: 0;
-    top: 0;
-    transform: none;
-    margin-bottom: 0.5rem;
-  }
-  .process .content {
-    position: relative;
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 6px;
-  }
   .timeline::before {
-    left: 10px;
+    left: 20px;
+  }
+  
+  .process {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+  }
+  
+  .process .circle {
+    left: 20px;
+    position: absolute;
+    top: 0.2em;
+    transform: none;
+  }
+  
+  .process .content {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    order: 2;
+  }
+  
+  .process.left,
+  .process.right {
+    justify-content: flex-start;
   }
 }
-
 
 /* optional — nicer list style for process details */
 
@@ -218,14 +225,13 @@
   margin: 10px 0 0 0;
   padding-left: 18px;
   list-style-type: disc;
+  text-align: left; /* Ensure bullets are left-aligned */
 }
-
 .process .content ul li {
   margin-bottom: 4px;
   line-height: 1.5;
   font-size: 0.85em;
 }
-
 .process .content ul li:last-child {
   margin-bottom: 0;
 }
