@@ -6126,7 +6126,701 @@
       ]
     }
   }
+},
+    {
+  "jobID": "d9f8a3b1-2c5e-4f12-9c7e-0a1b2d3f4e5f",
+  "created_at": "2025-10-04T01:30:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Graphic Designer",
+      "category": "Design",
+      "position": "Part-Time"
+    },
+    "tags": [
+      "Graphic Design",
+      "Motion Design"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "500000",
+      "notes": "Fixed monthly salary"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Sulaymaniyah",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male or Female",
+      "nationality": "Iraqi",
+      "numberOfPositions": "1",
+      "workingHours": "12:00 PM – 5:00 PM",
+      "closingDate": "",
+      "requirements": [
+        "Experience in graphic and motion design",
+        "Proficiency in design tools (e.g., Adobe Creative Suite)",
+        "Resident of Sulaymaniyah"
+      ],
+      "responsibilities": [
+        "Design graphics and motion content for company projects",
+        "Collaborate with the marketing and creative team",
+        "Ensure visual content meets brand standards"
+      ],
+      "skills": [
+        "Graphic design",
+        "Motion graphics",
+        "Creativity",
+        "Attention to detail"
+      ],
+      "benefits": [
+        "Monthly salary of 400,000 – 500,000 IQD"
+      ],
+      "application": "Send CV via email: zana.musatfa@gmail.com",
+      "notes": [
+        "Only applicants from Sulaymaniyah are eligible"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "f2a9c7d3-8b1e-4f5c-9d0b-1e2a3f4c5b6d",
+  "created_at": "2025-10-04T01:45:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Representative",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Marketing"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "800000n",
+      "notes": "Base salary with additional commission"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male",
+      "nationality": "Iraqi",
+      "numberOfPositions": "1",
+      "workingHours": "Not specified",
+      "closingDate": "",
+      "requirements": [
+        "Male gender",
+        "Age between 25 and 45 years",
+        "At least 6th-grade education",
+        "Experience in sales or marketing",
+        "Must own a personal vehicle"
+      ],
+      "responsibilities": [
+        "Represent the company in sales activities",
+        "Reach potential customers and expand client base",
+        "Meet sales targets and report progress to management"
+      ],
+      "skills": [
+        "Communication and negotiation",
+        "Customer service",
+        "Sales strategy and planning"
+      ],
+      "benefits": [
+        "Base salary of 800,000 IQD plus commission"
+      ],
+      "application": "Send CV via WhatsApp to: 07725690050 (Please title CV as 'Sales Representative / مندوب')",
+      "notes": [
+        "Applicants must meet all requirements listed above"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "a1b2c3d4-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+  "created_at": "2025-10-04T02:00:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Junior IT / Mobile Technology",
+      "category": "ITy",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "IT",
+      "Mobile Technology",
+      "Hawler"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "500000",
+      "notes": "Fixed monthly salary"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": "Central Erbil"
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male",
+      "nationality": "Iraqi",
+      "numberOfPositions": "1",
+      "workingHours": "9:00 AM – 5:00 PM",
+      "closingDate": "",
+      "requirements": [
+        "Male applicants only",
+        "Age between 20 and 25 years",
+        "Good knowledge of mobile technology (software and hardware)",
+        "Willingness to work in a modern production environment",
+        "Resident of central Erbil",
+        "Preferably a graduate of an IT program"
+      ],
+      "responsibilities": [
+        "Assist in mobile technology projects",
+        "Learn and develop skills under supervision",
+        "Participate in ongoing production tasks"
+      ],
+      "skills": [
+        "Basic IT and mobile software skills",
+        "Hardware troubleshooting",
+        "Learning and adaptability",
+        "Teamwork"
+      ],
+      "benefits": [
+        "Monthly salary of 500,000 IQD",
+        "Transportation service provided",
+        "Annual contract",
+        "Training and development opportunities"
+      ],
+      "application": "Send CV via WhatsApp to: 07765557234 (Only replies via WhatsApp will be considered)",
+      "notes": [
+        "Applicants must live in central Erbil; remote area residents are not eligible"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "b7c8d9e0-f1a2-4b3c-9d4e-5f6a7b8c9d0e",
+  "created_at": "2025-10-04T02:15:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Men’s Leather & Garment Salesperson",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Retail"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "600000",
+      "notes": "Base salary with additional commission"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "Bakhtiyari",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male",
+      "nationality": "Iraqi",
+      "numberOfPositions": "1",
+      "workingHours": "4:00 PM – 12:00 AM",
+      "closingDate": "",
+      "requirements": [
+        "Male applicants only",
+        "Age between 23 and 35 years",
+        "Previous experience in leather and garment sales"
+      ],
+      "responsibilities": [
+        "Sell men’s leather and garments to customers",
+        "Assist customers with product selection",
+        "Maintain store display and inventory"
+      ],
+      "skills": [
+        "Sales and negotiation skills",
+        "Customer service",
+        "Product knowledge in leather and garments"
+      ],
+      "benefits": [
+        "Monthly salary of 600,000 IQD plus commission"
+      ],
+      "application": "Send CV via WhatsApp to: 07511297011",
+      "notes": [
+        "Applicants must meet all requirements listed above"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "c3d4e5f6-7a8b-4c9d-9e0f-1a2b3c4d5e6f",
+  "created_at": "2025-10-04T02:30:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Representative – Marketing Materials",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Marketing"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "600000",
+      "notes": "Base salary plus commission, finalized during negotiation"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Male or Female",
+      "nationality": "Iraqi",
+      "numberOfPositions": "4",
+      "workingHours": "08:00 AM – 04:00 PM (Every day except Friday)",
+      "closingDate": "",
+      "requirements": [
+        "Resident of Erbil or nearby, familiar with city areas",
+        "Fluent in Kurdish",
+        "Must own a personal vehicle",
+        "Experience in sales, marketing, or as a sales representative",
+        "Hardworking, team-oriented, able to work under pressure"
+      ],
+      "responsibilities": [
+        "Sell marketing materials to clients",
+        "Develop and maintain customer relationships",
+        "Achieve daily/weekly sales targets"
+      ],
+      "skills": [
+        "Sales and negotiation",
+        "Communication and teamwork",
+        "Customer service",
+        "Time management"
+      ],
+      "benefits": [
+        "Monthly salary of 600,000 IQD plus commission"
+      ],
+      "application": "Send message via WhatsApp to schedule an interview: 0750 490 9358",
+      "notes": [
+        "Applicants must meet all requirements listed above"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "e5f6g7h8-1a2b-4c3d-9e0f-1g2h3i4j5k6l",
+  "created_at": "2025-10-04T03:00:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Marketing Specialist – Cleaning Products",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Marketing",
+      "Sales"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "2000000",
+      "notes": "Negotiable based on experience"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "nationality": "Iraqi",
+      "numberOfPositions": "1",
+      "workingHours": "Not specified",
+      "closingDate": "",
+      "requirements": [
+        "University degree in Marketing, Business Administration, or related field",
+        "Minimum 5 years practical experience in marketing",
+        "Experience in consistent sales promotion",
+        "Experience managing social media pages",
+        "Ability to analyze the market and competitors",
+        "Strong communication and creative skills",
+        "Proficiency in MS Office programs",
+        "Fluent in Kurdish and Arabic"
+      ],
+      "responsibilities": [
+        "Develop and implement marketing strategies for cleaning products",
+        "Manage social media and promotional campaigns",
+        "Analyze market trends and competitor activities",
+        "Increase sales performance and brand visibility"
+      ],
+      "skills": [
+        "Marketing strategy",
+        "Social media management",
+        "Market analysis",
+        "Communication and creativity",
+        "Computer skills (MS Office)"
+      ],
+      "benefits": [
+        "Salary ranging from 1,000,000 to 2,000,000 IQD depending on experience"
+      ],
+      "application": "Send CV via WhatsApp to: 07509019500",
+      "notes": [
+        "Applicants must meet all requirements listed above",
+        "Fluency in Kurdish and Arabic is required"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "f6g7h8i9-2a3b-4c5d-9e1f-2g3h4i5j6k7l",
+  "created_at": "2025-10-04T03:15:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Manager – Cleaning Products",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Marketing"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "2500000",
+      "notes": "Negotiable based on experience"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "nationality": "Iraqi",
+      "numberOfPositions": "1",
+      "workingHours": "Not specified",
+      "closingDate": "",
+      "requirements": [
+        "3–5 years experience in sales",
+        "Strong knowledge of the market and distributor relationships",
+        "Ability to manage teams and organize tasks",
+        "Negotiation, persuasion, and problem-solving skills",
+        "University degree in Management or Marketing preferred"
+      ],
+      "responsibilities": [
+        "Prepare and implement sales plans to achieve company goals",
+        "Manage the sales team and monitor performance",
+        "Develop client and distributor network across provinces",
+        "Prepare daily/monthly market reports",
+        "Communicate directly with the general manager regarding sales plans and market monitoring"
+      ],
+      "skills": [
+        "Sales management",
+        "Team leadership",
+        "Market analysis",
+        "Negotiation and problem-solving",
+        "Communication skills"
+      ],
+      "benefits": [
+        "Salary ranging from 1,500,000 to 2,500,000 IQD depending on experience"
+      ],
+      "application": "Send CV via WhatsApp to: 07509019500",
+      "notes": [
+        "Applicants must meet all requirements listed above",
+        "Fluency in Kurdish and Arabic is preferred"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "g7h8i9j0-3a4b-4c5d-9e2f-3g4h5i6j7k8l",
+  "created_at": "2025-10-04T03:30:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Sales Supervisor – Food & Beverage Products",
+      "category": "Sales",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Sales",
+      "Supervisor"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "1800000",
+      "notes": "Starting salary, can increase based on experience and qualifications"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Erbil & Basra",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": ""
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "nationality": "Iraqi",
+      "numberOfPositions": "1",
+      "workingHours": "10 days in Erbil and 15 days in Basra per month",
+      "closingDate": "",
+      "requirements": [
+        "Minimum 3 years experience in sales supervision",
+        "Age between 28 and 38 years",
+        "Must own a personal vehicle",
+        "Familiarity with most cities in southern Iraq",
+        "Fluent in Arabic",
+        "Experience in supervising sales for market and beverage products"
+      ],
+      "responsibilities": [
+        "Supervise sales activities in Erbil and Basra",
+        "Manage sales teams and monitor performance",
+        "Coordinate logistics and travel arrangements",
+        "Report to company management regarding sales progress and challenges"
+      ],
+      "skills": [
+        "Sales supervision",
+        "Team management",
+        "Market knowledge",
+        "Communication and problem-solving"
+      ],
+      "benefits": [
+        "Starting monthly salary of 1,800,000 IQD, can increase based on experience and qualifications",
+        "Accommodation and travel arrangements provided by the company"
+      ],
+      "application": "For more details or to apply, contact: 0750 976 9424",
+      "notes": [
+        "Applicants must meet all requirements listed above"
+      ]
+    }
+  }
+},
+    {
+  "jobID": "h8i9j0k1-4a5b-4c6d-9e3f-4g5h6i7j8k9l",
+  "created_at": "2025-10-04T03:45:00+03:00",
+  "updated_at": "2025-10-04",
+  "job": {
+    "jobDetails": {
+      "jobTitle": "Local Buyer",
+      "category": "Procurement",
+      "position": "Full-Time"
+    },
+    "tags": [
+      "Procurement",
+      "Supply Chain"
+    ],
+    "salary": {
+      "usd": "",
+      "iqd": "1500000",
+      "notes": "Negotiable depending on experience"
+    },
+    "isRemote": false,
+    "location": {
+      "country": "Iraq",
+      "city": "Basra",
+      "district": "",
+      "address": ""
+    },
+    "sources": {
+      "socialMedia": {
+        "linkedin": "",
+        "facebook": "",
+        "instagram": "",
+        "telegram": "",
+        "tiktok": ""
+      },
+      "jobPortal": {
+        "site": "",
+        "link": "https://forms.gle/vfkfZ1LYiSSmYDYB9"
+      },
+      "website": ""
+    },
+    "extraDetails": {
+      "gender": "Not specified",
+      "nationality": "Iraqi",
+      "numberOfPositions": "1",
+      "workingHours": "6 days per week, 9 hours per day",
+      "closingDate": "",
+      "requirements": [
+        "Bachelor’s degree in Business or Supply Chain preferred",
+        "3–5 years experience in procurement (construction/contracting preferred)",
+        "Strong knowledge of the local Basra market",
+        "Negotiation, communication, and problem-solving skills",
+        "Fluent in Arabic; English is a plus"
+      ],
+      "responsibilities": [
+        "Source and negotiate with local suppliers to ensure best prices, quality, and delivery",
+        "Issue Purchase Orders according to company policies",
+        "Maintain and update a database of approved suppliers",
+        "Coordinate with project teams, warehouses, and finance to ensure accurate delivery and documentation",
+        "Monitor supplier performance and resolve delivery, quality, or invoicing issues",
+        "Prepare procurement reports and conduct cost analysis",
+        "Ensure compliance with company policies and health, safety, and environmental standards"
+      ],
+      "skills": [
+        "Procurement and supply chain management",
+        "Supplier negotiation and management",
+        "Market knowledge",
+        "Communication and problem-solving",
+        "Reporting and analysis"
+      ],
+      "benefits": [
+        "Salary of 1,000,000 – 1,500,000 IQD depending on experience",
+        "6-day work week with 9 hours per day"
+      ],
+      "application": "Apply via Google Form: https://forms.gle/vfkfZ1LYiSSmYDYB9",
+      "notes": [
+        "Applicants must meet all requirements listed above"
+      ]
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
