@@ -1,5 +1,5 @@
 ---
-layout: split
+layout: home
 title: Payscale Information in Iraq
 permalink: /payscale/
 searchable: true  
@@ -41,6 +41,7 @@ searchable: true
 <!-- Include the JavaScript file -->
 
 <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+
 
 
 
