@@ -3885,7 +3885,7 @@
       "Finance"
     ],
     "salary": {
-      "iqd": "700000",
+      "iqd": 700000,
       "usd": 0
     },
     "isRemote": false,
@@ -6271,7 +6271,7 @@
   }
 },
     {
-  "jobID": "a1b2c3d4-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+  "jobID": "430d1f0b-f88e-4c63-80c1-708a023d6ffe",
   "created_at": "2025-10-04T22:10:00Z",
   "updated_at": "2025-10-04",
   "job": {
@@ -6495,7 +6495,7 @@
   }
 },
     {
-  "jobID": "e5f6g7h8-1a2b-4c3d-9e0f-1g2h3i4j5k6l",
+  "jobID": "c1c34959-e469-4bb8-ab60-be0010455a90",
   "created_at": "2025-10-04T22:10:00Z",
   "updated_at": "2025-10-04",
   "job": {
@@ -6575,7 +6575,7 @@
   }
 },
     {
-  "jobID": "f6g7h8i9-2a3b-4c5d-9e1f-2g3h4i5j6k7l",
+  "jobID": "b433f862-3ed3-4767-ae25-44fbfe872150",
   "created_at": "2025-10-04T22:10:00Z",
   "updated_at": "2025-10-04",
   "job": {
@@ -6653,7 +6653,7 @@
   }
 },
     {
-  "jobID": "g7h8i9j0-3a4b-4c5d-9e2f-3g4h5i6j7k8l",
+  "jobID": "7a0799cc-a3e6-4065-96e6-dea8f33d72e7",
   "created_at": "2025-10-04T22:10:00Z",
   "updated_at": "2025-10-04",
   "job": {
@@ -6730,7 +6730,7 @@
   }
 },
     {
-  "jobID": "h8i9j0k1-4a5b-4c6d-9e3f-4g5h6i7j8k9l",
+  "jobID": "89d8c722-6aa6-4d76-92bf-3815dfce21ac",
   "created_at": "2025-10-04T22:10:00Z",
   "updated_at": "2025-10-04",
   "job": {
