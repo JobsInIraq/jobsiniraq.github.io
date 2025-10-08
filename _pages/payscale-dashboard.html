@@ -1,0 +1,102 @@
+---
+layout: default
+title: Payscale Dashboard
+permalink: /payscale-dashboard/
+---
+
+<!--
+  Payscale Dashboard (JobsInIraq) — static, free, GitHub Pages.
+  - Reads data from _data/db/salaries.json at build time (injected below).
+  - Loads CSS and JS from /assets (separated for maintainability).
+  - JS is an ES module and imports Chart.js + Grid.js from pinned CDNs.
+-->
+
+<div class="dash-container" id="app-root">
+  <div class="header-row">
+    <h1 id="t.title">Payscale Dashboard</h1>
+    <div class="controls" role="group" aria-label="Display preferences">
+      <button id="themeToggle" type="button" aria-label="Toggle dark/light">🌗 <span id="t.theme">Theme</span></button>
+
+      <label for="langPicker" class="sr-only">Language</label>
+      <select id="langPicker" aria-label="Language">
+        <option value="en">English</option>
+        <option value="ar">العربية (Arabic)</option>
+        <option value="ckb">کوردی (Kurdish)</option>
+      </select>
+    </div>
+  </div>
+
+  <p class="caption" id="t.caption">
+    Data source: <code>_data/db/salaries.json</code>. All salaries are <strong>monthly</strong> unless stated.
+  </p>
+
+  <div class="kpis" aria-label="Key performance indicators">
+    <div class="kpi"><div id="kpi-median" aria-live="polite">Median: —</div></div>
+    <div class="kpi"><div id="kpi-iqr" aria-live="polite">IQR (P25–P75): —</div></div>
+    <div class="kpi"><div id="kpi-sample" aria-live="polite">Sample size: —</div></div>
+  </div>
+
+  <div class="filters">
+    <select id="f-city"><option value="">All cities</option></select>
+    <select id="f-category"><option value="">All categories</option></select>
+    <select id="f-etype"><option value="">All types</option></select>
+    <select id="f-period"><option value="">All periods</option><option>monthly</option><option>hourly</option><option>daily</option></select>
+    <select id="f-currency"><option value="IQD">IQD</option><option value="USD">USD</option></select>
+  </div>
+
+  <div class="filters-bar">
+    <span id="resultCount" class="chip">—</span>
+    <button id="resetFilters" type="button">↺ <span id="t.reset">Reset filters</span></button>
+    <button id="exportCsv" type="button">⬇ <span id="t.export">Export CSV</span></button>
+    <button id="exportJson" type="button">⬇ <span id="t.exportJson">Export JSON</span></button>
+    <button id="printBtn" type="button">🖨️ <span id="t.print">Print view</span></button>
+  </div>
+
+  <div class="insights" id="insights" aria-live="polite">
+    <strong id="t.aiInsights">AI Insights</strong>
+    <ul id="insight-list" style="margin:.5rem 0 0 1rem;"></ul>
+  </div>
+
+  <div class="legends">
+    <div class="legend-block">
+      <h4 id="t.cityLegend">City legend</h4>
+      <div id="legend-city" class="legend-row"></div>
+    </div>
+    <div class="legend-block">
+      <h4 id="t.categoryLegend">Category legend</h4>
+      <div id="legend-cat" class="legend-row"></div>
+    </div>
+  </div>
+
+  <div class="charts">
+    <div>
+      <h3 id="t.histogram">Salary Distribution (Histogram)</h3>
+      <canvas id="chart-hist"></canvas>
+    </div>
+    <div>
+      <h3 id="t.byCity">Median by City</h3>
+      <canvas id="chart-city"></canvas>
+    </div>
+    <div>
+      <h3 id="t.byCategory">Median by Category</h3>
+      <canvas id="chart-cat"></canvas>
+    </div>
+  </div>
+
+  <h3 id="t.tableTitle">Data Table</h3>
+  <div class="caption" id="t.tableCaption">
+    Search, sort, and paginate. Rows are read as-is from <code>_data/db/salaries.json</code>.
+  </div>
+  <div id="table"></div>
+</div>
+
+<!-- build-time data injection (safe; avoids extra network fetch on pages) -->
+<script id="payscale-data" type="application/json">
+{{ site.data.db.salaries | jsonify }}
+</script>
+
+<!-- stylesheet -->
+<link href="{{ '/assets/css/payscale-dashboard.css' | relative_url }}" rel="stylesheet" />
+
+<!-- main script (ES module) -->
+<script type="module" src="{{ '/assets/js/payscale-dashboard.js' | relative_url }}"></script>
