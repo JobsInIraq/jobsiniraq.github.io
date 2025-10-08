@@ -8,6 +8,8 @@ main:
     url: /payscale/
   - title: Reinvention of Recruitment
     url: /recruitment_innovation/
+  - title: Dashboard
+    url: /payscale-dashboard/
   - title: About
     url: https://linkedin.com/in/diyar/
  # - title: "Sample Collections"
