@@ -8,7 +8,7 @@
         "jobDetails": {
           "jobTitle": "Software Engineer",
           "category": "IT",
-          "position": "Full-Time"0
+          "position": "Full-Time"
         },
         "tags": [],
         "salary": {
@@ -74,7 +74,7 @@
     },
     {
       "jobID": "721f5297-f173-4551-9f0f-3d0dcc0fc69e",
-      "created_at": "2025-03-30",
+      "created_at": "2025-03-30T12:00:00Z",
       "updated_at": "2025-03-31",
       "job": {
         "jobDetails": {
@@ -2524,7 +2524,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "1400"
+      "usd": 1400
     },
     "isRemote": false,
     "location": {
@@ -2757,9 +2757,7 @@
     "tags": [
       "Cybersecurity",
       "Information Security",
-      "IT",
-      "Baghdad",
-      "Engineer"
+      "IT"
     ],
     "salary": {
       "iqd": 0,
@@ -4100,7 +4098,7 @@
       "IT"
     ],
     "salary": {
-      "iqd": "800000",
+      "iqd": 800000,
       "usd": 0
     },
     "isRemote": false,
@@ -4261,7 +4259,7 @@
       "Sales"
     ],
     "salary": {
-      "iqd": "800000",
+      "iqd": 800000,
       "usd": 0
     },
     "isRemote": false,
@@ -4368,7 +4366,7 @@
 ],
     "salary": {
       "iqd": 0,
-      "usd": "1699"
+      "usd": 1699
     },
     "isRemote": false,
     "location": {
@@ -4686,7 +4684,7 @@
       "Electrical Engineering"
     ],
     "salary": {
-      "iqd": "1800000",
+      "iqd": 1800000,
       "usd": 0
     },
     "isRemote": false,
@@ -4870,7 +4868,7 @@
       "Food Products"
     ],
     "salary": {
-      "iqd": "1800000",
+      "iqd": 1800000,
       "usd": 0,
       "notes": "Starts at 1,800,000 IQD, increases based on experience and skills. Transportation and accommodation covered by the company."
     },
@@ -5062,7 +5060,7 @@
       "HR"
     ],
     "salary": {
-      "iqd": "1800000",
+      "iqd": 1800000,
       "usd": 0,
       "notes": "Salary depends on experience and qualifications"
     },
@@ -5325,7 +5323,7 @@
       "Customer Service"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "600000",
       "notes": "Fixed salary starting at 600,000 IQD plus sales incentives"
     },
@@ -5351,7 +5349,7 @@
     },
     "extraDetails": {
       "gender": "Both",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "Full-time, 10:00 AM – 6:00 PM",
       "closingDate": "",
       "requirements": [
@@ -5389,8 +5387,8 @@
       "Finance"
     ],
     "salary": {
-      "usd": "",
-      "iqd": "1800000",
+      "usd": 0,
+      "iqd": 1800000,
       "notes": "Based on experience and qualifications"
     },
     "isRemote": false,
@@ -5416,7 +5414,7 @@
     },
     "extraDetails": {
       "gender": "Both",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "Full-time",
       "closingDate": "22/09/2025",
       "requirements": [
@@ -5455,7 +5453,7 @@
       "Finance"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "450000",
       "notes": "Based on experience and qualifications"
     },
@@ -5482,7 +5480,7 @@
     },
     "extraDetails": {
       "gender": "Both",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "Full-time, 8:30 AM – 5:30 PM, 5 days a week",
       "closingDate": "",
       "requirements": [
@@ -5548,7 +5546,7 @@
     },
     "extraDetails": {
       "gender": "Both",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "12:00 PM – 8:00 PM",
       "closingDate": "",
       "requirements": [
@@ -5583,7 +5581,7 @@
       "Customer Service"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "600000",
       "notes": "Fixed salary starting from 600,000 IQD plus attractive sales incentives"
     },
@@ -5610,7 +5608,7 @@
     },
     "extraDetails": {
       "gender": "Both",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "10:00 AM – 6:00 PM",
       "closingDate": "",
       "requirements": [
@@ -5671,7 +5669,7 @@
     },
     "extraDetails": {
       "gender": "Both",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "08:30 AM – 05:00 PM",
       "closingDate": "",
       "requirements": [
@@ -5736,7 +5734,7 @@
     },
     "extraDetails": {
       "gender": "Both",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "10:00 AM – 6:00 PM",
       "closingDate": "",
       "requirements": [],
@@ -5763,7 +5761,7 @@
       "Retail"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "650000",
       "notes": "Base salary with commission"
     },
@@ -5790,7 +5788,7 @@
     },
     "extraDetails": {
       "gender": "Female",
-      "numberOfPositions": "4",
+      "numberOfPositions": 4,
       "workingHours": "Shift 1: 10:00 AM – 6:00 PM; Shift 2: 4:00 PM – 12:00 AM",
       "closingDate": "",
       "requirements": [
@@ -5824,7 +5822,7 @@
       "Retail"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "1000000",
       "notes": "Base salary plus per-item commission"
     },
@@ -5851,7 +5849,7 @@
     },
     "extraDetails": {
       "gender": "Male",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "4:00 PM – 12:00 AM",
       "closingDate": "",
       "requirements": [
@@ -5888,7 +5886,7 @@
       "Advertising"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "1000000",
       "notes": "Base salary IQD 1,000,000 with possibility of higher pay depending on experience"
     },
@@ -5915,7 +5913,7 @@
     },
     "extraDetails": {
       "gender": "Any",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "",
       "closingDate": "",
       "requirements": [
@@ -5948,7 +5946,7 @@
       "Accounts Receivable"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "700000",
       "notes": "Salary based on qualifications and experience"
     },
@@ -5975,7 +5973,7 @@
     },
     "extraDetails": {
       "gender": "Any",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "08:00 AM – 03:00 PM",
       "closingDate": "2025-09-28",
       "requirements": [
@@ -6039,7 +6037,7 @@
     },
     "extraDetails": {
       "gender": "Male & Female",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "Full-time (details not specified)",
       "closingDate": "",
       "requirements": [
@@ -6104,7 +6102,7 @@
     },
     "extraDetails": {
       "gender": "Male & Female",
-      "numberOfPositions": "",
+      "numberOfPositions": 0,
       "workingHours": "Full-time (exact schedule not specified)",
       "closingDate": "",
       "requirements": [
@@ -6142,7 +6140,7 @@
       "Motion Design"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "500000",
       "notes": "Fixed monthly salary"
     },
@@ -6170,7 +6168,7 @@
     "extraDetails": {
       "gender": "Male or Female",
       "nationality": "Iraqi",
-      "numberOfPositions": "1",
+      "numberOfPositions": 1,
       "workingHours": "12:00 PM – 5:00 PM",
       "closingDate": "",
       "requirements": [
@@ -6214,8 +6212,8 @@
       "Marketing"
     ],
     "salary": {
-      "usd": "",
-      "iqd": "800000",
+      "usd": 0,
+      "iqd": 800000,
       "notes": "Base salary with additional commission"
     },
     "isRemote": false,
@@ -6242,7 +6240,7 @@
     "extraDetails": {
       "gender": "Male",
       "nationality": "Iraqi",
-      "numberOfPositions": "1",
+      "numberOfPositions": 1,
       "workingHours": "Not specified",
       "closingDate": "",
       "requirements": [
@@ -6288,7 +6286,7 @@
       "Hawler"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "500000",
       "notes": "Fixed monthly salary"
     },
@@ -6316,7 +6314,7 @@
     "extraDetails": {
       "gender": "Male",
       "nationality": "Iraqi",
-      "numberOfPositions": "1",
+      "numberOfPositions": 1,
       "workingHours": "9:00 AM – 5:00 PM",
       "closingDate": "",
       "requirements": [
@@ -6366,7 +6364,7 @@
       "Retail"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "600000",
       "notes": "Base salary with additional commission"
     },
@@ -6394,7 +6392,7 @@
     "extraDetails": {
       "gender": "Male",
       "nationality": "Iraqi",
-      "numberOfPositions": "1",
+      "numberOfPositions": 1,
       "workingHours": "4:00 PM – 12:00 AM",
       "closingDate": "",
       "requirements": [
@@ -6437,7 +6435,7 @@
       "Marketing"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "600000",
       "notes": "Base salary plus commission, finalized during negotiation"
     },
@@ -6465,7 +6463,7 @@
     "extraDetails": {
       "gender": "Male or Female",
       "nationality": "Iraqi",
-      "numberOfPositions": "4",
+      "numberOfPositions": 4,
       "workingHours": "08:00 AM – 04:00 PM (Every day except Friday)",
       "closingDate": "",
       "requirements": [
@@ -6511,8 +6509,8 @@
       "Sales"
     ],
     "salary": {
-      "usd": "",
-      "iqd": "2000000",
+      "usd": 0,
+      "iqd": 2000000,
       "notes": "Negotiable based on experience"
     },
     "isRemote": false,
@@ -6539,7 +6537,7 @@
     "extraDetails": {
       "gender": "Not specified",
       "nationality": "Iraqi",
-      "numberOfPositions": "1",
+      "numberOfPositions": 1,
       "workingHours": "Not specified",
       "closingDate": "",
       "requirements": [
@@ -6591,7 +6589,7 @@
       "Marketing"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "2500000",
       "notes": "Negotiable based on experience"
     },
@@ -6619,7 +6617,7 @@
     "extraDetails": {
       "gender": "Not specified",
       "nationality": "Iraqi",
-      "numberOfPositions": "1",
+      "numberOfPositions": 1,
       "workingHours": "Not specified",
       "closingDate": "",
       "requirements": [
@@ -6669,8 +6667,8 @@
       "Supervisor"
     ],
     "salary": {
-      "usd": "",
-      "iqd": "1800000",
+      "usd": 0,
+      "iqd": 1800000,
       "notes": "Starting salary, can increase based on experience and qualifications"
     },
     "isRemote": false,
@@ -6697,7 +6695,7 @@
     "extraDetails": {
       "gender": "Not specified",
       "nationality": "Iraqi",
-      "numberOfPositions": "1",
+      "numberOfPositions": 1,
       "workingHours": "10 days in Erbil and 15 days in Basra per month",
       "closingDate": "",
       "requirements": [
@@ -6746,7 +6744,7 @@
       "Supply Chain"
     ],
     "salary": {
-      "usd": "",
+      "usd": 0,
       "iqd": "1500000",
       "notes": "Negotiable depending on experience"
     },
@@ -6774,7 +6772,7 @@
     "extraDetails": {
       "gender": "Not specified",
       "nationality": "Iraqi",
-      "numberOfPositions": "1",
+      "numberOfPositions": 1,
       "workingHours": "6 days per week, 9 hours per day",
       "closingDate": "",
       "requirements": [
