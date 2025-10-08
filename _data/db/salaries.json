@@ -8,7 +8,7 @@
         "jobDetails": {
           "jobTitle": "Software Engineer",
           "category": "IT",
-          "position": "Full-Time"
+          "position": "Full-Time"0
         },
         "tags": [],
         "salary": {
@@ -5326,7 +5326,7 @@
     ],
     "salary": {
       "usd": "",
-      "iqd": "600000+",
+      "iqd": "600000",
       "notes": "Fixed salary starting at 600,000 IQD plus sales incentives"
     },
     "isRemote": false,
@@ -6215,7 +6215,7 @@
     ],
     "salary": {
       "usd": "",
-      "iqd": "800000n",
+      "iqd": "800000",
       "notes": "Base salary with additional commission"
     },
     "isRemote": false,
