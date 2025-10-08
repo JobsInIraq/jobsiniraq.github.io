@@ -2584,7 +2584,7 @@
       "Training"
     ],
     "salary": {
-      "iqd": "2000000",
+      "iqd": 2000000,
       "usd": 0
     },
     "isRemote": false,
@@ -2761,7 +2761,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "1400"
+      "usd": 1400
     },
     "isRemote": false,
     "location": {
@@ -2808,7 +2808,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "1300"
+      "usd": 1300
     },
     "isRemote": false,
     "location": {
@@ -2966,7 +2966,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "1400"
+      "usd": 1400
     },
     "isRemote": false,
     "location": {
@@ -3010,7 +3010,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "1000"
+      "usd": 1000
     },
     "isRemote": false,
     "location": {
@@ -3056,7 +3056,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "1400"
+      "usd": 1400
     },
     "isRemote": false,
     "location": {
@@ -3101,7 +3101,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "800"
+      "usd": 800
     },
     "isRemote": false,
     "location": {
@@ -3149,7 +3149,7 @@
       "Leadership"
     ],
     "salary": {
-      "iqd": "2000000",
+      "iqd": 2000000,
       "usd": 0
     },
     "isRemote": false,
@@ -3416,7 +3416,7 @@
       "Delivery"
     ],
     "salary": {
-      "iqd": "1000000+",
+      "iqd": 1000000,
       "usd": 0
     },
     "isRemote": false,
@@ -3771,7 +3771,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "3982"
+      "usd": 3982
     },
     "isRemote": false,
     "location": {
@@ -3838,7 +3838,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "500"
+      "usd": 500
     },
     "isRemote": false,
     "location": {
@@ -4044,7 +4044,7 @@
       "Furniture"
     ],
     "salary": {
-      "iqd": "1000000",
+      "iqd": 1000000,
       "usd": 0
     },
     "isRemote": false,
@@ -4432,7 +4432,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "1982"
+      "usd": 1982
     },
     "isRemote": false,
     "location": {
@@ -4500,7 +4500,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "2604"
+      "usd": 2604
     },
     "isRemote": false,
     "location": {
@@ -4565,7 +4565,7 @@
     ],
     "salary": {
       "iqd": 0,
-      "usd": "800"
+      "usd": 800
     },
     "isRemote": false,
     "location": {
@@ -5196,7 +5196,7 @@
       "English Teacher"
     ],
     "salary": {
-      "iqd": "550000",
+      "iqd": 550000,
       "usd": 0,
       "notes": "Depends on number of lessons"
     },
@@ -5259,7 +5259,7 @@
       "Marketing"
     ],
     "salary": {
-      "usd": "700",
+      "usd": 700,
       "iqd": 0,
       "notes": "Kurdish version: $600, English version: $700 + monthly commission"
     },
@@ -5519,7 +5519,7 @@
       "Finance"
     ],
     "salary": {
-      "usd": "500",
+      "usd": 500,
       "iqd": 0,
       "notes": "Monthly salary, negotiable depending on experience"
     },
@@ -5642,7 +5642,7 @@
       "Hotel"
     ],
     "salary": {
-      "usd": "700",
+      "usd": 700,
       "iqd": 0,
       "notes": "Fixed monthly salary"
     },
@@ -5707,7 +5707,7 @@
       "Erbil"
     ],
     "salary": {
-      "usd": "800",
+      "usd": 800,
       "iqd": 0,
       "notes": "Fixed monthly salary"
     },
@@ -5887,7 +5887,7 @@
     ],
     "salary": {
       "usd": 0,
-      "iqd": "1000000",
+      "iqd": 1000000,
       "notes": "Base salary IQD 1,000,000 with possibility of higher pay depending on experience"
     },
     "isRemote": false,
@@ -6010,7 +6010,7 @@
       "Sales"
     ],
     "salary": {
-      "usd": "1000",
+      "usd": 1000,
       "iqd": 0,
       "notes": "Starting from $1000 monthly, negotiable based on experience and skills"
     },
@@ -6075,7 +6075,7 @@
       "Sales"
     ],
     "salary": {
-      "usd": "1000",
+      "usd": 1000,
       "iqd": 0,
       "notes": "Starting from $1000 per month, negotiable based on skills and experience"
     },
