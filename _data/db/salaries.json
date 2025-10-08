@@ -3470,7 +3470,7 @@
       "Support"
     ],
     "salary": {
-      "iqd": "1000000",
+      "iqd": 1000000,
       "usd": 0
     },
     "isRemote": true,
@@ -5520,7 +5520,7 @@
     ],
     "salary": {
       "usd": "500",
-      "iqd": "",
+      "iqd": 0,
       "notes": "Monthly salary, negotiable depending on experience"
     },
     "isRemote": false,
@@ -5643,7 +5643,7 @@
     ],
     "salary": {
       "usd": "700",
-      "iqd": "",
+      "iqd": 0,
       "notes": "Fixed monthly salary"
     },
     "isRemote": false,
@@ -5708,7 +5708,7 @@
     ],
     "salary": {
       "usd": "800",
-      "iqd": "",
+      "iqd": 0,
       "notes": "Fixed monthly salary"
     },
     "isRemote": false,
@@ -6011,7 +6011,7 @@
     ],
     "salary": {
       "usd": "1000",
-      "iqd": "",
+      "iqd": 0,
       "notes": "Starting from $1000 monthly, negotiable based on experience and skills"
     },
     "isRemote": false,
@@ -6076,7 +6076,7 @@
     ],
     "salary": {
       "usd": "1000",
-      "iqd": "",
+      "iqd": 0,
       "notes": "Starting from $1000 per month, negotiable based on skills and experience"
     },
     "isRemote": false,
