@@ -37,7 +37,7 @@ const STRINGS = {
     title:"Payscale Dashboard", 
     caption:"Data source: _data/db/salaries.json. All salaries are monthly unless stated.",
     theme:"Theme", aiInsights:"AI Insights",
-    histogram:"Salary Distribution (Histogram)", byCity:"Median by City", byCategory:"Median by Category",
+    byCategory:"Median by Category",
     tableTitle:"Data Table", 
     tableCaption:"Search, sort, and paginate. Rows are read as-is from _data/db/salaries.json.",
     kpiMedian:(v)=>`Median: ${v}`, 
@@ -53,7 +53,7 @@ const STRINGS = {
     title:"لوحة الأجور", 
     caption:"مصدر البيانات: _data/db/salaries.json. جميع الرواتب شهرية ما لم يُذكر غير ذلك.",
     theme:"الوضع", aiInsights:"رؤى ذكية",
-    histogram:"توزيع الرواتب (مخطط أعمدة)", byCity:"الوسيط حسب المدينة", byCategory:"الوسيط حسب الفئة",
+    byCategory:"الوسيط حسب الفئة",
     tableTitle:"جدول البيانات", 
     tableCaption:"بحث وفرز وتقسيم للصفحات. يتم قراءة الصفوف كما هي من _data/db/salaries.json.",
     kpiMedian:(v)=>`الوسيط: ${v}`, 
@@ -69,7 +69,7 @@ const STRINGS = {
     title:"داشبۆڕدی مووچەکان", 
     caption:"سەرچاوەی داتا: _data/db/salaries.json. هەموو مووچەکان مانگانەن تا ئەگەر جیاواز نەکراوە.",
     theme:"دووخور/ڕوناکا", aiInsights:"ئاگادارییە هۆشیاڕانەکان",
-    histogram:"دابەشبوونی مووچە (هیستۆگرام)", byCity:"ناوەندێتی بە شار", byCategory:"ناوەندێتی بە پۆل",
+    byCategory:"ناوەندێتی بە پۆل",
     tableTitle:"خشتەی داتا", 
     tableCaption:"گەڕان، پۆلەکردن و لاپەڕەکردن. داتاکان وەک خۆیان لە _data/db/salaries.json خوێندراون.",
     kpiMedian:(v)=>`ناوەندێتی: ${v}`, 
@@ -105,8 +105,6 @@ const i18n = {
     updateText("t.caption", S.caption);
     updateText("t.theme", S.theme);
     updateText("t.aiInsights", S.aiInsights);
-    updateText("t.histogram", S.histogram);
-    updateText("t.byCity", S.byCity);
     updateText("t.byCategory", S.byCategory);
     updateText("t.tableTitle", S.tableTitle);
     updateText("t.tableCaption", S.tableCaption);
@@ -256,23 +254,6 @@ const colorFromString = (str)=> {
   return `hsl(${h}, 60%, 55%)`;
 };
 
-const makeHistogram = (vals, buckets=12)=>{
-  if(!vals.length) return {labels:[], data:[]};
-  const min=Math.min(...vals), max=Math.max(...vals);
-  const span=Math.max(1, Math.ceil((max-min)/buckets));
-  const edges=Array.from({length:buckets},(_,i)=>min+i*span);
-  const counts=new Array(buckets).fill(0);
-  
-  vals.forEach(v=>{ 
-    let idx=Math.floor((v-min)/span); 
-    if(idx>=buckets) idx=buckets-1; 
-    counts[idx]++; 
-  });
-  
-  const labels=edges.map((e,i)=>`${e.toLocaleString(currentLocale())} – ${(i===buckets-1?max:e+span-1).toLocaleString(currentLocale())}`);
-  return {labels, data:counts};
-};
-
 // ---- normalize your rows (non-destructive) ----
 const INPUT = Array.isArray(RAW?.jobs) ? RAW.jobs : [];
 
@@ -349,7 +330,7 @@ const populateFilters = ()=>{
 };
 
 // ---- render (KPIs, insights, legends, charts, table) ----
-let histChart=null, cityChart=null, catChart=null, grid=null;
+let catChart=null, grid=null;
 let lastFiltered = []; // keep last filtered rows for exports
 
 const applyFilters = ()=>{
@@ -431,48 +412,15 @@ const applyFilters = ()=>{
     ).join("");
   }
 
-  // Charts
-  renderCharts(vals, byCity, byCat, outCur);
+  // Charts - Only Category chart
+  renderCharts(byCat, outCur);
   
   // Table
   renderTable(filtered, outCur);
 };
 
-const renderCharts = (vals, byCity, byCat, outCur)=>{
-  const S = STRINGS[i18n.cur];
-  
-  // Histogram
-  const histEl = document.getElementById("chart-hist");
-  if(histEl) {
-    const {labels, data} = makeHistogram(vals);
-    if(histChart) histChart.destroy();
-    histChart = new Chart(histEl, {
-      type:"bar",
-      data:{ labels, datasets:[{label:"Frequency", data, backgroundColor:"rgba(59,130,246,0.6)"}] },
-      options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}} }
-    });
-  }
-
-  // By City
-  const cityEl = document.getElementById("chart-city");
-  if(cityEl) {
-    const cityData = Object.entries(byCity).map(([c,v])=>({city:c, med:median(v)})).sort((a,b)=>b.med-a.med);
-    if(cityChart) cityChart.destroy();
-    cityChart = new Chart(cityEl, {
-      type:"bar",
-      data:{ 
-        labels:cityData.map(d=>translate("city",d.city)), 
-        datasets:[{
-          label:"Median Salary", 
-          data:cityData.map(d=>d.med), 
-          backgroundColor:cityData.map(d=>colorFromString(d.city))
-        }] 
-      },
-      options:{ responsive:true, maintainAspectRatio:false, indexAxis:"y", plugins:{legend:{display:false}} }
-    });
-  }
-
-  // By Category
+const renderCharts = (byCat, outCur)=>{
+  // By Category only
   const catEl = document.getElementById("chart-cat");
   if(catEl) {
     const catData = Object.entries(byCat).map(([c,v])=>({cat:c, med:median(v)})).sort((a,b)=>b.med-a.med);
