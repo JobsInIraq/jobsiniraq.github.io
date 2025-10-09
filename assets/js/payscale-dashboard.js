@@ -1,9 +1,8 @@
 // assets/js/payscale-dashboard.js
 // ES module. Handles: theme toggle, i18n (EN/AR/CKB with RTL), label translations,
-// stats, charts, table, insights, export CSV/JSON, print view, legends.
+// stats, table, insights, export CSV/JSON, print view, legends.
 
-// ---- imports (pinned versions; safe updates later when you choose) ----
-import "https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js";
+// ---- imports ----
 import { Grid, html } from "https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/gridjs.module.min.js";
 
 // Add Grid.js CSS dynamically
@@ -12,7 +11,7 @@ gridCSS.rel = 'stylesheet';
 gridCSS.href = 'https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/theme/mermaid.min.css';
 document.head.appendChild(gridCSS);
 
-// ---- read data injected by Jekyll at build time (no extra fetch) ----
+// ---- read data injected by Jekyll at build time ----
 const dataEl = document.getElementById("payscale-data");
 const RAW = dataEl ? JSON.parse(dataEl.textContent || "{}") : {};
 
@@ -37,7 +36,6 @@ const STRINGS = {
     title:"Payscale Dashboard", 
     caption:"Data source: _data/db/salaries.json. All salaries are monthly unless stated.",
     theme:"Theme", aiInsights:"AI Insights",
-    byCategory:"Median by Category",
     tableTitle:"Data Table", 
     tableCaption:"Search, sort, and paginate. Rows are read as-is from _data/db/salaries.json.",
     kpiMedian:(v)=>`Median: ${v}`, 
@@ -53,7 +51,6 @@ const STRINGS = {
     title:"لوحة الأجور", 
     caption:"مصدر البيانات: _data/db/salaries.json. جميع الرواتب شهرية ما لم يُذكر غير ذلك.",
     theme:"الوضع", aiInsights:"رؤى ذكية",
-    byCategory:"الوسيط حسب الفئة",
     tableTitle:"جدول البيانات", 
     tableCaption:"بحث وفرز وتقسيم للصفحات. يتم قراءة الصفوف كما هي من _data/db/salaries.json.",
     kpiMedian:(v)=>`الوسيط: ${v}`, 
@@ -69,7 +66,6 @@ const STRINGS = {
     title:"داشبۆڕدی مووچەکان", 
     caption:"سەرچاوەی داتا: _data/db/salaries.json. هەموو مووچەکان مانگانەن تا ئەگەر جیاواز نەکراوە.",
     theme:"دووخور/ڕوناکا", aiInsights:"ئاگادارییە هۆشیاڕانەکان",
-    byCategory:"ناوەندێتی بە پۆل",
     tableTitle:"خشتەی داتا", 
     tableCaption:"گەڕان، پۆلەکردن و لاپەڕەکردن. داتاکان وەک خۆیان لە _data/db/salaries.json خوێندراون.",
     kpiMedian:(v)=>`ناوەندێتی: ${v}`, 
@@ -105,7 +101,6 @@ const i18n = {
     updateText("t.caption", S.caption);
     updateText("t.theme", S.theme);
     updateText("t.aiInsights", S.aiInsights);
-    updateText("t.byCategory", S.byCategory);
     updateText("t.tableTitle", S.tableTitle);
     updateText("t.tableCaption", S.tableCaption);
     updateText("t.reset", S.reset);
@@ -130,7 +125,7 @@ if(langPicker) {
   langPicker.addEventListener("change", (e)=> i18n.set(e.target.value));
 }
 
-// ---- translation maps for data labels (display only) ----
+// ---- translation maps for data labels ----
 const LABELS = {
   category: {
     en: { 
@@ -254,7 +249,7 @@ const colorFromString = (str)=> {
   return `hsl(${h}, 60%, 55%)`;
 };
 
-// ---- normalize your rows (non-destructive) ----
+// ---- normalize rows ----
 const INPUT = Array.isArray(RAW?.jobs) ? RAW.jobs : [];
 
 const normalizeRow = (row)=>{
@@ -268,8 +263,8 @@ const normalizeRow = (row)=>{
   
   const title = jd.jobTitle||"—";
   const category = jd.category||"—";
-  const employment_type = (jd.position||"—").toString().replace(/0$/,""); // cleans stray trailing 0
-  const period = "monthly"; // your data is monthly by convention
+  const employment_type = (jd.position||"—").toString().replace(/0$/,"");
+  const period = "monthly";
   const city = loc.city||"—";
   
   const iqd = parseNum(sal.iqd), usd = parseNum(sal.usd);
@@ -312,7 +307,7 @@ const printBtn = document.getElementById("printBtn");
 const legendCityEl = document.getElementById("legend-city");
 const legendCatEl = document.getElementById("legend-cat");
 
-// ---- populate filters (values = raw data; labels localized) ----
+// ---- populate filters ----
 const populateFilters = ()=>{
   [fCity,fCat,fType].forEach(sel=>{ 
     if(sel) {
@@ -329,9 +324,9 @@ const populateFilters = ()=>{
   if(fType) types.forEach(v => fType.insertAdjacentHTML("beforeend", `<option value="${v}">${translate("type", v)}</option>`));
 };
 
-// ---- render (KPIs, insights, legends, charts, table) ----
-let catChart=null, grid=null;
-let lastFiltered = []; // keep last filtered rows for exports
+// ---- render ----
+let grid=null;
+let lastFiltered = [];
 
 const applyFilters = ()=>{
   const S = STRINGS[i18n.cur];
@@ -412,32 +407,8 @@ const applyFilters = ()=>{
     ).join("");
   }
 
-  // Charts - Only Category chart
-  renderCharts(byCat, outCur);
-  
   // Table
   renderTable(filtered, outCur);
-};
-
-const renderCharts = (byCat, outCur)=>{
-  // By Category only
-  const catEl = document.getElementById("chart-cat");
-  if(catEl) {
-    const catData = Object.entries(byCat).map(([c,v])=>({cat:c, med:median(v)})).sort((a,b)=>b.med-a.med);
-    if(catChart) catChart.destroy();
-    catChart = new Chart(catEl, {
-      type:"bar",
-      data:{ 
-        labels:catData.map(d=>translate("category",d.cat)), 
-        datasets:[{
-          label:"Median Salary", 
-          data:catData.map(d=>d.med), 
-          backgroundColor:catData.map(d=>colorFromString(d.cat))
-        }] 
-      },
-      options:{ responsive:true, maintainAspectRatio:false, indexAxis:"y", plugins:{legend:{display:false}} }
-    });
-  }
 };
 
 const renderTable = (rows, outCur)=>{
