@@ -262,6 +262,7 @@ pagination:
   category: 'posts'
   tag: ''
   locale:  'en'  # Default
+  rtl: true
 # Supports: en, ar, ckb
   trail:
     before: 2
@@ -340,3 +341,11 @@ defaults:
       share: true
       related: true
       
+languages:
+  supported: ["en", "ar", "ckb"]
+  default: "en"
+  names:
+    en: "English"
+    ar: "العربية"
+    ckb: "کوردی"
+    
