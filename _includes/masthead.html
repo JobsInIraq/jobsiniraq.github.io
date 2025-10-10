@@ -18,7 +18,7 @@
                 href="{{ link.url | relative_url }}"
                 {% if link.description %} title="{{ link.description }}"{% endif %}
                 {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
+              >{{ link.title[site.locale] | default: link.title.en | default: link.title }}</a>
             </li>
           {%- endfor -%}
         </ul>
