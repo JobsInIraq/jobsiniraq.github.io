@@ -84,7 +84,7 @@
       if (!strings) return;
       
       // Update navigation links by matching href patterns
-      document.querySelectorAll('.greedy-nav a').forEach(link => {
+      document.querySelectorAll('.greedy-nav .masthead__menu-item a').forEach(link => {
         const href = link.getAttribute('href');
         if (href === '/' || href === '/index.html') link.textContent = strings.home;
         else if (href.includes('/jobs')) link.textContent = strings.jobs;
