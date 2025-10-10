@@ -11,6 +11,7 @@
 # theme                  : "minimal-mistakes-jekyll"
 head_scripts:
   - /assets/css/rtl-global.css
+  - /assets/css/language-switcher.css
 remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Enable dark mode by default
