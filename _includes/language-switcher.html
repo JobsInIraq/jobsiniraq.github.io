@@ -1,0 +1,102 @@
+<!-- Global Language Switcher for JobsInIraq -->
+<div class="language-switcher-global">
+  <select id="globalLangSwitcher" aria-label="Select Language" class="lang-select">
+    <option value="en" {% if site.locale == "en" or site.locale == "en-US" %}selected{% endif %}>English</option>
+    <option value="ar" {% if site.locale == "ar" %}selected{% endif %}>العربية</option>
+    <option value="ckb" {% if site.locale == "ckb" %}selected{% endif %}>کوردی</option>
+  </select>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  const switcher = document.getElementById('globalLangSwitcher');
+  if (!switcher) return;
+  
+  // Get current language from localStorage or site default
+  const currentLang = localStorage.getItem('siteLanguage') || 'en';
+  switcher.value = currentLang;
+  
+  // Apply RTL if needed
+  const rtlLangs = ['ar', 'ckb'];
+  if (rtlLangs.includes(currentLang)) {
+    document.documentElement.setAttribute('dir', 'rtl');
+    document.documentElement.setAttribute('lang', currentLang);
+  }
+  
+  // Handle language change
+  switcher.addEventListener('change', function(e) {
+    const newLang = e.target.value;
+    localStorage.setItem('siteLanguage', newLang);
+    
+    // Apply RTL direction
+    if (rtlLangs.includes(newLang)) {
+      document.documentElement.setAttribute('dir', 'rtl');
+      document.documentElement.setAttribute('lang', newLang);
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+      document.documentElement.setAttribute('lang', newLang);
+    }
+    
+    // Update site locale meta
+    document.documentElement.setAttribute('data-locale', newLang);
+    
+    // Trigger custom event for other scripts to listen
+    window.dispatchEvent(new CustomEvent('languageChanged', { 
+      detail: { language: newLang } 
+    }));
+    
+    // Reload page to apply new translations
+    // Note: This is necessary for Jekyll/Liquid-based translations
+    location.reload();
+  });
+  
+  // Set initial locale meta
+  document.documentElement.setAttribute('data-locale', currentLang);
+})();
+</script>
+
+<style>
+.language-switcher-global {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.lang-select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: var(--background-color, #fff);
+  color: var(--text-color, #000);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-select:hover {
+  border-color: #007bff;
+}
+
+.lang-select:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .lang-select {
+  background: #2a2a2a;
+  color: #fff;
+  border-color: #444;
+}
+
+[data-theme="dark"] .lang-select:hover {
+  border-color: #0056b3;
+}
+
+/* RTL support */
+[dir="rtl"] .language-switcher-global {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+</style>
