@@ -37,7 +37,7 @@ logo                     : /assets/images/logo-small.png # path of logo image to
 app_icon                 : /assets/images/app-icon-512x512.png
 masthead_title           : JobsIn Iraq # overrides the website title displayed in the masthead, use " " for no title
 after_footer_scripts:
-  - /assets/js/language-handler.js
+   - /assets/js/unified-i18n.js
 breadcrumbs              :  # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
