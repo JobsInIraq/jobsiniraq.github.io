@@ -513,3 +513,24 @@ if(printBtn) {
 
 // Initialize
 i18n.set(i18n.cur);
+
+// ---- Sync with global language handler ----
+window.addEventListener('languageChanged', (e) => {
+  if (e.detail && e.detail.language) {
+    const newLang = e.detail.language;
+    if (STRINGS[newLang] && newLang !== i18n.cur) {
+      i18n.set(newLang);
+      if (langPicker) langPicker.value = newLang;
+    }
+  }
+});
+
+// Also trigger global event when dashboard language changes
+if(langPicker) {
+  const originalListener = langPicker.onchange;
+  langPicker.addEventListener("change", (e) => {
+    window.dispatchEvent(new CustomEvent('languageChanged', {
+      detail: { language: e.target.value }
+    }));
+  });
+}
