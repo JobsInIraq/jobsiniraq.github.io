@@ -1,0 +1,59 @@
+/* Global RTL Support for Arabic and Kurdish Sorani */
+
+/* RTL Base Styles */
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] body {
+  font-family: 'Arial', 'Tahoma', sans-serif;
+}
+
+/* Navigation RTL */
+[dir="rtl"] .greedy-nav {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .greedy-nav .visible-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .masthead__menu-item {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+/* Breadcrumbs RTL */
+[dir="rtl"] .breadcrumbs {
+  flex-direction: row-reverse;
+}
+
+/* Footer RTL */
+[dir="rtl"] .page__footer-follow .social-icons {
+  flex-direction: row-reverse;
+}
+
+/* Search RTL */
+[dir="rtl"] .search-content {
+  text-align: right;
+}
+
+/* Sidebar RTL */
+[dir="rtl"] .sidebar {
+  float: left;
+  margin-left: 0;
+  margin-right: 1em;
+}
+
+/* Archive RTL */
+[dir="rtl"] .archive__item-teaser {
+  float: left;
+  margin-left: 0;
+  margin-right: 1em;
+}
+
+/* Language-specific fonts */
+[lang="ar"], [lang="ckb"] {
+  font-family: 'Traditional Arabic', 'Arial', 'Tahoma', sans-serif;
+}
