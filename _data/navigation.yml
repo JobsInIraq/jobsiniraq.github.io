@@ -1,10 +1,10 @@
 # main links
 main:
-  - title:
-      en: "Home"
-      ar: "الرئيسية"
-      ckb: "سەرەتا"
-    url: /
+ # - title:
+ #     en: "Home"
+ #     ar: "الرئيسية"
+ #     ckb: "سەرەتا"
+ #   url: /
   - title:
       en: "Recruitment Process"
       ar: "عملية التوظيف"
