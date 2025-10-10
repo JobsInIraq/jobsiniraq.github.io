@@ -33,6 +33,8 @@ teaser                   : /assets/images/og-image-1200x630.png # path of fallba
 logo                     : /assets/images/logo-small.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 app_icon                 : /assets/images/app-icon-512x512.png
 masthead_title           : JobsIn Iraq # overrides the website title displayed in the masthead, use " " for no title
+after_footer_scripts:
+  - /assets/js/language-handler.js
 breadcrumbs              :  # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
