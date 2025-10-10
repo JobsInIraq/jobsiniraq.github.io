@@ -16,9 +16,9 @@ main:
       ckb: "ڕێبەری مووچە"
     url: /payscale/
   - title:
-      en: "Salary Guide"
-      ar: "دليل الرواتب"
-      ckb: "ڕێبەری مووچە"
+    en: "Recruitment Innovation"
+    ar: "ابتكار التوظيف"
+    ckb: "داهێنانی دامەزراندن"
     url: /recruitment_innovation/
   - title: 
       en: "Dashboard"
