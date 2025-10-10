@@ -11,7 +11,8 @@ permalink: /payscale-dashboard/
   - JS is an ES module and imports Chart.js + Grid.js from pinned CDNs.
 -->
 
-<div class="dash-container" id="app-root">
+<div class="page__content">
+  <div class="dash-container" id="app-root">
   <div class="header-row">
     <h1 id="t.title">Payscale Dashboard</h1>
     <div class="controls" role="group" aria-label="Display preferences">
@@ -73,8 +74,9 @@ permalink: /payscale-dashboard/
   <div class="caption" id="t.tableCaption">
     Search, sort, and paginate. Rows are read as-is from <code>_data/db/salaries.json</code>.
   </div>
-  <div id="table"></div>
-</div>
+   <div id="table"></div>
+  </div> <!-- close dash-container -->
+</div> <!-- close page__content -->
 
 <!-- build-time data injection (safe; avoids extra network fetch on pages) -->
 <script id="payscale-data" type="application/json">
