@@ -10,7 +10,7 @@
   // Translation strings for UI elements
   const UI_STRINGS = {
     en: {
-      home: 'Home',
+      home: 'JobsIn Iraq',
       jobs: 'Jobs',
       payscale: 'Salary Guide',
       dashboard: 'Dashboard',
@@ -20,7 +20,7 @@
       contact: 'Contact'
     },
     ar: {
-      home: 'الرئيسية',
+      home: 'JobsIn Iraq',
       jobs: 'الوظائف',
       payscale: 'دليل الرواتب',
       dashboard: 'لوحة التحكم',
@@ -30,7 +30,7 @@
       contact: 'اتصل بنا'
     },
     ckb: {
-      home: 'سەرەتا',
+      home: 'JobsIn Iraq',
       jobs: 'کارەکان',
       payscale: 'ڕێبەری مووچە',
       dashboard: 'داشبۆرد',
