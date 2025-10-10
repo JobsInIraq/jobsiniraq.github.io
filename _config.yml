@@ -257,7 +257,8 @@ pagination:
   sort_reverse: true
   category: 'posts'
   tag: ''
-  locale: ''
+  locale:  'en'  # Default
+# Supports: en, ar, ckb
   trail:
     before: 2
     after: 2
