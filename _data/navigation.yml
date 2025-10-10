@@ -1,16 +1,34 @@
 # main links
 main:
-  - title: Home
+  - title:
+      en: "Home"
+      ar: "الرئيسية"
+      ckb: "سەرەتا"
     url: /
-  - title: Recruitment Process
+  - title:
+      en: "Recruitment Process"
+      ar: "عملية التوظيف"
+      ckb: "پرۆسەی دامەزراندن"
     url: /process/
-  - title: Payscale
+  - title: 
+      en: "Salary Guide"
+      ar: "دليل الرواتب"
+      ckb: "ڕێبەری مووچە"
     url: /payscale/
-  - title: Reinvention of Recruitment
+  - title:
+      en: "Salary Guide"
+      ar: "دليل الرواتب"
+      ckb: "ڕێبەری مووچە"
     url: /recruitment_innovation/
-  - title: Dashboard
+  - title: 
+      en: "Dashboard"
+      ar: "لوحة التحكم"
+      ckb: "داشبۆرد"
     url: /payscale-dashboard/
-  - title: About
+  - title: 
+      en: "About"
+      ar: "عن الموقع"
+      ckb: "دەربارە"
     url: https://linkedin.com/in/diyar/
  # - title: "Sample Collections"
   #   url: /collection-archive/
