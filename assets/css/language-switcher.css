@@ -1,0 +1,47 @@
+/* Unified Language Switcher Styles */
+.language-switcher-wrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.language-picker {
+  border: 1px solid var(--border-color, #3a3f4b);
+  background: var(--sidebar-background-color, #1f232b);
+  color: var(--text-color, #eaeaea);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  min-width: 70px;
+}
+
+.language-picker:hover {
+  border-color: var(--link-color, #7c4dff);
+  background: var(--code-background-color, #1a1d24);
+}
+
+.language-picker:focus {
+  outline: 2px solid var(--primary-color, #7c4dff);
+  outline-offset: 2px;
+}
+
+/* RTL Support */
+[dir="rtl"] .language-switcher-wrapper {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 64em) {
+  .language-switcher-wrapper {
+    margin: 0.25rem 0;
+  }
+}
+
+/* Ensure visibility in header */
+.greedy-nav .language-switcher-wrapper {
+  display: inline-flex;
+}
