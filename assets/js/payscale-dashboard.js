@@ -83,20 +83,20 @@ const LOCALE_MAP = { en: "en", ar: "ar", ckb: "ckb" };
 const langPicker = document.getElementById("langPicker");
 
 const i18n = {
-  cur: localStorage.getItem("lang") || "en",
+  cur: localStorage.getItem("siteLanguage") || "en", // Changed to unified storage key
   set(l){
-    this.cur = l; 
-    localStorage.setItem("lang", l);
+    this.cur = l;
+    localStorage.setItem("siteLanguage", l); // Changed to unified storage key
     const rtl = l === "ar" || l === "ckb";
     const appRoot = document.getElementById("app-root");
     if(appRoot) appRoot.setAttribute("dir", rtl ? "rtl" : "ltr");
-    
+
     const S = STRINGS[l];
     const updateText = (id, text) => {
       const el = document.getElementById(id);
       if(el) el.textContent = text;
     };
-    
+
     updateText("t.title", S.title);
     updateText("t.caption", S.caption);
     updateText("t.theme", S.theme);
@@ -109,20 +109,26 @@ const i18n = {
     updateText("t.print", S.print);
     updateText("t.cityLegend", S.cityLegend);
     updateText("t.categoryLegend", S.categoryLegend);
-    
+
     setFirstOption(document.getElementById("f-city"), S.allCities);
     setFirstOption(document.getElementById("f-category"), S.allCats);
     setFirstOption(document.getElementById("f-etype"), S.allTypes);
     setFirstOption(document.getElementById("f-period"), S.allPeriods);
-    
-    populateFilters(); 
+
+    populateFilters();
     applyFilters();
   }
 };
 
-if(langPicker) {
-  langPicker.value = i18n.cur;
-  langPicker.addEventListener("change", (e)=> i18n.set(e.target.value));
+// Listen for language changes from the global switcher
+window.addEventListener('languageChanged', (e) => {
+  if (e.detail && e.detail.language) {
+    i18n.set(e.detail.language);
+  }
+});
+
+// Initialize with current language
+i18n.set(i18n.cur);
 }
 
 // ---- translation maps for data labels ----
