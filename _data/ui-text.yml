@@ -34,6 +34,7 @@ en: &DEFAULT_EN
 
   # === ALL 19 IRAQI GOVERNORATES (2025) ===
   cities:
+    Any: "Any"
     # Kurdistan Region (4 governorates)
     Erbil: "Erbil"
     Sulaymaniyah: "Sulaymaniyah"
@@ -81,10 +82,21 @@ en: &DEFAULT_EN
     Samarra: "Samarra"
     Kufa: "Kufa"
     Umm_Qasr: "Umm Qasr"
+    
+    # 🆕 ADD THESE NEW ENTRIES:
+    "Baghdad - US Mission": "Baghdad - US Mission"
+    "Erbil - US Mission": "Erbil - US Mission"
+    "Baghdad - UK Mission": "Baghdad - UK Mission"
+    "Erbil - UK Mission": "Erbil - UK Mission"
+    Any: "Any"
 
   # === JOB CATEGORIES ===
   job_categories:
     IT: "Information Technology"
+    "Official Government": "Official Government"
+    Research: "Research"
+    "Skilled Labor": "Skilled Labor"
+    Transportation: "Transportation"
     "Software Development": "Software Development"
     "Cybersecurity": "Cybersecurity"
     "Data Science": "Data Science"
@@ -382,7 +394,14 @@ ar: &DEFAULT_AR
     Samarra: "سامراء"
     Kufa: "الكوفة"
     Umm_Qasr: "أم قصر"
-
+ 
+    # 🆕 إضافة هذه المدخلات:
+    "Baghdad - US Mission": "بغداد - السفارة الأمريكية"
+    "Erbil - US Mission": "أربيل - السفارة الأمريكية"
+    "Baghdad - UK Mission": "بغداد - السفارة البريطانية"
+    "Erbil - UK Mission": "أربيل - السفارة البريطانية"
+    Any: "أي مكان"
+    
   # === فئات الوظائف ===
   job_categories:
     IT: "تقنية المعلومات"
@@ -449,6 +468,12 @@ ar: &DEFAULT_AR
     Quality: "ضمان الجودة"
     Management: "الإدارة"
     Events: "الفعاليات"
+    
+    # 🆕 إضافة هذه الفئات:
+    "Official Government": "حكومي رسمي"
+    Research: "البحث والتطوير"
+    "Skilled Labor": "العمالة الماهرة"
+    Transportation: "النقل والمواصلات"
 
   # === أنواع التوظيف ===
   employment_types:
@@ -684,6 +709,13 @@ ckb: &DEFAULT_CKB
     Kufa: "کووفە"
     Umm_Qasr: "ئوممقەسر"
 
+    # 🆕 زیادکردنی ئەمانە:
+    "Baghdad - US Mission": "بەغدا - بەشی ئەمریکی"
+    "Erbil - US Mission": "هەولێر - بەشی ئەمریکی"
+    "Baghdad - UK Mission": "بەغدا - بەشی بەریتانی"
+    "Erbil - UK Mission": "هەولێر - بەشی بەریتانی"
+    Any: "هەر شوێنێک"
+    
   # === جۆرەکانی کار ===
   job_categories:
     IT: "تەکنەلۆژیای زانیاری"
@@ -750,7 +782,13 @@ ckb: &DEFAULT_CKB
     Quality: "دڵنیایی جۆری"
     Management: "بەڕێوەبردن"
     Events: "بۆنەکان"
-
+   
+    # 🆕 زیادکردنی ئەم جۆرانە:
+    "Official Government": "حکومی فەرمی"
+    Research: "توێژینەوە و گەشەپێدان"
+    "Skilled Labor": "کرێکاری شارەزا"
+    Transportation: "گواستنەوە"
+    
   # === جۆرەکانی دامەزراندن ===
   employment_types:
     "Full-Time": "کاتی تەواو"
