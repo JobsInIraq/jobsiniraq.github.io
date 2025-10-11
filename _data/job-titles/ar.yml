@@ -1,46 +1,88 @@
-# OIL & GAS SECTOR
-petroleum_engineer: "مهندس بترول"
-oil_field_technician: "فني حقول نفطية"
+# ============================================
+# ARABIC JOB TITLES - IRAQ JOB MARKET
+# المسميات الوظيفية - سوق العمل العراقي
+# Last Updated: 2025-10-11
+# Total: 217+ titles
+# ============================================
+
+# ==========================================
+# OIL & GAS SECTOR - قطاع النفط والغاز
+# ==========================================
+petroleum_engineer: "مهندس نفط"
+oil_field_technician: "فني حقول نفط"
 gas_operations_specialist: "أخصائي عمليات الغاز"
-pipeline_operator: "مشغل خطوط الأنابيب"
+pipeline_operator: "مشغل خطوط أنابيب"
 drilling_engineer: "مهندس حفر"
-refinery_technician: "فني تكرير"
-hse_officer: "ضابط الصحة والسلامة والبيئة"
+refinery_technician: "فني مصفاة"
+hse_officer: "مسؤول الصحة والسلامة والبيئة"
 reservoir_engineer: "مهندس مكامن"
 production_engineer: "مهندس إنتاج"
+chemical_engineer: "مهندس كيميائي"
+piping_engineer: "مهندس أنابيب"
+instrumentation_engineer: "مهندس أجهزة قياس"
+turnaround_planner: "مخطط الصيانة الدورية"
+turnaround_scheduler: "منسق جدولة الصيانة الدورية"
+multi_phase_flow_meter_operator: "مشغل عداد التدفق متعدد المراحل"
+maintenance_supervisor_instrumentation: "مشرف صيانة أجهزة القياس"
 
-# IT & TECHNOLOGY
+# ==========================================
+# IT & TECHNOLOGY - تكنولوجيا المعلومات
+# ==========================================
 software_engineer: "مهندس برمجيات"
 software_developer: "مطور برمجيات"
-it_technician: "فني تقنية معلومات"
+it_technician: "فني تكنولوجيا معلومات"
 network_engineer: "مهندس شبكات"
+network_administrator: "مدير شبكة"
 systems_administrator: "مدير أنظمة"
+system_administrator: "مدير نظام"
 telecommunications_specialist: "أخصائي اتصالات"
 data_scientist: "عالم بيانات"
-database_administrator: "مدير قواعد بيانات"
+database_administrator: "مدير قاعدة بيانات"
 web_developer: "مطور ويب"
-cybersecurity_specialist: "أخصائي أمن سيبراني"
-devops_engineer: "مهندس DevOps"
-cloud_engineer: "مهندس سحابة"
-network_administrator: "مدير شبكة"
+web_designer: "مصمم ويب"
+cyber_security_engineer: "مهندس أمن سيبراني"
+information_security_officer: "مسؤول أمن المعلومات"
+devops_engineer: "مهندس ديف أوبس"
+cloud_engineer: "مهندس حوسبة سحابية"
 qa_tester: "مختبر ضمان الجودة"
 qa_engineer: "مهندس ضمان الجودة"
-quality_assurance_engineer: "مهندس ضمان الجودة"
+it_support_technician: "فني دعم تقنية المعلومات"
+it_project_manager: "مدير مشروع تقنية المعلومات"
+java_developer: "مطور جافا"
+mobile_app_developer: "مطور تطبيقات الجوال"
+front_end_developer: "مطور واجهة أمامية"
+back_end_developer: "مطور واجهة خلفية"
+full_stack_developer: "مطور متكامل"
+senior_software_developer: "مطور برمجيات أول"
+information_technology_specialist: "أخصائي تكنولوجيا المعلومات"
+servicenow_developer: "مطور سيرفس ناو"
+telephone_technician: "فني هواتف"
+cluster_engineer: "مهندس مجموعات"
+telecom_engineer: "مهندس اتصالات"
 
-# ENGINEERING & CONSTRUCTION
+# ==========================================
+# ENGINEERING & CONSTRUCTION - الهندسة والبناء
+# ==========================================
 civil_engineer: "مهندس مدني"
-construction_manager: "مدير إنشاءات"
+construction_manager: "مدير بناء"
+construction_supervisor: "مشرف بناء"
 project_manager: "مدير مشروع"
+planning_engineer: "مهندس تخطيط"
+site_engineer: "مهندس موقع"
 architect: "مهندس معماري"
 site_supervisor: "مشرف موقع"
 building_technician: "فني بناء"
-electrical_engineer: "مهندس كهرباء"
+electrical_engineer: "مهندس كهربائي"
 mechanical_engineer: "مهندس ميكانيكي"
-quantity_surveyor: "مهندس كميات"
+quantity_surveyor: "مساح كميات"
+quality_surveyor: "مساح جودة"
 structural_engineer: "مهندس إنشائي"
-construction_project_manager: "مدير مشروع البناء"
+quality_control_engineer: "مهندس مراقبة الجودة"
+foam_production_engineer: "مهندس إنتاج الرغوة"
 
-# HEALTHCARE
+# ==========================================
+# HEALTHCARE & MEDICAL - الرعاية الصحية
+# ==========================================
 registered_nurse: "ممرض مسجل"
 doctor: "طبيب"
 general_practitioner: "طبيب عام"
@@ -52,176 +94,230 @@ emergency_medical_technician: "فني طوارئ طبية"
 surgeon: "جراح"
 radiologist: "أخصائي أشعة"
 laboratory_technician: "فني مختبر"
+medical_science_liaison: "مسؤول اتصال علوم طبية"
+clinic_manager: "مدير عيادة"
 
-# PUBLIC SECTOR & GOVERNMENT
-government_administrator: "موظف حكومي إداري"
-public_sector_clerk: "كاتب قطاع عام"
+# ==========================================
+# PUBLIC SECTOR & GOVERNMENT - القطاع العام والحكومة
+# ==========================================
+government_administrator: "مدير حكومي"
+public_sector_clerk: "موظف قطاع عام"
 policy_analyst: "محلل سياسات"
 programme_manager: "مدير برنامج"
-justice_home_affairs_programme_manager_eo: "مدير برنامج العدل والشؤون الداخلية (EO)"
-administrative_officer: "ضابط إداري"
-executive_officer: "ضابط تنفيذي"
+program_manager: "مدير برنامج"
+justice_home_affairs_programme_manager_eo: "مدير برنامج العدل والشؤون الداخلية"
+administrative_officer: "موظف إداري"
+executive_officer: "موظف تنفيذي"
+iraqi_embassy: "السفارة العراقية"
+diplomat: "دبلوماسي"
+consular_officer: "موظف قنصلي"
 
-# EDUCATION
+# ==========================================
+# EDUCATION & TRAINING - التعليم والتدريب
+# ==========================================
 teacher: "معلم"
-school_teacher: "مدرس"
+school_teacher: "مدرس مدرسة"
 university_lecturer: "محاضر جامعي"
 training_specialist: "أخصائي تدريب"
-education_administrator: "مدير تعليمي"
+education_administrator: "مدير تعليم"
 education_specialist: "أخصائي تعليم"
+professor: "أستاذ جامعي"
+assistant_professor: "أستاذ مساعد"
+instructor: "مدرب"
+tutor: "مدرس خصوصي"
 
-# FINANCE & BANKING
+# ==========================================
+# FINANCE & BANKING - المالية والمصرفية
+# ==========================================
 accountant: "محاسب"
 financial_analyst: "محلل مالي"
-bank_teller: "موظف بنك"
+bank_teller: "موظف صراف بنك"
 accounts_payable_specialist: "أخصائي حسابات دائنة"
 accounts_receivable_specialist: "أخصائي حسابات مدينة"
+ap_supervisor: "مشرف حسابات دائنة"
 investment_analyst: "محلل استثمار"
 auditor: "مدقق حسابات"
 credit_analyst: "محلل ائتمان"
-
-# SALES & MARKETING
-sales_associate: "مندوب مبيعات"
-sales_manager: "مدير مبيعات"
-retail_manager: "مدير تجزئة"
-customer_service_representative: "ممثل خدمة عملاء"
-marketing_specialist: "أخصائي تسويق"
-business_development_manager: "مدير تطوير أعمال"
-account_manager: "مدير حسابات"
-sales_executive: "تنفيذي مبيعات"
-customer_support_representative: "ممثل دعم العملاء"
-marketing_manager: "مدير التسويق"
-content_writer: "كاتب محتوى"
-content_creator: "منشئ محتوى"
-
-# LOGISTICS & SUPPLY CHAIN
-logistics_coordinator: "منسق لوجستيات"
-supply_chain_manager: "مدير سلسلة التوريد"
-warehouse_manager: "مدير مستودع"
-warehouse_technician: "فني مستودع"
-operations_manager: "مدير عمليات"
-procurement_specialist: "أخصائي مشتريات"
-inventory_controller: "مراقب مخزون"
-
-# SECURITY & MILITARY
-security_guard: "حارس أمن"
-security_consultant: "مستشار أمني"
-security_manager: "مدير أمن"
-military_personnel: "أفراد عسكريون"
-police_officer: "ضابط شرطة"
-
-# HR & ADMINISTRATION
-hr_manager: "مدير موارد بشرية"
-recruitment_specialist: "أخصائي توظيف"
-administrative_assistant: "مساعد إداري"
-office_manager: "مدير مكتب"
-executive_assistant: "مساعد تنفيذي"
-
-# AGRICULTURE
-livestock_farmer: "مزارع مواشي"
-agricultural_technician: "فني زراعي"
-farm_manager: "مدير مزرعة"
-veterinarian: "طبيب بيطري"
-agronomist: "مهندس زراعي"
-
-# LEGAL & COMPLIANCE
-lawyer: "محامي"
-legal_advisor: "مستشار قانوني"
-compliance_officer: "ضابط امتثال"
-contract_specialist: "أخصائي عقود"
-
-# RETAIL & HOSPITALITY
-cashier: "أمين صندوق"
-store_manager: "مدير متجر"
-hotel_manager: "مدير فندق"
-restaurant_manager: "مدير مطعم"
-chef: "طاه"
-waiter: "نادل"
-
-# DESIGN & CREATIVE (New Section)
-graphic_designer: "مصمم جرافيك"
-ui_ux_designer: "مصمم واجهة وتجربة المستخدم"
-web_designer: "مصمم ويب"
-video_editor: "محرر فيديو"
-photographer: "مصور فوتوغرافي"
-
-
-# BUSINESS & MANAGEMENT (New Section)
-business_analyst: "محلل أعمال"
-management_consultant: "مستشار إدارة"
-strategy_analyst: "محلل استراتيجي"
-event_manager: "مدير فعاليات"
-event_coordinator: "منسق فعاليات"
-
-
-# PROCUREMENT & SUPPLY CHAIN
-procurement_manager: "مدير المشتريات"
-procurement_officer: "موظف مشتريات"
-
-# RESEARCH & DEVELOPMENT
-research_scientist: "عالم أبحاث"
-research_and_development_manager: "مدير البحث والتطوير"
-
-# FINANCE & ACCOUNTING
 tax_consultant: "مستشار ضرائب"
 finance_manager: "مدير مالي"
 financial_controller: "مراقب مالي"
 financial_planner: "مخطط مالي"
 accounting_officer: "موظف محاسبة"
 senior_accountant: "محاسب أول"
+associate_accountant: "محاسب مشارك"
+financial_assistant: "مساعد مالي"
+underwriter_officer: "موظف اكتتاب"
 
-# HUMAN RESOURCES
-human_resources_assistant: "مساعد موارد بشرية"
-
-# MARKETING & DIGITAL
+# ==========================================
+# SALES & MARKETING - المبيعات والتسويق
+# ==========================================
+sales_associate: "مساعد مبيعات"
+sales_executive: "تنفيذي مبيعات"
+sales_manager: "مدير مبيعات"
+sales_representative: "ممثل مبيعات"
+sales_supervisor: "مشرف مبيعات"
+sales_officer: "موظف مبيعات"
+retail_manager: "مدير تجزئة"
+customer_service_representative: "ممثل خدمة العملاء"
+customer_support_representative: "ممثل دعم العملاء"
+customer_service_manager: "مدير خدمة العملاء"
+marketing_specialist: "أخصائي تسويق"
+marketing_manager: "مدير التسويق"
+marketing_director: "مدير التسويق"
+business_development_manager: "مدير تطوير الأعمال"
+account_manager: "مدير حسابات"
+account_executive: "تنفيذي حسابات"
+indirect_sales_account_executive: "تنفيذي حسابات مبيعات غير مباشرة"
+content_writer: "كاتب محتوى"
+content_creator: "منشئ محتوى"
 digital_marketing_manager: "مدير التسويق الرقمي"
 public_relations_manager: "مدير العلاقات العامة"
 social_media_manager: "مدير وسائل التواصل الاجتماعي"
 social_media_specialist: "أخصائي وسائل التواصل الاجتماعي"
-marketing_director: "مدير التسويق"
+meta_advertising_specialist: "أخصائي إعلانات ميتا"
 media_planner: "مخطط إعلامي"
+technical_sales_manager: "مدير مبيعات تقنية"
+solar_battery_sales_manager: "مدير مبيعات بطاريات شمسية"
 
-# SOFTWARE DEVELOPMENT
-java_developer: "مطور جافا"
-mobile_app_developer: "مطور تطبيقات الجوال"
-front_end_developer: "مطور واجهة أمامية"
-senior_software_developer: "مطور برمجيات أول"
-ux_ui_designer: "مصمم تجربة المستخدم وواجهة المستخدم"
+# ==========================================
+# E-COMMERCE & DIGITAL - التجارة الإلكترونية
+# ==========================================
+e_commerce_category_management_specialist: "أخصائي إدارة فئات التجارة الإلكترونية"
+e_commerce_merchant_support_officer: "موظف دعم تجار التجارة الإلكترونية"
+category_manager: "مدير فئات"
+operations_executive: "تنفيذي عمليات"
 
-# EXECUTIVE & MANAGEMENT
-chief_executive_officer_ceo: "الرئيس التنفيذي"
-product_manager: "مدير منتج"
-quality_assurance_manager: "مدير ضمان الجودة"
-customer_service_manager: "مدير خدمة العملاء"
+# ==========================================
+# LOGISTICS & SUPPLY CHAIN - اللوجستيات وسلسلة الإمداد
+# ==========================================
+logistics_coordinator: "منسق لوجستيات"
+logistics_specialist: "أخصائي لوجستيات"
+supply_chain_manager: "مدير سلسلة الإمداد"
+supply_chain_specialist: "أخصائي سلسلة الإمداد"
+supply_chain_planner: "مخطط سلسلة الإمداد"
+warehouse_manager: "مدير مستودع"
+warehouse_technician: "فني مستودع"
+warehouseman: "عامل مستودع"
+operations_manager: "مدير عمليات"
+operations_coordinator: "منسق عمليات"
+operations_supervisor: "مشرف عمليات"
+procurement_specialist: "أخصائي مشتريات"
+procurement_manager: "مدير المشتريات"
+procurement_officer: "موظف مشتريات"
+senior_procurement_officer: "موظف مشتريات أول"
+inventory_controller: "مراقب مخزون"
+contract_logistics_officer: "موظف لوجستيات العقود"
+document_controller: "مراقب وثائق"
+senior_storeperson: "أمين مخزن أول"
 
-# IT & TECHNOLOGY
-system_administrator: "مدير نظام"
-it_support_technician: "فني دعم تقنية المعلومات"
-it_project_manager: "مدير مشروع تقنية المعلومات"
-cyber_security_engineer: "مهندس أمن سيبراني"
+# ==========================================
+# SECURITY & MILITARY - الأمن والعسكرية
+# ==========================================
+security_guard: "حارس أمن"
+security_consultant: "مستشار أمن"
+security_manager: "مدير أمن"
+security_associate: "مساعد أمن"
+guard_force_operations: "عمليات قوات الحراسة"
+military_personnel: "أفراد عسكريون"
+police_officer: "ضابط شرطة"
+firefighter: "رجل إطفاء"
 
-# LEGAL & COMPLIANCE
+# ==========================================
+# HR & ADMINISTRATION - الموارد البشرية والإدارة
+# ==========================================
+hr_manager: "مدير موارد بشرية"
+hr_generalist: "أخصائي موارد بشرية عام"
+hr_executive: "تنفيذي موارد بشرية"
+human_resources_executive: "تنفيذي موارد بشرية"
+recruitment_specialist: "أخصائي توظيف"
+recruitment_admin_specialist: "أخصائي توظيف وإدارة"
+administrative_assistant: "مساعد إداري"
+office_manager: "مدير مكتب"
+executive_assistant: "مساعد تنفيذي"
+human_resources_assistant: "مساعد موارد بشرية"
+data_entry_specialist: "أخصائي إدخال بيانات"
+
+# ==========================================
+# AGRICULTURE & FARMING - الزراعة
+# ==========================================
+livestock_farmer: "مزارع ماشية"
+agricultural_technician: "فني زراعي"
+farm_manager: "مدير مزرعة"
+veterinarian: "طبيب بيطري"
+agronomist: "مهندس زراعي"
+
+# ==========================================
+# LEGAL & COMPLIANCE - القانون والامتثال
+# ==========================================
+lawyer: "محامي"
+legal_advisor: "مستشار قانوني"
 legal_counsel: "مستشار قانوني"
+legal_consultant: "مستشار قانوني"
+compliance_officer: "مسؤول امتثال"
+contract_specialist: "أخصائي عقود"
 health_and_safety_officer: "مسؤول الصحة والسلامة"
 
-# DESIGN & CREATIVE
+# ==========================================
+# RETAIL & HOSPITALITY - التجزئة والضيافة
+# ==========================================
+cashier: "أمين صندوق"
+store_manager: "مدير متجر"
+hotel_manager: "مدير فندق"
+restaurant_manager: "مدير مطعم"
+chef: "طاهي"
+waiter: "نادل"
+reservation_agent: "موظف حجوزات"
+
+# ==========================================
+# DESIGN & CREATIVE - التصميم والإبداع
+# ==========================================
+graphic_designer: "مصمم جرافيك"
 graphic_design_manager: "مدير التصميم الجرافيكي"
+graphics_design_intern: "متدرب تصميم جرافيك"
+ui_ux_designer: "مصمم واجهة وتجربة المستخدم"
+ux_ui_designer: "مصمم تجربة وواجهة المستخدم"
+web_designer: "مصمم ويب"
+video_editor: "محرر فيديو"
+photographer: "مصور فوتوغرافي"
 3d_motion_graphic_designer: "مصمم جرافيك ثلاثي الأبعاد والموشن"
 
-# OPERATIONS
-operations_coordinator: "منسق عمليات"
-construction_supervisor: "مشرف بناء"
-contract_logistics_officer: "موظف لوجستيات العقود"
+# ==========================================
+# BUSINESS & MANAGEMENT - الأعمال والإدارة
+# ==========================================
+business_analyst: "محلل أعمال"
+management_consultant: "مستشار إدارة"
+strategy_analyst: "محلل استراتيجي"
+event_manager: "مدير فعاليات"
+event_coordinator: "منسق فعاليات"
+product_manager: "مدير منتج"
+quality_assurance_manager: "مدير ضمان الجودة"
+chief_executive_officer_ceo: "الرئيس التنفيذي"
+general_manager: "المدير العام"
+country_manager: "مدير الدولة"
 
-# DATA & ANALYTICS
+# ==========================================
+# RESEARCH & DEVELOPMENT - البحث والتطوير
+# ==========================================
+research_scientist: "عالم أبحاث"
+research_and_development_manager: "مدير البحث والتطوير"
+
+# ==========================================
+# DATA & ANALYTICS - البيانات والتحليلات
+# ==========================================
 data_analyst: "محلل بيانات"
 
-# GOVERNMENT & DIPLOMATIC
-iraqi_embassy: "السفارة العراقية"
+# ==========================================
+# MAINTENANCE & TECHNICAL SUPPORT - الصيانة والدعم الفني
+# ==========================================
+mechanic: "ميكانيكي"
+maintenance_technician: "فني صيانة"
 
-
-# GENERAL FALLBACK
+# ==========================================
+# GENERAL FALLBACK - بدائل عامة
+# ==========================================
 unknown_position: "منصب غير محدد"
 not_specified: "غير محدد"
 other: "أخرى"
-
+intern: "متدرب"
+trainee: "متدرب"
+fresh_graduate: "خريج جديد"
