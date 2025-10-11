@@ -37,9 +37,20 @@
 {% endif %}
 
 <!-- ============================================ -->
-<!-- ✅ INJECT TRANSLATIONS FROM YAML   -->
+<!-- ✅ I18N SYSTEM (CORRECT LOADING ORDER)      -->
 <!-- ============================================ -->
+
+<!-- STEP 1: Inject UI translations from _data/ui-text.yml -->
 {% include inject-translations.html %}
+
+<!-- STEP 2: Inject job title translations from _data/job-titles/*.yml -->
+{% include inject-job-titles.html %}
+
+<!-- STEP 3: Load unified i18n engine (uses injected data) -->
+<script src="{{ '/assets/js/unified-i18n.js' | relative_url }}"></script>
+
+<!-- ============================================ -->
+<!-- END I18N SYSTEM                             -->
 <!-- ============================================ -->
 
 <!-- Include IndexNow JavaScript -->
