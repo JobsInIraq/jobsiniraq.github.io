@@ -1,8 +1,15 @@
 <script>
-  // Inject job title translations at build time
+  /**
+   * Job Title Translations Injection
+   * Auto-detects flat vs nested YAML structure
+   * Source: _data/job-titles/{en,ar,ckb}.yml
+   */
   window.JOB_TITLES_TRANSLATIONS = {
     {% for lang in site.data.job-titles %}
-    "{{ lang[0] }}": {{ lang[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+    "{{ lang[0] }}": {% if lang[1].job_titles %}{{ lang[1].job_titles | jsonify }}{% else %}{{ lang[1] | jsonify }}{% endif %}{% unless forloop.last %},{% endunless %}
     {% endfor %}
   };
+  
+  // Debug output (remove in production)
+  console.log('[Jekyll] Job titles injected for languages:', Object.keys(window.JOB_TITLES_TRANSLATIONS));
 </script>
