@@ -1,7 +1,7 @@
 /**
  * Unified I18n System for JobsInIraq
- * Consumes translations from _data/ui-text.yml + _data/job-titles/*.yml (via Jekyll injection)
- * @version 4.0.0 - COMPLETE WITH JOB TITLES SUPPORT
+ * Enhanced with Smart Fallback, Fuzzy Matching & Translation Tracking
+ * @version 5.0.0 - PRODUCTION READY
  * @lastUpdated 2025-10-11
  */
 
@@ -14,7 +14,8 @@
     supportedLangs: ['en', 'ar', 'ckb'],
     rtlLangs: ['ar', 'ckb'],
     storageKey: 'siteLanguage',
-    defaultLang: 'en'
+    defaultLang: 'en',
+    devMode: false // Set to true to track missing translations
   };
   
   class UnifiedI18nManager {
@@ -22,6 +23,8 @@
       this.currentLang = this.getSavedLanguage();
       this.jobTitlesLoaded = false;
       this.jobTitlesCache = {}; // Store loaded job titles
+      this.translationCache = new Map(); // Performance cache
+      this.missingTranslations = new Map(); // Track missing keys
       this.init();
     }
     
@@ -38,11 +41,17 @@
       this.applyLanguage(this.currentLang, false);
       this.initializePicker();
       this.setupEventListeners();
+      
+      // Expose missing translations in dev mode
+      if (CONFIG.devMode) {
+        window.getMissingTranslations = () => {
+          return Object.fromEntries(this.missingTranslations);
+        };
+      }
     }
     
     /**
-     * ✅ NEW: Load job titles from separate YAML files
-     * Loads all languages in parallel for better performance
+     * Load job titles from Jekyll injection or fallback sources
      */
     async loadJobTitles() {
       if (this.jobTitlesLoaded) return;
@@ -111,23 +120,221 @@
     }
     
     /**
-     * ✅ NEW: Translate job title with smart key conversion
+     * ✅ ENHANCED: Translate job title with multi-layer fallback
      */
     translateJobTitle(title) {
-      if (!title || title === "—") return title;
+      if (!title || title === "—" || title === "" || title === null) {
+        return title;
+      }
       
-      // Convert title to translation key
+      // Check cache first (performance optimization)
+      const cacheKey = `${this.currentLang}:${title}`;
+      if (this.translationCache.has(cacheKey)) {
+        return this.translationCache.get(cacheKey);
+      }
+      
+      let result = null;
+      
+      // LAYER 1: Exact match in current language
+      result = this.exactMatch(title);
+      if (result) {
+        this.translationCache.set(cacheKey, result);
+        return result;
+      }
+      
+      // LAYER 2: Fuzzy match (handle variations)
+      result = this.fuzzyMatch(title);
+      if (result) {
+        this.translationCache.set(cacheKey, result);
+        return result;
+      }
+      
+      // LAYER 3: Partial match (e.g., "Senior Software Engineer" → "Software Engineer")
+      result = this.partialMatch(title);
+      if (result) {
+        this.translationCache.set(cacheKey, result);
+        return result;
+      }
+      
+      // LAYER 4: Fallback to English (if not already English)
+      if (this.currentLang !== 'en') {
+        result = this.englishFallback(title);
+        if (result) {
+          this.translationCache.set(cacheKey, result);
+          return result;
+        }
+      }
+      
+      // LAYER 5: Track missing translation
+      this.trackMissing(title);
+      
+      // LAYER 6: Return original title (final fallback)
+      this.translationCache.set(cacheKey, title);
+      return title;
+    }
+    
+    /**
+     * ✅ NEW: Exact match translation
+     */
+    exactMatch(title) {
       const key = this.titleToKey(title);
       const fullKey = `job_titles.${key}`;
       const translated = this.t(fullKey);
       
-      // Return translated version or original if not found
-      return (translated && translated !== fullKey) ? translated : title;
+      return (translated && translated !== fullKey) ? translated : null;
     }
     
     /**
-     * ✅ NEW: Convert job title string to translation key
-     * Example: "Software Engineer" → "software_engineer"
+     * ✅ NEW: Fuzzy match for common variations
+     */
+    fuzzyMatch(title) {
+      const key = this.titleToKey(title);
+      
+      // Common variations and synonyms
+      const fuzzyMappings = {
+        // Abbreviations
+        'qa_test': 'qa_tester',
+        'qa': 'qa_tester',
+        'quality_assurance': 'qa_engineer',
+        'db_admin': 'database_administrator',
+        'dba': 'database_administrator',
+        'sys_admin': 'systems_administrator',
+        'sysadmin': 'systems_administrator',
+        'net_admin': 'network_administrator',
+        'netadmin': 'network_administrator',
+        
+        // Developer variations
+        'dev': 'developer',
+        'software_dev': 'software_developer',
+        'web_dev': 'web_developer',
+        'frontend_dev': 'frontend_developer',
+        'backend_dev': 'backend_developer',
+        'fullstack_dev': 'fullstack_developer',
+        
+        // Engineer variations
+        'sw_engineer': 'software_engineer',
+        'swe': 'software_engineer',
+        
+        // Management variations
+        'mgr': 'manager',
+        'proj_mgr': 'project_manager',
+        'pm': 'project_manager',
+        'hr_mgr': 'hr_manager',
+        
+        // Other common variations
+        'admin': 'administrator',
+        'exec': 'executive',
+        'specialist': 'specialist',
+        'coord': 'coordinator',
+        'rep': 'representative',
+        'cust_service': 'customer_service_representative',
+        'cust_support': 'customer_support_representative',
+        'sales_exec': 'sales_executive',
+        'sales_rep': 'sales_associate',
+        'content_write': 'content_writer',
+        'graphic_design': 'graphic_designer'
+      };
+      
+      // Try direct fuzzy match
+      for (const [pattern, replacement] of Object.entries(fuzzyMappings)) {
+        if (key === pattern || key.includes(pattern)) {
+          const fuzzyKey = `job_titles.${replacement}`;
+          const translated = this.t(fuzzyKey);
+          if (translated && translated !== fuzzyKey) {
+            if (CONFIG.devMode) {
+              console.log(`[i18n] Fuzzy match: "${title}" → "${replacement}"`);
+            }
+            return translated;
+          }
+        }
+      }
+      
+      return null;
+    }
+    
+    /**
+     * ✅ NEW: Partial match for titles with prefixes/suffixes
+     * Example: "Senior Software Engineer" matches "Software Engineer"
+     */
+    partialMatch(title) {
+      const currentLangTitles = this.jobTitlesCache[this.currentLang] || {};
+      const titleLower = title.toLowerCase();
+      
+      // Common prefixes to strip
+      const prefixes = ['senior', 'junior', 'lead', 'principal', 'staff', 'associate', 'assistant', 'chief'];
+      const suffixes = ['i', 'ii', 'iii', 'iv', 'v', '1', '2', '3', '4', '5'];
+      
+      // Try matching with stripped prefixes/suffixes
+      for (const [key, translation] of Object.entries(currentLangTitles)) {
+        const cleanTitle = key.replace(/_/g, ' ');
+        
+        // Check if title contains the job title
+        if (titleLower.includes(cleanTitle) || cleanTitle.includes(titleLower.replace(/\b(senior|junior|lead|principal|staff|associate|assistant|chief)\b/gi, '').trim().toLowerCase())) {
+          if (CONFIG.devMode) {
+            console.log(`[i18n] Partial match: "${title}" → "${key}"`);
+          }
+          return translation;
+        }
+      }
+      
+      return null;
+    }
+    
+    /**
+     * ✅ NEW: Fallback to English translation
+     */
+    englishFallback(title) {
+      const key = this.titleToKey(title);
+      const englishTitle = this.jobTitlesCache['en']?.[key];
+      
+      if (englishTitle) {
+        if (CONFIG.devMode) {
+          console.log(`[i18n] English fallback: "${title}" → "${englishTitle}"`);
+        }
+        return englishTitle;
+      }
+      
+      return null;
+    }
+    
+    /**
+     * ✅ NEW: Track missing translations
+     */
+    trackMissing(title) {
+      const key = this.titleToKey(title);
+      
+      if (!this.missingTranslations.has(key)) {
+        this.missingTranslations.set(key, {
+          original: title,
+          key: key,
+          language: this.currentLang,
+          count: 1,
+          firstSeen: new Date().toISOString()
+        });
+        
+        // Log in development mode
+        if (CONFIG.devMode) {
+          console.warn(`[i18n] Missing translation: "${title}" (key: ${key}, lang: ${this.currentLang})`);
+        }
+        
+        // Store in localStorage for later review
+        const stored = JSON.parse(localStorage.getItem('i18n_missing') || '{}');
+        stored[key] = {
+          title,
+          key,
+          lang: this.currentLang,
+          timestamp: new Date().toISOString()
+        };
+        localStorage.setItem('i18n_missing', JSON.stringify(stored));
+      } else {
+        // Increment count
+        const entry = this.missingTranslations.get(key);
+        entry.count++;
+      }
+    }
+    
+    /**
+     * Convert job title string to translation key
      */
     titleToKey(title) {
       return title
@@ -140,6 +347,16 @@
         .replace(/_+/g, '_')            // Remove duplicate underscores
         .replace(/^_|_$/g, '')          // Remove leading/trailing underscores
         .trim();
+    }
+    
+    /**
+     * ✅ NEW: Clear translation cache (call when language changes)
+     */
+    clearCache() {
+      this.translationCache.clear();
+      if (CONFIG.devMode) {
+        console.log('[i18n] Translation cache cleared');
+      }
     }
     
     // Shorthand helpers
@@ -169,6 +386,9 @@
       
       localStorage.setItem(CONFIG.storageKey, lang);
       this.currentLang = lang;
+      
+      // Clear cache when language changes
+      this.clearCache();
       
       this.updateNavigationTranslations();
       this.updateDashboardTranslations();
@@ -258,6 +478,25 @@
   window.translateCity = (city) => manager.translateCity(city);
   window.translateType = (type) => manager.translateType(type);
   window.translatePeriod = (period) => manager.translatePeriod(period);
-  window.translateJobTitle = (title) => manager.translateJobTitle(title); // ✅ NEW
+  window.translateJobTitle = (title) => manager.translateJobTitle(title);
+  
+  // ✅ NEW: Development utilities
+  if (CONFIG.devMode) {
+    window.i18nDebug = {
+      getMissingTranslations: () => Object.fromEntries(manager.missingTranslations),
+      clearCache: () => manager.clearCache(),
+      getCacheSize: () => manager.translationCache.size,
+      testTranslation: (title) => {
+        console.group(`Testing translation: "${title}"`);
+        console.log('Key:', manager.titleToKey(title));
+        console.log('Exact match:', manager.exactMatch(title));
+        console.log('Fuzzy match:', manager.fuzzyMatch(title));
+        console.log('Partial match:', manager.partialMatch(title));
+        console.log('English fallback:', manager.englishFallback(title));
+        console.log('Final result:', manager.translateJobTitle(title));
+        console.groupEnd();
+      }
+    };
+  }
   
 })();
