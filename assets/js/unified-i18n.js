@@ -2,7 +2,7 @@
  * Unified I18n System for JobsInIraq
  * Handles all translations, language switching, and dashboard updates
  * Optimized for performance and future scalability
- * @version 2.0.0
+ * @version 2.1.0
  */
 
 (function() {
@@ -25,7 +25,6 @@
   
   const TRANSLATIONS = {
     en: {
-      // Navigation
       nav: {
         home: 'Home',
         process: 'Recruitment Process',
@@ -37,46 +36,42 @@
         contact: 'Contact'
       },
       
-      // Dashboard
       dashboard: {
-        title: 'Payscale Dashboard',
-        caption: 'Data source: _data/db/salaries.json. All salaries are monthly unless stated.',
-        theme: 'Theme',
-        aiInsights: 'AI Insights',
-        tableTitle: 'Data Table',
-        tableCaption: 'Search, sort, and paginate. Rows are read as-is from _data/db/salaries.json.',
-        reset: 'Reset filters',
-        export: 'Export CSV',
-        exportJson: 'Export JSON',
-        print: 'Print view',
-        cityLegend: 'City legend',
-        categoryLegend: 'Category legend',
-        median: 'Median',
-        iqr: 'IQR (P25–P75)',
-        sample: 'Sample size'
+        title: "Payscale Dashboard",
+        caption: "Data source: _data/db/salaries.json. All salaries are monthly unless stated.",
+        theme: "Theme",
+        aiInsights: "AI Insights",
+        tableTitle: "Data Table",
+        tableCaption: "Search, sort, and paginate. Rows are read as-is from _data/db/salaries.json.",
+        median: "Median",
+        iqr: "IQR (P25–P75)",
+        sampleSize: "Sample size",
+        allCities: "All cities",
+        allCategories: "All categories",
+        allTypes: "All types",
+        allPeriods: "All periods",
+        reset: "Reset filters",
+        export: "Export CSV",
+        exportJson: "Export JSON",
+        print: "Print view",
+        results: "results",
+        cityLegend: "City legend",
+        categoryLegend: "Category legend",
+        highestCity: "Highest median city",
+        highestCategory: "Highest median category",
+        noData: "No data",
+        colCategory: "Category",
+        colTitle: "Title",
+        colCity: "City",
+        colType: "Type",
+        colPeriod: "Period",
+        colSalary: "Salary",
+        colLastVerified: "Last Verified",
+        colSource: "Source"
       },
       
-      // Common
       common: {
-        allCities: 'All cities',
-        allCategories: 'All categories',
-        allTypes: 'All types',
-        allPeriods: 'All periods',
-        selectLanguage: 'Select Language',
-        results: (n) => `${n} result${n === 1 ? '' : 's'}`
-      },
-      
-      // Table columns
-      cols: {
-        title: 'Title',
-        category: 'Category',
-        city: 'City',
-        type: 'Type',
-        period: 'Period',
-        min: 'Min',
-        max: 'Max',
-        last: 'Last Verified',
-        source: 'Source'
+        selectLanguage: 'Select Language'
       }
     },
     
@@ -93,42 +88,41 @@
       },
       
       dashboard: {
-        title: 'لوحة الأجور',
-        caption: 'مصدر البيانات: _data/db/salaries.json. جميع الرواتب شهرية ما لم يُذكر غير ذلك.',
-        theme: 'الوضع',
-        aiInsights: 'رؤى ذكية',
-        tableTitle: 'جدول البيانات',
-        tableCaption: 'بحث وفرز وتقسيم للصفحات. يتم قراءة الصفوف كما هي من _data/db/salaries.json.',
-        reset: 'إعادة التصفية',
-        export: 'تصدير CSV',
-        exportJson: 'تصدير JSON',
-        print: 'عرض الطباعة',
-        cityLegend: 'دليل المدن',
-        categoryLegend: 'دليل الفئات',
-        median: 'الوسيط',
-        iqr: 'المدى بين الرُبعين',
-        sample: 'حجم العينة'
+        title: "لوحة الأجور",
+        caption: "مصدر البيانات: _data/db/salaries.json. جميع الرواتب شهرية ما لم يُذكر غير ذلك.",
+        theme: "الوضع",
+        aiInsights: "رؤى ذكية",
+        tableTitle: "جدول البيانات",
+        tableCaption: "بحث وفرز وتقسيم للصفحات. يتم قراءة الصفوف كما هي من _data/db/salaries.json.",
+        median: "الوسيط",
+        iqr: "المدى بين الرُبعين",
+        sampleSize: "حجم العينة",
+        allCities: "كل المدن",
+        allCategories: "كل الفئات",
+        allTypes: "كل الأنواع",
+        allPeriods: "كل الفترات",
+        reset: "إعادة التصفية",
+        export: "تصدير CSV",
+        exportJson: "تصدير JSON",
+        print: "عرض الطباعة",
+        results: "نتيجة",
+        cityLegend: "دليل المدن",
+        categoryLegend: "دليل الفئات",
+        highestCity: "أعلى مدينة وسيطاً",
+        highestCategory: "أعلى فئة وسيطاً",
+        noData: "لا توجد بيانات",
+        colCategory: "الفئة",
+        colTitle: "العنوان",
+        colCity: "المدينة",
+        colType: "النوع",
+        colPeriod: "الفترة",
+        colSalary: "الراتب",
+        colLastVerified: "آخر تحديث",
+        colSource: "المصدر"
       },
       
       common: {
-        allCities: 'كل المدن',
-        allCategories: 'كل الفئات',
-        allTypes: 'كل الأنواع',
-        allPeriods: 'كل الفترات',
-        selectLanguage: 'اختر اللغة',
-        results: (n) => `${n} نتيجة`
-      },
-      
-      cols: {
-        title: 'العنوان',
-        category: 'الفئة',
-        city: 'المدينة',
-        type: 'النوع',
-        period: 'الفترة',
-        min: 'الحد الأدنى',
-        max: 'الحد الأقصى',
-        last: 'آخر تحديث',
-        source: 'المصدر'
+        selectLanguage: 'اختر اللغة'
       }
     },
     
@@ -145,42 +139,41 @@
       },
       
       dashboard: {
-        title: 'داشبۆڕدی مووچەکان',
-        caption: 'سەرچاوەی داتا: _data/db/salaries.json. هەموو مووچەکان مانگانەن.',
-        theme: 'دووخور',
-        aiInsights: 'ئاگادارییە هۆشیاڕانەکان',
-        tableTitle: 'خشتەی داتا',
-        tableCaption: 'گەڕان، پۆلەکردن و لاپەڕەکردن. داتاکان وەک خۆیان لە _data/db/salaries.json خوێندراون.',
-        reset: 'دووبارەکردنەوە',
-        export: 'هەناردەی CSV',
-        exportJson: 'هەناردەی JSON',
-        print: 'چاپکردن',
-        cityLegend: 'ڕێبەری شار',
-        categoryLegend: 'ڕێبەری پۆل',
-        median: 'ناوەندێتی',
-        iqr: 'نێوان چوارەکی یەکەم و سێیەم',
-        sample: 'قەبارەی نموونە'
+        title: "داشبۆڕدی مووچەکان",
+        caption: "سەرچاوەی داتا: _data/db/salaries.json. هەموو مووچەکان مانگانەن تا ئەگەر جیاواز نەکراوە.",
+        theme: "دووخور/ڕوناکا",
+        aiInsights: "ئاگادارییە هۆشیاڕانەکان",
+        tableTitle: "خشتەی داتا",
+        tableCaption: "گەڕان، پۆلەکردن و لاپەڕەکردن. داتاکان وەک خۆیان لە _data/db/salaries.json خوێندراون.",
+        median: "ناوەندێتی",
+        iqr: "نێوان چوارەکی یەکەم و سێیەم",
+        sampleSize: "قەبارەی نموونە",
+        allCities: "هەموو شارەکان",
+        allCategories: "هەموو پۆلەکان",
+        allTypes: "هەموو جۆرەکان",
+        allPeriods: "هەموو ماوەکان",
+        reset: "دووبارەکردنەوەی پاڵاوتن",
+        export: "هەناردەی CSV",
+        exportJson: "هەناردەی JSON",
+        print: "چاپکردن",
+        results: "دەرئەنجام",
+        cityLegend: "ڕێبەری شار",
+        categoryLegend: "ڕێبەری پۆل",
+        highestCity: "بەرزترین شار بە ناوەندێتی",
+        highestCategory: "بەرزترین پۆل بە ناوەندێتی",
+        noData: "هیچ داتایەک نییە",
+        colCategory: "پۆل",
+        colTitle: "ناونیشان",
+        colCity: "شار",
+        colType: "جۆر",
+        colPeriod: "ماوە",
+        colSalary: "مووچە",
+        colLastVerified: "دوا نوێکردنەوە",
+        colSource: "سەرچاوە"
       },
       
       common: {
-        allCities: 'هەموو شارەکان',
-        allCategories: 'هەموو پۆلەکان',
-        allTypes: 'هەموو جۆرەکان',
-        allPeriods: 'هەموو ماوەکان',
-        selectLanguage: 'هەڵبژاردنی زمان',
-        results: (n) => `${n} دەرئەنجام`
-      },
-      
-      cols: {
-        title: 'ناونیشان',
-        category: 'پۆل',
-        city: 'شار',
-        type: 'جۆر',
-        period: 'ماوە',
-        min: 'کەمترین',
-        max: 'زۆرترین',
-        last: 'دوا نوێکردنەوە',
-        source: 'سەرچاوە'
+        selectLanguage: 'هەڵبژاردنی زمان'
       }
     }
   };
@@ -319,13 +312,11 @@
       this.initializePicker();
       this.setupEventListeners();
       
-      // Initialize dashboard if on dashboard page
       if (this.isDashboardPage) {
         this.initDashboard();
       }
     }
     
-    // Translation function
     t(key) {
       const keys = key.split('.');
       let value = TRANSLATIONS[this.currentLang];
@@ -337,44 +328,35 @@
       return typeof value === 'function' ? value : (value || key);
     }
     
-    // Translate category
     translateCategory(category) {
       return CATEGORY_LABELS[this.currentLang]?.[category] || category;
     }
     
-    // Translate city
     translateCity(city) {
       return CITY_LABELS[this.currentLang]?.[city] || city;
     }
     
-    // Translate employment type
     translateType(type) {
       return TYPE_LABELS[this.currentLang]?.[type] || type;
     }
     
-    // Translate period
     translatePeriod(period) {
       return PERIOD_LABELS[this.currentLang]?.[period] || period;
     }
     
-    // Apply language
     applyLanguage(lang, broadcast = false) {
       if (!CONFIG.supportedLangs.includes(lang)) lang = CONFIG.defaultLang;
       
-      // Set HTML attributes
       document.documentElement.setAttribute('lang', lang);
       document.documentElement.setAttribute('data-locale', lang);
       
-      // Apply RTL direction
       const isRTL = CONFIG.rtlLangs.includes(lang);
       document.documentElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
       document.body.classList.toggle('rtl', isRTL);
       
-      // Store language preference
       localStorage.setItem(CONFIG.storageKey, lang);
       this.currentLang = lang;
       
-      // Update all translations
       this.updateNavigationTranslations();
       this.updateDataAttributes();
       
@@ -382,26 +364,18 @@
         this.updateDashboardTranslations();
       }
       
-      // Update picker
       const picker = document.getElementById('globalLangPicker');
       if (picker && picker.value !== lang) {
         picker.value = lang;
       }
       
-      // Broadcast change
       if (broadcast) {
         window.dispatchEvent(new CustomEvent('languageChanged', {
-          detail: { 
-            language: lang,
-            t: this.t.bind(this),
-            translateCategory: this.translateCategory.bind(this),
-            translateCity: this.translateCity.bind(this)
-          }
+          detail: { language: lang }
         }));
       }
     }
     
-    // Update navigation menu
     updateNavigationTranslations() {
       document.querySelectorAll('.greedy-nav .masthead__menu-item a').forEach(link => {
         const href = link.getAttribute('href');
@@ -427,14 +401,12 @@
       });
     }
     
-    // Update elements with data-i18n attribute
     updateDataAttributes() {
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         const value = this.t(key);
         
         if (typeof value === 'function') {
-          // Skip functions, they need parameters
           return;
         }
         
@@ -442,9 +414,7 @@
       });
     }
     
-    // Initialize dashboard
     initDashboard() {
-      // Wait for DOM to be ready
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => {
           this.updateDashboardTranslations();
@@ -454,13 +424,12 @@
       }
     }
     
-    // Update dashboard translations
     updateDashboardTranslations() {
       const updateText = (id, text) => {
         const el = document.getElementById(id);
         if (el) el.textContent = text;
       };
-
+      
       updateText("t.title", this.t('dashboard.title'));
       updateText("t.caption", this.t('dashboard.caption'));
       updateText("t.theme", this.t('dashboard.theme'));
@@ -473,26 +442,8 @@
       updateText("t.print", this.t('dashboard.print'));
       updateText("t.cityLegend", this.t('dashboard.cityLegend'));
       updateText("t.categoryLegend", this.t('dashboard.categoryLegend'));
-
-      // Update dropdowns
-      this.setFirstOption(document.getElementById("f-city"), this.t('common.allCities'));
-      this.setFirstOption(document.getElementById("f-category"), this.t('common.allCategories'));
-      this.setFirstOption(document.getElementById("f-etype"), this.t('common.allTypes'));
-      this.setFirstOption(document.getElementById("f-period"), this.t('common.allPeriods'));
-      
-      // Trigger dashboard refresh if functions exist
-      if (window.populateFilters) window.populateFilters();
-      if (window.applyFilters) window.applyFilters();
     }
     
-    // Helper: set first option text
-    setFirstOption(sel, text) {
-      if (sel && sel.options.length) {
-        sel.options[0].textContent = text;
-      }
-    }
-    
-    // Initialize picker
     initializePicker() {
       const picker = document.getElementById('globalLangPicker');
       if (!picker) return;
@@ -504,34 +455,26 @@
       });
     }
     
-    // Setup event listeners
     setupEventListeners() {
-      window.addEventListener('languageChanged', (e) => {
-        if (e.detail && e.detail.language && e.detail.language !== this.currentLang) {
-          this.applyLanguage(e.detail.language, false);
+      window.addEventListener('storage', (e) => {
+        if (e.key === CONFIG.storageKey && e.newValue !== this.currentLang) {
+          this.applyLanguage(e.newValue, false);
         }
       });
     }
   }
   
   // ============================================
-  // INITIALIZE & EXPORT GLOBALLY
+  // INITIALIZE
   // ============================================
   
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      window.i18n = new UnifiedI18nManager();
-    });
-  } else {
-    window.i18n = new UnifiedI18nManager();
-  }
+  const manager = new UnifiedI18nManager();
   
-  // Export global functions for easy access
-  window.t = (key) => window.i18n?.t(key) || key;
-  window.translateCategory = (cat) => window.i18n?.translateCategory(cat) || cat;
-  window.translateCity = (city) => window.i18n?.translateCity(city) || city;
-  window.translateType = (type) => window.i18n?.translateType(type) || type;
-  window.translatePeriod = (period) => window.i18n?.translatePeriod(period) || period;
+  // Export globally
+  window.i18n = manager;
+  window.translateCategory = (cat) => manager.translateCategory(cat);
+  window.translateCity = (city) => manager.translateCity(city);
+  window.translateType = (type) => manager.translateType(type);
+  window.translatePeriod = (period) => manager.translatePeriod(period);
   
 })();
