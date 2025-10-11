@@ -1,7 +1,8 @@
 /**
  * Unified I18n System for JobsInIraq
- * Consumes translations from _data/ui-text.yml (via Jekyll injection)
- * @version 3.0.0 - YAML-driven
+ * Consumes translations from _data/ui-text.yml + _data/job-titles/*.yml (via Jekyll injection)
+ * @version 4.0.0 - COMPLETE WITH JOB TITLES SUPPORT
+ * @lastUpdated 2025-10-11
  */
 
 (function() {
@@ -19,6 +20,8 @@
   class UnifiedI18nManager {
     constructor() {
       this.currentLang = this.getSavedLanguage();
+      this.jobTitlesLoaded = false;
+      this.jobTitlesCache = {}; // Store loaded job titles
       this.init();
     }
     
@@ -27,15 +30,77 @@
       return CONFIG.supportedLangs.includes(saved) ? saved : CONFIG.defaultLang;
     }
     
-    init() {
+    async init() {
+      // Load job titles asynchronously
+      await this.loadJobTitles();
+      
+      // Apply language and initialize UI
       this.applyLanguage(this.currentLang, false);
       this.initializePicker();
       this.setupEventListeners();
     }
     
-    // Access nested YAML values
+    /**
+     * ✅ NEW: Load job titles from separate YAML files
+     * Loads all languages in parallel for better performance
+     */
+    async loadJobTitles() {
+      if (this.jobTitlesLoaded) return;
+      
+      try {
+        console.log('[i18n] Loading job title translations...');
+        
+        // Check if job titles are already injected by Jekyll
+        if (window.JOB_TITLES_TRANSLATIONS) {
+          this.jobTitlesCache = window.JOB_TITLES_TRANSLATIONS;
+          this.jobTitlesLoaded = true;
+          console.log('[i18n] ✅ Job titles loaded from Jekyll injection');
+          return;
+        }
+        
+        // Fallback: Load from separate JSON files (if available)
+        const urls = CONFIG.supportedLangs.map(lang => 
+          `/assets/data/job-titles-${lang}.json`
+        );
+        
+        const responses = await Promise.allSettled(
+          urls.map(url => fetch(url).then(r => r.ok ? r.json() : null))
+        );
+        
+        // Process results
+        CONFIG.supportedLangs.forEach((lang, index) => {
+          const result = responses[index];
+          if (result.status === 'fulfilled' && result.value) {
+            this.jobTitlesCache[lang] = result.value;
+          } else {
+            console.warn(`[i18n] Could not load job titles for ${lang}`);
+            this.jobTitlesCache[lang] = {}; // Empty fallback
+          }
+        });
+        
+        this.jobTitlesLoaded = true;
+        console.log('[i18n] ✅ Job titles loaded successfully');
+        
+      } catch (error) {
+        console.error('[i18n] Error loading job titles:', error);
+        this.jobTitlesLoaded = true; // Mark as loaded to prevent retry loop
+      }
+    }
+    
+    /**
+     * Access nested YAML values with job titles support
+     */
     t(key) {
       const keys = key.split('.');
+      
+      // Check if requesting job title
+      if (keys[0] === 'job_titles') {
+        const titleKey = keys.slice(1).join('.');
+        const jobTitle = this.jobTitlesCache[this.currentLang]?.[titleKey];
+        if (jobTitle) return jobTitle;
+      }
+      
+      // Fall back to main translations
       let value = TRANSLATIONS[this.currentLang];
       
       for (const k of keys) {
@@ -43,6 +108,38 @@
       }
       
       return value || key;
+    }
+    
+    /**
+     * ✅ NEW: Translate job title with smart key conversion
+     */
+    translateJobTitle(title) {
+      if (!title || title === "—") return title;
+      
+      // Convert title to translation key
+      const key = this.titleToKey(title);
+      const fullKey = `job_titles.${key}`;
+      const translated = this.t(fullKey);
+      
+      // Return translated version or original if not found
+      return (translated && translated !== fullKey) ? translated : title;
+    }
+    
+    /**
+     * ✅ NEW: Convert job title string to translation key
+     * Example: "Software Engineer" → "software_engineer"
+     */
+    titleToKey(title) {
+      return title
+        .toLowerCase()
+        .replace(/[()]/g, '')           // Remove parentheses
+        .replace(/\s+/g, '_')           // Replace spaces with underscores
+        .replace(/&/g, 'and')           // Replace & with "and"
+        .replace(/-/g, '_')             // Replace hyphens with underscores
+        .replace(/[^a-z0-9_]/g, '')     // Remove special characters
+        .replace(/_+/g, '_')            // Remove duplicate underscores
+        .replace(/^_|_$/g, '')          // Remove leading/trailing underscores
+        .trim();
     }
     
     // Shorthand helpers
@@ -152,7 +249,7 @@
     }
   }
   
-  // Initialize
+  // Initialize (async-safe)
   const manager = new UnifiedI18nManager();
   
   // Export globally
@@ -161,5 +258,6 @@
   window.translateCity = (city) => manager.translateCity(city);
   window.translateType = (type) => manager.translateType(type);
   window.translatePeriod = (period) => manager.translatePeriod(period);
+  window.translateJobTitle = (title) => manager.translateJobTitle(title); // ✅ NEW
   
 })();
