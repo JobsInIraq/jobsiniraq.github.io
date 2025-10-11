@@ -22,6 +22,10 @@ web_developer: "مطور ويب"
 cybersecurity_specialist: "أخصائي أمن سيبراني"
 devops_engineer: "مهندس DevOps"
 cloud_engineer: "مهندس سحابة"
+network_administrator: "مدير شبكة"
+qa_tester: "مختبر ضمان الجودة"
+qa_engineer: "مهندس ضمان الجودة"
+quality_assurance_engineer: "مهندس ضمان الجودة"
 
 # ENGINEERING & CONSTRUCTION
 civil_engineer: "مهندس مدني"
@@ -34,6 +38,7 @@ electrical_engineer: "مهندس كهرباء"
 mechanical_engineer: "مهندس ميكانيكي"
 quantity_surveyor: "مهندس كميات"
 structural_engineer: "مهندس إنشائي"
+construction_project_manager: "مدير مشروع البناء"
 
 # HEALTHCARE
 registered_nurse: "ممرض مسجل"
@@ -83,6 +88,11 @@ customer_service_representative: "ممثل خدمة عملاء"
 marketing_specialist: "أخصائي تسويق"
 business_development_manager: "مدير تطوير أعمال"
 account_manager: "مدير حسابات"
+sales_executive: "تنفيذي مبيعات"
+customer_support_representative: "ممثل دعم العملاء"
+marketing_manager: "مدير التسويق"
+content_writer: "كاتب محتوى"
+content_creator: "منشئ محتوى"
 
 # LOGISTICS & SUPPLY CHAIN
 logistics_coordinator: "منسق لوجستيات"
@@ -128,5 +138,23 @@ restaurant_manager: "مدير مطعم"
 chef: "طاه"
 waiter: "نادل"
 
+# DESIGN & CREATIVE (New Section)
+graphic_designer: "مصمم جرافيك"
+ui_ux_designer: "مصمم واجهة وتجربة المستخدم"
+web_designer: "مصمم ويب"
+video_editor: "محرر فيديو"
+photographer: "مصور فوتوغرافي"
+
+
+# BUSINESS & MANAGEMENT (New Section)
+business_analyst: "محلل أعمال"
+management_consultant: "مستشار إدارة"
+strategy_analyst: "محلل استراتيجي"
+event_manager: "مدير فعاليات"
+event_coordinator: "منسق فعاليات"
+
 # GENERAL FALLBACK
 unknown_position: "منصب غير محدد"
+not_specified: "غير محدد"
+other: "أخرى"
+
