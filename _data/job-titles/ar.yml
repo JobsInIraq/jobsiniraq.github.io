@@ -1,0 +1,132 @@
+# OIL & GAS SECTOR
+petroleum_engineer: "مهندس بترول"
+oil_field_technician: "فني حقول نفطية"
+gas_operations_specialist: "أخصائي عمليات الغاز"
+pipeline_operator: "مشغل خطوط الأنابيب"
+drilling_engineer: "مهندس حفر"
+refinery_technician: "فني تكرير"
+hse_officer: "ضابط الصحة والسلامة والبيئة"
+reservoir_engineer: "مهندس مكامن"
+production_engineer: "مهندس إنتاج"
+
+# IT & TECHNOLOGY
+software_engineer: "مهندس برمجيات"
+software_developer: "مطور برمجيات"
+it_technician: "فني تقنية معلومات"
+network_engineer: "مهندس شبكات"
+systems_administrator: "مدير أنظمة"
+telecommunications_specialist: "أخصائي اتصالات"
+data_scientist: "عالم بيانات"
+database_administrator: "مدير قواعد بيانات"
+web_developer: "مطور ويب"
+cybersecurity_specialist: "أخصائي أمن سيبراني"
+devops_engineer: "مهندس DevOps"
+cloud_engineer: "مهندس سحابة"
+
+# ENGINEERING & CONSTRUCTION
+civil_engineer: "مهندس مدني"
+construction_manager: "مدير إنشاءات"
+project_manager: "مدير مشروع"
+architect: "مهندس معماري"
+site_supervisor: "مشرف موقع"
+building_technician: "فني بناء"
+electrical_engineer: "مهندس كهرباء"
+mechanical_engineer: "مهندس ميكانيكي"
+quantity_surveyor: "مهندس كميات"
+structural_engineer: "مهندس إنشائي"
+
+# HEALTHCARE
+registered_nurse: "ممرض مسجل"
+doctor: "طبيب"
+general_practitioner: "طبيب عام"
+pharmacist: "صيدلي"
+medical_technician: "فني طبي"
+biomedical_engineer: "مهندس طبي حيوي"
+paramedic: "مسعف"
+emergency_medical_technician: "فني طوارئ طبية"
+surgeon: "جراح"
+radiologist: "أخصائي أشعة"
+laboratory_technician: "فني مختبر"
+
+# PUBLIC SECTOR & GOVERNMENT
+government_administrator: "موظف حكومي إداري"
+public_sector_clerk: "كاتب قطاع عام"
+policy_analyst: "محلل سياسات"
+programme_manager: "مدير برنامج"
+justice_home_affairs_programme_manager_eo: "مدير برنامج العدل والشؤون الداخلية (EO)"
+administrative_officer: "ضابط إداري"
+executive_officer: "ضابط تنفيذي"
+
+# EDUCATION
+teacher: "معلم"
+school_teacher: "مدرس"
+university_lecturer: "محاضر جامعي"
+training_specialist: "أخصائي تدريب"
+education_administrator: "مدير تعليمي"
+education_specialist: "أخصائي تعليم"
+
+# FINANCE & BANKING
+accountant: "محاسب"
+financial_analyst: "محلل مالي"
+bank_teller: "موظف بنك"
+accounts_payable_specialist: "أخصائي حسابات دائنة"
+accounts_receivable_specialist: "أخصائي حسابات مدينة"
+investment_analyst: "محلل استثمار"
+auditor: "مدقق حسابات"
+credit_analyst: "محلل ائتمان"
+
+# SALES & MARKETING
+sales_associate: "مندوب مبيعات"
+sales_manager: "مدير مبيعات"
+retail_manager: "مدير تجزئة"
+customer_service_representative: "ممثل خدمة عملاء"
+marketing_specialist: "أخصائي تسويق"
+business_development_manager: "مدير تطوير أعمال"
+account_manager: "مدير حسابات"
+
+# LOGISTICS & SUPPLY CHAIN
+logistics_coordinator: "منسق لوجستيات"
+supply_chain_manager: "مدير سلسلة التوريد"
+warehouse_manager: "مدير مستودع"
+warehouse_technician: "فني مستودع"
+operations_manager: "مدير عمليات"
+procurement_specialist: "أخصائي مشتريات"
+inventory_controller: "مراقب مخزون"
+
+# SECURITY & MILITARY
+security_guard: "حارس أمن"
+security_consultant: "مستشار أمني"
+security_manager: "مدير أمن"
+military_personnel: "أفراد عسكريون"
+police_officer: "ضابط شرطة"
+
+# HR & ADMINISTRATION
+hr_manager: "مدير موارد بشرية"
+recruitment_specialist: "أخصائي توظيف"
+administrative_assistant: "مساعد إداري"
+office_manager: "مدير مكتب"
+executive_assistant: "مساعد تنفيذي"
+
+# AGRICULTURE
+livestock_farmer: "مزارع مواشي"
+agricultural_technician: "فني زراعي"
+farm_manager: "مدير مزرعة"
+veterinarian: "طبيب بيطري"
+agronomist: "مهندس زراعي"
+
+# LEGAL & COMPLIANCE
+lawyer: "محامي"
+legal_advisor: "مستشار قانوني"
+compliance_officer: "ضابط امتثال"
+contract_specialist: "أخصائي عقود"
+
+# RETAIL & HOSPITALITY
+cashier: "أمين صندوق"
+store_manager: "مدير متجر"
+hotel_manager: "مدير فندق"
+restaurant_manager: "مدير مطعم"
+chef: "طاه"
+waiter: "نادل"
+
+# GENERAL FALLBACK
+unknown_position: "منصب غير محدد"
