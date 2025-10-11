@@ -1,0 +1,132 @@
+# OIL & GAS SECTOR
+petroleum_engineer: "ئەندازیاری نەوت"
+oil_field_technician: "تەکنیسیەنی کێڵگەی نەوت"
+gas_operations_specialist: "پسپۆڕی کارەکانی گاز"
+pipeline_operator: "بۆرییەکانی بۆری نەوت"
+drilling_engineer: "ئەندازیاری کوێستن"
+refinery_technician: "تەکنیسیەنی پاڵاوتنەوە"
+hse_officer: "ئەفسەری تەندروستی و سەلامەتی و ژینگە"
+reservoir_engineer: "ئەندازیاری کۆگا"
+production_engineer: "ئەندازیاری بەرهەمهێنان"
+
+# IT & TECHNOLOGY
+software_engineer: "ئەندازیاری نەرمەکاڵا"
+software_developer: "گەشەپێدەری نەرمەکاڵا"
+it_technician: "تەکنیسیەنی زانیاری"
+network_engineer: "ئەندازیاری تۆڕ"
+systems_administrator: "بەڕێوەبەری سیستەم"
+telecommunications_specialist: "پسپۆڕی پەیوەندی"
+data_scientist: "زاناى داتا"
+database_administrator: "بەڕێوەبەری بنکەی داتا"
+web_developer: "گەشەپێدەری وێب"
+cybersecurity_specialist: "پسپۆڕی پاراستنی سایبەری"
+devops_engineer: "ئەندازیاری DevOps"
+cloud_engineer: "ئەندازیاری هەور"
+
+# ENGINEERING & CONSTRUCTION
+civil_engineer: "ئەندازیاری مەدەنی"
+construction_manager: "بەڕێوەبەری بینا سازی"
+project_manager: "بەڕێوەبەری پرۆژە"
+architect: "ئەندازیاری بینا"
+site_supervisor: "سەرپەرشتیاری شوێن"
+building_technician: "تەکنیسیەنی بینا سازی"
+electrical_engineer: "ئەندازیاری کارەبا"
+mechanical_engineer: "ئەندازیاری میکانیک"
+quantity_surveyor: "ئەندازیاری بڕ"
+structural_engineer: "ئەندازیاری پێکهاتە"
+
+# HEALTHCARE
+registered_nurse: "نەرس تۆمارکراو"
+doctor: "دکتۆر"
+general_practitioner: "پزیشکی گشتی"
+pharmacist: "دەرمانفرۆش"
+medical_technician: "تەکنیسیەنی پزیشکی"
+biomedical_engineer: "ئەندازیاری پزیشکی ژیانی"
+paramedic: "فریاگەر"
+emergency_medical_technician: "تەکنیسیەنی فریاگەری پزیشکی"
+surgeon: "نەشتەرگەر"
+radiologist: "پسپۆڕی تیشک"
+laboratory_technician: "تەکنیسیەنی تاقیگە"
+
+# PUBLIC SECTOR & GOVERNMENT
+government_administrator: "بەڕێوەبەری حکومی"
+public_sector_clerk: "کارمەندی کەرتی گشتی"
+policy_analyst: "شیکارەوەی سیاسەت"
+programme_manager: "بەڕێوەبەری بەرنامە"
+justice_home_affairs_programme_manager_eo: "بەڕێوەبەری بەرنامەی دادوەری و کاروباری ناوخۆ (EO)"
+administrative_officer: "ئەفسەری کارگێڕی"
+executive_officer: "ئەفسەری جێبەجێکار"
+
+# EDUCATION
+teacher: "مامۆستا"
+school_teacher: "مامۆستای قوتابخانە"
+university_lecturer: "وانەبێژی زانکۆ"
+training_specialist: "پسپۆڕی ڕاهێنان"
+education_administrator: "بەڕێوەبەری پەروەردە"
+education_specialist: "پسپۆڕی پەروەردە"
+
+# FINANCE & BANKING
+accountant: "ژمێریار"
+financial_analyst: "شیکارەوەی دارایی"
+bank_teller: "کارمەندی بانک"
+accounts_payable_specialist: "پسپۆڕی حسابە پێدراوەکان"
+accounts_receivable_specialist: "پسپۆڕی حسابە وەرگیراوەکان"
+investment_analyst: "شیکارەوەی وەبەرهێنان"
+auditor: "وێنەکار"
+credit_analyst: "شیکارەوەی قەرز"
+
+# SALES & MARKETING
+sales_associate: "هاوکاری فرۆشتن"
+sales_manager: "بەڕێوەبەری فرۆشتن"
+retail_manager: "بەڕێوەبەری خشتەفرۆشی"
+customer_service_representative: "نوێنەری خزمەتگوزاری کڕیار"
+marketing_specialist: "پسپۆڕی بازاڕگێری"
+business_development_manager: "بەڕێوەبەری گەشەپێدانی بازرگانی"
+account_manager: "بەڕێوەبەری حساب"
+
+# LOGISTICS & SUPPLY CHAIN
+logistics_coordinator: "هاهەنگکەری لۆجستیک"
+supply_chain_manager: "بەڕێوەبەری زنجیرەی دابینکردن"
+warehouse_manager: "بەڕێوەبەری کۆگا"
+warehouse_technician: "تەکنیسیەنی کۆگا"
+operations_manager: "بەڕێوەبەری کارەکان"
+procurement_specialist: "پسپۆڕی کڕین"
+inventory_controller: "کۆنترۆڵکەری کۆگا"
+
+# SECURITY & MILITARY
+security_guard: "پاسەوانی پاراستن"
+security_consultant: "ڕاوێژکاری پاراستن"
+security_manager: "بەڕێوەبەری پاراستن"
+military_personnel: "کارمەندانی سەربازی"
+police_officer: "ئەفسەری پۆلیس"
+
+# HR & ADMINISTRATION
+hr_manager: "بەڕێوەبەری سەرچاوە مرۆییەکان"
+recruitment_specialist: "پسپۆڕی دامەزراندن"
+administrative_assistant: "یاریدەدەری کارگێڕی"
+office_manager: "بەڕێوەبەری نووسینگە"
+executive_assistant: "یاریدەدەری جێبەجێکار"
+
+# AGRICULTURE
+livestock_farmer: "جوتیاری ئاژەڵ"
+agricultural_technician: "تەکنیسیەنی کشتوکاڵ"
+farm_manager: "بەڕێوەبەری کێڵگە"
+veterinarian: "پزیشکی ئاژەڵ"
+agronomist: "ئەندازیاری کشتوکاڵ"
+
+# LEGAL & COMPLIANCE
+lawyer: "پارێزەر"
+legal_advisor: "ڕاوێژکاری یاسایی"
+compliance_officer: "ئەفسەری گونجاندن"
+contract_specialist: "پسپۆڕی گرێبەست"
+
+# RETAIL & HOSPITALITY
+cashier: "سندوقدار"
+store_manager: "بەڕێوەبەری فرۆشگە"
+hotel_manager: "بەڕێوەبەری هوتێل"
+restaurant_manager: "بەڕێوەبەری چێشتخانە"
+chef: "چێشتلێنەر"
+waiter: "خزمەتکار"
+
+# GENERAL FALLBACK
+unknown_position: "پلە دیارینەکراو"
