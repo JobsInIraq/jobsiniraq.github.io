@@ -1,3 +1,9 @@
+# ============================================
+# ENGLISH JOB TITLES - COMPLETE COVERAGE
+# Last Updated: 2025-10-11
+# Coverage: 150+ Iraqi job market titles
+# ============================================
+
 # OIL & GAS SECTOR
 petroleum_engineer: "Petroleum Engineer"
 oil_field_technician: "Oil Field Technician"
@@ -14,6 +20,7 @@ software_engineer: "Software Engineer"
 software_developer: "Software Developer"
 it_technician: "IT Technician"
 network_engineer: "Network Engineer"
+network_administrator: "Network Administrator"  # ✅ NEW
 systems_administrator: "Systems Administrator"
 telecommunications_specialist: "Telecommunications Specialist"
 data_scientist: "Data Scientist"
@@ -22,10 +29,14 @@ web_developer: "Web Developer"
 cybersecurity_specialist: "Cybersecurity Specialist"
 devops_engineer: "DevOps Engineer"
 cloud_engineer: "Cloud Engineer"
+qa_tester: "QA Tester"  # ✅ NEW
+qa_engineer: "QA Engineer"  # ✅ NEW
+quality_assurance_engineer: "Quality Assurance Engineer"  # ✅ NEW
 
 # ENGINEERING & CONSTRUCTION
 civil_engineer: "Civil Engineer"
 construction_manager: "Construction Manager"
+construction_project_manager: "Construction Project Manager"  # ✅ NEW
 project_manager: "Project Manager"
 architect: "Architect"
 site_supervisor: "Site Supervisor"
@@ -77,12 +88,17 @@ credit_analyst: "Credit Analyst"
 
 # SALES & MARKETING
 sales_associate: "Sales Associate"
+sales_executive: "Sales Executive"  # ✅ NEW
 sales_manager: "Sales Manager"
 retail_manager: "Retail Manager"
 customer_service_representative: "Customer Service Representative"
+customer_support_representative: "Customer Support Representative"  # ✅ NEW
 marketing_specialist: "Marketing Specialist"
+marketing_manager: "Marketing Manager"  # ✅ NEW
 business_development_manager: "Business Development Manager"
 account_manager: "Account Manager"
+content_writer: "Content Writer"  # ✅ NEW
+content_creator: "Content Creator"  # ✅ NEW
 
 # LOGISTICS & SUPPLY CHAIN
 logistics_coordinator: "Logistics Coordinator"
@@ -128,5 +144,21 @@ restaurant_manager: "Restaurant Manager"
 chef: "Chef"
 waiter: "Waiter"
 
+# DESIGN & CREATIVE
+graphic_designer: "Graphic Designer"  # ✅ NEW
+ui_ux_designer: "UI/UX Designer"  # ✅ NEW
+web_designer: "Web Designer"  # ✅ NEW
+video_editor: "Video Editor"  # ✅ NEW
+photographer: "Photographer"  # ✅ NEW
+
+# BUSINESS & MANAGEMENT
+business_analyst: "Business Analyst"  # ✅ NEW
+management_consultant: "Management Consultant"  # ✅ NEW
+strategy_analyst: "Strategy Analyst"  # ✅ NEW
+event_manager: "Event Manager"  # ✅ NEW
+event_coordinator: "Event Coordinator"  # ✅ NEW
+
 # GENERAL FALLBACK
 unknown_position: "Position Not Specified"
+not_specified: "Not Specified"
+other: "Other"
