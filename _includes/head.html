@@ -5,8 +5,6 @@
 <link rel="icon" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}" sizes="16x16" />
 <link rel="icon" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}" sizes="32x32" />
 
-
-
 {% seo %}
 
 <title>{{ page.title | default: site.title }}</title>
@@ -38,6 +36,11 @@
   {% endfor %}
 {% endif %}
 
+<!-- ============================================ -->
+<!-- ✅ INJECT TRANSLATIONS FROM YAML   -->
+<!-- ============================================ -->
+{% include inject-translations.html %}
+<!-- ============================================ -->
 
 <!-- Include IndexNow JavaScript -->
-<script src="{{ '/assets/js/indexnow.js' | relative_url }}"></script> <!-- Add this line just before closing </head> -->
+<script src="{{ '/assets/js/indexnow.js' | relative_url }}"></script>
