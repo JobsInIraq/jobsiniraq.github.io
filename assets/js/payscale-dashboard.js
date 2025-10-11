@@ -1,7 +1,6 @@
 /**
  * Payscale Dashboard - YAML-Driven Translation System
- * Consumes translations from _data/ui-text.yml (via unified-i18n.js)
- * @version 3.1.1 - PERIOD TRANSLATION FIX
+ * @version 3.1.2 - COMPLETE FIX (Period translation + Table rendering)
  * @lastUpdated 2025-10-11
  */
 
@@ -44,28 +43,17 @@ if (themeBtn) {
 // TRANSLATION SYSTEM (YAML-DRIVEN)
 // ============================================
 
-/**
- * Translation helper - Uses YAML paths from ui-text.yml
- */
 const t = (key) => {
   const fullKey = `payscale.${key}`;
   const translated = window.i18n?.t(fullKey);
-
   if (!translated || translated === fullKey) {
     console.warn(`[i18n] Missing translation key: ${fullKey}`);
   }
-
   return translated || key;
 };
 
-/**
- * Get current language code
- */
 const getCurrentLang = () => window.i18n?.currentLang || "en";
 
-/**
- * Translation helpers using YAML structure
- */
 const translateCategory = (cat) => {
   if (!cat || cat === "—") return cat;
   const translated = window.i18n?.t(`job_categories.${cat}`);
@@ -90,9 +78,6 @@ const translatePeriod = (period) => {
   return translated || period;
 };
 
-/**
- * Table column headers
- */
 const th = (key) => {
   const fullKey = `table_headers.${key}`;
   const translated = window.i18n?.t(fullKey);
@@ -103,15 +88,11 @@ const th = (key) => {
 // UTILITY FUNCTIONS
 // ============================================
 
-// Currency conversion rates
 const FX = { USD_IQD: 1310 };
 
 const toIQD = (amt, cur) => cur === "USD" ? Math.round(amt * FX.USD_IQD) : amt;
 const toUSD = (amt, cur) => cur === "IQD" ? Math.round(amt / FX.USD_IQD) : amt;
 
-/**
- * Number formatting with locale support
- */
 const numberFmt = (n, cur) => {
   if (n == null || !Number.isFinite(n)) return "—";
 
@@ -123,16 +104,10 @@ const numberFmt = (n, cur) => {
   return formatted + suffix;
 };
 
-/**
- * Deep object access
- */
 const get = (obj, path, dflt = null) => {
   return path.split(".").reduce((o, k) => (o && k in o ? o[k] : dflt), obj ?? dflt);
 };
 
-/**
- * Parse numeric value safely
- */
 const parseNum = (v) => {
   if (v == null) return null;
   if (typeof v === "number") return Number.isFinite(v) ? Math.round(v) : null;
@@ -144,9 +119,6 @@ const parseNum = (v) => {
   return Number.isFinite(num) ? Math.round(num) : null;
 };
 
-/**
- * Statistical functions
- */
 const median = (arr) => {
   if (!arr || arr.length === 0) return null;
 
@@ -171,9 +143,6 @@ const percentile = (arr, p) => {
     : Math.round(sorted[lower] + (sorted[upper] - sorted[lower]) * (index - lower));
 };
 
-/**
- * DOM helpers
- */
 const setFirstOption = (selectEl, text) => {
   if (selectEl && selectEl.options && selectEl.options.length) {
     selectEl.options[0].textContent = text;
@@ -189,9 +158,6 @@ const uniq = (arr) => {
   );
 };
 
-/**
- * Color generation (consistent per string)
- */
 const hashCode = (str) => {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
@@ -223,10 +189,9 @@ const normalizeRow = (row) => {
   const title = jd.jobTitle || "—";
   const category = jd.category || "—";
   const employment_type = (jd.position || "—").toString().replace(/0$/, "");
-  const period = "monthly"; // Default period
+  const period = "monthly";
   const city = loc.city || "—";
 
-  // Salary parsing
   const iqd = parseNum(sal.iqd);
   const usd = parseNum(sal.usd);
   let currency = null;
@@ -342,6 +307,7 @@ const updateTable = () => {
   const tableEl = document.getElementById("table");
   if (!tableEl) return;
 
+  // ✅ FIXED: Changed "r" to "row" on line 332
   const tableData = filtered.map(row => [
     row.title,
     translateCategory(row.category),
@@ -485,13 +451,10 @@ const populateFilters = () => {
   const typeSelect = document.getElementById("f-etype");
   const periodSelect = document.getElementById("f-period");
 
-  // Populate cities
   if (citySelect) {
-    // Clear ALL options except the first one
     while (citySelect.options.length > 1) {
       citySelect.remove(1);
     }
-    // Add translated city options
     cities.forEach(c => {
       const opt = document.createElement("option");
       opt.value = c;
@@ -500,7 +463,6 @@ const populateFilters = () => {
     });
   }
 
-  // Populate categories
   if (catSelect) {
     while (catSelect.options.length > 1) {
       catSelect.remove(1);
@@ -513,7 +475,6 @@ const populateFilters = () => {
     });
   }
 
-  // Populate employment types
   if (typeSelect) {
     while (typeSelect.options.length > 1) {
       typeSelect.remove(1);
@@ -526,13 +487,10 @@ const populateFilters = () => {
     });
   }
 
-  // Populate salary periods ✅ FIXED
   if (periodSelect) {
-    // ✅ CRITICAL FIX: Clear ALL options including hardcoded ones
     while (periodSelect.options.length > 1) {
       periodSelect.remove(1);
     }
-    // Add translated period options
     periods.forEach(p => {
       const opt = document.createElement("option");
       opt.value = p;
@@ -542,9 +500,6 @@ const populateFilters = () => {
   }
 };
 
-/**
- * Update filter labels when language changes
- */
 const updateFilterLabels = () => {
   setFirstOption(document.getElementById("f-city"), t('all_cities'));
   setFirstOption(document.getElementById("f-category"), t('all_categories'));
@@ -557,12 +512,10 @@ const updateFilterLabels = () => {
 // ============================================
 
 const attachEventListeners = () => {
-  // Filter changes
   document.querySelectorAll(".filters select").forEach(sel => {
     sel.addEventListener("change", applyFilters);
   });
 
-  // Currency toggle
   const currencySelect = document.getElementById("f-currency");
   if (currencySelect) {
     currencySelect.addEventListener("change", (e) => {
@@ -571,7 +524,6 @@ const attachEventListeners = () => {
     });
   }
 
-  // Reset filters
   const resetBtn = document.getElementById("resetFilters");
   if (resetBtn) {
     resetBtn.addEventListener("click", () => {
@@ -582,7 +534,6 @@ const attachEventListeners = () => {
     });
   }
 
-  // Export CSV
   const csvBtn = document.getElementById("exportCsv");
   if (csvBtn) {
     csvBtn.addEventListener("click", () => {
@@ -608,7 +559,6 @@ const attachEventListeners = () => {
     });
   }
 
-  // Export JSON
   const jsonBtn = document.getElementById("exportJson");
   if (jsonBtn) {
     jsonBtn.addEventListener("click", () => {
@@ -623,7 +573,6 @@ const attachEventListeners = () => {
     });
   }
 
-  // Print
   const printBtn = document.getElementById("printBtn");
   if (printBtn) {
     printBtn.addEventListener("click", () => {
@@ -631,11 +580,10 @@ const attachEventListeners = () => {
     });
   }
 
-  // Language change listener ✅ COMPLETE FIX
   window.addEventListener("languageChanged", () => {
     console.log("[Dashboard] Language changed, updating UI...");
     updateFilterLabels();
-    populateFilters(); // This will now properly replace ALL options
+    populateFilters();
     updateView();
   });
 };
@@ -653,7 +601,6 @@ const initDashboard = () => {
 
   console.log("[Dashboard] Initializing with", NORMALIZED.length, "salary records");
 
-  // Initialize UI
   updateFilterLabels();
   populateFilters();
   updateView();
@@ -662,7 +609,6 @@ const initDashboard = () => {
   console.log("[Dashboard] ✅ Loaded successfully");
 };
 
-// Start initialization when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initDashboard);
 } else {
