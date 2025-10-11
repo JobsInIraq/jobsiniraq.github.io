@@ -153,6 +153,73 @@ strategy_analyst: "محلل استراتيجي"
 event_manager: "مدير فعاليات"
 event_coordinator: "منسق فعاليات"
 
+
+# PROCUREMENT & SUPPLY CHAIN
+procurement_manager: "مدير المشتريات"
+procurement_officer: "موظف مشتريات"
+
+# RESEARCH & DEVELOPMENT
+research_scientist: "عالم أبحاث"
+research_and_development_manager: "مدير البحث والتطوير"
+
+# FINANCE & ACCOUNTING
+tax_consultant: "مستشار ضرائب"
+finance_manager: "مدير مالي"
+financial_controller: "مراقب مالي"
+financial_planner: "مخطط مالي"
+accounting_officer: "موظف محاسبة"
+senior_accountant: "محاسب أول"
+
+# HUMAN RESOURCES
+human_resources_assistant: "مساعد موارد بشرية"
+
+# MARKETING & DIGITAL
+digital_marketing_manager: "مدير التسويق الرقمي"
+public_relations_manager: "مدير العلاقات العامة"
+social_media_manager: "مدير وسائل التواصل الاجتماعي"
+social_media_specialist: "أخصائي وسائل التواصل الاجتماعي"
+marketing_director: "مدير التسويق"
+media_planner: "مخطط إعلامي"
+
+# SOFTWARE DEVELOPMENT
+java_developer: "مطور جافا"
+mobile_app_developer: "مطور تطبيقات الجوال"
+front_end_developer: "مطور واجهة أمامية"
+senior_software_developer: "مطور برمجيات أول"
+ux_ui_designer: "مصمم تجربة المستخدم وواجهة المستخدم"
+
+# EXECUTIVE & MANAGEMENT
+chief_executive_officer_ceo: "الرئيس التنفيذي"
+product_manager: "مدير منتج"
+quality_assurance_manager: "مدير ضمان الجودة"
+customer_service_manager: "مدير خدمة العملاء"
+
+# IT & TECHNOLOGY
+system_administrator: "مدير نظام"
+it_support_technician: "فني دعم تقنية المعلومات"
+it_project_manager: "مدير مشروع تقنية المعلومات"
+cyber_security_engineer: "مهندس أمن سيبراني"
+
+# LEGAL & COMPLIANCE
+legal_counsel: "مستشار قانوني"
+health_and_safety_officer: "مسؤول الصحة والسلامة"
+
+# DESIGN & CREATIVE
+graphic_design_manager: "مدير التصميم الجرافيكي"
+3d_motion_graphic_designer: "مصمم جرافيك ثلاثي الأبعاد والموشن"
+
+# OPERATIONS
+operations_coordinator: "منسق عمليات"
+construction_supervisor: "مشرف بناء"
+contract_logistics_officer: "موظف لوجستيات العقود"
+
+# DATA & ANALYTICS
+data_analyst: "محلل بيانات"
+
+# GOVERNMENT & DIPLOMATIC
+iraqi_embassy: "السفارة العراقية"
+
+
 # GENERAL FALLBACK
 unknown_position: "منصب غير محدد"
 not_specified: "غير محدد"
