@@ -350,3 +350,6 @@ languages:
     ar: "العربية"
     ckb: "کوردی"
     
+# _config.yml
+i18n:
+  dev_mode: true  # Enable in development
