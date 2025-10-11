@@ -1,0 +1,19 @@
+<script>
+/**
+ * Translations injected from Jekyll _data/ui-text.yml
+ * This ensures YAML is the single source of truth
+ */
+window.SITE_TRANSLATIONS = {
+  en: {{ site.data.ui-text.en | jsonify }},
+  ar: {{ site.data.ui-text.ar | jsonify }},
+  ckb: {{ site.data.ui-text.ckb | jsonify }}
+};
+
+// Config
+window.I18N_CONFIG = {
+  supportedLangs: ['en', 'ar', 'ckb'],
+  rtlLangs: ['ar', 'ckb'],
+  defaultLang: 'en',
+  storageKey: 'siteLanguage'
+};
+</script>
