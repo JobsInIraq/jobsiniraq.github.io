@@ -22,6 +22,10 @@ web_developer: "گەشەپێدەری وێب"
 cybersecurity_specialist: "پسپۆڕی پاراستنی سایبەری"
 devops_engineer: "ئەندازیاری DevOps"
 cloud_engineer: "ئەندازیاری هەور"
+network_administrator: "بەڕێوەبەری تۆڕ"
+qa_tester: "تاقیکەرەوەی دڵنیایی جۆری"
+qa_engineer: "ئەندازیاری دڵنیایی جۆری"
+quality_assurance_engineer: "ئەندازیاری دڵنیایی جۆری"
 
 # ENGINEERING & CONSTRUCTION
 civil_engineer: "ئەندازیاری مەدەنی"
@@ -34,6 +38,7 @@ electrical_engineer: "ئەندازیاری کارەبا"
 mechanical_engineer: "ئەندازیاری میکانیک"
 quantity_surveyor: "ئەندازیاری بڕ"
 structural_engineer: "ئەندازیاری پێکهاتە"
+construction_project_manager: "بەڕێوەبەری پرۆژەی بینا سازی"
 
 # HEALTHCARE
 registered_nurse: "نەرس تۆمارکراو"
@@ -83,6 +88,11 @@ customer_service_representative: "نوێنەری خزمەتگوزاری کڕیا
 marketing_specialist: "پسپۆڕی بازاڕگێری"
 business_development_manager: "بەڕێوەبەری گەشەپێدانی بازرگانی"
 account_manager: "بەڕێوەبەری حساب"
+sales_executive: "جێبەجێکاری فرۆشتن"
+customer_support_representative: "نوێنەری پشتیوانی کڕیار"
+marketing_manager: "بەڕێوەبەری بازاڕگێری"
+content_writer: "نووسەری ناوەڕۆک"
+content_creator: "دروستکەری ناوەڕۆک"
 
 # LOGISTICS & SUPPLY CHAIN
 logistics_coordinator: "هاهەنگکەری لۆجستیک"
@@ -128,5 +138,21 @@ restaurant_manager: "بەڕێوەبەری چێشتخانە"
 chef: "چێشتلێنەر"
 waiter: "خزمەتکار"
 
+# DESIGN & CREATIVE (New Section)
+graphic_designer: "دیزاینەری گرافیک"
+ui_ux_designer: "دیزاینەری ڕووکار و ئەزموون"
+web_designer: "دیزاینەری وێب"
+video_editor: "دەستکاریکەری ڤیدیۆ"
+photographer: "وێنەگر"
+
+# BUSINESS & MANAGEMENT (New Section)
+business_analyst: "شیکارەوەی بازرگانی"
+management_consultant: "ڕاوێژکاری بەڕێوەبردن"
+strategy_analyst: "شیکارەوەی ستراتیژی"
+event_manager: "بەڕێوەبەری بۆنە"
+event_coordinator: "هاهەنگکەری بۆنە"
+
 # GENERAL FALLBACK
 unknown_position: "پلە دیارینەکراو"
+not_specified: "دیارینەکراو"
+other: "هیتر"
