@@ -152,6 +152,73 @@ strategy_analyst: "شیکارەوەی ستراتیژی"
 event_manager: "بەڕێوەبەری بۆنە"
 event_coordinator: "هاهەنگکەری بۆنە"
 
+# PROCUREMENT & SUPPLY CHAIN
+procurement_manager: "بەڕێوەبەری کڕین"
+procurement_officer: "ئەفسەری کڕین"
+
+# RESEARCH & DEVELOPMENT
+research_scientist: "زاناى لێکۆڵینەوە"
+research_and_development_manager: "بەڕێوەبەری لێکۆڵینەوە و گەشەپێدان"
+
+# FINANCE & ACCOUNTING
+tax_consultant: "ڕاوێژکاری باج"
+finance_manager: "بەڕێوەبەری دارایی"
+financial_controller: "کۆنترۆڵکەری دارایی"
+financial_planner: "پلانکەری دارایی"
+accounting_officer: "ئەفسەری ژمێریاری"
+senior_accountant: "ژمێریاری بەرز"
+
+# HUMAN RESOURCES
+human_resources_assistant: "یاریدەدەری سەرچاوە مرۆییەکان"
+
+# MARKETING & DIGITAL
+digital_marketing_manager: "بەڕێوەبەری بازاڕگێری دیجیتاڵ"
+public_relations_manager: "بەڕێوەبەری پەیوەندییە گشتییەکان"
+social_media_manager: "بەڕێوەبەری سۆشیال میدیا"
+social_media_specialist: "پسپۆڕی سۆشیال میدیا"
+marketing_director: "بەڕێوەبەری بازاڕگێری"
+media_planner: "پلانکەری میدیا"
+
+# SOFTWARE DEVELOPMENT
+java_developer: "پەرەپێدەری جاڤا"
+mobile_app_developer: "پەرەپێدەری ئەپی مۆبایل"
+front_end_developer: "پەرەپێدەری فرۆنت ئێند"
+senior_software_developer: "پەرەپێدەری نەرمەکاڵای بەرز"
+ux_ui_designer: "دیزاینەری ئەزموون و ڕووکاری بەکارهێنەر"
+
+# EXECUTIVE & MANAGEMENT
+chief_executive_officer_ceo: "بەڕێوەبەری جێبەجێکاری باڵا"
+product_manager: "بەڕێوەبەری بەرهەم"
+quality_assurance_manager: "بەڕێوەبەری دڵنیایی جۆری"
+customer_service_manager: "بەڕێوەبەری خزمەتگوزاری کڕیار"
+
+# IT & TECHNOLOGY
+system_administrator: "بەڕێوەبەری سیستەم"
+it_support_technician: "تەکنیشیەنی پشتیوانی IT"
+it_project_manager: "بەڕێوەبەری پرۆژەی IT"
+cyber_security_engineer: "ئەندازیاری ئاسایشی سایبەری"
+
+# LEGAL & COMPLIANCE
+legal_counsel: "ڕاوێژکاری یاسایی"
+health_and_safety_officer: "ئەفسەری تەندروستی و سەلامەتی"
+
+# DESIGN & CREATIVE
+graphic_design_manager: "بەڕێوەبەری دیزاینی گرافیک"
+3d_motion_graphic_designer: "دیزاینەری گرافیکی سێ ڕەهەندی و مۆشن"
+
+# OPERATIONS
+operations_coordinator: "هاوهەنگکەری کارەکان"
+construction_supervisor: "سەرپەرشتیاری بینا سازی"
+contract_logistics_officer: "ئەفسەری لۆژستیکی گرێبەست"
+
+# DATA & ANALYTICS
+data_analyst: "شیکارەوەی داتا"
+
+# GOVERNMENT & DIPLOMATIC
+iraqi_embassy: "باڵیۆزخانەی عێراق"
+
+
+
 # GENERAL FALLBACK
 unknown_position: "پلە دیارینەکراو"
 not_specified: "دیارینەکراو"
