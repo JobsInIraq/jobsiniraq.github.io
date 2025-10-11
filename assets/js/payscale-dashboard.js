@@ -1,5 +1,5 @@
 // assets/js/payscale-dashboard.js
-// ES module. Handles: theme toggle, i18n (EN/AR/CKB with RTL), label translations,
+// ES module. Handles: theme toggle, label translations,
 // stats, table, insights, export CSV/JSON, print view, legends.
 
 // ---- imports ----
@@ -30,179 +30,27 @@ if(themeBtn) {
   });
 }
 
-// ---- languages & UI strings ----
-const STRINGS = {
-  en: {
-    title:"Payscale Dashboard", 
-    caption:"Data source: _data/db/salaries.json. All salaries are monthly unless stated.",
-    theme:"Theme", aiInsights:"AI Insights",
-    tableTitle:"Data Table", 
-    tableCaption:"Search, sort, and paginate. Rows are read as-is from _data/db/salaries.json.",
-    kpiMedian:(v)=>`Median: ${v}`, 
-    kpiIQR:(a,b)=>`IQR (P25–P75): ${a} – ${b}`, 
-    kpiSample:(n)=>`Sample size: ${n}`,
-    allCities:"All cities", allCats:"All categories", allTypes:"All types", allPeriods:"All periods",
-    reset:"Reset filters", export:"Export CSV", exportJson:"Export JSON", print:"Print view",
-    results:(n)=>`${n} result${n===1?'':'s'}`, 
-    cityLegend:"City legend", categoryLegend:"Category legend",
-    cols:{ title:"Title", category:"Category", city:"City", type:"Type", period:"Period", min:"Min", max:"Max", last:"Last Verified", source:"Source" }
-  },
-  ar: {
-    title:"لوحة الأجور", 
-    caption:"مصدر البيانات: _data/db/salaries.json. جميع الرواتب شهرية ما لم يُذكر غير ذلك.",
-    theme:"الوضع", aiInsights:"رؤى ذكية",
-    tableTitle:"جدول البيانات", 
-    tableCaption:"بحث وفرز وتقسيم للصفحات. يتم قراءة الصفوف كما هي من _data/db/salaries.json.",
-    kpiMedian:(v)=>`الوسيط: ${v}`, 
-    kpiIQR:(a,b)=>`المدى بين الرُبعين: ${a} – ${b}`, 
-    kpiSample:(n)=>`حجم العينة: ${n}`,
-    allCities:"كل المدن", allCats:"كل الفئات", allTypes:"كل الأنواع", allPeriods:"كل الفترات",
-    reset:"إعادة التصفية", export:"تصدير CSV", exportJson:"تصدير JSON", print:"عرض الطباعة",
-    results:(n)=>`${n} نتيجة`, 
-    cityLegend:"دليل المدن", categoryLegend:"دليل الفئات",
-    cols:{ title:"العنوان", category:"الفئة", city:"المدينة", type:"النوع", period:"الفترة", min:"الحد الأدنى", max:"الحد الأقصى", last:"آخر تحديث", source:"المصدر" }
-  },
-  ckb: {
-    title:"داشبۆڕدی مووچەکان", 
-    caption:"سەرچاوەی داتا: _data/db/salaries.json. هەموو مووچەکان مانگانەن تا ئەگەر جیاواز نەکراوە.",
-    theme:"دووخور/ڕوناکا", aiInsights:"ئاگادارییە هۆشیاڕانەکان",
-    tableTitle:"خشتەی داتا", 
-    tableCaption:"گەڕان، پۆلەکردن و لاپەڕەکردن. داتاکان وەک خۆیان لە _data/db/salaries.json خوێندراون.",
-    kpiMedian:(v)=>`ناوەندێتی: ${v}`, 
-    kpiIQR:(a,b)=>`نێوان چوارەکی یەکەم و سێیەم: ${a} – ${b}`, 
-    kpiSample:(n)=>`قەبارەی نموونە: ${n}`,
-    allCities:"هەموو شارەکان", allCats:"هەموو پۆلەکان", allTypes:"هەموو جۆرەکان", allPeriods:"هەموو ماوەکان",
-    reset:"دووبارەکردنەوەی پاڵاوتن", export:"هەناردەی CSV", exportJson:"هەناردەی JSON", print:"چاپکردن",
-    results:(n)=>`${n} دەرئەنجام`, 
-    cityLegend:"ڕێبەری شار", categoryLegend:"ڕێبەری پۆل",
-    cols:{ title:"ناونیشان", category:"پۆل", city:"شار", type:"جۆر", period:"ماوە", min:"کەمترین", max:"زۆرترین", last:"دوا نوێکردنەوە", source:"سەرچاوە" }
-  }
-};
+// ---- Use global i18n system ----
+const t = (key) => window.i18n?.t(`dashboard.${key}`) || key;
+const getCurrentLang = () => window.i18n?.currentLang || "en";
 
-const LOCALE_MAP = { en: "en", ar: "ar", ckb: "ckb" };
-const langPicker = document.getElementById("langPicker");
+// Translation helpers using global system
+const translateCategory = (cat) => window.translateCategory?.(cat) || cat;
+const translateCity = (city) => window.translateCity?.(city) || city;
+const translateType = (type) => window.translateType?.(type) || type;
+const translatePeriod = (period) => window.translatePeriod?.(period) || period;
 
-const i18n = {
-  cur: localStorage.getItem("siteLanguage") || "en", // Changed to unified storage key
-  set(l){
-    this.cur = l;
-    localStorage.setItem("siteLanguage", l); // Changed to unified storage key
-    const rtl = l === "ar" || l === "ckb";
-    const appRoot = document.getElementById("app-root");
-    if(appRoot) appRoot.setAttribute("dir", rtl ? "rtl" : "ltr");
-
-    const S = STRINGS[l];
-    const updateText = (id, text) => {
-      const el = document.getElementById(id);
-      if(el) el.textContent = text;
-    };
-
-    updateText("t.title", S.title);
-    updateText("t.caption", S.caption);
-    updateText("t.theme", S.theme);
-    updateText("t.aiInsights", S.aiInsights);
-    updateText("t.tableTitle", S.tableTitle);
-    updateText("t.tableCaption", S.tableCaption);
-    updateText("t.reset", S.reset);
-    updateText("t.export", S.export);
-    updateText("t.exportJson", S.exportJson);
-    updateText("t.print", S.print);
-    updateText("t.cityLegend", S.cityLegend);
-    updateText("t.categoryLegend", S.categoryLegend);
-
-    setFirstOption(document.getElementById("f-city"), S.allCities);
-    setFirstOption(document.getElementById("f-category"), S.allCats);
-    setFirstOption(document.getElementById("f-etype"), S.allTypes);
-    setFirstOption(document.getElementById("f-period"), S.allPeriods);
-
-    populateFilters();
-    applyFilters();
-  }
-};
-
-// Listen for language changes from the global switcher
-window.addEventListener('languageChanged', (e) => {
-  if (e.detail && e.detail.language) {
-    i18n.set(e.detail.language);
-  }
-});
-
-// Initialize with current language
-i18n.set(i18n.cur);
-}
-
-// ---- translation maps for data labels ----
-const LABELS = {
-  category: {
-    en: { 
-      "IT":"IT", 
-      "Human Resources":"Human Resources", 
-      "Procurement":"Procurement", 
-      "Sales":"Sales", 
-      "Design":"Design",
-      "Engineering":"Engineering",
-      "Finance":"Finance",
-      "Management":"Management",
-      "Marketing":"Marketing",
-      "Business":"Business",
-      "Customer Service":"Customer Service"
-    },
-    ar: { 
-      "IT":"تقنية المعلومات", 
-      "Human Resources":"الموارد البشرية", 
-      "Procurement":"المشتريات", 
-      "Sales":"المبيعات", 
-      "Design":"التصميم",
-      "Engineering":"الهندسة",
-      "Finance":"المالية",
-      "Management":"الإدارة",
-      "Marketing":"التسويق",
-      "Business":"الأعمال",
-      "Customer Service":"خدمة العملاء"
-    },
-    ckb:{ 
-      "IT":"IT", 
-      "Human Resources":"سەرچاوەی مرۆیی", 
-      "Procurement":"کڕین", 
-      "Sales":"فرۆشتن", 
-      "Design":"دیزاین",
-      "Engineering":"ئەندازیاری",
-      "Finance":"دارایی",
-      "Management":"بەڕێوەبردن",
-      "Marketing":"بازاڕگەری",
-      "Business":"بازرگانی",
-      "Customer Service":"خزمەتگوزاری کڕیار"
-    }
-  },
-  type: {
-    en: { "Full-Time":"Full-Time", "Part-Time":"Part-Time", "Contract":"Contract" },
-    ar: { "Full-Time":"دوام كامل", "Part-Time":"دوام جزئي", "Contract":"عقد" },
-    ckb:{ "Full-Time":"تەواوکات", "Part-Time":"کاتی", "Contract":"گرێبەست" }
-  },
-  city: {
-    en: { 
-      "Baghdad":"Baghdad", "Erbil":"Erbil", "Basra":"Basra", 
-      "Sulaymaniyah":"Sulaymaniyah", "Kirkuk":"Kirkuk", "Karbala":"Karbala" 
-    },
-    ar: { 
-      "Baghdad":"بغداد", "Erbil":"أربيل", "Basra":"البصرة", 
-      "Sulaymaniyah":"السليمانية", "Kirkuk":"كركوك", "Karbala":"كربلاء" 
-    },
-    ckb:{ 
-      "Baghdad":"بەغداد", "Erbil":"هەولێر", "Basra":"بەصرە", 
-      "Sulaymaniyah":"سلێمانی", "Kirkuk":"کەرکوک", "Karbala":"کەربەلا" 
-    }
-  },
-  period: {
-    en: { "monthly":"monthly", "hourly":"hourly", "daily":"daily" },
-    ar: { "monthly":"شهري", "hourly":"بالساعة", "daily":"يومي" },
-    ckb:{ "monthly":"مانگانە", "hourly":"کاتژمێرێ", "daily":"ڕۆژانە" }
-  }
+const translate = (domain, raw) => {
+  if (domain === 'category') return translateCategory(raw);
+  if (domain === 'city') return translateCity(raw);
+  if (domain === 'type') return translateType(raw);
+  if (domain === 'period') return translatePeriod(raw);
+  return raw;
 };
 
 // ---- helpers ----
 const FX = { USD_IQD: 1310 };
-const currentLocale = () => LOCALE_MAP[i18n.cur] || "en";
+const currentLocale = () => getCurrentLang();
 const numberFmt = (n, cur) => n == null ? "—" : (cur === "USD" ? n.toLocaleString(currentLocale())+" USD/mo" : n.toLocaleString(currentLocale())+" IQD/mo");
 const toIQD = (amt, cur) => cur === "USD" ? Math.round(amt * FX.USD_IQD) : amt;
 const toUSD = (amt, cur) => cur === "IQD" ? Math.round(amt / FX.USD_IQD) : amt;
@@ -237,8 +85,6 @@ const setFirstOption = (sel,text)=>{
 };
 
 const uniq = (arr)=> [...new Set(arr.filter(Boolean))].sort((a,b)=> a.localeCompare(b,currentLocale()));
-
-const translate = (domain, raw)=> (LABELS[domain]?.[i18n.cur] || {})[raw] || raw;
 
 // consistent color from string
 const hashCode = (str)=> {
@@ -328,6 +174,12 @@ const populateFilters = ()=>{
   if(fCity) cities.forEach(v=> fCity.insertAdjacentHTML("beforeend", `<option value="${v}">${translate("city", v)}</option>`));
   if(fCat) cats.forEach(v  => fCat.insertAdjacentHTML("beforeend",  `<option value="${v}">${translate("category", v)}</option>`));
   if(fType) types.forEach(v => fType.insertAdjacentHTML("beforeend", `<option value="${v}">${translate("type", v)}</option>`));
+  
+  // Update filter labels
+  setFirstOption(fCity, t('allCities'));
+  setFirstOption(fCat, t('allCategories'));
+  setFirstOption(fType, t('allTypes'));
+  setFirstOption(fPeriod, t('allPeriods'));
 };
 
 // ---- render ----
@@ -335,7 +187,6 @@ let grid=null;
 let lastFiltered = [];
 
 const applyFilters = ()=>{
-  const S = STRINGS[i18n.cur];
   const outCur = fCurrency ? fCurrency.value : "IQD";
   const city = fCity ? fCity.value : "";
   const cat = fCat ? fCat.value : "";
@@ -377,24 +228,24 @@ const applyFilters = ()=>{
     if(el) el.textContent = text;
   };
   
-  updateKPI("kpi-median", S.kpiMedian(numberFmt(med, outCur)));
-  updateKPI("kpi-iqr", S.kpiIQR(numberFmt(p25, outCur), numberFmt(p75, outCur)));
-  updateKPI("kpi-sample", S.kpiSample(vals.length));
+  updateKPI("kpi-median", `${t('median')}: ${numberFmt(med, outCur)}`);
+  updateKPI("kpi-iqr", `${t('iqr')}: ${numberFmt(p25, outCur)} – ${numberFmt(p75, outCur)}`);
+  updateKPI("kpi-sample", `${t('sampleSize')}: ${vals.length}`);
   
-  if(resultCount) resultCount.textContent = S.results(filtered.length);
+  if(resultCount) resultCount.textContent = `${filtered.length} ${t('results')}`;
 
   // Insights
   const insights = [];
   if(vals.length){
     const topCity = Object.entries(byCity).sort((a,b)=>median(b[1])-median(a[1]))[0];
     const topCat = Object.entries(byCat).sort((a,b)=>median(b[1])-median(a[1]))[0];
-    if(topCity) insights.push(`Highest median city: ${translate("city",topCity[0])} (${numberFmt(median(topCity[1]), outCur)})`);
-    if(topCat) insights.push(`Highest median category: ${translate("category",topCat[0])} (${numberFmt(median(topCat[1]), outCur)})`);
+    if(topCity) insights.push(`${t('highestCity')}: ${translate("city",topCity[0])} (${numberFmt(median(topCity[1]), outCur)})`);
+    if(topCat) insights.push(`${t('highestCategory')}: ${translate("category",topCat[0])} (${numberFmt(median(topCat[1]), outCur)})`);
   }
   
   const insightList = document.getElementById("insight-list");
   if(insightList) {
-    insightList.innerHTML = insights.length ? insights.map(i=>`<li>${i}</li>`).join("") : "<li>No data</li>";
+    insightList.innerHTML = insights.length ? insights.map(i=>`<li>${i}</li>`).join("") : `<li>${t('noData')}</li>`;
   }
 
   // Legends
@@ -418,7 +269,6 @@ const applyFilters = ()=>{
 };
 
 const renderTable = (rows, outCur)=>{
-  const S = STRINGS[i18n.cur];
   const tableEl = document.getElementById("table");
   if(!tableEl) return;
   
@@ -441,14 +291,14 @@ const renderTable = (rows, outCur)=>{
   
   grid = new Grid({
     columns: [
-      S.cols.category,
-      S.cols.title,
-      S.cols.city,
-      S.cols.type,
-      S.cols.period,
-      "Salary",
-      S.cols.last,
-      S.cols.source
+      t('colCategory'),
+      t('colTitle'),
+      t('colCity'),
+      t('colType'),
+      t('colPeriod'),
+      t('colSalary'),
+      t('colLastVerified'),
+      t('colSource')
     ],
     data,
     search: true,
@@ -470,9 +320,8 @@ const downloadFile = (content, filename, type) => {
 
 if(exportCsvBtn) {
   exportCsvBtn.addEventListener("click", ()=>{
-    const S = STRINGS[i18n.cur];
     const outCur = fCurrency ? fCurrency.value : "IQD";
-    const header = [S.cols.category, S.cols.title, S.cols.city, S.cols.type, S.cols.period, "Salary", S.cols.last, S.cols.source].join(",");
+    const header = [t('colCategory'), t('colTitle'), t('colCity'), t('colType'), t('colPeriod'), t('colSalary'), t('colLastVerified'), t('colSource')].join(",");
     const rows = lastFiltered.map(r=>{
       const amt = r.amtMin ?? r.amtMax;
       const display = amt ? numberFmt(outCur==="USD" ? toUSD(amt,r.currency) : toIQD(amt,r.currency), outCur) : "—";
@@ -517,26 +366,12 @@ if(printBtn) {
   if(el) el.addEventListener("change", applyFilters);
 });
 
-// Initialize
-i18n.set(i18n.cur);
-
-// ---- Sync with global language handler ----
-window.addEventListener('languageChanged', (e) => {
-  if (e.detail && e.detail.language) {
-    const newLang = e.detail.language;
-    if (STRINGS[newLang] && newLang !== i18n.cur) {
-      i18n.set(newLang);
-      if (langPicker) langPicker.value = newLang;
-    }
-  }
+// Listen for global language changes
+window.addEventListener('languageChanged', () => {
+  populateFilters();
+  applyFilters();
 });
 
-// Also trigger global event when dashboard language changes
-if(langPicker) {
-  const originalListener = langPicker.onchange;
-  langPicker.addEventListener("change", (e) => {
-    window.dispatchEvent(new CustomEvent('languageChanged', {
-      detail: { language: e.target.value }
-    }));
-  });
-}
+// Initialize on load
+populateFilters();
+applyFilters();
