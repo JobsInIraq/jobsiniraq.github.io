@@ -158,6 +158,72 @@ strategy_analyst: "Strategy Analyst"  # ✅ NEW
 event_manager: "Event Manager"  # ✅ NEW
 event_coordinator: "Event Coordinator"  # ✅ NEW
 
+# PROCUREMENT & SUPPLY CHAIN
+procurement_manager: "Procurement Manager"
+procurement_officer: "Procurement Officer"
+
+# RESEARCH & DEVELOPMENT
+research_scientist: "Research Scientist"
+research_and_development_manager: "Research and Development Manager"
+
+# FINANCE & ACCOUNTING
+tax_consultant: "Tax Consultant"
+finance_manager: "Finance Manager"
+financial_controller: "Financial Controller"
+financial_planner: "Financial Planner"
+accounting_officer: "Accounting Officer"
+senior_accountant: "Senior Accountant"
+
+# HUMAN RESOURCES
+human_resources_assistant: "Human Resources Assistant"
+
+# MARKETING & DIGITAL
+digital_marketing_manager: "Digital Marketing Manager"
+public_relations_manager: "Public Relations Manager"
+social_media_manager: "Social Media Manager"
+social_media_specialist: "Social Media Specialist"
+marketing_director: "Marketing Director"
+media_planner: "Media Planner"
+
+# SOFTWARE DEVELOPMENT
+java_developer: "Java Developer"
+mobile_app_developer: "Mobile App Developer"
+front_end_developer: "Front-End Developer"
+senior_software_developer: "Senior Software Developer"
+ux_ui_designer: "UX/UI Designer"
+
+# EXECUTIVE & MANAGEMENT
+chief_executive_officer_ceo: "Chief Executive Officer (CEO)"
+product_manager: "Product Manager"
+quality_assurance_manager: "Quality Assurance Manager"
+customer_service_manager: "Customer Service Manager"
+
+# IT & TECHNOLOGY
+system_administrator: "System Administrator"
+it_support_technician: "IT Support Technician"
+it_project_manager: "IT Project Manager"
+cyber_security_engineer: "Cyber Security Engineer"
+
+# LEGAL & COMPLIANCE
+legal_counsel: "Legal Counsel"
+health_and_safety_officer: "Health and Safety Officer"
+
+# DESIGN & CREATIVE
+graphic_design_manager: "Graphic Design Manager"
+3d_motion_graphic_designer: "3D & Motion Graphic Designer"
+
+# OPERATIONS
+operations_coordinator: "Operations Coordinator"
+construction_supervisor: "Construction Supervisor"
+contract_logistics_officer: "Contract Logistics Officer"
+
+# DATA & ANALYTICS
+data_analyst: "Data Analyst"
+
+# GOVERNMENT & DIPLOMATIC
+iraqi_embassy: "Iraqi Embassy"
+
+
 # GENERAL FALLBACK
 unknown_position: "Position Not Specified"
 not_specified: "Not Specified"
