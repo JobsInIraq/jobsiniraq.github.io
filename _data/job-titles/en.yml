@@ -1,0 +1,132 @@
+# OIL & GAS SECTOR
+petroleum_engineer: "Petroleum Engineer"
+oil_field_technician: "Oil Field Technician"
+gas_operations_specialist: "Gas Operations Specialist"
+pipeline_operator: "Pipeline Operator"
+drilling_engineer: "Drilling Engineer"
+refinery_technician: "Refinery Technician"
+hse_officer: "HSE Officer"
+reservoir_engineer: "Reservoir Engineer"
+production_engineer: "Production Engineer"
+
+# IT & TECHNOLOGY
+software_engineer: "Software Engineer"
+software_developer: "Software Developer"
+it_technician: "IT Technician"
+network_engineer: "Network Engineer"
+systems_administrator: "Systems Administrator"
+telecommunications_specialist: "Telecommunications Specialist"
+data_scientist: "Data Scientist"
+database_administrator: "Database Administrator"
+web_developer: "Web Developer"
+cybersecurity_specialist: "Cybersecurity Specialist"
+devops_engineer: "DevOps Engineer"
+cloud_engineer: "Cloud Engineer"
+
+# ENGINEERING & CONSTRUCTION
+civil_engineer: "Civil Engineer"
+construction_manager: "Construction Manager"
+project_manager: "Project Manager"
+architect: "Architect"
+site_supervisor: "Site Supervisor"
+building_technician: "Building Technician"
+electrical_engineer: "Electrical Engineer"
+mechanical_engineer: "Mechanical Engineer"
+quantity_surveyor: "Quantity Surveyor"
+structural_engineer: "Structural Engineer"
+
+# HEALTHCARE
+registered_nurse: "Registered Nurse"
+doctor: "Doctor"
+general_practitioner: "General Practitioner"
+pharmacist: "Pharmacist"
+medical_technician: "Medical Technician"
+biomedical_engineer: "Biomedical Engineer"
+paramedic: "Paramedic"
+emergency_medical_technician: "Emergency Medical Technician"
+surgeon: "Surgeon"
+radiologist: "Radiologist"
+laboratory_technician: "Laboratory Technician"
+
+# PUBLIC SECTOR & GOVERNMENT
+government_administrator: "Government Administrator"
+public_sector_clerk: "Public Sector Clerk"
+policy_analyst: "Policy Analyst"
+programme_manager: "Programme Manager"
+justice_home_affairs_programme_manager_eo: "Justice and Home Affairs Programme Manager (EO)"
+administrative_officer: "Administrative Officer"
+executive_officer: "Executive Officer"
+
+# EDUCATION
+teacher: "Teacher"
+school_teacher: "School Teacher"
+university_lecturer: "University Lecturer"
+training_specialist: "Training Specialist"
+education_administrator: "Education Administrator"
+education_specialist: "Education Specialist"
+
+# FINANCE & BANKING
+accountant: "Accountant"
+financial_analyst: "Financial Analyst"
+bank_teller: "Bank Teller"
+accounts_payable_specialist: "Accounts Payable Specialist"
+accounts_receivable_specialist: "Accounts Receivable Specialist"
+investment_analyst: "Investment Analyst"
+auditor: "Auditor"
+credit_analyst: "Credit Analyst"
+
+# SALES & MARKETING
+sales_associate: "Sales Associate"
+sales_manager: "Sales Manager"
+retail_manager: "Retail Manager"
+customer_service_representative: "Customer Service Representative"
+marketing_specialist: "Marketing Specialist"
+business_development_manager: "Business Development Manager"
+account_manager: "Account Manager"
+
+# LOGISTICS & SUPPLY CHAIN
+logistics_coordinator: "Logistics Coordinator"
+supply_chain_manager: "Supply Chain Manager"
+warehouse_manager: "Warehouse Manager"
+warehouse_technician: "Warehouse Technician"
+operations_manager: "Operations Manager"
+procurement_specialist: "Procurement Specialist"
+inventory_controller: "Inventory Controller"
+
+# SECURITY & MILITARY
+security_guard: "Security Guard"
+security_consultant: "Security Consultant"
+security_manager: "Security Manager"
+military_personnel: "Military Personnel"
+police_officer: "Police Officer"
+
+# HR & ADMINISTRATION
+hr_manager: "HR Manager"
+recruitment_specialist: "Recruitment Specialist"
+administrative_assistant: "Administrative Assistant"
+office_manager: "Office Manager"
+executive_assistant: "Executive Assistant"
+
+# AGRICULTURE
+livestock_farmer: "Livestock Farmer"
+agricultural_technician: "Agricultural Technician"
+farm_manager: "Farm Manager"
+veterinarian: "Veterinarian"
+agronomist: "Agronomist"
+
+# LEGAL & COMPLIANCE
+lawyer: "Lawyer"
+legal_advisor: "Legal Advisor"
+compliance_officer: "Compliance Officer"
+contract_specialist: "Contract Specialist"
+
+# RETAIL & HOSPITALITY
+cashier: "Cashier"
+store_manager: "Store Manager"
+hotel_manager: "Hotel Manager"
+restaurant_manager: "Restaurant Manager"
+chef: "Chef"
+waiter: "Waiter"
+
+# GENERAL FALLBACK
+unknown_position: "Position Not Specified"
