@@ -1,9 +1,8 @@
 /**
  * Payscale Dashboard - YAML-Driven Translation System
  * Consumes translations from _data/ui-text.yml (via unified-i18n.js)
- * @version 3.1.0 - PRODUCTION READY
+ * @version 3.1.1 - PERIOD TRANSLATION FIX
  * @lastUpdated 2025-10-11
- * @features Complete i18n, Period filtering, Error handling, Performance optimized
  */
 
 // ============================================
@@ -47,8 +46,6 @@ if (themeBtn) {
 
 /**
  * Translation helper - Uses YAML paths from ui-text.yml
- * @param {string} key - Translation key (e.g., 'median_salary')
- * @returns {string} Translated text or fallback
  */
 const t = (key) => {
   const fullKey = `payscale.${key}`;
@@ -63,7 +60,6 @@ const t = (key) => {
 
 /**
  * Get current language code
- * @returns {string} Language code (en, ar, ckb)
  */
 const getCurrentLang = () => window.i18n?.currentLang || "en";
 
@@ -187,7 +183,7 @@ const setFirstOption = (selectEl, text) => {
 const uniq = (arr) => {
   const lang = getCurrentLang();
   const locale = lang === 'ar' ? 'ar-IQ' : lang === 'ckb' ? 'ku' : 'en-US';
-  
+
   return [...new Set(arr.filter(Boolean))].sort((a, b) =>
     a.localeCompare(b, locale)
   );
@@ -352,7 +348,7 @@ const updateTable = () => {
     translateCity(row.city),
     translateType(row.employment_type),
     numberFmt(
-      selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, r.currency),
+      selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency),
       selectedCurrency
     ),
     row.portal
@@ -491,7 +487,11 @@ const populateFilters = () => {
 
   // Populate cities
   if (citySelect) {
-    while (citySelect.options.length > 1) citySelect.remove(1);
+    // Clear ALL options except the first one
+    while (citySelect.options.length > 1) {
+      citySelect.remove(1);
+    }
+    // Add translated city options
     cities.forEach(c => {
       const opt = document.createElement("option");
       opt.value = c;
@@ -502,7 +502,9 @@ const populateFilters = () => {
 
   // Populate categories
   if (catSelect) {
-    while (catSelect.options.length > 1) catSelect.remove(1);
+    while (catSelect.options.length > 1) {
+      catSelect.remove(1);
+    }
     cats.forEach(c => {
       const opt = document.createElement("option");
       opt.value = c;
@@ -513,7 +515,9 @@ const populateFilters = () => {
 
   // Populate employment types
   if (typeSelect) {
-    while (typeSelect.options.length > 1) typeSelect.remove(1);
+    while (typeSelect.options.length > 1) {
+      typeSelect.remove(1);
+    }
     types.forEach(t => {
       const opt = document.createElement("option");
       opt.value = t;
@@ -524,7 +528,11 @@ const populateFilters = () => {
 
   // Populate salary periods ✅ FIXED
   if (periodSelect) {
-    while (periodSelect.options.length > 1) periodSelect.remove(1);
+    // ✅ CRITICAL FIX: Clear ALL options including hardcoded ones
+    while (periodSelect.options.length > 1) {
+      periodSelect.remove(1);
+    }
+    // Add translated period options
     periods.forEach(p => {
       const opt = document.createElement("option");
       opt.value = p;
@@ -623,10 +631,11 @@ const attachEventListeners = () => {
     });
   }
 
-  // Language change listener ✅ FIXED
+  // Language change listener ✅ COMPLETE FIX
   window.addEventListener("languageChanged", () => {
+    console.log("[Dashboard] Language changed, updating UI...");
     updateFilterLabels();
-    populateFilters();
+    populateFilters(); // This will now properly replace ALL options
     updateView();
   });
 };
