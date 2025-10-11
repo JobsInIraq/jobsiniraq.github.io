@@ -1,14 +1,15 @@
 /**
  * Payscale Dashboard - YAML-Driven Translation System
  * Consumes translations from _data/ui-text.yml (via unified-i18n.js)
- * @version 3.0.1 - COMPLETE & FIXED
+ * @version 3.1.0 - PRODUCTION READY
  * @lastUpdated 2025-10-11
+ * @features Complete i18n, Period filtering, Error handling, Performance optimized
  */
 
 // ============================================
 // IMPORTS
 // ============================================
-import { Grid, html } from "https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/gridjs.module.min.js";
+import { Grid } from "https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/gridjs.module.min.js";
 
 // Add Grid.js CSS dynamically
 const gridCSS = document.createElement('link');
@@ -31,7 +32,7 @@ const savedTheme = localStorage.getItem("theme") || (prefersDark ? "dark" : "lig
 root.setAttribute("data-theme", savedTheme);
 
 const themeBtn = document.getElementById("themeToggle");
-if(themeBtn) {
+if (themeBtn) {
   themeBtn.addEventListener("click", () => {
     const currentTheme = root.getAttribute("data-theme");
     const newTheme = currentTheme === "dark" ? "light" : "dark";
@@ -46,13 +47,13 @@ if(themeBtn) {
 
 /**
  * Translation helper - Uses YAML paths from ui-text.yml
- * Format: payscale.{key} (e.g., payscale.title, payscale.median_salary)
+ * @param {string} key - Translation key (e.g., 'median_salary')
+ * @returns {string} Translated text or fallback
  */
 const t = (key) => {
   const fullKey = `payscale.${key}`;
   const translated = window.i18n?.t(fullKey);
 
-  // Debug in development
   if (!translated || translated === fullKey) {
     console.warn(`[i18n] Missing translation key: ${fullKey}`);
   }
@@ -62,12 +63,12 @@ const t = (key) => {
 
 /**
  * Get current language code
+ * @returns {string} Language code (en, ar, ckb)
  */
 const getCurrentLang = () => window.i18n?.currentLang || "en";
 
 /**
  * Translation helpers using YAML structure
- * Maps to: job_categories.{key}, cities.{key}, employment_types.{key}, salary_periods.{key}
  */
 const translateCategory = (cat) => {
   if (!cat || cat === "—") return cat;
@@ -94,7 +95,7 @@ const translatePeriod = (period) => {
 };
 
 /**
- * Table column headers - Uses table_headers.{key} from YAML
+ * Table column headers
  */
 const th = (key) => {
   const fullKey = `table_headers.${key}`;
@@ -102,54 +103,40 @@ const th = (key) => {
   return translated || key;
 };
 
-/**
- * Generic translation dispatcher
- */
-const translate = (domain, raw) => {
-  if (!raw || raw === "—") return raw;
-
-  switch(domain) {
-    case 'category':
-      return translateCategory(raw);
-    case 'city':
-      return translateCity(raw);
-    case 'type':
-      return translateType(raw);
-    case 'period':
-      return translatePeriod(raw);
-    default:
-      return raw;
-  }
-};
-
 // ============================================
 // UTILITY FUNCTIONS
 // ============================================
 
-// Currency conversion
+// Currency conversion rates
 const FX = { USD_IQD: 1310 };
 
 const toIQD = (amt, cur) => cur === "USD" ? Math.round(amt * FX.USD_IQD) : amt;
 const toUSD = (amt, cur) => cur === "IQD" ? Math.round(amt / FX.USD_IQD) : amt;
 
-// Number formatting with locale support
-const currentLocale = () => getCurrentLang();
-
+/**
+ * Number formatting with locale support
+ */
 const numberFmt = (n, cur) => {
-  if (n == null) return "—";
+  if (n == null || !Number.isFinite(n)) return "—";
 
-  const formatted = n.toLocaleString(currentLocale());
+  const lang = getCurrentLang();
+  const locale = lang === 'ar' ? 'ar-IQ' : lang === 'ckb' ? 'en-US' : 'en-US';
+  const formatted = n.toLocaleString(locale);
   const suffix = cur === "USD" ? " USD/mo" : " IQD/mo";
 
   return formatted + suffix;
 };
 
-// Deep object access
+/**
+ * Deep object access
+ */
 const get = (obj, path, dflt = null) => {
   return path.split(".").reduce((o, k) => (o && k in o ? o[k] : dflt), obj ?? dflt);
 };
 
-// Parse numeric value
+/**
+ * Parse numeric value safely
+ */
 const parseNum = (v) => {
   if (v == null) return null;
   if (typeof v === "number") return Number.isFinite(v) ? Math.round(v) : null;
@@ -161,9 +148,11 @@ const parseNum = (v) => {
   return Number.isFinite(num) ? Math.round(num) : null;
 };
 
-// Statistical functions
+/**
+ * Statistical functions
+ */
 const median = (arr) => {
-  if (!arr.length) return null;
+  if (!arr || arr.length === 0) return null;
 
   const sorted = [...arr].sort((a, b) => a - b);
   const mid = Math.floor(sorted.length / 2);
@@ -174,7 +163,7 @@ const median = (arr) => {
 };
 
 const percentile = (arr, p) => {
-  if (!arr.length) return null;
+  if (!arr || arr.length === 0) return null;
 
   const sorted = [...arr].sort((a, b) => a - b);
   const index = (p / 100) * (sorted.length - 1);
@@ -186,25 +175,32 @@ const percentile = (arr, p) => {
     : Math.round(sorted[lower] + (sorted[upper] - sorted[lower]) * (index - lower));
 };
 
-// DOM helpers
+/**
+ * DOM helpers
+ */
 const setFirstOption = (selectEl, text) => {
-  if (selectEl && selectEl.options.length) {
+  if (selectEl && selectEl.options && selectEl.options.length) {
     selectEl.options[0].textContent = text;
   }
 };
 
 const uniq = (arr) => {
+  const lang = getCurrentLang();
+  const locale = lang === 'ar' ? 'ar-IQ' : lang === 'ckb' ? 'ku' : 'en-US';
+  
   return [...new Set(arr.filter(Boolean))].sort((a, b) =>
-    a.localeCompare(b, currentLocale())
+    a.localeCompare(b, locale)
   );
 };
 
-// Color generation (consistent per string)
+/**
+ * Color generation (consistent per string)
+ */
 const hashCode = (str) => {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     hash = ((hash << 5) - hash) + str.charCodeAt(i);
-    hash |= 0; // Convert to 32-bit integer
+    hash |= 0;
   }
   return hash;
 };
@@ -227,12 +223,11 @@ const normalizeRow = (row) => {
   const loc = get(job, "location", {}) || {};
   const src = get(job, "sources", {}) || {};
   const portal = get(src, "jobPortal", {}) || {};
-  const socials = get(src, "socialMedia", {}) || {};
 
   const title = jd.jobTitle || "—";
   const category = jd.category || "—";
   const employment_type = (jd.position || "—").toString().replace(/0$/, "");
-  const period = "monthly";
+  const period = "monthly"; // Default period
   const city = loc.city || "—";
 
   // Salary parsing
@@ -255,7 +250,7 @@ const normalizeRow = (row) => {
     amtMin = iqd;
     amtMax = iqd;
   } else {
-    currency = "IQD"; // Default fallback
+    currency = "IQD";
     amtMin = 0;
     amtMax = 0;
   }
@@ -322,14 +317,23 @@ const updateKPIs = () => {
   const p25 = percentile(values, 25);
   const p75 = percentile(values, 75);
 
-  document.getElementById("kpi-median").textContent = 
-    `${t('median_salary') || 'Median'}: ${numberFmt(med, selectedCurrency)}`;
-  document.getElementById("kpi-iqr").textContent = 
-    `IQR (P25–P75): ${numberFmt(p25, selectedCurrency)} – ${numberFmt(p75, selectedCurrency)}`;
-  document.getElementById("kpi-sample").textContent = 
-    `${t('sample_size') || 'Sample size'}: ${values.length}`;
-  document.getElementById("resultCount").textContent = 
-    `${filtered.length} ${t('results') || 'results'}`;
+  const medianEl = document.getElementById("kpi-median");
+  const iqrEl = document.getElementById("kpi-iqr");
+  const sampleEl = document.getElementById("kpi-sample");
+  const resultEl = document.getElementById("resultCount");
+
+  if (medianEl) {
+    medianEl.textContent = `${t('median_salary')}: ${numberFmt(med, selectedCurrency)}`;
+  }
+  if (iqrEl) {
+    iqrEl.textContent = `IQR (P25–P75): ${numberFmt(p25, selectedCurrency)} – ${numberFmt(p75, selectedCurrency)}`;
+  }
+  if (sampleEl) {
+    sampleEl.textContent = `${t('sample_size')}: ${values.length}`;
+  }
+  if (resultEl) {
+    resultEl.textContent = `${filtered.length} ${t('results')}`;
+  }
 };
 
 // ============================================
@@ -339,46 +343,70 @@ const updateKPIs = () => {
 let gridInstance = null;
 
 const updateTable = () => {
+  const tableEl = document.getElementById("table");
+  if (!tableEl) return;
+
   const tableData = filtered.map(row => [
     row.title,
     translateCategory(row.category),
     translateCity(row.city),
     translateType(row.employment_type),
     numberFmt(
-      selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency),
+      selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, r.currency),
       selectedCurrency
     ),
     row.portal
   ]);
 
   if (gridInstance) {
-    gridInstance.updateConfig({ data: tableData }).forceRender();
+    gridInstance.updateConfig({
+      columns: [
+        th('job_title'),
+        th('category'),
+        th('city'),
+        th('employment_type'),
+        th('salary'),
+        th('source')
+      ],
+      data: tableData,
+      language: {
+        search: { placeholder: t('search_placeholder') },
+        pagination: {
+          previous: t('previous'),
+          next: t('next'),
+          showing: t('showing'),
+          to: t('to'),
+          of: t('of'),
+          results: t('results')
+        }
+      }
+    }).forceRender();
   } else {
     gridInstance = new Grid({
       columns: [
-        th('job_title') || 'Job Title',
-        th('category') || 'Category',
-        th('city') || 'City',
-        th('employment_type') || 'Type',
-        th('salary') || 'Salary',
-        th('source') || 'Source'
+        th('job_title'),
+        th('category'),
+        th('city'),
+        th('employment_type'),
+        th('salary'),
+        th('source')
       ],
       data: tableData,
       search: true,
       sort: true,
       pagination: { limit: 25 },
       language: {
-        search: { placeholder: t('search_placeholder') || 'Search...' },
+        search: { placeholder: t('search_placeholder') },
         pagination: {
-          previous: t('previous') || 'Previous',
-          next: t('next') || 'Next',
-          showing: t('showing') || 'Showing',
-          to: t('to') || 'to',
-          of: t('of') || 'of',
-          results: t('results') || 'results'
+          previous: t('previous'),
+          next: t('next'),
+          showing: t('showing'),
+          to: t('to'),
+          of: t('of'),
+          results: t('results')
         }
       }
-    }).render(document.getElementById("table"));
+    }).render(tableEl);
   }
 };
 
@@ -387,39 +415,40 @@ const updateTable = () => {
 // ============================================
 
 const updateInsights = () => {
+  const listEl = document.getElementById("insight-list");
+  if (!listEl) return;
+
   const values = filtered.map(r => toIQD(r.amtMin, r.currency)).filter(v => v > 0);
-  
+
   if (values.length === 0) {
-    document.getElementById("insight-list").innerHTML = '<li>No data available for insights</li>';
+    listEl.innerHTML = `<li>${t('no_data')}</li>`;
     return;
   }
 
   const avg = values.reduce((a, b) => a + b, 0) / values.length;
-  
   const insights = [];
-  
+
   if (avg > 1500000) {
-    insights.push(t('insight_high_avg') || 'Average salary is above 1.5M IQD');
+    insights.push(t('insight_high_avg'));
   } else if (avg < 800000) {
-    insights.push(t('insight_low_avg') || 'Average salary is below 800K IQD');
+    insights.push(t('insight_low_avg'));
   }
-  
+
   const itJobs = filtered.filter(r => r.category === "IT").length;
   if (itJobs > filtered.length * 0.3) {
-    insights.push(t('insight_it_dominant') || 'IT jobs dominate this dataset (>30%)');
+    insights.push(t('insight_it_dominant'));
   }
 
   const baghdadJobs = filtered.filter(r => r.city === "Baghdad").length;
   if (baghdadJobs > filtered.length * 0.4) {
-    insights.push(t('insight_baghdad_dominant') || 'Baghdad has the most job listings (>40%)');
+    insights.push(t('insight_baghdad_dominant'));
   }
 
   if (insights.length === 0) {
-    insights.push(t('insight_balanced') || 'Dataset shows balanced distribution across categories and cities');
+    insights.push(t('insight_balanced'));
   }
 
-  const list = document.getElementById("insight-list");
-  list.innerHTML = insights.map(txt => `<li>${txt}</li>`).join("");
+  listEl.innerHTML = insights.map(txt => `<li>${txt}</li>`).join("");
 };
 
 // ============================================
@@ -427,16 +456,22 @@ const updateInsights = () => {
 // ============================================
 
 const updateLegends = () => {
-  const cities = uniq(filtered.map(r => r.city));
-  const cats = uniq(filtered.map(r => r.category));
+  const cityLegendEl = document.getElementById("legend-city");
+  const catLegendEl = document.getElementById("legend-cat");
 
-  document.getElementById("legend-city").innerHTML = cities
-    .map(c => `<span class="legend-chip"><span class="swatch" style="background:${colorFromString(c)}"></span>${translateCity(c)}</span>`)
-    .join("");
+  if (cityLegendEl) {
+    const cities = uniq(filtered.map(r => r.city));
+    cityLegendEl.innerHTML = cities
+      .map(c => `<span class="legend-chip"><span class="swatch" style="background:${colorFromString(c)}"></span>${translateCity(c)}</span>`)
+      .join("");
+  }
 
-  document.getElementById("legend-cat").innerHTML = cats
-    .map(c => `<span class="legend-chip"><span class="swatch" style="background:${colorFromString(c)}"></span>${translateCategory(c)}</span>`)
-    .join("");
+  if (catLegendEl) {
+    const cats = uniq(filtered.map(r => r.category));
+    catLegendEl.innerHTML = cats
+      .map(c => `<span class="legend-chip"><span class="swatch" style="background:${colorFromString(c)}"></span>${translateCategory(c)}</span>`)
+      .join("");
+  }
 };
 
 // ============================================
@@ -447,12 +482,14 @@ const populateFilters = () => {
   const cities = uniq(NORMALIZED.map(r => r.city));
   const cats = uniq(NORMALIZED.map(r => r.category));
   const types = uniq(NORMALIZED.map(r => r.employment_type));
+  const periods = uniq(NORMALIZED.map(r => r.period));
 
   const citySelect = document.getElementById("f-city");
   const catSelect = document.getElementById("f-category");
   const typeSelect = document.getElementById("f-etype");
+  const periodSelect = document.getElementById("f-period");
 
-  // Clear existing options (except first)
+  // Populate cities
   if (citySelect) {
     while (citySelect.options.length > 1) citySelect.remove(1);
     cities.forEach(c => {
@@ -463,6 +500,7 @@ const populateFilters = () => {
     });
   }
 
+  // Populate categories
   if (catSelect) {
     while (catSelect.options.length > 1) catSelect.remove(1);
     cats.forEach(c => {
@@ -473,6 +511,7 @@ const populateFilters = () => {
     });
   }
 
+  // Populate employment types
   if (typeSelect) {
     while (typeSelect.options.length > 1) typeSelect.remove(1);
     types.forEach(t => {
@@ -482,88 +521,120 @@ const populateFilters = () => {
       typeSelect.appendChild(opt);
     });
   }
+
+  // Populate salary periods ✅ FIXED
+  if (periodSelect) {
+    while (periodSelect.options.length > 1) periodSelect.remove(1);
+    periods.forEach(p => {
+      const opt = document.createElement("option");
+      opt.value = p;
+      opt.textContent = translatePeriod(p);
+      periodSelect.appendChild(opt);
+    });
+  }
+};
+
+/**
+ * Update filter labels when language changes
+ */
+const updateFilterLabels = () => {
+  setFirstOption(document.getElementById("f-city"), t('all_cities'));
+  setFirstOption(document.getElementById("f-category"), t('all_categories'));
+  setFirstOption(document.getElementById("f-etype"), t('all_types'));
+  setFirstOption(document.getElementById("f-period"), t('all_periods'));
 };
 
 // ============================================
 // EVENT LISTENERS
 // ============================================
 
-// Filter changes
-document.querySelectorAll(".filters select").forEach(sel => {
-  sel.addEventListener("change", applyFilters);
-});
-
-// Currency toggle
-document.getElementById("f-currency")?.addEventListener("change", (e) => {
-  selectedCurrency = e.target.value;
-  updateView();
-});
-
-// Reset filters
-document.getElementById("resetFilters")?.addEventListener("click", () => {
+const attachEventListeners = () => {
+  // Filter changes
   document.querySelectorAll(".filters select").forEach(sel => {
-    sel.selectedIndex = 0;
+    sel.addEventListener("change", applyFilters);
   });
-  applyFilters();
-});
 
-// Export CSV
-document.getElementById("exportCsv")?.addEventListener("click", () => {
-  const csv = [
-    ["Title", "Category", "City", "Type", "Salary", "Source"].join(","),
-    ...filtered.map(r => [
-      `"${r.title}"`,
-      `"${r.category}"`,
-      `"${r.city}"`,
-      `"${r.employment_type}"`,
-      `"${r.amtMin} ${r.currency}"`,
-      `"${r.portal}"`
-    ].join(","))
-  ].join("\n");
+  // Currency toggle
+  const currencySelect = document.getElementById("f-currency");
+  if (currencySelect) {
+    currencySelect.addEventListener("change", (e) => {
+      selectedCurrency = e.target.value;
+      updateView();
+    });
+  }
 
-  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `payscale-data-${new Date().toISOString().split('T')[0]}.csv`;
-  a.click();
-  URL.revokeObjectURL(url);
-});
+  // Reset filters
+  const resetBtn = document.getElementById("resetFilters");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      document.querySelectorAll(".filters select").forEach(sel => {
+        sel.selectedIndex = 0;
+      });
+      applyFilters();
+    });
+  }
 
-// Export JSON
-document.getElementById("exportJson")?.addEventListener("click", () => {
-  const json = JSON.stringify(filtered, null, 2);
-  const blob = new Blob([json], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `payscale-data-${new Date().toISOString().split('T')[0]}.json`;
-  a.click();
-  URL.revokeObjectURL(url);
-});
+  // Export CSV
+  const csvBtn = document.getElementById("exportCsv");
+  if (csvBtn) {
+    csvBtn.addEventListener("click", () => {
+      const csv = [
+        ["Title", "Category", "City", "Type", "Salary", "Source"].join(","),
+        ...filtered.map(r => [
+          `"${r.title}"`,
+          `"${r.category}"`,
+          `"${r.city}"`,
+          `"${r.employment_type}"`,
+          `"${r.amtMin} ${r.currency}"`,
+          `"${r.portal}"`
+        ].join(","))
+      ].join("\n");
 
-// Print
-document.getElementById("printBtn")?.addEventListener("click", () => {
-  window.print();
-});
+      const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `payscale-data-${new Date().toISOString().split('T')[0]}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  }
 
-// Language change listener
-window.addEventListener("languageChanged", () => {
-  // Update all translations
-  setFirstOption(document.getElementById("f-city"), t('all_cities') || 'All cities');
-  setFirstOption(document.getElementById("f-category"), t('all_categories') || 'All categories');
-  setFirstOption(document.getElementById("f-etype"), t('all_types') || 'All types');
-  setFirstOption(document.getElementById("f-period"), t('all_periods') || 'All periods');
-  
-  populateFilters();
-  updateView();
-});
+  // Export JSON
+  const jsonBtn = document.getElementById("exportJson");
+  if (jsonBtn) {
+    jsonBtn.addEventListener("click", () => {
+      const json = JSON.stringify(filtered, null, 2);
+      const blob = new Blob([json], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `payscale-data-${new Date().toISOString().split('T')[0]}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  }
+
+  // Print
+  const printBtn = document.getElementById("printBtn");
+  if (printBtn) {
+    printBtn.addEventListener("click", () => {
+      window.print();
+    });
+  }
+
+  // Language change listener ✅ FIXED
+  window.addEventListener("languageChanged", () => {
+    updateFilterLabels();
+    populateFilters();
+    updateView();
+  });
+};
 
 // ============================================
 // INITIALIZATION
 // ============================================
 
-// Wait for i18n to be ready
 const initDashboard = () => {
   if (!window.i18n) {
     console.warn("[Dashboard] i18n not ready, retrying in 100ms...");
@@ -572,14 +643,17 @@ const initDashboard = () => {
   }
 
   console.log("[Dashboard] Initializing with", NORMALIZED.length, "salary records");
-  
+
+  // Initialize UI
+  updateFilterLabels();
   populateFilters();
   updateView();
+  attachEventListeners();
 
   console.log("[Dashboard] ✅ Loaded successfully");
 };
 
-// Start initialization
+// Start initialization when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initDashboard);
 } else {
