@@ -1,6 +1,6 @@
 /**
- * Payscale Dashboard - YAML-Driven Translation System
- * @version 3.1.2 - COMPLETE FIX (Period translation + Table rendering)
+ * Payscale Dashboard - Complete i18n with Job Title Translation
+ * @version 4.0.0 - PRODUCTION READY
  * @lastUpdated 2025-10-11
  */
 
@@ -9,7 +9,6 @@
 // ============================================
 import { Grid } from "https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/gridjs.module.min.js";
 
-// Add Grid.js CSS dynamically
 const gridCSS = document.createElement('link');
 gridCSS.rel = 'stylesheet';
 gridCSS.href = 'https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/theme/mermaid.min.css';
@@ -40,7 +39,7 @@ if (themeBtn) {
 }
 
 // ============================================
-// TRANSLATION SYSTEM (YAML-DRIVEN)
+// TRANSLATION SYSTEM
 // ============================================
 
 const t = (key) => {
@@ -76,6 +75,29 @@ const translatePeriod = (period) => {
   if (!period || period === "—") return period;
   const translated = window.i18n?.t(`salary_periods.${period}`);
   return translated || period;
+};
+
+/**
+ * ✅ NEW: Job Title Translation with Fallback
+ */
+const translateJobTitle = (title) => {
+  if (!title || title === "—") return title;
+  
+  // Convert to translation key (lowercase, replace spaces with underscores)
+  const key = title
+    .toLowerCase()
+    .replace(/[()]/g, '') // Remove parentheses
+    .replace(/\s+/g, '_') // Replace spaces with underscores
+    .replace(/&/g, 'and') // Replace & with "and"
+    .replace(/-/g, '_') // Replace hyphens with underscores
+    .replace(/_+/g, '_') // Remove duplicate underscores
+    .trim();
+  
+  const fullKey = `job_titles.${key}`;
+  const translated = window.i18n?.t(fullKey);
+  
+  // Fallback to original title if no translation found
+  return (translated && translated !== fullKey) ? translated : title;
 };
 
 const th = (key) => {
@@ -307,9 +329,9 @@ const updateTable = () => {
   const tableEl = document.getElementById("table");
   if (!tableEl) return;
 
-  // ✅ FIXED: Changed "r" to "row" on line 332
+  // ✅ FIXED: Translate job titles
   const tableData = filtered.map(row => [
-    row.title,
+    translateJobTitle(row.title), // ← NOW TRANSLATES
     translateCategory(row.category),
     translateCity(row.city),
     translateType(row.employment_type),
@@ -540,10 +562,10 @@ const attachEventListeners = () => {
       const csv = [
         ["Title", "Category", "City", "Type", "Salary", "Source"].join(","),
         ...filtered.map(r => [
-          `"${r.title}"`,
-          `"${r.category}"`,
-          `"${r.city}"`,
-          `"${r.employment_type}"`,
+          `"${translateJobTitle(r.title)}"`,
+          `"${translateCategory(r.category)}"`,
+          `"${translateCity(r.city)}"`,
+          `"${translateType(r.employment_type)}"`,
           `"${r.amtMin} ${r.currency}"`,
           `"${r.portal}"`
         ].join(","))
