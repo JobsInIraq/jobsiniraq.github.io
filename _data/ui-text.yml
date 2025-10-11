@@ -1,140 +1,193 @@
-# User interface text and labels
-# Verified for Iraqi job market context
-# Theme: Minimal Mistakes Jekyll
-# Last updated: 2025
+# JobsInIraq Complete Translation Database
+# Verified for Iraqi Job Market - All 19 Governorates
+# Languages: English (en), Arabic (ar), Kurdish Sorani (ckb)
+# Last updated: 2025-01-10
 
-# English (Default - International Standard)
-# -----------------------------------------
+# ============================================
+# ENGLISH (DEFAULT)
+# ============================================
 en: &DEFAULT_EN
-  skip_links: "Skip links"
-  skip_primary_nav: "Skip to primary navigation"
-  skip_content: "Skip to content"
-  skip_footer: "Skip to footer"
-  page: "Page"
-  pagination_previous: "Previous"
-  pagination_next: "Next"
-  breadcrumb_home_label: "Home"
-  breadcrumb_separator: "/"
-  menu_label: "Toggle menu"
-  search_label: "Toggle search"
-  toc_label: "On this page"
-  ext_link_label: "Direct link"
-  less_than: "less than"
-  minute_read: "minute read"
-  share_on_label: "Share on"
-  meta_label:
-  tags_label: "Tags:"
-  categories_label: "Categories:"
-  date_label: "Updated:"
-  comments_label: "Leave a comment"
-  comments_title: "Comments"
-  more_label: "Learn more"
-  related_label: "You may also enjoy"
-  follow_label: "Follow:"
-  feed_label: "Feed"
-  powered_by: "Powered by"
-  website_label: "Website"
-  email_label: "Email"
-  recent_posts: "Recent posts"
-  undefined_wpm: "Undefined parameter words_per_minute at _config.yml"
-  comment_form_info: "Your email address will not be published. Required fields are marked"
-  comment_form_comment_label: "Comment"
-  comment_form_md_info: "Markdown is supported."
-  comment_form_name_label: "Name"
-  comment_form_email_label: "Email address"
-  comment_form_website_label: "Website (optional)"
-  comment_btn_submit: "Submit comment"
-  comment_btn_submitted: "Submitted"
-  comment_success_msg: "Thanks for your comment! It will show on the site once it has been approved."
-  comment_error_msg: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
-  loading_label: "Loading..."
-  search_label_text: "Enter your search term..."
-  search_placeholder_text: "Enter your search term..."
-  search_algolia_no_results: "No results"
-  results_found: "Result(s) found"
-  back_to_top: "Back to top"
+  # === NAVIGATION ===
+  navigation:
+    home: "Home"
+    jobs: "Jobs"
+    payscale: "Salary Guide"
+    dashboard: "Dashboard"
+    recruitment_process: "Recruitment Process"
+    innovation: "Innovation"
+    about: "About"
+    contact: "Contact"
   
-  # === IRAQI JOB MARKET EXTENSIONS ===
-  
-  # Iraqi Cities (Official English Names)
+  # === ALL 19 IRAQI GOVERNORATES (2025) ===
   cities:
-    Baghdad: "Baghdad"
+    # Kurdistan Region (4 governorates)
     Erbil: "Erbil"
-    Basra: "Basra"
     Sulaymaniyah: "Sulaymaniyah"
-    Kirkuk: "Kirkuk"
-    Mosul: "Mosul"
-    Najaf: "Najaf"
-    Karbala: "Karbala"
     Duhok: "Duhok"
-    Anbar: "Anbar"
-    Diyala: "Diyala"
-    Wasit: "Wasit"
-    Maysan: "Maysan"
-    Dhi_Qar: "Dhi Qar"
+    Halabja: "Halabja"  # Newest - approved April 2025
+    
+    # Central Iraq
+    Baghdad: "Baghdad"
     Babil: "Babil"
-    Nineveh: "Nineveh"
+    Karbala: "Karbala"
+    Najaf: "Najaf"
+    Wasit: "Wasit"
     Salah_ad_Din: "Salah ad Din"
+    Diyala: "Diyala"
+    
+    # Northern Iraq
+    Nineveh: "Nineveh"
+    Kirkuk: "Kirkuk"
+    
+    # Southern Iraq
+    Basra: "Basra"
+    Dhi_Qar: "Dhi Qar"
+    Maysan: "Maysan"
     Muthanna: "Al-Muthanna"
+    Qadisiyyah: "Qadisiyyah"
+    
+    # Western Iraq
+    Anbar: "Anbar"
+    
+    # Major Cities (Capitals & Economic Centers)
+    Mosul: "Mosul"
+    Ramadi: "Ramadi"
+    Hillah: "Hillah"
+    Nasiriyah: "Nasiriyah"
+    Amarah: "Amarah"
+    Samawah: "Samawah"
+    Kut: "Kut"
+    Tikrit: "Tikrit"
+    Baqubah: "Baqubah"
+    Al_Diwaniyah: "Al Diwaniyah"
+    Zakho: "Zakho"
+    Akre: "Akre"
+    Sinjar: "Sinjar"
+    Tall_Afar: "Tall Afar"
+    Samarra: "Samarra"
+    Kufa: "Kufa"
+    Umm_Qasr: "Umm Qasr"
   
-  # Job Categories (Iraqi Labor Market Standard)
+  # === COMPLETE JOB CATEGORIES (Iraq Employment Outlook 2025) ===
   job_categories:
+    # Technology & IT
     IT: "Information Technology"
-    "Human Resources": "Human Resources"
+    "Software Development": "Software Development"
+    "Cybersecurity": "Cybersecurity"
+    "Data Science": "Data Science"
+    Telecommunications: "Telecommunications"
+    
+    # Engineering (Major Sectors)
     Engineering: "Engineering"
     "Civil Engineering": "Civil Engineering"
     "Electrical Engineering": "Electrical Engineering"
     "Mechanical Engineering": "Mechanical Engineering"
     "Petroleum Engineering": "Petroleum Engineering"
-    Management: "Management"
-    Finance: "Finance"
-    Marketing: "Marketing"
-    Sales: "Sales"
-    Business: "Business"
-    "Customer Service": "Customer Service"
-    Design: "Design"
-    Healthcare: "Healthcare"
-    Education: "Education"
-    Legal: "Legal"
-    Construction: "Construction"
+    "Chemical Engineering": "Chemical Engineering"
+    
+    # Oil & Gas (Dominant Sector - 70% GDP)
     "Oil & Gas": "Oil & Gas"
     Energy: "Energy"
-    Telecommunications: "Telecommunications"
+    
+    # Construction & Real Estate
+    Construction: "Construction"
+    "Real Estate": "Real Estate"
+    Architecture: "Architecture"
+    
+    # Business & Finance
+    Finance: "Finance"
     Banking: "Banking"
-    Logistics: "Logistics"
-    Procurement: "Procurement"
+    Accounting: "Accounting"
+    Business: "Business"
+    "Business Development": "Business Development"
+    "Project Management": "Project Management"
+    
+    # Sales & Marketing
+    Sales: "Sales"
+    Marketing: "Marketing"
+    "Digital Marketing": "Digital Marketing"
+    "Customer Service": "Customer Service"
+    
+    # Human Resources
+    "Human Resources": "Human Resources"
+    Recruitment: "Recruitment"
+    Training: "Training & Development"
+    
+    # Healthcare
+    Healthcare: "Healthcare"
+    Medical: "Medical"
+    Nursing: "Nursing"
+    Pharmacy: "Pharmacy"
+    
+    # Education
+    Education: "Education"
+    Teaching: "Teaching"
+    "Academic Research": "Academic Research"
+    
+    # Government & Public Sector
     "Government & Public Sector": "Government & Public Sector"
+    "Public Administration": "Public Administration"
+    
+    # NGO & International
     NGO: "NGO & International Organizations"
+    "Development Programs": "Development Programs"
+    
+    # Services
+    Logistics: "Logistics"
+    "Supply Chain": "Supply Chain"
+    Procurement: "Procurement"
     Security: "Security"
     "Hospitality & Tourism": "Hospitality & Tourism"
     Media: "Media & Communications"
-    "Real Estate": "Real Estate"
+    
+    # Primary Sectors
     Agriculture: "Agriculture"
     Manufacturing: "Manufacturing"
     Retail: "Retail"
+    "Food & Beverage": "Food & Beverage"
+    
+    # Creative & Design
+    Design: "Design"
+    "Graphic Design": "Graphic Design"
+    "UX/UI Design": "UX/UI Design"
+    
+    # Legal
+    Legal: "Legal"
+    "Compliance & Risk": "Compliance & Risk"
+    
+    # Other
+    Administration: "Administration"
+    Operations: "Operations"
+    Quality: "Quality Assurance"
   
-  # Employment Types (Iraqi Labor Law Standard)
+  # === EMPLOYMENT TYPES (Iraqi Labor Law 2025) ===
   employment_types:
     "Full-Time": "Full-Time"
     "Part-Time": "Part-Time"
     Contract: "Contract"
     "Fixed-Term Contract": "Fixed-Term Contract"
     Temporary: "Temporary"
+    Permanent: "Permanent"
     Freelance: "Freelance"
     Internship: "Internship"
     Consultant: "Consultant"
     Remote: "Remote"
     Hybrid: "Hybrid"
+    "On-Site": "On-Site"
+    "Project-Based": "Project-Based"
+    Seasonal: "Seasonal"
+    Volunteer: "Volunteer"
   
-  # Salary Periods
+  # === SALARY PERIODS ===
   salary_periods:
     monthly: "Monthly"
     hourly: "Hourly"
     daily: "Daily"
-    yearly: "Yearly"
     weekly: "Weekly"
+    yearly: "Yearly"
+    "per_project": "Per Project"
   
-  # Payscale Dashboard UI
+  # === PAYSCALE DASHBOARD ===
   payscale:
     title: "Iraq Payscale Dashboard"
     subtitle: "Salary Insights for the Iraqi Job Market"
@@ -148,7 +201,7 @@ en: &DEFAULT_EN
     table_description: "Search, sort, and filter salary data"
     median_salary: "Median Salary"
     salary_range_iqr: "Salary Range (IQR)"
-    sample_size: "Data Points"
+    sample_size: "Sample Size"
     all_cities: "All Cities"
     all_categories: "All Categories"
     all_types: "All Employment Types"
@@ -159,8 +212,8 @@ en: &DEFAULT_EN
     print_report: "Print Report"
     result_singular: "result"
     result_plural: "results"
-    city_legend: "Cities"
-    category_legend: "Job Categories"
+    city_legend: "City Legend"
+    category_legend: "Category Legend"
     highest_city: "Highest paying city"
     highest_category: "Highest paying sector"
     loading_data: "Loading data..."
@@ -169,7 +222,7 @@ en: &DEFAULT_EN
     currency_usd: "USD"
     per_month: "per month"
   
-  # Table Headers
+  # === TABLE HEADERS ===
   table_headers:
     job_title: "Job Title"
     category: "Category"
@@ -182,160 +235,223 @@ en: &DEFAULT_EN
     last_verified: "Last Updated"
     data_source: "Source"
     actions: "Actions"
+    company: "Company"
+    experience: "Experience Required"
+    posted_date: "Posted Date"
   
-  # Navigation
-  navigation:
-    home: "Home"
-    jobs: "Jobs"
-    payscale: "Salary Guide"
-    dashboard: "Dashboard"
-    recruitment_process: "Recruitment Process"
-    innovation: "Innovation"
-    about: "About"
-    contact: "Contact"
-
-# English Variants
-en-US:
-  <<: *DEFAULT_EN
-en-GB:
-  <<: *DEFAULT_EN
-en-CA:
-  <<: *DEFAULT_EN
-en-AU:
-  <<: *DEFAULT_EN
-
-# Arabic (Modern Standard Arabic - Iraq)
-# ---------------------------------------
+  # === COMMON UI ELEMENTS ===
+  common:
+    selectLanguage: "Select Language"
+    search: "Search"
+    filter: "Filter"
+    sort: "Sort"
+    apply: "Apply"
+    cancel: "Cancel"
+    save: "Save"
+    delete: "Delete"
+    edit: "Edit"
+    view: "View"
+    download: "Download"
+    upload: "Upload"
+    submit: "Submit"
+    loading: "Loading..."
+    error: "Error"
+    success: "Success"
+    warning: "Warning"
+    info: "Information"
+    yes: "Yes"
+    no: "No"
+    confirm: "Confirm"
+    back: "Back"
+    next: "Next"
+    previous: "Previous"
+    close: "Close"
+    
+# ============================================
+# ARABIC (MODERN STANDARD - IRAQ)
+# ============================================
 ar: &DEFAULT_AR
-  skip_links: "تخطي الروابط"
-  skip_primary_nav: "الانتقال إلى التنقل الرئيسي"
-  skip_content: "الانتقال إلى المحتوى"
-  skip_footer: "الانتقال إلى التذييل"
-  page: "صفحة"
-  pagination_previous: "السابق"
-  pagination_next: "التالي"
-  breadcrumb_home_label: "الرئيسية"
-  breadcrumb_separator: "/"
-  menu_label: "قائمة التنقل"
-  search_label: "البحث"
-  toc_label: "في هذه الصفحة"
-  ext_link_label: "رابط مباشر"
-  less_than: "أقل من"
-  minute_read: "دقيقة قراءة"
-  share_on_label: "مشاركة على"
-  meta_label:
-  tags_label: "الوسوم:"
-  categories_label: "الفئات:"
-  date_label: "آخر تحديث:"
-  comments_label: "اترك تعليقاً"
-  comments_title: "التعليقات"
-  more_label: "اقرأ المزيد"
-  related_label: "قد يهمك أيضاً"
-  follow_label: "تابعنا:"
-  feed_label: "آر إس إس"
-  powered_by: "مدعوم بواسطة"
-  website_label: "الموقع الإلكتروني"
-  email_label: "البريد الإلكتروني"
-  recent_posts: "المنشورات الأخيرة"
-  undefined_wpm: "معامل words_per_minute غير معرّف في ملف _config.yml"
-  comment_form_info: "لن يتم نشر عنوان بريدك الإلكتروني. الحقول المطلوبة مشار إليها بـ"
-  comment_form_comment_label: "التعليق"
-  comment_form_md_info: "تنسيق Markdown مدعوم."
-  comment_form_name_label: "الاسم"
-  comment_form_email_label: "عنوان البريد الإلكتروني"
-  comment_form_website_label: "الموقع الإلكتروني (اختياري)"
-  comment_btn_submit: "إرسال التعليق"
-  comment_btn_submitted: "تم الإرسال"
-  comment_success_msg: "شكراً لتعليقك! سيظهر على الموقع بعد الموافقة عليه."
-  comment_error_msg: "عذراً، حدث خطأ في الإرسال. يرجى التأكد من ملء جميع الحقول المطلوبة والمحاولة مرة أخرى."
-  loading_label: "جارٍ التحميل..."
-  search_label_text: "أدخل مصطلح البحث..."
-  search_placeholder_text: "أدخل مصطلح البحث..."
-  search_algolia_no_results: "لا توجد نتائج"
-  results_found: "نتيجة"
-  back_to_top: "العودة إلى الأعلى"
+  # === التنقل ===
+  navigation:
+    home: "الرئيسية"
+    jobs: "الوظائف"
+    payscale: "دليل الرواتب"
+    dashboard: "لوحة التحكم"
+    recruitment_process: "عملية التوظيف"
+    innovation: "الابتكار"
+    about: "عن الموقع"
+    contact: "اتصل بنا"
   
-  # === امتدادات سوق العمل العراقي ===
-  
-  # المدن العراقية (الأسماء الرسمية)
+  # === جميع المحافظات العراقية الـ 19 (2025) ===
   cities:
-    Baghdad: "بغداد"
+    # إقليم كردستان (4 محافظات)
     Erbil: "أربيل"
-    Basra: "البصرة"
     Sulaymaniyah: "السليمانية"
-    Kirkuk: "كركوك"
-    Mosul: "الموصل"
-    Najaf: "النجف"
-    Karbala: "كربلاء"
     Duhok: "دهوك"
-    Anbar: "الأنبار"
-    Diyala: "ديالى"
-    Wasit: "واسط"
-    Maysan: "ميسان"
-    Dhi_Qar: "ذي قار"
+    Halabja: "حلبجة"  # الأحدث - تمت الموافقة عليها أبريل 2025
+    
+    # وسط العراق
+    Baghdad: "بغداد"
     Babil: "بابل"
-    Nineveh: "نينوى"
+    Karbala: "كربلاء"
+    Najaf: "النجف"
+    Wasit: "واسط"
     Salah_ad_Din: "صلاح الدين"
+    Diyala: "ديالى"
+    
+    # شمال العراق
+    Nineveh: "نينوى"
+    Kirkuk: "كركوك"
+    
+    # جنوب العراق
+    Basra: "البصرة"
+    Dhi_Qar: "ذي قار"
+    Maysan: "ميسان"
     Muthanna: "المثنى"
+    Qadisiyyah: "القادسية"
+    
+    # غرب العراق
+    Anbar: "الأنبار"
+    
+    # المدن الكبرى (العواصم والمراكز الاقتصادية)
+    Mosul: "الموصل"
+    Ramadi: "الرمادي"
+    Hillah: "الحلة"
+    Nasiriyah: "الناصرية"
+    Amarah: "العمارة"
+    Samawah: "السماوة"
+    Kut: "الكوت"
+    Tikrit: "تكريت"
+    Baqubah: "بعقوبة"
+    Al_Diwaniyah: "الديوانية"
+    Zakho: "زاخو"
+    Akre: "عقرة"
+    Sinjar: "سنجار"
+    Tall_Afar: "تلعفر"
+    Samarra: "سامراء"
+    Kufa: "الكوفة"
+    Umm_Qasr: "أم قصر"
   
-  # فئات الوظائف (معيار سوق العمل العراقي)
+  # === فئات الوظائف الكاملة (توقعات التوظيف في العراق 2025) ===
   job_categories:
+    # التكنولوجيا وتقنية المعلومات
     IT: "تقنية المعلومات"
-    "Human Resources": "الموارد البشرية"
+    "Software Development": "تطوير البرمجيات"
+    "Cybersecurity": "الأمن السيبراني"
+    "Data Science": "علم البيانات"
+    Telecommunications: "الاتصالات"
+    
+    # الهندسة (القطاعات الرئيسية)
     Engineering: "الهندسة"
     "Civil Engineering": "الهندسة المدنية"
     "Electrical Engineering": "الهندسة الكهربائية"
     "Mechanical Engineering": "الهندسة الميكانيكية"
     "Petroleum Engineering": "هندسة النفط"
-    Management: "الإدارة"
-    Finance: "المالية"
-    Marketing: "التسويق"
-    Sales: "المبيعات"
-    Business: "الأعمال"
-    "Customer Service": "خدمة العملاء"
-    Design: "التصميم"
-    Healthcare: "الرعاية الصحية"
-    Education: "التعليم"
-    Legal: "القانونية"
-    Construction: "البناء والتشييد"
+    "Chemical Engineering": "الهندسة الكيميائية"
+    
+    # النفط والغاز (القطاع المهيمن - 70٪ من الناتج المحلي الإجمالي)
     "Oil & Gas": "النفط والغاز"
     Energy: "الطاقة"
-    Telecommunications: "الاتصالات"
+    
+    # البناء والعقارات
+    Construction: "البناء والتشييد"
+    "Real Estate": "العقارات"
+    Architecture: "الهندسة المعمارية"
+    
+    # الأعمال والمالية
+    Finance: "المالية"
     Banking: "الخدمات المصرفية"
-    Logistics: "اللوجستيات"
-    Procurement: "المشتريات"
+    Accounting: "المحاسبة"
+    Business: "الأعمال"
+    "Business Development": "تطوير الأعمال"
+    "Project Management": "إدارة المشاريع"
+    
+    # المبيعات والتسويق
+    Sales: "المبيعات"
+    Marketing: "التسويق"
+    "Digital Marketing": "التسويق الرقمي"
+    "Customer Service": "خدمة العملاء"
+    
+    # الموارد البشرية
+    "Human Resources": "الموارد البشرية"
+    Recruitment: "التوظيف"
+    Training: "التدريب والتطوير"
+    
+    # الرعاية الصحية
+    Healthcare: "الرعاية الصحية"
+    Medical: "الطب"
+    Nursing: "التمريض"
+    Pharmacy: "الصيدلة"
+    
+    # التعليم
+    Education: "التعليم"
+    Teaching: "التدريس"
+    "Academic Research": "البحث الأكاديمي"
+    
+    # الحكومة والقطاع العام
     "Government & Public Sector": "القطاع الحكومي"
+    "Public Administration": "الإدارة العامة"
+    
+    # المنظمات غير الحكومية والدولية
     NGO: "المنظمات غير الحكومية والدولية"
+    "Development Programs": "برامج التنمية"
+    
+    # الخدمات
+    Logistics: "اللوجستيات"
+    "Supply Chain": "سلسلة التوريد"
+    Procurement: "المشتريات"
     Security: "الأمن"
     "Hospitality & Tourism": "الضيافة والسياحة"
     Media: "الإعلام والاتصالات"
-    "Real Estate": "العقارات"
+    
+    # القطاعات الأولية
     Agriculture: "الزراعة"
     Manufacturing: "التصنيع"
     Retail: "البيع بالتجزئة"
+    "Food & Beverage": "الأغذية والمشروبات"
+    
+    # الإبداع والتصميم
+    Design: "التصميم"
+    "Graphic Design": "التصميم الجرافيكي"
+    "UX/UI Design": "تصميم تجربة المستخدم"
+    
+    # القانونية
+    Legal: "القانونية"
+    "Compliance & Risk": "الامتثال وإدارة المخاطر"
+    
+    # أخرى
+    Administration: "الإدارة"
+    Operations: "العمليات"
+    Quality: "ضمان الجودة"
   
-  # أنواع التوظيف (معيار قانون العمل العراقي)
+  # === أنواع التوظيف (قانون العمل العراقي 2025) ===
   employment_types:
     "Full-Time": "دوام كامل"
     "Part-Time": "دوام جزئي"
     Contract: "عقد"
     "Fixed-Term Contract": "عقد محدد المدة"
     Temporary: "مؤقت"
+    Permanent: "دائم"
     Freelance: "عمل حر"
     Internship: "تدريب"
     Consultant: "استشاري"
     Remote: "عن بُعد"
     Hybrid: "مختلط"
+    "On-Site": "في الموقع"
+    "Project-Based": "على أساس المشروع"
+    Seasonal: "موسمي"
+    Volunteer: "تطوعي"
   
-  # فترات الرواتب
+  # === فترات الرواتب ===
   salary_periods:
     monthly: "شهري"
     hourly: "بالساعة"
     daily: "يومي"
-    yearly: "سنوي"
     weekly: "أسبوعي"
+    yearly: "سنوي"
+    "per_project": "لكل مشروع"
   
-  # لوحة بيانات الرواتب
+  # === لوحة بيانات الرواتب ===
   payscale:
     title: "لوحة رواتب العراق"
     subtitle: "معلومات الرواتب لسوق العمل العراقي"
@@ -360,8 +476,8 @@ ar: &DEFAULT_AR
     print_report: "طباعة التقرير"
     result_singular: "نتيجة"
     result_plural: "نتيجة"
-    city_legend: "المدن"
-    category_legend: "فئات الوظائف"
+    city_legend: "دليل المدن"
+    category_legend: "دليل الفئات"
     highest_city: "أعلى مدينة من حيث الرواتب"
     highest_category: "أعلى قطاع من حيث الرواتب"
     loading_data: "جارٍ تحميل البيانات..."
@@ -370,7 +486,7 @@ ar: &DEFAULT_AR
     currency_usd: "دولار أمريكي"
     per_month: "شهرياً"
   
-  # رؤوس أعمدة الجدول
+  # === رؤوس أعمدة الجدول ===
   table_headers:
     job_title: "المسمى الوظيفي"
     category: "الفئة"
@@ -383,193 +499,258 @@ ar: &DEFAULT_AR
     last_verified: "آخر تحديث"
     data_source: "المصدر"
     actions: "الإجراءات"
+    company: "الشركة"
+    experience: "الخبرة المطلوبة"
+    posted_date: "تاريخ النشر"
   
-  # التنقل
-  navigation:
-    home: "الرئيسية"
-    jobs: "الوظائف"
-    payscale: "دليل الرواتب"
-    dashboard: "لوحة التحكم"
-    recruitment_process: "عملية التوظيف"
-    innovation: "الابتكار"
-    about: "عن الموقع"
-    contact: "اتصل بنا"
+  # === عناصر الواجهة المشتركة ===
+  common:
+    selectLanguage: "اختر اللغة"
+    search: "بحث"
+    filter: "تصفية"
+    sort: "ترتيب"
+    apply: "تطبيق"
+    cancel: "إلغاء"
+    save: "حفظ"
+    delete: "حذف"
+    edit: "تعديل"
+    view: "عرض"
+    download: "تنزيل"
+    upload: "رفع"
+    submit: "إرسال"
+    loading: "جارٍ التحميل..."
+    error: "خطأ"
+    success: "نجاح"
+    warning: "تحذير"
+    info: "معلومات"
+    yes: "نعم"
+    no: "لا"
+    confirm: "تأكيد"
+    back: "رجوع"
+    next: "التالي"
+    previous: "السابق"
+    close: "إغلاق"
 
-# Arabic Variants (Iraq Standard)
-ar-IQ:
-  <<: *DEFAULT_AR
-
-# Kurdish Sorani / Central Kurdish (Iraq Official Standard)
-# --------------------------------------------------------
-# Locale: ckb (Central Kurdish)
-# Script: Kurdo-Arabic (Right-to-Left)
-# Standard: Sulaymaniyah variant (Iraq)
-
+# ============================================
+# KURDISH SORANI (CENTRAL KURDISH - IRAQ)
+# ============================================
 ckb:
-  skip_links: "بەستەرەکان تێپەڕ بکە"
-  skip_primary_nav: "بچۆ بۆ ڕێنیشاندەری سەرەکی"
-  skip_content: "بچۆ بۆ ناوەڕۆک"
-  skip_footer: "بچۆ بۆ پاشبەرگ"
-  page: "لاپەڕە"
-  pagination_previous: "پێشوو"
-  pagination_next: "دواتر"
-  breadcrumb_home_label: "سەرەتا"
-  breadcrumb_separator: "/"
-  menu_label: "لیستی هەڵبژاردن"
-  search_label: "گەڕان"
-  toc_label: "لەم لاپەڕەیەدا"
-  ext_link_label: "بەستەری ڕاستەوخۆ"
-  less_than: "کەمتر لە"
-  minute_read: "خولەک خوێندنەوە"
-  share_on_label: "هاوبەشی بکە لە"
-  meta_label:
-  tags_label: "تاگەکان:"
-  categories_label: "پۆلەکان:"
-  date_label: "دوایین نوێکردنەوە:"
-  comments_label: "بۆچوونێک بنووسە"
-  comments_title: "بۆچوونەکان"
-  more_label: "زیاتر بخوێنەوە"
-  related_label: "لەوانەیە ئەمانەت پێ خۆش بێت"
-  follow_label: "شوێنمان بکەوە:"
-  feed_label: "فیید"
-  powered_by: "بە هێزی"
-  website_label: "ماڵپەڕ"
-  email_label: "ئیمەیڵ"
-  recent_posts: "پۆستە تازەکان"
-  undefined_wpm: "پارامێتەری words_per_minute دیاری نەکراوە لە فایلی _config.yml"
-  comment_form_info: "ناونیشانی ئیمەیڵەکەت بڵاو ناکرێتەوە. خانە پێویستەکان نیشانە کراون"
-  comment_form_comment_label: "بۆچوون"
-  comment_form_md_info: "فۆرماتی Markdown پشتگیری کراوە"
-  comment_form_name_label: "ناو"
-  comment_form_email_label: "ناونیشانی ئیمەیڵ"
-  comment_form_website_label: "ماڵپەڕ (ئارەزوومەندانە)"
-  comment_btn_submit: "ناردنی بۆچوون"
-  comment_btn_submitted: "نێردرا"
-  comment_success_msg: "سوپاس بۆ بۆچوونەکەت! دوای پەسەندکردن لەسەر ماڵپەڕەکە دەردەکەوێت"
-  comment_error_msg: "ببورە، هەڵەیەک ڕوویدا لە کاتی ناردن. تکایە دڵنیابە لە پڕکردنەوەی هەموو خانە پێویستەکان و دووبارە هەوڵ بدەرەوە"
-  loading_label: "بارکردن..."
-  search_label_text: "زاراوەی گەڕان بنووسە..."
-  search_placeholder_text: "زاراوەی گەڕان بنووسە..."
-  search_algolia_no_results: "هیچ ئەنجامێک نەدۆزرایەوە"
-  results_found: "ئەنجام"
-  back_to_top: "گەڕانەوە بۆ سەرەوە"
+  # === ڕێنیشاندەر ===
+  navigation:
+    home: "سەرەتا"
+    jobs: "کارەکان"
+    payscale: "ڕێبەری مووچە"
+    dashboard: "داشبۆرد"
+    recruitment_process: "پرۆسەی دامەزراندن"
+    innovation: "نوێکاری"
+    about: "دەربارە"
+    contact: "پەیوەندی"
   
-  # === درێژکراوەکانی بازاڕی کاری عێراق ===
-  
-  # شارەکانی عێراق (ناوە فەرمیەکان بە کوردی سۆرانی)
+  # === هەموو 19 پارێزگاکانی عێراق (2025) ===
   cities:
-    Baghdad: "بەغداد"
+    # هەرێمی کوردستان (4 پارێزگا)
     Erbil: "هەولێر"
-    Basra: "بەسرە"
     Sulaymaniyah: "سلێمانی"
-    Kirkuk: "کەرکووک"
-    Mosul: "موسڵ"
-    Najaf: "نەجەف"
-    Karbala: "کەربەلا"
     Duhok: "دهۆک"
-    Anbar: "ئەنبار"
-    Diyala: "دیالە"
-    Wasit: "واسیت"
-    Maysan: "مەیسان"
-    Dhi_Qar: "زیقار"
+    Halabja: "هەڵەبجە"  # نوێترین - پەسەندکراوە نیسانی 2025
+    
+    # ناوەڕاستی عێراق
+    Baghdad: "بەغداد"
     Babil: "بابل"
-    Nineveh: "نەینەوا"
+    Karbala: "کەربەلا"
+    Najaf: "نەجەف"
+    Wasit: "واسیت"
     Salah_ad_Din: "سەلاحەدین"
-    Muthanna: "موسەنا"
+    Diyala: "دیالە"
+    
+    # باکووری عێراق
+    Nineveh: "نەینەوا"
+    Kirkuk: "کەرکوک"
+    
+    # باشووری عێراق
+    Basra: "بەسرە"
+    Dhi_Qar: "زیقار"
+    Maysan: "مەیسان"
+    Muthanna: "موسەننا"
+    Qadisiyyah: "قادسیە"
+    
+    # ڕۆژئاوای عێراق
+    Anbar: "ئەنبار"
+    
+    # شارە گەورەکان (پایتەخت و ناوەندە ئابوورییەکان)
+    Mosul: "مووسڵ"
+    Ramadi: "ڕەمادی"
+    Hillah: "حلە"
+    Nasiriyah: "ناسریە"
+    Amarah: "عەمارە"
+    Samawah: "سەماوە"
+    Kut: "کووت"
+    Tikrit: "تکریت"
+    Baqubah: "بەعقوبە"
+    Al_Diwaniyah: "دیوانیە"
+    Zakho: "زاخۆ"
+    Akre: "عاکرێ"
+    Sinjar: "شەنگال"
+    Tall_Afar: "تەلعەفەر"
+    Samarra: "سامەڕا"
+    Kufa: "کوفە"
+    Umm_Qasr: "ئومقەسر"
   
-  # پۆلەکانی کار (ستانداردی بازاڕی کاری عێراق)
+  # === پۆلە تەواوەکانی کار (پێشبینیی دامەزراندنی عێراق 2025) ===
   job_categories:
-    IT: "تەکنەلۆژیای زانیاری"
-    "Human Resources": "سەرچاوە مرۆییەکان"
+    # تەکنەلۆجیا و زانیاری
+    IT: "تەکنەلۆجیای زانیاری"
+    "Software Development": "گەشەپێدانی نەرمەکاڵا"
+    "Cybersecurity": "ئاسایشی سایبەری"
+    "Data Science": "زانستی داتا"
+    Telecommunications: "پەیوەندییەکان"
+    
+    # ئەندازیاری (بەشە سەرەکییەکان)
     Engineering: "ئەندازیاری"
-    "Civil Engineering": "ئەندازیاری تەلارسازی"
-    "Electrical Engineering": "ئەندازیاری کارەبا"
-    "Mechanical Engineering": "ئەندازیاری مەکانیک"
+    "Civil Engineering": "ئەندازیاری مەدەنی"
+    "Electrical Engineering": "ئەندازیاری کارەبایی"
+    "Mechanical Engineering": "ئەندازیاری میکانیکی"
     "Petroleum Engineering": "ئەندازیاری نەوت"
-    Management: "بەڕێوەبردن"
-    Finance: "دارایی"
-    Marketing: "بازاڕگەری"
-    Sales: "فرۆشتن"
-    Business: "بازرگانی"
-    "Customer Service": "خزمەتگوزاری کڕیار"
-    Design: "دیزاین"
-    Healthcare: "چاودێری تەندروستی"
-    Education: "پەروەردە"
-    Legal: "یاسایی"
-    Construction: "بینا و تەلارسازی"
+    "Chemical Engineering": "ئەندازیاری کیمیایی"
+    
+    # نەوت و گاز (بەشی زاڵ - 70٪ تێکڕای ناوخۆیی)
     "Oil & Gas": "نەوت و گاز"
     Energy: "وزە"
-    Telecommunications: "پەیوەندییەکان"
-    Banking: "بانکی"
-    Logistics: "لۆجستیک"
+    
+    # بیناسازی و خانووبەرە
+    Construction: "بیناسازی"
+    "Real Estate": "خانووبەرە"
+    Architecture: "تەلارسازی"
+    
+    # بازرگانی و دارایی
+    Finance: "دارایی"
+    Banking: "بانکداری"
+    Accounting: "ژمێریاری"
+    Business: "بازرگانی"
+    "Business Development": "گەشەپێدانی بازرگانی"
+    "Project Management": "بەڕێوەبردنی پرۆژە"
+    
+    # فرۆشتن و بازاڕگەری
+    Sales: "فرۆشتن"
+    Marketing: "بازاڕگەری"
+    "Digital Marketing": "بازاڕگەری دیجیتاڵی"
+    "Customer Service": "خزمەتگوزاری کڕیار"
+    
+    # سەرچاوەی مرۆیی
+    "Human Resources": "سەرچاوەی مرۆیی"
+    Recruitment: "دامەزراندن"
+    Training: "ڕاهێنان و گەشەپێدان"
+    
+    # چاودێری تەندروستی
+    Healthcare: "چاودێری تەندروستی"
+    Medical: "پزیشکی"
+    Nursing: "پەرستاری"
+    Pharmacy: "دەرمانسازی"
+    
+    # پەروەردە
+    Education: "پەروەردە"
+    Teaching: "وانەوتنەوە"
+    "Academic Research": "توێژینەوەی ئەکادیمی"
+    
+    # حکومەت و بەشی گشتی
+    "Government & Public Sector": "بەشی حکومی"
+    "Public Administration": "بەڕێوەبردنی گشتی"
+    
+    # ڕێکخراوە نەحکومییەکان و نێودەوڵەتییەکان
+    NGO: "ڕێکخراوە نەحکومییەکان و نێودەوڵەتییەکان"
+    "Development Programs": "بەرنامەکانی گەشەپێدان"
+    
+    # خزمەتگوزارییەکان
+    Logistics: "لۆژستیک"
+    "Supply Chain": "زنجیرەی دابینکردن"
     Procurement: "کڕین"
-    "Government & Public Sector": "کەرتی حکومی"
-    NGO: "ڕێکخراوە ناحکومییەکان و نێودەوڵەتییەکان"
     Security: "ئاسایش"
     "Hospitality & Tourism": "میوانداری و گەشتیاری"
-    Media: "میدیا و پەیوەندی"
-    "Real Estate": "موڵک"
+    Media: "میدیا و پەیوەندییەکان"
+    
+    # بەشە سەرەتاییەکان
     Agriculture: "کشتوکاڵ"
     Manufacturing: "بەرهەمهێنان"
     Retail: "فرۆشتنی وردە"
+    "Food & Beverage": "خواردن و خواردنەوە"
+    
+    # داهێنان و دیزاین
+    Design: "دیزاین"
+    "Graphic Design": "دیزاینی گرافیکی"
+    "UX/UI Design": "دیزاینی ئەزموونی بەکارهێنەر"
+    
+    # یاسایی
+    Legal: "یاسایی"
+    "Compliance & Risk": "گونجاندن و بەڕێوەبردنی مەترسی"
+    
+    # هیتر
+    Administration: "بەڕێوەبردن"
+    Operations: "کارەکان"
+    Quality: "دڵنیایی جۆری"
   
-  # جۆرەکانی دامەزراندن (ستانداردی یاسای کاری عێراق)
+  # === جۆرەکانی دامەزراندن (یاسای کار عێراق 2025) ===
   employment_types:
-    "Full-Time": "کاری تەواو"
-    "Part-Time": "کاری بەشێک لە کات"
+    "Full-Time": "تەواو کات"
+    "Part-Time": "کاتی"
     Contract: "گرێبەست"
     "Fixed-Term Contract": "گرێبەستی کاتی دیاریکراو"
     Temporary: "کاتی"
-    Freelance: "سەربەخۆ"
+    Permanent: "هەمیشەیی"
+    Freelance: "کاری ئازاد"
     Internship: "ڕاهێنان"
     Consultant: "ڕاوێژکار"
-    Remote: "دوورەوە"
+    Remote: "دوور"
     Hybrid: "تێکەڵ"
+    "On-Site": "لە شوێن"
+    "Project-Based": "لەسەر بنەمای پرۆژە"
+    Seasonal: "وەرزی"
+    Volunteer: "خۆبەخش"
   
-  # ماوەکانی مووچە
+  # === ماوەکانی مووچە ===
   salary_periods:
     monthly: "مانگانە"
     hourly: "کاتژمێرێ"
     daily: "ڕۆژانە"
-    yearly: "ساڵانە"
     weekly: "هەفتانە"
+    yearly: "ساڵانە"
+    "per_project": "بۆ هەر پرۆژەیەک"
   
-  # داشبۆردی مووچە
+  # === داشبۆڕدی مووچەکان ===
   payscale:
-    title: "داشبۆردی مووچەی عێراق"
+    title: "داشبۆڕدی مووچەکانی عێراق"
     subtitle: "زانیاری مووچە بۆ بازاڕی کاری عێراق"
     data_source: "سەرچاوەی داتا"
-    all_salaries_monthly: "هەموو مووچەکان مانگانەن ئەگەر جیاواز نەوتبێت"
-    theme_toggle: "ڕووکار"
-    theme_light: "ڕووکاری ڕۆژ"
-    theme_dark: "ڕووکاری شەو"
-    ai_insights: "تێڕوانینی زیرەک"
+    all_salaries_monthly: "هەموو مووچەکان مانگانەن تا ئەگەر جیاواز نەکراوە"
+    theme_toggle: "دووخ"
+    theme_light: "دووخی ڕۆژ"
+    theme_dark: "دووخی شەو"
+    ai_insights: "تێڕوانینە زیرەکەکان"
     data_table: "خشتەی داتای مووچە"
-    table_description: "گەڕان، ڕیزکردن و پاڵاوتنی داتای مووچە"
-    median_salary: "مووچەی ناوەند"
+    table_description: "گەڕان، پۆلەکردن و پاڵاوتنی داتای مووچە"
+    median_salary: "ناوەندی مووچە"
     salary_range_iqr: "مەودای مووچە"
-    sample_size: "ژمارەی داتا"
+    sample_size: "قەبارەی داتا"
     all_cities: "هەموو شارەکان"
     all_categories: "هەموو پۆلەکان"
     all_types: "هەموو جۆرەکانی دامەزراندن"
     all_periods: "هەموو ماوەکان"
-    reset_filters: "دووبارە ڕێکخستنەوەی پاڵاوتن"
+    reset_filters: "ڕێکخستنەوەی پاڵاوتن"
     export_csv: "هەناردەی CSV"
     export_json: "هەناردەی JSON"
     print_report: "چاپکردنی ڕاپۆرت"
     result_singular: "ئەنجام"
     result_plural: "ئەنجام"
-    city_legend: "شارەکان"
-    category_legend: "پۆلەکانی کار"
-    highest_city: "بەرزترین شاری مووچە"
-    highest_category: "بەرزترین بەشی مووچە"
+    city_legend: "ڕێبەری شار"
+    category_legend: "ڕێبەری پۆل"
+    highest_city: "بەرزترین شار لە ڕووی مووچەوە"
+    highest_category: "بەرزترین بەش لە ڕووی مووچەوە"
     loading_data: "بارکردنی داتا..."
-    no_data: "هیچ داتایەکی مووچە نییە"
+    no_data: "هیچ داتایەکی مووچە بەردەست نییە"
     currency_iqd: "دینار"
     currency_usd: "دۆلار"
     per_month: "مانگانە"
   
-  # سەرپەڕەکانی خشتە
+  # === سەرپەڕەکانی خشتە ===
   table_headers:
     job_title: "ناونیشانی کار"
     category: "پۆل"
@@ -579,67 +760,37 @@ ckb:
     salary: "مووچە"
     minimum_salary: "کەمترین"
     maximum_salary: "زۆرترین"
-    last_verified: "دوایین نوێکردنەوە"
+    last_verified: "دوا نوێکردنەوە"
     data_source: "سەرچاوە"
     actions: "کردارەکان"
+    company: "کۆمپانیا"
+    experience: "ئەزموونی پێویست"
+    posted_date: "بەرواری بڵاوکردنەوە"
   
-  # ڕێنیشاندەر
-  navigation:
-    home: "سەرەتا"
-    jobs: "کارەکان"
-    payscale: "ڕێبەری مووچە"
-    dashboard: "داشبۆرد"
-    recruitment_process: "پرۆسەی دامەزراندن"
-    innovation: "داهێنان"
-    about: "دەربارە"
-    contact: "پەیوەندی"
-# Kurdish Sorani (Central Kurdish - Iraq Standard)
-# ------------------------------------------------
-ckb:
-  skip_links: "بەستەرەکان تێپەڕ بکە"
-  skip_primary_nav: "بچۆ بۆ ڕێنیشاندەری سەرەکی"
-  skip_content: "بچۆ بۆ ناوەڕۆک"
-  skip_footer: "بچۆ بۆ پاشبەرگ"
-  page: "لاپەڕە"
-  pagination_previous: "پێشوو"
-  pagination_next: "دواتر"
-  breadcrumb_home_label: "سەرەتا"
-  breadcrumb_separator: "/"
-  menu_label: "لیستی هەڵبژاردن"
-  search_label: "گەڕان"
-  toc_label: "لەم لاپەڕەیەدا"
-  ext_link_label: "بەستەری ڕاستەوخۆ"
-  less_than: "کەمتر لە"
-  minute_read: "خولەک خوێندنەوە"
-  share_on_label: "هاوبەشی بکە لە"
-  meta_label:
-  tags_label: "تاگەکان:"
-  categories_label: "پۆلەکان:"
-  date_label: "دوایین نوێکردنەوە:"
-  comments_label: "بۆچوونێک بنووسە"
-  comments_title: "بۆچوونەکان"
-  more_label: "زیاتر بخوێنەوە"
-  related_label: "لەوانەیە ئەمانەت پێ خۆش بێت"
-  follow_label: "شوێنمان بکەوە:"
-  feed_label: "فیید"
-  powered_by: "بە هێزی"
-  website_label: "ماڵپەڕ"
-  email_label: "ئیمەیڵ"
-  recent_posts: "پۆستە تازەکان"
-  undefined_wpm: "پارامێتەری words_per_minute دیاری نەکراوە لە فایلی _config.yml"
-  comment_form_info: "ناونیشانی ئیمەیڵەکەت بڵاو ناکرێتەوە. خانە پێویستەکان نیشانە کراون"
-  comment_form_comment_label: "بۆچوون"
-  comment_form_md_info: "فۆرماتی Markdown پشتگیری کراوە"
-  comment_form_name_label: "ناو"
-  comment_form_email_label: "ناونیشانی ئیمەیڵ"
-  comment_form_website_label: "ماڵپەڕ (ئارەزوومەندانە)"
-  comment_btn_submit: "ناردنی بۆچوون"
-  comment_btn_submitted: "نێردرا"
-  comment_success_msg: "سوپاس بۆ بۆچوونەکەت! دوای پەسەندکردن لەسەر ماڵپەڕەکە دەردەکەوێت"
-  comment_error_msg: "ببورە، هەڵەیەک ڕوویدا لە کاتی ناردن. تکایە دڵنیابە لە پڕکردنەوەی هەموو خانە پێویستەکان و دووبارە هەوڵ بدەرەوە"
-  loading_label: "بارکردن..."
-  search_label_text: "زاراوەی گەڕان بنووسە..."
-  search_placeholder_text: "زاراوەی گەڕان بنووسە..."
-  search_algolia_no_results: "هیچ ئەنجامێک نەدۆزرایەوە"
-  results_found: "ئەنجام"
-  back_to_top: "گەڕانەوە بۆ سەرەوە"
+  # === توخمە باوەکانی ڕووکار ===
+  common:
+    selectLanguage: "هەڵبژاردنی زمان"
+    search: "گەڕان"
+    filter: "پاڵاوتن"
+    sort: "ڕیزکردن"
+    apply: "جێبەجێکردن"
+    cancel: "هەڵوەشاندنەوە"
+    save: "پاشەکەوتکردن"
+    delete: "سڕینەوە"
+    edit: "دەستکاریکردن"
+    view: "بینین"
+    download: "داگرتن"
+    upload: "بارکردن"
+    submit: "ناردن"
+    loading: "بارکردن..."
+    error: "هەڵە"
+    success: "سەرکەوتوو"
+    warning: "ئاگاداری"
+    info: "زانیاری"
+    yes: "بەڵێ"
+    no: "نەخێر"
+    confirm: "دووپاتکردنەوە"
+    back: "گەڕانەوە"
+    next: "دواتر"
+    previous: "پێشوو"
+    close: "داخستن"
