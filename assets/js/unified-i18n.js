@@ -1,14 +1,13 @@
 /**
  * Unified I18n System for JobsInIraq
- * Simple YAML-only translation system (NO AI)
- * @version 4.2.0 - PRODUCTION READY (YAML ONLY, SYNCHRONOUS)
+ * Simple YAML-only translation system
+ * @version 4.2.0 - PRODUCTION READY (YAML ONLY)
  * @lastUpdated 2025-10-12
  */
 
 (function() {
   'use strict';
 
-  // Use translations injected from YAML
   const TRANSLATIONS = window.SITE_TRANSLATIONS || {};
   const JOB_TITLES = window.JOB_TITLES_TRANSLATIONS || {};
   const CONFIG = window.I18N_CONFIG || {
@@ -16,7 +15,7 @@
     rtlLangs: ['ar', 'ckb'],
     storageKey: 'siteLanguage',
     defaultLang: 'en',
-    devMode: false
+    devMode: true
   };
 
   class UnifiedI18nManager {
@@ -33,25 +32,30 @@
     }
 
     init() {
-      console.log('[i18n] Initializing...');
-      console.log('[i18n] Available translations:', Object.keys(TRANSLATIONS));
+      console.log('[i18n] 🚀 Initializing...');
+      console.log('[i18n] Available UI translations:', Object.keys(TRANSLATIONS));
       console.log('[i18n] Available job titles:', Object.keys(JOB_TITLES));
+      console.log('[i18n] Current language:', this.currentLang);
       
+      // Apply language immediately
       this.applyLanguage(this.currentLang, false);
-      this.initializePicker();
-      this.setupEventListeners();
-
-      if (CONFIG.devMode) {
-        window.getMissingTranslations = () => {
-          return Object.fromEntries(this.missingTranslations);
-        };
+      
+      // Initialize picker when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+          this.initializePicker();
+          this.setupEventListeners();
+        });
+      } else {
+        this.initializePicker();
+        this.setupEventListeners();
       }
 
       console.log('[i18n] ✅ Initialization complete');
     }
 
     /**
-     * Main translation function - accesses nested YAML values
+     * Main translation function
      */
     t(key) {
       const keys = key.split('.');
@@ -62,13 +66,11 @@
       }
 
       if (!value || value === key) {
-        // Try job titles
         const jobTitleValue = JOB_TITLES[this.currentLang]?.[keys[keys.length - 1]];
         if (jobTitleValue) return jobTitleValue;
 
-        // Track missing
         if (CONFIG.devMode) {
-          console.warn(`[i18n] Missing translation: ${key} (lang: ${this.currentLang})`);
+          console.warn(`[i18n] Missing: ${key} (lang: ${this.currentLang})`);
         }
       }
 
@@ -76,14 +78,13 @@
     }
 
     /**
-     * ✅ SIMPLE SYNCHRONOUS Job Title Translation (YAML only)
+     * ✅ Synchronous Job Title Translation (YAML only)
      */
     translateJobTitle(title) {
       if (!title || title === "—" || title === "" || title === null) {
         return title;
       }
 
-      // Check cache first
       const cacheKey = `${this.currentLang}:${title}`;
       if (this.translationCache.has(cacheKey)) {
         return this.translationCache.get(cacheKey);
@@ -129,16 +130,13 @@
       return title;
     }
 
-    /**
-     * Exact match translation
-     */
     exactMatch(title) {
       const key = this.titleToKey(title);
       const translated = JOB_TITLES[this.currentLang]?.[key];
 
       if (translated) {
         if (CONFIG.devMode) {
-          console.log(`[i18n] ✅ Exact match: "${title}" → "${translated}"`);
+          console.log(`[i18n] ✅ Exact: "${title}" → "${translated}"`);
         }
         return translated;
       }
@@ -146,27 +144,18 @@
       return null;
     }
 
-    /**
-     * Fuzzy match for common variations
-     */
     fuzzyMatch(title) {
       const key = this.titleToKey(title);
 
       const fuzzyMappings = {
         'qa_test': 'qa_tester',
         'qa': 'qa_tester',
-        'quality_assurance': 'qa_engineer',
         'db_admin': 'database_administrator',
         'dba': 'database_administrator',
         'sys_admin': 'systems_administrator',
-        'sysadmin': 'systems_administrator',
         'dev': 'developer',
         'software_dev': 'software_developer',
-        'web_dev': 'web_developer',
-        'frontend_dev': 'frontend_developer',
-        'backend_dev': 'backend_developer',
         'mgr': 'manager',
-        'proj_mgr': 'project_manager',
         'pm': 'project_manager'
       };
 
@@ -175,7 +164,7 @@
           const translated = JOB_TITLES[this.currentLang]?.[replacement];
           if (translated) {
             if (CONFIG.devMode) {
-              console.log(`[i18n] 🔍 Fuzzy match: "${title}" → "${replacement}"`);
+              console.log(`[i18n] 🔍 Fuzzy: "${title}" → "${replacement}"`);
             }
             return translated;
           }
@@ -185,9 +174,6 @@
       return null;
     }
 
-    /**
-     * Partial match for titles with prefixes/suffixes
-     */
     partialMatch(title) {
       const currentLangTitles = JOB_TITLES[this.currentLang] || {};
       const titleLower = title.toLowerCase();
@@ -195,10 +181,9 @@
       for (const [key, translation] of Object.entries(currentLangTitles)) {
         const cleanTitle = key.replace(/_/g, ' ');
 
-        if (titleLower.includes(cleanTitle) || 
-            cleanTitle.includes(titleLower.replace(/\b(senior|junior|lead|principal)\b/gi, '').trim())) {
+        if (titleLower.includes(cleanTitle)) {
           if (CONFIG.devMode) {
-            console.log(`[i18n] 🎯 Partial match: "${title}" → "${key}"`);
+            console.log(`[i18n] 🎯 Partial: "${title}" → "${key}"`);
           }
           return translation;
         }
@@ -207,16 +192,13 @@
       return null;
     }
 
-    /**
-     * Fallback to English translation
-     */
     englishFallback(title) {
       const key = this.titleToKey(title);
       const englishTitle = JOB_TITLES['en']?.[key];
 
       if (englishTitle) {
         if (CONFIG.devMode) {
-          console.log(`[i18n] 🇬🇧 English fallback: "${title}" → "${englishTitle}"`);
+          console.log(`[i18n] 🇬🇧 English fallback: "${title}"`);
         }
         return englishTitle;
       }
@@ -224,9 +206,6 @@
       return null;
     }
 
-    /**
-     * Track missing translations
-     */
     trackMissing(title) {
       const key = this.titleToKey(title);
 
@@ -235,19 +214,15 @@
           original: title,
           key: key,
           language: this.currentLang,
-          count: 1,
-          firstSeen: new Date().toISOString()
+          count: 1
         });
 
         if (CONFIG.devMode) {
-          console.warn(`[i18n] ⚠️ Missing: "${title}" (key: ${key}, lang: ${this.currentLang})`);
+          console.warn(`[i18n] ⚠️ Missing: "${title}" (key: ${key})`);
         }
       }
     }
 
-    /**
-     * Convert job title to translation key
-     */
     titleToKey(title) {
       return title
         .toLowerCase()
@@ -261,17 +236,10 @@
         .trim();
     }
 
-    /**
-     * Clear translation cache
-     */
     clearCache() {
       this.translationCache.clear();
-      if (CONFIG.devMode) {
-        console.log('[i18n] Cache cleared');
-      }
     }
 
-    // Shorthand helpers
     translateCategory(cat) {
       return this.t(`job_categories.${cat}`) || cat;
     }
@@ -291,6 +259,8 @@
     applyLanguage(lang, broadcast = false) {
       if (!CONFIG.supportedLangs.includes(lang)) lang = CONFIG.defaultLang;
 
+      console.log(`[i18n] Applying language: ${lang}`);
+
       document.documentElement.setAttribute('lang', lang);
 
       const isRTL = CONFIG.rtlLangs.includes(lang);
@@ -302,7 +272,6 @@
       this.clearCache();
 
       this.updateNavigationTranslations();
-      this.updateDashboardTranslations();
 
       const picker = document.getElementById('globalLangPicker');
       if (picker && picker.value !== lang) {
@@ -313,7 +282,7 @@
         window.dispatchEvent(new CustomEvent('languageChanged', {
           detail: { language: lang, isRTL: isRTL }
         }));
-        console.log(`[i18n] Language changed to: ${lang}`);
+        console.log(`[i18n] ✅ Language changed to: ${lang}`);
       }
     }
 
@@ -329,31 +298,24 @@
       });
     }
 
-    updateDashboardTranslations() {
-      // Placeholder for dashboard-specific translations
-      // Dashboard will handle its own translations via window.i18n.t()
-    }
-
     initializePicker() {
       const picker = document.getElementById('globalLangPicker');
       if (!picker) {
-        if (CONFIG.devMode) {
-          console.warn('[i18n] Language picker not found');
-        }
+        console.warn('[i18n] ⚠️ Language picker (#globalLangPicker) not found');
         return;
       }
 
       picker.value = this.currentLang;
 
       picker.addEventListener('change', (e) => {
+        console.log('[i18n] Language picker changed to:', e.target.value);
         this.applyLanguage(e.target.value, true);
       });
 
-      console.log('[i18n] Language picker initialized');
+      console.log('[i18n] ✅ Language picker initialized');
     }
 
     setupEventListeners() {
-      // Handle browser back/forward
       window.addEventListener('popstate', () => {
         const saved = this.getSavedLanguage();
         if (saved !== this.currentLang) {
@@ -363,12 +325,8 @@
     }
   }
 
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      window.i18n = new UnifiedI18nManager();
-    });
-  } else {
-    window.i18n = new UnifiedI18nManager();
-  }
+  // Initialize immediately (synchronous)
+  window.i18n = new UnifiedI18nManager();
+  console.log('[i18n] ✅ window.i18n ready');
+
 })();
