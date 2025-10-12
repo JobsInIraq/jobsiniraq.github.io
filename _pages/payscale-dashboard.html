@@ -9,6 +9,7 @@ permalink: /payscale-dashboard/
   - Reads data from _data/db/salaries.json at build time (injected below).
   - Loads CSS and JS from /assets (separated for maintainability).
   - JS is an ES module and imports Chart.js + Grid.js from pinned CDNs.
+  - Supports async AI translation for job titles.
 -->
 
 <div class="page__content">
@@ -79,5 +80,5 @@ permalink: /payscale-dashboard/
 <!-- stylesheet -->
 <link href="{{ '/assets/css/payscale-dashboard.css' | relative_url }}" rel="stylesheet" />
 
-<!-- main script (ES module) -->
+<!-- main script (ES module) - will handle async translations internally -->
 <script type="module" src="{{ '/assets/js/payscale-dashboard.js' | relative_url }}"></script>
