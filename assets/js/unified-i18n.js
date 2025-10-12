@@ -287,16 +287,25 @@
     }
 
     updateNavigationTranslations() {
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        const translated = this.t(key);
-        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          el.placeholder = translated;
-        } else {
-          el.textContent = translated;
-        }
-      });
+  // Update [data-i18n] elements (for dynamic content)
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const translated = this.t(key);
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = translated;
+    } else {
+      el.textContent = translated;
     }
+  });
+
+  // ✅ FAST: Update navigation menu with data attributes
+  document.querySelectorAll('[data-i18n-nav]').forEach(el => {
+    const translatedTitle = el.getAttribute(`data-title-${this.currentLang}`);
+    if (translatedTitle) {
+      el.textContent = translatedTitle;
+    }
+  });
+}
 
     initializePicker() {
       const picker = document.getElementById('globalLangPicker');
