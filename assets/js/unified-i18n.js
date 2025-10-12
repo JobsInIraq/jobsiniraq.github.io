@@ -1,8 +1,8 @@
 /**
  * Unified I18n System for JobsInIraq
- * Enhanced with Smart Fallback, Fuzzy Matching & Translation Tracking
- * @version 5.0.0 - PRODUCTION READY
- * @lastUpdated 2025-10-11
+ * Enhanced with Smart Fallback, Fuzzy Matching, Translation Tracking & AI Translation
+ * @version 5.1.0 - PRODUCTION READY WITH AI SUPPORT
+ * @lastUpdated 2025-10-12
  */
 
 (function() {
@@ -15,7 +15,8 @@
     rtlLangs: ['ar', 'ckb'],
     storageKey: 'siteLanguage',
     defaultLang: 'en',
-    devMode: false // Set to true to track missing translations
+    devMode: false, // Set to true to track missing translations
+    useAI: true // Enable AI translation fallback
   };
   
   class UnifiedI18nManager {
@@ -25,6 +26,7 @@
       this.jobTitlesCache = {}; // Store loaded job titles
       this.translationCache = new Map(); // Performance cache
       this.missingTranslations = new Map(); // Track missing keys
+      this.aiTranslationEnabled = CONFIG.useAI && typeof window.aiTranslator !== 'undefined';
       this.init();
     }
     
@@ -47,6 +49,26 @@
         window.getMissingTranslations = () => {
           return Object.fromEntries(this.missingTranslations);
         };
+      }
+      
+      // Check AI translator availability
+      if (CONFIG.useAI) {
+        this.checkAITranslator();
+      }
+    }
+    
+    /**
+     * Check if AI translator is available
+     */
+    checkAITranslator() {
+      if (typeof window.aiTranslator !== 'undefined') {
+        this.aiTranslationEnabled = true;
+        console.log('[i18n] ✅ AI Translation enabled');
+      } else {
+        this.aiTranslationEnabled = false;
+        if (CONFIG.devMode) {
+          console.warn('[i18n] ⚠️ AI Translator not available - using fallback only');
+        }
       }
     }
     
@@ -120,9 +142,10 @@
     }
     
     /**
-     * ✅ ENHANCED: Translate job title with multi-layer fallback
+     * ✅ ENHANCED: Translate job title with multi-layer fallback + AI
+     * Now supports async AI translation
      */
-    translateJobTitle(title) {
+    async translateJobTitle(title) {
       if (!title || title === "—" || title === "" || title === null) {
         return title;
       }
@@ -156,7 +179,26 @@
         return result;
       }
       
-      // LAYER 4: Fallback to English (if not already English)
+      // LAYER 4: AI Translation fallback (NEW - ASYNC)
+      if (this.aiTranslationEnabled && this.currentLang !== 'en') {
+        try {
+          result = await window.aiTranslator.translate(title, this.currentLang);
+          if (result && result !== title) {
+            this.translationCache.set(cacheKey, result);
+            if (CONFIG.devMode) {
+              console.log(`[i18n] 🤖 AI Translation: "${title}" → "${result}"`);
+            }
+            return result;
+          }
+        } catch (error) {
+          if (CONFIG.devMode) {
+            console.warn('[i18n] AI translation failed:', error);
+          }
+          // Continue to next fallback
+        }
+      }
+      
+      // LAYER 5: Fallback to English (if not already English)
       if (this.currentLang !== 'en') {
         result = this.englishFallback(title);
         if (result) {
@@ -165,10 +207,39 @@
         }
       }
       
-      // LAYER 5: Track missing translation
+      // LAYER 6: Track missing translation
       this.trackMissing(title);
       
-      // LAYER 6: Return original title (final fallback)
+      // LAYER 7: Return original title (final fallback)
+      this.translationCache.set(cacheKey, title);
+      return title;
+    }
+    
+    /**
+     * ✅ SYNCHRONOUS version for backwards compatibility
+     * Use this when you can't use async/await
+     */
+    translateJobTitleSync(title) {
+      if (!title || title === "—" || title === "" || title === null) {
+        return title;
+      }
+      
+      const cacheKey = `${this.currentLang}:${title}`;
+      if (this.translationCache.has(cacheKey)) {
+        return this.translationCache.get(cacheKey);
+      }
+      
+      let result = this.exactMatch(title) || 
+                   this.fuzzyMatch(title) || 
+                   this.partialMatch(title) || 
+                   (this.currentLang !== 'en' ? this.englishFallback(title) : null);
+      
+      if (result) {
+        this.translationCache.set(cacheKey, result);
+        return result;
+      }
+      
+      this.trackMissing(title);
       this.translationCache.set(cacheKey, title);
       return title;
     }
@@ -359,7 +430,7 @@
       }
     }
     
-    // Shorthand helpers
+    // Shorthand helpers (all synchronous - no AI needed)
     translateCategory(cat) {
       return this.t(`job_categories.${cat}`) || cat;
     }
@@ -405,98 +476,53 @@
       }
     }
     
-    updateNavigationTranslations() {
-      document.querySelectorAll('.greedy-nav .masthead__menu-item a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (!href) return;
-        
-        if (href === '/' || href === '/index.html') {
-          link.textContent = this.t('navigation.home');
-        } else if (href.includes('/jobs')) {
-          link.textContent = this.t('navigation.jobs');
-        } else if (href.includes('/payscale/')) {
-          link.textContent = this.t('navigation.payscale');
-        } else if (href.includes('/payscale-dashboard')) {
-          link.textContent = this.t('navigation.dashboard');
-        } else if (href.includes('/process')) {
-          link.textContent = this.t('navigation.recruitment_process');
-        } else if (href.includes('/innovation')) {
-          link.textContent = this.t('navigation.innovation');
-        } else if (href.includes('/about')) {
-          link.textContent = this.t('navigation.about');
-        } else if (href.includes('/contact')) {
-          link.textContent = this.t('navigation.contact');
-        }
-      });
-    }
-    
-    updateDashboardTranslations() {
-      const updateText = (id, text) => {
-        const el = document.getElementById(id);
-        if (el) el.textContent = text;
-      };
-      
-      updateText("t.title", this.t('payscale.title'));
-      updateText("t.caption", this.t('payscale.all_salaries_monthly'));
-      updateText("t.theme", this.t('payscale.theme_toggle'));
-      updateText("t.aiInsights", this.t('payscale.ai_insights'));
-      updateText("t.tableTitle", this.t('payscale.data_table'));
-      updateText("t.tableCaption", this.t('payscale.table_description'));
-      updateText("t.reset", this.t('payscale.reset_filters'));
-      updateText("t.export", this.t('payscale.export_csv'));
-      updateText("t.exportJson", this.t('payscale.export_json'));
-      updateText("t.print", this.t('payscale.print_report'));
-      updateText("t.cityLegend", this.t('payscale.city_legend'));
-      updateText("t.categoryLegend", this.t('payscale.category_legend'));
-    }
-    
     initializePicker() {
       const picker = document.getElementById('globalLangPicker');
-      if (!picker) return;
-      
-      picker.value = this.currentLang;
-      picker.addEventListener('change', (e) => {
-        this.applyLanguage(e.target.value, true);
-      });
+      if (picker) {
+        picker.value = this.currentLang;
+        picker.addEventListener('change', (e) => {
+          this.applyLanguage(e.target.value, true);
+        });
+      }
     }
     
     setupEventListeners() {
-      window.addEventListener('storage', (e) => {
-        if (e.key === CONFIG.storageKey && e.newValue !== this.currentLang) {
-          this.applyLanguage(e.newValue, false);
-        }
+      // Re-translate on language change
+      window.addEventListener('languageChanged', () => {
+        this.updateAllTranslations();
       });
+    }
+    
+    updateNavigationTranslations() {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        el.textContent = this.t(key);
+      });
+    }
+    
+    async updateDashboardTranslations() {
+      // Update all elements with data-translate attribute
+      const elements = document.querySelectorAll('[data-translate]');
+      
+      for (const el of elements) {
+        const key = el.getAttribute('data-translate');
+        const translated = await this.translateJobTitle(key);
+        el.textContent = translated;
+      }
+    }
+    
+    async updateAllTranslations() {
+      this.updateNavigationTranslations();
+      await this.updateDashboardTranslations();
     }
   }
   
-  // Initialize (async-safe)
-  const manager = new UnifiedI18nManager();
+  // Initialize and expose globally
+  const i18n = new UnifiedI18nManager();
+  window.i18n = i18n;
   
-  // Export globally
-  window.i18n = manager;
-  window.translateCategory = (cat) => manager.translateCategory(cat);
-  window.translateCity = (city) => manager.translateCity(city);
-  window.translateType = (type) => manager.translateType(type);
-  window.translatePeriod = (period) => manager.translatePeriod(period);
-  window.translateJobTitle = (title) => manager.translateJobTitle(title);
-  
-  // ✅ NEW: Development utilities
-  if (CONFIG.devMode) {
-    window.i18nDebug = {
-      getMissingTranslations: () => Object.fromEntries(manager.missingTranslations),
-      clearCache: () => manager.clearCache(),
-      getCacheSize: () => manager.translationCache.size,
-      testTranslation: (title) => {
-        console.group(`Testing translation: "${title}"`);
-        console.log('Key:', manager.titleToKey(title));
-        console.log('Exact match:', manager.exactMatch(title));
-        console.log('Fuzzy match:', manager.fuzzyMatch(title));
-        console.log('Partial match:', manager.partialMatch(title));
-        console.log('English fallback:', manager.englishFallback(title));
-        console.log('Final result:', manager.translateJobTitle(title));
-        console.groupEnd();
-      }
-    };
+  // Export for ES6 modules
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = i18n;
   }
-  
 })();
