@@ -37,7 +37,7 @@
 {% endif %}
 
 <!-- ============================================ -->
-<!-- ✅ I18N SYSTEM (CORRECT LOADING ORDER)      -->
+<!-- ✅ I18N SYSTEM (OPTIMIZED LOADING ORDER)    -->
 <!-- ============================================ -->
 
 <!-- STEP 1: Inject UI translations from _data/ui-text.yml -->
@@ -46,12 +46,15 @@
 <!-- STEP 2: Inject job title translations from _data/job-titles/*.yml -->
 {% include inject-job-titles.html %}
 
-<!-- STEP 3: Load unified i18n engine (uses injected data) -->
-<script src="{{ '/assets/js/unified-i18n.js' | relative_url }}"></script>
+<!-- STEP 3: Load AI Translation Service (BEFORE unified-i18n.js) -->
+<script src="{{ '/assets/js/ai-translator.js' | relative_url }}" defer></script>
+
+<!-- STEP 4: Load unified i18n engine (uses injected data + AI translator) -->
+<script src="{{ '/assets/js/unified-i18n.js' | relative_url }}" defer></script>
 
 <!-- ============================================ -->
 <!-- END I18N SYSTEM                             -->
 <!-- ============================================ -->
 
-<!-- Include IndexNow JavaScript -->
-<script src="{{ '/assets/js/indexnow.js' | relative_url }}"></script>
+<!-- Include IndexNow JavaScript (non-critical, load async) -->
+<script src="{{ '/assets/js/indexnow.js' | relative_url }}" async></script>
