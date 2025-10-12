@@ -73,50 +73,58 @@
     }
     
     /**
-     * Load job titles from Jekyll injection or fallback sources
-     */
-    async loadJobTitles() {
-      if (this.jobTitlesLoaded) return;
-      
-      try {
-        console.log('[i18n] Loading job title translations...');
-        
-        // Check if job titles are already injected by Jekyll
-        if (window.JOB_TITLES_TRANSLATIONS) {
-          this.jobTitlesCache = window.JOB_TITLES_TRANSLATIONS;
-          this.jobTitlesLoaded = true;
-          console.log('[i18n] ✅ Job titles loaded from Jekyll injection');
-          return;
-        }
-        
-        // Fallback: Load from separate JSON files (if available)
-        const urls = CONFIG.supportedLangs.map(lang => 
-          `/assets/data/job-titles-${lang}.json`
-        );
-        
-        const responses = await Promise.allSettled(
-          urls.map(url => fetch(url).then(r => r.ok ? r.json() : null))
-        );
-        
-        // Process results
-        CONFIG.supportedLangs.forEach((lang, index) => {
-          const result = responses[index];
-          if (result.status === 'fulfilled' && result.value) {
-            this.jobTitlesCache[lang] = result.value;
-          } else {
-            console.warn(`[i18n] Could not load job titles for ${lang}`);
-            this.jobTitlesCache[lang] = {}; // Empty fallback
-          }
-        });
-        
-        this.jobTitlesLoaded = true;
-        console.log('[i18n] ✅ Job titles loaded successfully');
-        
-      } catch (error) {
-        console.error('[i18n] Error loading job titles:', error);
-        this.jobTitlesLoaded = true; // Mark as loaded to prevent retry loop
-      }
+ * Simple synchronous job title translation (YAML only)
+ */
+translateJobTitle(title) {
+  if (!title || title === "—" || title === "" || title === null) {
+    return title;
+  }
+  
+  // Check cache first
+  const cacheKey = `${this.currentLang}:${title}`;
+  if (this.translationCache.has(cacheKey)) {
+    return this.translationCache.get(cacheKey);
+  }
+  
+  let result = null;
+  
+  // LAYER 1: Exact match
+  result = this.exactMatch(title);
+  if (result) {
+    this.translationCache.set(cacheKey, result);
+    return result;
+  }
+  
+  // LAYER 2: Fuzzy match
+  result = this.fuzzyMatch(title);
+  if (result) {
+    this.translationCache.set(cacheKey, result);
+    return result;
+  }
+  
+  // LAYER 3: Partial match
+  result = this.partialMatch(title);
+  if (result) {
+    this.translationCache.set(cacheKey, result);
+    return result;
+  }
+  
+  // LAYER 4: English fallback
+  if (this.currentLang !== 'en') {
+    result = this.englishFallback(title);
+    if (result) {
+      this.translationCache.set(cacheKey, result);
+      return result;
     }
+  }
+  
+  // LAYER 5: Track missing
+  this.trackMissing(title);
+  
+  // LAYER 6: Return original
+  this.translationCache.set(cacheKey, title);
+  return title;
+}
     
     /**
      * Access nested YAML values with job titles support
