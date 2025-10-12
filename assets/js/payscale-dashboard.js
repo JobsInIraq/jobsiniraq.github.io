@@ -1,6 +1,6 @@
 /**
- * Payscale Dashboard - Complete i18n with Job Title Translation
- * @version 4.1.0 - PRODUCTION READY (YAML ONLY)
+ * Payscale Dashboard - Complete i18n
+ * @version 4.2.0 - PRODUCTION READY (YAML ONLY)
  * @lastUpdated 2025-10-12
  */
 
@@ -15,10 +15,41 @@ gridCSS.href = 'https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/theme/mermaid.min
 document.head.appendChild(gridCSS);
 
 // ============================================
+// WAIT FOR I18N
+// ============================================
+const waitForI18n = () => {
+  return new Promise((resolve) => {
+    if (window.i18n) {
+      console.log('[Dashboard] ✅ i18n already available');
+      resolve();
+      return;
+    }
+
+    const maxAttempts = 50;
+    let attempts = 0;
+    const checkInterval = setInterval(() => {
+      attempts++;
+      if (window.i18n) {
+        clearInterval(checkInterval);
+        console.log('[Dashboard] ✅ i18n loaded after', attempts * 100, 'ms');
+        resolve();
+      } else if (attempts >= maxAttempts) {
+        clearInterval(checkInterval);
+        console.error('[Dashboard] ❌ i18n timeout after 5 seconds');
+        resolve(); // Continue anyway
+      }
+    }, 100);
+  });
+};
+
+// ============================================
 // DATA LOADING
 // ============================================
 const dataEl = document.getElementById("payscale-data");
 const RAW = dataEl ? JSON.parse(dataEl.textContent || "{}") : {};
+
+console.log('[Dashboard] Data loaded:', RAW);
+console.log('[Dashboard] Jobs count:', RAW?.jobs?.length || 0);
 
 // ============================================
 // THEME MANAGEMENT
@@ -39,61 +70,62 @@ if (themeBtn) {
 }
 
 // ============================================
-// TRANSLATION SYSTEM (SIMPLE YAML ONLY)
+// TRANSLATION SYSTEM
 // ============================================
 
 const t = (key) => {
-  const fullKey = `payscale.${key}`;
-  const translated = window.i18n?.t(fullKey);
-  if (!translated || translated === fullKey) {
-    console.warn(`[i18n] Missing translation key: ${fullKey}`);
+  if (!window.i18n) {
+    console.warn('[Dashboard] i18n not available');
+    return key;
   }
-  return translated || key;
+  const fullKey = `payscale.${key}`;
+  const translated = window.i18n.t(fullKey);
+  return (translated && translated !== fullKey) ? translated : key;
 };
 
 const getCurrentLang = () => window.i18n?.currentLang || "en";
 
 const translateCategory = (cat) => {
   if (!cat || cat === "—") return cat;
-  const translated = window.i18n?.t(`job_categories.${cat}`);
+  if (!window.i18n) return cat;
+  const translated = window.i18n.t(`job_categories.${cat}`);
   return translated || cat;
 };
 
 const translateCity = (city) => {
   if (!city || city === "—") return city;
-  const translated = window.i18n?.t(`cities.${city}`);
+  if (!window.i18n) return city;
+  const translated = window.i18n.t(`cities.${city}`);
   return translated || city;
 };
 
 const translateType = (type) => {
   if (!type || type === "—") return type;
-  const translated = window.i18n?.t(`employment_types.${type}`);
+  if (!window.i18n) return type;
+  const translated = window.i18n.t(`employment_types.${type}`);
   return translated || type;
 };
 
 const translatePeriod = (period) => {
   if (!period || period === "—") return period;
-  const translated = window.i18n?.t(`salary_periods.${period}`);
+  if (!window.i18n) return period;
+  const translated = window.i18n.t(`salary_periods.${period}`);
   return translated || period;
 };
 
-/**
- * ✅ SIMPLE: Synchronous Job Title Translation (YAML only, no AI)
- */
 const translateJobTitle = (title) => {
   if (!title || title === "—") return title;
-  
-  // Use unified i18n system (synchronous)
-  if (window.i18n && typeof window.i18n.translateJobTitle === 'function') {
-    return window.i18n.translateJobTitle(title);
+  if (!window.i18n || typeof window.i18n.translateJobTitle !== 'function') {
+    console.warn('[Dashboard] i18n.translateJobTitle not available');
+    return title;
   }
-  
-  return title; // Fallback to original
+  return window.i18n.translateJobTitle(title);
 };
 
 const th = (key) => {
+  if (!window.i18n) return key;
   const fullKey = `table_headers.${key}`;
-  const translated = window.i18n?.t(fullKey);
+  const translated = window.i18n.t(fullKey);
   return translated || key;
 };
 
@@ -191,6 +223,8 @@ const colorFromString = (str) => {
 
 const INPUT = Array.isArray(RAW?.jobs) ? RAW.jobs : [];
 
+console.log('[Dashboard] Input jobs:', INPUT.length);
+
 const normalizeRow = (row) => {
   const job = row.job || {};
   const jd = get(job, "jobDetails", {}) || {};
@@ -247,6 +281,9 @@ const normalizeRow = (row) => {
 
 const NORMALIZED = INPUT.map(normalizeRow);
 
+console.log('[Dashboard] Normalized data:', NORMALIZED.length, 'rows');
+console.log('[Dashboard] Sample row:', NORMALIZED[0]);
+
 // ============================================
 // FILTER & STATE MANAGEMENT
 // ============================================
@@ -268,14 +305,17 @@ const applyFilters = () => {
     return true;
   });
 
+  console.log('[Dashboard] Filtered to', filtered.length, 'rows');
+
   updateView();
 };
 
 // ============================================
-// UI UPDATE FUNCTIONS (SIMPLE SYNCHRONOUS)
+// UI UPDATE FUNCTIONS
 // ============================================
 
 const updateView = () => {
+  console.log('[Dashboard] Updating view...');
   updateKPIs();
   updateTable();
   updateInsights();
@@ -308,22 +348,25 @@ const updateKPIs = () => {
   if (resultEl) {
     resultEl.textContent = `${filtered.length} ${t('results')}`;
   }
+
+  console.log('[Dashboard] ✅ KPIs updated');
 };
 
 // ============================================
-// TABLE RENDERING (SIMPLE SYNCHRONOUS)
+// TABLE RENDERING
 // ============================================
 
 let gridInstance = null;
 
-/**
- * ✅ SIMPLE: Synchronous table rendering (no async, no AI)
- */
 const updateTable = () => {
   const tableEl = document.getElementById("table");
-  if (!tableEl) return;
+  if (!tableEl) {
+    console.error('[Dashboard] ❌ Table element not found');
+    return;
+  }
 
-  // Build table data with synchronous translations
+  console.log('[Dashboard] Building table with', filtered.length, 'rows');
+
   const tableData = filtered.map(row => [
     translateJobTitle(row.title),
     translateCategory(row.category),
@@ -336,7 +379,10 @@ const updateTable = () => {
     row.portal
   ]);
 
+  console.log('[Dashboard] Table data sample:', tableData[0]);
+
   if (gridInstance) {
+    console.log('[Dashboard] Updating existing grid');
     gridInstance.updateConfig({
       columns: [
         th('job_title'),
@@ -360,31 +406,37 @@ const updateTable = () => {
       }
     }).forceRender();
   } else {
-    gridInstance = new Grid({
-      columns: [
-        th('job_title'),
-        th('category'),
-        th('city'),
-        th('employment_type'),
-        th('salary'),
-        th('source')
-      ],
-      data: tableData,
-      search: true,
-      sort: true,
-      pagination: { limit: 25 },
-      language: {
-        search: { placeholder: t('search_placeholder') },
-        pagination: {
-          previous: t('previous'),
-          next: t('next'),
-          showing: t('showing'),
-          to: t('to'),
-          of: t('of'),
-          results: t('results')
+    console.log('[Dashboard] Creating new grid');
+    try {
+      gridInstance = new Grid({
+        columns: [
+          th('job_title'),
+          th('category'),
+          th('city'),
+          th('employment_type'),
+          th('salary'),
+          th('source')
+        ],
+        data: tableData,
+        search: true,
+        sort: true,
+        pagination: { limit: 25 },
+        language: {
+          search: { placeholder: t('search_placeholder') },
+          pagination: {
+            previous: t('previous'),
+            next: t('next'),
+            showing: t('showing'),
+            to: t('to'),
+            of: t('of'),
+            results: t('results')
+          }
         }
-      }
-    }).render(tableEl);
+      }).render(tableEl);
+      console.log('[Dashboard] ✅ Grid rendered');
+    } catch (error) {
+      console.error('[Dashboard] ❌ Grid render failed:', error);
+    }
   }
 };
 
@@ -465,12 +517,15 @@ const updateLegends = () => {
 // ============================================
 
 const populateFilters = () => {
+  console.log('[Dashboard] Populating filters...');
+
   const cityEl = document.getElementById("f-city");
   const catEl = document.getElementById("f-category");
   const etypeEl = document.getElementById("f-etype");
   const periodEl = document.getElementById("f-period");
 
   if (cityEl) {
+    cityEl.innerHTML = '<option value="">All cities</option>';
     setFirstOption(cityEl, t('all_cities'));
     const cities = uniq(NORMALIZED.map(r => r.city));
     cities.forEach(city => {
@@ -482,6 +537,7 @@ const populateFilters = () => {
   }
 
   if (catEl) {
+    catEl.innerHTML = '<option value="">All categories</option>';
     setFirstOption(catEl, t('all_categories'));
     const cats = uniq(NORMALIZED.map(r => r.category));
     cats.forEach(cat => {
@@ -493,6 +549,7 @@ const populateFilters = () => {
   }
 
   if (etypeEl) {
+    etypeEl.innerHTML = '<option value="">All types</option>';
     setFirstOption(etypeEl, t('all_types'));
     const types = uniq(NORMALIZED.map(r => r.employment_type));
     types.forEach(type => {
@@ -504,6 +561,7 @@ const populateFilters = () => {
   }
 
   if (periodEl) {
+    periodEl.innerHTML = '<option value="">All periods</option>';
     setFirstOption(periodEl, t('all_periods'));
     const periods = uniq(NORMALIZED.map(r => r.period));
     periods.forEach(period => {
@@ -513,6 +571,8 @@ const populateFilters = () => {
       periodEl.appendChild(opt);
     });
   }
+
+  console.log('[Dashboard] ✅ Filters populated');
 };
 
 // ============================================
@@ -525,6 +585,7 @@ const initCurrencyToggle = () => {
 
   currencyEl.addEventListener("change", (e) => {
     selectedCurrency = e.target.value;
+    console.log('[Dashboard] Currency changed to:', selectedCurrency);
     updateView();
   });
 };
@@ -565,10 +626,6 @@ const exportJSON = () => {
   link.click();
 };
 
-// ============================================
-// PRINT FUNCTION
-// ============================================
-
 const printView = () => {
   window.print();
 };
@@ -578,12 +635,95 @@ const printView = () => {
 // ============================================
 
 const initEventListeners = () => {
+  console.log('[Dashboard] Initializing event listeners...');
+
   document.getElementById("f-city")?.addEventListener("change", applyFilters);
   document.getElementById("f-category")?.addEventListener("change", applyFilters);
   document.getElementById("f-etype")?.addEventListener("change", applyFilters);
   document.getElementById("f-period")?.addEventListener("change", applyFilters);
   
   document.getElementById("resetFilters")?.addEventListener("click", () => {
+    console.log('[Dashboard] Resetting filters');
     document.getElementById("f-city").value = "";
     document.getElementById("f-category").value = "";
-    document.getElementById("f-etype").value
+    document.getElementById("f-etype").value = "";
+    document.getElementById("f-period").value = "";
+    applyFilters();
+  });
+
+  document.getElementById("exportCsv")?.addEventListener("click", exportCSV);
+  document.getElementById("exportJson")?.addEventListener("click", exportJSON);
+  document.getElementById("printBtn")?.addEventListener("click", printView);
+  
+  window.addEventListener('languageChanged', (event) => {
+    console.log('[Dashboard] 🌍 Language changed to:', event.detail.language);
+    translateUI();
+    populateFilters();
+    updateView();
+  });
+
+  console.log('[Dashboard] ✅ Event listeners initialized');
+};
+
+// ============================================
+// UI TRANSLATIONS
+// ============================================
+
+const translateUI = () => {
+  console.log('[Dashboard] Translating UI...');
+
+  const elements = {
+    "t.title": t('title'),
+    "t.theme": t('theme'),
+    "t.caption": t('caption'),
+    "t.reset": t('reset_filters'),
+    "t.export": t('export_csv'),
+    "t.exportJson": t('export_json'),
+    "t.print": t('print'),
+    "t.aiInsights": t('ai_insights'),
+    "t.cityLegend": t('city_legend'),
+    "t.categoryLegend": t('category_legend'),
+    "t.tableTitle": t('table_title'),
+    "t.tableCaption": t('table_caption')
+  };
+
+  Object.entries(elements).forEach(([id, text]) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.textContent = text;
+    } else {
+      console.warn(`[Dashboard] Element not found: ${id}`);
+    }
+  });
+
+  console.log('[Dashboard] ✅ UI translated');
+};
+
+// ============================================
+// INITIALIZATION
+// ============================================
+
+const init = async () => {
+  console.log('[Dashboard] 🚀 Starting initialization...');
+  
+  // Wait for i18n to be ready
+  await waitForI18n();
+  
+  console.log('[Dashboard] i18n ready, current language:', getCurrentLang());
+  
+  // Initialize UI
+  translateUI();
+  populateFilters();
+  initCurrencyToggle();
+  initEventListeners();
+  
+  // Initial render
+  updateView();
+  
+  console.log('[Dashboard] ✅ Initialization complete');
+};
+
+// Start initialization
+init().catch(error => {
+  console.error('[Dashboard] ❌ Initialization failed:', error);
+});
