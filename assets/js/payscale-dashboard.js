@@ -1,7 +1,7 @@
 /**
- * Payscale Dashboard - Complete i18n with Job Title Translation
- * @version 4.0.0 - PRODUCTION READY
- * @lastUpdated 2025-10-11
+ * Payscale Dashboard - Complete i18n with Async AI Job Title Translation
+ * @version 5.0.0 - PRODUCTION READY WITH AI SUPPORT
+ * @lastUpdated 2025-10-12
  */
 
 // ============================================
@@ -39,7 +39,7 @@ if (themeBtn) {
 }
 
 // ============================================
-// TRANSLATION SYSTEM
+// TRANSLATION SYSTEM (ENHANCED WITH AI)
 // ============================================
 
 const t = (key) => {
@@ -78,26 +78,42 @@ const translatePeriod = (period) => {
 };
 
 /**
- * ✅ NEW: Job Title Translation with Fallback
+ * ✅ ENHANCED: Async Job Title Translation with AI Fallback
+ * Now supports both YAML translations and AI translation
  */
-const translateJobTitle = (title) => {
+const translateJobTitle = async (title) => {
   if (!title || title === "—") return title;
   
-  // Convert to translation key (lowercase, replace spaces with underscores)
-  const key = title
-    .toLowerCase()
-    .replace(/[()]/g, '') // Remove parentheses
-    .replace(/\s+/g, '_') // Replace spaces with underscores
-    .replace(/&/g, 'and') // Replace & with "and"
-    .replace(/-/g, '_') // Replace hyphens with underscores
-    .replace(/_+/g, '_') // Remove duplicate underscores
-    .trim();
+  // Check if i18n system is available
+  if (!window.i18n || typeof window.i18n.translateJobTitle !== 'function') {
+    console.warn('[Dashboard] i18n not available, using original title');
+    return title;
+  }
   
-  const fullKey = `job_titles.${key}`;
-  const translated = window.i18n?.t(fullKey);
+  try {
+    // Use unified i18n system (supports YAML + AI fallback)
+    const translated = await window.i18n.translateJobTitle(title);
+    return translated || title;
+  } catch (error) {
+    console.error('[Dashboard] Translation failed:', error);
+    return title; // Fallback to original
+  }
+};
+
+/**
+ * ✅ NEW: Batch translate all job titles (for performance)
+ */
+const translateJobTitlesBatch = async (titles) => {
+  if (!titles || titles.length === 0) return [];
   
-  // Fallback to original title if no translation found
-  return (translated && translated !== fullKey) ? translated : title;
+  try {
+    // Translate all titles in parallel (FAST!)
+    const translationPromises = titles.map(title => translateJobTitle(title));
+    return await Promise.all(translationPromises);
+  } catch (error) {
+    console.error('[Dashboard] Batch translation failed:', error);
+    return titles; // Return originals on error
+  }
 };
 
 const th = (key) => {
@@ -262,6 +278,7 @@ const NORMALIZED = INPUT.map(normalizeRow);
 
 let filtered = [...NORMALIZED];
 let selectedCurrency = "IQD";
+let translatedTitlesCache = new Map(); // Cache translated titles
 
 const applyFilters = () => {
   const cityVal = document.getElementById("f-city")?.value || "";
@@ -281,12 +298,12 @@ const applyFilters = () => {
 };
 
 // ============================================
-// UI UPDATE FUNCTIONS
+// UI UPDATE FUNCTIONS (ENHANCED WITH ASYNC)
 // ============================================
 
-const updateView = () => {
+const updateView = async () => {
   updateKPIs();
-  updateTable();
+  await updateTable(); // Now async
   updateInsights();
   updateLegends();
 };
@@ -320,77 +337,137 @@ const updateKPIs = () => {
 };
 
 // ============================================
-// TABLE RENDERING
+// TABLE RENDERING (ASYNC WITH AI TRANSLATION)
 // ============================================
 
 let gridInstance = null;
 
-const updateTable = () => {
+/**
+ * ✅ ENHANCED: Async table rendering with AI translation
+ */
+const updateTable = async () => {
   const tableEl = document.getElementById("table");
   if (!tableEl) return;
 
-  // ✅ FIXED: Translate job titles
-  const tableData = filtered.map(row => [
-    translateJobTitle(row.title), // ← NOW TRANSLATES
-    translateCategory(row.category),
-    translateCity(row.city),
-    translateType(row.employment_type),
-    numberFmt(
-      selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency),
-      selectedCurrency
-    ),
-    row.portal
-  ]);
+  // Show loading indicator
+  if (!gridInstance) {
+    tableEl.innerHTML = '<div style="padding:2rem;text-align:center;">⏳ Loading translations...</div>';
+  }
 
-  if (gridInstance) {
-    gridInstance.updateConfig({
-      columns: [
-        th('job_title'),
-        th('category'),
-        th('city'),
-        th('employment_type'),
-        th('salary'),
-        th('source')
-      ],
-      data: tableData,
-      language: {
-        search: { placeholder: t('search_placeholder') },
-        pagination: {
-          previous: t('previous'),
-          next: t('next'),
-          showing: t('showing'),
-          to: t('to'),
-          of: t('of'),
-          results: t('results')
+  try {
+    // Step 1: Extract unique job titles
+    const uniqueTitles = [...new Set(filtered.map(row => row.title))];
+    
+    // Step 2: Translate all unique titles in parallel (FAST!)
+    const lang = getCurrentLang();
+    const cacheKey = `${lang}_titles`;
+    
+    // Check if already translated for this language
+    if (!translatedTitlesCache.has(cacheKey)) {
+      const translatedTitles = await translateJobTitlesBatch(uniqueTitles);
+      
+      // Build lookup map
+      const titleMap = new Map();
+      uniqueTitles.forEach((title, index) => {
+        titleMap.set(title, translatedTitles[index]);
+      });
+      
+      translatedTitlesCache.set(cacheKey, titleMap);
+    }
+    
+    const titleMap = translatedTitlesCache.get(cacheKey);
+    
+    // Step 3: Build table data using translated titles
+    const tableData = filtered.map(row => [
+      titleMap.get(row.title) || row.title, // Use cached translation
+      translateCategory(row.category),
+      translateCity(row.city),
+      translateType(row.employment_type),
+      numberFmt(
+        selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency),
+        selectedCurrency
+      ),
+      row.portal
+    ]);
+
+    // Step 4: Render or update Grid.js
+    if (gridInstance) {
+      gridInstance.updateConfig({
+        columns: [
+          th('job_title'),
+          th('category'),
+          th('city'),
+          th('employment_type'),
+          th('salary'),
+          th('source')
+        ],
+        data: tableData,
+        language: {
+          search: { placeholder: t('search_placeholder') },
+          pagination: {
+            previous: t('previous'),
+            next: t('next'),
+            showing: t('showing'),
+            to: t('to'),
+            of: t('of'),
+            results: t('results')
+          }
         }
-      }
-    }).forceRender();
-  } else {
-    gridInstance = new Grid({
-      columns: [
-        th('job_title'),
-        th('category'),
-        th('city'),
-        th('employment_type'),
-        th('salary'),
-        th('source')
-      ],
-      data: tableData,
-      search: true,
-      sort: true,
-      pagination: { limit: 25 },
-      language: {
-        search: { placeholder: t('search_placeholder') },
-        pagination: {
-          previous: t('previous'),
-          next: t('next'),
-          showing: t('showing'),
-          to: t('to'),
-          of: t('of'),
-          results: t('results')
+      }).forceRender();
+    } else {
+      gridInstance = new Grid({
+        columns: [
+          th('job_title'),
+          th('category'),
+          th('city'),
+          th('employment_type'),
+          th('salary'),
+          th('source')
+        ],
+        data: tableData,
+        search: true,
+        sort: true,
+        pagination: { limit: 25 },
+        language: {
+          search: { placeholder: t('search_placeholder') },
+          pagination: {
+            previous: t('previous'),
+            next: t('next'),
+            showing: t('showing'),
+            to: t('to'),
+            of: t('of'),
+            results: t('results')
+          }
         }
-      }
-    }).render(tableEl);
+      }).render(tableEl);
+    }
+  } catch (error) {
+    console.error('[Dashboard] Table rendering failed:', error);
+    
+    // Fallback: render without translations
+    const fallbackData = filtered.map(row => [
+      row.title, // Original title
+      row.category,
+      row.city,
+      row.employment_type,
+      numberFmt(
+        selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency),
+        selectedCurrency
+      ),
+      row.portal
+    ]);
+    
+    if (gridInstance) {
+      gridInstance.updateConfig({ data: fallbackData }).forceRender();
+    } else {
+      gridInstance = new Grid({
+        columns: ['Job Title', 'Category', 'City', 'Type', 'Salary', 'Source'],
+        data: fallbackData,
+        search: true,
+        sort: true,
+        pagination: { limit: 25 }
+      }).render(tableEl);
+    }
   }
 };
 
@@ -432,7 +509,7 @@ const updateInsights = () => {
     insights.push(t('insight_balanced'));
   }
 
-  listEl.innerHTML = insights.map(txt => `<li>${txt}</li>`).join("");
+  listEl.innerHTML = insights.map(ins => `<li>${ins}</li>`).join("");
 };
 
 // ============================================
@@ -446,193 +523,255 @@ const updateLegends = () => {
   if (cityLegendEl) {
     const cities = uniq(filtered.map(r => r.city));
     cityLegendEl.innerHTML = cities
-      .map(c => `<span class="legend-chip"><span class="swatch" style="background:${colorFromString(c)}"></span>${translateCity(c)}</span>`)
+      .map(city => {
+        const color = colorFromString(city);
+        const translated = translateCity(city);
+        return `<span class="legend-item"><span class="dot" style="background:${color}"></span>${translated}</span>`;
+      })
       .join("");
   }
 
   if (catLegendEl) {
     const cats = uniq(filtered.map(r => r.category));
     catLegendEl.innerHTML = cats
-      .map(c => `<span class="legend-chip"><span class="swatch" style="background:${colorFromString(c)}"></span>${translateCategory(c)}</span>`)
+      .map(cat => {
+        const color = colorFromString(cat);
+        const translated = translateCategory(cat);
+        return `<span class="legend-item"><span class="dot" style="background:${color}"></span>${translated}</span>`;
+      })
       .join("");
   }
 };
 
 // ============================================
-// FILTER POPULATION
+// FILTER UI INITIALIZATION
 // ============================================
 
 const populateFilters = () => {
-  const cities = uniq(NORMALIZED.map(r => r.city));
-  const cats = uniq(NORMALIZED.map(r => r.category));
-  const types = uniq(NORMALIZED.map(r => r.employment_type));
-  const periods = uniq(NORMALIZED.map(r => r.period));
+  const cityEl = document.getElementById("f-city");
+  const catEl = document.getElementById("f-category");
+  const etypeEl = document.getElementById("f-etype");
+  const periodEl = document.getElementById("f-period");
 
-  const citySelect = document.getElementById("f-city");
-  const catSelect = document.getElementById("f-category");
-  const typeSelect = document.getElementById("f-etype");
-  const periodSelect = document.getElementById("f-period");
-
-  if (citySelect) {
-    while (citySelect.options.length > 1) {
-      citySelect.remove(1);
-    }
-    cities.forEach(c => {
+  if (cityEl) {
+    setFirstOption(cityEl, t('all_cities'));
+    const cities = uniq(NORMALIZED.map(r => r.city));
+    cities.forEach(city => {
       const opt = document.createElement("option");
-      opt.value = c;
-      opt.textContent = translateCity(c);
-      citySelect.appendChild(opt);
+      opt.value = city;
+      opt.textContent = translateCity(city);
+      cityEl.appendChild(opt);
     });
   }
 
-  if (catSelect) {
-    while (catSelect.options.length > 1) {
-      catSelect.remove(1);
-    }
-    cats.forEach(c => {
+  if (catEl) {
+    setFirstOption(catEl, t('all_categories'));
+    const cats = uniq(NORMALIZED.map(r => r.category));
+    cats.forEach(cat => {
       const opt = document.createElement("option");
-      opt.value = c;
-      opt.textContent = translateCategory(c);
-      catSelect.appendChild(opt);
+      opt.value = cat;
+      opt.textContent = translateCategory(cat);
+      catEl.appendChild(opt);
     });
   }
 
-  if (typeSelect) {
-    while (typeSelect.options.length > 1) {
-      typeSelect.remove(1);
-    }
-    types.forEach(t => {
+  if (etypeEl) {
+    setFirstOption(etypeEl, t('all_types'));
+    const types = uniq(NORMALIZED.map(r => r.employment_type));
+    types.forEach(type => {
       const opt = document.createElement("option");
-      opt.value = t;
-      opt.textContent = translateType(t);
-      typeSelect.appendChild(opt);
+      opt.value = type;
+      opt.textContent = translateType(type);
+      etypeEl.appendChild(opt);
     });
   }
 
-  if (periodSelect) {
-    while (periodSelect.options.length > 1) {
-      periodSelect.remove(1);
-    }
-    periods.forEach(p => {
+  if (periodEl) {
+    setFirstOption(periodEl, t('all_periods'));
+    const periods = uniq(NORMALIZED.map(r => r.period));
+    periods.forEach(period => {
       const opt = document.createElement("option");
-      opt.value = p;
-      opt.textContent = translatePeriod(p);
-      periodSelect.appendChild(opt);
+      opt.value = period;
+      opt.textContent = translatePeriod(period);
+      periodEl.appendChild(opt);
     });
   }
 };
 
-const updateFilterLabels = () => {
-  setFirstOption(document.getElementById("f-city"), t('all_cities'));
-  setFirstOption(document.getElementById("f-category"), t('all_categories'));
-  setFirstOption(document.getElementById("f-etype"), t('all_types'));
-  setFirstOption(document.getElementById("f-period"), t('all_periods'));
+// ============================================
+// CURRENCY TOGGLE
+// ============================================
+
+const initCurrencyToggle = () => {
+  const currencyEl = document.getElementById("f-currency");
+  if (!currencyEl) return;
+
+  currencyEl.addEventListener("change", (e) => {
+    selectedCurrency = e.target.value;
+    updateView();
+  });
+};
+
+// ============================================
+// EXPORT FUNCTIONS
+// ============================================
+
+const exportCSV = () => {
+  const headers = [th('job_title'), th('category'), th('city'), th('employment_type'), th('salary'), th('source')];
+  const rows = filtered.map(row => [
+    row.title, // Original title for export
+    row.category,
+    row.city,
+    row.employment_type,
+    numberFmt(selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency), selectedCurrency),
+    row.portal
+  ]);
+
+  const csvContent = [
+    headers.join(","),
+    ...rows.map(row => row.map(cell => `"${cell}"`).join(","))
+  ].join("\n");
+
+  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `payscale_data_${new Date().toISOString().slice(0, 10)}.csv`;
+  link.click();
+};
+
+const exportJSON = () => {
+  const jsonData = JSON.stringify(filtered, null, 2);
+  const blob = new Blob([jsonData], { type: "application/json" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `payscale_data_${new Date().toISOString().slice(0, 10)}.json`;
+  link.click();
+};
+
+// ============================================
+// PRINT FUNCTION
+// ============================================
+
+const printView = () => {
+  window.print();
 };
 
 // ============================================
 // EVENT LISTENERS
 // ============================================
 
-const attachEventListeners = () => {
-  document.querySelectorAll(".filters select").forEach(sel => {
-    sel.addEventListener("change", applyFilters);
+const initEventListeners = () => {
+  document.getElementById("f-city")?.addEventListener("change", applyFilters);
+  document.getElementById("f-category")?.addEventListener("change", applyFilters);
+  document.getElementById("f-etype")?.addEventListener("change", applyFilters);
+  document.getElementById("f-period")?.addEventListener("change", applyFilters);
+  
+  document.getElementById("resetFilters")?.addEventListener("click", () => {
+    document.getElementById("f-city").value = "";
+    document.getElementById("f-category").value = "";
+    document.getElementById("f-etype").value = "";
+    document.getElementById("f-period").value = "";
+    applyFilters();
   });
 
-  const currencySelect = document.getElementById("f-currency");
-  if (currencySelect) {
-    currencySelect.addEventListener("change", (e) => {
-      selectedCurrency = e.target.value;
-      updateView();
-    });
-  }
-
-  const resetBtn = document.getElementById("resetFilters");
-  if (resetBtn) {
-    resetBtn.addEventListener("click", () => {
-      document.querySelectorAll(".filters select").forEach(sel => {
-        sel.selectedIndex = 0;
-      });
-      applyFilters();
-    });
-  }
-
-  const csvBtn = document.getElementById("exportCsv");
-  if (csvBtn) {
-    csvBtn.addEventListener("click", () => {
-      const csv = [
-        ["Title", "Category", "City", "Type", "Salary", "Source"].join(","),
-        ...filtered.map(r => [
-          `"${translateJobTitle(r.title)}"`,
-          `"${translateCategory(r.category)}"`,
-          `"${translateCity(r.city)}"`,
-          `"${translateType(r.employment_type)}"`,
-          `"${r.amtMin} ${r.currency}"`,
-          `"${r.portal}"`
-        ].join(","))
-      ].join("\n");
-
-      const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `payscale-data-${new Date().toISOString().split('T')[0]}.csv`;
-      a.click();
-      URL.revokeObjectURL(url);
-    });
-  }
-
-  const jsonBtn = document.getElementById("exportJson");
-  if (jsonBtn) {
-    jsonBtn.addEventListener("click", () => {
-      const json = JSON.stringify(filtered, null, 2);
-      const blob = new Blob([json], { type: "application/json" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `payscale-data-${new Date().toISOString().split('T')[0]}.json`;
-      a.click();
-      URL.revokeObjectURL(url);
-    });
-  }
-
-  const printBtn = document.getElementById("printBtn");
-  if (printBtn) {
-    printBtn.addEventListener("click", () => {
-      window.print();
-    });
-  }
-
-  window.addEventListener("languageChanged", () => {
-    console.log("[Dashboard] Language changed, updating UI...");
-    updateFilterLabels();
+  document.getElementById("exportCsv")?.addEventListener("click", exportCSV);
+  document.getElementById("exportJson")?.addEventListener("click", exportJSON);
+  document.getElementById("printBtn")?.addEventListener("click", printView);
+  
+  // ✅ NEW: Listen for language changes
+  window.addEventListener('languageChanged', async (event) => {
+    console.log('[Dashboard] Language changed to:', event.detail.language);
+    
+    // Clear translation cache for new language
+    translatedTitlesCache.clear();
+    
+    // Re-populate filters with new translations
     populateFilters();
-    updateView();
+    
+    // Re-render everything with new translations
+    await updateView();
   });
 };
 
 // ============================================
-// INITIALIZATION
+// UI TRANSLATIONS
 // ============================================
 
-const initDashboard = () => {
-  if (!window.i18n) {
-    console.warn("[Dashboard] i18n not ready, retrying in 100ms...");
-    setTimeout(initDashboard, 100);
-    return;
-  }
+const translateUI = () => {
+  const elements = {
+    "t.title": t('title'),
+    "t.theme": t('theme'),
+    "t.caption": t('caption'),
+    "t.reset": t('reset_filters'),
+    "t.export": t('export_csv'),
+    "t.exportJson": t('export_json'),
+    "t.print": t('print'),
+    "t.aiInsights": t('ai_insights'),
+    "t.cityLegend": t('city_legend'),
+    "t.categoryLegend": t('category_legend'),
+    "t.tableTitle": t('table_title'),
+    "t.tableCaption": t('table_caption')
+  };
 
-  console.log("[Dashboard] Initializing with", NORMALIZED.length, "salary records");
-
-  updateFilterLabels();
-  populateFilters();
-  updateView();
-  attachEventListeners();
-
-  console.log("[Dashboard] ✅ Loaded successfully");
+  Object.entries(elements).forEach(([id, text]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  });
 };
 
+// ============================================
+// INITIALIZATION (ASYNC)
+// ============================================
+
+/**
+ * ✅ NEW: Wait for i18n system to be ready
+ */
+const waitForI18n = (timeout = 5000) => {
+  return new Promise((resolve) => {
+    if (window.i18n) {
+      resolve();
+      return;
+    }
+    
+    const startTime = Date.now();
+    const checkInterval = setInterval(() => {
+      if (window.i18n) {
+        clearInterval(checkInterval);
+        console.log('[Dashboard] i18n system ready');
+        resolve();
+      } else if (Date.now() - startTime > timeout) {
+        clearInterval(checkInterval);
+        console.warn('[Dashboard] i18n timeout - proceeding without full i18n support');
+        resolve();
+      }
+    }, 100);
+  });
+};
+
+/**
+ * ✅ MAIN INITIALIZATION (Now async)
+ */
+const init = async () => {
+  console.log('[Dashboard] Initializing...');
+  
+  // Wait for i18n to be ready
+  await waitForI18n();
+  
+  // Initialize UI
+  translateUI();
+  populateFilters();
+  initCurrencyToggle();
+  initEventListeners();
+  
+  // Initial render (async)
+  await updateView();
+  
+  console.log('[Dashboard] ✅ Initialization complete');
+};
+
+// Start when DOM is ready
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initDashboard);
+  document.addEventListener('DOMContentLoaded', init);
 } else {
-  initDashboard();
+  init();
 }
