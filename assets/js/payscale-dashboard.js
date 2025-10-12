@@ -1,6 +1,6 @@
 /**
- * Payscale Dashboard - Complete i18n with Async AI Job Title Translation
- * @version 5.0.0 - PRODUCTION READY WITH AI SUPPORT
+ * Payscale Dashboard - Complete i18n with Job Title Translation
+ * @version 4.1.0 - PRODUCTION READY (YAML ONLY)
  * @lastUpdated 2025-10-12
  */
 
@@ -39,7 +39,7 @@ if (themeBtn) {
 }
 
 // ============================================
-// TRANSLATION SYSTEM (ENHANCED WITH AI)
+// TRANSLATION SYSTEM (SIMPLE YAML ONLY)
 // ============================================
 
 const t = (key) => {
@@ -78,42 +78,17 @@ const translatePeriod = (period) => {
 };
 
 /**
- * ✅ ENHANCED: Async Job Title Translation with AI Fallback
- * Now supports both YAML translations and AI translation
+ * ✅ SIMPLE: Synchronous Job Title Translation (YAML only, no AI)
  */
-const translateJobTitle = async (title) => {
+const translateJobTitle = (title) => {
   if (!title || title === "—") return title;
   
-  // Check if i18n system is available
-  if (!window.i18n || typeof window.i18n.translateJobTitle !== 'function') {
-    console.warn('[Dashboard] i18n not available, using original title');
-    return title;
+  // Use unified i18n system (synchronous)
+  if (window.i18n && typeof window.i18n.translateJobTitle === 'function') {
+    return window.i18n.translateJobTitle(title);
   }
   
-  try {
-    // Use unified i18n system (supports YAML + AI fallback)
-    const translated = await window.i18n.translateJobTitle(title);
-    return translated || title;
-  } catch (error) {
-    console.error('[Dashboard] Translation failed:', error);
-    return title; // Fallback to original
-  }
-};
-
-/**
- * ✅ NEW: Batch translate all job titles (for performance)
- */
-const translateJobTitlesBatch = async (titles) => {
-  if (!titles || titles.length === 0) return [];
-  
-  try {
-    // Translate all titles in parallel (FAST!)
-    const translationPromises = titles.map(title => translateJobTitle(title));
-    return await Promise.all(translationPromises);
-  } catch (error) {
-    console.error('[Dashboard] Batch translation failed:', error);
-    return titles; // Return originals on error
-  }
+  return title; // Fallback to original
 };
 
 const th = (key) => {
@@ -278,7 +253,6 @@ const NORMALIZED = INPUT.map(normalizeRow);
 
 let filtered = [...NORMALIZED];
 let selectedCurrency = "IQD";
-let translatedTitlesCache = new Map(); // Cache translated titles
 
 const applyFilters = () => {
   const cityVal = document.getElementById("f-city")?.value || "";
@@ -298,12 +272,12 @@ const applyFilters = () => {
 };
 
 // ============================================
-// UI UPDATE FUNCTIONS (ENHANCED WITH ASYNC)
+// UI UPDATE FUNCTIONS (SIMPLE SYNCHRONOUS)
 // ============================================
 
-const updateView = async () => {
+const updateView = () => {
   updateKPIs();
-  await updateTable(); // Now async
+  updateTable();
   updateInsights();
   updateLegends();
 };
@@ -337,137 +311,80 @@ const updateKPIs = () => {
 };
 
 // ============================================
-// TABLE RENDERING (ASYNC WITH AI TRANSLATION)
+// TABLE RENDERING (SIMPLE SYNCHRONOUS)
 // ============================================
 
 let gridInstance = null;
 
 /**
- * ✅ ENHANCED: Async table rendering with AI translation
+ * ✅ SIMPLE: Synchronous table rendering (no async, no AI)
  */
-const updateTable = async () => {
+const updateTable = () => {
   const tableEl = document.getElementById("table");
   if (!tableEl) return;
 
-  // Show loading indicator
-  if (!gridInstance) {
-    tableEl.innerHTML = '<div style="padding:2rem;text-align:center;">⏳ Loading translations...</div>';
-  }
+  // Build table data with synchronous translations
+  const tableData = filtered.map(row => [
+    translateJobTitle(row.title),
+    translateCategory(row.category),
+    translateCity(row.city),
+    translateType(row.employment_type),
+    numberFmt(
+      selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency),
+      selectedCurrency
+    ),
+    row.portal
+  ]);
 
-  try {
-    // Step 1: Extract unique job titles
-    const uniqueTitles = [...new Set(filtered.map(row => row.title))];
-    
-    // Step 2: Translate all unique titles in parallel (FAST!)
-    const lang = getCurrentLang();
-    const cacheKey = `${lang}_titles`;
-    
-    // Check if already translated for this language
-    if (!translatedTitlesCache.has(cacheKey)) {
-      const translatedTitles = await translateJobTitlesBatch(uniqueTitles);
-      
-      // Build lookup map
-      const titleMap = new Map();
-      uniqueTitles.forEach((title, index) => {
-        titleMap.set(title, translatedTitles[index]);
-      });
-      
-      translatedTitlesCache.set(cacheKey, titleMap);
-    }
-    
-    const titleMap = translatedTitlesCache.get(cacheKey);
-    
-    // Step 3: Build table data using translated titles
-    const tableData = filtered.map(row => [
-      titleMap.get(row.title) || row.title, // Use cached translation
-      translateCategory(row.category),
-      translateCity(row.city),
-      translateType(row.employment_type),
-      numberFmt(
-        selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency),
-        selectedCurrency
-      ),
-      row.portal
-    ]);
-
-    // Step 4: Render or update Grid.js
-    if (gridInstance) {
-      gridInstance.updateConfig({
-        columns: [
-          th('job_title'),
-          th('category'),
-          th('city'),
-          th('employment_type'),
-          th('salary'),
-          th('source')
-        ],
-        data: tableData,
-        language: {
-          search: { placeholder: t('search_placeholder') },
-          pagination: {
-            previous: t('previous'),
-            next: t('next'),
-            showing: t('showing'),
-            to: t('to'),
-            of: t('of'),
-            results: t('results')
-          }
+  if (gridInstance) {
+    gridInstance.updateConfig({
+      columns: [
+        th('job_title'),
+        th('category'),
+        th('city'),
+        th('employment_type'),
+        th('salary'),
+        th('source')
+      ],
+      data: tableData,
+      language: {
+        search: { placeholder: t('search_placeholder') },
+        pagination: {
+          previous: t('previous'),
+          next: t('next'),
+          showing: t('showing'),
+          to: t('to'),
+          of: t('of'),
+          results: t('results')
         }
-      }).forceRender();
-    } else {
-      gridInstance = new Grid({
-        columns: [
-          th('job_title'),
-          th('category'),
-          th('city'),
-          th('employment_type'),
-          th('salary'),
-          th('source')
-        ],
-        data: tableData,
-        search: true,
-        sort: true,
-        pagination: { limit: 25 },
-        language: {
-          search: { placeholder: t('search_placeholder') },
-          pagination: {
-            previous: t('previous'),
-            next: t('next'),
-            showing: t('showing'),
-            to: t('to'),
-            of: t('of'),
-            results: t('results')
-          }
+      }
+    }).forceRender();
+  } else {
+    gridInstance = new Grid({
+      columns: [
+        th('job_title'),
+        th('category'),
+        th('city'),
+        th('employment_type'),
+        th('salary'),
+        th('source')
+      ],
+      data: tableData,
+      search: true,
+      sort: true,
+      pagination: { limit: 25 },
+      language: {
+        search: { placeholder: t('search_placeholder') },
+        pagination: {
+          previous: t('previous'),
+          next: t('next'),
+          showing: t('showing'),
+          to: t('to'),
+          of: t('of'),
+          results: t('results')
         }
-      }).render(tableEl);
-    }
-  } catch (error) {
-    console.error('[Dashboard] Table rendering failed:', error);
-    
-    // Fallback: render without translations
-    const fallbackData = filtered.map(row => [
-      row.title, // Original title
-      row.category,
-      row.city,
-      row.employment_type,
-      numberFmt(
-        selectedCurrency === "USD" ? toUSD(row.amtMin, row.currency) : toIQD(row.amtMin, row.currency),
-        selectedCurrency
-      ),
-      row.portal
-    ]);
-    
-    if (gridInstance) {
-      gridInstance.updateConfig({ data: fallbackData }).forceRender();
-    } else {
-      gridInstance = new Grid({
-        columns: ['Job Title', 'Category', 'City', 'Type', 'Salary', 'Source'],
-        data: fallbackData,
-        search: true,
-        sort: true,
-        pagination: { limit: 25 }
-      }).render(tableEl);
-    }
+      }
+    }).render(tableEl);
   }
 };
 
@@ -619,7 +536,7 @@ const initCurrencyToggle = () => {
 const exportCSV = () => {
   const headers = [th('job_title'), th('category'), th('city'), th('employment_type'), th('salary'), th('source')];
   const rows = filtered.map(row => [
-    row.title, // Original title for export
+    row.title,
     row.category,
     row.city,
     row.employment_type,
@@ -669,109 +586,4 @@ const initEventListeners = () => {
   document.getElementById("resetFilters")?.addEventListener("click", () => {
     document.getElementById("f-city").value = "";
     document.getElementById("f-category").value = "";
-    document.getElementById("f-etype").value = "";
-    document.getElementById("f-period").value = "";
-    applyFilters();
-  });
-
-  document.getElementById("exportCsv")?.addEventListener("click", exportCSV);
-  document.getElementById("exportJson")?.addEventListener("click", exportJSON);
-  document.getElementById("printBtn")?.addEventListener("click", printView);
-  
-  // ✅ NEW: Listen for language changes
-  window.addEventListener('languageChanged', async (event) => {
-    console.log('[Dashboard] Language changed to:', event.detail.language);
-    
-    // Clear translation cache for new language
-    translatedTitlesCache.clear();
-    
-    // Re-populate filters with new translations
-    populateFilters();
-    
-    // Re-render everything with new translations
-    await updateView();
-  });
-};
-
-// ============================================
-// UI TRANSLATIONS
-// ============================================
-
-const translateUI = () => {
-  const elements = {
-    "t.title": t('title'),
-    "t.theme": t('theme'),
-    "t.caption": t('caption'),
-    "t.reset": t('reset_filters'),
-    "t.export": t('export_csv'),
-    "t.exportJson": t('export_json'),
-    "t.print": t('print'),
-    "t.aiInsights": t('ai_insights'),
-    "t.cityLegend": t('city_legend'),
-    "t.categoryLegend": t('category_legend'),
-    "t.tableTitle": t('table_title'),
-    "t.tableCaption": t('table_caption')
-  };
-
-  Object.entries(elements).forEach(([id, text]) => {
-    const el = document.getElementById(id);
-    if (el) el.textContent = text;
-  });
-};
-
-// ============================================
-// INITIALIZATION (ASYNC)
-// ============================================
-
-/**
- * ✅ NEW: Wait for i18n system to be ready
- */
-const waitForI18n = (timeout = 5000) => {
-  return new Promise((resolve) => {
-    if (window.i18n) {
-      resolve();
-      return;
-    }
-    
-    const startTime = Date.now();
-    const checkInterval = setInterval(() => {
-      if (window.i18n) {
-        clearInterval(checkInterval);
-        console.log('[Dashboard] i18n system ready');
-        resolve();
-      } else if (Date.now() - startTime > timeout) {
-        clearInterval(checkInterval);
-        console.warn('[Dashboard] i18n timeout - proceeding without full i18n support');
-        resolve();
-      }
-    }, 100);
-  });
-};
-
-/**
- * ✅ MAIN INITIALIZATION (Now async)
- */
-const init = async () => {
-  console.log('[Dashboard] Initializing...');
-  
-  // Wait for i18n to be ready
-  await waitForI18n();
-  
-  // Initialize UI
-  translateUI();
-  populateFilters();
-  initCurrencyToggle();
-  initEventListeners();
-  
-  // Initial render (async)
-  await updateView();
-  
-  console.log('[Dashboard] ✅ Initialization complete');
-};
-
-// Start when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', init);
-} else {
-  init();
-}
+    document.getElementById("f-etype").value
