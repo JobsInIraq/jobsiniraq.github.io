@@ -36,8 +36,10 @@
   {% endfor %}
 {% endif %}
 
+
+
 <!-- ============================================ -->
-<!-- ✅ I18N SYSTEM (YAML ONLY, NO AI)           -->
+<!-- ✅ I18N SYSTEM (OPTIMIZED LOADING ORDER)    -->
 <!-- ============================================ -->
 
 <!-- STEP 1: Inject UI translations from _data/ui-text.yml -->
@@ -46,8 +48,8 @@
 <!-- STEP 2: Inject job title translations from _data/job-titles/*.yml -->
 {% include inject-job-titles.html %}
 
-<!-- STEP 3: Load unified i18n engine (YAML translations only) -->
-<script src="{{ '/assets/js/unified-i18n.js' | relative_url }}" defer></script>
+<!-- STEP 3: Load unified i18n engine (MUST load BEFORE ES modules) -->
+<script src="{{ '/assets/js/unified-i18n.js' | relative_url }}"></script>
 
 <!-- ============================================ -->
 <!-- END I18N SYSTEM                             -->
