@@ -1,322 +1,386 @@
 # ============================================
-# MASTER ENGLISH JOB TITLES - IRAQ JOB MARKET
-# Last Updated: 2025-10-11
-# Total: 200+ titles covering Iraq job market
+# ENGLISH JOB TITLES - IRAQ JOB MARKET
+# International Standard (ISCO-08 Aligned)
+# Last Updated: 2025-10-12
+# Total: 251 professionally verified titles
 # ============================================
 
 # ==========================================
-# OIL & GAS SECTOR
+# 1. MANAGERS
 # ==========================================
-petroleum_engineer: "Petroleum Engineer"
-oil_field_technician: "Oil Field Technician"
-gas_operations_specialist: "Gas Operations Specialist"
-pipeline_operator: "Pipeline Operator"
-drilling_engineer: "Drilling Engineer"
-refinery_technician: "Refinery Technician"
-hse_officer: "HSE Officer"
-reservoir_engineer: "Reservoir Engineer"
-production_engineer: "Production Engineer"
-chemical_engineer: "Chemical Engineer"
-piping_engineer: "Piping Engineer"
-instrumentation_engineer: "Instrumentation Engineer"
-turnaround_planner: "Turnaround Planner"
-turnaround_scheduler: "Turnaround Scheduler"
-multi_phase_flow_meter_operator: "Multi-Phase Flow Meter Operator"
-maintenance_supervisor_instrumentation: "Maintenance Supervisor (Instrumentation)"
+chief_executive_officer_ceo: "Chief Executive Officer (CEO)"
+general_manager: "General Manager"
+country_manager: "Country Manager"
+operations_manager: "Operations Manager"
+project_manager: "Project Manager"
+construction_manager: "Construction Manager"
+finance_manager: "Finance Manager"
+hr_manager: "HR Manager"
+marketing_manager: "Marketing Manager"
+sales_manager: "Sales Manager"
+retail_manager: "Retail Manager"
+office_manager: "Office Manager"
+store_manager: "Store Manager"
+warehouse_manager: "Warehouse Manager"
+hotel_manager: "Hotel Manager"
+restaurant_manager: "Restaurant Manager"
+procurement_manager: "Procurement Manager"
+supply_chain_manager: "Supply Chain Manager"
+quality_assurance_manager: "Quality Assurance Manager"
+business_development_manager: "Business Development Manager"
+product_manager: "Product Manager"
+event_manager: "Event Manager"
+it_project_manager: "IT Project Manager"
+research_and_development_manager: "Research and Development Manager"
+graphic_design_manager: "Graphic Design Manager"
+customer_service_manager: "Customer Service Manager"
+digital_marketing_manager: "Digital Marketing Manager"
+marketing_director: "Marketing Director"
+public_relations_manager: "Public Relations Manager"
+social_media_manager: "Social Media Manager"
 
 # ==========================================
-# IT & TECHNOLOGY
+# 2. PROFESSIONALS - Science & Engineering
 # ==========================================
+petroleum_engineer: "Petroleum Engineer"
+civil_engineer: "Civil Engineer"
+electrical_engineer: "Electrical Engineer"
+mechanical_engineer: "Mechanical Engineer"
+chemical_engineer: "Chemical Engineer"
+structural_engineer: "Structural Engineer"
+reservoir_engineer: "Reservoir Engineer"
+production_engineer: "Production Engineer"
+drilling_engineer: "Drilling Engineer"
+piping_engineer: "Piping Engineer"
+instrumentation_engineer: "Instrumentation Engineer"
+biomedical_engineer: "Biomedical Engineer"
+planning_engineer: "Planning Engineer"
+site_engineer: "Site Engineer"
+quality_control_engineer: "Quality Control Engineer"
+architect: "Architect"
 software_engineer: "Software Engineer"
-software_developer: "Software Developer"
-it_technician: "IT Technician"
 network_engineer: "Network Engineer"
-network_administrator: "Network Administrator"
-systems_administrator: "Systems Administrator"
-system_administrator: "System Administrator"
-telecommunications_specialist: "Telecommunications Specialist"
-data_scientist: "Data Scientist"
-database_administrator: "Database Administrator"
-web_developer: "Web Developer"
-web_designer: "Web Designer"
 cyber_security_engineer: "Cyber Security Engineer"
-information_security_officer: "Information Security Officer"
 devops_engineer: "DevOps Engineer"
 cloud_engineer: "Cloud Engineer"
-qa_tester: "QA Tester"
-qa_engineer: "QA Engineer"
-it_support_technician: "IT Support Technician"
-it_project_manager: "IT Project Manager"
+data_scientist: "Data Scientist"
+
+# ==========================================
+# 2. PROFESSIONALS - Health
+# ==========================================
+doctor: "Doctor"
+general_practitioner: "General Practitioner"
+surgeon: "Surgeon"
+radiologist: "Radiologist"
+registered_nurse: "Registered Nurse"
+pharmacist: "Pharmacist"
+paramedic: "Paramedic"
+veterinarian: "Veterinarian"
+
+# ==========================================
+# 2. PROFESSIONALS - Education
+# ==========================================
+teacher: "Teacher"
+school_teacher: "School Teacher"
+university_lecturer: "University Lecturer"
+professor: "Professor"
+assistant_professor: "Assistant Professor"
+instructor: "Instructor"
+english_teacher: "English Teacher"
+
+# ==========================================
+# 2. PROFESSIONALS - Business & Finance
+# ==========================================
+accountant: "Accountant"
+financial_analyst: "Financial Analyst"
+investment_analyst: "Investment Analyst"
+auditor: "Auditor"
+business_analyst: "Business Analyst"
+management_consultant: "Management Consultant"
+strategy_analyst: "Strategy Analyst"
+policy_analyst: "Policy Analyst"
+
+# ==========================================
+# 2. PROFESSIONALS - Legal
+# ==========================================
+lawyer: "Lawyer"
+legal_advisor: "Legal Advisor"
+legal_counsel: "Legal Counsel"
+legal_consultant: "Legal Consultant"
+
+# ==========================================
+# 3. TECHNICIANS & ASSOCIATE PROFESSIONALS - Engineering
+# ==========================================
+oil_field_technician: "Oil Field Technician"
+refinery_technician: "Refinery Technician"
+engineering_technician: "Engineering Technician"
+building_technician: "Building Technician"
+electrical_technician: "Electrical Technician"
+hvac_technician: "HVAC Technician"
+hvac_technician_aa: "Heating, Ventilation, and Air Conditioning (HVAC) Technician (AA)"
+medical_technician: "Medical Technician"
+laboratory_technician: "Laboratory Technician"
+emergency_medical_technician: "Emergency Medical Technician"
+agricultural_technician: "Agricultural Technician"
+maintenance_technician: "Maintenance Technician"
+it_technician: "IT Technician"
+network_administrator: "Network Administrator"
+system_administrator: "System Administrator"
+database_administrator: "Database Administrator"
+web_developer: "Web Developer"
+software_developer: "Software Developer"
 java_developer: "Java Developer"
 mobile_app_developer: "Mobile App Developer"
 front_end_developer: "Front-End Developer"
 back_end_developer: "Back-End Developer"
 full_stack_developer: "Full-Stack Developer"
 senior_software_developer: "Senior Software Developer"
+qa_tester: "QA Tester"
+qa_engineer: "QA Engineer"
+it_support_technician: "IT Support Technician"
+transmission_engineer: "Transmission Engineer"
+
+# ==========================================
+# 3. TECHNICIANS & ASSOCIATE PROFESSIONALS - Health
+# ==========================================
+medical_science_liaison: "Medical Science Liaison"
+clinic_manager: "Clinic Manager"
+
+# ==========================================
+# 3. TECHNICIANS & ASSOCIATE PROFESSIONALS - Business
+# ==========================================
+accounting_officer: "Accounting Officer"
+senior_accountant: "Senior Accountant"
+associate_accountant: "Associate Accountant"
+financial_assistant: "Financial Assistant"
+treasury_officer: "Treasury Officer"
+accounts_payable_specialist: "Accounts Payable Specialist"
+accounts_receivable_specialist: "Accounts Receivable Specialist"
+accounts_receivable_accountant: "Accounts Receivable Accountant"
+ap_supervisor: "AP Supervisor (Accounts Payable)"
+tax_consultant: "Tax Consultant"
+financial_controller: "Financial Controller"
+financial_planner: "Financial Planner"
+credit_analyst: "Credit Analyst"
+underwriter_officer: "Underwriter Officer"
+sales_executive: "Sales Executive"
+sales_representative: "Sales Representative"
+sales_supervisor: "Sales Supervisor"
+sales_officer: "Sales Officer"
+technical_sales_manager: "Technical Sales Manager"
+account_manager: "Account Manager"
+account_executive: "Account Executive"
+business_development_specialist: "Business Development Specialist"
+marketing_specialist: "Marketing Specialist"
+social_media_specialist: "Social Media Specialist"
+meta_advertising_specialist: "Meta Advertising Specialist"
+content_writer: "Content Writer"
+content_creator: "Content Creator"
+media_planner: "Media Planner"
+graphic_designer: "Graphic Designer"
+web_designer: "Web Designer"
+ui_ux_designer: "UI/UX Designer"
+ux_ui_designer: "UX/UI Designer"
+video_editor: "Video Editor"
+photographer: "Photographer"
+3d_motion_graphic_designer: "3D & Motion Graphic Designer"
+autocad_electrical_designer: "AutoCAD Electrical Designer"
+
+# ==========================================
+# 3. TECHNICIANS & ASSOCIATE PROFESSIONALS - Legal & Compliance
+# ==========================================
+programme_manager: "Programme Manager"
+program_manager: "Program Manager"
+compliance_officer: "Compliance Officer"
+contract_specialist: "Contract Specialist"
+health_and_safety_officer: "Health and Safety Officer"
+hse_officer: "HSE Officer"
+
+# ==========================================
+# 4. CLERICAL SUPPORT WORKERS
+# ==========================================
+administrative_officer: "Administrative Officer"
+administrative_assistant: "Administrative Assistant"
+executive_assistant: "Executive Assistant"
+executive_officer: "Executive Officer"
+office_assistant: "Office Assistant"
+data_entry_specialist: "Data Entry Specialist"
+it_data_entry: "IT Data Entry"
+document_controller: "Document Controller"
+bank_teller: "Bank Teller"
+cashier: "Cashier"
+customer_service_representative: "Customer Service Representative"
+customer_support_representative: "Customer Support Representative"
+customer_support_agent: "Customer Support Agent"
+receptionist: "Receptionist"
+front_desk_manager: "Front Desk Manager"
+
+# ==========================================
+# 5. SERVICE AND SALES WORKERS
+# ==========================================
+waiter: "Waiter"
+chef: "Chef"
+reservation_agent: "Reservation Agent"
+sales_associate: "Sales Associate"
+sales_advisor: "Sales Advisor"
+sales_agent: "Sales Agent"
+retail_sales_staff: "Retail Sales Staff"
+property_sales_staff: "Property Sales Staff"
+real_estate_sales_staff: "Real Estate Sales Staff"
+field_sales_representative: "Field Sales Representative"
+mens_leather_garment_salesperson: "Men's Leather & Garment Salesperson"
+mens_clothing_shop_staff: "Men's Clothing Shop Staff"
+sales_staff: "Sales Staff"
+bodyguard: "Bodyguard"
+security_guard: "Security Guard"
+security_manager: "Security Manager"
+security_consultant: "Security Consultant"
+security_associate: "Security Associate"
+police_officer: "Police Officer"
+firefighter: "Firefighter"
+
+# ==========================================
+# 6. SKILLED AGRICULTURAL WORKERS
+# ==========================================
+livestock_farmer: "Livestock Farmer"
+farm_manager: "Farm Manager"
+agronomist: "Agronomist"
+
+# ==========================================
+# 7. CRAFT AND RELATED TRADES WORKERS
+# ==========================================
+carpenter: "Carpenter"
+mechanic: "Mechanic"
+
+# ==========================================
+# 8. PLANT AND MACHINE OPERATORS
+# ==========================================
+pipeline_operator: "Pipeline Operator"
+multi_phase_flow_meter_operator: "Multi-Phase Flow Meter Operator"
+delivery_driver: "Delivery Driver"
+driver: "Driver"
+mini_bus_driver: "Mini Bus Driver"
+driver_with_own_car_suv_4x4: "Driver with Own Car (SUV/4x4)"
+driver_car_or_motorbike: "Driver (Car or Motorbike)"
+
+# ==========================================
+# 9. ELEMENTARY OCCUPATIONS
+# ==========================================
+warehouse_technician: "Warehouse Technician"
+warehouseman: "Warehouseman"
+senior_storeperson: "Senior Storeperson"
+cleaner: "Cleaner"
+janitor: "Janitor"
+
+# ==========================================
+# 10. ARMED FORCES OCCUPATIONS
+# ==========================================
+military_personnel: "Military Personnel"
+
+# ==========================================
+# SPECIALIZED ROLES - Oil & Gas
+# ==========================================
+gas_operations_specialist: "Gas Operations Specialist"
+foam_production_engineer: "Foam Production Engineer"
+turnaround_planner: "Turnaround Planner"
+turnaround_scheduler: "Turnaround Scheduler"
+maintenance_supervisor_instrumentation: "Maintenance Supervisor (Instrumentation)"
+
+# ==========================================
+# SPECIALIZED ROLES - IT & Telecommunications
+# ==========================================
+telecommunications_specialist: "Telecommunications Specialist"
 information_technology_specialist: "Information Technology Specialist"
 servicenow_developer: "ServiceNow Developer"
 telephone_technician: "Telephone Technician"
 cluster_engineer: "Cluster Engineer"
 telecom_engineer: "Telecom Engineer"
+junior_it_mobile_technology: "Junior IT / Mobile Technology"
+it_officer: "IT Officer"
 
 # ==========================================
-# ENGINEERING & CONSTRUCTION
+# SPECIALIZED ROLES - HR & Administration
 # ==========================================
-civil_engineer: "Civil Engineer"
-construction_manager: "Construction Manager"
-construction_supervisor: "Construction Supervisor"
-project_manager: "Project Manager"
-planning_engineer: "Planning Engineer"
-site_engineer: "Site Engineer"
-architect: "Architect"
-site_supervisor: "Site Supervisor"
-building_technician: "Building Technician"
-electrical_engineer: "Electrical Engineer"
-mechanical_engineer: "Mechanical Engineer"
-quantity_surveyor: "Quantity Surveyor"
-quality_surveyor: "Quality Surveyor"
-structural_engineer: "Structural Engineer"
-quality_control_engineer: "Quality Control Engineer"
-foam_production_engineer: "Foam Production Engineer"
+hr_generalist: "HR Generalist"
+hr_executive: "HR Executive"
+human_resources_executive: "Human Resources Executive"
+human_resources_assistant: "Human Resources Assistant"
+hr_supervisor_senior_hr_specialist: "HR Supervisor / Senior HR Specialist"
+hr_admin_officer: "HR Admin Officer"
+recruitment_specialist: "Recruitment Specialist"
+recruitment_admin_specialist: "Recruitment & Admin Specialist"
 
 # ==========================================
-# HEALTHCARE & MEDICAL
-# ==========================================
-registered_nurse: "Registered Nurse"
-doctor: "Doctor"
-general_practitioner: "General Practitioner"
-pharmacist: "Pharmacist"
-medical_technician: "Medical Technician"
-biomedical_engineer: "Biomedical Engineer"
-paramedic: "Paramedic"
-emergency_medical_technician: "Emergency Medical Technician"
-surgeon: "Surgeon"
-radiologist: "Radiologist"
-laboratory_technician: "Laboratory Technician"
-medical_science_liaison: "Medical Science Liaison"
-clinic_manager: "Clinic Manager"
-
-# ==========================================
-# PUBLIC SECTOR & GOVERNMENT
-# ==========================================
-government_administrator: "Government Administrator"
-public_sector_clerk: "Public Sector Clerk"
-policy_analyst: "Policy Analyst"
-programme_manager: "Programme Manager"
-program_manager: "Program Manager"
-justice_home_affairs_programme_manager_eo: "Justice and Home Affairs Programme Manager (EO)"
-administrative_officer: "Administrative Officer"
-executive_officer: "Executive Officer"
-iraqi_embassy: "Iraqi Embassy"
-diplomat: "Diplomat"
-consular_officer: "Consular Officer"
-
-# ==========================================
-# EDUCATION & TRAINING
-# ==========================================
-teacher: "Teacher"
-school_teacher: "School Teacher"
-university_lecturer: "University Lecturer"
-training_specialist: "Training Specialist"
-education_administrator: "Education Administrator"
-education_specialist: "Education Specialist"
-professor: "Professor"
-assistant_professor: "Assistant Professor"
-instructor: "Instructor"
-tutor: "Tutor"
-
-# ==========================================
-# FINANCE & BANKING
-# ==========================================
-accountant: "Accountant"
-financial_analyst: "Financial Analyst"
-bank_teller: "Bank Teller"
-accounts_payable_specialist: "Accounts Payable Specialist"
-accounts_receivable_specialist: "Accounts Receivable Specialist"
-ap_supervisor: "AP Supervisor (Accounts Payable)"
-investment_analyst: "Investment Analyst"
-auditor: "Auditor"
-credit_analyst: "Credit Analyst"
-tax_consultant: "Tax Consultant"
-finance_manager: "Finance Manager"
-financial_controller: "Financial Controller"
-financial_planner: "Financial Planner"
-accounting_officer: "Accounting Officer"
-senior_accountant: "Senior Accountant"
-associate_accountant: "Associate Accountant"
-financial_assistant: "Financial Assistant"
-underwriter_officer: "Underwriter Officer"
-
-# ==========================================
-# SALES & MARKETING
-# ==========================================
-sales_associate: "Sales Associate"
-sales_executive: "Sales Executive"
-sales_manager: "Sales Manager"
-sales_representative: "Sales Representative"
-sales_supervisor: "Sales Supervisor"
-sales_officer: "Sales Officer"
-retail_manager: "Retail Manager"
-customer_service_representative: "Customer Service Representative"
-customer_support_representative: "Customer Support Representative"
-customer_service_manager: "Customer Service Manager"
-marketing_specialist: "Marketing Specialist"
-marketing_manager: "Marketing Manager"
-marketing_director: "Marketing Director"
-business_development_manager: "Business Development Manager"
-account_manager: "Account Manager"
-account_executive: "Account Executive"
-indirect_sales_account_executive: "Indirect Sales Account Executive"
-content_writer: "Content Writer"
-content_creator: "Content Creator"
-digital_marketing_manager: "Digital Marketing Manager"
-public_relations_manager: "Public Relations Manager"
-social_media_manager: "Social Media Manager"
-social_media_specialist: "Social Media Specialist"
-meta_advertising_specialist: "Meta Advertising Specialist"
-media_planner: "Media Planner"
-technical_sales_manager: "Technical Sales Manager"
-solar_battery_sales_manager: "Solar Battery Sales Manager"
-
-# ==========================================
-# E-COMMERCE & DIGITAL
-# ==========================================
-e_commerce_category_management_specialist: "E-Commerce Category Management Specialist"
-e_commerce_merchant_support_officer: "E-Commerce Merchant Support Officer"
-category_manager: "Category Manager"
-operations_executive: "Operations Executive"
-
-# ==========================================
-# LOGISTICS & SUPPLY CHAIN
+# SPECIALIZED ROLES - Logistics & Supply Chain
 # ==========================================
 logistics_coordinator: "Logistics Coordinator"
 logistics_specialist: "Logistics Specialist"
-supply_chain_manager: "Supply Chain Manager"
 supply_chain_specialist: "Supply Chain Specialist"
 supply_chain_planner: "Supply Chain Planner"
-warehouse_manager: "Warehouse Manager"
-warehouse_technician: "Warehouse Technician"
-warehouseman: "Warehouseman"
-operations_manager: "Operations Manager"
 operations_coordinator: "Operations Coordinator"
 operations_supervisor: "Operations Supervisor"
+operations_executive: "Operations Executive"
 procurement_specialist: "Procurement Specialist"
-procurement_manager: "Procurement Manager"
 procurement_officer: "Procurement Officer"
 senior_procurement_officer: "Senior Procurement Officer"
 inventory_controller: "Inventory Controller"
 contract_logistics_officer: "Contract Logistics Officer"
-document_controller: "Document Controller"
-senior_storeperson: "Senior Storeperson"
+local_buyer: "Local Buyer"
 
 # ==========================================
-# SECURITY & MILITARY
+# SPECIALIZED ROLES - Construction & Engineering
 # ==========================================
-security_guard: "Security Guard"
-security_consultant: "Security Consultant"
-security_manager: "Security Manager"
-security_associate: "Security Associate"
-guard_force_operations: "Guard Force Operations"
-military_personnel: "Military Personnel"
-police_officer: "Police Officer"
-firefighter: "Firefighter"
+quantity_surveyor: "Quantity Surveyor"
+quality_surveyor: "Quality Surveyor"
+construction_supervisor: "Construction Supervisor"
+site_supervisor: "Site Supervisor"
+architect_engineer: "Architect Engineer"
 
 # ==========================================
-# HR & ADMINISTRATION
+# SPECIALIZED ROLES - Government & Public Sector
 # ==========================================
-hr_manager: "HR Manager"
-hr_generalist: "HR Generalist"
-hr_executive: "HR Executive"
-human_resources_executive: "Human Resources Executive"
-recruitment_specialist: "Recruitment Specialist"
-recruitment_admin_specialist: "Recruitment & Admin Specialist"
-administrative_assistant: "Administrative Assistant"
-office_manager: "Office Manager"
-executive_assistant: "Executive Assistant"
-human_resources_assistant: "Human Resources Assistant"
-data_entry_specialist: "Data Entry Specialist"
+government_administrator: "Government Administrator"
+public_sector_clerk: "Public Sector Clerk"
+diplomat: "Diplomat"
+consular_officer: "Consular Officer"
+corporate_services_officer_ao: "Corporate Services Officer (AO)"
+justice_home_affairs_programme_manager_eo: "Justice and Home Affairs Programme Manager (EO)"
+monitoring_evaluation_me_officer: "Monitoring & Evaluation (M&E) Officer"
+iraqi_embassy: "Iraqi Embassy"
 
 # ==========================================
-# AGRICULTURE & FARMING
+# SPECIALIZED ROLES - Education & Training
 # ==========================================
-livestock_farmer: "Livestock Farmer"
-agricultural_technician: "Agricultural Technician"
-farm_manager: "Farm Manager"
-veterinarian: "Veterinarian"
-agronomist: "Agronomist"
+education_administrator: "Education Administrator"
+education_specialist: "Education Specialist"
+training_specialist: "Training Specialist"
 
 # ==========================================
-# LEGAL & COMPLIANCE
+# SPECIALIZED ROLES - E-Commerce & Digital
 # ==========================================
-lawyer: "Lawyer"
-legal_advisor: "Legal Advisor"
-legal_counsel: "Legal Counsel"
-legal_consultant: "Legal Consultant"
-compliance_officer: "Compliance Officer"
-contract_specialist: "Contract Specialist"
-health_and_safety_officer: "Health and Safety Officer"
+e_commerce_category_management_specialist: "E-Commerce Category Management Specialist"
+e_commerce_merchant_support_officer: "E-Commerce Merchant Support Officer"
+category_manager: "Category Manager"
 
 # ==========================================
-# RETAIL & HOSPITALITY
+# SPECIALIZED ROLES - Field Operations
 # ==========================================
-cashier: "Cashier"
-store_manager: "Store Manager"
-hotel_manager: "Hotel Manager"
-restaurant_manager: "Restaurant Manager"
-chef: "Chef"
-waiter: "Waiter"
-reservation_agent: "Reservation Agent"
+field_representative: "Field Representative"
+field_representative_female: "Field Representative (Female)"
+field_operator: "Field Operator"
 
 # ==========================================
-# DESIGN & CREATIVE
+# COMBINED/HYBRID ROLES
 # ==========================================
-graphic_designer: "Graphic Designer"
-graphic_design_manager: "Graphic Design Manager"
-graphics_design_intern: "Graphics Design Intern"
-ui_ux_designer: "UI/UX Designer"
-ux_ui_designer: "UX/UI Designer"
-web_designer: "Web Designer"
-video_editor: "Video Editor"
-photographer: "Photographer"
-3d_motion_graphic_designer: "3D & Motion Graphic Designer"
+sales_marketing: "Sales & Marketing"
+sales_call_center: "Sales Call Center"
 
 # ==========================================
-# BUSINESS & MANAGEMENT
+# GENERAL FALLBACK CATEGORIES
 # ==========================================
-business_analyst: "Business Analyst"
-management_consultant: "Management Consultant"
-strategy_analyst: "Strategy Analyst"
-event_manager: "Event Manager"
-event_coordinator: "Event Coordinator"
-product_manager: "Product Manager"
-quality_assurance_manager: "Quality Assurance Manager"
-chief_executive_officer_ceo: "Chief Executive Officer (CEO)"
-general_manager: "General Manager"
-country_manager: "Country Manager"
-
-# ==========================================
-# RESEARCH & DEVELOPMENT
-# ==========================================
-research_scientist: "Research Scientist"
-research_and_development_manager: "Research and Development Manager"
-
-# ==========================================
-# DATA & ANALYTICS
-# ==========================================
-data_analyst: "Data Analyst"
-
-# ==========================================
-# MAINTENANCE & TECHNICAL SUPPORT
-# ==========================================
-mechanic: "Mechanic"
-maintenance_technician: "Maintenance Technician"
-
-# ==========================================
-# GENERAL FALLBACK
-# ==========================================
-unknown_position: "Position Not Specified"
-not_specified: "Not Specified"
-other: "Other"
 intern: "Intern"
 trainee: "Trainee"
 fresh_graduate: "Fresh Graduate"
+not_specified: "Not Specified"
+other: "Other"
+unknown_position: "Position Not Specified"
