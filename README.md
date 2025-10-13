@@ -81,7 +81,7 @@ This audit covers eight main areas of compliance, performance, and modernization
 | 1 | Image optimization | ❌ | HIGH | Compress images (WebP) |
 | 2 | CSS minification | ✅ | - | Already compressed |
 | 3 | JS minification | ❌ | MEDIUM | Minify unified-i18n.js |
-| 4 | CDN optimization | ⚠️ | HIGH | Update Grid.js to v6.2.0 + SRI |
+| 4 | CDN optimization | ✅ | - | Update Grid.js to v6.2.0 + SRI |
 | 5 | Lazy loading | ❌ | MEDIUM | Add `loading="lazy"` |
 | 6 | Font optimization | ❓ | MEDIUM | Audit fonts |
 | 7 | Build performance | ⚠️ | LOW | Enable incremental builds |
