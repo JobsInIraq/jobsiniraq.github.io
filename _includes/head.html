@@ -7,7 +7,7 @@
 
 {% seo %}
 
-<title>{{ page.title | default: site.title }}</title>
+<!-- Title is handled by jekyll-seo-tag above (no duplicate needed) -->
 
 {% unless site.atom_feed.hide %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
@@ -26,6 +26,9 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
+<!-- RTL Support (loads always, only applies when dir="rtl") -->
+<link rel="stylesheet" href="{{ '/assets/css/rtl-global.css' | relative_url }}">
+
 <!-- Font Awesome (Local) - Optimized Loading with SRI -->
 <link rel="preload" 
       href="{{ '/assets/vendor/fontawesome/css/all.min.css' | relative_url }}" 
@@ -39,7 +42,6 @@
         integrity="sha384-N6pD0GMmme8Pi3sNNRgU+RQv0Od8FGDUMv0nRVgOMzVTe04ZaYRZtnu8q8PWYFIA"
         crossorigin="anonymous">
 </noscript>
-
 
 <!-- Preload Font Awesome webfonts for better performance -->
 <link rel="preload" href="{{ '/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
