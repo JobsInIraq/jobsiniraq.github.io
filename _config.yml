@@ -1,7 +1,7 @@
 # ============================================
 # JOBSIN IRAQ - JEKYLL CONFIGURATION
 # Multilingual Job Platform with i18n Support
-# Last Updated: 2025-10-13
+# Last Updated: 2025-10-13 - Enhanced Sitemap
 # ============================================
 
 # ============================================
@@ -34,7 +34,6 @@ og_image: "/assets/images/og-image-1200x630.png"
 # ============================================
 
 # Minimal Mistakes theme locale (for UI text)
-# Use this to set theme's built-in UI language
 locale: "en-US"
 
 # Primary language for HTML lang attribute (WCAG 3.1.1)
@@ -43,11 +42,11 @@ lang: "en"
 # Custom multilingual configuration
 languages:
   default: "en"
-  supported: ["en", "ar", "ku"]  # Changed from "ckb" to "ku" for broader Kurdish support
+  supported: ["en", "ar", "ku"]
   names:
     en: "English"
     ar: "العربية"
-    ku: "کوردی"  # Generic Kurdish (covers Sorani/Kurmanji)
+    ku: "کوردی"
 
 # RTL (Right-to-Left) language support
 rtl_languages: ["ar", "ku"]
@@ -60,7 +59,7 @@ i18n:
   default_lang: "en"
   fallback_lang: "en"
   dev_mode: false
-  load_strategy: "lazy"  # For phase 3 optimization
+  load_strategy: "lazy"
 
 # ============================================
 # SCRIPTS & STYLES
@@ -166,7 +165,7 @@ sass:
   sourcemap: never
 
 # Build optimization
-incremental: false  # Disabled for production reliability
+incremental: false
 lsi: false
 excerpt_separator: "\n\n"
 
@@ -227,7 +226,7 @@ exclude:
   - .github
   - .gitignore
   
-  # JavaScript source (if using minified versions)
+  # JavaScript source
   - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor
@@ -281,10 +280,71 @@ tag_archive:
   path: /tags/
 
 # ============================================
-# DEFAULTS
+# DEFAULTS (Enhanced with Sitemap Settings)
 # ============================================
 defaults:
-  # All pages
+  # Homepage (Highest Priority)
+  - scope:
+      path: "index.html"
+    values:
+      layout: single
+      sitemap:
+        priority: 1.0
+        changefreq: 'daily'
+  
+  # Salary Dashboard (High Priority - Daily Updates)
+  - scope:
+      path: "_pages/payscale-dashboard.html"
+    values:
+      layout: single
+      sitemap:
+        priority: 0.9
+        changefreq: 'daily'
+  
+  # Salary Guide (High Priority - Weekly Updates)
+  - scope:
+      path: "_pages/payscale.md"
+    values:
+      layout: single
+      sitemap:
+        priority: 0.9
+        changefreq: 'weekly'
+  
+  # Recruitment Process (Medium Priority)
+  - scope:
+      path: "_pages/process.md"
+    values:
+      layout: single
+      sitemap:
+        priority: 0.7
+        changefreq: 'monthly'
+  
+  # Innovation Page (Medium Priority)
+  - scope:
+      path: "_pages/recruitment_innovation.md"
+    values:
+      layout: single
+      sitemap:
+        priority: 0.7
+        changefreq: 'monthly'
+  
+  # About Page (Lower Priority)
+  - scope:
+      path: "_pages/about.md"
+    values:
+      layout: single
+      sitemap:
+        priority: 0.5
+        changefreq: 'monthly'
+  
+  # 404 Page (Exclude from Sitemap)
+  - scope:
+      path: "_pages/404.html"
+    values:
+      layout: single
+      sitemap: false
+  
+  # All other pages (Default Settings)
   - scope:
       path: ""
       type: pages
@@ -295,9 +355,12 @@ defaults:
       comments: false
       share: true
       related: false
-      lang: en  # Default language for pages (WCAG 3.1.1)
+      lang: en
+      sitemap:
+        priority: 0.6
+        changefreq: 'monthly'
   
-  # All posts
+  # All posts (Default Settings)
   - scope:
       path: ""
       type: posts
@@ -308,19 +371,28 @@ defaults:
       comments: false
       share: true
       related: true
-      lang: en  # Default language for posts
+      lang: en
+      sitemap:
+        priority: 0.6
+        changefreq: 'monthly'
 
   # Arabic pages (if you create them)
   - scope:
       path: "ar"
     values:
       lang: ar
+      sitemap:
+        priority: 0.6
+        changefreq: 'monthly'
   
   # Kurdish pages (if you create them)
   - scope:
       path: "ku"
     values:
       lang: ku
+      sitemap:
+        priority: 0.6
+        changefreq: 'monthly'
 
 # ============================================
 # FOOTER
