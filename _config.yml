@@ -1,7 +1,7 @@
 # ============================================
 # JOBSIN IRAQ - JEKYLL CONFIGURATION
 # Multilingual Job Platform with i18n Support
-# Last Updated: 2025-10-11
+# Last Updated: 2025-10-13
 # ============================================
 
 # ============================================
@@ -55,20 +55,17 @@ i18n_config:
   rtl_langs: ["ar", "ckb"]
   storage_key: "siteLanguage"
   default_lang: "en"
-  dev_mode: false  # Set to true for development/debugging
+  dev_mode: false
 
 # ============================================
 # SCRIPTS & STYLES
 # ============================================
 
-# Head scripts (CSS should go here for proper loading order)
-head_scripts:
-  - /assets/css/rtl-global.css
-  - /assets/css/language-switcher.css
+# Head scripts (JavaScript only - CSS loads via <link> in head.html)
+head_scripts: []
 
-# After footer scripts (JavaScript load order is critical)
-after_footer_scripts:
-  - /assets/js/unified-i18n.js
+# After footer scripts (JavaScript only)
+after_footer_scripts: []
 
 # ============================================
 # SEO & SOCIAL
@@ -161,8 +158,8 @@ sass:
   sourcemap: never
 
 # Build optimization
-incremental: false  # Set true only in development
-lsi: false  # Latent Semantic Indexing (slow, disable for faster builds)
+incremental: false
+lsi: false
 excerpt_separator: "\n\n"
 
 # Caching (Jekyll 4.x)
@@ -250,7 +247,7 @@ paginate_path: /page:num/
 
 # Advanced pagination (jekyll-paginate-v2)
 pagination:
-  enabled: false  # Use simple paginate for GitHub Pages compatibility
+  enabled: false
   debug: false
   collection: 'posts'
   per_page: 10
@@ -273,14 +270,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-# ============================================
-# COLLECTIONS (Optional for future use)
-# ============================================
-# collections:
-#   job_portals:
-#     output: true
-#     permalink: /portals/:name/
 
 # ============================================
 # DEFAULTS
@@ -319,12 +308,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JobsInIraq"
-   # - label: "Twitter"
-   #   icon: "fab fa-fw fa-twitter-square"
-   #   url: ""
-  #  - label: "Facebook"
-  #    icon: "fab fa-fw fa-facebook-square"
-  #    url: ""
 
 # ============================================
 # MISC SETTINGS
@@ -347,13 +330,3 @@ compress_html:
   profile: false
   ignore:
     envs: [development, local]
-
-# ============================================
-# ENVIRONMENT-SPECIFIC SETTINGS
-# ============================================
-# Use JEKYLL_ENV variable to toggle settings
-# Example: JEKYLL_ENV=production bundle exec jekyll build
-
-# Development settings (override in local)
-# incremental: true
-# i18n_config.dev_mode: true
