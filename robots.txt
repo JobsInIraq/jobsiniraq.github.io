@@ -1,13 +1,155 @@
+# ============================================
 # robots.txt for JobsIn Iraq
 # Last updated: 2025-10-13
+# ============================================
+# 
+# Purpose: Guide search engine crawlers, block AI bots,
+# preserve crawl budget, reference sitemap
+#
+# Note: This file is voluntary - bots can choose to ignore it
+# For security, use .htaccess or authentication instead
+# ============================================
 
-# Allow all search engines
+# ============================================
+# BLOCK AI TRAINING BOTS (2025 Priority)
+# ============================================
+# These bots scrape content for LLM training
+# Blocking them protects your intellectual property
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Common Crawl (used by many AI companies)
+User-agent: CCBot
+Disallow: /
+
+# Google AI (Extended) - Training data, NOT search
+User-agent: Google-Extended
+Disallow: /
+
+# Meta AI (Facebook/Instagram AI)
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# Amazon AI
+User-agent: Amazonbot
+Disallow: /
+
+# ByteDance/TikTok AI
+User-agent: Bytespider
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+
+# Apple AI (Extended)
+User-agent: Applebot-Extended
+Disallow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Disallow: /
+
+# Other AI crawlers
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+# ============================================
+# RULES FOR LEGITIMATE SEARCH ENGINES
+# ============================================
+# Allow Google, Bing, Yandex, DuckDuckGo, etc.
+
 User-agent: *
+# Allow everything by default
 Allow: /
 
-# Exclude admin/utility pages
-Disallow: /assets/
-Disallow: /_pages/404.html
+# Explicitly ALLOW CSS/JavaScript (critical for SEO)
+# Google needs these to render your site properly
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: *.css
+Allow: *.js
 
-# Sitemap location
+# Block error pages from indexing
+Disallow: /404.html
+Disallow: /404/
+Disallow: /error/
+
+# Block Jekyll-specific directories (if present)
+Disallow: /_site/
+Disallow: /.jekyll-cache/
+
+# Block development/test pages (if you create them)
+Disallow: /test/
+Disallow: /staging/
+Disallow: /dev/
+
+# ============================================
+# CRAWL RATE OPTIMIZATION (Optional)
+# ============================================
+# Note: Google ignores Crawl-delay
+# Use Google Search Console to adjust crawl rate instead
+# 
+# Crawl-delay: 10
+
+# ============================================
+# SITEMAP LOCATION
+# ============================================
+# Points search engines to your XML sitemap
+# Critical for indexing and SEO
+
 Sitemap: https://jobsiniraq.github.io/sitemap.xml
+
+# ============================================
+# ADDITIONAL NOTES
+# ============================================
+# 
+# Testing:
+# - Google Search Console: robots.txt Tester
+# - Direct browser: https://jobsiniraq.github.io/robots.txt
+# 
+# Monitoring:
+# - Check crawl stats in Google Search Console monthly
+# - Review blocked URLs in Coverage report
+# 
+# Updates:
+# - Review quarterly for new AI bots
+# - Update when adding new sections to block
+# 
+# ============================================
