@@ -1,1 +1,13 @@
+# robots.txt for JobsIn Iraq
+# Last updated: 2025-10-13
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Exclude admin/utility pages
+Disallow: /assets/
+Disallow: /_pages/404.html
+
+# Sitemap location
 Sitemap: https://jobsiniraq.github.io/sitemap.xml
