@@ -78,7 +78,11 @@ permalink: /payscale-dashboard/
 </script>
 
 <!-- Grid.js CSS (Local) - Must load BEFORE JavaScript -->
-<link href="{{ '/assets/vendor/gridjs/mermaid.min.css' | relative_url }}" rel="stylesheet" />
+<!-- Grid.js CSS (Local) with SRI -->
+<link href="{{ '/assets/vendor/gridjs/mermaid.min.css' | relative_url }}" 
+      rel="stylesheet" 
+      integrity="sha384-i8iPOOXHyYKlqvjJjbORq7m/VrfUhgupTg3IZvtXz8M7c0CiTPUUhM5gdjiQiGbv"
+      crossorigin="anonymous" />
 
 <!-- Dashboard custom stylesheet -->
 <link href="{{ '/assets/css/payscale-dashboard.css' | relative_url }}" rel="stylesheet" />
