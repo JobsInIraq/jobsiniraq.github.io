@@ -1,0 +1,38 @@
+name: IndexNow Auto-Submit
+
+on:
+  # Run after GitHub Pages deployment completes
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+  
+  # Also run weekly to re-submit sitemap
+  schedule:
+    - cron: '0 2 * * 0'  # Every Sunday at 2 AM UTC
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  submit-to-search-engines:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Submit sitemap to IndexNow
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: 'https://jobsiniraq.github.io/sitemap.xml'
+          key: ${{ secrets.INDEXNOW_KEY }}
+          endpoint: 'www.bing.com'
+          since: 7
+          since-unit: 'day'
+          limit: 100
+      
+      - name: Log submission
+        run: |
+          echo "✅ Submitted sitemap to IndexNow (Bing, Yandex, Seznam, Naver)"
+          echo "🔗 Sitemap: https://jobsiniraq.github.io/sitemap.xml"
+          echo "📅 Submitted URLs modified in last 7 days (max 100)"
