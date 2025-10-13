@@ -7,12 +7,7 @@
 // ============================================
 // IMPORTS
 // ============================================
-import { Grid } from "https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/gridjs.module.min.js";
-
-const gridCSS = document.createElement('link');
-gridCSS.rel = 'stylesheet';
-gridCSS.href = 'https://cdn.jsdelivr.net/npm/gridjs@6.2.0/dist/theme/mermaid.min.css';
-document.head.appendChild(gridCSS);
+import { Grid } from "/assets/vendor/gridjs/gridjs.module.min.js";
 
 // ============================================
 // WAIT FOR I18N

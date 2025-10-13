@@ -8,7 +8,7 @@ permalink: /payscale-dashboard/
   Payscale Dashboard (JobsInIraq) — static, free, GitHub Pages.
   - Reads data from _data/db/salaries.json at build time (injected below).
   - Loads CSS and JS from /assets (separated for maintainability).
-  - JS is an ES module and imports Chart.js + Grid.js from pinned CDNs.
+  - Grid.js loaded from local vendor directory (no CDN).
   - Supports async AI translation for job titles.
 -->
 
@@ -77,8 +77,11 @@ permalink: /payscale-dashboard/
 {{ site.data.db.salaries | jsonify }}
 </script>
 
-<!-- stylesheet -->
+<!-- Grid.js CSS (Local) - Must load BEFORE JavaScript -->
+<link href="{{ '/assets/vendor/gridjs/mermaid.min.css' | relative_url }}" rel="stylesheet" />
+
+<!-- Dashboard custom stylesheet -->
 <link href="{{ '/assets/css/payscale-dashboard.css' | relative_url }}" rel="stylesheet" />
 
-<!-- main script (ES module) - will handle async translations internally -->
+<!-- main script (ES module) - Grid.js imported from local vendor -->
 <script type="module" src="{{ '/assets/js/payscale-dashboard.js' | relative_url }}"></script>
