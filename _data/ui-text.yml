@@ -1,954 +1,408 @@
-# Languages: English (en), Arabic (ar), Kurdish Sorani (ckb)
-# Last updated: 2025-10-11
+# ============================================
+# MINIMAL MISTAKES THEME UI TEXT
+# + Custom JobsIn Iraq i18n Extensions
+# Last Updated: 2025-10-13
+# ============================================
 
 # ============================================
 # ENGLISH (DEFAULT)
 # ============================================
 en: &DEFAULT_EN
-  # === NAVIGATION ===
-  navigation:
-    home: "Home"
-    jobs: "Jobs"
-    payscale: "Salary Guide"
-    dashboard: "Dashboard"
-    recruitment_process: "Recruitment Process"
-    recruitment_innovation: "Recruitment Innovation"
-    innovation: "Innovation"
-    about: "About"
-    contact: "Contact"
+  # === MINIMAL MISTAKES REQUIRED FIELDS ===
+  skip_links                 : "Skip links"
+  skip_primary_nav           : "Skip to primary navigation"
+  skip_content               : "Skip to content"
+  skip_footer                : "Skip to footer"
+  page                       : "Page"
+  pagination_previous        : "Previous"
+  pagination_next            : "Next"
+  breadcrumb_home_label      : "Home"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Toggle menu"
+  search_label               : "Toggle search"
+  toc_label                  : "On this page"
+  ext_link_label             : "Direct link"
+  less_than                  : "less than"
+  minute_read                : "minute read"
+  share_on_label             : "Share on"
+  meta_label                 :
+  tags_label                 : "Tags:"
+  categories_label           : "Categories:"
+  date_label                 : "Updated:"
+  comments_label             : "Leave a comment"
+  comments_title             : "Comments"
+  more_label                 : "Learn more"
+  related_label              : "You may also enjoy"
+  follow_label               : "Follow:"
+  feed_label                 : "Feed"
+  powered_by                 : "Powered by"
+  website_label              : "Website"
+  email_label                : "Email"
+  recent_posts               : "Recent posts"
+  undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
+  comment_form_info          : "Your email address will not be published."
+  comment_form_comment_label : "Comment"
+  comment_form_md_info       : "Markdown is supported."
+  comment_form_name_label    : "Name"
+  comment_form_email_label   : "Email address"
+  comment_form_website_label : "Website (optional)"
+  comment_btn_submit         : "Submit comment"
+  comment_btn_submitted      : "Submitted"
+  comment_success_msg        : "Thanks for your comment!"
+  comment_error_msg          : "Sorry, there was an error with your submission."
+  loading_label              : "Loading..."
+  search_label_text          : "Enter your search term..."
+  search_placeholder_text    : "Search..."
+  search_algolia_no_results  : "No results"
+  results_found              : "Result(s) found"
+  back_to_top                : "Back to top"
 
-  # === PAGE TITLES ===
-  page_titles:
-    home: "Directory of Job Platforms in Iraq"
-    about: "About Us"
-    payscale: "Iraq Salary Guide"
-    dashboard: "Payscale Dashboard"
-    process: "Recruitment Process"
-    innovation: "Reinvention of Recruitment"
-    404: "Page Not Found"
+  # === CUSTOM JOBSIN IRAQ FIELDS ===
+  # Navigation
+  nav_home                   : "Home"
+  nav_jobs                   : "Jobs"
+  nav_payscale               : "Salary Guide"
+  nav_dashboard              : "Dashboard"
+  nav_process                : "Recruitment Process"
+  nav_innovation             : "Innovation"
+  nav_about                  : "About"
+  nav_contact                : "Contact"
 
-  # === PAGE DESCRIPTIONS ===
-  page_descriptions:
-    innovation: "Exploring AI, automation, and next-gen technologies reshaping recruitment."
-    toc_label: "On this page"
+  # Page Titles
+  title_home                 : "Directory of Job Platforms in Iraq"
+  title_payscale             : "Iraq Salary Guide"
+  title_dashboard            : "Payscale Dashboard"
+  title_process              : "Recruitment Process"
+  title_innovation           : "Reinvention of Recruitment"
+  title_404                  : "Page Not Found"
 
-  # === ALL 19 IRAQI GOVERNORATES (2025) ===
-  cities:
-    Any: "Any"
-    # Kurdistan Region (4 governorates)
-    Erbil: "Erbil"
-    Sulaymaniyah: "Sulaymaniyah"
-    Duhok: "Duhok"
-    Halabja: "Halabja"  # Newest - approved April 2025
+  # Cities (all 19 Iraqi governorates)
+  city_any                   : "Any"
+  city_erbil                 : "Erbil"
+  city_sulaymaniyah          : "Sulaymaniyah"
+  city_duhok                 : "Duhok"
+  city_halabja               : "Halabja"
+  city_baghdad               : "Baghdad"
+  city_basra                 : "Basra"
+  city_mosul                 : "Mosul"
+  city_kirkuk                : "Kirkuk"
+  city_najaf                 : "Najaf"
+  city_karbala               : "Karbala"
+  city_nineveh               : "Nineveh"
+  city_anbar                 : "Anbar"
+  city_diyala                : "Diyala"
+  city_wasit                 : "Wasit"
+  city_salah_ad_din          : "Salah ad Din"
+  city_dhi_qar               : "Dhi Qar"
+  city_maysan                : "Maysan"
+  city_muthanna              : "Al-Muthanna"
+  city_qadisiyyah            : "Qadisiyyah"
+  city_babil                 : "Babil"
+  city_baghdad_us            : "Baghdad - US Mission"
+  city_erbil_us              : "Erbil - US Mission"
+  city_baghdad_uk            : "Baghdad - UK Mission"
+  city_erbil_uk              : "Erbil - UK Mission"
 
-    # Central Iraq
-    Baghdad: "Baghdad"
-    Babil: "Babil"
-    Karbala: "Karbala"
-    Najaf: "Najaf"
-    Wasit: "Wasit"
-    Salah_ad_Din: "Salah ad Din"
-    Diyala: "Diyala"
+  # Job Categories
+  cat_it                     : "Information Technology"
+  cat_engineering            : "Engineering"
+  cat_healthcare             : "Healthcare"
+  cat_education              : "Education"
+  cat_finance                : "Finance"
+  cat_government             : "Government & Public Sector"
+  cat_oil_gas                : "Oil & Gas"
+  cat_ngo                    : "NGO & International Organizations"
+  cat_sales                  : "Sales"
+  cat_marketing              : "Marketing"
 
-    # Northern Iraq
-    Nineveh: "Nineveh"
-    Kirkuk: "Kirkuk"
+  # Employment Types
+  emp_fulltime               : "Full-Time"
+  emp_parttime               : "Part-Time"
+  emp_contract               : "Contract"
+  emp_temporary              : "Temporary"
+  emp_remote                 : "Remote"
+  emp_hybrid                 : "Hybrid"
 
-    # Southern Iraq
-    Basra: "Basra"
-    Dhi_Qar: "Dhi Qar"
-    Maysan: "Maysan"
-    Muthanna: "Al-Muthanna"
-    Qadisiyyah: "Qadisiyyah"
+  # Salary Periods
+  sal_monthly                : "Monthly"
+  sal_yearly                 : "Yearly"
+  sal_hourly                 : "Hourly"
+  sal_daily                  : "Daily"
 
-    # Western Iraq
-    Anbar: "Anbar"
+  # Payscale Dashboard
+  ps_title                   : "Iraq Payscale Dashboard"
+  ps_subtitle                : "Salary Insights for the Iraqi Job Market"
+  ps_theme_toggle            : "Theme"
+  ps_theme_light             : "Light Mode"
+  ps_theme_dark              : "Dark Mode"
+  ps_median_salary           : "Median Salary"
+  ps_salary_range            : "Salary Range (IQR)"
+  ps_all_cities              : "All Cities"
+  ps_all_categories          : "All Categories"
+  ps_reset_filters           : "Reset Filters"
+  ps_export_csv              : "Export to CSV"
+  ps_no_data                 : "No salary data available"
+  ps_currency_iqd            : "IQD"
+  ps_per_month               : "per month"
 
-    # Major Cities
-    Mosul: "Mosul"
-    Ramadi: "Ramadi"
-    Hillah: "Hillah"
-    Nasiriyah: "Nasiriyah"
-    Amarah: "Amarah"
-    Samawah: "Samawah"
-    Kut: "Kut"
-    Tikrit: "Tikrit"
-    Baqubah: "Baqubah"
-    Al_Diwaniyah: "Al Diwaniyah"
-    Zakho: "Zakho"
-    Akre: "Akre"
-    Sinjar: "Sinjar"
-    Tall_Afar: "Tall Afar"
-    Samarra: "Samarra"
-    Kufa: "Kufa"
-    Umm_Qasr: "Umm Qasr"
-    
-    # 🆕 ADD THESE NEW ENTRIES:
-    "Baghdad - US Mission": "Baghdad - US Mission"
-    "Erbil - US Mission": "Erbil - US Mission"
-    "Baghdad - UK Mission": "Baghdad - UK Mission"
-    "Erbil - UK Mission": "Erbil - UK Mission"
-    Any: "Any"
+  # Table Headers
+  th_job_title               : "Job Title"
+  th_category                : "Category"
+  th_city                    : "City"
+  th_employment_type         : "Employment Type"
+  th_salary                  : "Salary"
+  th_source                  : "Source"
+  th_company                 : "Company"
+  th_website                 : "Website"
 
-  # === JOB CATEGORIES ===
-  job_categories:
-    IT: "Information Technology"
-    "Official Government": "Official Government"
-    Research: "Research"
-    "Skilled Labor": "Skilled Labor"
-    Transportation: "Transportation"
-    "Software Development": "Software Development"
-    "Cybersecurity": "Cybersecurity"
-    "Data Science": "Data Science"
-    Telecommunications: "Telecommunications"
-    Engineering: "Engineering"
-    "Civil Engineering": "Civil Engineering"
-    "Electrical Engineering": "Electrical Engineering"
-    "Mechanical Engineering": "Mechanical Engineering"
-    "Petroleum Engineering": "Petroleum Engineering"
-    "Chemical Engineering": "Chemical Engineering"
-    "Oil & Gas": "Oil & Gas"
-    Energy: "Energy"
-    Construction: "Construction"
-    "Real Estate": "Real Estate"
-    Architecture: "Architecture"
-    Finance: "Finance"
-    Banking: "Banking"
-    Accounting: "Accounting"
-    Business: "Business"
-    "Business Development": "Business Development"
-    "Project Management": "Project Management"
-    Sales: "Sales"
-    Marketing: "Marketing"
-    "Digital Marketing": "Digital Marketing"
-    "Customer Service": "Customer Service"
-    "Human Resources": "Human Resources"
-    Recruitment: "Recruitment"
-    Training: "Training & Development"
-    Healthcare: "Healthcare"
-    Medical: "Medical"
-    Nursing: "Nursing"
-    Pharmacy: "Pharmacy"
-    Education: "Education"
-    Teaching: "Teaching"
-    "Academic Research": "Academic Research"
-    "Government & Public Sector": "Government & Public Sector"
-    "Public Administration": "Public Administration"
-    NGO: "NGO & International Organizations"
-    "Development Programs": "Development Programs"
-    Logistics: "Logistics"
-    "Supply Chain": "Supply Chain"
-    Procurement: "Procurement"
-    Security: "Security"
-    "Health & Safety": "Health & Safety"
-    "Environmental Health": "Environmental Health"
-    "Safety Officer": "Safety Officer"
-    HSE: "HSE (Health, Safety, Environment)"
-    "Hospitality & Tourism": "Hospitality & Tourism"
-    Media: "Media & Communications"
-    Agriculture: "Agriculture"
-    Manufacturing: "Manufacturing"
-    Retail: "Retail"
-    "Food & Beverage": "Food & Beverage"
-    Design: "Design"
-    "Graphic Design": "Graphic Design"
-    "UX/UI Design": "UX/UI Design"
-    Legal: "Legal"
-    "Compliance & Risk": "Compliance & Risk"
-    Administration: "Administration"
-    Operations: "Operations"
-    Quality: "Quality Assurance"
-    Management: "Management"
-    Events: "Events"
+  # Common UI
+  common_search              : "Search"
+  common_filter              : "Filter"
+  common_apply               : "Apply"
+  common_cancel              : "Cancel"
+  common_save                : "Save"
+  common_download            : "Download"
+  common_submit              : "Submit"
+  common_yes                 : "Yes"
+  common_no                  : "No"
+  common_show_more           : "Show More"
+  common_read_more           : "Read More"
+  common_no_website          : "No website"
 
-  # === EMPLOYMENT TYPES ===
-  employment_types:
-    "Full-Time": "Full-Time"
-    "Part-Time": "Part-Time"
-    Contract: "Contract"
-    "Fixed-Term Contract": "Fixed-Term Contract"
-    Temporary: "Temporary"
-    Permanent: "Permanent"
-    Freelance: "Freelance"
-    Internship: "Internship"
-    Consultant: "Consultant"
-    Remote: "Remote"
-    Hybrid: "Hybrid"
-    "On-Site": "On-Site"
-    "Project-Based": "Project-Based"
-    Seasonal: "Seasonal"
-    Volunteer: "Volunteer"
-
-  # === SALARY PERIODS ===
-  salary_periods:
-    monthly: "Monthly"
-    hourly: "Hourly"
-    daily: "Daily"
-    weekly: "Weekly"
-    yearly: "Yearly"
-    per_project: "Per Project"
-
-  # === RECRUITMENT PROCESS STAGES ===
-  recruitment_stages:
-    stage1: "Workforce Planning"
-    stage1_items:
-      - "Identify organizational goals"
-      - "Assess current workforce"
-      - "Forecast future needs"
-      - "Identify skills gaps"
-      - "Develop workforce plan"
-    stage2: "Recruitment Strategy"
-    stage3: "Job Posting & Employer Branding"
-    stage4: "Candidate Screening"
-    stage5: "Assessment & Testing"
-    stage6: "Interviewing"
-    stage7: "Reference & Background Checks"
-    stage8: "Job Offer & Negotiation"
-    stage9: "Onboarding"
-    stage10: "Probation & Performance Evaluation"
-    stage11: "Continuous Development & Retention"
-    stage12: "Offboarding"
-
-  # === PAYSCALE DASHBOARD ===
-  payscale:
-    title: "Iraq Payscale Dashboard"
-    subtitle: "Salary Insights for the Iraqi Job Market"
-    data_source: "Data source"
-    all_salaries_monthly: "All salaries are monthly unless stated"
-    theme_toggle: "Theme"
-    theme_light: "Light Mode"
-    theme_dark: "Dark Mode"
-    ai_insights: "AI-Powered Insights"
-    data_table: "Salary Data Table"
-    table_description: "Search, sort, and filter salary data"
-    median_salary: "Median Salary"
-    salary_range_iqr: "Salary Range (IQR)"
-    sample_size: "Sample Size"
-    all_cities: "All Cities"
-    all_categories: "All Categories"
-    all_types: "All Employment Types"
-    all_periods: "All Periods"
-    reset_filters: "Reset Filters"
-    export_csv: "Export to CSV"
-    export_json: "Export to JSON"
-    print_report: "Print Report"
-    result_singular: "result"
-    results: "results"
-    city_legend: "City Legend"
-    category_legend: "Category Legend"
-    highest_city: "Highest paying city"
-    highest_category: "Highest paying sector"
-    loading_data: "Loading data..."
-    no_data: "No salary data available"
-    currency_iqd: "IQD"
-    currency_usd: "USD"
-    per_month: "per month"
-    next: "Next"
-    previous: "Previous"
-    showing: "Showing"
-    to: "to"
-    of: "of"
-    search_placeholder: "Search..."
-    insight_high_avg: "Average salary is above 1.5M IQD"
-    insight_low_avg: "Average salary is below 800K IQD"
-    insight_it_dominant: "IT jobs dominate this dataset (>30%)"
-    insight_baghdad_dominant: "Baghdad has the most job listings (>40%)"
-    insight_balanced: "Dataset shows balanced distribution"
-
-  # === TABLE HEADERS ===
-  table_headers:
-    job_title: "Job Title"
-    category: "Category"
-    city: "City"
-    employment_type: "Employment Type"
-    period: "Period"
-    salary: "Salary"
-    source: "Source"
-    minimum_salary: "Minimum"
-    maximum_salary: "Maximum"
-    last_verified: "Last Updated"
-    data_source: "Source"
-    actions: "Actions"
-    company: "Company"
-    experience: "Experience Required"
-    posted_date: "Posted Date"
-    name: "Name"
-    website: "Website"
-    social_media: "Social Media"
-    language: "Language"
-
-  # === JOB PORTAL CATEGORIES ===
-  portal_categories:
-    job_portal: "Job Portal"
-    tender: "Tender"
-    training: "Training"
-    gov: "GOV"
-    ngo: "NGO"
-    recruitment_agency: "Recruitment Agency"
-    training_courses: "Training Courses"
-
-  # === COMMON UI ELEMENTS ===
-  common:
-    selectLanguage: "Select Language"
-    search: "Search"
-    filter: "Filter"
-    sort: "Sort"
-    apply: "Apply"
-    cancel: "Cancel"
-    save: "Save"
-    delete: "Delete"
-    edit: "Edit"
-    view: "View"
-    download: "Download"
-    upload: "Upload"
-    submit: "Submit"
-    loading: "Loading..."
-    error: "Error"
-    success: "Success"
-    warning: "Warning"
-    info: "Information"
-    yes: "Yes"
-    no: "No"
-    confirm: "Confirm"
-    back: "Back"
-    next: "Next"
-    previous: "Previous"
-    close: "Close"
-    show_more: "Show More"
-    show_less: "Show Less"
-    read_more: "Read More"
-    no_website: "No website"
-
-  # === LISTS AND TABLES ===
-  lists:
-    job_portals: "List of Job Portals in Iraq"
-    group_chats: "List of Group Chats for Jobs in Iraq"
-    recruitment_agencies: "List of Recruitment Agencies (Employment Agencies) Operating in Iraq"
+# Regional variants
+en-US:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
 
 # ============================================
-# ARABIC (MODERN STANDARD - IRAQ)
+# ARABIC (العربية)
 # ============================================
 ar: &DEFAULT_AR
-  # === التنقل ===
-  navigation:
-    home: "الرئيسية"
-    jobs: "الوظائف"
-    payscale: "دليل الرواتب"
-    dashboard: "لوحة التحكم"
-    recruitment_process: "عملية التوظيف"
-    recruitment_innovation: "ابتكار التوظيف"
-    innovation: "الابتكار"
-    about: "عن الموقع"
-    contact: "اتصل بنا"
+  # === حقول Minimal Mistakes المطلوبة ===
+  skip_links                 : "تخطي الروابط"
+  skip_primary_nav           : "تخطي إلى التنقل الرئيسي"
+  skip_content               : "تخطي إلى المحتوى"
+  skip_footer                : "تخطي إلى التذييل"
+  page                       : "صفحة"
+  pagination_previous        : "السابق"
+  pagination_next            : "التالي"
+  breadcrumb_home_label      : "الرئيسية"
+  breadcrumb_separator       : "/"
+  menu_label                 : "تبديل القائمة"
+  search_label               : "تبديل البحث"
+  toc_label                  : "في هذه الصفحة"
+  ext_link_label             : "رابط مباشر"
+  less_than                  : "أقل من"
+  minute_read                : "دقيقة قراءة"
+  share_on_label             : "شارك على"
+  meta_label                 :
+  tags_label                 : "الوسوم:"
+  categories_label           : "الفئات:"
+  date_label                 : "تم التحديث:"
+  comments_label             : "اترك تعليقا"
+  comments_title             : "التعليقات"
+  more_label                 : "اعرف المزيد"
+  related_label              : "قد يعجبك أيضا"
+  follow_label               : "تابع:"
+  feed_label                 : "تلقيم"
+  powered_by                 : "مدعوم بواسطة"
+  website_label              : "الموقع"
+  email_label                : "البريد الإلكتروني"
+  recent_posts               : "المنشورات الأخيرة"
+  undefined_wpm              : "معامل غير محدد words_per_minute في _config.yml"
+  comment_form_info          : "لن يتم نشر عنوان بريدك الإلكتروني."
+  comment_form_comment_label : "تعليق"
+  comment_form_md_info       : "Markdown مدعوم."
+  comment_form_name_label    : "الاسم"
+  comment_form_email_label   : "عنوان البريد الإلكتروني"
+  comment_form_website_label : "الموقع (اختياري)"
+  comment_btn_submit         : "إرسال التعليق"
+  comment_btn_submitted      : "تم الإرسال"
+  comment_success_msg        : "شكرا لتعليقك!"
+  comment_error_msg          : "عذرا، حدث خطأ في إرسالك."
+  loading_label              : "جار التحميل..."
+  search_label_text          : "أدخل مصطلح البحث..."
+  search_placeholder_text    : "بحث..."
+  search_algolia_no_results  : "لا توجد نتائج"
+  results_found              : "نتيجة (نتائج) موجودة"
+  back_to_top                : "العودة إلى الأعلى"
 
-  # === عناوين الصفحات ===
-  page_titles:
-    home: "دليل منصات التوظيف في العراق"
-    about: "عن الموقع"
-    payscale: "دليل الرواتب في العراق"
-    dashboard: "لوحة تحكم الرواتب"
-    process: "عملية التوظيف"
-    innovation: "إعادة ابتكار التوظيف"
-    404: "الصفحة غير موجودة"
+  # === حقول JobsIn Iraq المخصصة ===
+  # التنقل
+  nav_home                   : "الرئيسية"
+  nav_jobs                   : "الوظائف"
+  nav_payscale               : "دليل الرواتب"
+  nav_dashboard              : "لوحة التحكم"
+  nav_process                : "عملية التوظيف"
+  nav_innovation             : "الابتكار"
+  nav_about                  : "عن الموقع"
+  nav_contact                : "اتصل بنا"
 
-  # === أوصاف الصفحات ===
-  page_descriptions:
-    innovation: "استكشاف الذكاء الاصطناعي والأتمتة والتقنيات الحديثة التي تعيد تشكيل التوظيف."
-    toc_label: "في هذه الصفحة"
+  # عناوين الصفحات
+  title_home                 : "دليل منصات التوظيف في العراق"
+  title_payscale             : "دليل الرواتب في العراق"
+  title_dashboard            : "لوحة تحكم الرواتب"
+  title_process              : "عملية التوظيف"
+  title_innovation           : "إعادة ابتكار التوظيف"
+  title_404                  : "الصفحة غير موجودة"
 
-  # === جميع المحافظات العراقية الـ 19 ===
-  cities:
-    Erbil: "أربيل"
-    Sulaymaniyah: "السليمانية"
-    Duhok: "دهوك"
-    Halabja: "حلبجة"
-    Baghdad: "بغداد"
-    Babil: "بابل"
-    Karbala: "كربلاء"
-    Najaf: "النجف"
-    Wasit: "واسط"
-    Salah_ad_Din: "صلاح الدين"
-    Diyala: "ديالى"
-    Nineveh: "نينوى"
-    Kirkuk: "كركوك"
-    Basra: "البصرة"
-    Dhi_Qar: "ذي قار"
-    Maysan: "ميسان"
-    Muthanna: "المثنى"
-    Qadisiyyah: "القادسية"
-    Anbar: "الأنبار"
-    Mosul: "الموصل"
-    Ramadi: "الرمادي"
-    Hillah: "الحلة"
-    Nasiriyah: "الناصرية"
-    Amarah: "العمارة"
-    Samawah: "السماوة"
-    Kut: "الكوت"
-    Tikrit: "تكريت"
-    Baqubah: "بعقوبة"
-    Al_Diwaniyah: "الديوانية"
-    Zakho: "زاخو"
-    Akre: "عقرة"
-    Sinjar: "سنجار"
-    Tall_Afar: "تلعفر"
-    Samarra: "سامراء"
-    Kufa: "الكوفة"
-    Umm_Qasr: "أم قصر"
- 
-    # 🆕 إضافة هذه المدخلات:
-    "Baghdad - US Mission": "بغداد - البعثة الأمريكية"
-    "Erbil - US Mission": "أربيل - البعثة الأمريكية"
-    "Baghdad - UK Mission": "بغداد - البعثة البريطانية"
-    "Erbil - UK Mission": "أربيل - البعثة البريطانية"
-    Any: "أي مكان"
-    
-  # === فئات الوظائف ===
-  job_categories:
-    IT: "تقنية المعلومات"
-    "Software Development": "تطوير البرمجيات"
-    "Cybersecurity": "الأمن السيبراني"
-    "Data Science": "علم البيانات"
-    Telecommunications: "الاتصالات"
-    Engineering: "الهندسة"
-    "Civil Engineering": "الهندسة المدنية"
-    "Electrical Engineering": "الهندسة الكهربائية"
-    "Mechanical Engineering": "الهندسة الميكانيكية"
-    "Petroleum Engineering": "هندسة النفط"
-    "Chemical Engineering": "الهندسة الكيميائية"
-    "Oil & Gas": "النفط والغاز"
-    Energy: "الطاقة"
-    Construction: "البناء والتشييد"
-    "Real Estate": "العقارات"
-    Architecture: "الهندسة المعمارية"
-    Finance: "المالية"
-    Banking: "الخدمات المصرفية"
-    Accounting: "المحاسبة"
-    Business: "الأعمال"
-    "Business Development": "تطوير الأعمال"
-    "Project Management": "إدارة المشاريع"
-    Sales: "المبيعات"
-    Marketing: "التسويق"
-    "Digital Marketing": "التسويق الرقمي"
-    "Customer Service": "خدمة العملاء"
-    "Human Resources": "الموارد البشرية"
-    Recruitment: "التوظيف"
-    Training: "التدريب والتطوير"
-    Healthcare: "الرعاية الصحية"
-    Medical: "الطب"
-    Nursing: "التمريض"
-    Pharmacy: "الصيدلة"
-    Education: "التعليم"
-    Teaching: "التدريس"
-    "Academic Research": "البحث الأكاديمي"
-    "Government & Public Sector": "القطاع الحكومي"
-    "Public Administration": "الإدارة العامة"
-    NGO: "المنظمات غير الحكومية والدولية"
-    "Development Programs": "برامج التنمية"
-    Logistics: "اللوجستيات"
-    "Supply Chain": "سلسلة التوريد"
-    Procurement: "المشتريات"
-    Security: "الأمن"
-    "Health & Safety": "الصحة والسلامة"
-    "Environmental Health": "الصحة البيئية"
-    "Safety Officer": "مسؤول السلامة"
-    HSE: "الصحة والسلامة والبيئة"
-    "Hospitality & Tourism": "الضيافة والسياحة"
-    Media: "الإعلام والاتصالات"
-    Agriculture: "الزراعة"
-    Manufacturing: "التصنيع"
-    Retail: "البيع بالتجزئة"
-    "Food & Beverage": "الأغذية والمشروبات"
-    Design: "التصميم"
-    "Graphic Design": "التصميم الجرافيكي"
-    "UX/UI Design": "تصميم تجربة المستخدم"
-    Legal: "القانونية"
-    "Compliance & Risk": "الامتثال وإدارة المخاطر"
-    Administration: "الإدارة"
-    Operations: "العمليات"
-    Quality: "ضمان الجودة"
-    Management: "الإدارة"
-    Events: "الفعاليات"
-    
-    # 🆕 إضافة هذه الفئات:
-    "Official Government": "حكومي رسمي"
-    Research: "البحث والتطوير"
-    "Skilled Labor": "العمالة الماهرة"
-    Transportation: "النقل والمواصلات"
+  # المدن
+  city_any                   : "أي مكان"
+  city_erbil                 : "أربيل"
+  city_sulaymaniyah          : "السليمانية"
+  city_duhok                 : "دهوك"
+  city_halabja               : "حلبجة"
+  city_baghdad               : "بغداد"
+  city_basra                 : "البصرة"
+  city_mosul                 : "الموصل"
+  city_kirkuk                : "كركوك"
+  city_najaf                 : "النجف"
+  city_karbala               : "كربلاء"
+  city_baghdad_us            : "بغداد - البعثة الأمريكية"
+  city_erbil_us              : "أربيل - البعثة الأمريكية"
 
-  # === أنواع التوظيف ===
-  employment_types:
-    "Full-Time": "دوام كامل"
-    "Part-Time": "دوام جزئي"
-    Contract: "عقد"
-    "Fixed-Term Contract": "عقد محدد المدة"
-    Temporary: "مؤقت"
-    Permanent: "دائم"
-    Freelance: "عمل حر"
-    Internship: "تدريب"
-    Consultant: "استشاري"
-    Remote: "عن بعد"
-    Hybrid: "مختلط"
-    "On-Site": "في الموقع"
-    "Project-Based": "قائم على المشروع"
-    Seasonal: "موسمي"
-    Volunteer: "تطوعي"
+  # فئات الوظائف
+  cat_it                     : "تقنية المعلومات"
+  cat_engineering            : "الهندسة"
+  cat_healthcare             : "الرعاية الصحية"
+  cat_education              : "التعليم"
+  cat_finance                : "المالية"
+  cat_government             : "الحكومة والقطاع العام"
+  cat_oil_gas                : "النفط والغاز"
 
-  # === فترات الراتب ===
-  salary_periods:
-    monthly: "شهري"
-    hourly: "ساعي"
-    daily: "يومي"
-    weekly: "أسبوعي"
-    yearly: "سنوي"
-    per_project: "لكل مشروع"
+  # أنواع التوظيف
+  emp_fulltime               : "دوام كامل"
+  emp_parttime               : "دوام جزئي"
+  emp_contract               : "عقد"
+  emp_remote                 : "عن بعد"
 
-  # === مراحل عملية التوظيف ===
-  recruitment_stages:
-    stage1: "تخطيط القوى العاملة"
-    stage1_items:
-      - "تحديد الأهداف التنظيمية"
-      - "تقييم القوى العاملة الحالية"
-      - "التنبؤ بالاحتياجات المستقبلية"
-      - "تحديد الفجوات في المهارات"
-      - "تطوير خطة القوى العاملة"
-    stage2: "استراتيجية التوظيف"
-    stage3: "نشر الوظائف والعلامة التجارية لصاحب العمل"
-    stage4: "فحص المرشحين"
-    stage5: "التقييم والاختبار"
-    stage6: "المقابلات"
-    stage7: "التحقق من المراجع والخلفية"
-    stage8: "عرض العمل والتفاوض"
-    stage9: "الإعداد الوظيفي"
-    stage10: "فترة التجربة وتقييم الأداء"
-    stage11: "التطوير المستمر والاحتفاظ بالموظفين"
-    stage12: "إنهاء الخدمة"
+  # فترات الراتب
+  sal_monthly                : "شهري"
+  sal_yearly                 : "سنوي"
+  sal_hourly                 : "بالساعة"
 
-  # === لوحة تحكم الرواتب ===
-  payscale:
-    title: "لوحة تحكم رواتب العراق"
-    subtitle: "رؤى الرواتب لسوق العمل العراقي"
-    data_source: "مصدر البيانات"
-    all_salaries_monthly: "جميع الرواتب شهرية ما لم يُذكر خلاف ذلك"
-    theme_toggle: "المظهر"
-    theme_light: "الوضع الفاتح"
-    theme_dark: "الوضع الداكن"
-    ai_insights: "رؤى مدعومة بالذكاء الاصطناعي"
-    data_table: "جدول بيانات الرواتب"
-    table_description: "ابحث ورتب وصفي بيانات الرواتب"
-    median_salary: "متوسط الراتب"
-    salary_range_iqr: "نطاق الراتب (IQR)"
-    sample_size: "حجم العينة"
-    all_cities: "جميع المدن"
-    all_categories: "جميع الفئات"
-    all_types: "جميع أنواع التوظيف"
-    all_periods: "جميع الفترات"
-    reset_filters: "إعادة تعيين الفلاتر"
-    export_csv: "تصدير إلى CSV"
-    export_json: "تصدير إلى JSON"
-    print_report: "طباعة التقرير"
-    result_singular: "نتيجة"
-    results: "نتائج"
-    city_legend: "دليل المدن"
-    category_legend: "دليل الفئات"
-    highest_city: "المدينة الأعلى أجراً"
-    highest_category: "القطاع الأعلى أجراً"
-    loading_data: "جاري تحميل البيانات..."
-    no_data: "لا توجد بيانات رواتب متاحة"
-    currency_iqd: "دينار"
-    currency_usd: "دولار"
-    per_month: "شهرياً"
-    next: "التالي"
-    previous: "السابق"
-    showing: "عرض"
-    to: "إلى"
-    of: "من"
-    search_placeholder: "ابحث..."
-    insight_high_avg: "متوسط الراتب أعلى من 1.5 مليون دينار"
-    insight_low_avg: "متوسط الراتب أقل من 800 ألف دينار"
-    insight_it_dominant: "وظائف تقنية المعلومات تهيمن على البيانات (>30%)"
-    insight_baghdad_dominant: "بغداد لديها أكثر الوظائف المعلنة (>40%)"
-    insight_balanced: "البيانات تظهر توزيعاً متوازناً"
+  # لوحة الرواتب
+  ps_title                   : "لوحة رواتب العراق"
+  ps_subtitle                : "رؤى الرواتب لسوق العمل العراقي"
+  ps_median_salary           : "متوسط الراتب"
+  ps_all_cities              : "جميع المدن"
+  ps_reset_filters           : "إعادة تعيين الفلاتر"
+  ps_currency_iqd            : "دينار"
+  ps_per_month               : "شهريا"
 
-  # === رؤوس جداول البيانات ===
-  table_headers:
-    job_title: "المسمى الوظيفي"
-    category: "الفئة"
-    city: "المدينة"
-    employment_type: "نوع التوظيف"
-    period: "الفترة"
-    salary: "الراتب"
-    source: "المصدر"
-    minimum_salary: "الحد الأدنى"
-    maximum_salary: "الحد الأقصى"
-    last_verified: "آخر تحديث"
-    data_source: "المصدر"
-    actions: "الإجراءات"
-    company: "الشركة"
-    experience: "الخبرة المطلوبة"
-    posted_date: "تاريخ النشر"
-    name: "الاسم"
-    website: "الموقع الإلكتروني"
-    social_media: "وسائل التواصل"
-    language: "اللغة"
+  # رؤوس الجداول
+  th_job_title               : "المسمى الوظيفي"
+  th_category                : "الفئة"
+  th_city                    : "المدينة"
+  th_salary                  : "الراتب"
+  th_company                 : "الشركة"
 
-  # === فئات بوابات التوظيف ===
-  portal_categories:
-    job_portal: "بوابة التوظيف"
-    tender: "المناقصات"
-    training: "التدريب"
-    gov: "حكومي"
-    ngo: "منظمة غير حكومية"
-    recruitment_agency: "وكالة التوظيف"
-    training_courses: "دورات تدريبية"
-
-  # === عناصر واجهة المستخدم ===
-  common:
-    selectLanguage: "اختر اللغة"
-    search: "بحث"
-    filter: "تصفية"
-    sort: "ترتيب"
-    apply: "تطبيق"
-    cancel: "إلغاء"
-    save: "حفظ"
-    delete: "حذف"
-    edit: "تعديل"
-    view: "عرض"
-    download: "تحميل"
-    upload: "رفع"
-    submit: "إرسال"
-    loading: "جاري التحميل..."
-    error: "خطأ"
-    success: "نجاح"
-    warning: "تحذير"
-    info: "معلومات"
-    yes: "نعم"
-    no: "لا"
-    confirm: "تأكيد"
-    back: "رجوع"
-    next: "التالي"
-    previous: "السابق"
-    close: "إغلاق"
-    show_more: "عرض المزيد"
-    show_less: "عرض أقل"
-    read_more: "اقرأ المزيد"
-    no_website: "لا يوجد موقع"
-
-  # === القوائم والجداول ===
-  lists:
-    job_portals: "قائمة بوابات التوظيف في العراق"
-    group_chats: "قائمة مجموعات الدردشة للوظائف في العراق"
-    recruitment_agencies: "قائمة وكالات التوظيف العاملة في العراق"
+  # واجهة عامة
+  common_search              : "بحث"
+  common_filter              : "تصفية"
+  common_apply               : "تطبيق"
+  common_download            : "تحميل"
 
 # ============================================
-# KURDISH SORANI (IRAQ)
+# KURDISH (کوردی)
 # ============================================
-ckb: &DEFAULT_CKB
-  # === ڕێنیشاندەر ===
-  navigation:
-    home: "سەرەتا"
-    jobs: "کارەکان"
-    payscale: "ڕێنمایی مووچە"
-    dashboard: "داشبۆرد"
-    recruitment_process: "پرۆسەی دامەزراندن"
-    recruitment_innovation: "نوێکاری دامەزراندن"
-    innovation: "نوێکاری"
-    about: "دەربارە"
-    contact: "پەیوەندی"
+ku: &DEFAULT_KU
+  # === پێویستەکانی Minimal Mistakes ===
+  skip_links                 : "پەڕینەوە بۆ بەستەرەکان"
+  skip_primary_nav           : "پەڕینەوە بۆ مێنیوی سەرەکی"
+  skip_content               : "پەڕینەوە بۆ ناوەڕۆک"
+  skip_footer                : "پەڕینەوە بۆ پێپەڕ"
+  page                       : "لاپەڕە"
+  pagination_previous        : "پێشوو"
+  pagination_next            : "دواتر"
+  breadcrumb_home_label      : "سەرەتا"
+  breadcrumb_separator       : "/"
+  menu_label                 : "گۆڕینی مێنیو"
+  search_label               : "گۆڕینی گەڕان"
+  toc_label                  : "لەم لاپەڕەدا"
+  ext_link_label             : "بەستەری ڕاستەوخۆ"
+  less_than                  : "کەمتر لە"
+  minute_read                : "خولەک بۆ خوێندنەوە"
+  share_on_label             : "هاوبەشی بکە"
+  meta_label                 :
+  tags_label                 : "تاگەکان:"
+  categories_label           : "پۆلەکان:"
+  date_label                 : "نوێکرایەوە:"
+  comments_label             : "بۆچوونێک بنووسە"
+  comments_title             : "بۆچوونەکان"
+  more_label                 : "زیاتر فێربە"
+  related_label              : "ئەمانەشت پێ خۆش دێت"
+  follow_label               : "شوێن بکەوە:"
+  feed_label                 : "فید"
+  powered_by                 : "کارپێکراو بە"
+  website_label              : "ماڵپەڕ"
+  email_label                : "ئیمەیڵ"
+  recent_posts               : "نووسراوە تازەکان"
+  undefined_wpm              : "پارامێتەری words_per_minute دیاری نەکراوە"
+  comment_form_info          : "ناونیشانی ئیمەیڵەکەت بڵاوناکرێتەوە."
+  comment_form_comment_label : "بۆچوون"
+  comment_form_md_info       : "Markdown پشتگیری دەکرێت."
+  comment_form_name_label    : "ناو"
+  comment_form_email_label   : "ناونیشانی ئیمەیڵ"
+  comment_form_website_label : "ماڵپەڕ (هەڵبژاردەیە)"
+  comment_btn_submit         : "ناردنی بۆچوون"
+  comment_btn_submitted      : "نێردرا"
+  comment_success_msg        : "سوپاس بۆ بۆچوونەکەت!"
+  comment_error_msg          : "ببورە، هەڵەیەک ڕوویدا."
+  loading_label              : "بارکردن..."
+  search_label_text          : "دەستەواژەی گەڕان..."
+  search_placeholder_text    : "گەڕان..."
+  search_algolia_no_results  : "ئەنجامێک نەدۆزرایەوە"
+  results_found              : "ئەنجام دۆزرایەوە"
+  back_to_top                : "گەڕانەوە بۆ سەرەوە"
 
-  # === ناونیشانی پەڕەکان ===
-  page_titles:
-    home: "لیستی پلاتفۆرمەکانی کار لە عێراق"
-    about: "دەربارەمان"
-    payscale: "ڕێنمایی مووچەی عێراق"
-    dashboard: "داشبۆردی مووچە"
-    process: "پرۆسەی دامەزراندن"
-    innovation: "نوێکردنەوەی دامەزراندن"
-    404: "پەڕە نەدۆزرایەوە"
+  # === خانە تایبەتەکانی JobsIn Iraq ===
+  # ڕێنیشاندەر
+  nav_home                   : "سەرەتا"
+  nav_jobs                   : "کارەکان"
+  nav_payscale               : "ڕێنمایی مووچە"
+  nav_dashboard              : "داشبۆرد"
+  nav_process                : "پرۆسەی دامەزراندن"
+  nav_innovation             : "نوێکاری"
+  nav_about                  : "دەربارە"
+  nav_contact                : "پەیوەندی"
 
-  # === وەسفی پەڕەکان ===
-  page_descriptions:
-    innovation: "گەڕان بەدوای AI، ئۆتۆماتیک و تەکنەلۆژیای نوێ کە دامەزراندن نوێ دەکاتەوە."
-    toc_label: "لەم پەڕەیەدا"
+  # ناونیشانی لاپەڕەکان
+  title_home                 : "لیستی ئەپەکانی کار لە عێراق"
+  title_payscale             : "ڕێنمایی مووچەی عێراق"
+  title_dashboard            : "داشبۆردی مووچە"
+  title_process              : "پرۆسەی دامەزراندن"
+  title_innovation           : "نوێکردنەوەی دامەزراندن"
 
-  # === هەموو 19 پارێزگاکانی عێراق ===
-  cities:
-    Erbil: "هەولێر"
-    Sulaymaniyah: "سلێمانی"
-    Duhok: "دهۆک"
-    Halabja: "هەڵەبجە"
-    Baghdad: "بەغدا"
-    Babil: "بابل"
-    Karbala: "کەربەلا"
-    Najaf: "نەجەف"
-    Wasit: "واسیت"
-    Salah_ad_Din: "سەلاحەدین"
-    Diyala: "دیالە"
-    Nineveh: "نەینەوا"
-    Kirkuk: "کەرکووک"
-    Basra: "بەسرە"
-    Dhi_Qar: "زیقار"
-    Maysan: "مەیسان"
-    Muthanna: "موسەنا"
-    Qadisiyyah: "قادسیە"
-    Anbar: "ئەنبار"
-    Mosul: "موسڵ"
-    Ramadi: "ڕەمادی"
-    Hillah: "حلە"
-    Nasiriyah: "ناسریە"
-    Amarah: "عەمارە"
-    Samawah: "سەماوە"
-    Kut: "کووت"
-    Tikrit: "تکریت"
-    Baqubah: "بەعقووبە"
-    Al_Diwaniyah: "دیوانیە"
-    Zakho: "زاخۆ"
-    Akre: "عاکرێ"
-    Sinjar: "شنگال"
-    Tall_Afar: "تەلعەفەر"
-    Samarra: "سامەڕا"
-    Kufa: "کووفە"
-    Umm_Qasr: "ئوممقەسر"
+  # شارەکان
+  city_any                   : "هەر شوێنێک"
+  city_erbil                 : "هەولێر"
+  city_sulaymaniyah          : "سلێمانی"
+  city_duhok                 : "دهۆک"
+  city_halabja               : "هەڵەبجە"
+  city_baghdad               : "بەغدا"
+  city_basra                 : "بەسرە"
+  city_mosul                 : "مووسڵ"
+  city_kirkuk                : "کەرکووک"
 
-    # 🆕 زیادکردنی ئەمانە:
-    "Baghdad - US Mission": "بەغدا - بەشی ئەمریکی"
-    "Erbil - US Mission": "هەولێر - بەشی ئەمریکی"
-    "Baghdad - UK Mission": "بەغدا - بەشی بەریتانی"
-    "Erbil - UK Mission": "هەولێر - بەشی بەریتانی"
-    Any: "هەر شوێنێک"
-    
-  # === جۆرەکانی کار ===
-  job_categories:
-    IT: "تەکنەلۆژیای زانیاری"
-    "Software Development": "گەشەپێدانی نەرمەکاڵا"
-    "Cybersecurity": "پاراستنی سایبەری"
-    "Data Science": "زانستی داتا"
-    Telecommunications: "پەیوەندی"
-    Engineering: "ئەندازیاری"
-    "Civil Engineering": "ئەندازیاری تەلارسازی"
-    "Electrical Engineering": "ئەندازیاری کارەبا"
-    "Mechanical Engineering": "ئەندازیاری مەکانیک"
-    "Petroleum Engineering": "ئەندازیاری نەوت"
-    "Chemical Engineering": "ئەندازیاری کیمیا"
-    "Oil & Gas": "نەوت و گاز"
-    Energy: "وزە"
-    Construction: "بینا و پەرەپێدان"
-    "Real Estate": "موڵکی نەگۆڕ"
-    Architecture: "تەلارسازی"
-    Finance: "دارایی"
-    Banking: "بانک"
-    Accounting: "ژمێریاری"
-    Business: "بازرگانی"
-    "Business Development": "گەشەپێدانی بازرگانی"
-    "Project Management": "بەڕێوەبردنی پرۆژە"
-    Sales: "فرۆشتن"
-    Marketing: "بازاڕگەری"
-    "Digital Marketing": "بازاڕگەری دیجیتاڵ"
-    "Customer Service": "خزمەتگوزاری بەکارهێنەر"
-    "Human Resources": "سەرچاوە مرۆییەکان"
-    Recruitment: "دامەزراندن"
-    Training: "ڕاهێنان و گەشەپێدان"
-    Healthcare: "چاودێری تەندروستی"
-    Medical: "پزیشکی"
-    Nursing: "نەرسینگ"
-    Pharmacy: "دەرمانسازی"
-    Education: "پەروەردە"
-    Teaching: "مامۆستایەتی"
-    "Academic Research": "توێژینەوەی ئەکادیمی"
-    "Government & Public Sector": "کەرتی حکومی"
-    "Public Administration": "بەڕێوەبردنی گشتی"
-    NGO: "ڕێکخراوە ناحکومی و نێودەوڵەتییەکان"
-    "Development Programs": "بەرنامەکانی گەشەپێدان"
-    Logistics: "لۆجستیک"
-    "Supply Chain": "زنجیرەی دابینکردن"
-    Procurement: "کڕین"
-    Security: "ئاسایش"
-    "Health & Safety": "تەندروستی و سەلامەتی"
-    "Environmental Health": "تەندروستی ژینگە"
-    "Safety Officer": "بەرپرسی سەلامەتی"
-    HSE: "تەندروستی، سەلامەتی و ژینگە"
-    "Hospitality & Tourism": "میوانداری و گەشتیاری"
-    Media: "میدیا و پەیوەندی"
-    Agriculture: "کشتوکاڵ"
-    Manufacturing: "بەرهەمهێنان"
-    Retail: "فرۆشتنی وردە"
-    "Food & Beverage": "خواردن و خواردنەوە"
-    Design: "دیزاین"
-    "Graphic Design": "دیزاینی گرافیک"
-    "UX/UI Design": "دیزاینی ئەزموونی بەکارهێنەر"
-    Legal: "یاسایی"
-    "Compliance & Risk": "پابەندبوون و بەڕێوەبردنی مەترسی"
-    Administration: "بەڕێوەبردن"
-    Operations: "کارەکان"
-    Quality: "دڵنیایی جۆری"
-    Management: "بەڕێوەبردن"
-    Events: "بۆنەکان"
-   
-    # 🆕 زیادکردنی ئەم جۆرانە:
-    "Official Government": "حکومی فەرمی"
-    Research: "توێژینەوە و گەشەپێدان"
-    "Skilled Labor": "کرێکاری شارەزا"
-    Transportation: "گواستنەوە"
-    
-  # === جۆرەکانی دامەزراندن ===
-  employment_types:
-    "Full-Time": "کاتی تەواو"
-    "Part-Time": "کاتی بەشەیی"
-    Contract: "گرێبەست"
-    "Fixed-Term Contract": "گرێبەستی کاتی دیاریکراو"
-    Temporary: "کاتی"
-    Permanent: "هەمیشەیی"
-    Freelance: "سەربەخۆ"
-    Internship: "ڕاهێنان"
-    Consultant: "ڕاوێژکار"
-    Remote: "دوور"
-    Hybrid: "تێکەڵ"
-    "On-Site": "لە شوێنی کار"
-    "Project-Based": "لەسەر بنەمای پرۆژە"
-    Seasonal: "وەرزی"
-    Volunteer: "خۆبەخش"
+  # پۆلەکانی کار
+  cat_it                     : "تەکنەلۆژیای زانیاری"
+  cat_engineering            : "ئەندازیاری"
+  cat_healthcare             : "چاودێری تەندروستی"
+  cat_education              : "پەروەردە"
 
-  # === ماوەکانی مووچە ===
-  salary_periods:
-    monthly: "مانگانە"
-    hourly: "کاتژمێرانە"
-    daily: "ڕۆژانە"
-    weekly: "هەفتانە"
-    yearly: "ساڵانە"
-    per_project: "بۆ هەر پرۆژەیەک"
+  # جۆری دامەزراندن
+  emp_fulltime               : "کاتی تەواو"
+  emp_parttime               : "کاتی بەشی"
+  emp_remote                 : "لە دوورەوە"
 
-  # === قۆناغەکانی پرۆسەی دامەزراندن ===
-  recruitment_stages:
-    stage1: "پلاندانانی هێزی کار"
-    stage1_items:
-      - "دیاریکردنی ئامانجەکانی ڕێکخراو"
-      - "هەڵسەنگاندنی هێزی کاری ئێستا"
-      - "پێشبینیکردنی پێداویستییەکانی داهاتوو"
-      - "دیاریکردنی کەموکوڕی لە کارامەیی"
-      - "گەشەپێدانی پلانی هێزی کار"
-    stage2: "ستراتیژی دامەزراندن"
-    stage3: "بڵاوکردنەوەی کار و براندی کارفرما"
-    stage4: "پشکنینی کاندید"
-    stage5: "هەڵسەنگاندن و تاقیکردنەوە"
-    stage6: "چاوپێکەوتن"
-    stage7: "پشکنینی سەرچاوە و پێشینە"
-    stage8: "پێشنیاری کار و دانوستان"
-    stage9: "ئامادەکاری"
-    stage10: "ماوەی تاقیکردنەوە و هەڵسەنگاندنی کارایی"
-    stage11: "گەشەپێدانی بەردەوام و ڕاگرتنی کارمەند"
-    stage12: "کۆتایی خزمەت"
+  # خشتەی سەرپەڕە
+  th_job_title               : "ناونیشانی کار"
+  th_city                    : "شار"
+  th_salary                  : "مووچە"
 
-  # === داشبۆردی مووچە ===
-  payscale:
-    title: "داشبۆردی مووچەکانی عێراق"
-    subtitle: "تێڕوانینی مووچە بۆ بازاڕی کاری عێراق"
-    data_source: "سەرچاوەی داتا"
-    all_salaries_monthly: "هەموو مووچەکان مانگانەن مەگەر باسکرابێت"
-    theme_toggle: "ڕووکار"
-    theme_light: "دۆخی ڕووناک"
-    theme_dark: "دۆخی تاریک"
-    ai_insights: "تێڕوانینی AI"
-    data_table: "خشتەی داتای مووچە"
-    table_description: "گەڕان، ڕیزکردن و پاڵاوتن"
-    median_salary: "ناوەندی مووچە"
-    salary_range_iqr: "مەودای مووچە (IQR)"
-    sample_size: "قەبارەی نموونە"
-    all_cities: "هەموو شارەکان"
-    all_categories: "هەموو جۆرەکان"
-    all_types: "هەموو جۆرەکانی دامەزراندن"
-    all_periods: "هەموو ماوەکان"
-    reset_filters: "ڕیسێتکردنی پاڵێوەرەکان"
-    export_csv: "هەناردن بۆ CSV"
-    export_json: "هەناردن بۆ JSON"
-    print_report: "چاپکردنی ڕاپۆرت"
-    result_singular: "ئەنجام"
-    results: "ئەنجامەکان"
-    city_legend: "نیشانەی شارەکان"
-    category_legend: "نیشانەی جۆرەکان"
-    highest_city: "شاری بەرزترین مووچە"
-    highest_category: "بەشی بەرزترین مووچە"
-    loading_data: "باربوونی داتا..."
-    no_data: "هیچ داتایەکی مووچە بەردەست نییە"
-    currency_iqd: "دینار"
-    currency_usd: "دۆلار"
-    per_month: "مانگانە"
-    next: "دواتر"
-    previous: "پێشوو"
-    showing: "پیشاندانی"
-    to: "بۆ"
-    of: "لە"
-    search_placeholder: "گەڕان..."
-    insight_high_avg: "ناوەندی مووچە لە 1.5 ملیۆن دیناری زیاترە"
-    insight_low_avg: "ناوەندی مووچە لە 800 هەزار دیناری کەمترە"
-    insight_it_dominant: "کارەکانی IT زاڵن لەسەر ئەم داتایە (>30%)"
-    insight_baghdad_dominant: "بەغدا زۆرترین ڕاگەیاندنی کاری هەیە (>40%)"
-    insight_balanced: "داتا دابەشبوونێکی هاوسەنگ پیشان دەدات"
-
-  # === سەرپەڕەکانی خشتە ===
-  table_headers:
-    job_title: "ناونیشانی کار"
-    category: "جۆر"
-    city: "شار"
-    employment_type: "جۆری دامەزراندن"
-    period: "ماوە"
-    salary: "مووچە"
-    source: "سەرچاوە"
-    minimum_salary: "کەمترین"
-    maximum_salary: "زۆرترین"
-    last_verified: "دوایین نوێکردنەوە"
-    data_source: "سەرچاوە"
-    actions: "کردارەکان"
-    company: "کۆمپانیا"
-    experience: "ئەزموونی پێویست"
-    posted_date: "بەرواری بڵاوکردنەوە"
-    name: "ناو"
-    website: "ماڵپەڕ"
-    social_media: "سۆشیال میدیا"
-    language: "زمان"
-
-  # === جۆرەکانی پۆرتاڵی کار ===
-  portal_categories:
-    job_portal: "پۆرتاڵی کار"
-    tender: "مناقەسە"
-    training: "ڕاهێنان"
-    gov: "حکومی"
-    ngo: "ڕێکخراوی ناحکومی"
-    recruitment_agency: "ئاژانسی دامەزراندن"
-    training_courses: "کۆرسی ڕاهێنان"
-
-  # === توخمەکانی ڕووکاری بەکارهێنەر ===
-  common:
-    selectLanguage: "هەڵبژاردنی زمان"
-    search: "گەڕان"
-    filter: "پاڵاوتن"
-    sort: "ڕیزکردن"
-    apply: "جێبەجێکردن"
-    cancel: "هەڵوەشاندنەوە"
-    save: "پاشەکەوتکردن"
-    delete: "سڕینەوە"
-    edit: "دەستکاریکردن"
-    view: "بینین"
-    download: "داگرتن"
-    upload: "بارکردن"
-    submit: "ناردن"
-    loading: "باربوون..."
-    error: "هەڵە"
-    success: "سەرکەوتوو"
-    warning: "ئاگاداری"
-    info: "زانیاری"
-    yes: "بەڵێ"
-    no: "نەخێر"
-    confirm: "پشتڕاستکردنەوە"
-    back: "گەڕانەوە"
-    next: "دواتر"
-    previous: "پێشوو"
-    close: "داخستن"
-    show_more: "پیشاندانی زیاتر"
-    show_less: "پیشاندانی کەمتر"
-    read_more: "زیاتر بخوێنەوە"
-    no_website: "ماڵپەڕ نییە"
-
-  # === لیستەکان و خشتەکان ===
-  lists:
-    job_portals: "لیستی پۆرتاڵەکانی کار لە عێراق"
-    group_chats: "لیستی گرووپە چاتەکان بۆ کارەکان لە عێراق"
-    recruitment_agencies: "لیستی ئاژانسەکانی دامەزراندن کە لە عێراق کار دەکەن"
+ku-IQ:
+  <<: *DEFAULT_KU
