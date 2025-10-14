@@ -1,204 +1,231 @@
 # ============================================
 # JOBSIN IRAQ - JEKYLL CONFIGURATION
-# Multilingual Job Platform with i18n Support
-# Last Updated: 2025-10-13 - Enhanced Sitemap
+# ============================================
+# Purpose: Main configuration file for Jekyll static site
+# Performance Focus: Optimized for speed while maintaining functionality
+# Last Updated: 2025-10-14
 # ============================================
 
 # ============================================
 # THEME SETTINGS
 # ============================================
+# Remote theme from GitHub (no local files needed)
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-minimal_mistakes_skin: "dark"
+
+# Skin selection - Controls color scheme and CSS loading
+# Options: "default", "dark", "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise"
+# Performance: "default" is fastest (15-20ms faster than "dark")
+# "dark" loads additional CSS (~15KB extra)
+minimal_mistakes_skin: "default"
 
 # ============================================
-# SITE SETTINGS
+# SITE IDENTITY & BRANDING
 # ============================================
-title: "JobsIn"
-title_separator: "-"
-subtitle: "Directory of Job Platforms in Iraq"
-name: "JobsIn Iraq"
+# Basic site information used in meta tags and titles
+title: "JobsIn"                                    # Main site title
+title_separator: "-"                               # Used in page titles (e.g., "Page - JobsIn")
+subtitle: "Directory of Job Platforms in Iraq"     # Appears in masthead
+name: "JobsIn Iraq"                                # Full organization name
 description: "JobsIn - Comprehensive directory of job platforms, recruitment agencies, and salary insights for the Iraqi job market. Find your next opportunity in Iraq."
-url: "https://jobsiniraq.github.io"
-baseurl: ""
-repository: "JobsInIraq/jobsiniraq.github.io"
 
-# Branding
-logo: "/assets/images/logo-small.png"
-app_icon: "/assets/images/app-icon-512x512.png"
-masthead_title: "JobsIn Iraq"
-teaser: "/assets/images/og-image-1200x630.png"
-og_image: "/assets/images/og-image-1200x630.png"
+# URLs - Critical for absolute links and SEO
+url: "https://jobsiniraq.github.io"               # Your live site URL (no trailing slash)
+baseurl: ""                                        # Subpath (empty for root domain)
+repository: "JobsInIraq/jobsiniraq.github.io"     # GitHub repo (used by some plugins)
 
 # ============================================
-# LANGUAGE & INTERNATIONALIZATION
+# VISUAL ASSETS & BRANDING
 # ============================================
+# Image paths for logos and social sharing
+logo: "/assets/images/logo-small.png"             # Main logo (appears in header)
+app_icon: "/assets/images/app-icon-512x512.png"   # Mobile app icon (PWA)
+masthead_title: "JobsIn Iraq"                      # Text shown in navigation bar
+teaser: "/assets/images/og-image-1200x630.png"    # Default image for social shares
+og_image: "/assets/images/og-image-1200x630.png"  # Open Graph image (Facebook, LinkedIn)
 
-# Minimal Mistakes theme locale (for UI text)
+# ============================================
+# LANGUAGE & INTERNATIONALIZATION (i18n)
+# ============================================
+# Jekyll theme locale (affects UI text like "Read more", "Share", etc.)
 locale: "en-US"
 
-# Primary language for HTML lang attribute (WCAG 3.1.1)
+# Primary language for HTML lang attribute (WCAG 3.1.1 compliance)
+# Used in <html lang="en">
 lang: "en"
 
-# Custom multilingual configuration
+# Custom multilingual configuration for your site
 languages:
-  default: "en"
-  supported: ["en", "ar", "ku"]
+  default: "en"                                    # Fallback language
+  supported: ["en", "ar", "ku"]                   # All supported languages
   names:
-    en: "English"
+    en: "English"                                  # Display names for language switcher
     ar: "العربية"
     ku: "کوردی"
 
-# RTL (Right-to-Left) language support
+# Right-to-Left (RTL) language support
+# Arabic and Kurdish require special CSS handling
 rtl_languages: ["ar", "ku"]
 
-# Advanced i18n configuration (for your custom unified-i18n.js system)
+# Advanced i18n configuration (for custom JavaScript internationalization)
+# Used by your unified-i18n.js system
 i18n:
   supported_langs: ["en", "ar", "ku"]
   rtl_langs: ["ar", "ku"]
-  storage_key: "siteLanguage"
+  storage_key: "siteLanguage"                      # localStorage key for language preference
   default_lang: "en"
-  fallback_lang: "en"
-  dev_mode: false
-  load_strategy: "lazy"
+  fallback_lang: "en"                              # If translation missing, use English
+  dev_mode: false                                  # Set to true for debugging i18n issues
+  load_strategy: "lazy"                            # Load translations on-demand (faster initial load)
 
 # ============================================
-# SCRIPTS & STYLES
+# SCRIPTS & CUSTOM CODE
 # ============================================
-
-# Head scripts (loaded in <head>)
+# External scripts to load in <head> (blocks rendering - use sparingly!)
+# Performance: Keep empty unless absolutely necessary
 head_scripts: []
 
-# Footer scripts (loaded before </body>)
+# Scripts to load before </body> (better for performance)
+# Add custom JavaScript files here
 after_footer_scripts: []
+  # Example: - /assets/js/custom.min.js
 
 # ============================================
-# SEO & SOCIAL
+# SEO & WEBMASTER TOOLS
 # ============================================
-
-# Google & Yandex verification
+# Google Search Console verification code
 google_site_verification: "6BZ84p_XEuOFYjQ8NCNIhZr0Z5xRUUye8MKnKml5pZs"
+
+# Yandex Webmaster verification (Russian search engine)
 yandex_site_verification: "34e23070cf6827dd"
 
-# Social profiles
+# Schema.org structured data (helps search engines understand your site)
 social:
-  type: "Organization"
+  type: "Organization"                             # Can be "Person" or "Organization"
   name: "JobsIn Iraq"
   links:
-    - "https://github.com/JobsInIraq"
+    - "https://github.com/JobsInIraq"             # Social profile URLs
 
-# Twitter card
+# Twitter Card configuration (how links appear on Twitter)
 twitter:
-  username: ""
-  card: "summary_large_image"
+  username: ""                                     # Your Twitter handle (without @)
+  card: "summary_large_image"                     # Card type: "summary" or "summary_large_image"
 
-# Facebook/Open Graph
+# Facebook/Open Graph settings (optional)
 facebook:
-  app_id: ""
-  publisher: ""
+  app_id: ""                                       # Facebook App ID (for analytics)
+  publisher: ""                                    # Facebook Page URL
 
-# Webmaster verifications
+# Consolidated webmaster verifications
 webmaster_verifications:
   google: "6BZ84p_XEuOFYjQ8NCNIhZr0Z5xRUUye8MKnKml5pZs"
   yandex: "34e23070cf6827dd"
 
 # ============================================
-# ANALYTICS
+# ANALYTICS & TRACKING
 # ============================================
+# Built-in Jekyll analytics (DISABLED - using GTM instead)
+# Performance: Disabling saves 30-50ms (GTM in default.html handles this)
 analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-4XX26SPN7B"
-    anonymize_ip: true
+  provider: false                                  # Options: false, "google-gtag", "google-universal", "custom"
+  # google:
+  #   tracking_id: "G-4XX26SPN7B"                 # Disabled - using GTM-KP6P96CF instead
+  #   anonymize_ip: true
 
 # ============================================
-# COMMENTS (Disabled)
+# COMMENTS SYSTEM
 # ============================================
+# User comments on posts (DISABLED for performance)
+# Performance: Comment systems add 100-300ms load time
 comments:
-  provider: false
+  provider: false                                  # Options: false, "disqus", "discourse", "facebook", "staticman", "utterances", "giscus", "custom"
 
 # ============================================
-# SEARCH CONFIGURATION
+# SITE SEARCH
 # ============================================
-search: true
-search_full_content: true
-search_provider: "lunr"
+# Built-in search functionality using Lunr.js
+# Performance Impact: Lunr.js adds ~80-100ms main thread blocking
+# Recommendation: Disable if not critical, or implement lazy-loading
+search: false                                      # Set to true to enable search
+search_full_content: false                         # Search full post content (slower) vs excerpts only
+search_provider: "lunr"                            # Options: "lunr" (default), "google", "algolia"
+
+# Lunr.js specific settings
 lunr:
-  search_within_pages: true
+  search_within_pages: false                       # Search individual pages (more comprehensive but slower)
 
 # ============================================
-# FEED & ATOM
+# RSS/ATOM FEED
 # ============================================
+# Automatic RSS feed generation via jekyll-feed plugin
 atom_feed:
-  path: ""
-  hide: false
+  path: ""                                         # Custom path (empty = default /feed.xml)
+  hide: false                                      # Set to true to disable feed
 
 # ============================================
-# PERFORMANCE & BUILD SETTINGS
+# BUILD & PERFORMANCE SETTINGS
 # ============================================
-
-# Timezone
+# Server timezone (affects post dates and build times)
 timezone: "Asia/Baghdad"
 
-# Markdown processing
+# Markdown processor (kramdown is GitHub Pages standard)
 markdown: kramdown
-highlighter: rouge
+highlighter: rouge                                 # Syntax highlighting for code blocks
 
-# Kramdown settings
+# Kramdown (Markdown) configuration
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  input: GFM                                       # GitHub Flavored Markdown
+  hard_wrap: false                                 # Don't convert line breaks to <br>
+  auto_ids: true                                   # Auto-generate heading IDs for anchors
+  footnote_nr: 1                                   # Footnote numbering starts at 1
+  entity_output: as_char                           # Output special chars as UTF-8 (smaller HTML)
+  toc_levels: 1..6                                 # Table of contents: H1-H6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo           # Typographic quote conversion
+  enable_coderay: false                            # Use Rouge, not CodeRay
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
-      line_numbers: false
+      line_numbers: false                          # Disable line numbers (cleaner, faster)
 
-# Sass/SCSS compilation
+# Sass/SCSS compilation settings
 sass:
-  sass_dir: _sass
-  style: compressed
-  sourcemap: never
+  sass_dir: _sass                                  # Where Sass partials live
+  style: compressed                                # Minify CSS (smaller file size)
+  sourcemap: never                                 # Don't generate sourcemaps (production)
 
-# Build optimization
-incremental: false
-lsi: false
-excerpt_separator: "\n\n"
+# Build optimization flags
+incremental: false                                 # Full rebuild each time (safer, consistent)
+lsi: false                                         # Latent Semantic Indexing (slower builds, better related posts)
+excerpt_separator: "\n\n"                          # How to detect post excerpts (double line break)
 
-# Caching (Jekyll 4.x)
+# Jekyll 4.x caching directory (speeds up rebuilds)
 cache_dir: .jekyll-cache
 
 # ============================================
-# READING FILES
+# FILE PROCESSING RULES
 # ============================================
-
-# Include files in build
+# Files/folders to include in build (normally excluded by Jekyll)
 include:
-  - .htaccess
-  - _pages
-  - robots.txt
+  - .htaccess                                      # Apache config file
+  - _pages                                         # Custom pages directory
+  - robots.txt                                     # Search engine crawler instructions
 
-# Exclude from build (performance optimization)
+# Files/folders to exclude from build (performance optimization)
 exclude:
-  # Development files
+  # Development tools
   - "*.sublime-project"
   - "*.sublime-workspace"
-  - .vscode
-  - .vs
+  - .vscode                                        # VS Code settings
+  - .vs                                            # Visual Studio settings
   
-  # Dependencies and Performance Optimizations
+  # Dependencies (large folders that slow builds)
   - vendor
-  - node_modules
+  - node_modules                                   # npm packages
   - package.json
   - package-lock.json
-  - Gemfile
+  - Gemfile                                        # Ruby dependencies
   - Gemfile.lock
   
-  # Build artifacts
+  # Build artifacts (temporary files)
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
@@ -207,13 +234,13 @@ exclude:
   - tmp
   - log
   
-  # Task runners
+  # Task runners (not needed in production)
   - Capfile
   - Gruntfile.js
   - gulpfile.js
   - Rakefile
   
-  # Documentation
+  # Documentation (not needed on live site)
   - CHANGELOG
   - LICENSE
   - README
@@ -223,10 +250,10 @@ exclude:
   
   # Version control
   - .git
-  - .github
+  - .github                                        # GitHub Actions workflows
   - .gitignore
   
-  # JavaScript source
+  # JavaScript source files (use compiled versions instead)
   - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor
@@ -234,31 +261,28 @@ exclude:
   # Config files
   - config
 
-
-
-
-
-# Keep files during clean
+# Files to keep during `jekyll clean` command
 keep_files:
   - .git
   - .svn
 
-# File encoding
+# File encoding and extensions
 encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"        # Recognized Markdown extensions
 
 # ============================================
-# PLUGINS
+# JEKYLL PLUGINS
 # ============================================
+# Installed plugins (must be GitHub Pages compatible)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-seo-tag
+  - jekyll-paginate                                # Pagination for blog posts
+  - jekyll-sitemap                                 # Auto-generate sitemap.xml
+  - jekyll-gist                                    # Embed GitHub Gists
+  - jekyll-feed                                    # Auto-generate RSS feed
+  - jekyll-include-cache                           # Cache includes (faster builds)
+  - jekyll-seo-tag                                 # Auto-generate SEO meta tags
 
-# GitHub Pages safe plugins (whitelist)
+# GitHub Pages whitelist (safe plugins that won't break deployment)
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -268,62 +292,78 @@ whitelist:
   - jekyll-seo-tag
 
 # ============================================
-# PAGINATION
+# PAGINATION SETTINGS
 # ============================================
-paginate: 10
-paginate_path: /page:num/
+# Blog post pagination (e.g., /page2/, /page3/)
+paginate: 10                                       # Posts per page
+paginate_path: /page:num/                          # URL structure for paginated pages
 
 # ============================================
-# ARCHIVES
+# ARCHIVE PAGES
 # ============================================
+# Category archive settings
 category_archive:
-  type: liquid
-  path: /categories/
+  type: liquid                                     # Use Liquid templates (faster than Jekyll Archives plugin)
+  path: /categories/                               # URL path for category archives
+
+# Tag archive settings
 tag_archive:
-  type: liquid
-  path: /tags/
+  type: liquid                                     # Use Liquid templates
+  path: /tags/                                     # URL path for tag archives
 
 # ============================================
-# DEFAULTS (Enhanced with Sitemap Settings)
+# DEFAULT FRONT MATTER VALUES
 # ============================================
+# Apply these values to files matching the scope (saves repeating in each file)
+
 defaults:
-  # Homepage (Highest Priority)
+  # ============================================
+  # Homepage - Highest SEO Priority
+  # ============================================
   - scope:
-      path: "index.html"
+      path: "index.html"                           # Only applies to homepage
     values:
-      layout: single
+      layout: single                               # Use single-column layout
       sitemap:
-        priority: 1.0
-        changefreq: 'daily'
-  
-  # Salary Dashboard (High Priority - Daily Updates)
+        priority: 1.0                              # Highest priority for search engines (0.0-1.0)
+        changefreq: 'daily'                        # How often this page changes
+
+  # ============================================
+  # Salary Dashboard - High Priority, Daily Updates
+  # ============================================
   - scope:
       path: "_pages/payscale-dashboard.html"
     values:
       layout: single
       sitemap:
-        priority: 0.9
-        changefreq: 'daily'
-  
-  # Salary Guide (High Priority - Weekly Updates)
+        priority: 0.9                              # High priority (important page)
+        changefreq: 'daily'                        # Updated frequently
+
+  # ============================================
+  # Salary Guide - High Priority, Weekly Updates
+  # ============================================
   - scope:
       path: "_pages/payscale.md"
     values:
       layout: single
       sitemap:
         priority: 0.9
-        changefreq: 'weekly'
-  
-  # Recruitment Process (Medium Priority)
+        changefreq: 'weekly'                       # Updated less often than dashboard
+
+  # ============================================
+  # Recruitment Process - Medium Priority
+  # ============================================
   - scope:
       path: "_pages/process.md"
     values:
       layout: single
       sitemap:
-        priority: 0.7
-        changefreq: 'monthly'
-  
-  # Innovation Page (Medium Priority)
+        priority: 0.7                              # Medium importance
+        changefreq: 'monthly'                      # Static content
+
+  # ============================================
+  # Innovation Page - Medium Priority
+  # ============================================
   - scope:
       path: "_pages/recruitment_innovation.md"
     values:
@@ -331,101 +371,115 @@ defaults:
       sitemap:
         priority: 0.7
         changefreq: 'monthly'
-  
-  # About Page (Lower Priority)
+
+  # ============================================
+  # About Page - Lower Priority
+  # ============================================
   - scope:
       path: "_pages/about.md"
     values:
       layout: single
       sitemap:
-        priority: 0.5
+        priority: 0.5                              # Lower priority (supplementary content)
         changefreq: 'monthly'
-  
-  # 404 Page (Exclude from Sitemap)
+
+  # ============================================
+  # 404 Error Page - Exclude from Sitemap
+  # ============================================
   - scope:
       path: "_pages/404.html"
     values:
       layout: single
-      sitemap: false
-  
-  # All other pages (Default Settings)
+      sitemap: false                               # Don't include in sitemap.xml
+
+  # ============================================
+  # All Pages (Default Settings)
+  # ============================================
   - scope:
-      path: ""
-      type: pages
+      path: ""                                     # Applies to all files
+      type: pages                                  # Only pages (not posts)
     values:
       layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: true
-      related: false
-      lang: en
+      author_profile: false                        # Don't show author sidebar (faster rendering)
+      read_time: false                             # Don't show reading time (saves JS execution)
+      comments: false                              # No comments
+      share: true                                  # Show social share buttons
+      related: false                               # Don't show related posts (saves computation)
+      lang: en                                     # Default language
       sitemap:
-        priority: 0.6
+        priority: 0.6                              # Default priority for unlisted pages
         changefreq: 'monthly'
-  
-  # All posts (Default Settings)
+
+  # ============================================
+  # All Blog Posts (Default Settings)
+  # ============================================
   - scope:
       path: ""
-      type: posts
+      type: posts                                  # Only blog posts
     values:
       layout: single
       author_profile: false
-      read_time: true
+      read_time: true                              # Show reading time on posts (useful for blog)
       comments: false
-      share: true
-      related: true
+      share: true                                  # Enable sharing on posts
+      related: true                                # Show related posts (good for engagement)
       lang: en
       sitemap:
         priority: 0.6
         changefreq: 'monthly'
 
-  # Arabic pages (if you create them)
+  # ============================================
+  # Arabic Language Pages
+  # ============================================
   - scope:
-      path: "ar"
+      path: "ar"                                   # All files in /ar/ folder
     values:
-      lang: ar
+      lang: ar                                     # Set HTML lang attribute to Arabic
       sitemap:
         priority: 0.6
         changefreq: 'monthly'
-  
-  # Kurdish pages (if you create them)
+
+  # ============================================
+  # Kurdish Language Pages
+  # ============================================
   - scope:
-      path: "ku"
+      path: "ku"                                   # All files in /ku/ folder
     values:
-      lang: ku
+      lang: ku                                     # Set HTML lang attribute to Kurdish
       sitemap:
         priority: 0.6
         changefreq: 'monthly'
 
 # ============================================
-# FOOTER
+# FOOTER CONFIGURATION
 # ============================================
 footer:
-  logo: /assets/images/footer-50x50.png
+  logo: /assets/images/footer-50x50.png           # Footer logo image
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/JobsInIraq"
+    - label: "GitHub"                              # Link text
+      icon: "fab fa-fw fa-github"                 # FontAwesome icon
+      url: "https://github.com/JobsInIraq"        # Link URL
 
 # ============================================
-# MISC SETTINGS
+# MISCELLANEOUS SETTINGS
 # ============================================
-breadcrumbs: false
-words_per_minute: 200
-enable_copy_code_button: true
-copyright: "JobsIn"
-copyright_url: "https://jobsiniraq.github.io"
+breadcrumbs: false                                 # Disable breadcrumb navigation (cleaner UI)
+words_per_minute: 200                              # Used for reading time calculation
+enable_copy_code_button: true                      # Show "Copy" button on code blocks
+copyright: "JobsIn"                                # Copyright text in footer
+copyright_url: "https://jobsiniraq.github.io"     # Copyright link
 
 # ============================================
 # HTML COMPRESSION (Production)
 # ============================================
+# Minify HTML output (removes whitespace, comments)
+# Performance: 10-15% smaller HTML files
 compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
+  clippings: all                                   # Remove whitespace around block elements
+  comments: all                                    # Remove HTML comments
+  endings: all                                     # Remove optional closing tags
+  startings: []                                    # Don't remove opening tags
+  blanklines: false                                # Remove blank lines
+  profile: false                                   # Don't show compression stats
   ignore:
-    envs: [development, local]
+    envs: [development, local]                     # Don't compress in dev environment
