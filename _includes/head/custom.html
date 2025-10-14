@@ -3,3 +3,115 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+<!-- ========== CRITICAL CSP TO BLOCK EXTENSIONS ========== -->
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdnjs.cloudflare.com https://*.github.io https://*.githubusercontent.com; default-src 'self' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:; font-src 'self' https: data:;">
+
+<!-- Performance: Block Auto-Translation -->
+<meta name="google" content="notranslate">
+<meta http-equiv="content-language" content="en,ar,ku">
+
+<!-- Early Extension Blocker - Runs before anything else -->
+<script>
+// Phase 1: Immediate DOM mutation blocker
+(function(){
+  'use strict';
+  
+  // Intercept and block translate elements immediately
+  const blockTranslate = () => {
+    const badSelectors = [
+      '.goog-te-banner-frame',
+      '.skiptranslate', 
+      '[class*="goog-te"]',
+      '#google_translate_element',
+      'iframe[src*="translate"]',
+      'script[src*="translate"]',
+      'link[href*="translate"]'
+    ];
+    
+    badSelectors.forEach(sel => {
+      document.querySelectorAll(sel).forEach(el => {
+        el.remove();
+      });
+    });
+  };
+  
+  // Run immediately
+  blockTranslate();
+  
+  // Aggressive MutationObserver - blocks as elements are added
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      mutation.addedNodes.forEach(node => {
+        if (node.nodeType === 1) {
+          const html = node.outerHTML?.toLowerCase() || '';
+          if (html.includes('translate') || html.includes('goog-te') || html.includes('skiptranslate')) {
+            node.remove();
+          }
+        }
+      });
+    });
+  });
+  
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    attributes: false
+  });
+  
+  // Keep checking for 5 seconds
+  let checks = 0;
+  const interval = setInterval(() => {
+    blockTranslate();
+    if (++checks >= 50) {
+      clearInterval(interval);
+      observer.disconnect();
+    }
+  }, 100);
+  
+  // Prevent Google Translate object
+  Object.defineProperty(window, 'google', {
+    get: () => undefined,
+    set: () => {},
+    configurable: false
+  });
+  
+})();
+</script>
+
+<!-- Performance: Resource Hints -->
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+<!-- SEO Meta Tags -->
+{% if page.description %}
+<meta name="description" content="{{ page.description | truncate: 160 }}">
+{% endif %}
+
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description | truncate: 160 }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | default: site.title | truncate: 70 }}">
+
+<!-- Security Headers -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}"
+}
+</script>
