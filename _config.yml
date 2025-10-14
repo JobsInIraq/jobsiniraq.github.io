@@ -190,7 +190,7 @@ exclude:
   - .vscode
   - .vs
   
-  # Dependencies
+  # Dependencies and Performance Optimizations
   - vendor
   - node_modules
   - package.json
@@ -233,6 +233,10 @@ exclude:
   
   # Config files
   - config
+
+
+
+
 
 # Keep files during clean
 keep_files:
