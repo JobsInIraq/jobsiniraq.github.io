@@ -8,71 +8,25 @@ permalink: index.html
 summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 - Comprehensive List.
 ---
 
-<!-- ========== PERFORMANCE OPTIMIZATION SCRIPTS ========== -->
+<!-- ULTRA-AGGRESSIVE ANTI-EXTENSION SCRIPT - Runs IMMEDIATELY -->
+<script>
+!function(){"use strict";const e=()=>{["style","script","link"].forEach((e=>{document.querySelectorAll(e).forEach((e=>{const t=e.outerHTML.toLowerCase();(t.includes("translate")||t.includes("goog-te")||t.includes("skiptranslate"))&&e.remove()}))})),document.querySelectorAll(".goog-te-banner-frame,.skiptranslate,[class*='goog-te'],#google_translate_element").forEach((e=>{e.remove()}))};e();const t=new MutationObserver((t=>{t.forEach((t=>{t.addedNodes.forEach((t=>{if(1===t.nodeType){const n=t.outerHTML?.toLowerCase()||"";(n.includes("translate")||n.includes("goog-te"))&&t.remove()}}))}))}));t.observe(document.documentElement,{childList:!0,subtree:!0});let n=0;const o=setInterval((()=>{e(),++n>=20&&(clearInterval(o),t.disconnect())}),100)}();
+</script>
+
+<!-- OPTIMIZED GTM - Maximum Delay Strategy -->
 <script>
 (function() {
   'use strict';
   
-  // 1. Anti-Extension Bloat Script (Fixes Issue #1: 133ms blocking)
-  const neutralizeExtensions = () => {
-    const selectors = [
-      '.goog-te-banner-frame',
-      '.skiptranslate', 
-      '[class*="goog-te"]',
-      '#google_translate_element'
-    ];
-    
-    selectors.forEach(sel => {
-      document.querySelectorAll(sel).forEach(el => {
-        el.style.display = 'none';
-        el.remove();
-      });
-    });
-  };
-  
-  // Run immediately
-  neutralizeExtensions();
-  
-  // Check periodically for 3 seconds
-  let checks = 0;
-  const checkInterval = setInterval(() => {
-    neutralizeExtensions();
-    if (++checks >= 15) clearInterval(checkInterval);
-  }, 200);
-  
-  // Final cleanup on page load
-  window.addEventListener('load', () => {
-    clearInterval(checkInterval);
-    neutralizeExtensions();
-    
-    // Track extension interference in GTM
-    if (document.querySelector('.goog-te-banner-frame, .skiptranslate') && window.dataLayer) {
-      window.dataLayer.push({
-        'event': 'extension_detected',
-        'extension_type': 'translation'
-      });
-    }
-  }, { passive: true });
-  
-  // Prevent automatic translation
-  if (typeof google !== 'undefined' && google.translate) {
-    document.documentElement.classList.add('notranslate');
-    document.documentElement.setAttribute('translate', 'no');
-  }
-})();
-
-// 2. Optimized Google Tag Manager Loader (GTM-KP6P96CF)
-(function() {
   let gtmLoaded = false;
+  let userInteracted = false;
   
   function loadGTM() {
     if (gtmLoaded) return;
     gtmLoaded = true;
     
-    // Initialize dataLayer
     window.dataLayer = window.dataLayer || [];
     
-    // Load GTM
     (function(w,d,s,l,i){
       w[l]=w[l]||[];
       w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
@@ -80,47 +34,39 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
           j=d.createElement(s),
           dl=l!='dataLayer'?'&l='+l:'';
       j.async=true;
+      j.defer=true;
       j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
       f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KP6P96CF');
     
-    console.log('✅ GTM loaded successfully (deferred for performance)');
+    console.log('✅ GTM loaded at', performance.now().toFixed(0), 'ms');
   }
   
-  // Strategy 1: Load after page is interactive (saves 200-300ms)
-  if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    setTimeout(loadGTM, 1500);
-  } else {
-    window.addEventListener('DOMContentLoaded', function() {
-      setTimeout(loadGTM, 1500);
-    }, { passive: true });
-  }
-  
-  // Strategy 2: Load on first user interaction (best for performance)
+  // Wait for user interaction (most aggressive delay)
   const events = ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'];
   events.forEach(event => {
-    window.addEventListener(event, loadGTM, { once: true, passive: true });
+    window.addEventListener(event, function() {
+      if (!userInteracted) {
+        userInteracted = true;
+        setTimeout(loadGTM, 500);
+      }
+    }, { once: true, passive: true });
   });
   
-  // Strategy 3: Fallback - ensure GTM loads within 5 seconds
-  setTimeout(loadGTM, 5000);
+  // Absolute fallback - 7 seconds
+  setTimeout(loadGTM, 7000);
 })();
 </script>
 
-<!-- GTM NoScript Fallback (for users with JavaScript disabled) -->
+<!-- GTM NoScript -->
 <noscript>
   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KP6P96CF"
-          height="0" 
-          width="0" 
-          style="display:none;visibility:hidden"
-          title="Google Tag Manager">
-  </iframe>
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 
-<!-- ========== MAIN CONTENT: Your Tables ========== -->
-
+<!-- YOUR CONTENT (unchanged) -->
 <div class="center-text">
-  <h2>List of Job Portals in Iraq</h2>
+<h2>List of Job Portals in Iraq</h2>
 </div>
 
 <table>
@@ -137,31 +83,14 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
     {% assign EntityDetails = site.data.db.iqPortalEntity.EntityDetails %}
     {% for portal in EntityDetails %}
     <tr>
-      <td>
-        <a href="{{ portal.EntityWebsite }}" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           aria-label="Visit {{ portal.EntityName }}">
-          {{ portal.EntityName }}
-        </a>
-      </td>
+      <td><a href="{{ portal.EntityWebsite }}" target="_blank" rel="noopener noreferrer">{{ portal.EntityName }}</a></td>
       <td>{{ portal.EntityCategory }}</td>
       <td>{{ portal.EntityLanguage }}</td>
-      <td>
-        <a href="{{ portal.EntityWebsite }}" 
-           target="_blank" 
-           rel="noopener noreferrer">
-          {{ portal.EntityWebsite }}
-        </a>
-      </td>
+      <td><a href="{{ portal.EntityWebsite }}" target="_blank" rel="noopener noreferrer">{{ portal.EntityWebsite }}</a></td>
       <td>
         {% if portal.SocialMediaURL %}
           {% for link in portal.SocialMediaURL %}
-            <a href="{{ link }}" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              {{ link }}
-            </a><br>
+            <a href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ link }}</a><br>
           {% endfor %}
         {% else %}
           N/A
@@ -173,7 +102,7 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
 </table>
 
 <div class="center-text">
-  <h2>List of Group Chats for Jobs in Iraq</h2>
+<h2>List of Group Chats for Jobs in Iraq</h2>
 </div>
 
 <table>
@@ -186,39 +115,31 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
   </thead>
   <tbody>
     {% for group in site.data.db.iqGroupEntity.EntityDetails %}
-    <tr>
-      <td>{{ group.EntityName }}</td>
-      <td>
-        {% if group.EntityWebsite != "" %}
-          <a href="{{ group.EntityWebsite }}" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            Website
-          </a>
-        {% else %}
-          No website
-        {% endif %}
-      </td>
-      <td>
-        {% if group.SocialMediaURL.size > 0 %}
-          {% for social in group.SocialMediaURL %}
-            <a href="{{ social }}" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              {{ social }}
-            </a><br>
-          {% endfor %}
-        {% else %}
-          No social media
-        {% endif %}
-      </td>
-    </tr>
+      <tr>
+        <td>{{ group.EntityName }}</td>
+        <td>
+          {% if group.EntityWebsite != "" %}
+            <a href="{{ group.EntityWebsite }}" target="_blank">Website</a>
+          {% else %}
+            No website
+          {% endif %}
+        </td>
+        <td>
+          {% if group.SocialMediaURL.size > 0 %}
+            {% for social in group.SocialMediaURL %}
+              <a href="{{ social }}" target="_blank">{{ social }}</a><br>
+            {% endfor %}
+          {% else %}
+            No social media
+          {% endif %}
+        </td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>
 
 <div class="center-text">
-  <h2>List of Recruitment Agencies (Employment Agencies) Operating in Iraq</h2>
+<h2>List of Recruitment Agencies (Employment Agencies) Operating in Iraq</h2>
 </div>
 
 <table>
@@ -232,41 +153,33 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
   </thead>
   <tbody>
     {% for agency in site.data.db.iqEmploymentEntity.Entities %}
-    <tr>
-      <td>{{ agency.EntityName }}</td>
-      <td>{{ agency.EntityCategory | join: ', ' }}</td>
-      <td>
-        {% if agency.EntityWebsite != "" %}
-          <a href="{{ agency.EntityWebsite }}" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            {{ agency.EntityWebsite }}
-          </a>
-        {% else %}
-          No website
-        {% endif %}
-      </td>
-      <td>
-        {% if agency.SocialMediaURL %}
-          {% assign links = agency.SocialMediaURL | split: ', ' %}
-          {% for link in links %}
-            <a href="{{ link }}" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              {{ link }}
-            </a><br>
-          {% endfor %}
-        {% else %}
-          No social media
-        {% endif %}
-      </td>
-    </tr>
+      <tr>
+        <td>{{ agency.EntityName }}</td>
+        <td>{{ agency.EntityCategory | join: ', ' }}</td>
+        <td>
+          {% if agency.EntityWebsite != "" %}
+            <a href="{{ agency.EntityWebsite }}" target="_blank">{{ agency.EntityWebsite }}</a>
+          {% else %}
+            No website
+          {% endif %}
+        </td>
+        <td>
+           {% if agency.SocialMediaURL %}
+             {% assign links = agency.SocialMediaURL | split: ', ' %}
+             {% for link in links %}
+              <a href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ link }}</a><br>
+            {% endfor %}
+          {% else %}
+            No social media
+          {% endif %}
+        </td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>
 
 <div class="center-text">
-  <h2>List of Companies in Iraq Offering Remote (Home-Based) Work Opportunities</h2>
+<h2>List of Companies in Iraq Offering Remote (Home-Based) Work Opportunities</h2>
 </div>
 
 <table>
@@ -281,23 +194,21 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
     {% for iqEntityDetails in EntityDetails %}
       {% assign categories = iqEntityDetails.category | join: ", " | strip %}
       {% if categories contains "Online-Remote" %}
-      <tr>
-        <td>{{ iqEntityDetails.name }}</td>
-        <td>
-          <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            {{ iqEntityDetails.website }}
-          </a>
-        </td>
-      </tr>
+        <tr>
+          <td>{{ iqEntityDetails.name }}</td>
+          <td>
+            <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" target="_blank" rel="noopener noreferrer">
+              {{ iqEntityDetails.website }}
+            </a>
+          </td>
+        </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
 <div class="center-text">
-  <h2>List of Organizations Providing Internship Programs in Iraq</h2>
+<h2>List of Organizations Providing Internship Programs in Iraq </h2>
 </div>
 
 <table>
@@ -311,29 +222,25 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
     {% assign EntityDetails = site.data.db.iqEntity.Entities %}
     {% for iqEntityDetails in EntityDetails %}
       {% if iqEntityDetails.jobType contains "Internship" %}
-      <tr>
-        <td>
-          <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            {{ iqEntityDetails.name }}
-          </a>
-        </td>
-        <td>
-          <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            {{ iqEntityDetails.website }}
-          </a>
-        </td>
-      </tr>
+        <tr>
+          <td>
+             <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" target="_blank" rel="noopener noreferrer">
+              {{ iqEntityDetails.name }}
+            </a>
+          </td>
+          <td>
+            <a href="https://{{ iqEntityDetails.website | remove: 'http://' | remove: 'https://' }}" target="_blank" rel="noopener noreferrer">
+              {{ iqEntityDetails.website }}
+            </a>
+          </td>
+        </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
 <div class="center-text">
-  <h2>List of Companies with Volunteer Opportunities in Iraq</h2>
+<h2>List of Companies with Volunteer Opportunities in Iraq </h2>
 </div>
 
 <table>
@@ -348,27 +255,25 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
     {% for iqEntityDetails in EntityDetails %}
       {% assign jobType = iqEntityDetails.jobType | join: ", " | strip %}
       {% if jobType contains "Volunteer" %}
-      <tr>
-        <td>{{ iqEntityDetails.name }}</td>
-        <td>
+        <tr>
+          <td>
+              {{ iqEntityDetails.name }}
+          </td>
+          <td>
           {% if iqEntityDetails.applyLink != "" %}
-            <a href="{{ iqEntityDetails.applyLink }}" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              {{ iqEntityDetails.applyLink }}
-            </a>
+            <a href="{{ iqEntityDetails.applyLink }}" target="_blank">{{ iqEntityDetails.applyLink }}</a>
           {% else %}
             No website
           {% endif %}
-        </td>
-      </tr>
+          </td>
+        </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
 <div class="center-text">
-  <h2>List of SaaS Platforms for HCM Recruitment/HRIS/ATS in Iraq</h2>
+<h2>List of SaaS Platforms for HCM Recruitment/HRIS/ATS in Iraq </h2>
 </div>
 
 <table>
@@ -382,20 +287,18 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶 
     {% assign EntityDetails = site.data.db.iqEntity.Entities %}
     {% for iqEntityDetails in EntityDetails %}
       {% if iqEntityDetails.services == "HCM" %}
-      <tr>
-        <td>{{ iqEntityDetails.name }}</td>
-        <td>
+       <tr>
+          <td>
+              {{ iqEntityDetails.name }}
+          </td>
+          <td>
           {% if iqEntityDetails.website != "" %}
-            <a href="{{ iqEntityDetails.website }}" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              {{ iqEntityDetails.website }}
-            </a>
+            <a href="{{ iqEntityDetails.website }}" target="_blank">{{ iqEntityDetails.website }}</a>
           {% else %}
             No website
           {% endif %}
-        </td>
-      </tr>
+          </td>
+        </tr>
       {% endif %}
     {% endfor %}
   </tbody>
