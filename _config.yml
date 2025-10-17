@@ -63,6 +63,45 @@ languages:
 # Right-to-Left (RTL) language support
 rtl_languages: ["ar", "ku"]
 
+# ============================================
+# BUILD CONFIGURATION
+# ============================================
+# Preprocess data files at build time
+data_format: yaml
+# Cache data for performance
+incremental: true
+# ============================================
+# DEFAULT LANGUAGE ASSIGNMENTS
+# ============================================
+defaults:
+  # All pages default to English
+  - scope:
+      path: ""
+    values:
+      lang: "en"
+  
+  # Arabic pages
+  - scope:
+      path: "ar"
+    values:
+      lang: "ar"
+  
+  # Kurdish pages
+  - scope:
+      path: "ku"
+    values:
+      lang: "ku"
+# ============================================
+# EXCLUDE UNNECESSARY FILES
+# ============================================
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.md"
+  - ".git"
+
 # Advanced i18n configuration (for custom JavaScript internationalization)
 i18n:
   supported_langs: ["en", "ar", "ku"]
@@ -202,6 +241,7 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - "*.md"
   - .vscode
   - .vs
   - vendor

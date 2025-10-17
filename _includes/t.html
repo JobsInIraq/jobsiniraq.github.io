@@ -1,0 +1,30 @@
+{%- comment -%}
+  Smart Translation Include
+  Usage: {% include t.html key="nav.home" %}
+  Or:    {% include t.html key="nav.home" lang="ar" %}
+{%- endcomment -%}
+
+{%- assign lang = include.lang | default: page.lang | default: site.lang | default: "en" -%}
+{%- assign key_parts = include.key | split: "." -%}
+
+{%- if key_parts.size == 1 -%}
+  {%- assign translation = site.data.ui_text[lang][include.key] -%}
+  {%- if translation == nil -%}
+    {%- assign translation = site.data.job_titles[lang][include.key] -%}
+  {%- endif -%}
+{%- elsif key_parts.size == 2 -%}
+  {%- assign first_key = key_parts[0] -%}
+  {%- assign second_key = key_parts[1] -%}
+  {%- assign translation = site.data.ui_text[lang][first_key][second_key] -%}
+{%- elsif key_parts.size == 3 -%}
+  {%- assign first_key = key_parts[0] -%}
+  {%- assign second_key = key_parts[1] -%}
+  {%- assign third_key = key_parts[2] -%}
+  {%- assign translation = site.data.ui_text[lang][first_key][second_key][third_key] -%}
+{%- endif -%}
+
+{%- if translation -%}
+  {{ translation }}
+{%- else -%}
+  {{ include.key }}
+{%- endif -%}
