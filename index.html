@@ -141,13 +141,92 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
 }
 </style>
 
+<!-- SEARCH & FILTER STYLES -->
+<link rel="stylesheet" href="{{ '/assets/css/search-filter.css' | relative_url }}">
+
+<!-- PAGE INTRODUCTION -->
+<div class="resources-modern">
+  <section class="section-modern" style="text-align: center; border-bottom: none; padding-top: 0;">
+    <h1 class="heading-modern" style="font-size: 2rem; margin-bottom: 1rem;">
+      🇮🇶 Jobs in Iraq Directory
+    </h1>
+    <p style="font-size: 1.1rem; color: #4B5563; margin-bottom: 0;">
+      Comprehensive directory of job platforms, recruitment agencies, and employment resources across Iraq
+    </p>
+  </section>
+
+  <!-- SEARCH & FILTER INTERFACE -->
+  <section class="search-filter-container">
+    <h3>🔍 Search & Filter Resources</h3>
+
+    <!-- Search Input -->
+    <div style="margin-bottom: 1rem;">
+      <label for="search-input" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #111827;">
+        Search by Name or Keyword
+      </label>
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="e.g., IQJ Scout, LinkedIn, Erbil, IT Jobs..." 
+        aria-label="Search resources"
+        aria-describedby="search-help"
+      >
+      <small id="search-help" style="display: block; margin-top: 0.25rem; color: #6B7280;">
+        Type at least 2 characters to search
+      </small>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="search-filter-controls">
+      <!-- Language Filter -->
+      <div class="search-filter-group">
+        <label for="filter-language">Filter by Language</label>
+        <select id="filter-language" aria-label="Filter by language">
+          <option value="">All Languages</option>
+        </select>
+      </div>
+
+      <!-- Type Filter -->
+      <div class="search-filter-group">
+        <label for="filter-type">Filter by Type</label>
+        <select id="filter-type" aria-label="Filter by resource type">
+          <option value="">All Types</option>
+        </select>
+      </div>
+
+      <!-- Region Filter -->
+      <div class="search-filter-group">
+        <label for="filter-region">Filter by Region</label>
+        <select id="filter-region" aria-label="Filter by region">
+          <option value="">All Regions</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="search-filter-buttons">
+      <button id="reset-filters-btn" type="button" aria-label="Reset all filters">
+        ↺ Reset Filters
+      </button>
+    </div>
+
+    <!-- Results Counter -->
+    <div style="margin-top: 1rem;">
+      <span id="result-count" class="search-result-count" aria-live="polite">
+        Showing results...
+      </span>
+    </div>
+  </section>
+
+</div>
+
 <!-- MAIN CONTENT -->
 <div class="resources-modern">
 
   <!-- JOB PORTALS -->
   <section class="section-modern">
     <h2 class="heading-modern">📌 List of Job Portals in Iraq</h2>
-    <table class="table-modern">
+    <table class="table-modern" aria-label="Job portals in Iraq">
       <thead>
         <tr>
           <th>Name</th>
@@ -185,7 +264,7 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   <!-- GROUP CHATS -->
   <section class="section-modern">
     <h2 class="heading-modern">💬 List of Group Chats for Jobs in Iraq</h2>
-    <table class="table-modern">
+    <table class="table-modern" aria-label="Job groups and communities in Iraq">
       <thead>
         <tr>
           <th>Name</th>
@@ -224,7 +303,7 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   <!-- RECRUITMENT AGENCIES -->
   <section class="section-modern">
     <h2 class="heading-modern">🏢 List of Recruitment Agencies Operating in Iraq</h2>
-    <table class="table-modern">
+    <table class="table-modern" aria-label="Recruitment agencies in Iraq">
       <thead>
         <tr>
           <th>Name</th>
@@ -266,7 +345,7 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   <!-- REMOTE WORK -->
   <section class="section-modern">
     <h2 class="heading-modern">🏠 Companies Offering Remote (Home-Based) Work in Iraq</h2>
-    <table class="table-modern">
+    <table class="table-modern" aria-label="Remote work opportunities in Iraq">
       <thead>
         <tr>
           <th>Name</th>
@@ -295,7 +374,7 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   <!-- INTERNSHIPS -->
   <section class="section-modern">
     <h2 class="heading-modern">🎓 Organizations Providing Internship Programs in Iraq</h2>
-    <table class="table-modern">
+    <table class="table-modern" aria-label="Internship programs in Iraq">
       <thead>
         <tr>
           <th>Name</th>
@@ -327,7 +406,7 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   <!-- VOLUNTEERS -->
   <section class="section-modern">
     <h2 class="heading-modern">🤝 Companies with Volunteer Opportunities in Iraq</h2>
-    <table class="table-modern">
+    <table class="table-modern" aria-label="Volunteer opportunities in Iraq">
       <thead>
         <tr>
           <th>Name</th>
@@ -358,7 +437,7 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   <!-- HCM/HRIS/ATS PLATFORMS -->
   <section class="section-modern">
     <h2 class="heading-modern">⚙️ SaaS Platforms for HCM/HRIS/ATS in Iraq</h2>
-    <table class="table-modern">
+    <table class="table-modern" aria-label="HCM/HRIS/ATS platforms in Iraq">
       <thead>
         <tr>
           <th>Name</th>
@@ -387,7 +466,10 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
 
 </div>
 
-<!-- JAVASCRIPT FOR TABLE INTERACTIONS -->
+<!-- SEARCH & FILTER JAVASCRIPT -->
+<script src="{{ '/assets/js/search-filter.js' | relative_url }}" defer></script>
+
+<!-- TABLE INTERACTION JAVASCRIPT -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var tables = document.querySelectorAll('.table-modern');
