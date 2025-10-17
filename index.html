@@ -114,6 +114,143 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   font-size: 0.9rem;
 }
 
+/* SEARCH & FILTER STYLES - INLINE */
+.search-filter-container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-filter-container h3 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  background: white;
+  color: #111827;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+#search-input::placeholder {
+  color: #9ca3af;
+}
+
+#search-input:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.search-filter-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-filter-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+#filter-language,
+#filter-type,
+#filter-region {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  background: white;
+  color: #111827;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+#filter-language:hover,
+#filter-type:hover,
+#filter-region:hover {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+
+#filter-language:focus,
+#filter-type:focus,
+#filter-region:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.search-filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+#reset-filters-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  background: white;
+  color: #111827;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#reset-filters-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+#result-count {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.search-highlight {
+  background-color: #FEF3C7 !important;
+  border-left: 4px solid #F59E0B;
+}
+
 @media (max-width: 768px) {
   .table-modern {
     font-size: 0.9rem;
@@ -124,6 +261,18 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   }
   .heading-modern {
     font-size: 1.3rem;
+  }
+  .search-filter-controls {
+    grid-template-columns: 1fr;
+  }
+  #search-input {
+    max-width: 100%;
+  }
+  .search-filter-buttons {
+    flex-direction: column;
+  }
+  #reset-filters-btn {
+    width: 100%;
   }
 }
 
@@ -140,9 +289,6 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
   }
 }
 </style>
-
-<!-- SEARCH & FILTER STYLES -->
-<link rel="stylesheet" href="{{ '/assets/css/search-filter.css' | relative_url }}">
 
 <!-- PAGE INTRODUCTION -->
 <div class="resources-modern">
@@ -169,9 +315,8 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
         id="search-input" 
         placeholder="e.g., IQJ Scout, LinkedIn, Erbil, IT Jobs..." 
         aria-label="Search resources"
-        aria-describedby="search-help"
       >
-      <small id="search-help" style="display: block; margin-top: 0.25rem; color: #6B7280;">
+      <small style="display: block; margin-top: 0.25rem; color: #6B7280;">
         Type at least 2 characters to search
       </small>
     </div>
@@ -466,11 +611,191 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
 
 </div>
 
-<!-- SEARCH & FILTER JAVASCRIPT -->
-<script src="{{ '/assets/js/search-filter.js' | relative_url }}" defer></script>
-
-<!-- TABLE INTERACTION JAVASCRIPT -->
+<!-- INLINE SEARCH & FILTER JAVASCRIPT - WORKING VERSION -->
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('[Search] Initializing search and filter system...');
+
+  // Get DOM elements
+  const searchInput = document.getElementById('search-input');
+  const filterLanguage = document.getElementById('filter-language');
+  const filterType = document.getElementById('filter-type');
+  const filterRegion = document.getElementById('filter-region');
+  const resetBtn = document.getElementById('reset-filters-btn');
+  const resultCount = document.getElementById('result-count');
+  const tables = document.querySelectorAll('.table-modern');
+
+  // Store original data
+  let originalRows = [];
+  let allTables = [];
+
+  // Extract all table data
+  tables.forEach((table, tableIndex) => {
+    const rows = table.querySelectorAll('tbody tr');
+    rows.forEach((row) => {
+      const cells = row.querySelectorAll('td');
+      if (cells.length > 0) {
+        originalRows.push({
+          id: `row-${tableIndex}-${originalRows.length}`,
+          name: (cells[0]?.textContent?.trim() || ''),
+          category: (cells[1]?.textContent?.trim() || cells[1]?.textContent?.trim() || ''),
+          language: (cells[2]?.textContent?.trim() || cells[1]?.textContent?.trim() || ''),
+          rowElement: row,
+          tableIndex: tableIndex
+        });
+      }
+    });
+    allTables.push(table);
+  });
+
+  console.log(`[Search] Extracted ${originalRows.length} rows from tables`);
+
+  // Helper: Determine type from text
+  function determineType(text) {
+    text = text.toLowerCase();
+    if (text.includes('portal')) return 'Portal';
+    if (text.includes('agency') || text.includes('recruitment')) return 'Agency';
+    if (text.includes('group') || text.includes('community')) return 'Community';
+    return 'Other';
+  }
+
+  // Helper: Determine region
+  function determineRegion(text) {
+    text = text.toLowerCase();
+    if (text.includes('erbil') || text.includes('irbil')) return 'Erbil';
+    if (text.includes('baghdad')) return 'Baghdad';
+    if (text.includes('basra')) return 'Basra';
+    if (text.includes('kurdistan') || text.includes('krg')) return 'Kurdistan';
+    return 'All Regions';
+  }
+
+  // Populate filter dropdowns
+  function populateFilters() {
+    const languages = new Set();
+    const types = new Set();
+    const regions = new Set();
+
+    originalRows.forEach(row => {
+      if (row.language) {
+        row.language.split(',').forEach(lang => {
+          lang = lang.trim();
+          if (lang && lang !== 'N/A') languages.add(lang);
+        });
+      }
+      types.add(determineType(row.category));
+      regions.add(determineRegion(row.name));
+    });
+
+    // Populate language filter
+    languages.forEach(lang => {
+      if (lang) {
+        const option = document.createElement('option');
+        option.value = lang;
+        option.textContent = lang;
+        filterLanguage.appendChild(option);
+      }
+    });
+
+    // Populate type filter
+    types.forEach(type => {
+      if (type && type !== 'Other') {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
+        filterType.appendChild(option);
+      }
+    });
+
+    // Populate region filter
+    regions.forEach(region => {
+      if (region && region !== 'All Regions') {
+        const option = document.createElement('option');
+        option.value = region;
+        option.textContent = region;
+        filterRegion.appendChild(option);
+      }
+    });
+
+    console.log('[Search] Filter dropdowns populated');
+  }
+
+  // Apply filters
+  function applyFilters() {
+    const searchTerm = (searchInput.value || '').toLowerCase();
+    const selectedLanguage = filterLanguage.value || '';
+    const selectedType = filterType.value || '';
+    const selectedRegion = filterRegion.value || '';
+
+    let visibleCount = 0;
+
+    originalRows.forEach(row => {
+      let matches = true;
+
+      // Search filter
+      if (searchTerm.length >= 2) {
+        matches = matches && (
+          row.name.toLowerCase().includes(searchTerm) ||
+          row.category.toLowerCase().includes(searchTerm) ||
+          row.language.toLowerCase().includes(searchTerm)
+        );
+      }
+
+      // Language filter
+      if (selectedLanguage && matches) {
+        matches = row.language.toLowerCase().includes(selectedLanguage.toLowerCase());
+      }
+
+      // Type filter
+      if (selectedType && matches) {
+        matches = determineType(row.category) === selectedType;
+      }
+
+      // Region filter
+      if (selectedRegion && matches) {
+        matches = determineRegion(row.name) === selectedRegion;
+      }
+
+      // Show/hide row
+      if (matches) {
+        row.rowElement.style.display = '';
+        row.rowElement.classList.add('search-highlight');
+        visibleCount++;
+      } else {
+        row.rowElement.style.display = 'none';
+        row.rowElement.classList.remove('search-highlight');
+      }
+    });
+
+    // Update results counter
+    resultCount.textContent = `Showing ${visibleCount} of ${originalRows.length} results`;
+    console.log(`[Search] Filtered to ${visibleCount} results`);
+  }
+
+  // Reset filters
+  function resetFilters() {
+    searchInput.value = '';
+    filterLanguage.value = '';
+    filterType.value = '';
+    filterRegion.value = '';
+    applyFilters();
+    console.log('[Search] Filters reset');
+  }
+
+  // Event listeners
+  if (searchInput) searchInput.addEventListener('input', applyFilters);
+  if (filterLanguage) filterLanguage.addEventListener('change', applyFilters);
+  if (filterType) filterType.addEventListener('change', applyFilters);
+  if (filterRegion) filterRegion.addEventListener('change', applyFilters);
+  if (resetBtn) resetBtn.addEventListener('click', resetFilters);
+
+  // Initialize
+  populateFilters();
+  applyFilters();
+
+  console.log('[Search] System initialized and ready!');
+});
+
+// Table interaction
 document.addEventListener('DOMContentLoaded', function() {
   var tables = document.querySelectorAll('.table-modern');
   
@@ -489,16 +814,6 @@ document.addEventListener('DOMContentLoaded', function() {
           this.style.backgroundColor = '#f9fafb';
         } else {
           this.style.backgroundColor = 'white';
-        }
-      });
-      
-      row.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          var firstLink = this.querySelector('a');
-          if (firstLink) {
-            firstLink.focus();
-          }
         }
       });
     });
