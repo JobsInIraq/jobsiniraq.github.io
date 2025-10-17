@@ -3,32 +3,32 @@ main:
  # - title:
  #     en: "Home"
  #     ar: "الرئيسية"
- #     ckb: "سەرەتا"
+ #     ku: "سەرەتا"
  #   url: /
   - title:
       en: "Recruitment Process"
       ar: "عملية التوظيف"
-      ckb: "پرۆسەی دامەزراندن"
+      ku: "پرۆسەی دامەزراندن"
     url: /process/
   - title: 
       en: "Salary Guide"
       ar: "دليل الرواتب"
-      ckb: "ڕێبەری مووچە"
+      ku: "ڕێبەری مووچە"
     url: /payscale/
   - title:
     en: "Recruitment Innovation"
     ar: "ابتكار التوظيف"
-    ckb: "داهێنانی دامەزراندن"
+    ku: "داهێنانی دامەزراندن"
     url: /recruitment_innovation/
   - title: 
       en: "Dashboard"
       ar: "لوحة التحكم"
-      ckb: "داشبۆرد"
+      ku: "داشبۆرد"
     url: /payscale-dashboard/
   - title: 
       en: "About"
       ar: "عن الموقع"
-      ckb: "دەربارە"
+      ku: "دەربارە"
     url: https://linkedin.com/in/diyar/
  # - title: "Sample Collections"
   #   url: /collection-archive/

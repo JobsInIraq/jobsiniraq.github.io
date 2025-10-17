@@ -4,8 +4,8 @@
 (function() {
   'use strict';
   
-  const SUPPORTED_LANGS = ['en', 'ar', 'ckb'];
-  const RTL_LANGS = ['ar', 'ckb'];
+  const SUPPORTED_LANGS = ['en', 'ar', 'ku'];
+  const RTL_LANGS = ['ar', 'ku'];
   const STORAGE_KEY = 'siteLanguage'; // Single source of truth
   
   // Translation strings for navigation
@@ -24,7 +24,7 @@
       dashboard: 'لوحة التحكم',
       about: 'عن الموقع'
     },
-    ckb: {
+    ku: {
       home: 'سەرەتا',
       process: 'پرۆسەی دامەزراندن',
       payscale: 'ڕێبەری مووچە',

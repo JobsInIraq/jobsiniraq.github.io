@@ -137,7 +137,7 @@ const numberFmt = (n, cur) => {
   if (n == null || !Number.isFinite(n)) return "—";
 
   const lang = getCurrentLang();
-  const locale = lang === 'ar' ? 'ar-IQ' : lang === 'ckb' ? 'en-US' : 'en-US';
+  const locale = lang === 'ar' ? 'ar-IQ' : lang === 'ku' ? 'en-US' : 'en-US';
   const formatted = n.toLocaleString(locale);
   const suffix = cur === "USD" ? " USD/mo" : " IQD/mo";
 
@@ -191,7 +191,7 @@ const setFirstOption = (selectEl, text) => {
 
 const uniq = (arr) => {
   const lang = getCurrentLang();
-  const locale = lang === 'ar' ? 'ar-IQ' : lang === 'ckb' ? 'ku' : 'en-US';
+  const locale = lang === 'ar' ? 'ar-IQ' : lang === 'ku' ? 'ku' : 'en-US';
 
   return [...new Set(arr.filter(Boolean))].sort((a, b) =>
     a.localeCompare(b, locale)

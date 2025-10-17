@@ -8,7 +8,9 @@
 {%- endcomment -%}
 {% include copyright.html %}
 
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="no-js">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" 
+      dir="{% if page.lang == 'ar' or page.lang == 'ku' %}rtl{% else %}ltr{% endif %}"
+      class="no-js">
 
 <head>
   {%- comment -%}
@@ -18,13 +20,22 @@
   {% include head.html %}
   
   {%- comment -%}
+    CRITICAL: Load translations FIRST (before any script uses them)
+    This injects translation data into JavaScript globals
+    Files: en.yml, ar.yml, ku.yml converted to JS
+    Defined in: _includes/translations-inline.html
+  {%- endcomment -%}
+  {% include translations-inline.html %}
+  
+  {%- comment -%}
     Custom head elements (performance scripts, GTM, meta tags)
     Defined in: _includes/head/custom.html
   {%- endcomment -%}
   {% include head/custom.html %}
 </head>
 
-<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}"
+      data-locale="{{ page.lang | default: site.lang | default: 'en' }}">
 
   {%- comment -%}
     GTM NoScript Fallback
@@ -47,8 +58,20 @@
   {% include_cached skip-links.html %}
   
   {%- comment -%}
+    Unified Language Manager (loads before navigation)
+    Handles language switching across entire site
+    Syncs with localStorage for persistence
+    Defined in: _includes/language-manager.js
+  {%- endcomment -%}
+  <script>
+    // Load Language Manager IMMEDIATELY (before navigation renders)
+    {% include language-manager.js %}
+  </script>
+  
+  {%- comment -%}
     Main site header/navigation
     Includes logo, menu, search toggle
+    Language manager already initialized, so nav can use it
   {%- endcomment -%}
   {% include_cached masthead.html %}
 
@@ -102,6 +125,73 @@
     Loaded at end of body for better performance
   {%- endcomment -%}
   {% include scripts.html %}
+
+  {%- comment -%}
+    CRITICAL: Load Unified i18n System (after all content loaded)
+    This initializes the translation engine
+    Must load AFTER translations-inline.html injected data
+    Must load BEFORE dashboard or other i18n-dependent scripts
+    Defined in: _includes/i18n-system.js
+  {%- endcomment -%}
+  <script>
+    // Initialize Unified i18n System
+    {% include i18n-system.js %}
+  </script>
+
+  {%- comment -%}
+    Dashboard i18n (only if on dashboard page)
+    Waits for i18n system before initializing
+    Handles dashboard-specific translations
+  {%- endcomment -%}
+  {% if page.title contains "Dashboard" or page.url contains "payscale-dashboard" %}
+    <script>
+      // Wait for i18n to be ready before initializing dashboard
+      (function() {
+        const waitForI18n = () => {
+          return new Promise((resolve) => {
+            if (window.i18n && typeof window.i18n.t === 'function') {
+              resolve();
+              return;
+            }
+
+            const maxAttempts = 50;
+            let attempts = 0;
+            const checkInterval = setInterval(() => {
+              attempts++;
+              if (window.i18n && typeof window.i18n.t === 'function') {
+                clearInterval(checkInterval);
+                console.log('[Dashboard] i18n ready after', attempts * 100, 'ms');
+                resolve();
+              } else if (attempts >= maxAttempts) {
+                clearInterval(checkInterval);
+                console.error('[Dashboard] i18n timeout - continuing anyway');
+                resolve();
+              }
+            }, 100);
+          });
+        };
+
+        waitForI18n().then(() => {
+          // Load dashboard script now that i18n is ready
+          const script = document.createElement('script');
+          script.src = '/assets/js/dashboard-i18n.js';
+          script.type = 'module';
+          script.onerror = () => {
+            console.error('[Dashboard] Failed to load dashboard-i18n.js');
+          };
+          document.body.appendChild(script);
+        });
+      })();
+    </script>
+  {% endif %}
+
+  {%- comment -%}
+    Salary Formatter (applies number formatting with i18n)
+    Loads after all translations are ready
+  {%- endcomment -%}
+  <script>
+    {% include salary-formatter.js %}
+  </script>
 
 </body>
 </html>

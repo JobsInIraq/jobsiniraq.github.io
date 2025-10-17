@@ -11,8 +11,8 @@
   const TRANSLATIONS = window.SITE_TRANSLATIONS || {};
   const JOB_TITLES = window.JOB_TITLES_TRANSLATIONS || {};
   const CONFIG = window.I18N_CONFIG || {
-    supportedLangs: ['en', 'ar', 'ckb'],
-    rtlLangs: ['ar', 'ckb'],
+    supportedLangs: ['en', 'ar', 'ku'],
+    rtlLangs: ['ar', 'ku'],
     storageKey: 'siteLanguage',
     defaultLang: 'en',
     devMode: true
