@@ -74,7 +74,13 @@ permalink: /payscale-dashboard/
 
 <!-- build-time data injection (safe; avoids extra network fetch on pages) -->
 <script id="payscale-data" type="application/json">
-{{ site.data.db.salaries | jsonify }}
+{
+  {% if site.data.db.salaries %}
+    "salaries": {{ site.data.db.salaries | jsonify | xml_escape }}
+  {% else %}
+    "salaries": []
+  {% endif %}
+}
 </script>
 
 <!-- Grid.js CSS (Local) - Must load BEFORE JavaScript -->
