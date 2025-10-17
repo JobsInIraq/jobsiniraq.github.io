@@ -432,16 +432,17 @@ summary: Top Job Portals, Job Groups, and Recruitment Agencies in Iraq 🇮🇶
 
 </div>
 
-<!-- JAVASCRIPT FOR INTERACTIVITY -->
-<script>
+<!-- JAVASCRIPT FOR TABLE INTERACTIONS - SAFE VERSION -->
+<script type="application/javascript">
 document.addEventListener('DOMContentLoaded', function() {
-  // Table row keyboard navigation
-  const tables = document.querySelectorAll('.table-modern');
+  'use strict';
   
-  tables.forEach(table => {
-    const rows = table.querySelectorAll('tbody tr');
+  var tables = document.querySelectorAll('.table-modern');
+  
+  tables.forEach(function(table) {
+    var rows = table.querySelectorAll('tbody tr');
     
-    rows.forEach((row, index) => {
+    rows.forEach(function(row, index) {
       row.setAttribute('tabindex', '0');
       
       row.addEventListener('focus', function() {
@@ -459,7 +460,7 @@ document.addEventListener('DOMContentLoaded', function() {
       row.addEventListener('keydown', function(e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          const firstLink = this.querySelector('a');
+          var firstLink = this.querySelector('a');
           if (firstLink) {
             firstLink.focus();
           }
@@ -467,7 +468,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
-  
-  console.log('✅ Phase 1 Modern Enhancements loaded successfully!');
 });
 </script>
