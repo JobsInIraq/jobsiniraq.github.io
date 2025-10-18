@@ -1,1 +1,147 @@
+# ============================================
+# ENGLISH JOB TITLES - IRAQ JOB MARKET
+# International Standard (ISCO-08 Aligned)
+# Last Updated: 2025-10-18
+# Total: 100 engineering titles
+# ============================================
+
+# ==========================================
+# 1. ARCHITECTS & SURVEYORS
+# ==========================================
+architect: "Architect"
+landscape_architect: "Landscape Architect"
+architectural_designer: "Architectural Designer"
+urban_planner: "Urban Planner"
+interior_architect: "Interior Architect"
+surveyor: "Surveyor"
+land_surveyor: "Land Surveyor"
+cartographer: "Cartographer"
+photogrammetrist: "Photogrammetrist"
+geospatial_analyst: "Geospatial Analyst"
+
+# ==========================================
+# 2. CIVIL ENGINEERS
+# ==========================================
+civil_engineer: "Civil Engineer"
+structural_engineer: "Structural Engineer"
+highway_engineer: "Highway Engineer"
+transportation_engineer: "Transportation Engineer"
+geotechnical_engineer: "Geotechnical Engineer"
+water_resources_engineer: "Water Resources Engineer"
+irrigation_engineer: "Irrigation Engineer"
+bridge_engineer: "Bridge Engineer"
+construction_engineer: "Construction Engineer"
+site_engineer: "Site Engineer"
+quantity_surveyor: "Quantity Surveyor"
+infrastructure_engineer: "Infrastructure Engineer"
+coastal_engineer: "Coastal Engineer"
+pavement_engineer: "Pavement Engineer"
+traffic_engineer: "Traffic Engineer"
+
+# ==========================================
+# 3. PETROLEUM, MINING & GEOLOGICAL ENGINEERS
+# ==========================================
+petroleum_engineer: "Petroleum Engineer"
+drilling_engineer: "Drilling Engineer"
+reservoir_engineer: "Reservoir Engineer"
+production_engineer: "Production Engineer"
+completion_engineer: "Completion Engineer"
+pipeline_engineer: "Pipeline Engineer"
+petroleum_geologist: "Petroleum Geologist"
+petroleum_geophysicist: "Petroleum Geophysicist"
+mining_engineer: "Mining Engineer"
+well_engineer: "Well Engineer"
+
+# ==========================================
+# 4. MECHANICAL ENGINEERS
+# ==========================================
+mechanical_engineer: "Mechanical Engineer"
+hvac_engineer: "HVAC Engineer"
+piping_engineer: "Piping Engineer"
+rotating_equipment_engineer: "Rotating Equipment Engineer"
+static_equipment_engineer: "Static Equipment Engineer"
+maintenance_engineer: "Maintenance Engineer"
+plant_engineer: "Plant Engineer"
+automotive_engineer: "Automotive Engineer"
+aeronautical_engineer: "Aeronautical Engineer"
+aerospace_engineer: "Aerospace Engineer"
+marine_engineer: "Marine Engineer"
+mechatronics_engineer: "Mechatronics Engineer"
+
+# ==========================================
+# 5. ELECTRICAL, ELECTRONICS & TELECOM ENGINEERS
+# ==========================================
+electrical_engineer: "Electrical Engineer"
+power_engineer: "Power Engineer"
+electronics_engineer: "Electronics Engineer"
+control_systems_engineer: "Control Systems Engineer"
+instrumentation_engineer: "Instrumentation Engineer"
+automation_engineer: "Automation Engineer"
+telecommunications_engineer: "Telecommunications Engineer"
+network_engineer_telecom: "Network Engineer (Telecom)"
+transmission_engineer: "Transmission Engineer"
+distribution_engineer: "Distribution Engineer"
+substation_engineer: "Substation Engineer"
+lighting_engineer: "Lighting Engineer"
+
+# ==========================================
+# 6. CHEMICAL & PROCESS ENGINEERS
+# ==========================================
+chemical_engineer: "Chemical Engineer"
+process_engineer: "Process Engineer"
+refining_engineer: "Refining Engineer"
+petrochemical_engineer: "Petrochemical Engineer"
+process_safety_engineer: "Process Safety Engineer"
+corrosion_engineer: "Corrosion Engineer"
+materials_engineer: "Materials Engineer"
+polymer_engineer: "Polymer Engineer"
+
+# ==========================================
+# 7. INDUSTRIAL & MANUFACTURING ENGINEERS
+# ==========================================
+industrial_engineer: "Industrial Engineer"
+production_engineer_manufacturing: "Production Engineer"
+quality_engineer: "Quality Engineer"
+manufacturing_engineer: "Manufacturing Engineer"
+operations_engineer: "Operations Engineer"
+facilities_engineer: "Facilities Engineer"
+logistics_engineer: "Logistics Engineer"
+supply_chain_engineer: "Supply Chain Engineer"
+
+# ==========================================
+# 8. ENVIRONMENTAL & SAFETY ENGINEERS
+# ==========================================
+environmental_engineer: "Environmental Engineer"
+hse_engineer: "HSE Engineer"
+safety_engineer: "Safety Engineer"
+occupational_health_engineer: "Occupational Health Engineer"
+fire_protection_engineer: "Fire Protection Engineer"
+waste_management_engineer: "Waste Management Engineer"
+
+# ==========================================
+# 9. SPECIALIZED ENGINEERS
+# ==========================================
+biomedical_engineer: "Biomedical Engineer"
+nuclear_engineer: "Nuclear Engineer"
+agricultural_engineer: "Agricultural Engineer"
+food_engineer: "Food Engineer"
+acoustical_engineer: "Acoustical Engineer"
+textile_engineer: "Textile Engineer"
+packaging_engineer: "Packaging Engineer"
+
+# ==========================================
+# 10. ENGINEERING TECHNICIANS & DRAFTERS
+# ==========================================
+engineering_technician: "Engineering Technician"
+civil_engineering_technician: "Civil Engineering Technician"
+mechanical_engineering_technician: "Mechanical Engineering Technician"
+electrical_engineering_technician: "Electrical Engineering Technician"
+instrumentation_technician: "Instrumentation Technician"
+cad_technician: "CAD Technician"
+drafter: "Drafter"
+architectural_drafter: "Architectural Drafter"
+civil_drafter: "Civil Drafter"
+mechanical_drafter: "Mechanical Drafter"
+electrical_drafter: "Electrical Drafter"
+calibration_technician: "Calibration Technician"
 
