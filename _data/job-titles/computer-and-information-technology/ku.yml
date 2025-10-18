@@ -1,0 +1,131 @@
+# ======================================
+# A. گەشەپێدەر و ئەندازیارانی نەرمەکاڵا
+# ======================================
+software_developer: "گەشەپێدەری نەرمەکاڵا"
+software_engineer: "ئەندازیاری نەرمەکاڵا"
+full_stack_developer: "گەشەپێدەری تەواو ستاک"
+frontend_developer: "گەشەپێدەری پێشەوە"
+backend_developer: "گەشەپێدەری باکێند"
+web_developer: "گەشەپێدەری وێب"
+mobile_developer: "گەشەپێدەری مۆبایل"
+mobile_app_developer: "گەشەپێدەری ئەپی مۆبایل"
+android_developer: "گەشەپێدەری ئەندرۆید"
+ios_developer: "گەشەپێدەری iOS"
+application_developer: "گەشەپێدەری بەرنامە"
+senior_software_engineer: "ئەندازیاری باڵای نەرمەکاڵا"
+junior_developer: "گەشەپێدەری بچووک"
+software_architect: "تەلارسازی نەرمەکاڵا"
+solutions_architect: "تەلارسازی چارەسەرەکان"
+devops_engineer: "ئەندازیاری DevOps"
+cloud_engineer: "ئەندازیاری هەور"
+embedded_systems_developer: "گەشەپێدەری سیستەمی جێگیرکراو"
+game_developer: "گەشەپێدەری یاری"
+programmer: "پرۆگرامساز"
+
+# ======================================
+# B. دیزاینەری وێب و ڕووکاری دیجیتاڵی
+# ======================================
+ui_ux_developer: "گەشەپێدەری UI/UX"
+ui_developer: "گەشەپێدەری UI"
+ux_developer: "گەشەپێدەری UX"
+web_designer: "دیزاینەری وێب"
+digital_interface_designer: "دیزاینەری ڕووکاری دیجیتاڵی"
+webmaster: "وێبماستەر"
+wordpress_developer: "گەشەپێدەری WordPress"
+e_commerce_developer: "گەشەپێدەری بازرگانی ئەلیکترۆنی"
+
+# ======================================
+# C. پسپۆڕانی بنکەدراوە و داتا
+# ======================================
+database_administrator: "بەڕێوەبەری بنکەدراوە (DBA)"
+database_developer: "گەشەپێدەری بنکەدراوە"
+database_architect: "تەلارسازی بنکەدراوە"
+data_analyst: "شیکارکەری داتا"
+data_scientist: "زانای داتا"
+data_engineer: "ئەندازیاری داتا"
+big_data_engineer: "ئەندازیاری داتا گەورەکان"
+business_intelligence_analyst: "شیکارکەری هەواڵگری بازرگانی"
+data_warehousing_specialist: "پسپۆڕی کۆگای داتا"
+sql_developer: "گەشەپێدەری SQL"
+
+# ======================================
+# D. تۆڕ و سیستەمەکان
+# ======================================
+network_administrator: "بەڕێوەبەری تۆڕ"
+network_engineer: "ئەندازیاری تۆڕ"
+network_architect: "تەلارسازی تۆڕ"
+systems_administrator: "بەڕێوەبەری سیستەمەکان"
+system_engineer: "ئەندازیاری سیستەم"
+linux_administrator: "بەڕێوەبەری لینوکس"
+windows_administrator: "بەڕێوەبەری ویندۆز"
+server_administrator: "بەڕێوەبەری ڕاژەکار"
+cloud_administrator: "بەڕێوەبەری هەور"
+telecommunications_specialist: "پسپۆڕی پەیوەندییەکان"
+network_security_engineer: "ئەندازیاری ئاسایشی تۆڕ"
+noc_engineer: "ئەندازیاری NOC"
+
+# ======================================
+# E. ئاسایشی ئەلیکترۆنی و ئاسایشی زانیاری
+# ======================================
+cybersecurity_specialist: "پسپۆڕی ئاسایشی ئەلیکترۆنی"
+information_security_analyst: "شیکارکەری ئاسایشی زانیاری"
+security_engineer: "ئەندازیاری ئاسایش"
+security_analyst: "شیکارکەری ئاسایش"
+cybersecurity_engineer: "ئەندازیاری ئاسایشی ئەلیکترۆنی"
+penetration_tester: "تاقیکەرەوەی دزەکردن"
+ethical_hacker: "هاکەری ئەخلاقی"
+security_consultant: "ڕاوێژکاری ئاسایش"
+soc_analyst: "شیکارکەری SOC"
+incident_response_analyst: "شیکارکەری وەڵامی ڕووداوەکان"
+information_security_manager: "بەڕێوەبەری ئاسایشی زانیاری"
+chief_information_security_officer: "سەرۆکی ئاسایشی زانیاری (CISO)"
+
+# ======================================
+# F. IT SUPPORT & HELP DESK
+# ======================================
+it_support_specialist: "پسپۆڕی پشتگیری ئایتی"
+technical_support_specialist: "پسپۆڕی پشتگیری تەکنیکی"
+help_desk_technician: "تەکنیکی مێزی یارمەتی"
+desktop_support_technician: "تەکنیسیۆنی پشتگیری مێز"
+it_technician: "تەکنیکی ئایتی"
+computer_support_specialist: "پسپۆڕی پشتگیری کۆمپیوتەر"
+user_support_specialist: "پسپۆڕی پشتگیری بەکارهێنەر"
+network_support_specialist: "پسپۆڕی پشتگیری تۆڕ"
+it_help_desk_analyst: "شیکارکەری مێزی یارمەتی ئایتی"
+service_desk_analyst: "شیکارکەری مێزی خزمەتگوزاری"
+
+# ======================================
+# G. شیکاری سیستەمەکان و بەڕێوەبردنی ئایتی
+# ======================================
+systems_analyst: "شیکارکەری سیستەمەکان"
+computer_systems_analyst: "شیکارکەری سیستەمی کۆمپیوتەر"
+business_systems_analyst: "شیکارکەری سیستەمی بازرگانی"
+it_consultant: "ڕاوێژکاری ئایتی"
+it_manager: "بەڕێوەبەری ئایتی"
+it_director: "بەڕێوەبەری ئایتی"
+chief_technology_officer: "سەرۆکی تەکنەلۆژیا (CTO)"
+chief_information_officer: "سەرۆکی بەرپرسی زانیاری (CIO)"
+it_project_manager: "بەڕێوەبەری پڕۆژەی ئایتی"
+it_coordinator: "ڕێکخەری ئایتی"
+technology_integration_specialist: "پسپۆڕی یەکخستنی تەکنەلۆژیا"
+it_auditor: "وردبینیکەری ئایتی"
+
+# ======================================
+# H. ڕۆڵی تایبەتمەند IT
+# ======================================
+qa_engineer: "ئەندازیاری QA"
+software_tester: "تێستەری نەرمەکاڵا"
+quality_assurance_analyst: "شیکارکەری دڵنیایی کوالیتی"
+automation_tester: "تێستەری ئۆتۆماتیکی"
+ai_engineer: "ئەندازیاری AI"
+machine_learning_engineer: "ئەندازیاری فێربوونی ئامێر"
+blockchain_developer: "گەشەپێدەری بلۆکچەین"
+computer_programmer: "پڕۆگرامەری کۆمپیوتەر"
+erp_specialist: "تایبەتمەندی ERP"
+sap_consultant: "ڕاوێژکاری SAP"
+sharepoint_developer: "گەشەپێدەری شەیرپۆینت"
+computer_and_information_research_scientist: "زانای توێژینەوەی کۆمپیوتەر و زانیاری"
+health_informatics_specialist: "پسپۆڕی زانیاری تەندروستی"
+gis_specialist: "پسپۆڕی GIS"
+scrum_master: "وەستای سکرام"
+product_owner_it: "خاوەنی بەرهەم (IT)"
