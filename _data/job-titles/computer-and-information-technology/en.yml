@@ -1,0 +1,131 @@
+# ========================================
+# A. SOFTWARE DEVELOPERS & ENGINEERS
+# ========================================
+software_developer: "Software Developer"
+software_engineer: "Software Engineer"
+full_stack_developer: "Full-Stack Developer"
+frontend_developer: "Frontend Developer"
+backend_developer: "Backend Developer"
+web_developer: "Web Developer"
+mobile_developer: "Mobile Developer"
+mobile_app_developer: "Mobile App Developer"
+android_developer: "Android Developer"
+ios_developer: "iOS Developer"
+application_developer: "Application Developer"
+senior_software_engineer: "Senior Software Engineer"
+junior_developer: "Junior Developer"
+software_architect: "Software Architect"
+solutions_architect: "Solutions Architect"
+devops_engineer: "DevOps Engineer"
+cloud_engineer: "Cloud Engineer"
+embedded_systems_developer: "Embedded Systems Developer"
+game_developer: "Game Developer"
+programmer: "Programmer"
+
+# ========================================
+# B. WEB & DIGITAL INTERFACE DESIGNERS
+# ========================================
+ui_ux_developer: "UI/UX Developer"
+ui_developer: "UI Developer"
+ux_developer: "UX Developer"
+web_designer: "Web Designer"
+digital_interface_designer: "Digital Interface Designer"
+webmaster: "Webmaster"
+wordpress_developer: "WordPress Developer"
+e_commerce_developer: "E-commerce Developer"
+
+# ========================================
+# C. DATABASE & DATA SPECIALISTS
+# ========================================
+database_administrator: "Database Administrator (DBA)"
+database_developer: "Database Developer"
+database_architect: "Database Architect"
+data_analyst: "Data Analyst"
+data_scientist: "Data Scientist"
+data_engineer: "Data Engineer"
+big_data_engineer: "Big Data Engineer"
+business_intelligence_analyst: "Business Intelligence Analyst"
+data_warehousing_specialist: "Data Warehousing Specialist"
+sql_developer: "SQL Developer"
+
+# ========================================
+# D. NETWORK & SYSTEMS
+# ========================================
+network_administrator: "Network Administrator"
+network_engineer: "Network Engineer"
+network_architect: "Network Architect"
+systems_administrator: "Systems Administrator"
+system_engineer: "System Engineer"
+linux_administrator: "Linux Administrator"
+windows_administrator: "Windows Administrator"
+server_administrator: "Server Administrator"
+cloud_administrator: "Cloud Administrator"
+telecommunications_specialist: "Telecommunications Specialist"
+network_security_engineer: "Network Security Engineer"
+noc_engineer: "NOC Engineer"
+
+# ========================================
+# E. CYBERSECURITY & INFORMATION SECURITY
+# ========================================
+cybersecurity_specialist: "Cybersecurity Specialist"
+information_security_analyst: "Information Security Analyst"
+security_engineer: "Security Engineer"
+security_analyst: "Security Analyst"
+cybersecurity_engineer: "Cybersecurity Engineer"
+penetration_tester: "Penetration Tester"
+ethical_hacker: "Ethical Hacker"
+security_consultant: "Security Consultant"
+soc_analyst: "SOC Analyst"
+incident_response_analyst: "Incident Response Analyst"
+information_security_manager: "Information Security Manager"
+chief_information_security_officer: "Chief Information Security Officer (CISO)"
+
+# ========================================
+# F. IT SUPPORT & HELP DESK
+# ========================================
+it_support_specialist: "IT Support Specialist"
+technical_support_specialist: "Technical Support Specialist"
+help_desk_technician: "Help Desk Technician"
+desktop_support_technician: "Desktop Support Technician"
+it_technician: "IT Technician"
+computer_support_specialist: "Computer Support Specialist"
+user_support_specialist: "User Support Specialist"
+network_support_specialist: "Network Support Specialist"
+it_help_desk_analyst: "IT Help Desk Analyst"
+service_desk_analyst: "Service Desk Analyst"
+
+# ========================================
+# G. SYSTEMS ANALYSIS & IT MANAGEMENT
+# ========================================
+systems_analyst: "Systems Analyst"
+computer_systems_analyst: "Computer Systems Analyst"
+business_systems_analyst: "Business Systems Analyst"
+it_consultant: "IT Consultant"
+it_manager: "IT Manager"
+it_director: "IT Director"
+chief_technology_officer: "Chief Technology Officer (CTO)"
+chief_information_officer: "Chief Information Officer (CIO)"
+it_project_manager: "IT Project Manager"
+it_coordinator: "IT Coordinator"
+technology_integration_specialist: "Technology Integration Specialist"
+it_auditor: "IT Auditor"
+
+# ========================================
+# H. SPECIALIZED IT ROLES
+# ========================================
+qa_engineer: "QA Engineer"
+software_tester: "Software Tester"
+quality_assurance_analyst: "Quality Assurance Analyst"
+automation_tester: "Automation Tester"
+ai_engineer: "AI Engineer"
+machine_learning_engineer: "Machine Learning Engineer"
+blockchain_developer: "Blockchain Developer"
+computer_programmer: "Computer Programmer"
+erp_specialist: "ERP Specialist"
+sap_consultant: "SAP Consultant"
+sharepoint_developer: "SharePoint Developer"
+computer_and_information_research_scientist: "Computer and Information Research Scientist"
+health_informatics_specialist: "Health Informatics Specialist"
+gis_specialist: "GIS Specialist"
+scrum_master: "Scrum Master"
+product_owner_it: "Product Owner (IT)"
