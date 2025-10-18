@@ -1,0 +1,138 @@
+# ============================================
+# ENGLISH JOB TITLES - IRAQ JOB MARKET
+# Creative & Design Roles (ISCO-08 Aligned)
+# Last Updated: 2025-10-18
+# Total: 100 professionally verified titles
+# ============================================
+
+# ==========================================
+# A. GRAPHIC DESIGNERS & VISUAL ARTISTS
+# ==========================================
+graphic_designer: "Graphic Designer"
+visual_designer: "Visual Designer"
+brand_designer: "Brand Designer"
+logo_designer: "Logo Designer"
+print_designer: "Print Designer"
+packaging_designer: "Packaging Designer"
+typography_designer: "Typography Designer"
+layout_artist: "Layout Artist"
+digital_artist: "Digital Artist"
+illustrator: "Illustrator"
+character_designer: "Character Designer"
+concept_artist: "Concept Artist"
+storyboard_artist: "Storyboard Artist"
+background_artist: "Background Artist"
+comic_book_artist: "Comic Book Artist"
+calligrapher: "Calligrapher"
+fine_artist: "Fine Artist"
+painter: "Painter"
+sculptor: "Sculptor"
+muralist: "Muralist"
+
+# ==========================================
+# B. DIGITAL & MULTIMEDIA DESIGNERS
+# ==========================================
+web_designer: "Web Designer"
+ui_designer: "UI Designer"
+ux_designer: "UX Designer"
+ui_ux_designer: "UI/UX Designer"
+interaction_designer: "Interaction Designer"
+mobile_app_designer: "Mobile App Designer"
+game_designer: "Game Designer"
+multimedia_designer: "Multimedia Designer"
+motion_graphics_designer: "Motion Graphics Designer"
+animation_designer: "Animation Designer"
+animator_2d: "2D Animator"
+animator_3d: "3D Animator"
+character_animator: "Character Animator"
+stop_motion_animator: "Stop Motion Animator"
+vfx_artist: "VFX Artist"
+special_effects_artist: "Special Effects Artist"
+compositing_artist: "Compositing Artist"
+matte_painter: "Matte Painter"
+texture_artist: "Texture Artist"
+lighting_artist: "Lighting Artist"
+
+# ==========================================
+# C. 3D & MODELING SPECIALISTS
+# ==========================================
+modeler_3d: "3D Modeler"
+artist_3d: "3D Artist"
+designer_3d: "3D Designer"
+hard_surface_modeler: "Hard Surface Modeler"
+organic_modeler: "Organic Modeler"
+character_modeler: "Character Modeler"
+environment_artist: "Environment Artist"
+prop_artist: "Prop Artist"
+technical_artist: "Technical Artist"
+rigging_artist: "Rigging Artist"
+rendering_artist: "Rendering Artist"
+visualization_artist: "Visualization Artist"
+architectural_visualizer: "Architectural Visualizer"
+product_visualizer: "Product Visualizer"
+cgi_artist: "CGI Artist"
+
+# ==========================================
+# D. INTERIOR & SPATIAL DESIGNERS
+# ==========================================
+interior_designer: "Interior Designer"
+interior_decorator: "Interior Decorator"
+space_planner: "Space Planner"
+kitchen_designer: "Kitchen Designer"
+furniture_designer: "Furniture Designer"
+exhibition_designer: "Exhibition Designer"
+set_designer: "Set Designer"
+stage_designer: "Stage Designer"
+
+# ==========================================
+# E. FASHION & TEXTILE DESIGNERS
+# ==========================================
+fashion_designer: "Fashion Designer"
+clothing_designer: "Clothing Designer"
+costume_designer: "Costume Designer"
+textile_designer: "Textile Designer"
+pattern_maker: "Pattern Maker"
+accessories_designer: "Accessories Designer"
+jewelry_designer: "Jewelry Designer"
+
+# ==========================================
+# F. COMMERCIAL & INDUSTRIAL DESIGNERS
+# ==========================================
+industrial_designer: "Industrial Designer"
+product_designer: "Product Designer"
+commercial_designer: "Commercial Designer"
+retail_designer: "Retail Designer"
+window_display_designer: "Window Display Designer"
+merchandiser: "Merchandiser"
+visual_merchandiser: "Visual Merchandiser"
+environmental_graphic_designer: "Environmental Graphic Designer"
+
+# ==========================================
+# G. CREATIVE DIRECTORS & ART LEADERSHIP
+# ==========================================
+art_director: "Art Director"
+creative_director: "Creative Director"
+design_director: "Design Director"
+senior_graphic_designer: "Senior Graphic Designer"
+lead_designer: "Lead Designer"
+brand_manager: "Brand Manager"
+design_manager: "Design Manager"
+production_designer: "Production Designer"
+design_consultant: "Design Consultant"
+visual_communication_designer: "Visual Communication Designer"
+
+# ==========================================
+# H. SPECIALIZED CREATIVE ROLES
+# ==========================================
+social_media_designer: "Social Media Designer"
+advertising_designer: "Advertising Designer"
+marketing_designer: "Marketing Designer"
+presentation_designer: "Presentation Designer"
+infographic_designer: "Infographic Designer"
+email_designer: "Email Designer"
+publication_designer: "Publication Designer"
+book_designer: "Book Designer"
+magazine_designer: "Magazine Designer"
+floral_designer: "Floral Designer"
+event_designer: "Event Designer"
+craft_artist: "Craft Artist"
