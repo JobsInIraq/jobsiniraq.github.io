@@ -1,0 +1,146 @@
+# ============================================
+# عناوين الوظائف باللغة العربية - سوق العمل العراقي
+# وفقًا للمعيار الدولي ISCO-08 / SOC 2025
+# آخر تحديث: 2025-10-18
+# المجموع: 100 عنوان مهني مُعتمد
+# ============================================
+
+# ==========================================
+# أ. المحاسبون والمدققون
+# ==========================================
+accountant: "محاسب"
+senior_accountant: "محاسب أول"
+junior_accountant: "محاسب مبتدئ"
+chief_accountant: "رئيس المحاسبين"
+staff_accountant: "محاسب موظف"
+cost_accountant: "محاسب تكاليف"
+tax_accountant: "محاسب ضرائب"
+management_accountant: "محاسب إداري"
+financial_accountant: "محاسب مالي"
+internal_auditor: "مدقق داخلي"
+external_auditor: "مدقق خارجي"
+audit_manager: "مدير التدقيق"
+forensic_accountant: "محاسب جنائي"
+government_accountant: "محاسب حكومي"
+public_accountant: "محاسب عام"
+
+# ==========================================
+# ب. محللو ومستشارو المالية
+# ==========================================
+financial_analyst: "محلل مالي"
+investment_analyst: "محلل استثماري"
+budget_analyst: "محلل ميزانية"
+credit_analyst: "محلل ائتمان"
+risk_analyst: "محلل مخاطر"
+financial_risk_specialist: "اختصاصي المخاطر المالية"
+financial_advisor: "مستشار مالي"
+personal_financial_advisor: "مستشار مالي شخصي"
+investment_advisor: "مستشار استثماري"
+financial_planner: "مخطط مالي"
+wealth_manager: "مدير ثروات"
+portfolio_manager: "مدير محفظة استثمارية"
+
+# ==========================================
+# ج. مدراء وأمناء المالية
+# ==========================================
+finance_manager: "مدير مالي"
+finance_director: "مدير الشؤون المالية"
+chief_financial_officer_cfo: "المدير المالي التنفيذي (CFO)"
+deputy_cfo: "نائب المدير المالي التنفيذي"
+group_cfo: "المدير المالي للمجموعة"
+finance_controller: "مراقب مالي"
+financial_controller: "مراقب الشؤون المالية"
+assistant_finance_manager: "مساعد المدير المالي"
+treasury_manager: "مدير الخزينة"
+head_of_finance: "رئيس قسم المالية"
+
+# ==========================================
+# د. الحسابات الدائنة والمدينة
+# ==========================================
+accounts_payable_officer: "موظف الحسابات الدائنة"
+accounts_payable_clerk: "كاتب الحسابات الدائنة"
+accounts_payable_supervisor: "مشرف الحسابات الدائنة"
+accounts_receivable_officer: "موظف الحسابات المدينة"
+accounts_receivable_clerk: "كاتب الحسابات المدينة"
+billing_specialist: "اختصاصي الفواتير"
+collections_specialist: "اختصاصي التحصيل"
+credit_controller: "مراقب الائتمان"
+
+# ==========================================
+# هـ. المصارف والقروض
+# ==========================================
+loan_officer: "موظف القروض"
+credit_officer: "موظف الائتمان"
+bank_teller: "أمين صندوق بنك"
+bank_manager: "مدير بنك"
+branch_manager_banking: "مدير فرع (بنك)"
+relationship_manager: "مدير علاقات العملاء"
+credit_counselor: "مستشار ائتمان"
+mortgage_advisor: "مستشار الرهن العقاري"
+
+# ==========================================
+# و. الضرائب والامتثال
+# ==========================================
+tax_specialist: "اختصاصي ضرائب"
+tax_consultant: "مستشار ضرائب"
+tax_preparer: "معدّ ضرائب"
+tax_examiner: "فاحص ضرائب"
+compliance_officer: "موظف امتثال"
+regulatory_affairs_specialist: "اختصاصي الشؤون التنظيمية"
+financial_examiner: "فاحص مالي"
+
+# ==========================================
+# ز. محللو ومستشارو الأعمال
+# ==========================================
+business_analyst: "محلل أعمال"
+senior_business_analyst: "محلل أعمال أول"
+junior_business_analyst: "محلل أعمال مبتدئ"
+business_consultant: "مستشار أعمال"
+management_consultant: "مستشار إداري"
+strategy_consultant: "مستشار استراتيجي"
+operations_analyst: "محلل عمليات"
+data_analyst: "محلل بيانات"
+business_intelligence_analyst: "محلل ذكاء أعمال"
+market_research_analyst: "محلل أبحاث السوق"
+
+# ==========================================
+# ح. الموارد البشرية
+# ==========================================
+hr_manager: "مدير الموارد البشرية"
+hr_specialist: "اختصاصي الموارد البشرية"
+hr_generalist: "موظف موارد بشرية عام"
+hr_business_partner: "شريك أعمال الموارد البشرية"
+hr_officer: "موظف موارد بشرية"
+hr_assistant: "مساعد موارد بشرية"
+hr_administrator: "مسؤول موارد بشرية"
+recruitment_specialist: "اختصاصي التوظيف"
+talent_acquisition_specialist: "اختصاصي استقطاب المواهب"
+recruiter: "موظف توظيف"
+training_and_development_specialist: "اختصاصي التدريب والتطوير"
+compensation_and_benefits_specialist: "اختصاصي التعويضات والمزايا"
+
+# ==========================================
+# ط. المشتريات والتوريد
+# ==========================================
+procurement_manager: "مدير المشتريات"
+procurement_officer: "موظف مشتريات"
+procurement_specialist: "اختصاصي مشتريات"
+purchasing_agent: "وكيل مشتريات"
+buyer: "مشتري"
+purchasing_manager: "مدير المشتريات"
+supply_chain_analyst: "محلل سلسلة التوريد"
+materials_manager: "مدير المواد"
+vendor_manager: "مدير الموردين"
+contract_specialist: "اختصاصي العقود"
+
+# ==========================================
+# ي. إدارة المشاريع والعمليات الأخرى
+# ==========================================
+project_manager: "مدير مشروع"
+senior_project_manager: "مدير مشروع أول"
+program_manager: "مدير برنامج"
+logistician: "اختصاصي اللوجستيات"
+cost_estimator: "مقدر التكاليف"
+insurance_underwriter: "مكتتب تأمين"
+claims_adjuster: "مُسوي مطالبات"
+property_appraiser: "مثمن عقارات"
