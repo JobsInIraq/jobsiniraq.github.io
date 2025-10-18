@@ -1,0 +1,138 @@
+# ============================================
+# ARABIC JOB TITLES - IRAQ JOB MARKET
+# Creative & Design Roles (ISCO-08 Aligned)
+# Last Updated: 2025-10-18
+# Total: 100 professionally verified titles
+# ============================================
+
+# ==========================================
+# A. GRAPHIC DESIGNERS & VISUAL ARTISTS
+# ==========================================
+graphic_designer: "مصمم جرافيك"
+visual_designer: "مصمم بصري"
+brand_designer: "مصمم علامة تجارية"
+logo_designer: "مصمم شعارات"
+print_designer: "مصمم طباعة"
+packaging_designer: "مصمم تعبئة وتغليف"
+typography_designer: "مصمم الخطوط"
+layout_artist: "فنان تخطيط"
+digital_artist: "فنان رقمي"
+illustrator: "رسام توضيحي"
+character_designer: "مصمم شخصيات"
+concept_artist: "فنان مفاهيمي"
+storyboard_artist: "فنان القصص المصورة"
+background_artist: "فنان الخلفيات"
+comic_book_artist: "رسام قصص مصورة"
+calligrapher: "خطاط"
+fine_artist: "فنان تشكيلي"
+painter: "رسام"
+sculptor: "نحات"
+muralist: "فنان الجداريات"
+
+# ==========================================
+# B. DIGITAL & MULTIMEDIA DESIGNERS
+# ==========================================
+web_designer: "مصمم مواقع"
+ui_designer: "مصمم واجهة المستخدم"
+ux_designer: "مصمم تجربة المستخدم"
+ui_ux_designer: "مصمم واجهة وتجربة المستخدم"
+interaction_designer: "مصمم التفاعل"
+mobile_app_designer: "مصمم تطبيقات الهاتف"
+game_designer: "مصمم ألعاب"
+multimedia_designer: "مصمم متعدد الوسائط"
+motion_graphics_designer: "مصمم جرافيك متحرك"
+animation_designer: "مصمم الرسوم المتحركة"
+animator_2d: "رسام رسوم متحركة ثنائية الأبعاد"
+animator_3d: "رسام رسوم متحركة ثلاثية الأبعاد"
+character_animator: "رسام شخصيات متحركة"
+stop_motion_animator: "رسام حركة متوقفة"
+vfx_artist: "فنان المؤثرات البصرية"
+special_effects_artist: "فنان المؤثرات الخاصة"
+compositing_artist: "فنان التركيب"
+matte_painter: "رسام الخلفيات"
+texture_artist: "فنان الأنسجة"
+lighting_artist: "فنان الإضاءة"
+
+# ==========================================
+# C. 3D & MODELING SPECIALISTS
+# ==========================================
+modeler_3d: "مصمم نماذج ثلاثية الأبعاد"
+artist_3d: "فنان ثلاثي الأبعاد"
+designer_3d: "مصمم ثلاثي الأبعاد"
+hard_surface_modeler: "مصمم الأسطح الصلبة"
+organic_modeler: "مصمم الأشكال العضوية"
+character_modeler: "مصمم نماذج الشخصيات"
+environment_artist: "فنان البيئة"
+prop_artist: "فنان الدعائم"
+technical_artist: "فنان تقني"
+rigging_artist: "فنان الهيكل العظمي"
+rendering_artist: "فنان العرض"
+visualization_artist: "فنان التصور"
+architectural_visualizer: "مصور معماري"
+product_visualizer: "مصور منتجات"
+cgi_artist: "فنان الصور المولدة بالحاسوب"
+
+# ==========================================
+# D. INTERIOR & SPATIAL DESIGNERS
+# ==========================================
+interior_designer: "مصمم داخلي"
+interior_decorator: "مزين داخلي"
+space_planner: "مخطط مساحات"
+kitchen_designer: "مصمم مطابخ"
+furniture_designer: "مصمم أثاث"
+exhibition_designer: "مصمم معارض"
+set_designer: "مصمم ديكورات"
+stage_designer: "مصمم المسرح"
+
+# ==========================================
+# E. FASHION & TEXTILE DESIGNERS
+# ==========================================
+fashion_designer: "مصمم أزياء"
+clothing_designer: "مصمم ملابس"
+costume_designer: "مصمم ملابس تنكرية"
+textile_designer: "مصمم نسيج"
+pattern_maker: "صانع أنماط"
+accessories_designer: "مصمم إكسسوارات"
+jewelry_designer: "مصمم مجوهرات"
+
+# ==========================================
+# F. COMMERCIAL & INDUSTRIAL DESIGNERS
+# ==========================================
+industrial_designer: "مصمم صناعي"
+product_designer: "مصمم منتجات"
+commercial_designer: "مصمم تجاري"
+retail_designer: "مصمم التجزئة"
+window_display_designer: "مصمم واجهات العرض"
+merchandiser: "منسق بضائع"
+visual_merchandiser: "منسق بصري"
+environmental_graphic_designer: "مصمم الجرافيك البيئي"
+
+# ==========================================
+# G. CREATIVE DIRECTORS & ART LEADERSHIP
+# ==========================================
+art_director: "مدير فني"
+creative_director: "مدير إبداعي"
+design_director: "مدير التصميم"
+senior_graphic_designer: "مصمم جرافيك أول"
+lead_designer: "مصمم رئيسي"
+brand_manager: "مدير العلامة التجارية"
+design_manager: "مدير التصميم"
+production_designer: "مصمم إنتاج"
+design_consultant: "مستشار تصميم"
+visual_communication_designer: "مصمم الاتصال البصري"
+
+# ==========================================
+# H. SPECIALIZED CREATIVE ROLES
+# ==========================================
+social_media_designer: "مصمم وسائل التواصل الاجتماعي"
+advertising_designer: "مصمم إعلانات"
+marketing_designer: "مصمم تسويقي"
+presentation_designer: "مصمم عروض تقديمية"
+infographic_designer: "مصمم الإنفوجرافيك"
+email_designer: "مصمم البريد الإلكتروني"
+publication_designer: "مصمم المطبوعات"
+book_designer: "مصمم كتب"
+magazine_designer: "مصمم مجلات"
+floral_designer: "منسق زهور"
+event_designer: "مصمم فعاليات"
+craft_artist: "فنان حرفي"
