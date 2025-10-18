@@ -1,0 +1,134 @@
+# ============================================
+# العناوين الوظيفية باللغة العربية - سوق العمل العراقي
+# المعيار الدولي (ISCO-08 متوافق)
+# آخر تحديث: 2025-10-18
+# المجموع: 100 عنوان مهني مُراجع لغوياً
+# ============================================
+
+# ==========================================
+# أ. المشرفون والمدراء في مجال التنظيف
+# ==========================================
+housekeeping_manager: "مدير خدمات النظافة"
+housekeeping_supervisor: "مشرف خدمات النظافة"
+cleaning_manager: "مدير النظافة"
+cleaning_supervisor: "مشرف النظافة"
+janitorial_supervisor: "مشرف عمال النظافة"
+facilities_supervisor: "مشرف المرافق"
+grounds_supervisor: "مشرف صيانة الحدائق"
+landscaping_supervisor: "مشرف تنسيق الحدائق"
+custodial_manager: "مدير الخدمات العامة"
+environmental_services_manager: "مدير الخدمات البيئية"
+
+# ==========================================
+# ب. عمال النظافة والخدمات العامة
+# ==========================================
+janitor: "عامل نظافة"
+cleaner: "عامل تنظيف"
+office_cleaner: "عامل نظافة مكاتب"
+building_cleaner: "عامل نظافة مباني"
+custodian: "حارس نظافة"
+porter: "عامل خدمات"
+maintenance_cleaner: "عامل نظافة وصيانة"
+day_porter: "عامل نهاري"
+night_cleaner: "عامل نظافة ليلي"
+commercial_cleaner: "عامل نظافة تجارية"
+industrial_cleaner: "عامل نظافة صناعية"
+facility_cleaner: "عامل نظافة المرافق"
+general_cleaner: "عامل نظافة عامة"
+sanitation_worker: "عامل صرف صحي"
+utility_worker: "عامل خدمات عامة"
+
+# ==========================================
+# ج. عمال التدبير المنزلي والتنظيف المنزلي
+# ==========================================
+housekeeper: "عاملة منزلية"
+maid: "خادمة"
+room_attendant: "مساعد غرف"
+hotel_housekeeper: "عاملة نظافة فندق"
+housekeeping_attendant: "مساعد خدمات النظافة"
+domestic_cleaner: "عاملة نظافة منزلية"
+residential_cleaner: "عامل نظافة سكنية"
+house_cleaner: "منظف منازل"
+laundry_attendant: "عامل غسيل"
+linen_attendant: "مساعد الأقمشة"
+turndown_attendant: "مساعد ترتيب الأسرة"
+public_area_attendant: "مساعد المناطق العامة"
+floor_attendant: "مساعد الطوابق"
+executive_housekeeper: "رئيس خدمات النظافة"
+guest_room_attendant: "خادم غرف الضيوف"
+
+# ==========================================
+# د. عمال التنظيف المتخصصين
+# ==========================================
+window_cleaner: "عامل تنظيف النوافذ"
+carpet_cleaner: "عامل تنظيف السجاد"
+floor_cleaner: "عامل تنظيف الأرضيات"
+restroom_cleaner: "عامل نظافة دورات المياه"
+kitchen_cleaner: "عامل نظافة المطابخ"
+hospital_cleaner: "عامل نظافة مستشفيات"
+medical_facility_cleaner: "عامل نظافة منشآت طبية"
+school_cleaner: "عامل نظافة مدارس"
+factory_cleaner: "عامل نظافة المصانع"
+warehouse_cleaner: "عامل نظافة المخازن"
+parking_lot_attendant: "مساعد مواقف السيارات"
+clean_room_technician: "تقني غرف نظيفة"
+decontamination_specialist: "أخصائي إزالة التلوث"
+biohazard_cleaner: "عامل نظافة المواد الخطرة"
+crime_scene_cleaner: "عامل نظافة مسرح الجريمة"
+
+# ==========================================
+# هـ. عمال صيانة الحدائق وتنسيق المناظر الطبيعية
+# ==========================================
+groundskeeper: "عامل صيانة الحدائق"
+gardener: "بستاني"
+landscaper: "منسق حدائق"
+landscape_worker: "عامل تنسيق حدائق"
+landscape_technician: "تقني تنسيق الحدائق"
+lawn_care_specialist: "أخصائي العناية بالمروج"
+lawn_maintenance_worker: "عامل صيانة المروج"
+grounds_maintenance_worker: "عامل صيانة الأراضي"
+park_ranger: "حارس حديقة عامة"
+park_maintenance_worker: "عامل صيانة الحدائق العامة"
+golf_course_groundskeeper: "عامل ملاعب الجولف"
+sports_field_groundskeeper: "عامل ملاعب رياضية"
+cemetery_worker: "عامل المقابر"
+irrigation_technician: "تقني الري"
+tree_trimmer: "قلّام أشجار"
+tree_pruner: "مهذب أشجار"
+arborist: "اختصاصي الأشجار"
+tree_surgeon: "جراح أشجار"
+horticulturist: "اختصاصي البستنة"
+greenhouse_worker: "عامل الصوبات الزراعية"
+
+# ==========================================
+# و. فنيّو مكافحة الآفات
+# ==========================================
+pest_control_worker: "عامل مكافحة الآفات"
+pest_control_technician: "تقني مكافحة الآفات"
+exterminator: "مبيد الحشرات"
+fumigator: "عامل التبخير"
+pest_inspector: "مفتش الآفات"
+termite_specialist: "أخصائي النمل الأبيض"
+rodent_control_technician: "تقني مكافحة القوارض"
+pesticide_applicator: "مطبق المبيدات"
+pesticide_handler: "معالج المبيدات"
+vegetation_sprayer: "رشاش النباتات"
+
+# ==========================================
+# ز. مشغلو المرافق والمعدات
+# ==========================================
+floor_care_technician: "تقني العناية بالأرضيات"
+floor_waxer: "عامل تلميع الأرضيات"
+carpet_shampooer: "عامل غسيل السجاد"
+power_washer_operator: "مشغل غسالة الضغط العالي"
+street_sweeper_operator: "مشغل كناسة الشوارع"
+trash_collector: "عامل جمع النفايات"
+waste_collector: "عامل جمع المخلفات"
+recycling_worker: "عامل إعادة التدوير"
+dumpster_cleaner: "عامل تنظيف الحاويات"
+snow_removal_worker: "عامل إزالة الثلوج"
+leaf_blower_operator: "مشغل نافخ الأوراق"
+pool_cleaner: "عامل تنظيف المسابح"
+fountain_maintenance_worker: "عامل صيانة النوافير"
+graffiti_removal_specialist: "أخصائي إزالة الكتابة الجدارية"
+restroom_attendant: "مرافق دورات المياه"
