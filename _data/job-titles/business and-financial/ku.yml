@@ -1,0 +1,146 @@
+# ============================================
+# سەرناوەکانی کار بە زمانی کوردی سۆرانی - بازاڕی کار لە عێراق
+# لەگەڵ ڕێزمانی نێودەوڵەتی ISCO-08 / SOC 2025
+# دوایین نوێکردنەوە: 2025-10-18
+# کۆی گشتی: 100 سەرناوی پەیوەندیدار
+# ============================================
+
+# ==========================================
+# A. ژمێریاران و وردبینەکان
+# ==========================================
+accountant: "ژمێریار"
+senior_accountant: "ژمێریاری باڵا"
+junior_accountant: "ژمێریاری نوێ"
+chief_accountant: "سەرۆکی ژمێریاران"
+staff_accountant: "ژمێریاری ستاف"
+cost_accountant: "ژمێریاری تێچوون"
+tax_accountant: "ژمێریاری باج"
+management_accountant: "ژمێریاری بەڕێوەبردن"
+financial_accountant: "ژمێریاری دارایی"
+internal_auditor: "وردبینەری ناوخۆیی"
+external_auditor: "وردبینەری دەرەکی"
+audit_manager: "بەڕێوەبەری وردبینی"
+forensic_accountant: "ژمێریاری یاسایی"
+government_accountant: "ژمێریاری حکومەت"
+public_accountant: "ژمێریاری گشتی"
+
+# ==========================================
+# B. شیکارەکان و ڕاوێژکارانی دارایی
+# ==========================================
+financial_analyst: "شیکارکەری دارایی"
+investment_analyst: "شیکارکەری وەبەرهێنان"
+budget_analyst: "شیکارکەری بودجە"
+credit_analyst: "شیکارکەری قەرز"
+risk_analyst: "شیکارکەری مەترسی"
+financial_risk_specialist: "پسپۆڕی مەترسی دارایی"
+financial_advisor: "ڕاوێژکاری دارایی"
+personal_financial_advisor: "ڕاوێژکاری داراییی کەسی"
+investment_advisor: "ڕاوێژکاری وەبەرهێنان"
+financial_planner: "پلاندانەری دارایی"
+wealth_manager: "بەڕێوەبەری سامان"
+portfolio_manager: "بەڕێوەبەری پۆرتفۆلیۆ"
+
+# ==========================================
+# C. بەڕێوەبەرانی دارایی
+# ==========================================
+finance_manager: "بەڕێوەبەری دارایی"
+finance_director: "دەرێکتەری دارایی"
+chief_financial_officer_cfo: "سەرۆکی دارایی (CFO)"
+deputy_cfo: "جێگری سەرۆکی دارایی"
+group_cfo: "سەرۆکی گروپی دارایی"
+finance_controller: "کۆنتڕۆڵکەری دارایی"
+financial_controller: "کۆنتڕۆڵکەری دارایی"
+assistant_finance_manager: "یاریدەدەری بەڕێوەبەری دارایی"
+treasury_manager: "بەڕێوەبەری گەنجینە"
+head_of_finance: "سەرۆکی دارایی"
+
+# ==========================================
+# D. حیسابە خەرجکراو و وەرگیراو
+# ==========================================
+accounts_payable_officer: "ئەفسەری حیسابە خەرجکراوەکان"
+accounts_payable_clerk: "نووسەری حیسابە خەرجکراوەکان"
+accounts_payable_supervisor: "سەرپەرشتیاری حیسابە خەرجکراوەکان"
+accounts_receivable_officer: "ئەفسەری حیسابە وەرگیراوەکان"
+accounts_receivable_clerk: "نووسەری حیسابە وەرگیراوەکان"
+billing_specialist: "پسپۆڕی فەسڵکردن"
+collections_specialist: "پسپۆڕی کۆکردنەوە"
+credit_controller: "کۆنتڕۆڵکەری قەرز"
+
+# ==========================================
+# E. بانکی و قەرز
+# ==========================================
+loan_officer: "ئەفسەری قەرز"
+credit_officer: "ئەفسەری قەرز"
+bank_teller: "کارمەندی بانک"
+bank_manager: "بەڕێوەبەری بانک"
+branch_manager_banking: "بەڕێوەبەری لق (بانک)"
+relationship_manager: "بەڕێوەبەری پەیوەندییەکان"
+credit_counselor: "ڕاوێژکاری قەرز"
+mortgage_advisor: "ڕاوێژکاری خانووبەرە"
+
+# ==========================================
+# F. باج و پابەندبوون
+# ==========================================
+tax_specialist: "پسپۆڕی باج"
+tax_consultant: "ڕاوێژکاری باج"
+tax_preparer: "ئامادەکاری باج"
+tax_examiner: "پشکنەری باج"
+compliance_officer: "ئەفسەری پابەندبوون"
+regulatory_affairs_specialist: "پسپۆڕی کارەکانی ڕێکخستن"
+financial_examiner: "پشکنەری دارایی"
+
+# ==========================================
+# G. شیکارەکان و ڕاوێژکارانی بازرگانی
+# ==========================================
+business_analyst: "شیکارکەری بازرگانی"
+senior_business_analyst: "شیکارکەری بازرگانیی باڵا"
+junior_business_analyst: "شیکارکەری بازرگانیی نوێ"
+business_consultant: "ڕاوێژکاری بازرگانی"
+management_consultant: "ڕاوێژکاری بەڕێوەبردن"
+strategy_consultant: "ڕاوێژکاری ستراتیژی"
+operations_analyst: "شیکارکەری کارەکان"
+data_analyst: "شیکارکەری داتا"
+business_intelligence_analyst: "شیکارکەری زانستی بازرگانی"
+market_research_analyst: "شیکارکەری توێژینەوەی بازاڕ"
+
+# ==========================================
+# H. سەرچاوەی مرۆی
+# ==========================================
+hr_manager: "بەڕێوەبەری سەرچاوەی مرۆی"
+hr_specialist: "پسپۆڕی سەرچاوەی مرۆی"
+hr_generalist: "کارمەندی گشتی سەرچاوەی مرۆی"
+hr_business_partner: "هاوبەشی بازرگانی سەرچاوەی مرۆی"
+hr_officer: "ئەفسەری سەرچاوەی مرۆی"
+hr_assistant: "یاریدەدەری سەرچاوەی مرۆی"
+hr_administrator: "بەڕێوەبەری سەرچاوەی مرۆی"
+recruitment_specialist: "پسپۆڕی دامەزراندن"
+talent_acquisition_specialist: "پسپۆڕی بەدەستهێنانی بەهرە"
+recruiter: "دامەزرێنەر"
+training_and_development_specialist: "پسپۆڕی ڕاهێنان و گەشەپێدان"
+compensation_and_benefits_specialist: "پسپۆڕی مووچە و سوودەکان"
+
+# ==========================================
+# I. تەداروکات و کڕین
+# ==========================================
+procurement_manager: "بەڕێوەبەری تەداروکات"
+procurement_officer: "ئەفسەری تەداروکات"
+procurement_specialist: "پسپۆڕی تەداروکات"
+purchasing_agent: "بریکاری کڕین"
+buyer: "کڕیار"
+purchasing_manager: "بەڕێوەبەری کڕین"
+supply_chain_analyst: "شیکارکەری زنجیرەی دابینکردن"
+materials_manager: "بەڕێوەبەری کەرەستە"
+vendor_manager: "بەڕێوەبەری فرۆشیار"
+contract_specialist: "پسپۆڕی گرێبەست"
+
+# ==========================================
+# J. بەڕێوەبردنی پڕۆژە و کارەکانی تر
+# ==========================================
+project_manager: "بەڕێوەبەری پڕۆژە"
+senior_project_manager: "بەڕێوەبەری پڕۆژەی باڵا"
+program_manager: "بەڕێوەبەری بەرنامە"
+logistician: "لۆجستیکزان"
+cost_estimator: "خەمڵێنەری تێچوون"
+insurance_underwriter: "نووسەری بیمە"
+claims_adjuster: "ڕێکخەری داواکاری"
+property_appraiser: "هەڵسەنگێنەری موڵک"
