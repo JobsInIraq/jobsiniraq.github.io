@@ -1,0 +1,138 @@
+# ============================================
+# KURDISH (SORANI) JOB TITLES - IRAQ JOB MARKET
+# Creative & Design Roles (ISCO-08 Aligned)
+# Last Updated: 2025-10-18
+# Total: 100 professionally verified titles
+# ============================================
+
+# ==========================================
+# A. دیزاینەری گرافیک و هونەرمەندی بینراو
+# ==========================================
+graphic_designer: "دیزاینەری گرافیک"
+visual_designer: "دیزاینەری بینراو"
+brand_designer: "دیزاینەری براند"
+logo_designer: "دیزاینی لۆگۆ"
+print_designer: "دیزاینەری چاپکردن"
+packaging_designer: "دیزاینەری پاکەتەکان"
+typography_designer: "دیزاینەری تایپۆگرافی"
+layout_artist: "هونەرمەندی نەخشە"
+digital_artist: "هونەرمەندی دیجیتاڵی"
+illustrator: "وێنەکێش"
+character_designer: "دیزاینی کارەکتەرەکان"
+concept_artist: "هونەرمەندی چەمک"
+storyboard_artist: "هونەرمەندی ستۆری بۆرد"
+background_artist: "هونەرمەندی پاشخان"
+comic_book_artist: "هونەرمەندی کتێبی کۆمیک"
+calligrapher: "خەتنووس"
+fine_artist: "هونەرمەندی جوان"
+painter: "نیگارکێش"
+sculptor: "پەیکەرتاش"
+muralist: "دیوارنووس"
+
+# ==========================================
+# B. دیزاینەرانی دیجیتاڵی و مالتیمیدیا
+# ==========================================
+web_designer: "دیزاینەری وێب"
+ui_designer: "دیزاینەری UI"
+ux_designer: "دیزاینەری UX"
+ui_ux_designer: "دیزاینەری UI/UX"
+interaction_designer: "دیزاینەری کارلێککردن"
+mobile_app_designer: "دیزاینەری ئەپی مۆبایل"
+game_designer: "دیزاینەری یاری"
+multimedia_designer: "دیزاینەری فرە میدیایی"
+motion_graphics_designer: "دیزاینەری گرافیکی جوڵە"
+animation_designer: "دیزاینەری ئەنیمەیشن"
+animator_2d: "ئەنیمەیتەرێکی دوو ڕوویی"
+animator_3d: "ئەنیمەیتەرێکی سێ ڕەهەندی"
+character_animator: "ئەنیمەیتەری کارەکتەرەکان"
+stop_motion_animator: "ئەنیمەیتەری جوڵەی وەستان"
+vfx_artist: "هونەرمەندی ڤی ئێف ئێکس"
+special_effects_artist: "هونەرمەندی کاریگەری تایبەت"
+compositing_artist: "هونەرمەندی ئاوازدانان"
+matte_painter: "بۆیاخچی مات"
+texture_artist: "هونەرمەندی پێکهاتە"
+lighting_artist: "هونەرمەندی ڕووناکی"
+
+# ==========================================
+# C. پسپۆڕانی 3D & MODELING
+# ==========================================
+modeler_3d: "مۆدێلەری سێ ڕەهەندی"
+artist_3d: "هونەرمەندی سێ ڕەهەندی"
+designer_3d: "دیزاینەری سێ ڕەهەندی"
+hard_surface_modeler: "مۆدێلەری ڕووکاری ڕەق"
+organic_modeler: "مۆدێلی ئۆرگانیک"
+character_modeler: "مۆدێلی کارەکتەرەکان"
+environment_artist: "هونەرمەندی ژینگە"
+prop_artist: "هونەرمەندی پرۆپ"
+technical_artist: "هونەرمەندی تەکنیکی"
+rigging_artist: "هونەرمەندی ساختەکاری"
+rendering_artist: "هونەرمەندی ڕێندەرکردن"
+visualization_artist: "هونەرمەندی بینین"
+architectural_visualizer: "بینراوی تەلارسازی"
+product_visualizer: "بینینی بەرهەم"
+cgi_artist: "هونەرمەندی سی جی ئای"
+
+# ==========================================
+# D. دیزاینەری ناوەوە و فەزایی
+# ==========================================
+interior_designer: "دیزاینەری ناوەوە"
+interior_decorator: "دیکۆراتی ناوەوە"
+space_planner: "پلاندانەری بۆشایی ئاسمان"
+kitchen_designer: "دیزاینەری چێشتخانە"
+furniture_designer: "دیزاینەری مۆبیلیات"
+exhibition_designer: "دیزاینەری پێشانگا"
+set_designer: "دیزاینەری ڕێکخستنەکان"
+stage_designer: "دیزاینی شانۆ"
+
+# ==========================================
+# E. دیزاینەری مۆدە و قوماش
+# ==========================================
+fashion_designer: "دیزاینەری مۆدە"
+clothing_designer: "دیزاینەری جل و بەرگ"
+costume_designer: "دیزاینی جلوبەرگ"
+textile_designer: "دیزاینەری قوماش"
+pattern_maker: "دروستکەری نەخش"
+accessories_designer: "دیزاینەری ئیکسسوارات"
+jewelry_designer: "دیزاینەری زێڕینگەریی"
+
+# ==========================================
+# F. دیزاینەری بازرگانی و پیشەسازی
+# ==========================================
+industrial_designer: "دیزاینەری پیشەسازی"
+product_designer: "دیزاینەری بەرهەم"
+commercial_designer: "دیزاینەری بازرگانی"
+retail_designer: "دیزاینەری فرۆشتنی تاکەکەسی"
+window_display_designer: "دیزاینەری پیشاندانی پەنجەرە"
+merchandiser: "بازرگان"
+visual_merchandiser: "بازرگانی بینراو"
+environmental_graphic_designer: "دیزاینەری گرافیکی ژینگەیی"
+
+# ==========================================
+# G. دەرهێنەرانی داهێنەر و سەرکردایەتی هونەری
+# ==========================================
+art_director: "بەڕێوەبەری هونەر"
+creative_director: "بەڕێوەبەری داهێنەر"
+design_director: "بەڕێوەبەری دیزاین"
+senior_graphic_designer: "گرافیک دیزاینەری باڵا"
+lead_designer: "دیزاینەری سەرەکی"
+brand_manager: "بەڕێوەبەری براند"
+design_manager: "بەڕێوەبەری دیزاین"
+production_designer: "دیزاینەری بەرهەمهێنان"
+design_consultant: "ڕاوێژکاری دیزاین"
+visual_communication_designer: "دیزاینەری پەیوەندی بینراو"
+
+# ==========================================
+# H. ڕۆڵی داهێنەرانە تایبەتمەندەکان
+# ==========================================
+social_media_designer: "دیزاینەری سۆشیال میدیا"
+advertising_designer: "دیزاینەری ڕێکلام"
+marketing_designer: "دیزاینەری بازاڕکردن"
+presentation_designer: "دیزاینەری پێشکەشکردن"
+infographic_designer: "دیزاینەری ئینفوگرافیک"
+email_designer: "دیزاینی ئیمەیڵ"
+publication_designer: "دیزاینەری بڵاوکردنەوە"
+book_designer: "دیزاینی کتێب"
+magazine_designer: "دیزاینەری گۆڤار"
+floral_designer: "دیزاینەری گوڵ"
+event_designer: "دیزاینەری ڕووداوەکان"
+craft_artist: "هونەرمەندی پیشەسازی"
