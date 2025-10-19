@@ -1,0 +1,139 @@
+# ============================================
+# HEALTHCARE PRACTITIONERS & TECHNICAL
+# ============================================
+
+# ==========================================
+# A. PHYSICIANS & SURGEONS
+# ==========================================
+physician: "Physician"
+doctor: "Doctor"
+general_practitioner: "General Practitioner"
+family_medicine_physician: "Family Medicine Physician"
+surgeon: "Surgeon"
+general_surgeon: "General Surgeon"
+cardiologist: "Cardiologist"
+pediatrician: "Pediatrician"
+obstetrician_and_gynecologist: "Obstetrician and Gynecologist"
+internist: "Internist"
+internal_medicine_physician: "Internal Medicine Physician"
+emergency_medicine_physician: "Emergency Medicine Physician"
+anesthesiologist: "Anesthesiologist"
+psychiatrist: "Psychiatrist"
+neurologist: "Neurologist"
+oncologist: "Oncologist"
+dermatologist: "Dermatologist"
+urologist: "Urologist"
+ophthalmologist: "Ophthalmologist"
+pathologist: "Pathologist"
+
+# ==========================================
+# B. DENTISTS
+# ==========================================
+dentist: "Dentist"
+general_dentist: "General Dentist"
+orthodontist: "Orthodontist"
+oral_surgeon: "Oral Surgeon"
+oral_and_maxillofacial_surgeon: "Oral and Maxillofacial Surgeon"
+prosthodontist: "Prosthodontist"
+pediatric_dentist: "Pediatric Dentist"
+cosmetic_dentist: "Cosmetic Dentist"
+
+# ==========================================
+# C. NURSES
+# ==========================================
+nurse: "Nurse"
+registered_nurse: "Registered Nurse"
+clinical_nurse: "Clinical Nurse"
+staff_nurse: "Staff Nurse"
+emergency_room_nurse: "Emergency Room Nurse"
+icu_nurse: "ICU Nurse"
+surgical_nurse: "Surgical Nurse"
+pediatric_nurse: "Pediatric Nurse"
+public_health_nurse: "Public Health Nurse"
+nurse_practitioner: "Nurse Practitioner"
+nurse_anesthetist: "Nurse Anesthetist"
+nurse_midwife: "Nurse Midwife"
+
+# ==========================================
+# D. THERAPISTS
+# ==========================================
+physical_therapist: "Physical Therapist"
+physiotherapist: "Physiotherapist"
+occupational_therapist: "Occupational Therapist"
+speech_therapist: "Speech Therapist"
+speech_language_pathologist: "Speech-Language Pathologist"
+respiratory_therapist: "Respiratory Therapist"
+radiation_therapist: "Radiation Therapist"
+recreational_therapist: "Recreational Therapist"
+rehabilitation_therapist: "Rehabilitation Therapist"
+exercise_physiologist: "Exercise Physiologist"
+
+# ==========================================
+# E. PHARMACISTS & DIETITIANS
+# ==========================================
+pharmacist: "Pharmacist"
+clinical_pharmacist: "Clinical Pharmacist"
+hospital_pharmacist: "Hospital Pharmacist"
+community_pharmacist: "Community Pharmacist"
+dietitian: "Dietitian"
+nutritionist: "Nutritionist"
+
+# ==========================================
+# F. MEDICAL TECHNOLOGISTS & TECHNICIANS
+# ==========================================
+radiologic_technologist: "Radiologic Technologist"
+radiology_technician: "Radiology Technician"
+xray_technician: "X-Ray Technician"
+ct_scan_technician: "CT Scan Technician"
+mri_technician: "MRI Technician"
+mri_technologist: "MRI Technologist"
+ultrasound_technician: "Ultrasound Technician"
+sonographer: "Sonographer"
+diagnostic_medical_sonographer: "Diagnostic Medical Sonographer"
+medical_laboratory_technologist: "Medical Laboratory Technologist"
+clinical_laboratory_technologist: "Clinical Laboratory Technologist"
+medical_laboratory_technician: "Medical Laboratory Technician"
+lab_technician: "Lab Technician"
+nuclear_medicine_technologist: "Nuclear Medicine Technologist"
+cardiovascular_technologist: "Cardiovascular Technologist"
+cardiovascular_technician: "Cardiovascular Technician"
+surgical_technologist: "Surgical Technologist"
+operating_room_technician: "Operating Room Technician"
+
+# ==========================================
+# G. EMERGENCY MEDICAL SERVICES
+# ==========================================
+paramedic: "Paramedic"
+emergency_medical_technician: "Emergency Medical Technician"
+emt: "EMT"
+ambulance_technician: "Ambulance Technician"
+emergency_medical_responder: "Emergency Medical Responder"
+
+# ==========================================
+# H. OTHER HEALTHCARE PRACTITIONERS
+# ==========================================
+physician_assistant: "Physician Assistant"
+optometrist: "Optometrist"
+podiatrist: "Podiatrist"
+chiropractor: "Chiropractor"
+dental_hygienist: "Dental Hygienist"
+dental_assistant: "Dental Assistant"
+medical_records_specialist: "Medical Records Specialist"
+health_information_technologist: "Health Information Technologist"
+medical_transcriptionist: "Medical Transcriptionist"
+psychiatric_technician: "Psychiatric Technician"
+licensed_practical_nurse: "Licensed Practical Nurse"
+licensed_vocational_nurse: "Licensed Vocational Nurse"
+dispensing_optician: "Dispensing Optician"
+
+# ==========================================
+# I. SPECIALIZED PRACTITIONERS
+# ==========================================
+radiologist: "Radiologist"
+medical_coordinator: "Medical Coordinator"
+consultant_physician: "Consultant Physician"
+specialist_physician: "Specialist Physician"
+athletic_trainer: "Athletic Trainer"
+genetic_counselor: "Genetic Counselor"
+surgical_assistant: "Surgical Assistant"
+medical_dosimetrist: "Medical Dosimetrist"
