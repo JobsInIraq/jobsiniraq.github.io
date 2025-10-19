@@ -1,0 +1,131 @@
+# ============================================
+# A. الطهاة ورؤساء المطبخ
+# ============================================
+chef: "طاهي / شيف"
+head_chef: "رئيس الطهاة"
+executive_chef: "الشيف التنفيذي"
+sous_chef: "مساعد رئيس الطهاة"
+chef_de_partie: "رئيس قسم المطبخ"
+demi_chef_de_partie: "نصف رئيس قسم"
+pastry_chef: "شيف معجنات"
+executive_pastry_chef: "شيف معجنات تنفيذي"
+head_baker: "رئيس الخبازين"
+head_butcher: "رئيس الجزارين"
+kitchen_manager: "مدير المطبخ"
+culinary_director: "مدير الطهي"
+banquet_chef: "شيف الولائم"
+steakhouse_chef: "شيف شرائح اللحم"
+italian_cuisine_chef: "شيف مطبخ إيطالي"
+
+# ============================================
+# B. الطباخون
+# ============================================
+cook: "طباخ"
+restaurant_cook: "طباخ مطعم"
+line_cook: "طباخ خط الطهي"
+prep_cook: "طباخ تحضير"
+grill_cook: "طباخ شواية"
+fry_cook: "طباخ قلي"
+saute_cook: "طباخ سوتيه"
+broiler_cook: "طباخ شوي"
+pantry_cook: "طباخ البنتري"
+pastry_cook: "طباخ معجنات"
+fast_food_cook: "طباخ وجبات سريعة"
+short_order_cook: "طباخ طلبات سريعة"
+cafeteria_cook: "طباخ كافتيريا"
+institution_cook: "طباخ مؤسسات"
+hospital_cook: "طباخ مستشفى"
+school_cook: "طباخ مدرسة"
+camp_cook: "طباخ معسكر"
+private_cook: "طباخ خاص"
+personal_chef: "شيف شخصي"
+commis_i: "كوميس الأول"
+
+# ============================================
+# C. الخبازون والجزّارون
+# ============================================
+baker: "خباز"
+pastry_baker: "خباز معجنات"
+bread_baker: "خباز خبز"
+samoon_baker: "خباز صمون"
+cake_decorator: "مزين كعك"
+dessert_maker: "صانع حلويات"
+butcher: "جزار / قصاب"
+meat_cutter: "قطاع لحوم"
+fish_cutter: "قطاع سمك"
+meat_trimmer: "محضر لحوم"
+
+# ============================================
+# D. عمال تحضير الطعام
+# ============================================
+food_preparation_worker: "عامل تحضير طعام"
+kitchen_helper: "مساعد مطبخ"
+kitchen_assistant: "مساعد طباخ"
+commis_ii: "كوميس الثاني"
+commis_iii: "كوميس الثالث"
+salad_maker: "صانع سلطة"
+sandwich_maker: "صانع ساندويشات"
+vegetable_cutter: "قطاع خضروات"
+food_slicer: "مقطع طعام"
+kitchen_steward: "عامل نظافة مطبخ"
+
+# ============================================
+# E. النادلون والخادمون
+# ============================================
+waiter: "نادل / جرسون"
+waitress: "نادلة"
+server: "خادم طعام"
+restaurant_server: "خادم مطعم"
+fine_dining_server: "خادم مطعم راقي"
+banquet_server: "خادم ولائم"
+banquet_waiter: "نادل ولائم"
+room_service_waiter: "نادل خدمة غرف"
+head_waiter: "رئيس النادلين"
+captain_waiter: "كابتن نادل"
+waitstaff: "طاقم الخدمة"
+food_server: "مقدم طعام"
+cafe_server: "خادم مقهى"
+tea_boy: "عامل شاي"
+coffee_server: "مقدم قهوة"
+
+# ============================================
+# F. عمال الوجبات السريعة والكاونتر
+# ============================================
+fast_food_worker: "عامل وجبات سريعة"
+counter_worker: "عامل كاونتر"
+cashier_restaurant: "أمين صندوق"
+order_taker: "مستلم طلبات"
+drive_through_attendant: "موظف درايف ثرو"
+fast_food_cashier: "أمين صندوق وجبات سريعة"
+counter_attendant: "موظف استقبال"
+food_court_worker: "عامل ساحة طعام"
+snack_bar_attendant: "موظف بار وجبات خفيفة"
+kiosk_attendant: "موظف كشك"
+
+# ============================================
+# G. عمال المشروبات والبارات
+# ============================================
+barista: "باريستا"
+coffee_maker: "صانع قهوة"
+bartender: "بارتندر / ساقي"
+juice_maker: "صانع عصائر"
+smoothie_maker: "صانع عصائر سموثي"
+tea_maker: "صانع شاي"
+beverage_server: "خادم مشروبات"
+bar_back: "مساعد بار"
+bartender_helper: "مساعد بارتندر"
+coffee_shop_worker: "عامل مقهى"
+
+# ============================================
+# H. عمال خدمات الطعام الأخرى
+# ============================================
+dishwasher: "غسال صحون"
+kitchen_cleaner: "عامل نظافة مطبخ"
+bus_person: "عامل تنظيف طاولات"
+busboy: "عامل تنظيف"
+dining_room_attendant: "موظف قاعة طعام"
+cafeteria_attendant: "موظف كافتيريا"
+host: "مضيف"
+hostess: "مضيفة"
+restaurant_receptionist: "موظف استقبال مطعم"
+catering_assistant: "مساعد تموين"
