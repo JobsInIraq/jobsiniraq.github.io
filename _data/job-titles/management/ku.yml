@@ -1,0 +1,123 @@
+# ====================================
+# A. TOP EXECUTIVES
+# ====================================
+chief_executive_officer: "سەرۆکی جێبەجێکار"
+general_manager: "بەڕێوەبەری گشتی"
+managing_director: "بەڕێوەبەری بەڕێوەبردن"
+country_manager: "بەڕێوەبەری وڵات"
+director: "دەرھێنەر"
+operations_manager: "بەڕێوەبەری کارەکان"
+executive_director: "بەڕێوەبەری جێبەجێکار"
+regional_manager: "بەڕێوەبەری هەرێم"
+general_director: "بەڕێوەبەری گشتی"
+vice_president: "جێگری سەرۆک"
+chief_operating_officer: "سەرۆکی کارگێڕی"
+president: "سەرۆک"
+deputy_general_manager: "جێگری بەڕێوەبەری گشتی"
+assistant_general_manager: "یاریدەدەری بەڕێوەبەری گشتی"
+chief_sustainability_officer: "سەرۆکی بەردەوامی"
+
+# ====================================
+# B. FUNCTIONAL MANAGERS
+# ====================================
+finance_manager: "بەڕێوەبەری دارایی"
+chief_financial_officer: "سەرۆکی دارایی"
+human_resources_manager: "بەڕێوەبەری سەرچاوە مرۆییەکان"
+hr_manager: "بەڕێوەبەری HR"
+sales_manager: "بەڕێوەبەری فرۆشتن"
+marketing_manager: "بەڕێوەبەری بازاڕکردن"
+purchasing_manager: "بەڕێوەبەری کڕین"
+supply_chain_manager: "بەڕێوەبەری زنجیرەی دابینکردن"
+logistics_manager: "بەڕێوەبەری لۆجستی"
+warehouse_manager: "بەڕێوەبەری کۆگا"
+production_manager: "بەڕێوەبەری بەرهەمهێنان"
+plant_manager: "بەڕێوەبەری ڕووەک"
+quality_manager: "بەڕێوەبەری کوالیتی"
+it_manager: "بەڕێوەبەری ئایتی"
+information_systems_manager: "بەڕێوەبەری سیستەمی زانیاری"
+chief_information_officer: "سەرۆکی بەرپرسی زانیاری"
+facilities_manager: "بەڕێوەبەری ئاسانکارییەکان"
+administrative_services_manager: "بەڕێوەبەری خزمەتگوزارییە کارگێڕییەکان"
+maintenance_manager: "بەڕێوەبەری چاککردنەوە"
+security_manager: "بەڕێوەبەری ئاسایش"
+health_and_safety_manager: "بەڕێوەبەری تەندروستی و سەلامەتی"
+hse_manager: "بەڕێوەبەری HSE"
+environmental_manager: "بەڕێوەبەری ژینگە"
+compliance_manager: "بەڕێوەبەری پابەندبوون"
+risk_manager: "بەڕێوەبەری مەترسی"
+
+# ====================================
+# C. PROJECT & ENGINEERING MANAGERS
+# ====================================
+project_manager: "بەڕێوەبەری پڕۆژە"
+senior_project_manager: "بەڕێوەبەری باڵای پڕۆژە"
+project_director: "بەڕێوەبەری پڕۆژەکان"
+program_manager: "بەڕێوەبەری بەرنامە"
+engineering_manager: "بەڕێوەبەری ئەندازیاری"
+construction_manager: "بەڕێوەبەری بیناسازی"
+site_manager: "بەڕێوەبەری ماڵپەڕ"
+mep_manager: "بەڕێوەبەری MEP"
+technical_manager: "بەڕێوەبەری تەکنیکی"
+project_coordinator: "ڕێکخەری پڕۆژە"
+project_controller: "کۆنتڕۆڵکەری پڕۆژە"
+infrastructure_manager: "بەڕێوەبەری ژێرخانی"
+portfolio_manager: "بەڕێوەبەری پۆرتفۆلیۆ"
+development_manager: "بەڕێوەبەری گەشەپێدان"
+contract_manager: "بەڕێوەبەری گرێبەست"
+
+# ====================================
+# D. DEPARTMENT SUPERVISORS & COORDINATORS
+# ====================================
+supervisor: "سەرپەرشتیار"
+operations_supervisor: "سەرپەرشتیاری کارەکان"
+production_supervisor: "سەرپەرشتیاری بەرهەمهێنان"
+shift_supervisor: "سەرپەرشتیاری شیفت"
+team_leader: "سەرۆکی تیم"
+department_head: "بەرپرسی بەش"
+department_manager: "بەڕێوەبەری بەش"
+section_head: "سەری بەشی"
+unit_manager: "بەڕێوەبەری یەکە"
+branch_manager: "بەڕێوەبەری لق"
+area_manager: "بەڕێوەبەری ناوچە"
+district_manager: "بەڕێوەبەری قەزا"
+cluster_manager: "بەڕێوەبەری پۆل"
+field_manager: "بەڕێوەبەری مەیدان"
+coordinator: "ڕێکخەر"
+
+# ====================================
+# E. SPECIALIZED MANAGERS
+# ====================================
+account_manager: "بەڕێوەبەری ئەکاونت"
+business_development_manager: "بەڕێوەبەری پەرەپێدانی بازرگانی"
+relationship_manager: "بەڕێوەبەری پەیوەندی"
+client_services_manager: "بەڕێوەبەری خزمەتگوزارییەکانی مشتەری"
+customer_service_manager: "بەڕێوەبەری خزمەتگوزاری کڕیار"
+retail_manager: "بەڕێوەبەری فرۆشتنی تاکەکەسی"
+store_manager: "بەڕێوەبەری فرۆشگا"
+restaurant_manager: "بەڕێوەبەری چێشتخانە"
+hotel_manager: "بەڕێوەبەری هۆتێل"
+front_office_manager: "بەڕێوەبەری ئۆفیسی پێشەوە"
+housekeeping_manager: "بەڕێوەبەری ماڵەوە"
+banquet_manager: "بەڕێوەبەری ئاهەنگ"
+food_and_beverage_manager: "بەڕێوەبەری خواردن و خواردنەوە"
+catering_manager: "بەڕێوەبەری نانخواردن"
+procurement_manager: "بەڕێوەبەری تەداروکات"
+inventory_manager: "بەڕێوەبەری کۆگا"
+import_export_manager: "بەڕێوەبەری هاوردەکردن/هەناردەکردن"
+customs_manager: "بەڕێوەبەری گومرگی"
+training_manager: "بەڕێوەبەری ڕاهێنان"
+recruitment_manager: "بەڕێوەبەری دامەزراندن"
+
+# ====================================
+# F. ADDITIONAL MANAGEMENT ROLES
+# ====================================
+office_manager: "بەڕێوەبەری ئۆفیس"
+administration_manager: "بەڕێوەبەری بەڕێوەبردن"
+camp_manager: "بەڕێوەبەری کەمپ"
+refinery_manager: "بەڕێوەبەری پاڵاوگە"
+oil_gas_operations_manager: "بەڕێوەبەری کارەکانی نەوت و گاز"
+transport_manager: "بەڕێوەبەری گواستنەوە"
+fleet_manager: "بەڕێوەبەری بەلەمەکان"
+property_manager: "بەڕێوەبەری موڵک"
+credit_manager: "بەڕێوەبەری قەرز"
+social_community_service_manager: "بەڕێوەبەری خزمەتگوزاری کۆمەڵایەتی"
