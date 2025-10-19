@@ -1,0 +1,139 @@
+# ============================================
+# الممارسون الصحيون والفنيون
+# ============================================
+
+# ==========================================
+# أ. الأطباء والجراحون
+# ==========================================
+physician: "طبيب"
+doctor: "دكتور"
+general_practitioner: "طبيب عام"
+family_medicine_physician: "طبيب طب الأسرة"
+surgeon: "جراح"
+general_surgeon: "جراح عام"
+cardiologist: "طبيب قلب"
+pediatrician: "طبيب أطفال"
+obstetrician_and_gynecologist: "طبيب نسائية وتوليد"
+internist: "طبيب باطني"
+internal_medicine_physician: "طبيب أمراض باطنية"
+emergency_medicine_physician: "طبيب طوارئ"
+anesthesiologist: "طبيب تخدير"
+psychiatrist: "طبيب نفسي"
+neurologist: "طبيب أعصاب"
+oncologist: "طبيب أورام"
+dermatologist: "طبيب جلدية"
+urologist: "طبيب مسالك بولية"
+ophthalmologist: "طبيب عيون"
+pathologist: "طبيب أمراض (باثولوجي)"
+
+# ==========================================
+# ب. أطباء الأسنان
+# ==========================================
+dentist: "طبيب أسنان"
+general_dentist: "طبيب أسنان عام"
+orthodontist: "طبيب تقويم الأسنان"
+oral_surgeon: "جراح فم"
+oral_and_maxillofacial_surgeon: "جراح فم وفكين"
+prosthodontist: "طبيب تركيبات الأسنان"
+pediatric_dentist: "طبيب أسنان أطفال"
+cosmetic_dentist: "طبيب تجميل الأسنان"
+
+# ==========================================
+# ج. الممرضون
+# ==========================================
+nurse: "ممرض"
+registered_nurse: "ممرض قانوني"
+clinical_nurse: "ممرض سريري"
+staff_nurse: "ممرض موظف"
+emergency_room_nurse: "ممرض غرفة الطوارئ"
+icu_nurse: "ممرض العناية المركزة"
+surgical_nurse: "ممرض جراحي"
+pediatric_nurse: "ممرض أطفال"
+public_health_nurse: "ممرض صحة عامة"
+nurse_practitioner: "ممرض ممارس"
+nurse_anesthetist: "ممرض تخدير"
+nurse_midwife: "قابلة قانونية"
+
+# ==========================================
+# د. المعالجون
+# ==========================================
+physical_therapist: "معالج طبيعي"
+physiotherapist: "أخصائي علاج طبيعي"
+occupational_therapist: "معالج وظيفي"
+speech_therapist: "معالج النطق"
+speech_language_pathologist: "أخصائي أمراض النطق واللغة"
+respiratory_therapist: "معالج تنفسي"
+radiation_therapist: "معالج إشعاعي"
+recreational_therapist: "معالج ترفيهي"
+rehabilitation_therapist: "معالج تأهيلي"
+exercise_physiologist: "أخصائي فسيولوجيا التمارين"
+
+# ==========================================
+# هـ. الصيادلة وأخصائيو التغذية
+# ==========================================
+pharmacist: "صيدلي"
+clinical_pharmacist: "صيدلي سريري"
+hospital_pharmacist: "صيدلي مستشفى"
+community_pharmacist: "صيدلي المجتمع"
+dietitian: "أخصائي تغذية"
+nutritionist: "خبير تغذية"
+
+# ==========================================
+# و. التقنيون والتكنولوجيون الطبيون
+# ==========================================
+radiologic_technologist: "فني أشعة"
+radiology_technician: "فني أشعة تشخيصية"
+xray_technician: "فني أشعة سينية"
+ct_scan_technician: "فني أشعة مقطعية"
+mri_technician: "فني التصوير بالرنين المغناطيسي"
+mri_technologist: "تكنولوجي التصوير بالرنين المغناطيسي"
+ultrasound_technician: "فني سونار"
+sonographer: "أخصائي موجات فوق صوتية"
+diagnostic_medical_sonographer: "أخصائي تشخيص بالموجات فوق الصوتية"
+medical_laboratory_technologist: "تكنولوجي مختبر طبي"
+clinical_laboratory_technologist: "تكنولوجي مختبر سريري"
+medical_laboratory_technician: "فني مختبر طبي"
+lab_technician: "فني مختبر"
+nuclear_medicine_technologist: "تكنولوجي الطب النووي"
+cardiovascular_technologist: "تكنولوجي القلب والأوعية الدموية"
+cardiovascular_technician: "فني قلب وأوعية دموية"
+surgical_technologist: "تكنولوجي جراحة"
+operating_room_technician: "فني غرفة العمليات"
+
+# ==========================================
+# ز. خدمات الطوارئ الطبية
+# ==========================================
+paramedic: "مسعف"
+emergency_medical_technician: "فني طب طوارئ"
+emt: "مسعف طوارئ"
+ambulance_technician: "فني إسعاف"
+emergency_medical_responder: "مستجيب طبي للطوارئ"
+
+# ==========================================
+# ح. الممارسون الصحيون الآخرون
+# ==========================================
+physician_assistant: "مساعد طبيب"
+optometrist: "أخصائي بصريات"
+podiatrist: "أخصائي أقدام"
+chiropractor: "معالج يدوي"
+dental_hygienist: "أخصائي صحة فم وأسنان"
+dental_assistant: "مساعد طبيب أسنان"
+medical_records_specialist: "أخصائي السجلات الطبية"
+health_information_technologist: "تكنولوجي معلومات صحية"
+medical_transcriptionist: "ناسخ طبي"
+psychiatric_technician: "فني نفسي"
+licensed_practical_nurse: "ممرض عملي مرخص"
+licensed_vocational_nurse: "ممرض مهني مرخص"
+dispensing_optician: "فني نظارات"
+
+# ==========================================
+# ط. الممارسون المتخصصون
+# ==========================================
+radiologist: "أخصائي أشعة"
+medical_coordinator: "منسق طبي"
+consultant_physician: "طبيب استشاري"
+specialist_physician: "طبيب اختصاصي"
+athletic_trainer: "مدرب رياضي"
+genetic_counselor: "مستشار وراثي"
+surgical_assistant: "مساعد جراح"
+medical_dosimetrist: "أخصائي جرعات طبية"
