@@ -1,0 +1,146 @@
+# ====================================================
+# العناوين الوظيفية باللغة العربية - سوق العمل العراقي
+# متوافقة مع التصنيف الدولي المعياري للمهن (ISCO-08)
+# المجموعة: البناء والاستخراج
+# آخر تحديث: 2025-10-19
+# ====================================================
+
+# ==========================================
+# أ. المشرفون والمديرون في البناء
+# ==========================================
+construction_supervisor: "مشرف بناء"
+site_supervisor: "مشرف موقع"
+construction_manager: "مدير بناء"
+project_manager_construction: "مدير مشروع بناء"
+site_manager: "مدير موقع"
+construction_foreman: "رئيس عمال بناء"
+general_contractor: "مقاول عام"
+trade_supervisor: "مشرف الحرف"
+field_superintendent: "مشرف ميداني"
+construction_coordinator: "منسق البناء"
+
+# ==========================================
+# ب. النجارون وعمال الخشب
+# ==========================================
+carpenter: "نجار"
+finish_carpenter: "نجار تشطيبات"
+rough_carpenter: "نجار خشن"
+framing_carpenter: "نجار هياكل"
+cabinet_maker: "صانع خزائن"
+joiner: "نجار خشب"
+formwork_carpenter: "نجار قوالب"
+scaffolder: "عامل سقالات"
+
+# ==========================================
+# ج. عمال البناء والخرسانة
+# ==========================================
+mason: "بناء"
+bricklayer: "بناء طابوق"
+blockmason: "بناء بلوك"
+stonemason: "نحات حجر"
+concrete_finisher: "منجز خرسانة"
+cement_mason: "عامل إسمنت"
+concrete_worker: "عامل خرسانة"
+concrete_laborer: "عامل صب خرسانة"
+plasterer: "جصاص"
+stucco_mason: "عامل جبس"
+terrazzo_worker: "عامل تيرازو"
+tile_setter: "عامل بلاط"
+
+# ==========================================
+# د. الكهربائيون وعمال الكهرباء
+# ==========================================
+electrician: "كهربائي"
+construction_electrician: "كهربائي بناء"
+maintenance_electrician: "كهربائي صيانة"
+industrial_electrician: "كهربائي صناعي"
+residential_electrician: "كهربائي سكني"
+commercial_electrician: "كهربائي تجاري"
+electrical_helper: "مساعد كهربائي"
+wireman: "سلكي"
+
+# ==========================================
+# هـ. السباكون وعمال الأنابيب
+# ==========================================
+plumber: "سباك"
+pipefitter: "عامل أنابيب"
+steamfitter: "عامل أنابيب بخار"
+pipelayer: "مد أنابيب"
+sanitation_worker_plumbing: "عامل صرف صحي"
+drainage_worker: "عامل تصريف"
+plumbing_helper: "مساعد سباك"
+gas_fitter: "عامل أنابيب الغاز"
+
+# ==========================================
+# و. عمال المعادن واللحامون
+# ==========================================
+welder: "لحام"
+structural_welder: "لحام إنشائي"
+pipe_welder: "لحام أنابيب"
+rig_welder: "لحام منصات"
+structural_iron_worker: "عامل حديد إنشائي"
+steel_fixer: "حداد تسليح"
+reinforcing_iron_worker: "عامل حديد التسليح"
+rebar_worker: "عامل أسياخ حديد"
+sheet_metal_worker: "عامل صفائح معدنية"
+boilermaker: "صانع مراجل"
+
+# ==========================================
+# ز. الدهانون وعمال التشطيب
+# ==========================================
+painter: "دهان"
+construction_painter: "دهان بناء"
+maintenance_painter: "دهان صيانة"
+spray_painter: "دهان رش"
+decorator: "مزين"
+paperhanger: "عامل تعليق ورق"
+floor_finisher: "منجز أرضيات"
+drywall_installer: "عامل ألواح جبسية"
+
+# ==========================================
+# ح. مشغلو المعدات
+# ==========================================
+heavy_equipment_operator: "مشغل معدات ثقيلة"
+crane_operator: "مشغل رافعة"
+excavator_operator: "مشغل حفار"
+bulldozer_operator: "مشغل جرافة"
+loader_operator: "مشغل لودر"
+backhoe_operator: "مشغل باكهو"
+grader_operator: "مشغل سوية"
+compactor_operator: "مشغل دكاكة"
+forklift_operator: "مشغل رافعة شوكية"
+paving_machine_operator: "مشغل آلة رصف"
+pile_driver_operator: "مشغل دقاق الخوازيق"
+asphalt_worker: "عامل إسفلت"
+
+# ==========================================
+# ط. عمال البناء العامون
+# ==========================================
+construction_worker: "عامل بناء"
+construction_laborer: "عامل بناء عام"
+general_laborer: "عامل عام"
+helper_construction: "مساعد بناء"
+site_worker: "عامل موقع"
+demolition_worker: "عامل هدم"
+road_worker: "عامل طرق"
+building_maintenance_worker: "عامل صيانة مباني"
+handyman: "عامل صيانة عامة"
+material_handler: "عامل مناولة مواد"
+insulation_worker: "عامل عزل"
+construction_inspector: "مفتش بناء"
+
+# ==========================================
+# ي. عمال استخراج النفط والغاز
+# ==========================================
+roustabout: "عامل صيانة عامة"
+roughneck: "عامل حفر"
+floorman: "عامل أرضية الحفر"
+derrickman: "عامل البرج"
+motorman: "عامل المحركات"
+driller: "حفار"
+assistant_driller: "مساعد حفار"
+toolpusher: "مشرف الحفر"
+rig_manager: "مدير المنصة"
+well_operator: "مشغل بئر"
+production_operator: "مشغل إنتاج"
+extraction_worker: "عامل استخراج"
