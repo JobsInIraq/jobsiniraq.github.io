@@ -1,0 +1,138 @@
+# ============================================
+# ناونیشانەکانی کار - زمانی کوردی (سۆرانی)
+# بەگوێرەی پۆلی کاری نێودەوڵەتی (ISCO-08)
+# دوایین نوێکردنەوە: 2025-10-19
+# پەیوەندیدار بە بواری پەروەردە، ڕاهێنان و کتێبخانە
+# ============================================
+
+# ==========================================
+# A. پرۆفیسۆر و وانەبێژی زانکۆ
+# ==========================================
+professor: "پرۆفیسۆر"
+associate_professor: "یاریدەدەری پرۆفیسۆر"
+assistant_professor: "یاریدەدەری پرۆفیسۆر"
+lecturer: "وانەبێژ"
+senior_lecturer: "وانەبێژی باڵا"
+university_instructor: "ڕاهێنەری زانکۆ"
+engineering_professor: "پرۆفیسۆری ئەندازیاری"
+medical_professor: "پرۆفیسۆری پزیشکی"
+law_professor: "پرۆفیسۆری یاسا"
+business_professor: "پرۆفیسۆری بازرگانی"
+science_professor: "پرۆفیسۆری زانست"
+mathematics_professor: "پرۆفیسۆری بیرکاری"
+computer_science_professor: "پرۆفیسۆری زانستی کۆمپیوتەر"
+architecture_professor: "پرۆفیسۆری تەلارسازی"
+nursing_professor: "پرۆفیسۆری پەرستاری"
+pharmacy_professor: "پرۆفیسۆری دەرمانسازی"
+economics_professor: "پرۆفیسۆری ئابووری"
+psychology_professor: "پرۆفیسۆری دەروونناسی"
+history_professor: "پرۆفیسۆری مێژوو"
+arabic_language_professor: "پرۆفیسۆری زمانی عەرەبی"
+
+# ==========================================
+# B. مامۆستایانی قوتابخانە
+# ==========================================
+teacher: "مامۆستا"
+primary_school_teacher: "مامۆستای قوتابخانەی بنەڕەتی"
+elementary_school_teacher: "مامۆستای قوتابخانەی سەرەتایی"
+middle_school_teacher: "مامۆستای قوتابخانەی ناوەندی"
+secondary_school_teacher: "مامۆستای قوتابخانەی ناوەندی"
+high_school_teacher: "مامۆستای ئامادەیی"
+english_teacher: "مامۆستای ئینگلیزی"
+arabic_teacher: "مامۆستای عەرەبی"
+kurdish_teacher: "مامۆستای کوردی"
+mathematics_teacher: "مامۆستای بیرکاری"
+science_teacher: "مامۆستای زانست"
+chemistry_teacher: "مامۆستای کیمیا"
+physics_teacher: "مامۆستای فیزیا"
+biology_teacher: "مامۆستای بایۆلۆجی"
+history_teacher: "مامۆستای مێژوو"
+geography_teacher: "مامۆستای جوگرافیا"
+islamic_studies_teacher: "مامۆستای خوێندنی ئیسلامی"
+religious_education_teacher: "مامۆستای پەروەردەی ئاینی"
+social_studies_teacher: "مامۆستای خوێندنی کۆمەڵایەتی"
+computer_science_teacher: "مامۆستای زانستی کۆمپیوتەر"
+physical_education_teacher: "مامۆستای پەروەردەی وەرزشی"
+art_teacher: "مامۆستای هونەر"
+music_teacher: "مامۆستای مۆسیقا"
+vocational_teacher: "مامۆستای پیشەیی"
+career_technical_education_teacher: "مامۆستای پەروەردەی تەکنیکی"
+
+# ==========================================
+# C. پەروەردەی منداڵی سەرەتایی
+# ==========================================
+kindergarten_teacher: "مامۆستای باخچەی ساوایان"
+preschool_teacher: "مامۆستای پێش قوتابخانە"
+nursery_teacher: "مامۆستای نەمامگە"
+early_years_teacher: "مامۆستای ساڵانی سەرەتایی"
+kg1_teacher: "مامۆستای KG1"
+kg2_teacher: "مامۆستای KG2"
+reception_teacher: "مامۆستای پێشوازی"
+year1_teacher: "مامۆستای ساڵی یەکەم"
+year2_teacher: "مامۆستای ساڵی دووەم"
+montessori_teacher: "مامۆستای مۆنتسۆری"
+
+# ==========================================
+# D. پەروەردە و پاڵپشتی تایبەت
+# ==========================================
+special_education_teacher: "مامۆستای پەروەردەی تایبەت"
+special_needs_teacher: "مامۆستای پێویستی تایبەت"
+sen_teacher: "مامۆستای SEN"
+learning_support_teacher: "مامۆستای پشتگیری فێربوون"
+resource_teacher: "مامۆستای سەرچاوە"
+inclusive_education_teacher: "مامۆستای پەروەردەی گشتگیر"
+autism_specialist_teacher: "مامۆستای پسپۆڕی ئۆتیزم"
+speech_therapist_education: "پزیشکی قسەکردن (پەروەردە)"
+educational_psychologist: "دەروونناسێکی پەروەردەیی"
+school_counselor: "ڕاوێژکاری قوتابخانە"
+
+# ==========================================
+# E. مامۆستایانی زمان و ESL
+# ==========================================
+esl_teacher: "مامۆستای زمانی ئینگلیزی بۆ نای ئینگلیزی‌وانان"
+efl_teacher: "مامۆستای زمانی ئینگلیزی وەک زمانێکی بیانی"
+english_language_teacher: "مامۆستای زمانی ئینگلیزی"
+ielts_instructor: "ڕاهێنەری IELTS"
+toefl_instructor: "ڕاهێنەری TOEFL"
+language_instructor: "ڕاهێنەری زمان"
+french_teacher: "مامۆستای فەرەنسی"
+adult_education_teacher: "مامۆستای فێربوونی گەورەساڵان"
+
+# ==========================================
+# F. سەرکردایەتی و کارگێڕی پەروەردەیی
+# ==========================================
+school_principal: "بەڕێوەبەری قوتابخانە"
+vice_principal: "جێگری بەڕێوەبەری قوتابخانە"
+assistant_principal: "یاریدەدەری بەڕێوەبەر"
+head_of_department: "سەرۆکی بەش"
+head_teacher: "سەرۆکی مامۆستا"
+head_of_secondary: "سەرۆکی بەشی ئامادەیی"
+head_of_primary: "سەرۆکی بەشی بنەڕەتی"
+academic_coordinator: "ڕێکخەری ئەکادیمی"
+curriculum_coordinator: "ڕێکخەری مەنهەج"
+instructional_coordinator: "ڕێکخەری فێرکاری"
+
+# ==========================================
+# G. یاریدەدەرانی وانەوتن و پاڵپشتی
+# ==========================================
+teaching_assistant: "یاریدەدەری وانە"
+teacher_aide: "یاریدەدەری مامۆستا"
+classroom_assistant: "یاریدەدەری پۆل"
+learning_assistant: "یاریدەدەری فێربوون"
+sen_assistant: "یاریدەدەری SEN"
+special_education_assistant: "یاریدەدەری پەروەردەی تایبەت"
+lab_assistant_school: "یاریدەدەری تاقیگەی قوتابخانە"
+library_assistant: "یاریدەدەری کتێبخانە"
+substitute_teacher: "مامۆستای جێگرەوە"
+supply_teacher: "مامۆستای جێگیر"
+
+# ==========================================
+# H. پسپۆڕانی کتێبخانە و زانیاری
+# ==========================================
+librarian: "کتێبخانەوان"
+school_librarian: "کتێبخانەوانی قوتابخانە"
+university_librarian: "کتێبخانەوانی زانکۆ"
+library_technician: "تەکنیکی کتێبخانە"
+media_specialist: "پسپۆڕی میدیا"
+archivist: "ئەرشیڤست"
+museum_educator: "مامۆستای مۆزەخانە"
