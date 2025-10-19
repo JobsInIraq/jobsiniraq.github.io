@@ -1,0 +1,131 @@
+# ======================================
+# A. GEOSCIENTISTS & EARTH SCIENCE
+# ======================================
+geologist: "جیۆلۆجیست"
+petroleum_geologist: "جیۆلۆژیستێکی نەوت"
+exploration_geologist: "زانای جیۆلۆجی گەڕان"
+structural_geologist: "جیۆلۆژیستێکی پێکهاتەیی"
+resource_geologist: "زانای جیۆلۆجی سەرچاوە"
+geophysicist: "جیۆفیزیکزان"
+seismologist: "بومەلەرزەناس"
+hydrogeologist: "زانای جیۆلۆجی ئاو"
+engineering_geologist: "جیۆلۆجی ئەندازیاری"
+reservoir_geologist: "جیۆلۆژیستێکی خەزان"
+geoscientist: "زانای جیۆ"
+geochemist: "جیۆکیمیا"
+geotechnical_specialist: "پسپۆڕی جیۆتەکنیکی"
+soil_scientist: "زانای خاک"
+paleontologist: "زانای زیندەوەرزانی کۆن"
+
+# ======================================
+# B. CHEMISTS & MATERIALS SCIENTISTS
+# ======================================
+chemist: "کیمیازان"
+analytical_chemist: "کیمیاکاری شیکاری"
+organic_chemist: "کیمیاکاری ئۆرگانیک"
+inorganic_chemist: "کیمیاکاری نائۆرگانیک"
+physical_chemist: "کیمیاکاری فیزیایی"
+industrial_chemist: "کیمیاکاری پیشەسازی"
+petroleum_chemist: "کیمیاکاری نەوت"
+quality_control_chemist: "کیمیاکاری کۆنترۆڵی کوالیتی"
+production_chemist: "کیمیاکاری بەرهەمهێنان"
+materials_scientist: "زانای ماددە"
+research_chemist: "کیمیاکاری توێژینەوە"
+biochemist: "بایۆکیمیا"
+
+# ======================================
+# C. BIOLOGICAL & LIFE SCIENTISTS
+# ======================================
+biologist: "زانای بایۆلۆجی"
+microbiologist: "مایکرۆبایۆلۆجیست"
+molecular_biologist: "زانای زیندەوەرزانی گۆڕانکاری"
+cell_biologist: "زانای بایۆلۆجی خانە"
+geneticist: "زانای جینات"
+zoologist: "زانای ئاژەڵان"
+botanist: "ڕووەکناس"
+ecologist: "ئیکۆلۆژیست"
+wildlife_biologist: "زانای بایۆلۆجی گیانلەبەرە کێوییەکان"
+marine_biologist: "زانای بایۆلۆجی دەریایی"
+biotechnologist: "بایۆتەکنەلۆجیست"
+medical_scientist: "زانای پزیشکی"
+
+# ======================================
+# D. AGRICULTURAL & FOOD SCIENTISTS
+# ======================================
+agricultural_scientist: "زانای کشتوکاڵی"
+agronomist: "زانای کشتوکاڵی"
+plant_scientist: "زانای ڕووەک"
+crop_scientist: "زانای بەروبووم"
+animal_scientist: "زانای ئاژەڵان"
+food_scientist: "زانای خۆراک"
+food_technologist: "تەکنەلۆجیای خۆراک"
+horticulturist: "باخداری"
+
+# ======================================
+# E. ENVIRONMENTAL SCIENTISTS
+# ======================================
+environmental_scientist: "زانای ژینگە"
+environmental_specialist: "پسپۆڕی ژینگە"
+environmental_consultant: "ڕاوێژکاری ژینگە"
+environmental_analyst: "شیکارکەری ژینگە"
+sustainability_specialist: "پسپۆڕی بەردەوامیی"
+climate_scientist: "زانای کەشوهەوا"
+environmental_health_specialist: "پسپۆڕی تەندروستی ژینگە"
+conservation_scientist: "زانای پاراستن"
+ecotoxicologist: "زانای ژەهراویبوونی ژینگە"
+water_quality_specialist: "پسپۆڕی کوالیتی ئاو"
+
+# ======================================
+# F. SOCIAL SCIENTISTS
+# ======================================
+sociologist: "کۆمەڵناس"
+social_scientist: "زانای کۆمەڵایەتی"
+psychologist: "دەروونناس"
+clinical_psychologist: "دەروونناسێکی کلینیکی"
+counseling_psychologist: "دەروونناسێکی ڕاوێژکاری"
+school_psychologist: "دەروونناس لە قوتابخانە"
+industrial_psychologist: "دەروونناسێکی پیشەسازی"
+economist: "ئابووریناس"
+research_economist: "ئابووری توێژینەوە"
+political_scientist: "زانای سیاسی"
+anthropologist: "مرۆڤناس"
+archaeologist: "شوێنەوارناس"
+historian: "مێژوونووس"
+geographer: "جوگرافیناس"
+urban_planner: "پلاندانەری شار"
+
+# ======================================
+# G. RESEARCH & SURVEY SPECIALISTS
+# ======================================
+researcher: "توێژەر"
+research_scientist: "زانای توێژینەوە"
+research_associate: "هاوبەشی توێژینەوە"
+research_assistant: "یاریدەدەری توێژینەوە"
+survey_researcher: "توێژەری ڕاپرسی"
+field_researcher: "توێژەری مەیدانی"
+social_science_research_assistant: "یارمەتیدەری توێژینەوەی زانستە کۆمەڵایەتییەکان"
+data_collector: "کۆکەرەوەی زانیاری"
+
+# ======================================
+# H. LABORATORY & SCIENCE TECHNICIANS
+# ======================================
+laboratory_technician: "تەکنیکی تاقیگە"
+lab_technician: "تەکنیکی تاقیگە"
+chemical_technician: "تەکنیکی کیمیایی"
+biological_technician: "تەکنیکی بایۆلۆجی"
+quality_control_analyst: "شیکارکەری کۆنترۆڵی کوالیتی"
+quality_assurance_analyst: "شیکارکەری دڵنیایی کوالیتی"
+laboratory_analyst: "شیکارکاری تاقیگە"
+laboratory_supervisor: "سەرپەرشتیاری تاقیگە"
+environmental_technician: "تەکنیکی ژینگە"
+water_chemist: "کیمیاکاری ئاو"
+geological_technician: "تەکنیکی جیۆلۆجی"
+geophysical_technician: "تەکنیکی جیۆفیزیکی"
+agricultural_technician: "تەکنیکی کشتوکاڵی"
+food_science_technician: "تەکنیکی زانستی خۆراک"
+quality_control_inspector: "پشکنەری کۆنترۆڵی کوالیتی"
+forensic_science_technician: "تەکنیکی زانستی دادوەری"
+laboratory_manager: "بەڕێوەبەری تاقیگە"
+qa_qc_engineer: "ئەندازیاری QA/QC"
+qa_qc_manager: "بەڕێوەبەری QA/QC"
+hse_officer: "ئەفسەری HSE"
