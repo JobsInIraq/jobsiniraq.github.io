@@ -1,0 +1,131 @@
+# ======================================
+# A. GEOSCIENTISTS & EARTH SCIENCE
+# ======================================
+geologist: "Geologist"
+petroleum_geologist: "Petroleum Geologist"
+exploration_geologist: "Exploration Geologist"
+structural_geologist: "Structural Geologist"
+resource_geologist: "Resource Geologist"
+geophysicist: "Geophysicist"
+seismologist: "Seismologist"
+hydrogeologist: "Hydrogeologist"
+engineering_geologist: "Engineering Geologist"
+reservoir_geologist: "Reservoir Geologist"
+geoscientist: "Geoscientist"
+geochemist: "Geochemist"
+geotechnical_specialist: "Geotechnical Specialist"
+soil_scientist: "Soil Scientist"
+paleontologist: "Paleontologist"
+
+# ======================================
+# B. CHEMISTS & MATERIALS SCIENTISTS
+# ======================================
+chemist: "Chemist"
+analytical_chemist: "Analytical Chemist"
+organic_chemist: "Organic Chemist"
+inorganic_chemist: "Inorganic Chemist"
+physical_chemist: "Physical Chemist"
+industrial_chemist: "Industrial Chemist"
+petroleum_chemist: "Petroleum Chemist"
+quality_control_chemist: "Quality Control Chemist"
+production_chemist: "Production Chemist"
+materials_scientist: "Materials Scientist"
+research_chemist: "Research Chemist"
+biochemist: "Biochemist"
+
+# ======================================
+# C. BIOLOGICAL & LIFE SCIENTISTS
+# ======================================
+biologist: "Biologist"
+microbiologist: "Microbiologist"
+molecular_biologist: "Molecular Biologist"
+cell_biologist: "Cell Biologist"
+geneticist: "Geneticist"
+zoologist: "Zoologist"
+botanist: "Botanist"
+ecologist: "Ecologist"
+wildlife_biologist: "Wildlife Biologist"
+marine_biologist: "Marine Biologist"
+biotechnologist: "Biotechnologist"
+medical_scientist: "Medical Scientist"
+
+# ======================================
+# D. AGRICULTURAL & FOOD SCIENTISTS
+# ======================================
+agricultural_scientist: "Agricultural Scientist"
+agronomist: "Agronomist"
+plant_scientist: "Plant Scientist"
+crop_scientist: "Crop Scientist"
+animal_scientist: "Animal Scientist"
+food_scientist: "Food Scientist"
+food_technologist: "Food Technologist"
+horticulturist: "Horticulturist"
+
+# ======================================
+# E. ENVIRONMENTAL SCIENTISTS
+# ======================================
+environmental_scientist: "Environmental Scientist"
+environmental_specialist: "Environmental Specialist"
+environmental_consultant: "Environmental Consultant"
+environmental_analyst: "Environmental Analyst"
+sustainability_specialist: "Sustainability Specialist"
+climate_scientist: "Climate Scientist"
+environmental_health_specialist: "Environmental Health Specialist"
+conservation_scientist: "Conservation Scientist"
+ecotoxicologist: "Ecotoxicologist"
+water_quality_specialist: "Water Quality Specialist"
+
+# ======================================
+# F. SOCIAL SCIENTISTS
+# ======================================
+sociologist: "Sociologist"
+social_scientist: "Social Scientist"
+psychologist: "Psychologist"
+clinical_psychologist: "Clinical Psychologist"
+counseling_psychologist: "Counseling Psychologist"
+school_psychologist: "School Psychologist"
+industrial_psychologist: "Industrial Psychologist"
+economist: "Economist"
+research_economist: "Research Economist"
+political_scientist: "Political Scientist"
+anthropologist: "Anthropologist"
+archaeologist: "Archaeologist"
+historian: "Historian"
+geographer: "Geographer"
+urban_planner: "Urban Planner"
+
+# ======================================
+# G. RESEARCH & SURVEY SPECIALISTS
+# ======================================
+researcher: "Researcher"
+research_scientist: "Research Scientist"
+research_associate: "Research Associate"
+research_assistant: "Research Assistant"
+survey_researcher: "Survey Researcher"
+field_researcher: "Field Researcher"
+social_science_research_assistant: "Social Science Research Assistant"
+data_collector: "Data Collector"
+
+# ======================================
+# H. LABORATORY & SCIENCE TECHNICIANS
+# ======================================
+laboratory_technician: "Laboratory Technician"
+lab_technician: "Lab Technician"
+chemical_technician: "Chemical Technician"
+biological_technician: "Biological Technician"
+quality_control_analyst: "Quality Control Analyst"
+quality_assurance_analyst: "Quality Assurance Analyst"
+laboratory_analyst: "Laboratory Analyst"
+laboratory_supervisor: "Laboratory Supervisor"
+environmental_technician: "Environmental Technician"
+water_chemist: "Water Chemist"
+geological_technician: "Geological Technician"
+geophysical_technician: "Geophysical Technician"
+agricultural_technician: "Agricultural Technician"
+food_science_technician: "Food Science Technician"
+quality_control_inspector: "Quality Control Inspector"
+forensic_science_technician: "Forensic Science Technician"
+laboratory_manager: "Laboratory Manager"
+qa_qc_engineer: "QA/QC Engineer"
+qa_qc_manager: "QA/QC Manager"
+hse_officer: "HSE Officer"
