@@ -1,0 +1,131 @@
+# ======================================
+# A. GEOSCIENTISTS & EARTH SCIENCE
+# ======================================
+geologist: "جيولوجي / عالم جيولوجيا"
+petroleum_geologist: "جيولوجي نفط"
+exploration_geologist: "جيولوجي استكشاف"
+structural_geologist: "جيولوجي بنيوي"
+resource_geologist: "جيولوجي موارد"
+geophysicist: "جيوفيزيائي"
+seismologist: "عالم زلازل"
+hydrogeologist: "جيولوجي مياه جوفية"
+engineering_geologist: "جيولوجي هندسي"
+reservoir_geologist: "جيولوجي مكامن"
+geoscientist: "عالم علوم الأرض"
+geochemist: "كيميائي جيولوجي"
+geotechnical_specialist: "أخصائي جيوتقني"
+soil_scientist: "عالم تربة"
+paleontologist: "عالم حفريات"
+
+# ======================================
+# B. CHEMISTS & MATERIALS SCIENTISTS
+# ======================================
+chemist: "كيميائي / عالم كيمياء"
+analytical_chemist: "كيميائي تحليلي"
+organic_chemist: "كيميائي عضوي"
+inorganic_chemist: "كيميائي غير عضوي"
+physical_chemist: "كيميائي فيزيائي"
+industrial_chemist: "كيميائي صناعي"
+petroleum_chemist: "كيميائي نفط"
+quality_control_chemist: "كيميائي مراقبة جودة"
+production_chemist: "كيميائي إنتاج"
+materials_scientist: "عالم مواد"
+research_chemist: "كيميائي أبحاث"
+biochemist: "عالم كيمياء حيوية"
+
+# ======================================
+# C. BIOLOGICAL & LIFE SCIENTISTS
+# ======================================
+biologist: "عالم أحياء"
+microbiologist: "عالم أحياء دقيقة"
+molecular_biologist: "عالم أحياء جزيئية"
+cell_biologist: "عالم أحياء خلوية"
+geneticist: "عالم وراثة"
+zoologist: "عالم حيوان"
+botanist: "عالم نبات"
+ecologist: "عالم بيئة"
+wildlife_biologist: "عالم أحياء برية"
+marine_biologist: "عالم أحياء بحرية"
+biotechnologist: "أخصائي تقنية حيوية"
+medical_scientist: "عالم طبي"
+
+# ======================================
+# D. AGRICULTURAL & FOOD SCIENTISTS
+# ======================================
+agricultural_scientist: "عالم زراعة"
+agronomist: "مهندس زراعي"
+plant_scientist: "عالم نباتات"
+crop_scientist: "عالم محاصيل"
+animal_scientist: "عالم حيوان زراعي"
+food_scientist: "عالم علوم أغذية"
+food_technologist: "أخصائي تقنية أغذية"
+horticulturist: "عالم بستنة"
+
+# ======================================
+# E. ENVIRONMENTAL SCIENTISTS
+# ======================================
+environmental_scientist: "عالم بيئة"
+environmental_specialist: "أخصائي بيئة"
+environmental_consultant: "استشاري بيئي"
+environmental_analyst: "محلل بيئي"
+sustainability_specialist: "أخصائي استدامة"
+climate_scientist: "عالم مناخ"
+environmental_health_specialist: "أخصائي صحة بيئية"
+conservation_scientist: "عالم حفاظ بيئي"
+ecotoxicologist: "عالم سموم بيئية"
+water_quality_specialist: "أخصائي جودة مياه"
+
+# ======================================
+# F. SOCIAL SCIENTISTS
+# ======================================
+sociologist: "عالم اجتماع"
+social_scientist: "عالم اجتماعي"
+psychologist: "عالم نفس"
+clinical_psychologist: "طبيب نفسي"
+counseling_psychologist: "أخصائي نفسي"
+school_psychologist: "أخصائي نفسي مدرسي"
+industrial_psychologist: "أخصائي نفسي صناعي"
+economist: "اقتصادي / عالم اقتصاد"
+research_economist: "باحث اقتصادي"
+political_scientist: "عالم سياسة"
+anthropologist: "عالم إنسان"
+archaeologist: "عالم آثار"
+historian: "مؤرخ"
+geographer: "جغرافي"
+urban_planner: "مخطط حضري"
+
+# ======================================
+# G. RESEARCH & SURVEY SPECIALISTS
+# ======================================
+researcher: "باحث"
+research_scientist: "عالم أبحاث"
+research_associate: "باحث مشارك"
+research_assistant: "مساعد باحث"
+survey_researcher: "باحث مسوح"
+field_researcher: "باحث ميداني"
+social_science_research_assistant: "مساعد بحث اجتماعي"
+data_collector: "جامع بيانات"
+
+# ======================================
+# H. LABORATORY & SCIENCE TECHNICIANS
+# ======================================
+laboratory_technician: "فني مختبر"
+lab_technician: "تقني مختبر"
+chemical_technician: "فني كيمياء"
+biological_technician: "فني أحياء"
+quality_control_analyst: "محلل مراقبة جودة"
+quality_assurance_analyst: "محلل ضمان جودة"
+laboratory_analyst: "محلل مختبر"
+laboratory_supervisor: "مشرف مختبر"
+environmental_technician: "فني بيئة"
+water_chemist: "كيميائي مياه"
+geological_technician: "فني جيولوجي"
+geophysical_technician: "فني جيوفيزياء"
+agricultural_technician: "فني زراعي"
+food_science_technician: "فني علوم أغذية"
+quality_control_inspector: "مفتش مراقبة جودة"
+forensic_science_technician: "فني علوم جنائية"
+laboratory_manager: "مدير مختبر"
+qa_qc_engineer: "مهندس ضمان ومراقبة جودة"
+qa_qc_manager: "مدير ضمان ومراقبة جودة"
+hse_officer: "موظف صحة وسلامة وبيئة"
