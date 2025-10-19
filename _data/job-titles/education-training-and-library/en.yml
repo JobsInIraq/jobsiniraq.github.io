@@ -1,0 +1,137 @@
+# ============================================
+# ENGLISH JOB TITLES - EDUCATION, TRAINING, AND LIBRARY
+# ISCO-08 & U.S. SOC 2025 Aligned
+# Last Updated: 2025-10-19
+# ============================================
+
+# ==========================================
+# A. UNIVERSITY PROFESSORS & LECTURERS
+# ==========================================
+professor: "Professor"
+associate_professor: "Associate Professor"
+assistant_professor: "Assistant Professor"
+lecturer: "Lecturer"
+senior_lecturer: "Senior Lecturer"
+university_instructor: "University Instructor"
+engineering_professor: "Engineering Professor"
+medical_professor: "Medical Professor"
+law_professor: "Law Professor"
+business_professor: "Business Professor"
+science_professor: "Science Professor"
+mathematics_professor: "Mathematics Professor"
+computer_science_professor: "Computer Science Professor"
+architecture_professor: "Architecture Professor"
+nursing_professor: "Nursing Professor"
+pharmacy_professor: "Pharmacy Professor"
+economics_professor: "Economics Professor"
+psychology_professor: "Psychology Professor"
+history_professor: "History Professor"
+arabic_language_professor: "Arabic Language Professor"
+
+# ==========================================
+# B. SCHOOL TEACHERS
+# ==========================================
+teacher: "Teacher"
+primary_school_teacher: "Primary School Teacher"
+elementary_school_teacher: "Elementary School Teacher"
+middle_school_teacher: "Middle School Teacher"
+secondary_school_teacher: "Secondary School Teacher"
+high_school_teacher: "High School Teacher"
+english_teacher: "English Teacher"
+arabic_teacher: "Arabic Teacher"
+kurdish_teacher: "Kurdish Teacher"
+mathematics_teacher: "Mathematics Teacher"
+science_teacher: "Science Teacher"
+chemistry_teacher: "Chemistry Teacher"
+physics_teacher: "Physics Teacher"
+biology_teacher: "Biology Teacher"
+history_teacher: "History Teacher"
+geography_teacher: "Geography Teacher"
+islamic_studies_teacher: "Islamic Studies Teacher"
+religious_education_teacher: "Religious Education Teacher"
+social_studies_teacher: "Social Studies Teacher"
+computer_science_teacher: "Computer Science Teacher"
+physical_education_teacher: "Physical Education Teacher"
+art_teacher: "Art Teacher"
+music_teacher: "Music Teacher"
+vocational_teacher: "Vocational Teacher"
+career_technical_education_teacher: "Career/Technical Education Teacher"
+
+# ==========================================
+# C. EARLY CHILDHOOD EDUCATION
+# ==========================================
+kindergarten_teacher: "Kindergarten Teacher"
+preschool_teacher: "Preschool Teacher"
+nursery_teacher: "Nursery Teacher"
+early_years_teacher: "Early Years Teacher"
+kg1_teacher: "KG1 Teacher"
+kg2_teacher: "KG2 Teacher"
+reception_teacher: "Reception Teacher"
+year1_teacher: "Year 1 Teacher"
+year2_teacher: "Year 2 Teacher"
+montessori_teacher: "Montessori Teacher"
+
+# ==========================================
+# D. SPECIAL EDUCATION & SUPPORT
+# ==========================================
+special_education_teacher: "Special Education Teacher"
+special_needs_teacher: "Special Needs Teacher"
+sen_teacher: "SEN Teacher"
+learning_support_teacher: "Learning Support Teacher"
+resource_teacher: "Resource Teacher"
+inclusive_education_teacher: "Inclusive Education Teacher"
+autism_specialist_teacher: "Autism Specialist Teacher"
+speech_therapist_education: "Speech Therapist (Education)"
+educational_psychologist: "Educational Psychologist"
+school_counselor: "School Counselor"
+
+# ==========================================
+# E. ESL & LANGUAGE TEACHERS
+# ==========================================
+esl_teacher: "ESL Teacher"
+efl_teacher: "EFL Teacher"
+english_language_teacher: "English Language Teacher"
+ielts_instructor: "IELTS Instructor"
+toefl_instructor: "TOEFL Instructor"
+language_instructor: "Language Instructor"
+french_teacher: "French Teacher"
+adult_education_teacher: "Adult Education Teacher"
+
+# ==========================================
+# F. EDUCATIONAL LEADERSHIP & ADMINISTRATION
+# ==========================================
+school_principal: "School Principal"
+vice_principal: "Vice Principal"
+assistant_principal: "Assistant Principal"
+head_of_department: "Head of Department"
+head_teacher: "Head Teacher"
+head_of_secondary: "Head of Secondary"
+head_of_primary: "Head of Primary"
+academic_coordinator: "Academic Coordinator"
+curriculum_coordinator: "Curriculum Coordinator"
+instructional_coordinator: "Instructional Coordinator"
+
+# ==========================================
+# G. TEACHING ASSISTANTS & SUPPORT STAFF
+# ==========================================
+teaching_assistant: "Teaching Assistant"
+teacher_aide: "Teacher Aide"
+classroom_assistant: "Classroom Assistant"
+learning_assistant: "Learning Assistant"
+sen_assistant: "SEN Assistant"
+special_education_assistant: "Special Education Assistant"
+lab_assistant_school: "Lab Assistant (School)"
+library_assistant: "Library Assistant"
+substitute_teacher: "Substitute Teacher"
+supply_teacher: "Supply Teacher"
+
+# ==========================================
+# H. LIBRARY & INFORMATION SPECIALISTS
+# ==========================================
+librarian: "Librarian"
+school_librarian: "School Librarian"
+university_librarian: "University Librarian"
+library_technician: "Library Technician"
+media_specialist: "Media Specialist"
+archivist: "Archivist"
+museum_educator: "Museum Educator"
