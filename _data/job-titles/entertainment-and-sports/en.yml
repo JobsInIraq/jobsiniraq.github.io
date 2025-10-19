@@ -1,0 +1,131 @@
+# ============================================
+# ENTERTAINMENT AND SPORTS
+# ============================================
+
+# ==========================================
+# A. ATHLETES & SPORTS COMPETITORS
+# ==========================================
+athlete: "Athlete"
+football_player: "Football Player"
+soccer_player: "Soccer Player"
+basketball_player: "Basketball Player"
+volleyball_player: "Volleyball Player"
+handball_player: "Handball Player"
+track_and_field_athlete: "Track and Field Athlete"
+runner: "Runner"
+swimmer: "Swimmer"
+boxer: "Boxer"
+wrestler: "Wrestler"
+martial_artist: "Martial Artist"
+taekwondo_athlete: "Taekwondo Athlete"
+karate_athlete: "Karate Athlete"
+weightlifter: "Weightlifter"
+powerlifter: "Powerlifter"
+bodybuilder: "Bodybuilder"
+cyclist: "Cyclist"
+table_tennis_player: "Table Tennis Player"
+chess_player: "Chess Player"
+
+# ==========================================
+# B. COACHES & SPORTS OFFICIALS
+# ==========================================
+coach: "Coach"
+sports_coach: "Sports Coach"
+football_coach: "Football Coach"
+head_coach: "Head Coach"
+assistant_coach: "Assistant Coach"
+fitness_coach: "Fitness Coach"
+personal_trainer: "Personal Trainer"
+strength_and_conditioning_coach: "Strength and Conditioning Coach"
+athletic_trainer: "Athletic Trainer"
+goalkeeper_coach: "Goalkeeper Coach"
+scout: "Scout"
+sports_scout: "Sports Scout"
+referee: "Referee"
+umpire: "Umpire"
+sports_official: "Sports Official"
+
+# ==========================================
+# C. FITNESS & RECREATION WORKERS
+# ==========================================
+gym_instructor: "Gym Instructor"
+fitness_instructor: "Fitness Instructor"
+aerobics_instructor: "Aerobics Instructor"
+yoga_instructor: "Yoga Instructor"
+pilates_instructor: "Pilates Instructor"
+zumba_instructor: "Zumba Instructor"
+crossfit_trainer: "CrossFit Trainer"
+spinning_instructor: "Spinning Instructor"
+recreation_worker: "Recreation Worker"
+sports_nutritionist: "Sports Nutritionist"
+
+# ==========================================
+# D. MUSICIANS & SINGERS
+# ==========================================
+musician: "Musician"
+singer: "Singer"
+vocalist: "Vocalist"
+oud_player: "Oud Player"
+qanun_player: "Qanun Player"
+violinist: "Violinist"
+guitarist: "Guitarist"
+pianist: "Pianist"
+drummer: "Drummer"
+traditional_iraqi_musician: "Traditional Iraqi Musician"
+music_composer: "Music Composer"
+music_director: "Music Director"
+orchestra_conductor: "Orchestra Conductor"
+dj_disc_jockey: "DJ (Disc Jockey)"
+background_vocalist: "Background Vocalist"
+
+# ==========================================
+# E. ACTORS & PERFORMERS
+# ==========================================
+actor: "Actor"
+actress: "Actress"
+theater_actor: "Theater Actor"
+film_actor: "Film Actor"
+tv_actor: "TV Actor"
+voice_actor: "Voice Actor"
+comedian: "Comedian"
+standup_comedian: "Stand-up Comedian"
+entertainer: "Entertainer"
+performer: "Performer"
+host: "Host"
+mc_master_of_ceremonies: "MC (Master of Ceremonies)"
+
+# ==========================================
+# F. DANCERS & CHOREOGRAPHERS
+# ==========================================
+dancer: "Dancer"
+traditional_dancer: "Traditional Dancer"
+folk_dancer: "Folk Dancer"
+ballet_dancer: "Ballet Dancer"
+contemporary_dancer: "Contemporary Dancer"
+choreographer: "Choreographer"
+dance_instructor: "Dance Instructor"
+dance_teacher: "Dance Teacher"
+
+# ==========================================
+# G. MEDIA PRODUCTION & ENTERTAINMENT BUSINESS
+# ==========================================
+producer: "Producer"
+film_producer: "Film Producer"
+tv_producer: "TV Producer"
+music_producer: "Music Producer"
+director: "Director"
+film_director: "Film Director"
+tv_director: "TV Director"
+theater_director: "Theater Director"
+assistant_director: "Assistant Director"
+casting_director: "Casting Director"
+screenwriter: "Screenwriter"
+script_writer: "Script Writer"
+content_creator: "Content Creator"
+video_editor: "Video Editor"
+sound_engineer: "Sound Engineer"
+camera_operator: "Camera Operator"
+cinematographer: "Cinematographer"
+artist_manager: "Artist Manager"
+talent_agent: "Talent Agent"
+entertainment_lawyer: "Entertainment Lawyer"
