@@ -1,0 +1,127 @@
+# ==================================
+# A. ڕۆژنامەنووسان و پەیامنێران
+# ==================================
+journalist: "ڕۆژنامەنووس"
+reporter: "پەیامنێر"
+news_reporter: "پەیامنێری هەواڵ"
+correspondent: "پەیامنێر"
+foreign_correspondent: "پەیامنێری بیانی"
+war_correspondent: "پەیامنێری جەنگ"
+field_reporter: "پەیامنێری مەیدانی"
+investigative_journalist: "ڕۆژنامەنووسی لێکۆڵینەوە"
+political_reporter: "پەیامنێری سیاسی"
+news_analyst: "شیکارکەری هەواڵ"
+sports_journalist: "ڕۆژنامەنووسی وەرزشی"
+freelance_journalist: "ڕۆژنامەنووسی ئازاد"
+video_journalist: "ڕۆژنامەنووسی ڤیدیۆیی"
+multimedia_journalist: "ڕۆژنامەنووسی مالتیمیدیا"
+online_journalist: "ڕۆژنامەنووسی ئۆنلاین"
+digital_journalist: "ڕۆژنامەنووسی دیجیتاڵی"
+documentary_journalist: "ڕۆژنامەنووسی دۆکیومێنتاری"
+human_rights_reporter: "پەیامنێری مافی مرۆڤ"
+culture_reporter: "پەیامنێری کولتوور"
+business_journalist: "ڕۆژنامەنووسی بازرگانی"
+
+# ==================================
+# B. سەرنوسەر و بەڕێوەبەرانی ناوەڕۆک
+# ==================================
+editor: "سەرنوسەر"
+news_editor: "سەرنوسەری هەواڵ"
+chief_editor: "سەرنوسەری سەرەکی"
+editor_in_chief: "سەرنوسەری گشتی"
+managing_editor: "بەڕێوەبەری دەستکاریکردن"
+senior_editor: "سەرنوسەری باڵا"
+copy_editor: "دەستکاریکەری کۆپی"
+photo_editor: "دەستکاریکەری وێنە"
+video_editor: "دەستکاریکەری ڤیدیۆ"
+content_editor: "دەستکاریکەری ناوەڕۆک"
+digital_editor: "سەرنوسەری دیجیتاڵی"
+web_editor: "سەرنوسەری وێب"
+proofreader: "سەلماندنەوە"
+content_manager: "بەڕێوەبەری ناوەڕۆک"
+editorial_assistant: "یاریدەدەری سەرنوسەر"
+
+# ==================================
+# C. پەخشکاران و پێشکەشکاران
+# ==================================
+tv_presenter: "پێشکەشکاری تەلەفزیۆنی"
+television_host: "میوانداری تەلەفزیۆن"
+news_anchor: "بێژەری هەواڵ"
+anchorwoman_anchorman: "ژنە لەنگەری / پیاوی لەنگەری"
+broadcaster: "پەخشکەر"
+radio_presenter: "پێشکەشکاری ڕادیۆیی"
+radio_host: "میوانداری ڕادیۆ"
+radio_dj: "دیجیی ڕادیۆ"
+talk_show_host: "میوانداری بەرنامەی گفتوگۆ"
+program_host: "پێشکەشکاری بەرنامە"
+sports_commentator: "شرۆڤەکاری وەرزشی"
+voice_over_artist: "هونەرمەندی دەنگی لەسەر"
+announcer: "بێژەر"
+narrator: "گێڕەرەوە"
+master_of_ceremonies: "سەرپەرشتیارەی ئاهەنگەکان (MC)"
+
+# ==================================
+# D. پەیوەندییە گشتییەکان و پەیوەندی
+# ==================================
+public_relations_specialist: "پسپۆڕی پەیوەندییە گشتییەکان"
+pr_officer: "ئەفسەری پەیوەندییە گشتییەکان"
+communications_specialist: "پسپۆڕی پەیوەندییەکان"
+communications_officer: "ئەفسەری پەیوەندییەکان"
+communications_manager: "بەڕێوەبەری پەیوەندییەکان"
+senior_communications_officer: "ئەفسەری باڵای پەیوەندییەکان"
+communications_analyst: "شیکارکەری پەیوەندییەکان"
+media_relations_specialist: "پسپۆڕی پەیوەندییەکانی میدیا"
+press_officer: "ئەفسەری ڕۆژنامەوانی"
+corporate_communications_manager: "بەڕێوەبەری پەیوەندییەکانی کۆمپانیا"
+internal_communications_specialist: "پسپۆڕی پەیوەندییە ناوخۆییەکان"
+external_communications_specialist: "پسپۆڕی پەیوەندییە دەرەکییەکان"
+spokesperson: "وتەبێژ"
+crisis_communications_manager: "بەڕێوەبەری پەیوەندییەکانی قەیران"
+brand_communications_manager: "بەڕێوەبەری پەیوەندییەکانی براند"
+
+# ==================================
+# E. فۆتۆگرافی و ڤیدیۆ
+# ==================================
+photographer: "فۆتۆگرافەر"
+photojournalist: "فۆتۆ ڕۆژنامەنووس"
+news_photographer: "فۆتۆگرافەری هەواڵ"
+freelance_photographer: "فۆتۆگرافەری ئازاد"
+videographer: "ڤیدیۆگرافەر"
+camera_operator: "بەڕێوەبەری کامێرا"
+cinematographer: "سینەماتۆگرافەر"
+director_of_photography: "بەڕێوەبەری فۆتۆگرافی"
+camera_assistant: "یاریدەدەری کامێرا"
+drone_operator: "ئۆپەراتۆری فڕۆکەی بێفڕۆکەوان"
+
+# ==================================
+# F. دروستکردنی میدیای دیجیتاڵی و ناوەڕۆک
+# ==================================
+content_creator: "دروستکەری ناوەڕۆک"
+social_media_manager: "بەڕێوەبەری سۆشیال میدیا"
+social_media_specialist: "پسپۆڕی سۆشیال میدیا"
+social_media_executive: "بەڕێوەبەری سۆشیال میدیا"
+digital_content_writer: "نووسەری ناوەڕۆکی دیجیتاڵی"
+content_writer: "نووسەری ناوەڕۆک"
+arabic_content_writer: "نووسەری ناوەڕۆکی عەرەبی"
+copywriter: "نوسەری کۆپی"
+blogger: "بلۆگەر"
+vlogger: "ڤلۆگەر"
+youtuber: "یوتیوبەر"
+influencer: "کاریگەر"
+digital_marketing_specialist: "پسپۆڕی بازاڕکردنی دیجیتاڵی"
+community_manager: "بەڕێوەبەری کۆمەڵگا"
+seo_specialist: "پسپۆڕی SEO"
+
+# ==================================
+# G. وەرگێڕان و ڕۆڵی تەکنیکی
+# ==================================
+translator: "وەرگێڕ"
+interpreter: "وەرگێڕی فۆری"
+arabic_english_translator: "وەرگێڕی عەرەبی-ئینگلیزی"
+linguist: "زمانناس"
+subtitler: "ژێرنووس"
+sound_technician: "تەکنیکی دەنگ"
+audio_engineer: "ئەندازیاری دەنگ"
+broadcast_technician: "تەکنیکی پەخش"
+production_assistant: "یاریدەدەری بەرهەمهێنان"
+media_producer: "بەرهەمهێنەری میدیا"
