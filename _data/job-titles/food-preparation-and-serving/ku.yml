@@ -1,0 +1,131 @@
+# ============================================
+# A. چێشتلێنەران و سەری چێشتلێنەران
+# ============================================
+chef: "چێشتلێنەر"
+head_chef: "سەرۆک چێشتلێنەر"
+executive_chef: "چێشتلێنەری جێبەجێکار"
+sous_chef: "چێشتلێنەری سۆس"
+chef_de_partie: "چێشتلێنەری ئاهەنگ"
+demi_chef_de_partie: "دیمی شێف دی ئاهەنگ"
+pastry_chef: "چێشتلێنەری شیرینی"
+executive_pastry_chef: "چێشتلێنەری جێبەجێکاری شیرینی"
+head_baker: "سەر نانەوا"
+head_butcher: "سەر قەساب"
+kitchen_manager: "بەڕێوەبەری چێشتخانە"
+culinary_director: "بەڕێوەبەری چێشتلێنان"
+banquet_chef: "چێشتلێنەری ئاهەنگ"
+steakhouse_chef: "چێشتلێنەری ستێکهاوس"
+italian_cuisine_chef: "چێشتلێنەری چێشتخانەی ئیتاڵی"
+
+# ============================================
+# B. چێشتلێنەر
+# ============================================
+cook: "چێشتلێنەر"
+restaurant_cook: "چێشتلێنەری چێشتخانە"
+line_cook: "کوڵاوی هێڵ"
+prep_cook: "ئامادەکاری کوک"
+grill_cook: "کوڵاوی گریل"
+fry_cook: "کوڵاوی سوورکراوە"
+saute_cook: "کوڵاوی سووتاو"
+broiler_cook: "کوڵاوی گۆشتی گۆشت"
+pantry_cook: "کوکی کۆگا"
+pastry_cook: "کوکی شیرینی"
+fast_food_cook: "کوڵاوی خواردنی خێرا"
+short_order_cook: "کوڵاوی فەرمانی کورت"
+cafeteria_cook: "کوکی کافتریا"
+institution_cook: "کوکی دامەزراوە"
+hospital_cook: "کوکی نەخۆشخانە"
+school_cook: "چێشتلێنەری قوتابخانە"
+camp_cook: "کەمپ کوک"
+private_cook: "چێشتلێنەری تایبەت"
+personal_chef: "چێشتلێنەری کەسی"
+commis_i: "کۆمیس من"
+
+# ============================================
+# C. نانەوا و قەساب
+# ============================================
+baker: "نانەوا"
+pastry_baker: "نانەواخانە"
+bread_baker: "نان نانەوا"
+samoon_baker: "سامۆن نانەوا"
+cake_decorator: "ڕازاندنەوەی کێک"
+dessert_maker: "چێزی سازکەر"
+butcher: "قەساب"
+meat_cutter: "گۆشتبڕ"
+fish_cutter: "ماسی بڕین"
+meat_trimmer: "گۆشت بڕین"
+
+# ============================================
+# D. کارمەندانی ئامادەکردنی خۆراک
+# ============================================
+food_preparation_worker: "کارمەندی ئامادەکردنی خۆراک"
+kitchen_helper: "یارمەتیدەری چێشتخانە"
+kitchen_assistant: "یاریدەدەری چێشتخانە"
+commis_ii: "کۆمیسی دووەم"
+commis_iii: "کۆمیسی سێیەم"
+salad_maker: "سەڵات ساز"
+sandwich_maker: "ساندویچ ساز"
+vegetable_cutter: "سەوزەبڕ"
+food_slicer: "پارچەکەری خۆراک"
+kitchen_steward: "بەڕێوەبەری چێشتخانە"
+
+# ============================================
+# E. گارسۆن و سێرڤەرەکان
+# ============================================
+waiter: "گارسۆن"
+waitress: "گارسۆن"
+server: "سێرڤەر"
+restaurant_server: "ڕاژەکاری چێشتخانە"
+fine_dining_server: "سێرڤەری خواردنی باش"
+banquet_server: "ڕاژەکاری ئاهەنگ"
+banquet_waiter: "گارسۆنی ئاهەنگ"
+room_service_waiter: "گارسۆنی خزمەتگوزاری ژوور"
+head_waiter: "سەر گارسۆن"
+captain_waiter: "کاپتن گارسۆن"
+waitstaff: "ستافی چاوەڕوانی"
+food_server: "خۆراک سێرڤەر"
+cafe_server: "کافێ سێرڤەر"
+tea_boy: "کوڕی چا"
+coffee_server: "سێرڤەری قاوە"
+
+# ============================================
+# F. کارمەندانی خواردنی خێرا و کەوانتەر
+# ============================================
+fast_food_worker: "کارمەندی خواردنی خێرا"
+counter_worker: "کرێکاری کەوانتەر"
+cashier_restaurant: "کاشێر (چێشتخانە)"
+order_taker: "داواکاری"
+drive_through_attendant: "هاوسەرگیری لێخوڕین"
+fast_food_cashier: "کاشێری خواردنی خێرا"
+counter_attendant: "سەرۆکی ژمێریار"
+food_court_worker: "کرێکاری دادگای خۆراک"
+snack_bar_attendant: "سەرۆکی خواردنی کەم"
+kiosk_attendant: "کاتژمێری کیۆسک"
+
+# ============================================
+# G. کرێکارانی خواردنەوە و باڕ
+# ============================================
+barista: "باریستا"
+coffee_maker: "قاوە ساز"
+bartender: "بارتەندەر"
+juice_maker: "شەربەت ساز"
+smoothie_maker: "دروستکەری سمۆدی"
+tea_maker: "چای ساز"
+beverage_server: "ڕاژەکاری خواردنەوە"
+bar_back: "بار باک"
+bartender_helper: "یارمەتیدەری بارتەندەر"
+coffee_shop_worker: "کرێکاری قاوەخانە"
+
+# ============================================
+# H. کرێکارانی تری خزمەتگوزاری خۆراک
+# ============================================
+dishwasher: "قاپشۆڕ"
+kitchen_cleaner: "پاککەرەوەی چێشتخانە"
+bus_person: "کەسی پاس"
+busboy: "باسبۆی"
+dining_room_attendant: "سەرنشینی ژووری نانخواردن"
+cafeteria_attendant: "سەرۆکی کافتریا"
+host: "هۆست"
+hostess: "خانەخوێ"
+restaurant_receptionist: "وەرگری چێشتخانە"
+catering_assistant: "یاریدەدەری خواردن و خواردنەوە"
