@@ -1,0 +1,151 @@
+# ===================================
+# الوظائف العسكرية
+# ===================================
+
+# ===================================
+# أعلى 10 وظائف ذات أولوية
+# ===================================
+soldier: "جندي"
+police_officer: "ضابط شرطة"
+security_guard: "حارس أمن"
+army_officer: "ضابط في الجيش"
+commando: "قائد ميداني / قوات خاصة"
+sergeant: "رقيب"
+intelligence_analyst: "محلل استخبارات"
+border_guard: "حرس حدود"
+military_police: "الشرطة العسكرية"
+combat_medic: "مسعف ميداني"
+
+# ===================================
+# الرتب والقيادات العسكرية
+# ===================================
+adjutant: "مساعد ضابط"
+air_force_officer: "ضابط في سلاح الجو"
+artillery_officer: "ضابط مدفعية"
+battalion_commander: "آمر كتيبة"
+brigade_commander: "آمر لواء"
+captain: "نقيب"
+colonel: "عقيد"
+commanding_officer: "ضابط آمر"
+company_commander: "آمر سرية"
+counter_terrorism_officer: "ضابط مكافحة الإرهاب"
+division_commander: "آمر فرقة"
+executive_officer: "ضابط تنفيذي"
+field_officer: "ضابط ميداني"
+general: "فريق"
+lieutenant: "ملازم"
+lieutenant_colonel: "مقدم"
+major: "رائد"
+major_general: "لواء"
+operations_officer: "ضابط عمليات"
+platoon_leader: "آمر فصيل"
+second_lieutenant: "ملازم ثانٍ"
+senior_officer: "ضابط رفيع"
+
+# ===================================
+# الرتب غير الضباط والجنود
+# ===================================
+chief_sergeant: "رقيب أول"
+corporal: "عريف"
+first_sergeant: "رقيب أول ميداني"
+lance_corporal: "عريف نائب"
+master_sergeant: "رقيب ماستر"
+private: "جندي"
+private_first_class: "جندي أول"
+senior_sergeant: "رقيب متقدم"
+staff_sergeant: "رقيب فني"
+
+# ===================================
+# القتال والأدوار التكتيكية
+# ===================================
+anti_aircraft_gunner: "رامٍ مضاد للطائرات"
+anti_tank_specialist: "مختص مضاد للدبابات"
+armor_crew_member: "عضو طاقم مدرعة"
+artillery_crew_member: "عضو طاقم مدفعية"
+combat_engineer: "مهندس ميداني"
+demolition_specialist: "خبير تفجيرات"
+explosive_ordnance_disposal_technician: "فني إزالة المتفجرات"
+grenadier: "رامٍ قنابل"
+infantry_soldier: "جندي مشاة"
+machine_gunner: "رامي رشاش"
+marksman: "قناص دقيق"
+mortar_crew_member: "عضو طاقم هاون"
+paratrooper: "مظلي"
+reconnaissance_soldier: "جندي استطلاع"
+rifleman: "رامي بندقية"
+scout: "كشاف"
+sharpshooter: "رامٍ ماهر"
+sniper: "قناص"
+tank_commander: "آمر دبابة"
+tank_crew_member: "عضو طاقم دبابة"
+
+# ===================================
+# القوات الخاصة والوحدات النخبوية
+# ===================================
+counter_terrorism_commando: "قوات مكافحة الإرهاب"
+peshmerga_fighter: "مقاتل بيشمركة"
+special_forces_operator: "عنصر قوات خاصة"
+special_operations_soldier: "جندي عمليات خاصة"
+swat_team_member: "عضو في وحدة سوات"
+
+# ===================================
+# الاستخبارات والاستطلاع
+# ===================================
+counter_intelligence_officer: "ضابط استخبارات مضادة"
+intelligence_officer: "ضابط استخبارات"
+military_intelligence_analyst: "محلل استخبارات عسكرية"
+signals_intelligence_specialist: "مختص استخبارات إشارات"
+surveillance_operator: "مشغل مراقبة"
+
+# ===================================
+# الاتصالات والتكنولوجيا
+# ===================================
+communications_specialist: "مختص اتصالات"
+cyber_warfare_specialist: "مختص حرب إلكترونية"
+radio_operator: "مشغل لاسلكي"
+signal_corps_specialist: "مختص في سلاح الإشارة"
+
+# ===================================
+# الطيران والقوات الجوية
+# ===================================
+air_traffic_controller_military: "مراقب حركة جوية (عسكري)"
+aircraft_mechanic_military: "فني طائرات (عسكري)"
+fighter_pilot: "طيار مقاتل"
+helicopter_pilot: "طيار مروحية"
+military_pilot: "طيار عسكري"
+uav_operator: "مشغل طائرة مسيّرة"
+
+# ===================================
+# اللوجستيات والدعم
+# ===================================
+ammunition_specialist: "مختص ذخيرة"
+armorer: "فني أسلحة"
+driver_military: "سائق عسكري"
+logistics_specialist: "مختص لوجستي"
+military_supply_specialist: "مختص إمدادات عسكرية"
+quartermaster: "ضابط تموين"
+supply_sergeant: "رقيب تموين"
+transport_specialist: "مختص نقل"
+
+# ===================================
+# الطب والرعاية الصحية
+# ===================================
+flight_surgeon: "طبيب طيران"
+medical_officer: "ضابط طبي"
+military_dentist: "طبيب أسنان عسكري"
+military_nurse: "ممرضة عسكرية"
+paramedic_military: "مسعف عسكري"
+
+# ===================================
+# الأمن وإنفاذ القانون
+# ===================================
+federal_police_officer: "ضابط شرطة اتحادية"
+military_police_officer: "ضابط شرطة عسكرية"
+provost_marshal: "ضابط انضباط"
+security_officer: "ضابط أمن"
+
+# ===================================
+# التدريب والإدارة
+# ===================================
+drill_instructor: "مدرب عسكري"
+military_instructor: "مدرب قوات مسلحة"
