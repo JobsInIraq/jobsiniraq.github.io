@@ -1,0 +1,155 @@
+# ==================================
+# پاڵپشتی فەرمانگە و کارگێڕی
+# ==================================
+
+# ==================================
+# ١٠ پۆستی سەرەکی کە ئەولەویەتی بەرزە
+# ==================================
+administrative_assistant: "یاریدەدەری کارگێڕی"
+secretary: "سکرتێر"
+receptionist: "پێشوازیکار"
+office_manager: "بەڕێوەبەری ئۆفیس"
+data_entry_clerk: "نووسەری داخڵکردنی زانیاری"
+administrative_officer: "ئەفسەری کارگێڕی"
+executive_assistant: "یاریدەدەری جێبەجێکار"
+clerk: "کارمەند"
+office_coordinator: "ڕێکخەری ئۆفیس"
+document_controller: "کۆنتڕۆڵکەری بەڵگەنامە"
+
+# ==================================
+# بەڕێوەبردنی کارگێڕی
+# ==================================
+administrative_coordinator: "ڕێکخەری کارگێڕی"
+administrative_manager: "بەڕێوەبەری کارگێڕی"
+administrative_specialist: "پسپۆڕی کارگێڕی"
+chief_administrative_officer: "سەرۆکی کارگێڕی"
+office_administrator: "بەڕێوەبەری ئۆفیس"
+office_supervisor: "سەرپەرشتیاری ئۆفیس"
+
+# ==================================
+# پشتگیری سکرتاریەت و کارگێڕی
+# ==================================
+executive_secretary: "سکرتێری جێبەجێکار"
+legal_secretary: "سکرتێری یاسایی"
+medical_secretary: "سکرتێری پزیشکی"
+personal_assistant: "یاریدەدەری کەسی"
+senior_secretary: "سکرتێری باڵا"
+typist: "تایپکەر"
+
+# ==================================
+# پێشوازی و مێزی پێشەوە
+# ==================================
+front_desk_agent: "بریکاری مێزی پێشەوە"
+front_desk_coordinator: "ڕێکخەری مێزی پێشەوە"
+front_office_assistant: "یاریدەدەری ئۆفیسی پێشەوە"
+information_desk_clerk: "کارمەندی مێزی زانیاری"
+receptionist_information_clerk: "پێشوازیکار و کارمەندی زانیاری"
+switchboard_operator: "بەڕێوەبەری سویچبۆرد"
+
+# ==================================
+# پرۆسێسینگ و تۆمارکردنی داتا
+# ==================================
+archive_clerk: "نووسەری ئەرشیف"
+data_analyst: "شیکارکەری داتا"
+data_cleanup_clerk: "نووسەری پاککردنەوەی زانیاری"
+data_entry_operator: "ئۆپەراتۆری داخڵکردنی داتا"
+data_processing_clerk: "نووسەری پرۆسێسی داتا"
+file_clerk: "نووسەری فایل"
+records_clerk: "نووسەری تۆمارەکان"
+records_management_specialist: "پسپۆڕی بەڕێوەبردنی تۆمارەکان"
+records_officer: "ئەفسەری تۆمارەکان"
+
+# ==================================
+# پۆستی نووسینگەیی
+# ==================================
+administrative_clerk: "نووسەری کارگێڕی"
+general_clerk: "نووسەری گشتی"
+office_clerk: "کارمەندی ئۆفیس"
+senior_clerk: "نووسەری باڵا"
+
+# ==================================
+# کارمەندانی دارایی و ژمێریاری
+# ==================================
+accountant_assistant: "یاریدەدەری ژمێریار"
+accounting_clerk: "کارمەندی ژمێریاری"
+billing_clerk: "کارمەندی فەسڵکردن"
+bookkeeper: "کتێبپارێز"
+bookkeeping_clerk: "نووسەری کتێبخانەی"
+cashier: "کاشێر"
+finance_clerk: "کارمەندی دارایی"
+payroll_clerk: "کارمەندی مووچە"
+procurement_clerk: "نووسەری تەداروکات"
+
+# ==================================
+# پاڵپشتی سەرچاوە مرۆییەکان
+# ==================================
+hr_assistant: "یاریدەدەری HR"
+hr_clerk: "کارمەندی HR"
+hr_coordinator: "ڕێکخەری HR"
+hr_officer: "ئەفسەری HR"
+personnel_assistant: "یاریدەدەری کارمەندان"
+personnel_clerk: "کارمەندی کارمەندان"
+personnel_officer: "ئەفسەری کارمەندان"
+recruitment_assistant: "یاریدەدەری دامەزراندنی کارمەند"
+recruitment_officer: "ئەفسەری دامەزراندن"
+
+# ==================================
+# خزمەتگوزاری و پشتگیری کڕیاران
+# ==================================
+customer_service_assistant: "یاریدەدەری خزمەتگوزاری کڕیار"
+customer_service_clerk: "نووسەری خزمەتگوزاری کڕیار"
+customer_service_officer: "ئەفسەری خزمەتگوزاری کڕیار"
+customer_service_representative: "نوێنەری خزمەتگوزاری کڕیار"
+help_desk_specialist: "پسپۆڕی مێزی یارمەتی"
+information_officer: "ئەفسەری زانیاری"
+
+# ==================================
+# نامە و پەیوەندی
+# ==================================
+correspondence_clerk: "نووسەری نامەنووسی"
+correspondence_officer: "ئەفسەری نامەنووسی"
+mail_clerk: "نووسەری پۆست"
+telephone_operator: "بەڕێوەبەری تەلەفۆن"
+
+# ==================================
+# لۆجستیک و هەماهەنگی
+# ==================================
+appointment_scheduler: "خشتەی چاوپێکەوتن"
+event_coordinator: "ڕێکخەری ڕووداوەکان"
+logistics_assistant: "یاریدەدەری لۆجستی"
+logistics_clerk: "کارمەندی لۆجستیک"
+logistics_coordinator: "ڕێکخەری لۆجستیک"
+meeting_coordinator: "ڕێکخەری کۆبوونەوە"
+scheduler: "خشتەکەر"
+travel_coordinator: "ڕێکخەری گەشت"
+
+# ==================================
+# دابینکردن و ئینفۆنتۆری
+# ==================================
+inventory_clerk: "نووسەری کۆگا"
+procurement_assistant: "یاریدەدەری تەداروکات"
+procurement_officer: "ئەفسەری تەداروکات"
+purchasing_assistant: "یاریدەدەری کڕین"
+purchasing_clerk: "کارمەندی کڕین"
+stock_clerk: "کارمەندی پشکەکان"
+storekeeper: "فرۆشگادار"
+supply_assistant: "یاریدەدەری دابینکردن"
+supply_clerk: "کارمەندی دابینکردن"
+warehouse_clerk: "کارمەندی کۆگا"
+
+# ==================================
+# ڕۆڵی کارگێڕی تایبەتمەند
+# ==================================
+compliance_officer: "ئەفسەری پابەندبوون"
+contract_administrator: "بەڕێوەبەری گرێبەست"
+facilities_coordinator: "ڕێکخەری ئاسانکارییەکان"
+office_assistant: "یاریدەدەری ئۆفیس"
+operations_assistant: "یاریدەدەری ئۆپەراسیۆنەکان"
+program_assistant: "یاریدەدەری بەرنامە"
+project_assistant: "یاریدەدەری پڕۆژە"
+project_coordinator: "ڕێکخەری پڕۆژە"
+quality_assurance_clerk: "نووسەری دڵنیایی کوالیتی"
+receptionist_secretary: "سکرتێری پێشوازیکار"
+report_writer: "نووسەری ڕاپۆرت"
+translator: "وەرگێڕ"
+word_processor: "ورد پرۆسێسەر"
