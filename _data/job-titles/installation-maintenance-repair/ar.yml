@@ -1,0 +1,139 @@
+# ==========================================
+# A. المشرفون والمنسقون
+# ==========================================
+maintenance_supervisor: "مشرف صيانة"
+first_line_supervisor_of_mechanics: "مشرف ميكانيكيين"
+maintenance_coordinator: "منسق صيانة"
+chief_engineer: "كبير المهندسين"
+lead_technician: "تقني رئيسي"
+
+# ==========================================
+# B. الكهربائيون
+# ==========================================
+electrician: "كهربائي"
+electrical_technician: "فني كهرباء"
+maintenance_electrician: "كهربائي صيانة"
+industrial_electrician: "كهربائي صناعي"
+power_electrician: "كهربائي طاقة"
+lead_electrician: "كهربائي رئيسي"
+electrical_installer: "مركب كهرباء"
+commercial_electrician: "كهربائي تجاري"
+power_line_installer: "مركب خطوط كهرباء"
+electrical_repairer: "مصلح كهرباء"
+low_voltage_technician: "فني جهد منخفض"
+substation_electrician: "كهربائي محطات فرعية"
+
+# ==========================================
+# C. التكييف والتبريد
+# ==========================================
+hvac_technician: "فني تكييف وتبريد"
+ac_technician: "فني تكييف"
+refrigeration_technician: "فني تبريد"
+hvac_mechanic: "ميكانيكي تكييف"
+air_conditioning_installer: "مركب تكييف"
+chiller_technician: "فني مبردات"
+hvac_installer: "مركب أنظمة تبريد وتدفئة"
+heating_technician: "فني تدفئة"
+vrf_technician: "فني أنظمة VRF"
+cooling_system_specialist: "أخصائي أنظمة تبريد"
+
+# ==========================================
+# D. ميكانيكا السيارات والمركبات
+# ==========================================
+mechanic: "ميكانيكي"
+auto_mechanic: "ميكانيكي سيارات"
+automotive_technician: "تقني سيارات"
+automotive_service_technician: "فني خدمة سيارات"
+car_mechanic: "ميكانيكي عربات"
+vehicle_mechanic: "ميكانيكي مركبات"
+diesel_mechanic: "ميكانيكي ديزل"
+truck_mechanic: "ميكانيكي شاحنات"
+bus_mechanic: "ميكانيكي حافلات"
+heavy_equipment_mechanic: "ميكانيكي معدات ثقيلة"
+engine_mechanic: "ميكانيكي محركات"
+transmission_specialist: "أخصائي ناقل حركة"
+brake_technician: "فني فرامل"
+auto_body_repairer: "مصلح هياكل سيارات"
+tire_technician: "فني إطارات"
+
+# ==========================================
+# E. المولدات وأنظمة الطاقة
+# ==========================================
+generator_mechanic: "ميكانيكي مولدات"
+generator_technician: "فني مولدات"
+power_generation_technician: "فني توليد طاقة"
+generator_operator: "مشغل مولدات"
+ups_technician: "فني UPS"
+power_systems_technician: "فني أنظمة طاقة"
+epp_technician: "فني توليد طاقة كهربائية"
+standby_generator_specialist: "أخصائي مولدات احتياطية"
+
+# ==========================================
+# F. الصيانة الصناعية والآلات
+# ==========================================
+industrial_mechanic: "ميكانيكي صناعي"
+industrial_machinery_mechanic: "ميكانيكي آلات صناعية"
+maintenance_technician: "فني صيانة"
+maintenance_worker: "عامل صيانة"
+general_maintenance_worker: "عامل صيانة عامة"
+machinery_maintenance_worker: "عامل صيانة آلات"
+millwright: "فني تركيب آلات صناعية"
+preventive_maintenance_technician: "فني صيانة وقائية"
+mechanical_maintenance_technician: "فني صيانة ميكانيكية"
+equipment_maintenance_technician: "فني صيانة معدات"
+plant_maintenance_technician: "فني صيانة مصانع"
+rotating_equipment_mechanic: "ميكانيكي معدات دوارة"
+
+# ==========================================
+# G. السباكة وتركيب الأنابيب
+# ==========================================
+plumber: "سباك"
+pipefitter: "مركب أنابيب"
+pipe_installer: "مركب مواسير"
+water_pipeline_fitter: "مركب خطوط مياه"
+sanitary_plumber: "سباك صحي"
+industrial_plumber: "سباك صناعي"
+drainage_technician: "فني صرف صحي"
+pipefitting_helper: "مساعد مركب أنابيب"
+
+# ==========================================
+# H. الاتصالات والإلكترونيات
+# ==========================================
+telecommunications_technician: "فني اتصالات"
+telecom_installer: "مركب اتصالات"
+network_installer: "مركب شبكات"
+fiber_optic_technician: "فني ألياف بصرية"
+satellite_equipment_installer: "مركب أجهزة أقمار صناعية"
+telecommunications_line_installer: "مركب خطوط اتصالات"
+electronic_equipment_repairer: "مصلح أجهزة إلكترونية"
+radio_technician: "فني راديو"
+tower_technician: "فني أبراج"
+office_machine_repairer: "مصلح أجهزة مكتبية"
+
+# ==========================================
+# I. الفنيون المتخصصون
+# ==========================================
+welder: "لحام / حداد"
+certified_welder: "لحام معتمد"
+appliance_repairer: "مصلح أجهزة منزلية"
+home_appliance_technician: "فني أجهزة منزلية"
+elevator_technician: "فني مصاعد"
+elevator_installer: "مركب مصاعد"
+locksmith: "صانع أقفال"
+computer_repair_technician: "فني إصلاح حاسوب"
+medical_equipment_repairer: "مصلح معدات طبية"
+control_valve_technician: "فني صمامات تحكم"
+instrumentation_technician: "فني أجهزة قياس"
+security_systems_installer: "مركب أنظمة أمنية"
+
+# ==========================================
+# J. المساعدون والعاملون الداعمون
+# ==========================================
+maintenance_helper: "مساعد صيانة"
+electrician_helper: "مساعد كهربائي"
+mechanic_helper: "مساعد ميكانيكي"
+hvac_helper: "مساعد فني تكييف"
+installation_helper: "مساعد تركيب"
+repair_helper: "مساعد إصلاح"
+technician_assistant: "مساعد تقني"
+handyman: "عامل صيانة شاملة"
