@@ -1,0 +1,143 @@
+# =================================
+# العناية الشخصية والخدمات
+# =================================
+
+# =================================
+# أعلى 10 وظائف أولوية
+# =================================
+barber: "حلاق"
+hairdresser: "مصفف شعر"
+beautician: "خبير تجميل"
+childcare_worker: "عامل رعاية الطفل"
+nanny: "مربية أطفال"
+tour_guide: "مرشد سياحي"
+fitness_trainer: "مدرب لياقة بدنية"
+spa_therapist: "معالج سبا"
+massage_therapist: "أخصائي تدليك"
+caregiver: "مقدم رعاية"
+
+# =================================
+# خدمات التجميل والعناية
+# =================================
+aesthetician: "أخصائي تجميل"
+cosmetologist: "خبير تجميل"
+hair_colorist: "أخصائي صبغ الشعر"
+hair_stylist: "مصمم الشعر"
+makeup_artist: "خبير مكياج"
+manicurist: "أخصائي مانيكير"
+nail_technician: "فني أظافر"
+pedicurist: "أخصائي باديكير"
+skincare_specialist: "أخصائي العناية بالبشرة"
+tattoo_artist: "فنان وشم"
+
+# =================================
+# خدمات رعاية الأطفال والأسرة
+# =================================
+au_pair: "مساعدة منزلية"
+babysitter: "جليسة أطفال"
+childcare_assistant: "مساعد رعاية أطفال"
+daycare_provider: "مقدم رعاية نهارية"
+daycare_teacher: "معلم حضانة"
+early_childhood_educator: "مربي الطفولة المبكرة"
+governess: "مربية منزل"
+kindergarten_teacher: "معلم روضة"
+nursery_assistant: "مساعد حضانة"
+preschool_teacher: "معلم ما قبل المدرسة"
+
+# =================================
+# رعاية المسنين والصحة المنزلية
+# =================================
+companion: "مرافق"
+elder_care_assistant: "مساعد رعاية المسنين"
+elder_caregiver: "مقدم رعاية المسنين"
+home_health_aide: "مساعد صحة منزلية"
+homemaker: "ربة منزل"
+hospice_aide: "مساعد رعاية المحتضرين"
+live_in_caregiver: "مقدم رعاية مقيم"
+nursing_assistant: "مساعد تمريض"
+patient_sitter: "جليس مريض"
+personal_care_aide: "مساعد عناية شخصية"
+
+# =================================
+# اللياقة البدنية والرياضة
+# =================================
+aerobics_instructor: "مدرب إيروبكس"
+athletic_trainer: "مدرب رياضي"
+basketball_coach: "مدرب كرة سلة"
+gym_instructor: "مدرب صالة رياضية"
+personal_trainer: "مدرب شخصي"
+pilates_instructor: "مدرب بيلاتس"
+recreation_worker: "عامل ترفيه"
+sports_coach: "مدرب رياضي"
+swim_instructor: "مدرب سباحة"
+yoga_instructor: "مدرب يوغا"
+zumba_instructor: "مدرب زومبا"
+
+# =================================
+# الصحة والعلاج
+# =================================
+acupuncturist: "أخصائي وخز بالإبر"
+aromatherapist: "أخصائي علاج عطري"
+chiropractor: "أخصائي تقويم عظام"
+massage_therapist_wellness: "معالج تدليك"
+nutritionist: "أخصائي تغذية"
+physical_therapist: "أخصائي علاج طبيعي"
+reflexologist: "أخصائي علاج انعكاسي"
+spa_attendant: "موظف سبا"
+spa_manager: "مدير سبا"
+wellness_coach: "مدرب صحة"
+
+# =================================
+# الضيافة والسياحة
+# =================================
+bellhop: "حمال فندق"
+concierge: "موظف الخدمات"
+cultural_guide: "مرشد ثقافي"
+event_planner: "منظم فعاليات"
+guest_relations_officer: "موظف علاقات الضيوف"
+heritage_guide: "مرشد تراثي"
+hospitality_attendant: "موظف ضيافة"
+hotel_porter: "حمال فندق"
+religious_tour_guide: "مرشد سياحة دينية"
+tour_coordinator: "منسق جولات"
+tour_operator: "منظم رحلات"
+travel_agent: "وكيل سفر"
+travel_consultant: "مستشار سفر"
+visitor_services_coordinator: "منسق خدمات الزوار"
+
+# =================================
+# خدمات الجنازات
+# =================================
+cemetery_worker: "عامل مقبرة"
+crematory_operator: "عامل محرقة"
+embalmer: "محنط"
+funeral_attendant: "موظف جنازة"
+funeral_director: "مدير جنازات"
+funeral_service_manager: "مدير خدمات جنائزية"
+grave_digger: "حفار قبور"
+mortician: "مدير مشرحة"
+pallbearer: "حامل النعش"
+
+# =================================
+# الترفيه والتسلية
+# =================================
+amusement_attendant: "موظف ملاهي"
+casino_worker: "موظف كازينو"
+dj: "دي جي"
+entertainment_coordinator: "منسق ترفيه"
+game_attendant: "موظف ألعاب"
+lifeguard: "منقذ"
+party_entertainer: "مسلي حفلات"
+theme_park_attendant: "موظف حديقة ترفيهية"
+usher: "مرشد مقاعد"
+
+# =================================
+# رعاية الحيوانات
+# =================================
+animal_caretaker: "مربي حيوانات"
+animal_groomer: "مصفف حيوانات"
+animal_trainer: "مدرب حيوانات"
+dog_walker: "ماشي الكلاب"
+pet_sitter: "جليس حيوانات"
+veterinary_assistant: "مساعد بيطري"
+zoo_keeper: "حارس حديقة حيوان"
