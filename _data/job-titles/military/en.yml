@@ -1,0 +1,151 @@
+# ===================================
+# MILITARY OCCUPATIONS
+# ===================================
+
+# ===================================
+# TOP 10 HIGH-PRIORITY POSITIONS
+# ===================================
+soldier: "Soldier"
+police_officer: "Police Officer"
+security_guard: "Security Guard"
+army_officer: "Army Officer"
+commando: "Commando"
+sergeant: "Sergeant"
+intelligence_analyst: "Intelligence Analyst"
+border_guard: "Border Guard"
+military_police: "Military Police"
+combat_medic: "Combat Medic"
+
+# ===================================
+# OFFICER RANKS & LEADERSHIP
+# ===================================
+adjutant: "Adjutant"
+air_force_officer: "Air Force Officer"
+artillery_officer: "Artillery Officer"
+battalion_commander: "Battalion Commander"
+brigade_commander: "Brigade Commander"
+captain: "Captain"
+colonel: "Colonel"
+commanding_officer: "Commanding Officer"
+company_commander: "Company Commander"
+counter_terrorism_officer: "Counter Terrorism Officer"
+division_commander: "Division Commander"
+executive_officer: "Executive Officer"
+field_officer: "Field Officer"
+general: "General"
+lieutenant: "Lieutenant"
+lieutenant_colonel: "Lieutenant Colonel"
+major: "Major"
+major_general: "Major General"
+operations_officer: "Operations Officer"
+platoon_leader: "Platoon Leader"
+second_lieutenant: "Second Lieutenant"
+senior_officer: "Senior Officer"
+
+# ===================================
+# ENLISTED & NCO RANKS
+# ===================================
+chief_sergeant: "Chief Sergeant"
+corporal: "Corporal"
+first_sergeant: "First Sergeant"
+lance_corporal: "Lance Corporal"
+master_sergeant: "Master Sergeant"
+private: "Private"
+private_first_class: "Private First Class"
+senior_sergeant: "Senior Sergeant"
+staff_sergeant: "Staff Sergeant"
+
+# ===================================
+# COMBAT & TACTICAL ROLES
+# ===================================
+anti_aircraft_gunner: "Anti-Aircraft Gunner"
+anti_tank_specialist: "Anti-Tank Specialist"
+armor_crew_member: "Armor Crew Member"
+artillery_crew_member: "Artillery Crew Member"
+combat_engineer: "Combat Engineer"
+demolition_specialist: "Demolition Specialist"
+explosive_ordnance_disposal_technician: "Explosive Ordnance Disposal Technician"
+grenadier: "Grenadier"
+infantry_soldier: "Infantry Soldier"
+machine_gunner: "Machine Gunner"
+marksman: "Marksman"
+mortar_crew_member: "Mortar Crew Member"
+paratrooper: "Paratrooper"
+reconnaissance_soldier: "Reconnaissance Soldier"
+rifleman: "Rifleman"
+scout: "Scout"
+sharpshooter: "Sharpshooter"
+sniper: "Sniper"
+tank_commander: "Tank Commander"
+tank_crew_member: "Tank Crew Member"
+
+# ===================================
+# SPECIAL OPERATIONS & ELITE UNITS
+# ===================================
+counter_terrorism_commando: "Counter Terrorism Commando"
+peshmerga_fighter: "Peshmerga Fighter"
+special_forces_operator: "Special Forces Operator"
+special_operations_soldier: "Special Operations Soldier"
+swat_team_member: "SWAT Team Member"
+
+# ===================================
+# INTELLIGENCE & RECONNAISSANCE
+# ===================================
+counter_intelligence_officer: "Counter Intelligence Officer"
+intelligence_officer: "Intelligence Officer"
+military_intelligence_analyst: "Military Intelligence Analyst"
+signals_intelligence_specialist: "Signals Intelligence Specialist"
+surveillance_operator: "Surveillance Operator"
+
+# ===================================
+# COMMUNICATIONS & TECHNOLOGY
+# ===================================
+communications_specialist: "Communications Specialist"
+cyber_warfare_specialist: "Cyber Warfare Specialist"
+radio_operator: "Radio Operator"
+signal_corps_specialist: "Signal Corps Specialist"
+
+# ===================================
+# AVIATION & AIR FORCE
+# ===================================
+air_traffic_controller_military: "Air Traffic Controller (Military)"
+aircraft_mechanic_military: "Aircraft Mechanic (Military)"
+fighter_pilot: "Fighter Pilot"
+helicopter_pilot: "Helicopter Pilot"
+military_pilot: "Military Pilot"
+uav_operator: "UAV Operator"
+
+# ===================================
+# LOGISTICS & SUPPORT
+# ===================================
+ammunition_specialist: "Ammunition Specialist"
+armorer: "Armorer"
+driver_military: "Driver (Military)"
+logistics_specialist: "Logistics Specialist"
+military_supply_specialist: "Military Supply Specialist"
+quartermaster: "Quartermaster"
+supply_sergeant: "Supply Sergeant"
+transport_specialist: "Transport Specialist"
+
+# ===================================
+# MEDICAL & HEALTHCARE
+# ===================================
+flight_surgeon: "Flight Surgeon"
+medical_officer: "Medical Officer"
+military_dentist: "Military Dentist"
+military_nurse: "Military Nurse"
+paramedic_military: "Paramedic (Military)"
+
+# ===================================
+# LAW ENFORCEMENT & SECURITY
+# ===================================
+federal_police_officer: "Federal Police Officer"
+military_police_officer: "Military Police Officer"
+provost_marshal: "Provost Marshal"
+security_officer: "Security Officer"
+
+# ===================================
+# TRAINING & ADMINISTRATION
+# ===================================
+drill_instructor: "Drill Instructor"
+military_instructor: "Military Instructor"
