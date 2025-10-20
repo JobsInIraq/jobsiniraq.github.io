@@ -153,6 +153,13 @@
         "EntityLanguage": "العربية, English",
         "EntityWebsite": "https://taeen.iq/",
         "SocialMediaURL": "https://www.facebook.com/taeen.iq, https://www.instagram.com/taeen.iq"
+      },
+      {
+        "EntityName": "Job Zone",
+        "EntityCategory": "Job Portal",
+        "EntityLanguage": "العربية, English",
+        "EntityWebsite": "https://www.jobzone.ai/",
+        "SocialMediaURL": "https://www.facebook.com/jobzoneiq/, https://www.instagram.com/jobzoneiq"
       }
     ]
   }
