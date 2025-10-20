@@ -1,0 +1,155 @@
+# =================================
+# PRODUCTION OCCUPATIONS
+# =================================
+
+# =================================
+# TOP 10 HIGH-PRIORITY POSITIONS
+# =================================
+welder: "Welder"
+production_worker: "Production Worker"
+quality_control_inspector: "Quality Control Inspector"
+machinist: "Machinist"
+assembler: "Assembler"
+baker: "Baker"
+butcher: "Butcher"
+electrician: "Electrician"
+mechanic: "Mechanic"
+factory_worker: "Factory Worker"
+
+# =================================
+# METAL WORKING & FABRICATION
+# =================================
+arc_welder: "Arc Welder"
+blacksmith: "Blacksmith"
+boilermaker: "Boilermaker"
+fabricator: "Fabricator"
+foundry_worker: "Foundry Worker"
+ironworker: "Ironworker"
+metal_fabricator: "Metal Fabricator"
+mig_welder: "MIG Welder"
+sheet_metal_worker: "Sheet Metal Worker"
+tig_welder: "TIG Welder"
+
+# =================================
+# MACHINING & MECHANICAL
+# =================================
+cnc_machine_operator: "CNC Machine Operator"
+cnc_machinist: "CNC Machinist"
+drilling_machine_operator: "Drilling Machine Operator"
+grinder: "Grinder"
+lathe_operator: "Lathe Operator"
+machine_operator: "Machine Operator"
+machine_tool_operator: "Machine Tool Operator"
+milling_machine_operator: "Milling Machine Operator"
+press_operator: "Press Operator"
+tool_and_die_maker: "Tool and Die Maker"
+
+# =================================
+# ASSEMBLY & MANUFACTURING
+# =================================
+aircraft_assembler: "Aircraft Assembler"
+assembly_line_worker: "Assembly Line Worker"
+electrical_assembler: "Electrical Assembler"
+electronics_assembler: "Electronics Assembler"
+equipment_assembler: "Equipment Assembler"
+fitter: "Fitter"
+manufacturing_technician: "Manufacturing Technician"
+mechanical_assembler: "Mechanical Assembler"
+product_assembler: "Product Assembler"
+structural_metal_fitter: "Structural Metal Fitter"
+
+# =================================
+# FOOD PRODUCTION & PROCESSING
+# =================================
+bakery_worker: "Bakery Worker"
+confectionery_worker: "Confectionery Worker"
+food_batchmaker: "Food Batchmaker"
+food_processing_worker: "Food Processing Worker"
+meat_cutter: "Meat Cutter"
+meat_packer: "Meat Packer"
+pastry_chef: "Pastry Chef"
+slaughterer: "Slaughterer"
+
+# =================================
+# TEXTILE & GARMENT
+# =================================
+fabric_cutter: "Fabric Cutter"
+garment_worker: "Garment Worker"
+pattern_maker: "Pattern Maker"
+sewing_machine_operator: "Sewing Machine Operator"
+tailor: "Tailor"
+textile_machine_operator: "Textile Machine Operator"
+textile_worker: "Textile Worker"
+upholsterer: "Upholsterer"
+
+# =================================
+# ELECTRICAL & ELECTRONICS
+# =================================
+electrical_equipment_assembler: "Electrical Equipment Assembler"
+electrical_technician: "Electrical Technician"
+electronics_production_worker: "Electronics Production Worker"
+electronics_technician: "Electronics Technician"
+wiring_technician: "Wiring Technician"
+
+# =================================
+# PACKAGING & MATERIAL HANDLING
+# =================================
+forklift_operator: "Forklift Operator"
+material_handler: "Material Handler"
+packer: "Packer"
+packaging_machine_operator: "Packaging Machine Operator"
+packaging_worker: "Packaging Worker"
+shipper: "Shipper"
+warehouse_worker: "Warehouse Worker"
+
+# =================================
+# QUALITY CONTROL & INSPECTION
+# =================================
+inspector: "Inspector"
+ndt_inspector: "NDT Inspector"
+qa_inspector: "QA Inspector"
+qc_engineer: "QC Engineer"
+quality_assurance_manager: "Quality Assurance Manager"
+quality_control_technician: "Quality Control Technician"
+welding_inspector: "Welding Inspector"
+
+# =================================
+# MAINTENANCE & REPAIR
+# =================================
+industrial_electrician: "Industrial Electrician"
+industrial_mechanic: "Industrial Mechanic"
+maintenance_mechanic: "Maintenance Mechanic"
+maintenance_technician: "Maintenance Technician"
+millwright: "Millwright"
+
+# =================================
+# SPECIALIZED PRODUCTION
+# =================================
+carpenter: "Carpenter"
+cement_mason: "Cement Mason"
+chemical_operator: "Chemical Operator"
+glassmaker: "Glassmaker"
+jeweler: "Jeweler"
+molder: "Molder"
+painter_industrial: "Painter (Industrial)"
+plastic_molder: "Plastic Molder"
+printer: "Printer"
+tire_builder: "Tire Builder"
+
+# =================================
+# SUPERVISORY & MANAGEMENT
+# =================================
+factory_manager: "Factory Manager"
+line_supervisor: "Line Supervisor"
+production_manager: "Production Manager"
+production_supervisor: "Production Supervisor"
+shift_supervisor: "Shift Supervisor"
+
+# =================================
+# GENERAL PRODUCTION
+# =================================
+industrial_worker: "Industrial Worker"
+machine_feeder: "Machine Feeder"
+manufacturing_worker: "Manufacturing Worker"
+operative: "Operative"
+process_worker: "Process Worker"
