@@ -1,0 +1,155 @@
+# =================================
+# المهن الإنتاجية (الإنتاج والتصنيع)
+# =================================
+
+# =================================
+# أهم 10 وظائف ذات أولوية عالية
+# =================================
+welder: "لحّام"
+production_worker: "عامل إنتاج"
+quality_control_inspector: "مفتش مراقبة الجودة"
+machinist: "مشغل آلات"
+assembler: "عامل تجميع"
+baker: "خبّاز"
+butcher: "جزّار"
+electrician: "كهربائي"
+mechanic: "ميكانيكي"
+factory_worker: "عامل مصنع"
+
+# =================================
+# تشغيل المعادن والتصنيع المعدني
+# =================================
+arc_welder: "لحام قوسي"
+blacksmith: "حدّاد"
+boilermaker: "صانع غلايات"
+fabricator: "عامل تشكيل معادن"
+foundry_worker: "عامل مسبك"
+ironworker: "عامل حديد"
+metal_fabricator: "مشكل معادن"
+mig_welder: "لحام ميج"
+sheet_metal_worker: "عامل صفائح معدنية"
+tig_welder: "لحام تيج"
+
+# =================================
+# التشغيل الميكانيكي والماكينات
+# =================================
+cnc_machine_operator: "مشغل آلات سي إن سي"
+cnc_machinist: "ميكانيكي سي إن سي"
+drilling_machine_operator: "مشغل آلة الحفر"
+grinder: "مشغل آلة الطحن"
+lathe_operator: "مشغل مخرطة"
+machine_operator: "مشغل آلات"
+machine_tool_operator: "مشغل آلات الأدوات"
+milling_machine_operator: "مشغل آلة التفريز"
+press_operator: "مشغل آلة الكبس"
+tool_and_die_maker: "صانع أدوات وقوالب"
+
+# =================================
+# التجميع والتصنيع
+# =================================
+aircraft_assembler: "عامل تجميع طائرات"
+assembly_line_worker: "عامل خط تجميع"
+electrical_assembler: "عامل تجميع كهربائي"
+electronics_assembler: "عامل تجميع إلكترونيات"
+equipment_assembler: "عامل تجميع معدات"
+fitter: "مركّب"
+manufacturing_technician: "فني تصنيع"
+mechanical_assembler: "عامل تجميع ميكانيكي"
+product_assembler: "عامل تجميع منتجات"
+structural_metal_fitter: "مركب معادن إنشائية"
+
+# =================================
+# إنتاج ومعالجة الأغذية
+# =================================
+bakery_worker: "عامل مخبز"
+confectionery_worker: "عامل حلويات"
+food_batchmaker: "صانع دفعات أغذية"
+food_processing_worker: "عامل معالجة أغذية"
+meat_cutter: "قاطع لحوم"
+meat_packer: "معبئ لحوم"
+pastry_chef: "طاهي معجنات"
+slaughterer: "جزّار"
+
+# =================================
+# المنسوجات والملابس
+# =================================
+fabric_cutter: "قاطع أقمشة"
+garment_worker: "عامل ملابس"
+pattern_maker: "صانع أنماط"
+sewing_machine_operator: "مشغل ماكينة خياطة"
+tailor: "خياط"
+textile_machine_operator: "مشغل آلات نسيج"
+textile_worker: "عامل نسيج"
+upholsterer: "منجد"
+
+# =================================
+# الكهرباء والإلكترونيات
+# =================================
+electrical_equipment_assembler: "عامل تجميع معدات كهربائية"
+electrical_technician: "فني كهربائي"
+electronics_production_worker: "عامل إنتاج إلكترونيات"
+electronics_technician: "فني إلكترونيات"
+wiring_technician: "فني أسلاك"
+
+# =================================
+# التعبئة ومناولة المواد
+# =================================
+forklift_operator: "مشغل رافعة شوكية"
+material_handler: "مناول مواد"
+packer: "معبئ"
+packaging_machine_operator: "مشغل آلة تعبئة"
+packaging_worker: "عامل تعبئة"
+shipper: "عامل شحن"
+warehouse_worker: "عامل مستودع"
+
+# =================================
+# مراقبة الجودة والتفتيش
+# =================================
+inspector: "مفتش"
+ndt_inspector: "مفتش اختبار غير إتلافي"
+qa_inspector: "مفتش ضمان جودة"
+qc_engineer: "مهندس مراقبة جودة"
+quality_assurance_manager: "مدير ضمان الجودة"
+quality_control_technician: "فني مراقبة الجودة"
+welding_inspector: "مفتش لحام"
+
+# =================================
+# الصيانة والإصلاح
+# =================================
+industrial_electrician: "كهربائي صناعي"
+industrial_mechanic: "ميكانيكي صناعي"
+maintenance_mechanic: "ميكانيكي صيانة"
+maintenance_technician: "فني صيانة"
+millwright: "ميكانيكي المعامل"
+
+# =================================
+# الإنتاج المتخصص
+# =================================
+carpenter: "نجّار"
+cement_mason: "بنّاء إسمنت"
+chemical_operator: "مشغل كيميائي"
+glassmaker: "صانع زجاج"
+jeweler: "صائغ"
+molder: "قالب"
+painter_industrial: "دهان صناعي"
+plastic_molder: "قالب بلاستيك"
+printer: "طباع"
+tire_builder: "صانع إطارات"
+
+# =================================
+# الإشراف والإدارة
+# =================================
+factory_manager: "مدير مصنع"
+line_supervisor: "مشرف خط"
+production_manager: "مدير إنتاج"
+production_supervisor: "مشرف إنتاج"
+shift_supervisor: "مشرف وردية"
+
+# =================================
+# الإنتاج العام
+# =================================
+industrial_worker: "عامل صناعي"
+machine_feeder: "مغذي آلات"
+manufacturing_worker: "عامل تصنيع"
+operative: "عامل تشغيل"
+process_worker: "عامل معالجة"
