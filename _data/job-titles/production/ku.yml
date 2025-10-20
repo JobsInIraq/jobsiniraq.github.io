@@ -1,0 +1,155 @@
+# ===============================
+# پیشەی بەرهەمهێنان
+# ===============================
+
+# ===============================
+# 10 پۆستی سەرەکی بەرز
+# ===============================
+welder: "جۆشکار"
+production_worker: "کرێکاری بەرهەمهێنان"
+quality_control_inspector: "پشکنەری کۆنترۆڵی جۆری"
+machinist: "ماشینکار"
+assembler: "کۆکەرەوە"
+baker: "نانهەنان"
+butcher: "قەساب"
+electrician: "کارەبازانی"
+mechanic: "میکانیک"
+factory_worker: "کرێکاری کارگە"
+
+# ===============================
+# METAL WORKING & FABRICATION
+# ===============================
+arc_welder: "جۆشکاری کەمان"
+blacksmith: "ئاسنگەر"
+boilermaker: "دروستکەری بۆیلەر"
+fabricator: "دروستکار"
+foundry_worker: "کرێکاری تۆکمەخانە"
+ironworker: "کرێکاری ئاسن"
+metal_fabricator: "دروستکەری کانزا"
+mig_welder: "جۆشکاری میگ"
+sheet_metal_worker: "کرێکاری تەختەی کانزا"
+tig_welder: "جۆشکاری تیگ"
+
+# ===============================
+# MACHINING & MECHANICAL
+# ===============================
+cnc_machine_operator: "کارپێکەری ماشینی سی ئێن سی"
+cnc_machinist: "ماشینکاری سی ئێن سی"
+drilling_machine_operator: "کارپێکەری ماشینی کون کردن"
+grinder: "هاڕەکار"
+lathe_operator: "کارپێکەری ماشینی تراش"
+machine_operator: "کارپێکەری ماشین"
+machine_tool_operator: "کارپێکەری ماشینی ئامێر"
+milling_machine_operator: "کارپێکەری ماشینی هاڕین"
+press_operator: "کارپێکەری ماشینی پرێس"
+tool_and_die_maker: "دروستکەری ئامێر و قاڵب"
+
+# ===============================
+# ASSEMBLY & MANUFACTURING
+# ===============================
+aircraft_assembler: "کۆکەرەوەی فڕۆکە"
+assembly_line_worker: "کرێکاری هێڵی کۆکردنەوە"
+electrical_assembler: "کۆکەرەوەی کارەبایی"
+electronics_assembler: "کۆکەرەوەی ئەلیکترۆنی"
+equipment_assembler: "کۆکەرەوەی ئامێر"
+fitter: "دانەر"
+manufacturing_technician: "تەکنیسیەنی بەرهەمهێنان"
+mechanical_assembler: "کۆکەرەوەی میکانیکی"
+product_assembler: "کۆکەرەوەی بەرهەم"
+structural_metal_fitter: "دانەری کانزای بیناسازی"
+
+# ===============================
+# FOOD PRODUCTION & PROCESSING
+# ===============================
+bakery_worker: "کرێکاری نانهەنان"
+confectionery_worker: "کرێکاری شیرینی"
+food_batchmaker: "دروستکەری گروپی خۆراک"
+food_processing_worker: "کرێکاری پرۆسێسکردنی خۆراک"
+meat_cutter: "بڕەری گۆشت"
+meat_packer: "کۆکەرەوەی گۆشت"
+pastry_chef: "شێفی شیرینی"
+slaughterer: "سەربڕ"
+
+# ===============================
+# TEXTILE & GARMENT
+# ===============================
+fabric_cutter: "بڕەری قوماش"
+garment_worker: "کرێکاری جلوبەرگ"
+pattern_maker: "دروستکەری شێوە"
+sewing_machine_operator: "کارپێکەری ماشینی دوورین"
+tailor: "دەرزی"
+textile_machine_operator: "کارپێکەری ماشینی قوماش"
+textile_worker: "کرێکاری قوماش"
+upholsterer: "ڕووکەش"
+
+# ===============================
+# ELECTRICAL & ELECTRONICS
+# ===============================
+electrical_equipment_assembler: "کۆکەرەوەی ئامێری کارەبایی"
+electrical_technician: "تەکنیسیەنی کارەبایی"
+electronics_production_worker: "کرێکاری بەرهەمهێنانی ئەلیکترۆنی"
+electronics_technician: "تەکنیسیەنی ئەلیکترۆنی"
+wiring_technician: "تەکنیسیەنی وایەر"
+
+# ===============================
+# PACKAGING & MATERIAL HANDLING
+# ===============================
+forklift_operator: "کارپێکەری فۆرکلفت"
+material_handler: "کارپێکەری کەرەستە"
+packer: "کۆکەر"
+packaging_machine_operator: "کارپێکەری ماشینی کۆکردنەوە"
+packaging_worker: "کرێکاری کۆکردنەوە"
+shipper: "شاردنەوە"
+warehouse_worker: "کرێکاری کۆگا"
+
+# ===============================
+# QUALITY CONTROL & INSPECTION
+# ===============================
+inspector: "پشکنەری جۆری"
+ndt_inspector: "پشکنەری تاقیکردنەوەی ناوێرانکار"
+qa_inspector: "پشکنەری دڵنیایی جۆری"
+qc_engineer: "ئەندازیاری کۆنترۆڵی جۆری"
+quality_assurance_manager: "بەڕێوەبەری دڵنیایی جۆری"
+quality_control_technician: "تەکنیسیەنی کۆنترۆڵی جۆری"
+welding_inspector: "پشکنەری جۆشکاری"
+
+# ===============================
+# MAINTENANCE & REPAIR
+# ===============================
+industrial_electrician: "کارەبازانی پیشەسازی"
+industrial_mechanic: "میکانیکی پیشەسازی"
+maintenance_mechanic: "میکانیکی چاککردنەوە"
+maintenance_technician: "تەکنیسیەنی چاککردنەوە"
+millwright: "میکانیکی کارگە"
+
+# ===============================
+# SPECIALIZED PRODUCTION
+# ===============================
+carpenter: "دارتاش"
+cement_mason: "بیناساز سمێنت"
+chemical_operator: "کارپێکەری کیمیایی"
+glassmaker: "شووشەساز"
+jeweler: "زێڕنگار"
+molder: "قاڵبساز"
+painter_industrial: "ڕەنگکەری پیشەسازی"
+plastic_molder: "قاڵبکەری پلاستیک"
+printer: "چاپکار"
+tire_builder: "دروستکەری تایە"
+
+# ===============================
+# SUPERVISORY & MANAGEMENT
+# ===============================
+factory_manager: "بەڕێوەبەری کارگە"
+line_supervisor: "سەرپەرشتیاری هێڵ"
+production_manager: "بەڕێوەبەری بەرهەمهێنان"
+production_supervisor: "سەرپەرشتیاری بەرهەمهێنان"
+shift_supervisor: "سەرپەرشتیاری شیفت"
+
+# ===============================
+# GENERAL PRODUCTION
+# ===============================
+industrial_worker: "کرێکاری پیشەسازی"
+machine_feeder: "خۆراکدەری ماشین"
+manufacturing_worker: "کرێکاری بەرهەمهێنان"
+operative: "کارپێکەر"
+process_worker: "کرێکاری پرۆسێس"
