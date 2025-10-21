@@ -1,0 +1,139 @@
+# ==============================
+# پیشەی خزمەتگوزاری پاراستن
+# ==============================
+
+# --------------------------------
+# ١٠ ڕۆڵی سەرەکی پارێزەر
+# --------------------------------
+security_guard: "پاسەوانی ئاسایش"
+police_officer: "ئەفسەری پۆلیس"
+firefighter: "ئاگرکوژێنەوە"
+bodyguard: "پاسەوان"
+safety_officer: "ئەفسەری سەلامەتی"
+paramedic: "فریاگوزاری"
+private_security_contractor: "بەڵێندەری ئاسایشی تایبەت"
+protective_security_specialist: "پسپۆڕی ئاسایشی پارێزەر"
+correctional_officer: "ئەفسەری چاکسازی"
+civil_defense_worker: "کارمەندی بەرگری شارستانی"
+
+# --------------------------------
+# جێبەجێکردنی یاسا
+# --------------------------------
+border_patrol_officer: "ئەفسەری دەوریەی سنوور"
+criminal_investigator: "لێکۆڵەری تاوان"
+detective: "بەدواداچوون"
+federal_police_officer: "ئەفسەری پۆلیسی فیدراڵی"
+homicide_detective: "بەدواداچوونی کوشتن"
+narcotics_officer: "ئەفسەری ماددە هۆشبەرەکان"
+patrol_officer: "ئەفسەری دەوریە"
+police_chief: "سەرۆکی پۆلیس"
+police_sergeant: "رەیسبەرەی پۆلیس"
+sergeant: "سەرجەنت"
+sheriff: "شەریف"
+traffic_police_officer: "ئەفسەری پۆلیسی هاتوچۆ"
+undercover_officer: "ئەفسەری نهێنی"
+
+# --------------------------------
+# خزمەتگوزاری ئاگرکوژێنەوە و فریاکەوتن
+# --------------------------------
+ambulance_driver: "شۆفێری ئەمبولانس"
+emergency_medical_technician_emt: "تەکنیکی پزیشکی فریاگوزاری (EMT)"
+fire_captain: "کاپتنی ئاگر"
+fire_chief: "سەرۆکی ئاگرکوژێنەوە"
+fire_engineer: "ئەندازیاری ئاگرکوژێنەوە"
+fire_inspector: "پشکنەری ئاگر"
+fire_marshal: "مارشاڵی ئاگرکوژێنەوە"
+firefighter_paramedic: "فریاگوزاری ئاگرکوژێنەوە"
+first_responder: "وەڵامدەری یەکەم"
+hazmat_technician: "تەکنیکی هازمات"
+rescue_diver: "غەواس ڕزگارکردن"
+rescue_worker: "کارمەندی ڕزگارکردن"
+wildland_firefighter: "ئاگریکوژی کێوی"
+
+# --------------------------------
+# خزمەتگوزاری ئاسایش
+# --------------------------------
+airport_security_officer: "ئەفسەری ئاسایشی فڕۆکەخانە"
+armed_guard: "پاسەوانی چەکدار"
+bank_security_guard: "پاسەوانی ئاسایشی بانک"
+campus_security_officer: "ئەفسەری ئاسایشی کەمپس"
+commercial_security_guard: "پاسەوانی ئاسایشی بازرگانی"
+embassy_security_guard: "پاسەوانی ئاسایشی باڵیۆزخانە"
+event_security_officer: "ئەفسەری ئاسایشی ڕووداوەکان"
+facility_security_officer: "ئەفسەری ئاسایشی ئاسانکاری"
+government_security_guard: "پاسەوانی ئاسایشی حکومەت"
+hotel_security_officer: "ئەفسەری ئاسایشی هۆتێل"
+night_watchman: "چاودێری شەو"
+residential_security_guard: "پاسەوانی ئاسایشی نیشتەجێبوون"
+retail_security_guard: "پاسەوانی ئاسایشی تاکەکەسی"
+shopping_mall_security: "پاسەوانی ئاسایشی مۆڵی بازرگانی"
+static_security_guard: "پاسەوانی ئاسایشی ئیستاتیک"
+unarmed_security_guard: "پاسەوانی بێ چەک"
+
+# --------------------------------
+# پاراستنی کەسی و پاراستنی نزیک
+# --------------------------------
+close_protection_officer: "ئەفسەری پاراستنی داخراو"
+diplomatic_protection_officer: "ئەفسەری پاراستنی دیپلۆماسی"
+executive_protection_agent: "بریکاری پاراستنی جێبەجێکار"
+personal_protection_detail_psd: "وردەکاری پاراستنی کەسی (PSD)"
+personal_security_driver: "شۆفێری ئاسایشی کەسی"
+vip_protection_officer: "ئەفسەری پاراستنی VIP"
+
+# --------------------------------
+# چاکسازی و ڕاگرتن
+# --------------------------------
+bailiff: "داوادکار"
+correctional_sergeant: "سەربازی چاکسازی"
+court_security_officer: "ئەفسەری ئاسایشی دادگا"
+detention_officer: "ئەفسەری دەستبەسەرکردن"
+jailer: "زیندانیکەر"
+juvenile_detention_officer: "ئەفسەری دەستبەسەرکردنی نەوجەوانان"
+parole_officer: "ئەفسەری پارێزبەندی"
+prison_guard: "پاسەوانی زیندان"
+prison_warden: "سەرپەرشتیاری زیندان"
+probation_officer: "ئەفسەری تاقیکردنەوە"
+
+# --------------------------------
+# سەلامەتی و تەندروستی شوێنی کار
+# --------------------------------
+construction_safety_officer: "ئەفسەری سەلامەتی بیناسازی"
+environmental_health_officer: "ئەفسەری تەندروستی ژینگە"
+fire_safety_inspector: "پشکنەری سەلامەتی ئاگر"
+health_and_safety_officer: "ئەفسەری تەندروستی و سەلامەتی"
+hse_coordinator: "ڕێکخەری HSE"
+industrial_safety_officer: "ئەفسەری سەلامەتی پیشەسازی"
+occupational_health_specialist: "پسپۆڕی تەندروستی پیشەیی"
+safety_coordinator: "ڕێکخەری سەلامەتی"
+safety_inspector: "پشکنەری سەلامەتی"
+safety_manager: "بەڕێوەبەری سەلامەتی"
+site_safety_officer: "ئەفسەری سەلامەتی شوێن"
+
+# --------------------------------
+# وەڵامدانەوەی فریاگوزاری و کارەساتەکان
+# --------------------------------
+crisis_response_officer: "ئەفسەری وەڵامدانەوەی قەیرانەکان"
+disaster_response_coordinator: "ڕێکخەری وەڵامدانەوەی کارەسات"
+emergency_dispatcher: "ڕەوانەکاری فریاگوزاری"
+emergency_manager: "بەڕێوەبەری فریاگوزاری"
+emergency_response_coordinator: "ڕێکخەری وەڵامدانەوەی فریاگوزاری"
+incident_commander: "فەرماندەی ڕووداوەکان"
+search_and_rescue_specialist: "پسپۆڕی گەڕان و ڕزگارکردن"
+
+# --------------------------------
+# خزمەتگوزاری پاراستنی تایبەتمەند
+# --------------------------------
+animal_control_officer: "ئەفسەری کۆنترۆڵی ئاژەڵان"
+bounty_hunter: "ڕاوچی خەڵات"
+building_inspector_safety: "پشکنەری بینا (سەلامەتی)"
+casino_security_officer: "ئەفسەری ئاسایشی گازینۆ"
+code_enforcement_officer: "ئەفسەری جێبەجێکردنی کۆدەکان"
+crowd_control_officer: "ئەفسەری کۆنترۆڵکردنی قەرەباڵغی"
+gaming_surveillance_officer: "ئەفسەری چاودێری یاری"
+k9_handler: "ئەفسەری سەروەری سەگە پۆلیس"
+lifeguard: "ڕزگارکەر"
+loss_prevention_officer: "ئەفسەری خۆپاراستن لە زیان"
+nuclear_security_officer: "ئەفسەری ئاسایشی ئەتۆمی"
+park_ranger: "پارک ڕەنجەر"
+transit_security_officer: "ئەفسەری ئاسایشی گواستنەوە"
+tactical_officer: "ئەفسەری تاکتیکی"
