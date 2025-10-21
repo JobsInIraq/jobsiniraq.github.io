@@ -1,0 +1,147 @@
+# ===============================
+# المهن المتعلقة بالمبيعات
+# ===============================
+
+# -------------------------------
+# أعلى 10 وظائف ذات أولوية عالية
+# -------------------------------
+sales_representative: "مندوب مبيعات"
+cashier: "كاشير"
+salesperson: "بائع"
+medical_representative: "مندوب طبي"
+sales_manager: "مدير مبيعات"
+retail_sales_associate: "موظف مبيعات تجزئة"
+marketing_specialist: "أخصائي تسويق"
+real_estate_agent: "وكيل عقارات"
+customer_service_representative: "ممثل خدمة عملاء"
+shop_assistant: "مساعد محل"
+
+# -------------------------------
+# مبيعات التجزئة
+# -------------------------------
+boutique_sales_assistant: "مساعد مبيعات بوتيك"
+checkout_operator: "موظف مخارج"
+floor_sales_associate: "موظف مبيعات أرضية"
+furniture_salesperson: "بائع أثاث"
+jewelry_salesperson: "بائع مجوهرات"
+sales_clerk: "موظف مبيعات"
+sales_floor_associate: "موظف صالة مبيعات"
+store_clerk: "موظف متجر"
+store_manager: "مدير متجر"
+window_display_designer: "مصمم عرض نوافذ"
+
+# -------------------------------
+# المبيعات المتخصصة
+# -------------------------------
+appliance_salesperson: "بائع أجهزة"
+art_dealer: "تاجر فنون"
+automobile_salesperson: "بائع سيارات"
+book_seller: "بائع كتب"
+car_sales_manager: "مدير مبيعات سيارات"
+cosmetics_salesperson: "بائع مستحضرات تجميل"
+electronics_salesperson: "بائع إلكترونيات"
+fashion_consultant: "مستشار أزياء"
+florist: "بائع زهور"
+footwear_specialist: "أخصائي أحذية"
+luxury_goods_salesperson: "بائع سلع فاخرة"
+mobile_phone_salesperson: "بائع هواتف محمولة"
+parts_salesperson: "بائع قطع غيار"
+perfume_specialist: "أخصائي عطور"
+showroom_sales_consultant: "مستشار مبيعات صالة عرض"
+sporting_goods_salesperson: "بائع مستلزمات رياضية"
+textile_merchant: "تاجر نسيج"
+watch_and_jewelry_specialist: "أخصائي ساعات ومجوهرات"
+
+# -------------------------------
+# المبيعات الطبية والصيدلانية
+# -------------------------------
+clinical_sales_representative: "مندوب مبيعات سريرية"
+medical_device_sales_representative: "مندوب مبيعات أجهزة طبية"
+pharmaceutical_sales_manager: "مدير مبيعات أدوية"
+pharmacy_sales_associate: "موظف مبيعات صيدلية"
+scientific_representative: "مندوب علمي"
+
+# -------------------------------
+# العقارات والتأمين
+# -------------------------------
+commercial_real_estate_agent: "وكيل عقارات تجارية"
+insurance_agent: "وكيل تأمين"
+insurance_broker: "وسيط تأمين"
+insurance_sales_representative: "مندوب مبيعات تأمين"
+leasing_agent: "وكيل تأجير"
+mortgage_broker: "وسيط رهن عقاري"
+property_consultant: "مستشار عقارات"
+real_estate_broker: "وسيط عقارات"
+realtor: "سمسار عقارات"
+
+# -------------------------------
+# مبيعات بين الشركات (B2B)
+# -------------------------------
+account_executive: "مدير حساب تنفيذي"
+account_manager: "مدير حساب"
+business_development_manager: "مدير تطوير الأعمال"
+commercial_sales_representative: "مندوب مبيعات تجارية"
+corporate_sales_manager: "مدير مبيعات شركات"
+distributor: "موزع"
+sales_engineer: "مهندس مبيعات"
+territory_sales_manager: "مدير مبيعات إقليمي"
+wholesale_sales_representative: "مندوب مبيعات جملة"
+
+# -------------------------------
+# التسويق الهاتفي والمبيعات المباشرة
+# -------------------------------
+call_center_agent: "موظف مركز اتصالات"
+direct_sales_agent: "وكيل مبيعات مباشرة"
+door_to_door_salesperson: "بائع من باب لباب"
+field_sales_representative: "مندوب مبيعات ميداني"
+inside_sales_representative: "مندوب مبيعات داخلية"
+outbound_sales_agent: "وكيل مبيعات خارجية"
+telemarketer: "مسوق هاتفي"
+telesales_representative: "مندوب مبيعات هاتفية"
+
+# -------------------------------
+# خدمة العملاء والدعم
+# -------------------------------
+client_relations_manager: "مدير علاقات العملاء"
+customer_care_associate: "موظف رعاية عملاء"
+customer_service_agent: "وكيل خدمة عملاء"
+customer_service_manager: "مدير خدمة عملاء"
+customer_support_specialist: "أخصائي دعم عملاء"
+help_desk_representative: "ممثل مكتب المساعدة"
+receptionist: "موظف استقبال"
+
+# -------------------------------
+# التسويق والإعلانات
+# -------------------------------
+advertising_sales_agent: "وكيل مبيعات إعلانات"
+brand_ambassador: "سفير علامة تجارية"
+digital_marketing_specialist: "أخصائي تسويق رقمي"
+event_promoter: "مروج فعاليات"
+market_research_analyst: "محلل أبحاث سوق"
+marketing_coordinator: "منسق تسويق"
+marketing_manager: "مدير تسويق"
+merchandiser: "منسق بضائع"
+product_demonstrator: "عارض منتجات"
+promotional_staff: "موظف ترويج"
+sales_promoter: "مروج مبيعات"
+social_media_marketer: "مسوق وسائل التواصل الاجتماعي"
+
+# -------------------------------
+# إدارة ومراقبة المبيعات
+# -------------------------------
+area_sales_manager: "مدير مبيعات منطقة"
+assistant_sales_manager: "مساعد مدير مبيعات"
+chief_sales_officer: "مدير المبيعات التنفيذي"
+regional_sales_director: "مدير مبيعات إقليمي"
+retail_manager: "مدير بيع تجزئة"
+sales_director: "مدير مبيعات"
+sales_supervisor: "مشرف مبيعات"
+sales_team_leader: "قائد فريق مبيعات"
+sales_trainer: "مدرب مبيعات"
+
+# -------------------------------
+# الوظائف المتخصصة
+# -------------------------------
+auctioneer: "مزاد"
+commission_sales_agent: "وكيل مبيعات بعمولة"
+vendor: "بائع متجول"
