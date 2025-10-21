@@ -1,0 +1,139 @@
+# ===============================
+# Protective Service Occupations
+# ===============================
+
+# -------------------------------
+# Top 10 Core Protective Roles
+# -------------------------------
+security_guard: "Security Guard"
+police_officer: "Police Officer"
+firefighter: "Firefighter"
+bodyguard: "Bodyguard"
+safety_officer: "Safety Officer"
+paramedic: "Paramedic"
+private_security_contractor: "Private Security Contractor"
+protective_security_specialist: "Protective Security Specialist"
+correctional_officer: "Correctional Officer"
+civil_defense_worker: "Civil Defense Worker"
+
+# -------------------------------
+# Law Enforcement
+# -------------------------------
+border_patrol_officer: "Border Patrol Officer"
+criminal_investigator: "Criminal Investigator"
+detective: "Detective"
+federal_police_officer: "Federal Police Officer"
+homicide_detective: "Homicide Detective"
+narcotics_officer: "Narcotics Officer"
+patrol_officer: "Patrol Officer"
+police_chief: "Police Chief"
+police_sergeant: "Police Sergeant"
+sergeant: "Sergeant"
+sheriff: "Sheriff"
+traffic_police_officer: "Traffic Police Officer"
+undercover_officer: "Undercover Officer"
+
+# -------------------------------
+# Fire & Rescue Services
+# -------------------------------
+ambulance_driver: "Ambulance Driver"
+emergency_medical_technician_emt: "Emergency Medical Technician (EMT)"
+fire_captain: "Fire Captain"
+fire_chief: "Fire Chief"
+fire_engineer: "Fire Engineer"
+fire_inspector: "Fire Inspector"
+fire_marshal: "Fire Marshal"
+firefighter_paramedic: "Firefighter Paramedic"
+first_responder: "First Responder"
+hazmat_technician: "Hazmat Technician"
+rescue_diver: "Rescue Diver"
+rescue_worker: "Rescue Worker"
+wildland_firefighter: "Wildland Firefighter"
+
+# -------------------------------
+# Security Services
+# -------------------------------
+airport_security_officer: "Airport Security Officer"
+armed_guard: "Armed Guard"
+bank_security_guard: "Bank Security Guard"
+campus_security_officer: "Campus Security Officer"
+commercial_security_guard: "Commercial Security Guard"
+embassy_security_guard: "Embassy Security Guard"
+event_security_officer: "Event Security Officer"
+facility_security_officer: "Facility Security Officer"
+government_security_guard: "Government Security Guard"
+hotel_security_officer: "Hotel Security Officer"
+night_watchman: "Night Watchman"
+residential_security_guard: "Residential Security Guard"
+retail_security_guard: "Retail Security Guard"
+shopping_mall_security: "Shopping Mall Security"
+static_security_guard: "Static Security Guard"
+unarmed_security_guard: "Unarmed Security Guard"
+
+# -------------------------------
+# Personal Protection & Close Protection
+# -------------------------------
+close_protection_officer: "Close Protection Officer"
+diplomatic_protection_officer: "Diplomatic Protection Officer"
+executive_protection_agent: "Executive Protection Agent"
+personal_protection_detail_psd: "Personal Protection Detail (PSD)"
+personal_security_driver: "Personal Security Driver"
+vip_protection_officer: "VIP Protection Officer"
+
+# -------------------------------
+# Corrections & Detention
+# -------------------------------
+bailiff: "Bailiff"
+correctional_sergeant: "Correctional Sergeant"
+court_security_officer: "Court Security Officer"
+detention_officer: "Detention Officer"
+jailer: "Jailer"
+juvenile_detention_officer: "Juvenile Detention Officer"
+parole_officer: "Parole Officer"
+prison_guard: "Prison Guard"
+prison_warden: "Prison Warden"
+probation_officer: "Probation Officer"
+
+# -------------------------------
+# Workplace Safety & Health
+# -------------------------------
+construction_safety_officer: "Construction Safety Officer"
+environmental_health_officer: "Environmental Health Officer"
+fire_safety_inspector: "Fire Safety Inspector"
+health_and_safety_officer: "Health and Safety Officer"
+hse_coordinator: "HSE Coordinator"
+industrial_safety_officer: "Industrial Safety Officer"
+occupational_health_specialist: "Occupational Health Specialist"
+safety_coordinator: "Safety Coordinator"
+safety_inspector: "Safety Inspector"
+safety_manager: "Safety Manager"
+site_safety_officer: "Site Safety Officer"
+
+# -------------------------------
+# Emergency & Disaster Response
+# -------------------------------
+crisis_response_officer: "Crisis Response Officer"
+disaster_response_coordinator: "Disaster Response Coordinator"
+emergency_dispatcher: "Emergency Dispatcher"
+emergency_manager: "Emergency Manager"
+emergency_response_coordinator: "Emergency Response Coordinator"
+incident_commander: "Incident Commander"
+search_and_rescue_specialist: "Search and Rescue Specialist"
+
+# -------------------------------
+# Specialized Protective Services
+# -------------------------------
+animal_control_officer: "Animal Control Officer"
+bounty_hunter: "Bounty Hunter"
+building_inspector_safety: "Building Inspector (Safety)"
+casino_security_officer: "Casino Security Officer"
+code_enforcement_officer: "Code Enforcement Officer"
+crowd_control_officer: "Crowd Control Officer"
+gaming_surveillance_officer: "Gaming Surveillance Officer"
+k9_handler: "K9 Handler"
+lifeguard: "Lifeguard"
+loss_prevention_officer: "Loss Prevention Officer"
+nuclear_security_officer: "Nuclear Security Officer"
+park_ranger: "Park Ranger"
+transit_security_officer: "Transit Security Officer"
+tactical_officer: "Tactical Officer"
