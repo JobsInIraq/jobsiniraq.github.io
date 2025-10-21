@@ -1,0 +1,139 @@
+# ===============================
+# Protective Service Occupations - Arabic
+# ===============================
+
+# -------------------------------
+# Top 10 Core Protective Roles
+# -------------------------------
+security_guard: "حارس أمن"
+police_officer: "شرطي"
+firefighter: "رجل إطفاء"
+bodyguard: "حارس شخصي"
+safety_officer: "موظف سلامة"
+paramedic: "مسعف"
+private_security_contractor: "مقاول أمن خاص"
+protective_security_specialist: "أخصائي أمن وقائي"
+correctional_officer: "ضابط إصلاحيات"
+civil_defense_worker: "عامل دفاع مدني"
+
+# -------------------------------
+# Law Enforcement
+# -------------------------------
+border_patrol_officer: "ضابط دورية حدود"
+criminal_investigator: "محقق جنائي"
+detective: "محقق"
+federal_police_officer: "ضابط شرطة اتحادية"
+homicide_detective: "محقق جرائم قتل"
+narcotics_officer: "ضابط مخدرات"
+patrol_officer: "ضابط دورية"
+police_chief: "رئيس شرطة"
+police_sergeant: "رقيب شرطة"
+sergeant: "رقيب"
+sheriff: "عمدة"
+traffic_police_officer: "شرطي المرور"
+undercover_officer: "ضابط مستتر"
+
+# -------------------------------
+# Fire & Rescue Services
+# -------------------------------
+ambulance_driver: "سائق إسعاف"
+emergency_medical_technician_emt: "فني طوارئ طبية"
+fire_captain: "نقيب إطفاء"
+fire_chief: "رئيس إطفاء"
+fire_engineer: "مهندس إطفاء"
+fire_inspector: "مفتش إطفاء"
+fire_marshal: "قائد إطفاء"
+firefighter_paramedic: "رجل إطفاء مسعف"
+first_responder: "مستجيب أول"
+hazmat_technician: "فني مواد خطرة"
+rescue_diver: "غطاس إنقاذ"
+rescue_worker: "عامل إنقاذ"
+wildland_firefighter: "رجل إطفاء غابات"
+
+# -------------------------------
+# Security Services
+# -------------------------------
+airport_security_officer: "ضابط أمن مطار"
+armed_guard: "حارس مسلح"
+bank_security_guard: "حارس أمن بنك"
+campus_security_officer: "ضابط أمن جامعة"
+commercial_security_guard: "حارس أمن تجاري"
+embassy_security_guard: "حارس أمن سفارة"
+event_security_officer: "ضابط أمن فعاليات"
+facility_security_officer: "ضابط أمن منشأة"
+government_security_guard: "حارس أمن حكومي"
+hotel_security_officer: "ضابط أمن فندق"
+night_watchman: "حارس ليلي"
+residential_security_guard: "حارس أمن سكني"
+retail_security_guard: "حارس أمن تجزئة"
+shopping_mall_security: "أمن مركز تسوق"
+static_security_guard: "حارس أمن ثابت"
+unarmed_security_guard: "حارس أمن غير مسلح"
+
+# -------------------------------
+# Personal Protection & Close Protection
+# -------------------------------
+close_protection_officer: "ضابط حماية قريبة"
+diplomatic_protection_officer: "ضابط حماية دبلوماسية"
+executive_protection_agent: "عميل حماية تنفيذيين"
+personal_protection_detail_psd: "تفاصيل الحماية الشخصية"
+personal_security_driver: "سائق أمن شخصي"
+vip_protection_officer: "ضابط حماية كبار الشخصيات"
+
+# -------------------------------
+# Corrections & Detention
+# -------------------------------
+bailiff: "محضر قضائي"
+correctional_sergeant: "رقيب إصلاحيات"
+court_security_officer: "ضابط أمن محكمة"
+detention_officer: "ضابط احتجاز"
+jailer: "سجان"
+juvenile_detention_officer: "ضابط احتجاز أحداث"
+parole_officer: "ضابط إفراج مشروط"
+prison_guard: "حارس سجن"
+prison_warden: "مدير سجن"
+probation_officer: "ضابط مراقبة سلوك"
+
+# -------------------------------
+# Workplace Safety & Health
+# -------------------------------
+construction_safety_officer: "موظف سلامة بناء"
+environmental_health_officer: "موظف صحة بيئية"
+fire_safety_inspector: "مفتش سلامة حريق"
+health_and_safety_officer: "موظف صحة وسلامة"
+hse_coordinator: "منسق صحة وسلامة وبيئة"
+industrial_safety_officer: "موظف سلامة صناعية"
+occupational_health_specialist: "أخصائي صحة مهنية"
+safety_coordinator: "منسق سلامة"
+safety_inspector: "مفتش سلامة"
+safety_manager: "مدير سلامة"
+site_safety_officer: "موظف سلامة موقع"
+
+# -------------------------------
+# Emergency & Disaster Response
+# -------------------------------
+crisis_response_officer: "ضابط استجابة أزمة"
+disaster_response_coordinator: "منسق استجابة كارثة"
+emergency_dispatcher: "مرسل طوارئ"
+emergency_manager: "مدير طوارئ"
+emergency_response_coordinator: "منسق استجابة طوارئ"
+incident_commander: "قائد حادث"
+search_and_rescue_specialist: "أخصائي بحث وإنقاذ"
+
+# -------------------------------
+# Specialized Protective Services
+# -------------------------------
+animal_control_officer: "ضابط مراقبة حيوانات"
+bounty_hunter: "صائد مكافآت"
+building_inspector_safety: "مفتش مباني"
+casino_security_officer: "ضابط أمن كازينو"
+code_enforcement_officer: "ضابط إنفاذ قوانين"
+crowd_control_officer: "ضابط ضبط حشود"
+gaming_surveillance_officer: "ضابط مراقبة ألعاب"
+k9_handler: "معالج كلاب بوليسية"
+lifeguard: "منقذ"
+loss_prevention_officer: "ضابط منع خسائر"
+nuclear_security_officer: "ضابط أمن نووي"
+park_ranger: "حارس حديقة"
+transit_security_officer: "ضابط أمن نقل"
+tactical_officer: "ضابط تكتيكي"
