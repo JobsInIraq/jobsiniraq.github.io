@@ -1,0 +1,132 @@
+# ==============================
+# Transportation and Material Moving Occupations
+# ==============================
+
+# -------------------------------
+# Top 10 High-Priority Positions
+# -------------------------------
+driver: "Driver"
+truck_driver: "Truck Driver"
+delivery_driver: "Delivery Driver"
+forklift_operator: "Forklift Operator"
+bus_driver: "Bus Driver"
+taxi_driver: "Taxi Driver"
+warehouse_worker: "Warehouse Worker"
+crane_operator: "Crane Operator"
+logistics_coordinator: "Logistics Coordinator"
+heavy_equipment_operator: "Heavy Equipment Operator"
+
+# -------------------------------
+# Passenger Transport
+# -------------------------------
+ambulance_driver: "Ambulance Driver"
+chauffeur: "Chauffeur"
+company_driver: "Company Driver"
+courier: "Courier"
+limousine_driver: "Limousine Driver"
+messenger: "Messenger"
+personal_driver: "Personal Driver"
+shuttle_driver: "Shuttle Driver"
+van_driver: "Van Driver"
+coach_driver: "Coach Driver"
+intercity_bus_driver: "Intercity Bus Driver"
+minibus_driver: "Minibus Driver"
+public_transport_driver: "Public Transport Driver"
+school_bus_driver: "School Bus Driver"
+tour_bus_driver: "Tour Bus Driver"
+
+# -------------------------------
+# Heavy Vehicle Driving
+# -------------------------------
+articulated_truck_driver: "Articulated Truck Driver"
+dump_truck_driver: "Dump Truck Driver"
+flatbed_truck_driver: "Flatbed Truck Driver"
+fuel_tanker_driver: "Fuel Tanker Driver"
+heavy_truck_driver: "Heavy Truck Driver"
+lowboy_truck_driver: "Lowboy Truck Driver"
+tanker_truck_driver: "Tanker Truck Driver"
+tractor_trailer_driver: "Tractor-Trailer Driver"
+water_truck_driver: "Water Truck Driver"
+
+# -------------------------------
+# Material Handling
+# -------------------------------
+backhoe_operator: "Backhoe Operator"
+boom_lift_operator: "Boom Lift Operator"
+conveyor_operator: "Conveyor Operator"
+excavator_operator: "Excavator Operator"
+front_end_loader_operator: "Front-End Loader Operator"
+hand_truck_operator: "Hand Truck Operator"
+hoist_operator: "Hoist Operator"
+loader_operator: "Loader Operator"
+pallet_jack_operator: "Pallet Jack Operator"
+reach_truck_operator: "Reach Truck Operator"
+scissor_lift_operator: "Scissor Lift Operator"
+skid_steer_operator: "Skid-Steer Operator"
+
+# -------------------------------
+# Heavy Equipment Operations
+# -------------------------------
+bulldozer_operator: "Bulldozer Operator"
+grader_operator: "Grader Operator"
+scraper_operator: "Scraper Operator"
+tug_operator: "Tug Operator"
+forklift_truck_driver: "Forklift Truck Driver"
+road_roller_operator: "Road Roller Operator"
+crane_truck_operator: "Crane Truck Operator"
+
+# -------------------------------
+# Warehousing & Logistics
+# -------------------------------
+inventory_clerk: "Inventory Clerk"
+material_handler: "Material Handler"
+shipping_clerk: "Shipping Clerk"
+receiving_clerk: "Receiving Clerk"
+warehouse_associate: "Warehouse Associate"
+warehouse_coordinator: "Warehouse Coordinator"
+warehouse_manager: "Warehouse Manager"
+logistics_manager: "Logistics Manager"
+logistics_specialist: "Logistics Specialist"
+supply_chain_coordinator: "Supply Chain Coordinator"
+
+# -------------------------------
+# Vehicle Recovery & Specialized Driving
+# -------------------------------
+tow_truck_driver: "Tow Truck Driver"
+road_service_driver: "Road Service Driver"
+hazardous_material_driver: "Hazardous Material Driver"
+refrigerated_truck_driver: "Refrigerated Truck Driver"
+oversized_load_driver: "Oversized Load Driver"
+flat_deck_truck_driver: "Flat Deck Truck Driver"
+dump_trailer_driver: "Dump Trailer Driver"
+concrete_mixer_driver: "Concrete Mixer Driver"
+cement_mixer_driver: "Cement Mixer Driver"
+snow_plow_driver: "Snow Plow Driver"
+
+# -------------------------------
+# Delivery & Courier Services
+# -------------------------------
+bike_courier: "Bike Courier"
+motorcycle_courier: "Motorcycle Courier"
+parcel_delivery_driver: "Parcel Delivery Driver"
+postal_worker_driver: "Postal Worker Driver"
+express_courier_driver: "Express Courier Driver"
+logistics_courier: "Logistics Courier"
+food_delivery_driver: "Food Delivery Driver"
+package_delivery_driver: "Package Delivery Driver"
+grocery_delivery_driver: "Grocery Delivery Driver"
+retail_delivery_driver: "Retail Delivery Driver"
+
+# -------------------------------
+# Safety & Inspection Roles
+# -------------------------------
+driver_trainer: "Driver Trainer"
+safety_inspector_driver: "Safety Inspector Driver"
+fleet_manager: "Fleet Manager"
+vehicle_inspector: "Vehicle Inspector"
+compliance_driver: "Compliance Driver"
+road_safety_coordinator: "Road Safety Coordinator"
+transport_supervisor: "Transport Supervisor"
+vehicle_maintenance_driver: "Vehicle Maintenance Driver"
+emergency_response_driver: "Emergency Response Driver"
+transportation_coordinator: "Transportation Coordinator"
