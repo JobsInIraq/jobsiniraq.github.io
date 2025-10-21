@@ -1,0 +1,147 @@
+# ==============================
+# فرۆشتن و پیشە پەیوەندیدارەکان
+# ==============================
+
+# --------------------------------
+# ١٠ پۆستی سەرەکی کە ئەولەویەتی بەرزە
+# --------------------------------
+sales_representative: "نوێنەری فرۆشتن"
+cashier: "کاشێر"
+salesperson: "فرۆشیار"
+medical_representative: "نوێنەری پزیشکی"
+sales_manager: "بەڕێوەبەری فرۆشتن"
+retail_sales_associate: "هاوبەشی فرۆشتنی تاکەکەسی"
+marketing_specialist: "پسپۆڕی بەبازاڕکردن"
+real_estate_agent: "بریکاری خانووبەرە"
+customer_service_representative: "نوێنەری خزمەتگوزاری کڕیار"
+shop_assistant: "یاریدەدەری دوکان"
+
+# --------------------------------
+# فرۆشتنی تاکەکەسی
+# --------------------------------
+boutique_sales_assistant: "یاریدەدەری فرۆشتنی بوتیک"
+checkout_operator: "ئۆپەراتۆری کۆتایی هاتنی پارە"
+floor_sales_associate: "هاوبەشی فرۆشتن لەناو فرۆشگا"
+furniture_salesperson: "فرۆشیاری مۆبیلیات"
+jewelry_salesperson: "فرۆشیاری زێڕینگەریی"
+sales_clerk: "کارمەندی فرۆشتن"
+sales_floor_associate: "هاوبەشی نهۆمی فرۆشتن"
+store_clerk: "کارمەندی فرۆشگا"
+store_manager: "بەڕێوەبەری فرۆشگا"
+window_display_designer: "دیزاینەری پیشاندانی پەنجەرە"
+
+# --------------------------------
+# فرۆشتنی تایبەتمەند
+# --------------------------------
+appliance_salesperson: "فرۆشیاری ئامێر"
+art_dealer: "بازرگانی هونەر"
+automobile_salesperson: "فرۆشیاری ئۆتۆمبێل"
+book_seller: "کتێبفرۆش"
+car_sales_manager: "بەڕێوەبەری فرۆشتنی ئۆتۆمبێل"
+cosmetics_salesperson: "فرۆشیاری جوانکاری"
+electronics_salesperson: "فرۆشیاری ئەلیکترۆنیات"
+fashion_consultant: "ڕاوێژکاری مۆدە"
+florist: "گوڵفرۆش"
+footwear_specialist: "پسپۆڕی پێڵاو"
+luxury_goods_salesperson: "فرۆشیاری کاڵای لوکس"
+mobile_phone_salesperson: "فرۆشیاری مۆبایل"
+parts_salesperson: "فرۆشیاری پارچەکان"
+perfume_specialist: "پسپۆڕی بۆن"
+showroom_sales_consultant: "ڕاوێژکاری فرۆشتنی پێشانگا"
+sporting_goods_salesperson: "فرۆشیاری کەلوپەلی وەرزشی"
+textile_merchant: "بازرگانی قوماش"
+watch_and_jewelry_specialist: "پسپۆڕی کاتژمێر و زێڕینگەریی"
+
+# --------------------------------
+# فرۆشتنی دەرمان و پزیشکی
+# --------------------------------
+clinical_sales_representative: "نوێنەری فرۆشتنی کلینیکی"
+medical_device_sales_representative: "نوێنەری فرۆشتنی ئامێری پزیشکی"
+pharmaceutical_sales_manager: "بەڕێوەبەری فرۆشتنی دەرمان"
+pharmacy_sales_associate: "هاوبەشی فرۆشتنی دەرمانخانە"
+scientific_representative: "نوێنەری زانستی"
+
+# --------------------------------
+# خانووبەرە و بیمە
+# --------------------------------
+commercial_real_estate_agent: "بریکاری خانووبەرەی بازرگانی"
+insurance_agent: "بریکاری بیمە"
+insurance_broker: "دەڵاڵی بیمە"
+insurance_sales_representative: "نوێنەری فرۆشتنی بیمە"
+leasing_agent: "بریکاری بەکرێدان"
+mortgage_broker: "دەڵاڵی خانووبەرە"
+property_consultant: "ڕاوێژکاری موڵک و ماڵی"
+real_estate_broker: "دەڵاڵی خانووبەرە"
+realtor: "بریکاری خانووبەرە"
+
+# --------------------------------
+# فرۆشتنی بازرگانی بۆ بازرگانی (B2B)
+# --------------------------------
+account_executive: "بەڕێوەبەری ئەکاونت"
+account_manager: "بەڕێوەبەری ئەکاونت"
+business_development_manager: "بەڕێوەبەری پەرەپێدانی بازرگانی"
+commercial_sales_representative: "نوێنەری فرۆشتنی بازرگانی"
+corporate_sales_manager: "بەڕێوەبەری فرۆشتنی کۆمپانیا"
+distributor: "دابەشکەر"
+sales_engineer: "ئەندازیاری فرۆشتن"
+territory_sales_manager: "بەڕێوەبەری فرۆشتنی خاک"
+wholesale_sales_representative: "نوێنەری فرۆشتنی جوملە"
+
+# --------------------------------
+# تەلەمارکێتینگ و فرۆشتنی ڕاستەوخۆ
+# --------------------------------
+call_center_agent: "بریکاری ناوەندی پەیوەندی"
+direct_sales_agent: "بریکاری فرۆشتنی ڕاستەوخۆ"
+door_to_door_salesperson: "فرۆشیاری دەرگا بە دەرگا"
+field_sales_representative: "نوێنەری فرۆشتنی مەیدان"
+inside_sales_representative: "نوێنەری فرۆشتنی ناوەوە"
+outbound_sales_agent: "بریکاری فرۆشتنی دەرەوە"
+telemarketer: "تەلەمارکێتەر"
+telesales_representative: "نوێنەری فرۆشتنی لە دوورەوە"
+
+# --------------------------------
+# خزمەتگوزاری و پشتگیری کڕیاران
+# --------------------------------
+client_relations_manager: "بەڕێوەبەری پەیوەندییەکانی مشتەری"
+customer_care_associate: "هاوبەشی چاودێری کڕیار"
+customer_service_agent: "بریکاری خزمەتگوزاری کڕیار"
+customer_service_manager: "بەڕێوەبەری خزمەتگوزاری کڕیار"
+customer_support_specialist: "پسپۆڕی پشتگیری کڕیار"
+help_desk_representative: "نوێنەری مێزی یارمەتی"
+receptionist: "پێشوازیکار"
+
+# --------------------------------
+# بەبازاڕکردن و ڕیکلام
+# --------------------------------
+advertising_sales_agent: "بریکاری فرۆشتنی ڕێکلام"
+brand_ambassador: "باڵیۆزی براند"
+digital_marketing_specialist: "پسپۆڕی بەبازاڕکردنی دیجیتاڵی"
+event_promoter: "بەرەوپێشخەری ڕووداوەکان"
+market_research_analyst: "شیکارکەری توێژینەوەی بازاڕ"
+marketing_coordinator: "ڕێکخەری بازاڕکردن"
+marketing_manager: "بەڕێوەبەری بازاڕکردن"
+merchandiser: "بازرگان"
+product_demonstrator: "پێشاندەری بەرهەم"
+promotional_staff: "ستافی بانگەشە"
+sales_promoter: "بەرەوپێشخەری فرۆشتن"
+social_media_marketer: "بازاڕکەری سۆشیال میدیا"
+
+# --------------------------------
+# بەڕێوەبردن و سەرپەرشتی فرۆشتن
+# --------------------------------
+area_sales_manager: "بەڕێوەبەری فرۆشتنی ناوچە"
+assistant_sales_manager: "یاریدەدەری بەڕێوەبەری فرۆشتن"
+chief_sales_officer: "سەرۆکی فرۆشتن"
+regional_sales_director: "بەڕێوەبەری فرۆشتنی ناوچەیی"
+retail_manager: "بەڕێوەبەری فرۆشتنی تاکەکەسی"
+sales_director: "بەڕێوەبەری فرۆشتن"
+sales_supervisor: "سەرپەرشتیاری فرۆشتن"
+sales_team_leader: "سەرکردەی تیمی فرۆشتن"
+sales_trainer: "ڕاهێنەری فرۆشتن"
+
+# --------------------------------
+# پۆستە تایبەتمەندەکان
+# --------------------------------
+auctioneer: "مەزادکار"
+commission_sales_agent: "بریکاری فرۆشتنی کۆمیسیۆن"
+vendor: "فرۆشیار"
