@@ -17,14 +17,14 @@
 # Blocking them protects your intellectual property
 
 # OpenAI (ChatGPT)
-User-agent: GPTBot
-Disallow: /
+# User-agent: GPTBot
+# Disallow: /
 
-User-agent: ChatGPT-User
-Disallow: /
+# User-agent: ChatGPT-User
+# Disallow: /
 
-User-agent: OAI-SearchBot
-Disallow: /
+# User-agent: OAI-SearchBot
+# Disallow: /
 
 # Anthropic (Claude)
 User-agent: ClaudeBot
