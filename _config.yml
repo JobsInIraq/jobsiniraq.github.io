@@ -1,57 +1,33 @@
 # ============================================
 # JOBSIN IRAQ - JEKYLL CONFIGURATION
 # ============================================
-# Purpose: Main configuration file for Jekyll static site
-# Performance Optimized: Cross-browser compatible (Chrome, Edge, Firefox, Safari)
-# Last Updated: 2025-01-14 - Cross-Browser Performance Optimization
-# ============================================
 
-# ============================================
 # THEME SETTINGS
-# ============================================
-# Remote theme from GitHub (no local files needed)
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-
-# Skin selection - Controls color scheme and CSS loading
-# Performance: "default" is fastest (20ms faster than "dark")
-# Options: "default", "dark", "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise"
 minimal_mistakes_skin: "default"
 
-# ============================================
 # SITE IDENTITY & BRANDING
-# ============================================
-# Basic site information used in meta tags and titles
 title: "JobsIn"
 title_separator: "-"
 subtitle: "Directory of Job Platforms in Iraq"
 name: "JobsIn Iraq"
 description: "JobsIn - Comprehensive directory of job platforms, recruitment agencies, and salary insights for the Iraqi job market. Find your next opportunity in Iraq."
 
-# URLs - Critical for absolute links and SEO
 url: "https://jobsiniraq.github.io"
 baseurl: ""
 repository: "JobsInIraq/jobsiniraq.github.io"
 
-# ============================================
-# VISUAL ASSETS & BRANDING
-# ============================================
-# Image paths for logos and social sharing
+# VISUAL ASSETS
 logo: "/assets/images/logo-small.png"
 app_icon: "/assets/images/app-icon-512x512.png"
 masthead_title: "JobsIn Iraq"
 teaser: "/assets/images/og-image-1200x630.png"
 og_image: "/assets/images/og-image-1200x630.png"
 
-# ============================================
-# LANGUAGE & INTERNATIONALIZATION (i18n)
-# ============================================
-# Jekyll theme locale (affects UI text like "Read more", "Share", etc.)
+# LANGUAGE & I18N
 locale: "en-US"
-
-# Primary language for HTML lang attribute (WCAG 3.1.1 compliance)
 lang: "en"
 
-# Custom multilingual configuration for your site
 languages:
   default: "en"
   supported: ["en", "ar", "ku"]
@@ -60,49 +36,169 @@ languages:
     ar: "العربية"
     ku: "کوردی"
 
-# Right-to-Left (RTL) language support
 rtl_languages: ["ar", "ku"]
 
-# ============================================
 # BUILD CONFIGURATION
-# ============================================
-# Preprocess data files at build time
 data_format: yaml
-# Cache data for performance
-incremental: true
-# ============================================
-# DEFAULT LANGUAGE ASSIGNMENTS
-# ============================================
+incremental: false
+
+# DEFAULTS (FRONT MATTER)
 defaults:
-  # All pages default to English
+  # Homepage
+  - scope:
+      path: "index.html"
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      sitemap:
+        priority: 1.0
+        changefreq: "daily"
+
+  # Salary Dashboard
+  - scope:
+      path: "_pages/payscale-dashboard.html"
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      sitemap:
+        priority: 0.9
+        changefreq: "daily"
+
+  # Salary Guide
+  - scope:
+      path: "_pages/payscale.md"
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      sitemap:
+        priority: 0.9
+        changefreq: "weekly"
+
+  # Recruitment Process
+  - scope:
+      path: "_pages/process.md"
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      sitemap:
+        priority: 0.7
+        changefreq: "monthly"
+
+  # Recruitment Innovation
+  - scope:
+      path: "_pages/recruitment_innovation.md"
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      sitemap:
+        priority: 0.7
+        changefreq: "monthly"
+
+  # About
+  - scope:
+      path: "_pages/about.md"
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      sitemap:
+        priority: 0.5
+        changefreq: "monthly"
+
+  # 404
+  - scope:
+      path: "_pages/404.html"
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      sitemap: false
+
+  # All Pages (default)
   - scope:
       path: ""
+      type: pages
     values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
       lang: "en"
-  
-  # Arabic pages
+      sitemap:
+        priority: 0.6
+        changefreq: "monthly"
+
+  # All Posts (default)
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      lang: "en"
+      sitemap:
+        priority: 0.6
+        changefreq: "monthly"
+
+  # Arabic language pages (by folder)
   - scope:
       path: "ar"
     values:
       lang: "ar"
-  
-  # Kurdish pages
+      author_profile: false
+      read_time: false
+      share: false
+      related: false
+      sitemap:
+        priority: 0.6
+        changefreq: "monthly"
+
+  # Kurdish language pages (by folder)
   - scope:
       path: "ku"
     values:
       lang: "ku"
-# ============================================
-# EXCLUDE UNNECESSARY FILES
-# ============================================
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - "*.md"
-  - ".git"
+      author_profile: false
+      read_time: false
+      share: false
+      related: false
+      sitemap:
+        priority: 0.6
+        changefreq: "monthly"
 
-# Advanced i18n configuration (for custom JavaScript internationalization)
+# ADVANCED I18N (JS)
 i18n:
   supported_langs: ["en", "ar", "ku"]
   rtl_langs: ["ar", "ku"]
@@ -112,68 +208,41 @@ i18n:
   dev_mode: false
   load_strategy: "lazy"
 
-# ============================================
-# SCRIPTS & CUSTOM CODE
-# ============================================
-# External scripts to load in <head> (blocks rendering - keep empty!)
+# SCRIPTS
 head_scripts: []
-
-# Scripts to load before </body> (better for performance)
 after_footer_scripts: []
 
-# ============================================
-# SEO & WEBMASTER TOOLS
-# ============================================
-# Google Search Console verification code
+# SEO & WEBMASTER
 google_site_verification: "6BZ84p_XEuOFYjQ8NCNIhZr0Z5xRUUye8MKnKml5pZs"
-
-# Yandex Webmaster verification
 yandex_site_verification: "34e23070cf6827dd"
 
-# Schema.org structured data (helps search engines)
 social:
   type: "Organization"
   name: "JobsIn Iraq"
   links:
     - "https://github.com/JobsInIraq"
 
-# Twitter Card configuration
 twitter:
   username: ""
   card: "summary_large_image"
 
-# Facebook/Open Graph settings
 facebook:
   app_id: ""
   publisher: ""
 
-# Consolidated webmaster verifications
 webmaster_verifications:
   google: "6BZ84p_XEuOFYjQ8NCNIhZr0Z5xRUUye8MKnKml5pZs"
   yandex: "34e23070cf6827dd"
 
-# ============================================
-# ANALYTICS & TRACKING
-# ============================================
-# DISABLED - Using GTM (Google Tag Manager) instead
-# Performance: Saves 30-50ms by avoiding duplicate analytics
+# ANALYTICS
 analytics:
   provider: false
 
-# ============================================
-# COMMENTS SYSTEM
-# ============================================
-# User comments on posts (DISABLED for performance)
-# Performance: Comment systems add 100-300ms load time
+# COMMENTS
 comments:
   provider: false
 
-# ============================================
-# SITE SEARCH
-# ============================================
-# Built-in search functionality (DISABLED for performance)
-# Performance: Lunr.js adds 80-100ms main thread blocking
-# Recommendation: Re-enable only if search is critical to your site
+# SEARCH
 search: false
 search_full_content: false
 search_provider: "lunr"
@@ -181,25 +250,16 @@ search_provider: "lunr"
 lunr:
   search_within_pages: false
 
-# ============================================
-# RSS/ATOM FEED
-# ============================================
-# Automatic RSS feed generation
+# FEED
 atom_feed:
   path: ""
   hide: false
 
-# ============================================
-# BUILD & PERFORMANCE SETTINGS
-# ============================================
-# Server timezone
+# BUILD & PERFORMANCE
 timezone: "Asia/Baghdad"
-
-# Markdown processor
 markdown: kramdown
 highlighter: rouge
 
-# Kramdown configuration
 kramdown:
   input: GFM
   hard_wrap: false
@@ -214,34 +274,24 @@ kramdown:
     block:
       line_numbers: false
 
-# Sass/SCSS compilation (minified for performance)
 sass:
   sass_dir: _sass
   style: compressed
   sourcemap: never
 
-# Build optimization
-incremental: false
 lsi: false
 excerpt_separator: "\n\n"
-
-# Jekyll cache directory
 cache_dir: .jekyll-cache
 
-# ============================================
-# FILE PROCESSING RULES
-# ============================================
-# Files to include in build
+# FILE PROCESSING
 include:
   - .htaccess
   - _pages
   - robots.txt
 
-# Files to exclude from build (performance optimization)
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
-  - "*.md"
   - .vscode
   - .vs
   - vendor
@@ -275,19 +325,14 @@ exclude:
   - assets/js/vendor
   - config
 
-# Files to keep during clean
 keep_files:
   - .git
   - .svn
 
-# File encoding
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# ============================================
-# JEKYLL PLUGINS
-# ============================================
-# GitHub Pages compatible plugins
+# PLUGINS
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -296,7 +341,6 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
 
-# GitHub Pages whitelist
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -305,210 +349,34 @@ whitelist:
   - jekyll-include-cache
   - jekyll-seo-tag
 
-# ============================================
-# PAGINATION SETTINGS
-# ============================================
+# PAGINATION & ARCHIVES
 paginate: 10
-paginate_path: /page:num/
+paginate_path: "/page:num/"
 
-# ============================================
-# ARCHIVE PAGES
-# ============================================
 category_archive:
   type: liquid
-  path: /categories/
+  path: "/categories/"
 
 tag_archive:
   type: liquid
-  path: /tags/
+  path: "/tags/"
 
-# ============================================
-# DEFAULT FRONT MATTER VALUES
-# ============================================
-# Performance optimized: Disabled heavy features
-# - share: false (saves 15-20ms - no social buttons JS)
-# - read_time: false (saves 5-10ms - no word count JS)
-# - author_profile: false (saves 10ms - no author rendering)
-# - related: false (saves 20-30ms - no related posts computation)
-
-defaults:
-  # Homepage - Highest SEO Priority
-  - scope:
-      path: "index.html"
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      sitemap:
-        priority: 1.0
-        changefreq: 'daily'
-  
-  # Salary Dashboard - High Priority, Daily Updates
-  - scope:
-      path: "_pages/payscale-dashboard.html"
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      sitemap:
-        priority: 0.9
-        changefreq: 'daily'
-  
-  # Salary Guide - High Priority, Weekly Updates
-  - scope:
-      path: "_pages/payscale.md"
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      sitemap:
-        priority: 0.9
-        changefreq: 'weekly'
-  
-  # Recruitment Process - Medium Priority
-  - scope:
-      path: "_pages/process.md"
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      sitemap:
-        priority: 0.7
-        changefreq: 'monthly'
-  
-  # Innovation Page - Medium Priority
-  - scope:
-      path: "_pages/recruitment_innovation.md"
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      sitemap:
-        priority: 0.7
-        changefreq: 'monthly'
-  
-  # About Page - Lower Priority
-  - scope:
-      path: "_pages/about.md"
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      sitemap:
-        priority: 0.5
-        changefreq: 'monthly'
-  
-  # 404 Page - Exclude from Sitemap
-  - scope:
-      path: "_pages/404.html"
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      sitemap: false
-  
-  # All Pages (Default Settings)
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      lang: en
-      sitemap:
-        priority: 0.6
-        changefreq: 'monthly'
-  
-  # All Blog Posts (Default Settings)
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      lang: en
-      sitemap:
-        priority: 0.6
-        changefreq: 'monthly'
-
-  # Arabic Language Pages
-  - scope:
-      path: "ar"
-    values:
-      lang: ar
-      author_profile: false
-      read_time: false
-      share: false
-      related: false
-      sitemap:
-        priority: 0.6
-        changefreq: 'monthly'
-  
-  # Kurdish Language Pages
-  - scope:
-      path: "ku"
-    values:
-      lang: ku
-      author_profile: false
-      read_time: false
-      share: false
-      related: false
-      sitemap:
-        priority: 0.6
-        changefreq: 'monthly'
-
-# ============================================
-# FOOTER CONFIGURATION
-# ============================================
+# FOOTER
 footer:
-  logo: /assets/images/footer-50x50.png
+  logo: "/assets/images/footer-50x50.png"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/JobsInIraq"
 
-# ============================================
-# MISCELLANEOUS SETTINGS
-# ============================================
+# MISC
 breadcrumbs: false
 words_per_minute: 200
 enable_copy_code_button: false
 copyright: "JobsIn"
 copyright_url: "https://jobsiniraq.github.io"
 
-# ============================================
-# HTML COMPRESSION (Production)
-# ============================================
-# Minify HTML output (10-15% smaller files)
+# HTML COMPRESSION
 compress_html:
   clippings: all
   comments: all
