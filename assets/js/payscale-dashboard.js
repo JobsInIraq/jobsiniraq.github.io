@@ -216,7 +216,8 @@ const colorFromString = (str) => {
 // DATA NORMALIZATION
 // ============================================
 
-const INPUT = Array.isArray(RAW?.jobs) ? RAW.jobs : [];
+//const INPUT = Array.isArray(RAW?.jobs) ? RAW.jobs : [];
+const INPUT = Array.isArray(RAW?.salaries) ? RAW.salaries : [];
 
 console.log('[Dashboard] Input jobs:', INPUT.length);
 
