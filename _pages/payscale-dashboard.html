@@ -76,7 +76,7 @@ permalink: /payscale-dashboard/
 <script id="payscale-data" type="application/json">
 {
   {% if site.data.db.salaries %}
-    "salaries": {{ site.data.db.salaries | jsonify | xml_escape }}
+    "salaries": {{ site.data.db.salaries | jsonify }}
   {% else %}
     "salaries": []
   {% endif %}
