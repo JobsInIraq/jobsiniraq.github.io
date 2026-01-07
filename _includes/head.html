@@ -36,11 +36,13 @@
 
 
 <script>
+  // Injects the translations from Jekyll/YAML into a global JS object
   window.siteTranslations = {{ site.data.ui-text.navigation | jsonify }};
-
+  // Handles the "no-js" to "js" class switch for styling
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
   {% if site.enable_copy_code_button -%}
-    window.enable_copy_code_button = true;s
+    window.enable_copy_code_button = true;
   {%- endif %}
 </script>
 

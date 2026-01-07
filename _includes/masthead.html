@@ -18,10 +18,7 @@
                 href="{{ link.url | relative_url }}"
                 {% if link.description %} title="{{ link.description }}"{% endif %}
                 {% if link.target %} target="{{ link.target }}"{% endif %}
-                data-i18n-nav="true"
-                data-title-en="{{ link.title.en }}"
-                data-title-ar="{{ link.title.ar }}"
-                data-title-ku="{{ link.title.ku }}"
+                data-i18n-key="{{ link.title.en | downcase | replace: ' ', '-' }}"
               >{{ link.title.en }}</a>
             </li>
           {%- endfor -%}

@@ -9,29 +9,29 @@
   const STORAGE_KEY = 'siteLanguage'; // Single source of truth
   
   // Translation strings for navigation
-  const UI_STRINGS = {
-    en: {
-      home: 'Home',
-      process: 'Recruitment Process',
-      payscale: 'Salary Guide',
-      dashboard: 'Dashboard',
-      about: 'About'
-    },
-    ar: {
-      home: 'الرئيسية',
-      process: 'عملية التوظيف',
-      payscale: 'دليل الرواتب',
-      dashboard: 'لوحة التحكم',
-      about: 'عن الموقع'
-    },
-    ku: {
-      home: 'سەرەتا',
-      process: 'پرۆسەی دامەزراندن',
-      payscale: 'ڕێبەری مووچە',
-      dashboard: 'داشبۆرد',
-      about: 'دەربارە'
-    }
-  };
+  // const UI_STRINGS = {
+  //   en: {
+  //     home: 'Home',
+  //     process: 'Recruitment Process',
+  //     payscale: 'Salary Guide',
+  //     dashboard: 'Dashboard',
+  //     about: 'About'
+  //   },
+  //   ar: {
+  //     home: 'الرئيسية',
+  //     process: 'عملية التوظيف',
+  //     payscale: 'دليل الرواتب',
+  //     dashboard: 'لوحة التحكم',
+  //     about: 'عن الموقع'
+  //   },
+  //   ku: {
+  //     home: 'سەرەتا',
+  //     process: 'پرۆسەی دامەزراندن',
+  //     payscale: 'ڕێبەری مووچە',
+  //     dashboard: 'داشبۆرد',
+  //     about: 'دەربارە'
+  //   }
+  // };
   
   class UnifiedLanguageManager {
     constructor() {
@@ -76,32 +76,14 @@
     }
     
     updateNavigationText(lang) {
-      const strings = UI_STRINGS[lang];
-      if (!strings) return;
-      
-      // Update navigation menu items
-      document.querySelectorAll('.greedy-nav .masthead__menu-item a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (!href) return;
-        
-        if (href === '/' || href === '/index.html') {
-          link.textContent = strings.home;
-        } else if (href.includes('/process')) {
-          link.textContent = strings.process;
-        } else if (href.includes('/payscale/')) {
-          link.textContent = strings.payscale;
-        } else if (href.includes('/payscale-dashboard')) {
-          link.textContent = strings.dashboard;
-        } else if (href.includes('/about') || href.includes('linkedin.com')) {
-          link.textContent = strings.about;
-        }
-      });
-      
-      // Update the picker value
-      const picker = document.getElementById('globalLangPicker');
-      if (picker && picker.value !== lang) {
-        picker.value = lang;
-      }
+      const translations = window.siteTranslations;
+  
+  document.querySelectorAll('.masthead__menu-item a').forEach(link => {
+    const key = link.getAttribute('data-i18n-key'); // Add this attribute to your HTML links
+    if (translations[key] && translations[key][lang]) {
+      link.textContent = translations[key][lang];
+    }
+  });
     }
     
     initializePicker() {
