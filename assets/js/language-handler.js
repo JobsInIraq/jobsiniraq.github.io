@@ -8,31 +8,6 @@
   const RTL_LANGS = ['ar', 'ku'];
   const STORAGE_KEY = 'siteLanguage'; // Single source of truth
   
-  // Translation strings for navigation
-  // const UI_STRINGS = {
-  //   en: {
-  //     home: 'Home',
-  //     process: 'Recruitment Process',
-  //     payscale: 'Salary Guide',
-  //     dashboard: 'Dashboard',
-  //     about: 'About'
-  //   },
-  //   ar: {
-  //     home: 'الرئيسية',
-  //     process: 'عملية التوظيف',
-  //     payscale: 'دليل الرواتب',
-  //     dashboard: 'لوحة التحكم',
-  //     about: 'عن الموقع'
-  //   },
-  //   ku: {
-  //     home: 'سەرەتا',
-  //     process: 'پرۆسەی دامەزراندن',
-  //     payscale: 'ڕێبەری مووچە',
-  //     dashboard: 'داشبۆرد',
-  //     about: 'دەربارە'
-  //   }
-  // };
-  
   class UnifiedLanguageManager {
     constructor() {
       this.currentLang = this.getSavedLanguage();
@@ -76,14 +51,19 @@
     }
     
     updateNavigationText(lang) {
-      const translations = window.siteTranslations;
+      // Use the global translation object injected in head.html
+      const translations = window.SITE_TRANSLATIONS;
+      if (!translations || !translations[lang]) {
+        console.warn('[i18n] No translations found for:', lang);
+        return;
+      }
   
-  document.querySelectorAll('.masthead__menu-item a').forEach(link => {
-    const key = link.getAttribute('data-i18n-key'); // Add this attribute to your HTML links
-    if (translations[key] && translations[key][lang]) {
-      link.textContent = translations[key][lang];
-    }
-  });
+      document.querySelectorAll('[data-i18n-key]').forEach(element => {
+        const key = element.getAttribute('data-i18n-key');
+        if (key && translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
     }
     
     initializePicker() {

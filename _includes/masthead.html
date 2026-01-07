@@ -18,8 +18,8 @@
                 href="{{ link.url | relative_url }}"
                 {% if link.description %} title="{{ link.description }}"{% endif %}
                 {% if link.target %} target="{{ link.target }}"{% endif %}
-                data-i18n-key="{{ link.title.en | downcase | replace: ' ', '-' }}"
-              >{{ link.title.en }}</a>
+                data-i18n-key="{{ link.title.en | default: link.title | downcase | replace: ' ', '-' }}"
+              >{{ link.title.en | default: link.title }}</a>
             </li>
           {%- endfor -%}
         </ul>
