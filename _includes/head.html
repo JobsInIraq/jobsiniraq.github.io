@@ -35,11 +35,12 @@
 <link rel="dns-prefetch" href="https://www.bing.com">
 
 
-
 <script>
+  window.siteTranslations = {{ site.data.ui-text.navigation | jsonify }};
+
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
   {% if site.enable_copy_code_button -%}
-    window.enable_copy_code_button = true;
+    window.enable_copy_code_button = true;s
   {%- endif %}
 </script>
 
