@@ -67,6 +67,15 @@ en: &DEFAULT_EN
   nav_innovation             : "Innovation"
   nav_about                  : "About"
   nav_contact                : "Contact"
+  navigation:
+    home:
+    en                        : "Home"
+    ar                        : "الرئيسية"
+    ku                        : "سەرەتا"
+  about:
+    en                        : "About"
+    ar                        : "عن الموقع"
+    ku                        : "دەربارە" 
 
   # Page Titles
   title_home                 : "Directory of Job Platforms in Iraq"
@@ -240,6 +249,7 @@ ar: &DEFAULT_AR
   nav_innovation             : "الابتكار"
   nav_about                  : "عن الموقع"
   nav_contact                : "اتصل بنا"
+
 
   # عناوين الصفحات
   title_home                 : "دليل منصات التوظيف في العراق"
