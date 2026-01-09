@@ -1,36 +1,53 @@
 # main links
-main:
- # - title:
- #     en: "Home"
- #     ar: "الرئيسية"
- #     ku: "سەرەتا"
- #   url: /
-  - title:
-      en: "Recruitment Process"
-      ar: "عملية التوظيف"
-      ku: "پرۆسەی دامەزراندن"
-    url: /process/
-  - title: 
-      en: "Salary Guide"
-      ar: "دليل الرواتب"
-      ku: "ڕێبەری مووچە"
-    url: /payscale/
-  - title:
-    en: "Recruitment Innovation"
-    ar: "ابتكار التوظيف"
-    ku: "داهێنانی دامەزراندن"
-    url: /recruitment_innovation/
-  - title: 
-      en: "Dashboard"
-      ar: "لوحة التحكم"
-      ku: "داشبۆرد"
-    url: /payscale-dashboard/
-  - title: 
-      en: "About"
-      ar: "عن الموقع"
-      ku: "دەربارە"
-    url: https://linkedin.com/in/diyar/
+# main:
+#  # - title:
+#  #     en: "Home"
+#  #     ar: "الرئيسية"
+#  #     ku: "سەرەتا"
+#  #   url: /
+#   - title:
+#       en: "Recruitment Process"
+#       ar: "عملية التوظيف"
+#       ku: "پرۆسەی دامەزراندن"
+#     url: /process/
+#   - title: 
+#       en: "Salary Guide"
+#       ar: "دليل الرواتب"
+#       ku: "ڕێبەری مووچە"
+#     url: /payscale/
+#   - title:
+#     en: "Recruitment Innovation"
+#     ar: "ابتكار التوظيف"
+#     ku: "داهێنانی دامەزراندن"
+#     url: /recruitment_innovation/
+#   - title: 
+#       en: "Dashboard"
+#       ar: "لوحة التحكم"
+#       ku: "داشبۆرد"
+#     url: /payscale-dashboard/
+#   - title: 
+#       en: "About"
+#       ar: "عن الموقع"
+#       ku: "دەربارە"
+#     url: https://linkedin.com/in/diyar/
  # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+main:
+  - title: "Recruitment Process"
+    i18n: "nav_process"
+    url: /process/
+  - title: "Salary Guide"
+    i18n: "nav_payscale"
+    url: /payscale/
+  - title: "Recruitment Innovation"
+    i18n: "nav_innovation"
+    url: /recruitment_innovation/
+  - title: "Dashboard"
+    i18n: "nav_dashboard"
+    url: /payscale-dashboard/
+  - title: "About"
+    i18n: "nav_about"
+    url: https://linkedin.com/in/diyar/
