@@ -12,15 +12,15 @@
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
          <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-                data-i18n-key="{{ link.title.en | default: link.title | downcase | replace: ' ', '-' }}"
-              >{{ link.title.en | default: link.title }}</a>
-            </li>
+           {%- for link in site.data.navigation.main -%}
+              <li class="masthead__menu-item">
+                <a
+                   href="{{ link.url | relative_url }}"
+                   {% if link.description %} title="{{ link.description }}"{% endif %}
+                   {% if link.target %} target="{{ link.target }}"{% endif %}
+                    data-i18n-key="{{ link.i18n | default: link.title }}"
+                >{{ link.title }}</a>
+             </li>
           {%- endfor -%}
         </ul>
         {% if site.search == true %}

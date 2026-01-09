@@ -104,58 +104,9 @@
     JavaScript files (jQuery, theme scripts, custom scripts)
     Defined in: _includes/scripts.html
     Loaded at end of body for better performance
+    Language handler is included in scripts.html
   {%- endcomment -%}
   {% include scripts.html %}
-
-  {%- comment -%}
-    Minimal Language Manager (lightweight, no data bloat)
-    Only handles language switching - data comes from YAML
-  {%- endcomment -%}
-  <script>
-    // Ultra-lightweight language manager (no translation data embedded)
-    (function() {
-      'use strict';
-      
-      const SUPPORTED_LANGS = ['en', 'ar', 'ku'];
-      const RTL_LANGS = ['ar', 'ku'];
-      const STORAGE_KEY = 'siteLanguage';
-      
-      function getSavedLanguage() {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        return SUPPORTED_LANGS.includes(saved) ? saved : 'en';
-      }
-      
-      function applyLanguage(lang) {
-        if (!SUPPORTED_LANGS.includes(lang)) lang = 'en';
-        
-        // Update HTML attributes
-        document.documentElement.setAttribute('lang', lang);
-        const isRTL = RTL_LANGS.includes(lang);
-        document.documentElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-        document.body.setAttribute('data-locale', lang);
-        document.body.setAttribute('data-rtl', isRTL ? 'true' : 'false');
-        
-        // Save preference
-        localStorage.setItem(STORAGE_KEY, lang);
-        
-        // Broadcast to other components
-        window.dispatchEvent(new CustomEvent('languageChanged', {
-          detail: { language: lang, isRTL: isRTL }
-        }));
-      }
-      
-      // Initialize with saved language
-      const savedLang = getSavedLanguage();
-      applyLanguage(savedLang);
-      
-      // Expose to window
-      window.languageManager = {
-        setLanguage: applyLanguage,
-        getLanguage: getSavedLanguage,
-        supportedLanguages: SUPPORTED_LANGS
-      };
-    })();
-  </script>
 
 </body>
 </html>

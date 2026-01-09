@@ -37,7 +37,7 @@
 
 <script>
   // Injects the translations from Jekyll/YAML into a global JS object
-   window.SITE_TRANSLATIONS = {
+  window.SITE_TRANSLATIONS = {
     en: {{ site.data.ui-text.en | jsonify }},
     ar: {{ site.data.ui-text.ar | jsonify }},
     ku: {{ site.data.ui-text.ku | jsonify }}
@@ -51,8 +51,7 @@
   {%- endif %}
 </script>
 
-<!-- Ensure language-handler is loaded AFTER the translations -->
-<script src="{{ '/assets/js/language-handler.min.js' | relative_url }}"></script>
+<!-- Language handler is loaded at end of body via scripts.html for proper DOM access -->
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

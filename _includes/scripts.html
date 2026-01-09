@@ -6,6 +6,9 @@
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
 {% endif %}
 
+<!-- Language Handler - Must load AFTER DOM is ready -->
+<script src="{{ '/assets/js/language-handler.min.js' | relative_url }}"></script>
+
 {% if site.search == true or page.layout == "search" %}
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
   {%- case search_provider -%}
