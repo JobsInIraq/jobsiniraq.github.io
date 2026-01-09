@@ -24,25 +24,75 @@ html[lang="ku"] {
 }
 
 /* ============================================================
-   2. NAVIGATION / MASTHEAD RTL
+   2. NAVIGATION / MASTHEAD RTL - COMPREHENSIVE FIX
+   
+   The navigation structure is:
+   .greedy-nav (flexbox)
+     ├── .site-logo (order: 1 → becomes order: 99 in RTL)
+     ├── .site-title (order: 2 → becomes order: 98 in RTL)
+     ├── .visible-links (order: 3, flex:1 → order: 50, items reversed)
+     ├── search button (order: 4 → becomes order: 2 in RTL)
+     ├── language-switcher (order: 5 → becomes order: 3 in RTL)
+     └── hamburger button (order: 6 → becomes order: 1 in RTL)
+   
+   In RTL mode, the layout becomes:
+   [Hamburger] [Lang] [Search] [About Dashboard Innovation Salary Recruitment] [Title] [Logo]
    ============================================================ */
-html[dir="rtl"] .masthead__inner-wrap {
-  flex-direction: row-reverse;
-}
 
+/* --- Main Navigation Container --- */
 html[dir="rtl"] .greedy-nav {
+  flex-direction: row;
+}
+
+/* --- Reorder Navigation Elements Using CSS order Property --- */
+
+/* Logo moves to the far RIGHT (highest order = rightmost in LTR flex) */
+html[dir="rtl"] .greedy-nav > .site-logo {
+  order: 99;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+/* Title goes next to logo on the right */
+html[dir="rtl"] .greedy-nav > .site-title {
+  order: 98;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Visible links stay in the middle but items are reversed */
+html[dir="rtl"] .greedy-nav > .visible-links {
+  order: 50;
+  flex: 1;
+  /* KEY FIX: Change justify-content to push items to the RIGHT in RTL */
+  justify-content: flex-end;
+  /* Reverse the order of nav items: About, Dashboard, Innovation, Salary, Recruitment */
   flex-direction: row-reverse;
 }
 
-html[dir="rtl"] .greedy-nav a {
-  margin: 0 1rem;
+/* Search button moves to the LEFT side */
+html[dir="rtl"] .greedy-nav > .search__toggle {
+  order: 3;
 }
 
-html[dir="rtl"] .greedy-nav .visible-links {
-  flex-direction: row-reverse;
-  justify-content: flex-start;
+/* Language switcher on the LEFT */
+html[dir="rtl"] .greedy-nav > .language-switcher-wrapper {
+  order: 2;
+  margin-left: 0;
+  margin-right: 0.5rem;
 }
 
+/* Hamburger button on the far LEFT */
+html[dir="rtl"] .greedy-nav > .greedy-nav__toggle {
+  order: 1;
+}
+
+/* Hidden links dropdown on the LEFT */
+html[dir="rtl"] .greedy-nav > .hidden-links {
+  order: 0;
+}
+
+/* --- Navigation Items Text Alignment --- */
 html[dir="rtl"] .greedy-nav .visible-links li {
   text-align: right;
 }
@@ -52,6 +102,7 @@ html[dir="rtl"] .masthead__menu-item {
   margin-right: 0;
 }
 
+/* --- Masthead Menu Container --- */
 html[dir="rtl"] .masthead__menu {
   float: right;
 }
@@ -60,24 +111,25 @@ html[dir="rtl"] .site-nav {
   float: left;
 }
 
-html[dir="rtl"] .site-title {
-  margin-right: 0;
-  margin-left: auto;
-}
-
-html[dir="rtl"] .site-logo {
-  margin-right: 0;
-  margin-left: 0.5rem;
-}
-
+/* --- Hidden Links Dropdown Position --- */
 html[dir="rtl"] .greedy-nav .hidden-links {
   right: auto;
   left: 0;
+  inset-inline-end: auto;
+  inset-inline-start: 0;
 }
 
-html[dir="rtl"] .greedy-nav .hidden-links::before {
+html[dir="rtl"] .greedy-nav .hidden-links::before,
+html[dir="rtl"] .greedy-nav .hidden-links::after {
   right: auto;
   left: 10px;
+  inset-inline-end: auto;
+  inset-inline-start: 10px;
+}
+
+/* --- Masthead Inner Wrap --- */
+html[dir="rtl"] .masthead__inner-wrap {
+  flex-direction: row;
 }
 
 /* ============================================================
@@ -130,6 +182,7 @@ html[dir="rtl"] .page__content ol li {
   text-align: right;
 }
 
+/* Blockquotes RTL */
 html[dir="rtl"] blockquote {
   border-left: none;
   border-right: 0.25em solid var(--primary-color, #7c4dff);
@@ -261,6 +314,7 @@ html[dir="rtl"] .author__urls {
   text-align: right;
 }
 
+/* Float utilities */
 html[dir="rtl"] .float-left {
   float: right !important;
 }
@@ -269,6 +323,7 @@ html[dir="rtl"] .float-right {
   float: left !important;
 }
 
+/* Text alignment utilities */
 html[dir="rtl"] .text-left {
   text-align: right !important;
 }
@@ -298,6 +353,7 @@ html[dir="rtl"] .pagination--pager .pagination--pager-next {
   margin-right: 0.5em;
 }
 
+/* Flip arrow icons for RTL */
 html[dir="rtl"] .fa-arrow-left::before,
 html[dir="rtl"] .fa-chevron-left::before,
 html[dir="rtl"] .fa-angle-left::before {
