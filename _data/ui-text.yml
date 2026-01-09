@@ -76,6 +76,11 @@ en: &DEFAULT_EN
     en                        : "About"
     ar                        : "عن الموقع"
     ku                        : "دەربارە" 
+  title_job_portals: "📌 List of Job Portals in Iraq"
+  th_name: "Name"
+  common_visit_website: "Visit Website"
+  common_link: "Link"
+  common_na: "N/A"
 
   # Page Titles
   title_home                 : "Directory of Job Platforms in Iraq"
@@ -315,6 +320,11 @@ ar: &DEFAULT_AR
   common_filter              : "تصفية"
   common_apply               : "تطبيق"
   common_download            : "تحميل"
+  title_job_portals: "📌 قائمة بوابات الوظائف في العراق"
+  th_name: "الاسم"
+  common_visit_website: "زيارة الموقع"
+  common_link: "رابط"
+  common_na: "غير متوفر"
 
 # ============================================
 # KURDISH (کوردی)
@@ -413,6 +423,11 @@ ku: &DEFAULT_KU
   th_job_title               : "ناونیشانی کار"
   th_city                    : "شار"
   th_salary                  : "مووچە"
+  title_job_portals: "📌 لیستی ماڵپەڕەکانی کار لە عێراق"
+  th_name: "ناو"
+  common_visit_website: "سەردانی ماڵپەڕ بکە"
+  common_link: "بەستەر"
+  common_na: "بەردەست نییە"
 
 ku-IQ:
   <<: *DEFAULT_KU
