@@ -23,14 +23,9 @@
 
 {% seo %}
 
-<!-- Title is handled by jekyll-seo-tag above (no duplicate needed) -->
-
 {% unless site.atom_feed.hide %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 {% endunless %}
-
-{%- comment %} https://docs.google.com/presentation/d/1rmxwWa9P6_xHqonmh5ONXRS-jPc5XKbnv99Rjkhe04s/present {% endcomment -%}
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -40,10 +35,14 @@
 <link rel="dns-prefetch" href="https://api.indexnow.org">
 <link rel="dns-prefetch" href="https://www.bing.com">
 
-
 <script>
   // Injects the translations from Jekyll/YAML into a global JS object
-  window.SITE_TRANSLATIONS = {{ site.data.ui-text.navigation | jsonify }};
+   window.SITE_TRANSLATIONS = {
+    en: {{ site.data.ui-text.en | jsonify }},
+    ar: {{ site.data.ui-text.ar | jsonify }},
+    ku: {{ site.data.ui-text.ku | jsonify }}
+  };
+
   // Handles the "no-js" to "js" class switch for styling
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
   
@@ -52,33 +51,20 @@
   {%- endif %}
 </script>
 
+<!-- Ensure language-handler is loaded AFTER the translations -->
+<script src="{{ '/assets/js/language-handler.min.js' | relative_url }}"></script>
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
 
 <!-- RTL Support (loads always, only applies when dir="rtl") -->
 <link rel="stylesheet" href="{{ '/assets/css/rtl-global.css' | relative_url }}">
 
-<!-- Language Switcher Styles (Best Practice: load as CSS, not JS) -->
+<!-- Language Switcher Styles -->
 <link rel="stylesheet" href="{{ '/assets/css/language-switcher.css' | relative_url }}">
 
-<!-- Font Awesome (Local) - Optimized Loading with SRI -->
-<link rel="preload" 
-      href="{{ '/assets/vendor/fontawesome/css/all.min.css' | relative_url }}" 
-      as="style" 
-      integrity="sha384-N6pD0GMmme8Pi3sNNRgU+RQv0Od8FGDUMv0nRVgOMzVTe04ZaYRZtnu8q8PWYFIA"
-      crossorigin="anonymous"
-      onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" 
-        href="{{ '/assets/vendor/fontawesome/css/all.min.css' | relative_url }}"
-        integrity="sha384-N6pD0GMmme8Pi3sNNRgU+RQv0Od8FGDUMv0nRVgOMzVTe04ZaYRZtnu8q8PWYFIA"
-        crossorigin="anonymous">
-</noscript>
-
-<!-- Preload Font Awesome webfonts for better performance -->
-<link rel="preload" href="{{ '/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ '/assets/vendor/fontawesome/webfonts/fa-brands-400.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<!-- Font Awesome Optimized -->
+<link rel="preload" href="{{ '/assets/vendor/fontawesome/css/all.min.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}
@@ -86,22 +72,5 @@
   {% endfor %}
 {% endif %}
 
-<!-- ============================================ -->
-<!-- ✅ I18N SYSTEM (OPTIMIZED LOADING ORDER)    -->
-<!-- ============================================ -->
-
-<!-- STEP 1: Inject UI translations from _data/ui-text.yml -->
-{% include inject-translations.html %}
-
-<!-- STEP 2: Inject job title translations from _data/job-titles/*.yml -->
-{% include inject-job-titles.html %}
-
-<!-- STEP 3: Load unified i18n engine (MUST load BEFORE ES modules) -->
-<script src="{{ '/assets/js/unified-i18n.js' | relative_url }}"></script>
-
-<!-- ============================================ -->
-<!-- END I18N SYSTEM                             -->
-<!-- ============================================ -->
-
-<!-- Include IndexNow JavaScript (non-critical, load async) -->
+<!-- Include IndexNow JavaScript -->
 <script src="{{ '/assets/js/indexnow.js' | relative_url }}" async></script>
