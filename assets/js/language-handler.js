@@ -1,6 +1,5 @@
 // Unified Language Manager for JobsInIraq
 // Syncs language across ALL pages including dashboard
-
 (function() {
   'use strict';
   
