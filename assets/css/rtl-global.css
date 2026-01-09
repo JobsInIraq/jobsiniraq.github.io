@@ -1,59 +1,400 @@
-/* Global RTL Support for Arabic and Kurdish Sorani */
+/* ============================================================
+   RTL Global Support for Arabic (ar) and Kurdish Sorani (ku)
+   This file provides comprehensive RTL overrides for the theme
+   ============================================================ */
 
-/* RTL Base Styles */
-[dir="rtl"] {
+/* ============================================================
+   1. BASE RTL STYLES
+   ============================================================ */
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
   text-align: right;
   direction: rtl;
 }
 
-[dir="rtl"] body {
-  font-family: 'Arial', 'Tahoma', sans-serif;
+/* RTL-specific fonts for better Arabic/Kurdish rendering */
+html[dir="rtl"] body,
+html[lang="ar"],
+html[lang="ku"] {
+  font-family: 'Segoe UI', 'Traditional Arabic', 'Tahoma', 'Arial', sans-serif;
+  line-height: 1.8;
 }
 
-/* Navigation RTL */
-[dir="rtl"] .greedy-nav {
+/* ============================================================
+   2. NAVIGATION / MASTHEAD RTL
+   ============================================================ */
+html[dir="rtl"] .masthead__inner-wrap {
   flex-direction: row-reverse;
 }
 
-[dir="rtl"] .greedy-nav .visible-links {
+html[dir="rtl"] .greedy-nav {
   flex-direction: row-reverse;
 }
 
-[dir="rtl"] .masthead__menu-item {
-  margin-left: 0;
-  margin-right: 1.5rem;
+html[dir="rtl"] .greedy-nav a {
+  margin: 0 1rem;
 }
 
-/* Breadcrumbs RTL */
-[dir="rtl"] .breadcrumbs {
+html[dir="rtl"] .greedy-nav .visible-links {
   flex-direction: row-reverse;
+  justify-content: flex-start;
 }
 
-/* Footer RTL */
-[dir="rtl"] .page__footer-follow .social-icons {
-  flex-direction: row-reverse;
-}
-
-/* Search RTL */
-[dir="rtl"] .search-content {
+html[dir="rtl"] .greedy-nav .visible-links li {
   text-align: right;
 }
 
-/* Sidebar RTL */
-[dir="rtl"] .sidebar {
+html[dir="rtl"] .masthead__menu-item {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .masthead__menu {
+  float: right;
+}
+
+html[dir="rtl"] .site-nav {
+  float: left;
+}
+
+html[dir="rtl"] .site-title {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+html[dir="rtl"] .site-logo {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+html[dir="rtl"] .greedy-nav .hidden-links {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .greedy-nav .hidden-links::before {
+  right: auto;
+  left: 10px;
+}
+
+/* ============================================================
+   3. LANGUAGE SWITCHER RTL
+   ============================================================ */
+html[dir="rtl"] .language-switcher-wrapper {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+/* ============================================================
+   4. SIDEBAR RTL
+   ============================================================ */
+html[dir="rtl"] .sidebar {
+  float: right;
+  margin-left: 1em;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .sidebar__right {
   float: left;
   margin-left: 0;
   margin-right: 1em;
 }
 
-/* Archive RTL */
-[dir="rtl"] .archive__item-teaser {
-  float: left;
+/* ============================================================
+   5. PAGE CONTENT RTL
+   ============================================================ */
+html[dir="rtl"] .page__content {
+  text-align: right;
+}
+
+html[dir="rtl"] .page__content p,
+html[dir="rtl"] .page__content li,
+html[dir="rtl"] .page__content td,
+html[dir="rtl"] .page__content th {
+  text-align: right;
+}
+
+html[dir="rtl"] .page__content ul,
+html[dir="rtl"] .page__content ol {
+  padding-left: 0;
+  padding-right: 1em;
   margin-left: 0;
   margin-right: 1em;
 }
 
-/* Language-specific fonts */
-[lang="ar"], [lang="ku"] {
-  font-family: 'Traditional Arabic', 'Arial', 'Tahoma', sans-serif;
+html[dir="rtl"] .page__content ul li,
+html[dir="rtl"] .page__content ol li {
+  text-align: right;
+}
+
+html[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: 0.25em solid var(--primary-color, #7c4dff);
+  padding-left: 0;
+  padding-right: 1em;
+  margin-left: 0;
+  margin-right: 1em;
+}
+
+/* ============================================================
+   6. ARCHIVE / GRID RTL
+   ============================================================ */
+html[dir="rtl"] .archive__item-teaser {
+  float: right;
+  margin-left: 1em;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .archive__item-title {
+  text-align: right;
+}
+
+html[dir="rtl"] .archive__item-excerpt {
+  text-align: right;
+}
+
+/* ============================================================
+   7. BREADCRUMBS RTL
+   ============================================================ */
+html[dir="rtl"] .breadcrumbs {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .breadcrumbs ol {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .breadcrumbs li + li::before {
+  content: "/";
+  padding-left: 0.5em;
+  padding-right: 0;
+}
+
+/* ============================================================
+   8. FOOTER RTL
+   ============================================================ */
+html[dir="rtl"] .page__footer {
+  text-align: right;
+}
+
+html[dir="rtl"] .page__footer-follow .social-icons {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .page__footer-copyright {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* ============================================================
+   9. FORMS RTL
+   ============================================================ */
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] label {
+  text-align: right;
+}
+
+/* ============================================================
+   10. SEARCH RTL
+   ============================================================ */
+html[dir="rtl"] .search-content {
+  text-align: right;
+}
+
+html[dir="rtl"] .search-content input {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 0.5em;
+}
+
+/* ============================================================
+   11. BUTTONS RTL
+   ============================================================ */
+html[dir="rtl"] .btn {
+  direction: rtl;
+}
+
+html[dir="rtl"] .btn .fa,
+html[dir="rtl"] .btn .fas,
+html[dir="rtl"] .btn .fab,
+html[dir="rtl"] .btn .far {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+
+/* ============================================================
+   12. TABLES RTL
+   ============================================================ */
+html[dir="rtl"] table {
+  direction: rtl;
+}
+
+html[dir="rtl"] th,
+html[dir="rtl"] td {
+  text-align: right;
+}
+
+/* ============================================================
+   13. UTILITIES RTL
+   ============================================================ */
+html[dir="rtl"] .author__avatar {
+  float: right;
+  margin-left: 1em;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .author__content {
+  text-align: right;
+}
+
+html[dir="rtl"] .author__urls {
+  text-align: right;
+}
+
+html[dir="rtl"] .float-left {
+  float: right !important;
+}
+
+html[dir="rtl"] .float-right {
+  float: left !important;
+}
+
+html[dir="rtl"] .text-left {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .text-right {
+  text-align: left !important;
+}
+
+/* ============================================================
+   14. PAGINATION RTL
+   ============================================================ */
+html[dir="rtl"] .pagination {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .pagination--pager {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .pagination--pager .pagination--pager-prev {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .pagination--pager .pagination--pager-next {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+html[dir="rtl"] .fa-arrow-left::before,
+html[dir="rtl"] .fa-chevron-left::before,
+html[dir="rtl"] .fa-angle-left::before {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+html[dir="rtl"] .fa-arrow-right::before,
+html[dir="rtl"] .fa-chevron-right::before,
+html[dir="rtl"] .fa-angle-right::before {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* ============================================================
+   15. TOC (Table of Contents) RTL
+   ============================================================ */
+html[dir="rtl"] .toc {
+  text-align: right;
+}
+
+html[dir="rtl"] .toc__menu {
+  text-align: right;
+}
+
+html[dir="rtl"] .toc__menu ul {
+  padding-left: 0;
+  padding-right: 0.75em;
+}
+
+/* ============================================================
+   16. NOTICES RTL
+   ============================================================ */
+html[dir="rtl"] .notice,
+html[dir="rtl"] .notice--primary,
+html[dir="rtl"] .notice--info,
+html[dir="rtl"] .notice--warning,
+html[dir="rtl"] .notice--success,
+html[dir="rtl"] .notice--danger {
+  text-align: right;
+  border-left: none;
+  border-right: 4px solid;
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+/* ============================================================
+   17. FEATURE ROWS RTL
+   ============================================================ */
+html[dir="rtl"] .feature__wrapper {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .feature__item {
+  text-align: right;
+}
+
+/* ============================================================
+   18. SOCIAL ICONS RTL
+   ============================================================ */
+html[dir="rtl"] .social-icons .fa,
+html[dir="rtl"] .social-icons .fas,
+html[dir="rtl"] .social-icons .fab,
+html[dir="rtl"] .social-icons .far {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+
+/* ============================================================
+   19. SKIP LINKS RTL
+   ============================================================ */
+html[dir="rtl"] .skip-links {
+  left: auto;
+  right: 0;
+}
+
+/* ============================================================
+   20. RESPONSIVE ADJUSTMENTS
+   ============================================================ */
+@media (max-width: 64em) {
+  html[dir="rtl"] .greedy-nav .visible-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  html[dir="rtl"] .sidebar {
+    float: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 48em) {
+  html[dir="rtl"] .masthead__inner-wrap {
+    flex-direction: column;
+  }
+  
+  html[dir="rtl"] .greedy-nav {
+    flex-direction: column;
+  }
 }
