@@ -76,7 +76,7 @@ en: &DEFAULT_EN
     en                        : "About"
     ar                        : "عن الموقع"
     ku                        : "دەربارە" 
-  title_job_portals: "📌 List of Job Portals in Iraq"
+  
   th_name: "Name"
   common_visit_website: "Visit Website"
   common_link: "Link"
@@ -182,6 +182,32 @@ en: &DEFAULT_EN
   common_show_more           : "Show More"
   common_read_more           : "Read More"
   common_no_website          : "No website"
+
+    # Page Titles
+  title_job_portals          : "📌 List of Job Portals in Iraq"
+  title_group_chats          : "💬 List of Group Chats for Jobs in Iraq"
+  title_recruitment_agencies : "🏢 List of Recruitment Agencies Operating in Iraq"
+  title_remote_work          : "🏠 Companies Offering Remote (Home-Based) Work in Iraq"
+  title_internships          : "🎓 Organizations Providing Internship Programs in Iraq"
+  title_volunteers           : "🤝 Companies with Volunteer Opportunities in Iraq"
+  title_hr_tech              : "⚙️ SaaS Platforms for HCM/HRIS/ATS in Iraq"
+  
+  # Table Headers
+  th_name                    : "Name"
+  th_category                : "Category"
+  th_language                : "Language"
+  th_website                 : "Website"
+  th_social_media            : "Social Media"
+  th_apply_link              : "Link to Apply"
+
+  # Common UI
+  common_visit_website       : "Visit Website"
+  common_link                : "Link"
+  common_na                  : "N/A"
+  common_apply_here          : "Apply Here"
+  common_no_website          : "No website"
+  common_no_social_media     : "No social media"
+  common_no_link_available   : "No link available"
 
 # Regional variants
 en-US:
@@ -320,11 +346,37 @@ ar: &DEFAULT_AR
   common_filter              : "تصفية"
   common_apply               : "تطبيق"
   common_download            : "تحميل"
-  title_job_portals: "📌 قائمة بوابات الوظائف في العراق"
+ 
   th_name: "الاسم"
   common_visit_website: "زيارة الموقع"
   common_link: "رابط"
   common_na: "غير متوفر"
+
+    # عناوين الصفحات
+  title_job_portals          : "📌 قائمة بوابات الوظائف في العراق"
+  title_group_chats          : "💬 قائمة مجموعات الدردشة للوظائف في العراق"
+  title_recruitment_agencies : "🏢 قائمة وكالات التوظيف العاملة في العراق"
+  title_remote_work          : "🏠 الشركات التي تقدم عملاً عن بعد في العراق"
+  title_internships          : "🎓 المنظمات التي تقدم برامج تدريبية في العراق"
+  title_volunteers           : "🤝 الشركات التي لديها فرص تطوعية في العراق"
+  title_hr_tech              : "⚙️ منصات SaaS لإدارة الموارد البشرية في العراق"
+  
+  # رؤوس الجداول
+  th_name                    : "الاسم"
+  th_category                : "الفئة"
+  th_language                : "اللغة"
+  th_website                 : "الموقع الإلكتروني"
+  th_social_media            : "وسائل التواصل الاجتماعي"
+  th_apply_link              : "رابط التقديم"
+
+  # واجهة عامة
+  common_visit_website       : "زيارة الموقع"
+  common_link                : "رابط"
+  common_na                  : "غير متوفر"
+  common_apply_here          : "قدم هنا"
+  common_no_website          : "لا يوجد موقع"
+  common_no_social_media     : "لا يوجد تواصل اجتماعي"
+  common_no_link_available   : "لا يوجد رابط متوفر"
 
 # ============================================
 # KURDISH (کوردی)
@@ -423,11 +475,33 @@ ku: &DEFAULT_KU
   th_job_title               : "ناونیشانی کار"
   th_city                    : "شار"
   th_salary                  : "مووچە"
-  title_job_portals: "📌 لیستی ماڵپەڕەکانی کار لە عێراق"
+ 
   th_name: "ناو"
-  common_visit_website: "سەردانی ماڵپەڕ بکە"
-  common_link: "بەستەر"
-  common_na: "بەردەست نییە"
+  
+    # ناونیشانی لاپەڕەکان
+  title_job_portals          : "📌 لیستی ماڵپەڕەکانی کار لە عێراق"
+  title_group_chats          : "💬 لیستی گرووپەکانی چات بۆ کار لە عێراق"
+  title_recruitment_agencies : "🏢 لیستی کۆمپانیاکانی دامەزراندن لە عێراق"
+  title_remote_work          : "🏠 ئەو کۆمپانیایانەی کاری دوورەدەست (لە ماڵەوە) پێشکەش دەکەن"
+  title_internships          : "🎓 ئەو ڕێکخراوانەی پرۆگرامی ڕاهێنان (ئینتێرنشیپ) پێشکەش دەکەن"
+  title_volunteers           : "🤝 ئەو کۆمپانیایانەی هەلی خۆبەخشییان هەیە"
+  title_hr_tech              : "⚙️ پلاتفۆرمەکانی SaaS بۆ بەڕێوەبردنی سەرچاوە مرۆییەکان"
+  
+  # خشتەی سەرپەڕە
+  th_name                    : "ناو"
+  th_category                : "پۆل"
+  th_language                : "زمان"
+  th_website                 : "ماڵپەڕ"
+  th_social_media            : "سۆشیاڵ میدیا"
+  th_apply_link              : "بەستەری پێشکەشکردن"
+  #  گشتی
+  common_visit_website       : "سەردانی ماڵپەڕ بکە"
+  common_link                : "بەستەر"
+  common_na                  : "بەردەست نییە"
+  common_apply_here          : "لێرە پێشکەش بکە"
+  common_no_website          : "ماڵپەڕ نییە"
+  common_no_social_media     : "سۆشیاڵ میدیا نییە"
+  common_no_link_available   : "بەستەر نییە"
 
 ku-IQ:
   <<: *DEFAULT_KU
