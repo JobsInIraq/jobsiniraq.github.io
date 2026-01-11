@@ -31,10 +31,10 @@
 
 # 🧩 COMPREHENSIVE AUDIT & ASSESSMENT: JobsInIraq.github.io
 
-**Site:** [https://jobsiniraq.github.io](https://jobsiniraq.github.io)  
+**Site:** https://jobsiniraq.github.io  
 **Stack:** Jekyll 4.x, Minimal Mistakes theme, custom i18n system  
 **Languages:** English, Arabic (RTL), Kurdish (RTL)  
-**Status:** ⚠️ Needs optimization and compliance updates  
+**Status:** ⚠️ Needs optimization and compliance updates
 
 ---
 
@@ -47,11 +47,11 @@ This audit covers eight main areas of compliance, performance, and modernization
 ## I. INTERNATIONALIZATION (i18n) & LOCALIZATION ✅🔧
 
 | # | Task | Status | Priority | Action Required |
-|---|-------|---------|-----------|----------------|
-| 1 | Language attributes | ⚠️ Partial | HIGH | Add dynamic `lang` attribute to `<html>` tag per page |
+|---|------|--------|----------|-----------------|
+| 1 | Language attributes | ⚠️ Partial | HIGH | Add dynamic lang attribute to `<html>` tag per page |
 | 2 | RTL implementation | ✅ Done | - | RTL CSS already configured |
 | 3 | Job title translations | ⚠️ 78% | HIGH | Complete missing 32 titles |
-| 4 | i18n system optimization | 🔧 Ready | HIGH | Deploy `unified-i18n.js v5.0.0` |
+| 4 | i18n system optimization | 🔧 Ready | HIGH | Deploy unified-i18n.js v5.0.0 |
 | 5 | Translation fallback | ❌ Missing | HIGH | Implement 6-layer fallback |
 | 6 | ARIA labels translation | ❌ Missing | CRITICAL | Translate all ARIA attributes |
 | 7 | Alt text translation | ❌ Unknown | HIGH | Audit all images, translate alt text |
@@ -61,7 +61,7 @@ This audit covers eight main areas of compliance, performance, and modernization
 ## II. ACCESSIBILITY (WCAG 2.1 AA Compliance) ⚠️
 
 | # | Criterion | Level | Status | Action Required |
-|---|------------|--------|----------|----------------|
+|---|-----------|-------|--------|-----------------|
 | 1 | 3.1.1 Language of Page | A | ⚠️ | Add lang dynamically |
 | 2 | 3.1.2 Language of Parts | AA | ❌ | Mark inline language changes |
 | 3 | 1.1.1 Alt Text | A | ⚠️ | Translate all alt text |
@@ -77,7 +77,7 @@ This audit covers eight main areas of compliance, performance, and modernization
 ## III. PERFORMANCE OPTIMIZATION 🚀
 
 | # | Task | Status | Priority | Action |
-|---|-------|---------|-----------|--------|
+|---|------|--------|----------|--------|
 | 1 | Image optimization | ❌ | HIGH | Compress images (WebP) |
 | 2 | CSS minification | ✅ | - | Already compressed |
 | 3 | JS minification | ❌ | MEDIUM | Minify unified-i18n.js |
@@ -92,7 +92,7 @@ This audit covers eight main areas of compliance, performance, and modernization
 ## IV. SEO OPTIMIZATION 📈
 
 | # | Task | Status | Priority | Action |
-|---|-------|---------|-----------|--------|
+|---|------|--------|----------|--------|
 | 1 | Hreflang tags | ❌ | CRITICAL | Add alternate language tags |
 | 2 | Sitemap multilingual | ⚠️ | HIGH | Include all language versions |
 | 3 | Open Graph tags | ⚠️ | HIGH | Add complete OG metadata |
@@ -106,7 +106,7 @@ This audit covers eight main areas of compliance, performance, and modernization
 ## V. SECURITY & BEST PRACTICES 🔒
 
 | # | Task | Status | Priority | Action |
-|---|-------|---------|-----------|--------|
+|---|------|--------|----------|--------|
 | 1 | CDN SRI hashes | ❌ | CRITICAL | Add integrity attributes |
 | 2 | HTTPS enforcement | ✅ | - | GitHub Pages enforces HTTPS |
 | 3 | CSP headers | ❌ | MEDIUM | Add Content Security Policy |
@@ -119,7 +119,7 @@ This audit covers eight main areas of compliance, performance, and modernization
 ## VI. DATA INTEGRITY & VALIDATION 📊
 
 | # | Task | Status | Priority | Action |
-|---|-------|---------|-----------|--------|
+|---|------|--------|----------|--------|
 | 1 | Salary data validation | ❓ | HIGH | Validate JSON schema |
 | 2 | Job titles consistency | ⚠️ | HIGH | Standardize naming |
 | 3 | Translation coverage | 78% | HIGH | Complete missing translations |
@@ -131,7 +131,7 @@ This audit covers eight main areas of compliance, performance, and modernization
 ## VII. TESTING & MONITORING 🧪
 
 | # | Task | Tools | Priority | Action |
-|---|-------|--------|-----------|--------|
+|---|------|-------|----------|--------|
 | 1 | Lighthouse audit | Chrome DevTools | HIGH | Achieve 90+ scores |
 | 2 | Screen reader testing | NVDA, JAWS | CRITICAL | Test all 3 languages |
 | 3 | Cross-browser testing | BrowserStack | MEDIUM | Test major browsers |
@@ -145,7 +145,7 @@ This audit covers eight main areas of compliance, performance, and modernization
 ## VIII. MODERN STANDARDS COMPLIANCE ⚡
 
 | # | Standard | Status | Action |
-|---|-----------|---------|--------|
+|---|----------|--------|--------|
 | 1 | HTTP/2 | ✅ | GitHub Pages supports HTTP/2 |
 | 2 | Core Web Vitals | ❓ | Measure LCP, FID, CLS |
 | 3 | Progressive Enhancement | ✅ | Works without JS |
@@ -153,6 +153,18 @@ This audit covers eight main areas of compliance, performance, and modernization
 | 5 | WebP images | ❌ | Convert all images |
 | 6 | Modern CSS | ✅ | Grid/Flexbox used |
 | 7 | ES6+ JavaScript | ⚠️ | Audit compatibility |
+
+---
+
+## Legend
+
+| Symbol | Meaning |
+|--------|---------|
+| ✅ | Complete/Passing |
+| ⚠️ | Partial/Needs Attention |
+| ❌ | Missing/Failed |
+| ❓ | Unknown/Needs Testing |
+| 🔧 | Ready to Deploy |
 
 ---
 
