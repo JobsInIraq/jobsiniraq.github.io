@@ -3,7 +3,7 @@
  * Manages multi-language support (English, Arabic, Kurdish)
  * with RTL direction switching and NAVIGATION REORDERING
  * 
- * @version 3.1.0 - Production Ready with Complete Nav Reorder Fix
+ * @version 3.2.0 - Timing Fix for Greedy-Nav
  * @lastUpdated 2025-01-11
  * 
  * FEATURES:
@@ -12,6 +12,8 @@
  * - Navigation text translation
  * - NAVIGATION DOM REORDERING for RTL (fixes greedy-nav plugin issue)
  * - MutationObserver to handle greedy-nav resize events
+ * - FIXED: Waits for greedy-nav to initialize before caching nav order
+ * - FIXED: Better debouncing to prevent observer loops
  * - Proper cleanup and teardown
  * - Custom event broadcasting for component sync
  * - Debug logging (can be disabled)
@@ -39,7 +41,9 @@
     rtlLangs: ['ar', 'ku'],
     storageKey: 'siteLanguage',
     defaultLang: 'en',
-    debug: false // Set to true for console logging
+    debug: false, // Set to true for console logging
+    greedyNavTimeout: 500, // Max wait time for greedy-nav initialization
+    observerDebounce: 150 // Debounce time for observer re-applications
   };
 
   // ============================================================
@@ -89,6 +93,7 @@
     constructor() {
       this.currentLang = this.getSavedLanguage();
       this.initialized = false;
+      this.navCached = false; // NEW: Track if nav order has been cached
       
       // Store original navigation order for restoration
       this.originalVisibleItems = [];
@@ -96,6 +101,7 @@
       this.navObserver = null;
       this.isReordering = false; // Prevent observer recursion
       this.resizeTimeout = null;
+      this.observerDebounceTimeout = null; // NEW: Debounce for observer
       
       this.init();
     }
@@ -119,7 +125,7 @@
      * Initialize the language manager
      */
     init() {
-      log('info', 'Initializing language manager v3.1.0...');
+      log('info', 'Initializing language manager v3.2.0...');
       log('info', 'Current language:', this.currentLang);
       log('info', 'RTL mode:', isRTL(this.currentLang));
 
@@ -144,20 +150,56 @@
      * Called when DOM is ready
      */
     onDOMReady() {
-      // Cache original navigation order FIRST (before any reordering)
-      this.cacheOriginalNavOrder();
-      
       this.initializePicker();
       this.setupEventListeners();
       this.updateNavigationText(this.currentLang);
       
-      // Apply navigation order based on current language
-      if (isRTL(this.currentLang)) {
-        this.reverseNavigationForRTL();
-      }
+      // FIXED: Wait for greedy-nav to initialize before caching nav order
+      this.waitForGreedyNavAndCache(() => {
+        // Apply navigation order based on current language
+        if (isRTL(this.currentLang)) {
+          this.reverseNavigationForRTL();
+        }
+        
+        // Setup observer for greedy-nav plugin changes
+        this.setupNavObserver();
+      });
+    }
+
+    // ============================================================
+    // GREEDY-NAV TIMING FIX
+    // ============================================================
+
+    /**
+     * Wait for greedy-nav to populate items before caching
+     * Uses requestAnimationFrame polling with timeout fallback
+     */
+    waitForGreedyNavAndCache(callback) {
+      const startTime = Date.now();
       
-      // Setup observer for greedy-nav plugin changes
-      this.setupNavObserver();
+      const checkReady = () => {
+        const visibleLinks = document.querySelector('.greedy-nav .visible-links');
+        const hasItems = visibleLinks && visibleLinks.children.length > 0;
+        const timedOut = Date.now() - startTime > CONFIG.greedyNavTimeout;
+        
+        if (hasItems) {
+          log('info', 'Greedy-nav ready, caching nav order');
+          this.cacheOriginalNavOrder();
+          this.navCached = true;
+          if (callback) callback();
+        } else if (timedOut) {
+          log('warn', 'Greedy-nav timeout, proceeding without cache');
+          // Try to cache anyway in case items are there
+          this.cacheOriginalNavOrder();
+          this.navCached = this.originalVisibleItems.length > 0;
+          if (callback) callback();
+        } else {
+          // Keep checking
+          requestAnimationFrame(checkReady);
+        }
+      };
+      
+      requestAnimationFrame(checkReady);
     }
 
     // ============================================================
@@ -180,6 +222,12 @@
       // Store deep clones of the original items to preserve their state
       const visibleItems = visibleLinks.querySelectorAll(':scope > li');
       const hiddenItems = hiddenLinks ? hiddenLinks.querySelectorAll(':scope > li') : [];
+
+      // Only cache if we have items (greedy-nav has initialized)
+      if (visibleItems.length === 0) {
+        log('warn', 'No visible items to cache, greedy-nav may not be ready');
+        return;
+      }
 
       // Cache using a unique identifier (href or data-i18n-key)
       this.originalVisibleItems = Array.from(visibleItems).map(li => ({
@@ -217,6 +265,12 @@
       
       if (!visibleLinks) {
         log('warn', 'Could not find .visible-links for RTL reversal');
+        return;
+      }
+
+      // Skip if already reversed
+      if (visibleLinks.getAttribute('data-rtl-reversed') === 'true') {
+        log('info', 'Navigation already reversed, skipping');
         return;
       }
 
@@ -394,17 +448,24 @@
         );
         
         if (hasChildChanges && isRTL(this.currentLang)) {
-          log('info', 'Greedy-nav changed items, re-applying RTL order');
+          // FIXED: Debounce to prevent rapid re-applications
+          if (this.observerDebounceTimeout) {
+            clearTimeout(this.observerDebounceTimeout);
+          }
           
-          // Small delay to let greedy-nav finish its work
-          setTimeout(() => {
-            // Reset the reversed flags
-            visibleLinks.removeAttribute('data-rtl-reversed');
-            if (hiddenLinks) {
-              hiddenLinks.removeAttribute('data-rtl-reversed');
+          this.observerDebounceTimeout = setTimeout(() => {
+            // Double-check we're still in RTL mode and not reordering
+            if (!this.isReordering && isRTL(this.currentLang)) {
+              log('info', 'Greedy-nav changed items, re-applying RTL order');
+              
+              // Reset the reversed flags
+              visibleLinks.removeAttribute('data-rtl-reversed');
+              if (hiddenLinks) {
+                hiddenLinks.removeAttribute('data-rtl-reversed');
+              }
+              this.reverseNavigationForRTL();
             }
-            this.reverseNavigationForRTL();
-          }, 50);
+          }, CONFIG.observerDebounce);
         }
       });
 
@@ -476,7 +537,7 @@
       // 4. UPDATE NAVIGATION ORDER (RTL FIX)
       // Only if direction actually changed and DOM is ready
       // --------------------------------------------------------
-      if (this.initialized && rtl !== wasRTL) {
+      if (this.initialized && this.navCached && rtl !== wasRTL) {
         this.updateNavigationOrder(rtl);
       }
 
@@ -670,11 +731,17 @@
         this.resizeTimeout = null;
       }
 
+      if (this.observerDebounceTimeout) {
+        clearTimeout(this.observerDebounceTimeout);
+        this.observerDebounceTimeout = null;
+      }
+
       // Disconnect observer
       this.disconnectNavObserver();
 
       // Reset state
       this.isReordering = false;
+      this.navCached = false;
 
       log('info', 'Language manager destroyed');
     }
@@ -728,6 +795,14 @@
     refreshNavigationOrder() {
       this.updateNavigationOrder(isRTL(this.currentLang));
     }
+
+    /**
+     * Force re-cache navigation order (useful if nav changes dynamically)
+     */
+    recacheNavOrder() {
+      this.cacheOriginalNavOrder();
+      this.navCached = this.originalVisibleItems.length > 0;
+    }
   }
 
   // ============================================================
@@ -740,6 +815,6 @@
   // Also expose as window.i18n for compatibility with unified-i18n.js
   window.i18n = window.languageManager;
 
-  log('info', 'Language handler v3.1.0 ready. Use window.languageManager or window.i18n');
+  log('info', 'Language handler v3.2.0 ready. Use window.languageManager or window.i18n');
 
 })();

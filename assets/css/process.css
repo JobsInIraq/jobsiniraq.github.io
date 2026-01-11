@@ -1,25 +1,76 @@
+/* ============================================
+   RECRUITMENT PROCESS TIMELINE
+   Version: 3.0.0 - Complete Edition
+   Features: RTL, Dark Mode, Animations, Icons,
+             Collapsible, Progress Indicator
+   Last Updated: 2026-01-11
+   ============================================ */
+
+/* ============================================
+   CSS VARIABLES (THEMING)
+   ============================================ */
+
 :root {
+  /* Timeline Structure */
   --timeline-color: #e6e6e6;
   --timeline-width: 2px;
-  --circle-size: 30px;
+  --circle-size: 36px;
   --circle-color: #0056b3;
-  --content-gap: 25px;
-  --stage-spacing: 3rem;
+  --circle-text: #fff;
+  --content-gap: 30px;
+  --stage-spacing: 2.5rem;
+
+  /* Content Colors */
+  --content-bg: #ffffff;
+  --content-border: #e5e7eb;
+  --content-text: #374151;
+  --content-title: #111827;
+  --list-text: #6b7280;
+
+  /* Progress States */
+  --step-completed-bg: #10b981;
+  --step-active-bg: #3b82f6;
+  --step-pending-bg: #9ca3af;
+
+  /* Animation */
+  --animation-duration: 0.3s;
+  --animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Icon */
+  --icon-size: 18px;
 }
 
-/* Container: Flexbox for overall structure */
+/* Dark Mode Variables */
+.dark {
+  --timeline-color: #4b5563;
+  --circle-color: #3b82f6;
+  --circle-text: #fff;
+  --content-bg: #1f2937;
+  --content-border: #374151;
+  --content-text: #e5e7eb;
+  --content-title: #f9fafb;
+  --list-text: #9ca3af;
+  --step-completed-bg: #059669;
+  --step-active-bg: #2563eb;
+  --step-pending-bg: #6b7280;
+}
+
+/* ============================================
+   TIMELINE CONTAINER
+   ============================================ */
+
 .timeline {
   position: relative;
   max-width: 1100px;
   margin: 2rem auto;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: var(--stage-spacing);
 }
 
-/* Vertical line: Absolute positioning for precision */
+/* Vertical line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -32,16 +83,46 @@
   z-index: 0;
 }
 
-/* Process container: Flexbox for automatic spacing */
+/* ============================================
+   PROCESS STEP CONTAINER
+   ============================================ */
+
 .process {
   position: relative;
   display: flex;
   align-items: flex-start;
   min-height: var(--circle-size);
   width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp var(--animation-duration) var(--animation-easing) forwards;
 }
 
-/* Circle: Absolute positioning for precise alignment */
+/* Staggered animation delay for each step */
+.process:nth-child(1) { animation-delay: 0.1s; }
+.process:nth-child(2) { animation-delay: 0.15s; }
+.process:nth-child(3) { animation-delay: 0.2s; }
+.process:nth-child(4) { animation-delay: 0.25s; }
+.process:nth-child(5) { animation-delay: 0.3s; }
+.process:nth-child(6) { animation-delay: 0.35s; }
+.process:nth-child(7) { animation-delay: 0.4s; }
+.process:nth-child(8) { animation-delay: 0.45s; }
+.process:nth-child(9) { animation-delay: 0.5s; }
+.process:nth-child(10) { animation-delay: 0.55s; }
+.process:nth-child(11) { animation-delay: 0.6s; }
+.process:nth-child(12) { animation-delay: 0.65s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   CIRCLE (STEP NUMBER)
+   ============================================ */
+
 .process .circle {
   position: absolute;
   left: 50%;
@@ -51,71 +132,298 @@
   height: var(--circle-size);
   border-radius: 50%;
   background-color: var(--circle-color);
-  color: #fff;
+  color: var(--circle-text);
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
   line-height: 1;
+  font-size: 0.9rem;
+  transition: all var(--animation-duration) var(--animation-easing);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Content: Relative positioning for natural flow */
+/* Circle hover effect */
+.process:hover .circle {
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   PROGRESS STATES
+   ============================================ */
+
+/* Completed step */
+.process.completed .circle {
+  background-color: var(--step-completed-bg);
+}
+
+.process.completed .circle::after {
+  content: "✓";
+  font-size: 1rem;
+}
+
+.process.completed .circle span {
+  display: none;
+}
+
+/* Active/current step */
+.process.active .circle {
+  background-color: var(--step-active-bg);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+}
+
+/* Pending step */
+.process.pending .circle {
+  background-color: var(--step-pending-bg);
+}
+
+/* ============================================
+   CONTENT BOX
+   ============================================ */
+
 .process .content {
   width: calc(50% - var(--content-gap));
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
+  padding: 1.25rem;
+  background: var(--content-bg);
+  border: 1px solid var(--content-border);
+  border-radius: 8px;
   box-sizing: border-box;
   word-break: break-word;
   position: relative;
+  color: var(--content-text);
+  transition: all var(--animation-duration) var(--animation-easing);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Left content positioning */
+/* Content hover effect */
+.process:hover .content {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--circle-color);
+}
+
+.dark .process:hover .content {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   TITLE WITH ICON SUPPORT
+   ============================================ */
+
+.process .content strong {
+  color: var(--content-title);
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Icon styling */
+.process .content strong .step-icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  flex-shrink: 0;
+}
+
+.process .content strong svg {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  color: var(--circle-color);
+}
+
+/* Left content positioning (LTR) */
 .process.left .content {
   text-align: right;
   margin-right: auto;
   margin-left: 0;
 }
 
-/* Right content positioning */
+.process.left .content strong {
+  justify-content: flex-end;
+}
+
+/* Right content positioning (LTR) */
 .process.right .content {
   text-align: left;
   margin-left: auto;
   margin-right: 0;
 }
 
-/* List styling for bullet points */
+.process.right .content strong {
+  justify-content: flex-start;
+}
+
+/* ============================================
+   COLLAPSIBLE/ACCORDION SUPPORT
+   ============================================ */
+
+.process .content.collapsible {
+  cursor: pointer;
+}
+
+.process .content.collapsible strong::after {
+  content: "▼";
+  font-size: 0.7em;
+  margin-left: auto;
+  transition: transform var(--animation-duration) var(--animation-easing);
+}
+
+.process .content.collapsible.collapsed strong::after {
+  transform: rotate(-90deg);
+}
+
+[dir="rtl"] .process .content.collapsible strong::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .process .content.collapsible.collapsed strong::after {
+  transform: rotate(90deg);
+}
+
+.process .content.collapsible ul {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height var(--animation-duration) var(--animation-easing),
+              opacity var(--animation-duration) var(--animation-easing);
+}
+
+.process .content.collapsible.collapsed ul {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+}
+
+/* ============================================
+   LIST STYLING
+   ============================================ */
+
 .process .content ul {
-  margin: 10px 0 0 0;
-  padding-left: 18px;
-  list-style-type: disc;
+  margin: 12px 0 0 0;
+  padding-left: 20px;
+  list-style-type: none;
   text-align: left;
 }
 
 .process .content ul li {
-  margin-bottom: 4px;
-  line-height: 1.5;
-  font-size: 0.85em;
+  margin-bottom: 6px;
+  line-height: 1.6;
+  font-size: 0.9em;
+  color: var(--list-text);
+  position: relative;
+  padding-left: 16px;
+}
+
+/* Custom bullet points */
+.process .content ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  background-color: var(--circle-color);
+  border-radius: 50%;
 }
 
 .process .content ul li:last-child {
   margin-bottom: 0;
 }
 
-/* Mobile-first responsive design */
+/* ============================================
+   RTL SUPPORT (Arabic & Kurdish)
+   ============================================ */
+
+[dir="rtl"] .timeline::before {
+  left: 50%;
+  right: auto;
+}
+
+[dir="rtl"] .process .circle {
+  left: 50%;
+  right: auto;
+}
+
+/* RTL: Swap left and right positioning */
+[dir="rtl"] .process.left .content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+[dir="rtl"] .process.left .content strong {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .process.right .content {
+  text-align: right;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+[dir="rtl"] .process.right .content strong {
+  justify-content: flex-end;
+}
+
+/* RTL: List alignment */
+[dir="rtl"] .process .content ul {
+  padding-left: 0;
+  padding-right: 20px;
+  text-align: right;
+}
+
+[dir="rtl"] .process .content ul li {
+  padding-left: 0;
+  padding-right: 16px;
+}
+
+[dir="rtl"] .process .content ul li::before {
+  left: auto;
+  right: 0;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET (768px)
+   ============================================ */
+
 @media screen and (max-width: 768px) {
+  .timeline {
+    padding: 1rem;
+  }
+
   .timeline::before {
-    left: 20px;
+    left: 24px;
+    right: auto;
   }
   
   .process {
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 60px;
+    padding-right: 0;
+  }
+
+  .process:hover .circle {
+    transform: none;
   }
   
   .process .circle {
-    left: 20px;
+    left: 24px;
+    right: auto;
     transform: none;
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
   }
   
   .process .content {
@@ -123,26 +431,258 @@
     margin: 0;
     text-align: left;
   }
+
+  .process.left .content,
+  .process.right .content {
+    text-align: left;
+    margin: 0;
+  }
+
+  .process .content strong {
+    justify-content: flex-start;
+  }
+
+  .process .content ul {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+
+  .process .content ul li {
+    padding-left: 16px;
+    padding-right: 0;
+  }
+
+  .process .content ul li::before {
+    left: 0;
+    right: auto;
+  }
+
+  /* RTL Mobile */
+  [dir="rtl"] .timeline::before {
+    left: auto;
+    right: 24px;
+  }
+
+  [dir="rtl"] .process {
+    padding-left: 0;
+    padding-right: 60px;
+  }
+
+  [dir="rtl"] .process .circle {
+    left: auto;
+    right: 24px;
+  }
+
+  [dir="rtl"] .process .content,
+  [dir="rtl"] .process.left .content,
+  [dir="rtl"] .process.right .content {
+    text-align: right;
+  }
+
+  [dir="rtl"] .process .content strong {
+    justify-content: flex-end;
+  }
+
+  [dir="rtl"] .process .content ul {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  [dir="rtl"] .process .content ul li {
+    padding-left: 0;
+    padding-right: 16px;
+  }
+
+  [dir="rtl"] .process .content ul li::before {
+    left: auto;
+    right: 0;
+  }
 }
 
-/* Future-proofing with container queries */
+/* ============================================
+   RESPONSIVE - MOBILE (480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+  .timeline {
+    padding: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .timeline::before {
+    left: 18px;
+  }
+
+  .process {
+    padding-left: 48px;
+  }
+
+  .process .circle {
+    left: 18px;
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+
+  .process .content {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .process .content strong {
+    font-size: 1em;
+  }
+
+  .process .content ul li {
+    font-size: 0.85em;
+  }
+
+  /* RTL Mobile Small */
+  [dir="rtl"] .timeline::before {
+    right: 18px;
+  }
+
+  [dir="rtl"] .process {
+    padding-right: 48px;
+  }
+
+  [dir="rtl"] .process .circle {
+    right: 18px;
+  }
+}
+
+/* ============================================
+   CONTAINER QUERIES (FUTURE-PROOFING)
+   ============================================ */
+
 @container timeline (max-width: 600px) {
   .process .content {
     font-size: 0.9rem;
   }
 }
 
-/* Accessibility enhancements */
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+/* Focus state */
 .process:focus-within .circle {
+  outline: 3px solid var(--circle-color);
+  outline-offset: 3px;
+}
+
+.process .content:focus {
   outline: 2px solid var(--circle-color);
   outline-offset: 2px;
 }
 
-/* Performance optimization */
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --timeline-color: #000;
+    --circle-color: #000;
+    --content-border: #000;
+    --content-text: #000;
+    --list-text: #000;
+  }
+  
+  .dark {
+    --timeline-color: #fff;
+    --circle-color: #fff;
+    --content-border: #fff;
+    --content-text: #fff;
+    --list-text: #fff;
+  }
+
+  .process .content {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .process {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .process .circle,
+  .process .content,
+  .process .content.collapsible ul {
+    transition: none;
+  }
+
+  .process.active .circle {
+    animation: none;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .timeline {
+    max-width: 100%;
+    gap: 1rem;
+  }
+
+  .process {
+    opacity: 1;
+    transform: none;
+    animation: none;
+    page-break-inside: avoid;
+  }
+
+  .timeline::before {
+    background: #000;
+  }
+
+  .process .circle {
+    background-color: #000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .process .content {
+    border: 1px solid #000;
+    box-shadow: none;
+  }
+
+  .process .content.collapsible.collapsed ul {
+    max-height: none;
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATION
+   ============================================ */
+
 .process .circle {
   will-change: transform;
 }
 
 .timeline {
   contain: layout style;
+}
+
+.process .content {
+  contain: layout;
 }
