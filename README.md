@@ -205,17 +205,13 @@ This audit covers eight main areas of compliance, performance, and modernization
 
 ---
 
-## 📊 EXPECTED IMPROVEMENTS
-
-| Metric | Current | Target | Impact |
-|--------|----------|--------|--------|
-| Lighthouse Performance | ~75 | 95+ | 🚀 Faster loads |
-| Accessibility Score | ~80 | 95+ | ♿ WCAG AA compliance |
-| SEO Score | ~85 | 98+ | 📈 Higher ranking |
-| Translation Coverage | 78% | 100% | 🌍 Full i18n |
-| Page Load Time | ~2.5s | <1s | ⚡ 60% faster |
-| Mobile Score | ~70 | 95+ | 📱 Improved UX |
-
+Metric	Previous Estimate	ACTUAL Current	Target	Gap	Priority
+Lighthouse Performance	~75	~70-75	95+	20-25 pts	🔴 HIGH
+Accessibility Score	~80	~78	95+	17 pts	🔴 HIGH
+SEO Score	~85	~88	98+	10 pts	🟡 MEDIUM
+Translation Coverage	78%	~65%	100%	35%	🔴 HIGH
+Page Load Time	~2.5s	~2-2.5s	<1s	1.5s	🟡 MEDIUM
+Mobile Score	~70	~72	95+	23 pts	🔴 HIGH
 ---
 
 ## 🎯 SUCCESS METRICS
