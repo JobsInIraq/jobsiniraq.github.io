@@ -18,10 +18,6 @@
 <!-- Note: Cannot fully prevent browser extensions, but reduces injection attempts -->
 <meta name="google" content="notranslate">
 
-<!-- Declare supported languages for bilingual/multilingual content -->
-<!-- Helps browsers and assistive technologies -->
-<meta http-equiv="content-language" content="en,ar,ku">
-
 <!-- ========================================================================== -->
 <!-- SECTION 2: SEO ENHANCEMENT META TAGS -->
 <!-- ========================================================================== -->
@@ -38,21 +34,7 @@
 {% endif %}
 
 <!-- ========================================================================== -->
-<!-- SECTION 3: PERFORMANCE RESOURCE HINTS -->
-<!-- ========================================================================== -->
-<!-- These hints tell the browser to preconnect to external domains -->
-<!-- Saves 50-100ms per connection by resolving DNS early -->
-
-<!-- DNS prefetch: Resolve domain name early (fastest, least resource-intensive) -->
-<link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="dns-prefetch" href="//www.google-analytics.com">
-
-<!-- Preconnect: Establish full connection early (DNS + TCP + TLS) -->
-<!-- Use for critical resources only -->
-<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-
-<!-- ========================================================================== -->
-<!-- SECTION 4: SOCIAL MEDIA META TAGS (Open Graph) -->
+<!-- SECTION 3: SOCIAL MEDIA META TAGS (Open Graph) -->
 <!-- ========================================================================== -->
 <!-- Used by Facebook, LinkedIn, WhatsApp, Slack, Discord -->
 
@@ -74,7 +56,7 @@
 <!-- Note: og:image is already set in _config.yml as site.og_image -->
 
 <!-- ========================================================================== -->
-<!-- SECTION 5: TWITTER CARD META TAGS -->
+<!-- SECTION 4: TWITTER CARD META TAGS -->
 <!-- ========================================================================== -->
 <!-- How links appear when shared on Twitter/X -->
 
@@ -90,7 +72,7 @@
 <!-- Note: twitter:image is already set in _config.yml as site.og_image -->
 
 <!-- ========================================================================== -->
-<!-- SECTION 6: SECURITY HEADERS -->
+<!-- SECTION 5: SECURITY HEADERS -->
 <!-- ========================================================================== -->
 <!-- Basic security headers (GitHub Pages doesn't support full CSP) -->
 
@@ -102,7 +84,7 @@
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
 <!-- ========================================================================== -->
-<!-- SECTION 7: MOBILE OPTIMIZATION -->
+<!-- SECTION 6: MOBILE OPTIMIZATION -->
 <!-- ========================================================================== -->
 
 <!-- Enable "Add to Home Screen" on mobile (Progressive Web App) -->
@@ -113,7 +95,7 @@
 <meta name="format-detection" content="telephone=no">
 
 <!-- ========================================================================== -->
-<!-- SECTION 8: STRUCTURED DATA (JSON-LD) -->
+<!-- SECTION 7: STRUCTURED DATA (JSON-LD) -->
 <!-- ========================================================================== -->
 <!-- Helps Google understand your site structure for rich results -->
 <!-- Schema.org vocabulary: https://schema.org/ -->

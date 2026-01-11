@@ -20,7 +20,7 @@ html[dir="rtl"] body,
 html[lang="ar"],
 html[lang="ku"] {
   font-family: 'Segoe UI', 'Traditional Arabic', 'Tahoma', 'Arial', sans-serif;
-  line-height: 1.8;
+  line-height: 1.8; /* Increased for Arabic diacritics */
 }
 
 /* ============================================================
@@ -41,6 +41,7 @@ html[lang="ku"] {
 
 /* --- Main Navigation Container --- */
 html[dir="rtl"] .greedy-nav {
+  /* Don't use row-reverse - use explicit order instead for precise control */
   flex-direction: row;
 }
 
@@ -60,14 +61,15 @@ html[dir="rtl"] .greedy-nav > .site-title {
   margin-right: 0;
 }
 
-/* Visible links stay in the middle but items are reversed */
+/* Visible links stay in the middle - JavaScript handles item reversal */
 html[dir="rtl"] .greedy-nav > .visible-links {
   order: 50;
   flex: 1;
-  /* KEY FIX: Change justify-content to push items to the RIGHT in RTL */
+  /* Push items to the RIGHT side in RTL */
   justify-content: flex-end;
-  /* Reverse the order of nav items: About, Dashboard, Innovation, Salary, Recruitment */
-  flex-direction: row-reverse;
+  /* DO NOT use row-reverse here - JavaScript reverses DOM order instead */
+  /* Using both CSS row-reverse AND JS DOM reversal would cancel each other out */
+  flex-direction: row;
 }
 
 /* Search button moves to the LEFT side */
@@ -129,6 +131,7 @@ html[dir="rtl"] .greedy-nav .hidden-links::after {
 
 /* --- Masthead Inner Wrap --- */
 html[dir="rtl"] .masthead__inner-wrap {
+  /* Let natural RTL direction handle this */
   flex-direction: row;
 }
 
