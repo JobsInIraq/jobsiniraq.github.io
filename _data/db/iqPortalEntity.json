@@ -160,6 +160,13 @@
         "EntityLanguage": "العربية, English",
         "EntityWebsite": "https://www.jobzone.ai/",
         "SocialMediaURL": "https://www.facebook.com/jobzoneiq/, https://www.instagram.com/jobzoneiq"
+      },
+      {
+        "EntityName": "موقع تعيينات العراق",
+        "EntityCategory": "Job Posting",
+        "EntityLanguage": "العربية",
+        "EntityWebsite": "https://www.t9iq.com/",
+        "SocialMediaURL": "https://www.facebook.com/t9in.iq/, https://www.instagram.com/t9in.iq"
       }
     ]
   }
